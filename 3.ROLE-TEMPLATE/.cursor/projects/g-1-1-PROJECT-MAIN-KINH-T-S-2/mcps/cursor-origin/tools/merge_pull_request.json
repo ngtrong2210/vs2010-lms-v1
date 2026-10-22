@@ -1,0 +1,38 @@
+{
+  "name": "merge_pull_request",
+  "description": "Merge a pull request, or a stack up to and including it. On a stacked pull request this lands every open pull request from the stack root through this one in one commit (one squash commit with squash, one merge commit otherwise); Origin checks every member first and lands nothing if one is blocked. Where a merge queue owns the branch, a single pull request is queued instead, and nothing lands yet. If Origin queues a stack as one merge queue entry instead, its members land in one commit or none do. When the call queues, mergeCommitSha and mergedPrefix are empty, because nothing has landed yet. To land a stack one pull request at a time, merge the lowest open one each time; each becomes its own commit, and the ones above usually need a restack after each landing. Requires the expected head SHA of this pull request. Optional mergeMethod (merge or squash); omit it and Origin picks a method the repository accepts. mergedPrefix lists every pull request that landed. Pull requests above the target stay open; skippedDescendants is currently always empty.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Origin namespace (owner) slug, taken from list_namespaces or an earlier Origin result. A GitHub owner or org name is not an Origin namespace unless list_namespaces returns it."
+      },
+      "name": {
+        "type": "string",
+        "description": "Origin repository name within that namespace"
+      },
+      "number": {
+        "type": "number"
+      },
+      "expectedHeadSha": {
+        "type": "string"
+      },
+      "mergeMethod": {
+        "description": "merge or squash. Omit for the repository default.",
+        "type": "string",
+        "enum": [
+          "merge",
+          "squash"
+        ]
+      }
+    },
+    "required": [
+      "owner",
+      "name",
+      "number",
+      "expectedHeadSha"
+    ],
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

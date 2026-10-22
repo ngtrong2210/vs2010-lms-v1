@@ -1,0 +1,14 @@
+---
+pid: 20548
+cwd: "G:\\0.CMS-MAIN-ALL-12\\lilama-2"
+command: "cmd /c \"cd /d g:\\0.CMS-MAIN-ALL-12\\lilama-2\\chatbot-ui && node server.js\""
+started_at: 2026-07-09T06:43:52.071Z
+running_for_ms: 55078    
+---
+LILAMA2 Chatbot running on port 3000
+
+---
+exit_code: 1
+elapsed_ms: 55203
+ended_at: 2026-07-09T06:44:47.274Z
+---

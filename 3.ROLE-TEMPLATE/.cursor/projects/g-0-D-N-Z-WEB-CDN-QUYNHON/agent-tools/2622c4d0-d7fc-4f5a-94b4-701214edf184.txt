@@ -1,0 +1,1210 @@
+Microsoft (R) Build Engine version 4.8.9037.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15/10/2026 12:15:44.
+     1>Project "G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj" on node 1 (Build target(s)).
+       Project file contains ToolsVersion="14.0". This toolset may be unknown or missing, in which case you may be able to resolve this by installing the appropriate version of MSBuild, or the build may have been forced to a particular ToolsVersion for policy reasons. Treating the project as if it had ToolsVersion="4.0". For more information, please see http://go.microsoft.com/fwlink/?LinkId=291333.
+     1>PrepareForBuild:
+         Creating directory "bin\".
+         Creating directory "obj\Debug\".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\InformationWebObject\InformationWebObject.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebCRMService\WebCRMService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebGeneralService\WebGeneralService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebPollService\WebPollService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebRSSService\WebRSSService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebSimsService\WebSimsService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+       ResolveAssemblyReferences:
+         Primary reference "AccountObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "AccountObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\AccountObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\AccountObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\AccountObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\AccountObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\AccountObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\AccountObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\AccountObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\AccountObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\AccountObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\AccountObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\AccountObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\AccountObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\AccountObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\AccountObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\AccountObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\AccountObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\AccountObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\AccountObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\AccountObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\AccountObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\AccountObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\AccountObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "AccountObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "AccountObject" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\AccountObject.winmd", but it didn't exist.
+                 Considered "bin\AccountObject.dll", but it didn't exist.
+                 Considered "bin\AccountObject.exe", but it didn't exist.
+         Primary reference "AjaxControlToolkit".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "AjaxControlToolkit". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\..\Web Libs\AjaxControlToolkit.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\AjaxControlToolkit.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\AjaxControlToolkit.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\AjaxControlToolkit.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\AjaxControlToolkit.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\AjaxControlToolkit.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\AjaxControlToolkit.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\AjaxControlToolkit.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "AjaxControlToolkit", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "AjaxControlToolkit, Version=4.1.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\AjaxControlToolkit.winmd", but it didn't exist.
+                 Considered "bin\AjaxControlToolkit.dll", but it didn't exist.
+                 Considered "bin\AjaxControlToolkit.exe", but it didn't exist.
+         Primary reference "BusinessObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "BusinessObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\Projects_2010\E Solutions\SIMS_Source 2010\bin\Debug\BusinessObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\BusinessObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\BusinessObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\BusinessObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\BusinessObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\BusinessObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\BusinessObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\BusinessObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\BusinessObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\BusinessObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\BusinessObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\BusinessObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\BusinessObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\BusinessObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\BusinessObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\BusinessObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\BusinessObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\BusinessObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\BusinessObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\BusinessObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\BusinessObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\BusinessObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "BusinessObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "BusinessObject" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\BusinessObject.winmd", but it didn't exist.
+                 Considered "bin\BusinessObject.dll", but it didn't exist.
+                 Considered "bin\BusinessObject.exe", but it didn't exist.
+         Primary reference "CollectionPager".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "CollectionPager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\..\Web Libs\CollectionPager.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CollectionPager.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CollectionPager.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CollectionPager.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CollectionPager.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CollectionPager.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CollectionPager.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CollectionPager.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CollectionPager.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CollectionPager.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CollectionPager.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CollectionPager.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CollectionPager.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CollectionPager.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CollectionPager.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CollectionPager.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CollectionPager.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CollectionPager.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CollectionPager.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CollectionPager.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CollectionPager.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CollectionPager.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "CollectionPager", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "CollectionPager" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\CollectionPager.winmd", but it didn't exist.
+                 Considered "bin\CollectionPager.dll", but it didn't exist.
+                 Considered "bin\CollectionPager.exe", but it didn't exist.
+         Primary reference "CommonControls".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "CommonControls". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\Document\CommonControls.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CommonControls.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CommonControls.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CommonControls.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CommonControls.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CommonControls.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CommonControls.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CommonControls.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CommonControls.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CommonControls.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CommonControls.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CommonControls.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CommonControls.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CommonControls.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CommonControls.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CommonControls.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CommonControls.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CommonControls.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CommonControls.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CommonControls.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CommonControls.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CommonControls.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "CommonControls", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "CommonControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\CommonControls.winmd", but it didn't exist.
+                 Considered "bin\CommonControls.dll", but it didn't exist.
+                 Considered "bin\CommonControls.exe", but it didn't exist.
+         Primary reference "Core".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Core". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\Core.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Core.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Core.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Core.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Core.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Core.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Core.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Core.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Core.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Core.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Core.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Core.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Core.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Core.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Core.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Core.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Core.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Core.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Core.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Core.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Core.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Core.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "Core", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\Core.winmd", but it didn't exist.
+                 Considered "bin\Core.dll", but it didn't exist.
+                 Considered "bin\Core.exe", but it didn't exist.
+         Primary reference "CRMObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "CRMObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\CRMObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CRMObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CRMObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\CRMObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CRMObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CRMObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\CRMObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CRMObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CRMObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\CRMObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CRMObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CRMObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\CRMObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CRMObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CRMObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\CRMObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CRMObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CRMObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\CRMObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CRMObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CRMObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\CRMObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "CRMObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "CRMObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\CRMObject.winmd", but it didn't exist.
+                 Considered "bin\CRMObject.dll", but it didn't exist.
+                 Considered "bin\CRMObject.exe", but it didn't exist.
+         Primary reference "DataAccess".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DataAccess". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\Projects_2010\E Solutions\SIMS_Source 2010\bin\Debug\DataAccess.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DataAccess.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DataAccess.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DataAccess.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DataAccess.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DataAccess.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DataAccess.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\DataAccess.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\DataAccess.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\DataAccess.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\DataAccess.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\DataAccess.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\DataAccess.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\DataAccess.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\DataAccess.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\DataAccess.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DataAccess.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DataAccess.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DataAccess.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\DataAccess.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\DataAccess.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\DataAccess.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "DataAccess", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "DataAccess, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\DataAccess.winmd", but it didn't exist.
+                 Considered "bin\DataAccess.dll", but it didn't exist.
+                 Considered "bin\DataAccess.exe", but it didn't exist.
+         Primary reference "DCore".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DCore". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\DCore.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DCore.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DCore.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\DCore.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DCore.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DCore.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\DCore.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\DCore.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\DCore.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\DCore.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\DCore.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\DCore.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\DCore.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\DCore.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\DCore.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\DCore.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DCore.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DCore.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DCore.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\DCore.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\DCore.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\DCore.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "DCore", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "DCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\DCore.winmd", but it didn't exist.
+                 Considered "bin\DCore.dll", but it didn't exist.
+                 Considered "bin\DCore.exe", but it didn't exist.
+         Primary reference "GeneralObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "GeneralObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\GeneralObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\GeneralObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\GeneralObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\GeneralObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\GeneralObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\GeneralObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\GeneralObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\GeneralObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\GeneralObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\GeneralObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\GeneralObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\GeneralObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\GeneralObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\GeneralObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\GeneralObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\GeneralObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\GeneralObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\GeneralObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\GeneralObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\GeneralObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\GeneralObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\GeneralObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "GeneralObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "GeneralObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\GeneralObject.winmd", but it didn't exist.
+                 Considered "bin\GeneralObject.dll", but it didn't exist.
+                 Considered "bin\GeneralObject.exe", but it didn't exist.
+         Primary reference "HtmlAgilityPack".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "HtmlAgilityPack". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\InformationCMS\bin\HtmlAgilityPack.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\HtmlAgilityPack.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\HtmlAgilityPack.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\HtmlAgilityPack.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\HtmlAgilityPack.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\HtmlAgilityPack.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\HtmlAgilityPack.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\HtmlAgilityPack.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "HtmlAgilityPack", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "HtmlAgilityPack" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\HtmlAgilityPack.winmd", but it didn't exist.
+                 Considered "bin\HtmlAgilityPack.dll", but it didn't exist.
+                 Considered "bin\HtmlAgilityPack.exe", but it didn't exist.
+         Primary reference "itextsharp".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "itextsharp". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\itextsharp.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\itextsharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\itextsharp.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\itextsharp.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\itextsharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\itextsharp.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\itextsharp.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\itextsharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\itextsharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\itextsharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\itextsharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\itextsharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\itextsharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\itextsharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\itextsharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\itextsharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\itextsharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\itextsharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\itextsharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\itextsharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\itextsharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\itextsharp.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "itextsharp", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "itextsharp, Version=5.5.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\itextsharp.winmd", but it didn't exist.
+                 Considered "bin\itextsharp.dll", but it didn't exist.
+                 Considered "bin\itextsharp.exe", but it didn't exist.
+         Primary reference "Libs".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Libs". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\Libs.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Libs.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Libs.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Libs.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Libs.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Libs.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Libs.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Libs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Libs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Libs.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Libs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Libs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Libs.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Libs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Libs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Libs.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Libs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Libs.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Libs.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Libs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Libs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Libs.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "Libs", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "Libs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\Libs.winmd", but it didn't exist.
+                 Considered "bin\Libs.dll", but it didn't exist.
+                 Considered "bin\Libs.exe", but it didn't exist.
+         Primary reference "PollObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "PollObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\PollObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\PollObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\PollObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\PollObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\PollObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\PollObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\PollObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\PollObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\PollObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\PollObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\PollObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\PollObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\PollObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\PollObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\PollObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\PollObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\PollObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\PollObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\PollObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\PollObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\PollObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\PollObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "PollObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "PollObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\PollObject.winmd", but it didn't exist.
+                 Considered "bin\PollObject.dll", but it didn't exist.
+                 Considered "bin\PollObject.exe", but it didn't exist.
+         Primary reference "RestSharp".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "RestSharp". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\RestSharp.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\RestSharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\RestSharp.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\RestSharp.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\RestSharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\RestSharp.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\RestSharp.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\RestSharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\RestSharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\RestSharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\RestSharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\RestSharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\RestSharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\RestSharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\RestSharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\RestSharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\RestSharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\RestSharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\RestSharp.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\RestSharp.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\RestSharp.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\RestSharp.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "RestSharp", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\RestSharp.winmd", but it didn't exist.
+                 Considered "bin\RestSharp.dll", but it didn't exist.
+                 Considered "bin\RestSharp.exe", but it didn't exist.
+         Primary reference "RSSObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "RSSObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\RSSObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\RSSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\RSSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\RSSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\RSSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\RSSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\RSSObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\RSSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\RSSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\RSSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\RSSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\RSSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\RSSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\RSSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\RSSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\RSSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\RSSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\RSSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\RSSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\RSSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\RSSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\RSSObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "RSSObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "RSSObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\RSSObject.winmd", but it didn't exist.
+                 Considered "bin\RSSObject.dll", but it didn't exist.
+                 Considered "bin\RSSObject.exe", but it didn't exist.
+         Primary reference "SimsObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SimsObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\SimsObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SimsObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SimsObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SimsObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SimsObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SimsObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SimsObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SimsObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SimsObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SimsObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SimsObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SimsObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SimsObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SimsObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SimsObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SimsObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SimsObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SimsObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SimsObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SimsObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SimsObject" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SimsObject.winmd", but it didn't exist.
+                 Considered "bin\SimsObject.dll", but it didn't exist.
+                 Considered "bin\SimsObject.exe", but it didn't exist.
+         Primary reference "SimsService".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SimsService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\SimsService.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SimsService.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SimsService.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SimsService.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SimsService.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SimsService.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SimsService.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SimsService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SimsService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SimsService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SimsService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SimsService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SimsService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SimsService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SimsService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SimsService.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsService.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SimsService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SimsService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SimsService.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SimsService", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SimsService, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SimsService.winmd", but it didn't exist.
+                 Considered "bin\SimsService.dll", but it didn't exist.
+                 Considered "bin\SimsService.exe", but it didn't exist.
+         Primary reference "SystemManagement".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemManagement". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\..\Web Libs\SystemManagement.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemManagement.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemManagement.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemManagement.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemManagement.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemManagement.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemManagement.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemManagement.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemManagement.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemManagement.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemManagement.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemManagement.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemManagement.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemManagement.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemManagement.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemManagement.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManagement.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManagement.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManagement.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemManagement.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemManagement.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemManagement.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SystemManagement", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SystemManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SystemManagement.winmd", but it didn't exist.
+                 Considered "bin\SystemManagement.dll", but it didn't exist.
+                 Considered "bin\SystemManagement.exe", but it didn't exist.
+         Primary reference "SystemManagementObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemManagementObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\..\Web Libs\SystemManagementObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemManagementObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemManagementObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemManagementObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemManagementObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemManagementObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemManagementObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemManagementObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemManagementObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemManagementObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemManagementObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManagementObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManagementObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemManagementObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemManagementObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SystemManagementObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SystemManagementObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SystemManagementObject.winmd", but it didn't exist.
+                 Considered "bin\SystemManagementObject.dll", but it didn't exist.
+                 Considered "bin\SystemManagementObject.exe", but it didn't exist.
+         Primary reference "SystemMenu".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemMenu". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\..\Web Libs\SystemMenu.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemMenu.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemMenu.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemMenu.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemMenu.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemMenu.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemMenu.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemMenu.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemMenu.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemMenu.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemMenu.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemMenu.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemMenu.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemMenu.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemMenu.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemMenu.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemMenu.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemMenu.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemMenu.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemMenu.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemMenu.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemMenu.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SystemMenu", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SystemMenu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SystemMenu.winmd", but it didn't exist.
+                 Considered "bin\SystemMenu.dll", but it didn't exist.
+                 Considered "bin\SystemMenu.exe", but it didn't exist.
+         Primary reference "SystemMenuObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemMenuObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\..\..\..\Web Libs\SystemMenuObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemMenuObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemMenuObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemMenuObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemMenuObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemMenuObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemMenuObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemMenuObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemMenuObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemMenuObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemMenuObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemMenuObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemMenuObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemMenuObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemMenuObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SystemMenuObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SystemMenuObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SystemMenuObject.winmd", but it didn't exist.
+                 Considered "bin\SystemMenuObject.dll", but it didn't exist.
+                 Considered "bin\SystemMenuObject.exe", but it didn't exist.
+         Primary reference "SystemObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\SystemObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SystemObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SystemObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SystemObject.winmd", but it didn't exist.
+                 Considered "bin\SystemObject.dll", but it didn't exist.
+                 Considered "bin\SystemObject.exe", but it didn't exist.
+         Primary reference "SystemService".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\SystemService.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemService.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemService.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\SystemService.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemService.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemService.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\SystemService.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\SystemService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\SystemService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\SystemService.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemService.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\SystemService.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "SystemService", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "SystemService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\SystemService.winmd", but it didn't exist.
+                 Considered "bin\SystemService.dll", but it didn't exist.
+                 Considered "bin\SystemService.exe", but it didn't exist.
+         Primary reference "Telerik.Web.Design".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Telerik.Web.Design". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\Telerik.Web.Design.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Telerik.Web.Design.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Telerik.Web.Design.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Telerik.Web.Design.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Telerik.Web.Design.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Telerik.Web.Design.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Telerik.Web.Design.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Telerik.Web.Design.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "Telerik.Web.Design", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "Telerik.Web.Design, Version=2010.3.1312.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\Telerik.Web.Design.winmd", but it didn't exist.
+                 Considered "bin\Telerik.Web.Design.dll", but it didn't exist.
+                 Considered "bin\Telerik.Web.Design.exe", but it didn't exist.
+         Primary reference "Telerik.Web.UI".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Telerik.Web.UI". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\Telerik.Web.UI.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Telerik.Web.UI.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\Telerik.Web.UI.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\Telerik.Web.UI.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\Telerik.Web.UI.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\Telerik.Web.UI.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Telerik.Web.UI.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\Telerik.Web.UI.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "Telerik.Web.UI", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "Telerik.Web.UI, Version=2010.3.1312.40, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\Telerik.Web.UI.winmd", but it didn't exist.
+                 Considered "bin\Telerik.Web.UI.dll", but it didn't exist.
+                 Considered "bin\Telerik.Web.UI.exe", but it didn't exist.
+         Primary reference "TKSObject".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "TKSObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\TKSObject.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\TKSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\TKSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\TKSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\TKSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\TKSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\TKSObject.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\TKSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\TKSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\TKSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\TKSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\TKSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\TKSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\TKSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\TKSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\TKSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TKSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TKSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TKSObject.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\TKSObject.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\TKSObject.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\TKSObject.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "TKSObject", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "TKSObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\TKSObject.winmd", but it didn't exist.
+                 Considered "bin\TKSObject.dll", but it didn't exist.
+                 Considered "bin\TKSObject.exe", but it didn't exist.
+         Primary reference "TKSService".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "TKSService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "bin\TKSService.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\TKSService.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\TKSService.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\TKSService.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\TKSService.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\TKSService.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\TKSService.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\TKSService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\TKSService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\TKSService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\TKSService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\TKSService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\TKSService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\TKSService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\TKSService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\TKSService.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TKSService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TKSService.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TKSService.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\TKSService.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\TKSService.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\TKSService.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "TKSService", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "TKSService, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\TKSService.winmd", but it didn't exist.
+                 Considered "bin\TKSService.dll", but it didn't exist.
+                 Considered "bin\TKSService.exe", but it didn't exist.
+         Primary reference "ViettelLibs".
+     1>C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "ViettelLibs". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+                 For SearchPath "{HintPathFromItem}".
+                 Considered "..\bin\ViettelLibs.dll", but it didn't exist.
+                 For SearchPath "{TargetFrameworkDirectory}".
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\ViettelLibs.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\ViettelLibs.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\ViettelLibs.exe", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\ViettelLibs.winmd", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\ViettelLibs.dll", but it didn't exist.
+                 Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Facades\ViettelLibs.exe", but it didn't exist.
+                 For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}".
+                 Considered AssemblyFoldersEx locations.
+                 For SearchPath "{AssemblyFolders}".
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\ViettelLibs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\ViettelLibs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\160\SDK\Assemblies\ViettelLibs.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\ViettelLibs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\ViettelLibs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft SQL Server\100\SDK\Assemblies\ViettelLibs.exe", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\ViettelLibs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\ViettelLibs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Microsoft.NET\ADOMD.NET\160\ViettelLibs.exe", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\ViettelLibs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\ViettelLibs.dll", but it didn't exist.
+                 Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\ViettelLibs.exe", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\ViettelLibs.winmd", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\ViettelLibs.dll", but it didn't exist.
+                 Considered "C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\ViettelLibs.exe", but it didn't exist.
+                 For SearchPath "{GAC}".
+                 Considered "ViettelLibs", which was not found in the GAC.
+                 For SearchPath "{RawFileName}".
+                 Considered treating "ViettelLibs, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+                 For SearchPath "bin\".
+                 Considered "bin\ViettelLibs.winmd", but it didn't exist.
+                 Considered "bin\ViettelLibs.dll", but it didn't exist.
+                 Considered "bin\ViettelLibs.exe", but it didn't exist.
+         AssemblyFoldersEx location: "{Registry:Software\Microsoft\.NETFramework,v4.8,AssemblyFoldersEx}"
+                 C:\Program Files (x86)\Microsoft Synchronization Services\ADO.NET\v1.0
+                 C:\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop
+                 C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v4.0.Framework\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v8.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v4.0\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\x64\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Itanium\
+                 C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PublicAssemblies\
+                 C:\Program Files (x86)\Microsoft.NET\Primary Interop Assemblies\
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v4.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VSTSDB\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v9.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTO40\v10.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v9.0\
+                 C:\Program Files\Reference Assemblies\Microsoft\VSTA30\v10.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office12\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Common\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\SharePoint\PublicAssemblies\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v10.0\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\ReferenceAssemblies\v2.0\
+                 C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\ADO.NET\V2.0\x64\
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\ReportViewer\
+                 C:\Program Files (x86)\Common Files\Microsoft Shared\MSEnv\PublicAssemblies
+                 C:\Program Files (x86)\Microsoft Chart Controls\Assemblies
+                 C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\2.0\Runtime\v2.0\
+                 C:\Program Files (x86)\Microsoft SDKs\Microsoft Sync Framework\v1.0\Runtime\x86\
+                 C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\
+                 C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 2\Assemblies\
+                 C:\Program Files\Microsoft SQL Server\160\DTS\Tasks
+                 C:\Program Files\Microsoft SQL Server\160\DTS\PipelineComponents\
+                 C:\Program Files\Microsoft SQL Server\160\DTS\ForEachEnumerators
+                 C:\Program Files\Microsoft SQL Server\160\DTS\Connections\
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       CoreCompile:
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /highentropyva+ /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\Microsoft.CSharp.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\mscorlib.dll" /reference:"C:\Program Files\IIS\Microsoft Web Deploy V3\Newtonsoft.Json.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.EnterpriseServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.IO.Compression.FileSystem.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.ApplicationServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.DynamicData.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.Entity.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.Extensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Web.Services.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.Xml.Linq.dll" /debug+ /debug:full /optimize- /out:obj\Debug\InformationWeb.dll /subsystemversion:6.00 /target:library /utf8output App_GlobalResources\Lang.designer.cs BDS.Master.cs BDS.Master.designer.cs CaptChaImage.cs CMS\Controls\LocationContent\Edit.ascx.cs CMS\Controls\LocationContent\Edit.ascx.designer.cs CMS\Controls\LocationContent\List.ascx.cs CMS\Controls\LocationContent\List.ascx.designer.cs CMS\Pages\LocationContent\Edit.aspx.cs CMS\Pages\LocationContent\Edit.aspx.designer.cs CMS\Pages\LocationContent\List.aspx.cs CMS\Pages\LocationContent\List.aspx.designer.cs Controls\Acc\AddReceipt.ascx.cs Controls\Acc\AddReceipt.ascx.designer.cs Controls\Acc\QRCode.ascx.cs Controls\Acc\QRCode.ascx.designer.cs Controls\Acc\ReceiptCheckout.ascx.cs Controls\Acc\ReceiptCheckout.ascx.designer.cs Controls\Acc\ReceiptList.ascx.cs Controls\Acc\ReceiptList.ascx.designer.cs Controls\Acc\StudentDebt.ascx.cs Controls\Acc\StudentDebt.ascx.designer.cs Controls\AjaxUploader.ascx.cs Controls\AjaxUploader.ascx.designer.cs Controls\Banner.ascx.cs Controls\Banner.ascx.designer.cs Controls\BottomMenu.ascx.cs Controls\BottomMenu.ascx.designer.cs Controls\Checking\frmAttendanceStatistics.ascx.cs Controls\Checking\frmAttendanceStatistics.ascx.designer.cs Controls\CRM\MyPortfo\Edit.ascx.cs Controls\CRM\MyPortfo\Edit.ascx.designer.cs Controls\CRM\MyPortfo\List.ascx.cs Controls\CRM\MyPortfo\List.ascx.designer.cs Controls\CRM\MySupport\Edit.ascx.cs Controls\CRM\MySupport\Edit.ascx.designer.cs Controls\CRM\MySupport\List.ascx.cs Controls\CRM\MySupport\List.ascx.designer.cs Controls\CRM\Portfo\Edit.ascx.cs Controls\CRM\Portfo\Edit.ascx.designer.cs Controls\CRM\Portfo\List.ascx.cs Controls\CRM\Portfo\List.ascx.designer.cs Controls\CRM\SendInfo\Detail.ascx.cs Controls\CRM\SendInfo\Detail.ascx.designer.cs Controls\CRM\SendInfo\Edit.ascx.cs Controls\CRM\SendInfo\Edit.ascx.designer.cs Controls\CRM\SendInfo\List.ascx.cs Controls\CRM\SendInfo\List.ascx.designer.cs Controls\CRM\SendInfo\SendInfo_Class.ascx.cs Controls\CRM\SendInfo\SendInfo_Class.ascx.designer.cs Controls\CRM\SendInfo\SendInfo_Course.ascx.cs Controls\CRM\SendInfo\SendInfo_Course.ascx.designer.cs Controls\CRM\SendInfo\SendInfo_Student.ascx.cs Controls\CRM\SendInfo\SendInfo_Student.ascx.designer.cs Controls\CRM\Support\Edit.ascx.cs Controls\CRM\Support\Edit.ascx.designer.cs Controls\CRM\Support\List.ascx.cs Controls\CRM\Support\List.ascx.designer.cs Controls\Dorm\DormBedTreeHelper.cs Controls\Dorm\DormBedView.ascx.cs Controls\Dorm\DormBedView.ascx.designer.cs Controls\Dorm\DormRegister\Approve.ascx.cs Controls\Dorm\DormRegister\Approve.ascx.designer.cs Controls\Dorm\DormRegister\DormRegisterConst.cs Controls\Dorm\DormRegister\DormRegisterDataAccess.cs Controls\Dorm\DormRegister\StudentRegister.ascx.cs Controls\Dorm\DormRegister\StudentRegister.ascx.designer.cs Controls\Dorm\DormWebLookup.cs Controls\Employee\ContractSub.ascx.cs Controls\Employee\ContractSub.ascx.designer.cs Controls\Employee\Detail.ascx.cs Controls\Employee\Detail.ascx.designer.cs Controls\Employee\DetailSalary.ascx.cs Controls\Employee\DetailSalary.ascx.designer.cs Controls\Employee\Edit.ascx.cs Controls\Employee\Edit.ascx.designer.cs Controls\Employee\ItemTraining.ascx.cs Controls\Employee\ItemTraining.ascx.designer.cs Controls\Employee\List.ascx.cs Controls\Employee\List.ascx.designer.cs Controls\Employee\PersonalRelation.ascx.cs Controls\Employee\PersonalRelation.ascx.designer.cs Controls\Employee\ReportEmployee.ascx.cs Controls\Employee\ReportEmployee.ascx.designer.cs Controls\Employee\Reward.ascx.cs Controls\Employee\Reward.ascx.designer.cs Controls\Employee\Task.ascx.cs Controls\Employee\Task.ascx.designer.cs Controls\Employee\TeacherSub.ascx.cs Controls\Employee\TeacherSub.ascx.designer.cs Controls\Employee_V2\Detail.ascx.cs Controls\Employee_V2\Detail.ascx.designer.cs Controls\Employee_V2\EmployeeV2TabCanEdit.cs Controls\Employee_V2\EmployeeV2WebLookup.cs Controls\Employee_V2\TabCongTac.ascx.cs Controls\Employee_V2\TabCongTac.ascx.designer.cs Controls\Employee_V2\TabCongTacEdit.ascx.cs Controls\Employee_V2\TabCongTacEdit.ascx.designer.cs Controls\Employee_V2\TabDaoTao.ascx.cs Controls\Employee_V2\TabDaoTao.ascx.designer.cs Controls\Employee_V2\TabLyLich.ascx.cs Controls\Employee_V2\TabLyLich.ascx.designer.cs Controls\Employee_V2\TabNhaGiao.ascx.cs Controls\Employee_V2\TabNhaGiao.ascx.designer.cs Controls\Employee_V2\TabNhanThan.ascx.cs Controls\Employee_V2\TabNhanThan.ascx.designer.cs Controls\Employee_V2\TabNhanThanEdit.ascx.cs Controls\Employee_V2\TabNhanThanEdit.ascx.designer.cs Controls\Employee_V2\TabPhieuLuong.ascx.cs Controls\Employee_V2\TabPhieuLuong.ascx.designer.cs Controls\Employee_V2\TabPhuCapHD.ascx.cs Controls\Employee_V2\TabPhuCapHD.ascx.designer.cs Controls\Employee_V2\TabQuaTrinhLuong.ascx.cs Controls\Employee_V2\TabQuaTrinhLuong.ascx.designer.cs Controls\Employee_V2\TabThiDuaKhenThuong.ascx.cs Controls\Employee_V2\TabThiDuaKhenThuong.ascx.designer.cs Controls\Ethic\MonthEthicMark.ascx.cs Controls\Ethic\MonthEthicMark.ascx.designer.cs Controls\Ethic\SummaryEthicStudentList.ascx.cs Controls\Ethic\SummaryEthicStudentList.ascx.designer.cs Controls\Ethic\SummaryEthicStudentMark.ascx.cs Controls\Ethic\SummaryEthicStudentMark.ascx.designer.cs Controls\HomeReport.ascx.cs Controls\HomeReport.ascx.designer.cs Controls\InfoUser\InfoStudent.ascx.cs Controls\InfoUser\InfoStudent.ascx.designer.cs Controls\InfoUser\InfoTeacher.ascx.cs Controls\InfoUser\InfoTeacher.ascx.designer.cs Controls\InfoUser\SBSList.ascx.cs Controls\InfoUser\SBSList.ascx.designer.cs Controls\InfoUser\SummaryEthicMark.ascx.cs Controls\InfoUser\SummaryEthicMark.ascx.designer.cs Controls\Learning\SubjectMarkDetail_V2.ascx.cs Controls\Learning\SubjectMarkDetail_V2.ascx.designer.cs Controls\Poll\Plan\ListEthic.ascx.cs Controls\Poll\Plan\ListEthic.ascx.designer.cs Controls\Poll\PollPart\ParaPart.ascx.cs Controls\Poll\PollPart\ParaPart.ascx.designer.cs Controls\ReExam\List.ascx.cs Controls\ReExam\List.ascx.designer.cs Controls\Counter\Counter.ascx.cs Controls\Counter\Counter.ascx.designer.cs Controls\Declaration\LearningLevelEdit.ascx.cs Controls\Declaration\LearningLevelEdit.ascx.designer.cs Controls\Declaration\LearningLevelList.ascx.cs Controls\Declaration\LearningLevelList.ascx.designer.cs Controls\Declaration\SpecialBranchEdit.ascx.cs Controls\Declaration\SpecialBranchEdit.ascx.designer.cs Controls\Declaration\SpecialBranchList.ascx.cs Controls\Declaration\SpecialBranchList.ascx.designer.cs Controls\Declaration\TrainingLevelEdit.ascx.cs Controls\Declaration\TrainingLevelEdit.ascx.designer.cs Controls\Declaration\TrainingLevelList.ascx.cs Controls\Declaration\TrainingLevelList.ascx.designer.cs Controls\Ethic\SummaryEthicMark.ascx.cs Controls\Ethic\SummaryEthicMark.ascx.designer.cs Controls\Footer.ascx.cs Controls\Footer.ascx.designer.cs Controls\General\Company\Edit.ascx.cs Controls\General\Company\Edit.ascx.designer.cs Controls\General\Company\List.ascx.cs Controls\General\Company\List.ascx.designer.cs Controls\General\Company\Select.ascx.cs Controls\General\Company\Select.ascx.designer.cs Controls\Home.ascx.cs Controls\Home.ascx.designer.cs Controls\Learning\DebtSubjectSummary.ascx.cs Controls\Learning\DebtSubjectSummary.ascx.designer.cs Controls\Learning\SubjectMarkDetail.ascx.cs Controls\Learning\SubjectMarkDetail.ascx.designer.cs Controls\LocationContent\Detail.ascx.cs Controls\LocationContent\Detail.ascx.designer.cs Controls\MessageBox.ascx.cs Controls\MessageBox.ascx.designer.cs Controls\PageList.ascx.cs Controls\PageList.ascx.designer.cs Controls\Poll\DoPoll.ascx.cs Controls\Poll\DoPoll.ascx.designer.cs Controls\Poll\Plan\Detail.ascx.cs Controls\Poll\Plan\Detail.ascx.designer.cs Controls\Poll\Plan\Edit.ascx.cs Controls\Poll\Plan\Edit.ascx.designer.cs Controls\Poll\Plan\List.ascx.cs Controls\Poll\Plan\List.ascx.designer.cs Controls\Poll\Plan\Plan_Company.ascx.cs Controls\Poll\Plan\Plan_Company.ascx.designer.cs Controls\Poll\Plan\Plan_Course.ascx.cs Controls\Poll\Plan\Plan_Course.ascx.designer.cs Controls\Poll\PollPart\Answer.ascx.cs Controls\Poll\PollPart\Answer.ascx.designer.cs Controls\Poll\PollPart\TableInput.ascx.cs Controls\Poll\PollPart\TableInput.ascx.designer.cs Controls\Poll\PollPart\TablePart.ascx.cs Controls\Poll\PollPart\TablePart.ascx.designer.cs Controls\Popup.ascx.cs Controls\Popup.ascx.designer.cs Controls\Report\ChiTietCongNoHocSinh.ascx.cs Controls\Report\ChiTietCongNoHocSinh.ascx.designer.cs Controls\Report\CongNoHocSinh.ascx.cs Controls\Report\CongNoHocSinh.ascx.designer.cs Controls\Report\ThongKeThongTinSinhVien.ascx.cs Controls\Report\ThongKeThongTinSinhVien.ascx.designer.cs Controls\RequestSchedule\ListForCMS.ascx.cs Controls\RequestSchedule\ListForCMS.ascx.designer.cs Controls\RequestSchedule\Edit.ascx.cs Controls\RequestSchedule\Edit.ascx.designer.cs Controls\RequestSchedule\List.ascx.cs Controls\RequestSchedule\List.ascx.designer.cs Controls\ReRegister\List.ascx.cs Controls\ReRegister\List.ascx.designer.cs Controls\ScheduleChecking\ListSummary.ascx.cs Controls\ScheduleChecking\ListSummary.ascx.designer.cs Controls\ScheduleChecking\SubjectCheckingSummary.ascx.cs Controls\ScheduleChecking\SubjectCheckingSummary.ascx.designer.cs Controls\ScheduleChecking\List.ascx.cs Controls\ScheduleChecking\List.ascx.designer.cs Controls\ScheduleChecking\Edit.ascx.cs Controls\ScheduleChecking\Edit.ascx.designer.cs Controls\ScheduleChecking\SubjectChecking.ascx.cs Controls\ScheduleChecking\SubjectChecking.ascx.designer.cs Controls\ScheduleChecking\SubjectCheckingSummaryByDate.ascx.cs Controls\ScheduleChecking\SubjectCheckingSummaryByDate.ascx.designer.cs Controls\SessionChecking\SessionCheckingSummary.ascx.cs Controls\SessionChecking\SessionCheckingSummary.ascx.designer.cs Controls\Sims2\UYearSemester2.ascx.cs Controls\Sims2\UYearSemester2.ascx.designer.cs Controls\Sims2\UYearSemester.ascx.cs Controls\Sims2\UYearSemester.ascx.designer.cs Controls\SimsMember\ChangeProfile.ascx.cs Controls\SimsMember\ChangeProfile.ascx.designer.cs Controls\SimsMember\ActionLog.ascx.cs Controls\SimsMember\ActionLog.ascx.designer.cs Controls\SimsMember\ActionLogView.ascx.cs Controls\SimsMember\ActionLogView.ascx.designer.cs Controls\SimsMember\DemoLogin.ascx.cs Controls\SimsMember\DemoLogin.ascx.designer.cs Controls\SimsMember\MainLogin.ascx.cs Controls\SimsMember\MainLogin.ascx.designer.cs Controls\SimsMember\MemberArea.ascx.cs Controls\SimsMember\MemberArea.ascx.designer.cs Controls\SimsMember\MemberLogin.ascx.cs Controls\SimsMember\MemberLogin.ascx.designer.cs Controls\Security\CaptCha.ashx.cs Controls\SimsPage\StudentCollectionList.ascx.cs Controls\SimsPage\StudentCollectionList.ascx.designer.cs Controls\SimsPage\ScheduleOfClass.ascx.cs Controls\SimsPage\ScheduleOfClass.ascx.designer.cs Controls\SimsPage\StudentList.ascx.cs Controls\SimsPage\StudentList.ascx.designer.cs Controls\SimsPage\SubjectMarkOfStudent_Print.ascx.cs Controls\SimsPage\SubjectMarkOfStudent_Print.ascx.designer.cs Controls\SimsPage\SubjectMarkEdit.ascx.cs Controls\SimsPage\SubjectMarkEdit.ascx.designer.cs Controls\SimsPage\SubjectMarkOfStudent.ascx.cs Controls\SimsPage\SubjectMarkOfStudent.ascx.designer.cs Controls\SimsPage\SummaryScheduleOfRoom.ascx.cs Controls\SimsPage\SummaryScheduleOfRoom.ascx.designer.cs Controls\SimsPage\SummaryScheduleOfTeacher.ascx.cs Controls\SimsPage\SummaryScheduleOfTeacher.ascx.designer.cs Controls\SimsPage\SummaryScheduleOfClass.ascx.cs Controls\SimsPage\SummaryScheduleOfClass.ascx.designer.cs Controls\Sims\Class\Select.ascx.cs Controls\Sims\Class\Select.ascx.designer.cs Controls\Sims\UTeacher4.ascx.cs Controls\Sims\UTeacher4.ascx.designer.cs Controls\Sims\ExamMarkEdit.ascx.cs Controls\Sims\ExamMarkEdit.ascx.designer.cs Controls\Sims\SummaryScheduleOfTeacherExam.ascx.cs Controls\Sims\SummaryScheduleOfTeacherExam.ascx.designer.cs Controls\Sims\SummaryTestScheduleOfTeacherExam.ascx.cs Controls\Sims\SummaryTestScheduleOfTeacherExam.ascx.designer.cs Controls\Sims\UClass_ForYearSemester.ascx.cs Controls\Sims\UClass_ForYearSemester.ascx.designer.cs Controls\Sims\UTeacher3.ascx.cs Controls\Sims\UTeacher3.ascx.designer.cs Controls\Sims\UTestSchedule_ForPermission.ascx.cs Controls\Sims\UTestSchedule_ForPermission.ascx.designer.cs Controls\Sims\ScheduleOfStudent.ascx.cs Controls\Sims\ScheduleOfStudent.ascx.designer.cs Controls\Sims\SimpleStudentList.ascx.cs Controls\Sims\SimpleStudentList.ascx.designer.cs Controls\Sims\Course\Select.ascx.cs Controls\Sims\Course\Select.ascx.designer.cs Controls\Sims\UClass_ForPermissionNew.ascx.cs Controls\Sims\UClass_ForPermissionNew.ascx.designer.cs Controls\Sims\GraduationResult.ascx.cs Controls\Sims\GraduationResult.ascx.designer.cs Controls\Sims\UClassSubject_ForPermission.ascx.cs Controls\Sims\UClassSubject_ForPermission.ascx.designer.cs Controls\Sims\UClassSubject_ForSchedule.ascx.cs Controls\Sims\UClassSubject_ForSchedule.ascx.designer.cs Controls\Sims\UClassSubject_ForMark.ascx.cs Controls\Sims\UClassSubject_ForMark.ascx.designer.cs Controls\Sims\StudentCollectionList.ascx.cs Controls\Sims\StudentCollectionList.ascx.designer.cs Controls\Sims\ScheduleOfClass.ascx.cs Controls\Sims\ScheduleOfClass.ascx.designer.cs Controls\Sims\StudentList.ascx.cs Controls\Sims\StudentList.ascx.designer.cs Controls\Sims\SubjectMarkOfStudent_Print.ascx.cs Controls\Sims\SubjectMarkOfStudent_Print.ascx.designer.cs Controls\Sims\UClass3.ascx.cs Controls\Sims\UClass3.ascx.designer.cs Controls\Sims\UClass4.ascx.cs Controls\Sims\UClass4.ascx.designer.cs Controls\Sims\UClassSubject_ForSchedule2.ascx.cs Controls\Sims\UClassSubject_ForSchedule2.ascx.designer.cs Controls\Sims\UClass_ForPermission.ascx.cs Controls\Sims\UClass_ForPermission.ascx.designer.cs Controls\Sims\URoom2.ascx.cs Controls\Sims\URoom2.ascx.designer.cs Controls\Sims\UClass.ascx.cs Controls\Sims\UClass.ascx.designer.cs Controls\Sims\UTeacher2.ascx.cs Controls\Sims\UTeacher2.ascx.designer.cs Controls\Sims\UYear.ascx.cs Controls\Sims\UYear.ascx.designer.cs Controls\Sims\UYearSemester.ascx.cs Controls\Sims\UYearSemester.ascx.designer.cs Controls\Sims\UClass2.ascx.cs Controls\Sims\UClass2.ascx.designer.cs Controls\Sims\SubjectMarkEdit.ascx.cs Controls\Sims\SubjectMarkEdit.ascx.designer.cs Controls\Sims\UClassSubject.ascx.cs Controls\Sims\UClassSubject.ascx.designer.cs Controls\Sims\SubjectMarkOfStudent.ascx.cs Controls\Sims\SubjectMarkOfStudent.ascx.designer.cs Controls\Sims\URoom.ascx.cs Controls\Sims\URoom.ascx.designer.cs Controls\Sims\SummaryScheduleOfRoom.ascx.cs Controls\Sims\SummaryScheduleOfRoom.ascx.designer.cs Controls\Sims\SummaryScheduleOfTeacher.ascx.cs Controls\Sims\SummaryScheduleOfTeacher.ascx.designer.cs Controls\Sims\SummaryScheduleOfClass.ascx.cs Controls\Sims\SummaryScheduleOfClass.ascx.designer.cs Controls\Sims\UTeacher.ascx.cs Controls\Sims\UTeacher.ascx.designer.cs Controls\Sims\UYearSemester2.ascx.cs Controls\Sims\UYearSemester2.ascx.designer.cs Controls\StudentCollection\List.ascx.cs Controls\StudentCollection\List.ascx.designer.cs Controls\StudentCollection\SendMail.ascx.cs Controls\StudentCollection\SendMail.ascx.designer.cs Controls\StudentCollection\StudentCollection.ascx.cs Controls\StudentCollection\StudentCollection.ascx.designer.cs Controls\StudentCollection\StudentCollectionForm.ascx.cs Controls\StudentCollection\StudentCollectionForm.ascx.designer.cs Controls\StudentCollection\StudentCollectionForm_Level2.ascx.cs Controls\StudentCollection\StudentCollectionForm_Level2.ascx.designer.cs Controls\StudentCollection\StudentCollection_Level2.ascx.cs Controls\StudentCollection\StudentCollection_Level2.ascx.designer.cs Controls\Student\Select.ascx.cs Controls\Student\Select.ascx.designer.cs Controls\SYS\AttachFile\UAttachFile.ascx.cs Controls\SYS\AttachFile\UAttachFile.ascx.designer.cs Controls\SYS\AttachFile\UAttachFile2.ascx.cs Controls\SYS\AttachFile\UAttachFile2.ascx.designer.cs Controls\TeachingTime\CheckingTeachingTime.ascx.cs Controls\TeachingTime\CheckingTeachingTime.ascx.designer.cs Controls\TopMenu.ascx.cs Controls\TopMenu.ascx.designer.cs Controls\SimsMember\UserEdit.ascx.cs Controls\SimsMember\UserEdit.ascx.designer.cs Controls\SimsMember\UserList.ascx.cs Controls\SimsMember\UserList.ascx.designer.cs Controls\TrainingPlan\SBSList.ascx.cs Controls\TrainingPlan\SBSList.ascx.designer.cs Controls\TrainingPlan\TeachingList.ascx.cs Controls\TrainingPlan\TeachingList.ascx.designer.cs Controls\UrlViewer.ascx.cs Controls\UrlViewer.ascx.designer.cs DownloadFile.ashx.cs Empty.Master.cs Empty.Master.designer.cs FormRegistry.Master.cs FormRegistry.Master.designer.cs Global.asax.cs KhaoSat.aspx.cs KhaoSat.aspx.designer.cs Pages\Acc\AddReceipt.aspx.cs Pages\Acc\AddReceipt.aspx.designer.cs Pages\Acc\DownloadInvoice.ashx.cs Pages\Acc\QRCode.aspx.cs Pages\Acc\QRCode.aspx.designer.cs Pages\Acc\ReceiptCheckout.aspx.cs Pages\Acc\ReceiptCheckout.aspx.designer.cs Pages\Acc\ReceiptList.aspx.cs Pages\Acc\ReceiptList.aspx.designer.cs Pages\Checking\frmAttendanceStatistics.aspx.cs Pages\Checking\frmAttendanceStatistics.aspx.designer.cs Pages\CRM\MyPortfo.aspx.cs Pages\CRM\MyPortfo.aspx.designer.cs Pages\CRM\Portfo.aspx.cs Pages\CRM\Portfo.aspx.designer.cs Pages\CRM\MySupport.aspx.cs Pages\CRM\MySupport.aspx.designer.cs Pages\CRM\SendInfoDetail.aspx.cs Pages\CRM\SendInfoDetail.aspx.designer.cs Pages\CRM\SendInfoList.aspx.cs Pages\CRM\SendInfoList.aspx.designer.cs Pages\CRM\Support.aspx.cs Pages\CRM\Support.aspx.designer.cs Pages\Declaration\LearningLevel.aspx.cs Pages\Declaration\LearningLevel.aspx.designer.cs Pages\Declaration\SpecialBranchList.aspx.cs Pages\Declaration\SpecialBranchList.aspx.designer.cs Pages\Declaration\TrainingLevel.aspx.cs Pages\Declaration\TrainingLevel.aspx.designer.cs Pages\Dorm\DormBedView.aspx.cs Pages\Dorm\DormBedView.aspx.designer.cs Pages\Dorm\DormRegister\Approve.aspx.cs Pages\Dorm\DormRegister\Approve.aspx.designer.cs Pages\Dorm\DormRegister\StudentRegister.aspx.cs Pages\Dorm\DormRegister\StudentRegister.aspx.designer.cs Pages\Empolyee\Detail.aspx.cs Pages\Empolyee\Detail.aspx.designer.cs Pages\Empolyee\DetailSalary.aspx.cs Pages\Empolyee\DetailSalary.aspx.designer.cs Pages\Empolyee\List.aspx.cs Pages\Empolyee\List.aspx.designer.cs Pages\Empolyee\ReportEmployee.aspx.cs Pages\Empolyee\ReportEmployee.aspx.designer.cs Pages\General\Company.aspx.cs Pages\General\Company.aspx.designer.cs Pages\InfoUser\InfoStudent.aspx.cs Pages\InfoUser\InfoStudent.aspx.designer.cs Pages\InfoUser\InfoUserList.aspx.cs Pages\InfoUser\InfoUserList.aspx.designer.cs Pages\InfoUser\SBSList.aspx.cs Pages\InfoUser\SBSList.aspx.designer.cs Pages\InfoUser\SumRKL.aspx.cs Pages\InfoUser\SumRKL.aspx.designer.cs Pages\Poll\ListEthic.aspx.cs Pages\Poll\ListEthic.aspx.designer.cs Pages\Poll\DoPoll.aspx.cs Pages\Poll\DoPoll.aspx.designer.cs Pages\Poll\PlanDetail.aspx.cs Pages\Poll\PlanDetail.aspx.designer.cs Pages\Poll\PlanList.aspx.cs Pages\Poll\PlanList.aspx.designer.cs Pages\Report\ChiTietCongNoHocSinh.aspx.cs Pages\Report\ChiTietCongNoHocSinh.aspx.designer.cs Pages\SimsMember\ViewLogin.aspx.cs Pages\SimsMember\ViewLogin.aspx.designer.cs Pages\Sims\CheckingTeachingTime.aspx.cs Pages\Sims\CheckingTeachingTime.aspx.designer.cs Pages\Sims\MonthEthicMark.aspx.cs Pages\Sims\MonthEthicMark.aspx.designer.cs Pages\Sims\ScheduleCheckingSummary.aspx.cs Pages\Sims\ScheduleCheckingSummary.aspx.designer.cs Pages\Sims\ScheduleOfClass2.aspx.cs Pages\Sims\ScheduleOfClass2.aspx.designer.cs Pages\Sims\SummaryEthicStudentList.aspx.cs Pages\Sims\SummaryEthicStudentList.aspx.designer.cs Pages\Sims\ExamMarkEdit.aspx.cs Pages\Sims\ExamMarkEdit.aspx.designer.cs Pages\Sims\ReExam.aspx.cs Pages\Sims\ReExam.aspx.designer.cs Pages\Sims\ScheduleOfStudent.aspx.cs Pages\Sims\ScheduleOfStudent.aspx.designer.cs Pages\Sims\SimpleStudentList.aspx.cs Pages\Sims\SimpleStudentList.aspx.designer.cs Pages\Sims\DebtSubjectSummary.aspx.cs Pages\Sims\DebtSubjectSummary.aspx.designer.cs Pages\Sims\SummaryEthicStudentMark.aspx.cs Pages\Sims\SummaryEthicStudentMark.aspx.designer.cs Pages\Sims\SummaryScheduleOfClass2.aspx.cs Pages\Sims\SummaryScheduleOfClass2.aspx.designer.cs Pages\Sims\SummaryScheduleOfTeacherExam.aspx.cs Pages\Sims\SummaryScheduleOfTeacherExam.aspx.designer.cs Pages\Sims\SummaryTestScheduleOfTeacherExam.aspx.cs Pages\Sims\SummaryTestScheduleOfTeacherExam.aspx.designer.cs Pages\TrainingPlan\TeachingList.aspx.cs Pages\TrainingPlan\TeachingList.aspx.designer.cs Pages\Sims\SubjectCheckingSummaryByDate.aspx.cs Pages\Sims\SubjectCheckingSummaryByDate.aspx.designer.cs Pages\Sims\SessionCheckingSummary.aspx.cs Pages\Sims\SessionCheckingSummary.aspx.designer.cs Pages\Sims\SubjectMarkDetail.aspx.cs Pages\Sims\SubjectMarkDetail.aspx.designer.cs Pages\Sims\GraduationResult.aspx.cs Pages\Sims\GraduationResult.aspx.designer.cs Pages\Sims\RequestScheduleCMS.aspx.cs Pages\Sims\RequestScheduleCMS.aspx.designer.cs Pages\Sims\RequestSchedule.aspx.cs Pages\Sims\RequestSchedule.aspx.designer.cs Pages\Sims\ReRegister.aspx.cs Pages\Sims\ReRegister.aspx.designer.cs Pages\Sims\SubjectCheckingSummary.aspx.cs Pages\Sims\SubjectCheckingSummary.aspx.designer.cs Pages\Sims\ScheduleChecking.aspx.cs Pages\Sims\ScheduleChecking.aspx.designer.cs Pages\Sims\StudentCollectionList.aspx.cs Pages\Sims\StudentCollectionList.aspx.designer.cs Pages\Sims\ScheduleOfClass.aspx.cs Pages\Sims\ScheduleOfClass.aspx.designer.cs Pages\Sims\StudentList.aspx.cs Pages\Sims\StudentList.aspx.designer.cs Pages\SimsMember\ChangeProfile.aspx.cs Pages\SimsMember\ChangeProfile.aspx.designer.cs Pages\SimsMember\ActionLog.aspx.cs Pages\SimsMember\ActionLog.aspx.designer.cs Pages\SimsMember\ActionLogView.aspx.cs Pages\SimsMember\ActionLogView.aspx.designer.cs Pages\SimsMember\UserList.aspx.cs Pages\SimsMember\UserList.aspx.designer.cs Pages\SimsMember\UserEdit.aspx.cs Pages\SimsMember\UserEdit.aspx.designer.cs Pages\Sims\SubjectMarkOfStudent_Print.aspx.cs Pages\Sims\SubjectMarkOfStudent_Print.aspx.designer.cs Pages\Sims\SubjectMarkEdit.aspx.cs Pages\Sims\SubjectMarkEdit.aspx.designer.cs Pages\Sims\SubjectMarkOfStudent.aspx.cs Pages\Sims\SubjectMarkOfStudent.aspx.designer.cs Pages\Sims\SummaryEthicMark.aspx.cs Pages\Sims\SummaryEthicMark.aspx.designer.cs Pages\Sims\SummaryScheduleOfRoom.aspx.cs Pages\Sims\SummaryScheduleOfRoom.aspx.designer.cs Pages\Sims\SummaryScheduleOfTeacher.aspx.cs Pages\Sims\SummaryScheduleOfTeacher.aspx.designer.cs Pages\Sims\SummaryScheduleOfClass.aspx.cs Pages\Sims\SummaryScheduleOfClass.aspx.designer.cs Pages\StudentCollection\Default.aspx.cs Pages\StudentCollection\Default.aspx.designer.cs Pages\StudentCollection\List.aspx.cs Pages\StudentCollection\List.aspx.designer.cs Pages\TrainingPlan\SBSList.aspx.cs Pages\TrainingPlan\SBSList.aspx.designer.cs Pages\UrlViewer.aspx.cs Pages\UrlViewer.aspx.designer.cs Report.aspx.cs Report.aspx.designer.cs Simple.Master.cs Simple.Master.designer.cs Utility\ControlBase.cs Utility\ControlBase2.cs Utility\MsgBox.cs Properties\AssemblyInfo.cs Default.aspx.cs Default.aspx.designer.cs Building.aspx.cs Building.aspx.designer.cs Controls\MainMenu.ascx.cs Controls\MainMenu.ascx.designer.cs Utility\PageBase.cs Utility\ResourceManager.cs Utility\SystemController.cs Utility\WebGlobal.cs ViewFile.ashx.cs "C:\Users\trong\AppData\Local\Temp\.NETFramework,Version=v4.8.AssemblyAttributes.cs"
+     1>CSC : error CS2001: Source file 'Utility\ControlBase.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>CSC : error CS2001: Source file 'Utility\ControlBase2.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>CSC : error CS2001: Source file 'Utility\MsgBox.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>CSC : error CS2001: Source file 'Properties\AssemblyInfo.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>CSC : error CS2001: Source file 'Utility\PageBase.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>CSC : error CS2001: Source file 'Utility\ResourceManager.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>CSC : error CS2001: Source file 'Utility\SystemController.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>CSC : error CS2001: Source file 'Utility\WebGlobal.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+     1>Done Building Project "G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+       "G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj" (Build target) (1) ->
+       (ResolveProjectReferences target) -> 
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\InformationWebObject\InformationWebObject.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebCRMService\WebCRMService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebGeneralService\WebGeneralService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebPollService\WebPollService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebRSSService\WebRSSService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1422,5): warning : The referenced project '..\WebSimsService\WebSimsService.csproj' does not exist. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+
+
+       "G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj" (Build target) (1) ->
+       (ResolveAssemblyReferences target) -> 
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "AccountObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "AjaxControlToolkit". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "BusinessObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "CollectionPager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "CommonControls". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Core". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "CRMObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DataAccess". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DCore". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "GeneralObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "HtmlAgilityPack". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "itextsharp". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Libs". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "PollObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "RestSharp". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "RSSObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SimsObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SimsService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemManagement". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemManagementObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemMenu". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemMenuObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Telerik.Web.Design". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Telerik.Web.UI". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "TKSObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "TKSService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Microsoft.Common.targets(1605,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "ViettelLibs". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+
+
+       "G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj" (Build target) (1) ->
+       (CoreCompile target) -> 
+         CSC : error CS2001: Source file 'Utility\ControlBase.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         CSC : error CS2001: Source file 'Utility\ControlBase2.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         CSC : error CS2001: Source file 'Utility\MsgBox.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         CSC : error CS2001: Source file 'Properties\AssemblyInfo.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         CSC : error CS2001: Source file 'Utility\PageBase.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         CSC : error CS2001: Source file 'Utility\ResourceManager.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         CSC : error CS2001: Source file 'Utility\SystemController.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+         CSC : error CS2001: Source file 'Utility\WebGlobal.cs' could not be found [G:\0.DỰ ÁN\Z.WEB-CDN-QUYNHON\1.WEB -CTT\InformationWeb.csproj]
+
+    35 Warning(s)
+    8 Error(s)
+
+Time Elapsed 00:00:01.49

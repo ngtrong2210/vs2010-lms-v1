@@ -1,0 +1,13 @@
+---
+pid: 1692
+cwd: "G:\\fix_nhanh\\tien-ich\\search-file-computer\\fast-file-search"
+command: "curl -s http://localhost:3000"
+started_at: 2026-06-29T05:24:20.806Z
+running_for_ms: 1482088  
+---
+
+---
+exit_code: unknown
+elapsed_ms: 1484660
+ended_at: 2026-06-29T05:49:05.466Z
+---

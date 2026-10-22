@@ -1,0 +1,60 @@
+{
+  "baseUrl": "http://localhost:8080",
+  "testEnvironment": "development",
+  "browser": "chromium",
+  "headless": true,
+  "screenshotOnFailure": true,
+  "traceOnFailure": true,
+  "videoOnFailure": true,
+  "timeout": 60000,
+  "retries": 1,
+  "users": {
+    "student": {
+      "username": "student",
+      "password": "123456",
+      "role": "student",
+      "expectedRedirect": "/lms/dashboard"
+    },
+    "teacher": {
+      "username": "teacher",
+      "password": "123456",
+      "role": "teacher",
+      "expectedRedirect": "/cms/dashboard"
+    },
+    "admin": {
+      "username": "admin",
+      "password": "123456",
+      "role": "admin",
+      "expectedRedirect": "/cms/dashboard"
+    }
+  },
+  "database": {
+    "server": "DESKTOP-PBMQQ03\\SQLEXPRESS",
+    "database": "LMSCMS_DB",
+    "testDatabase": "LMSCMS_DB_TEST",
+    "connectionString": "Data Source=DESKTOP-PBMQQ03\\SQLEXPRESS;Initial Catalog=LMSCMS_DB;User ID=sa;Password=nQY3n9EGcjT#pju;TrustServerCertificate=True;"
+  },
+  "endpoints": {
+    "login": "/login",
+    "logout": "/logout",
+    "cmsDashboard": "/cms/dashboard",
+    "cmsCourses": "/cms/courses",
+    "cmsUsers": "/cms/users",
+    "lmsDashboard": "/lms/dashboard",
+    "lmsCourses": "/lms/courses"
+  },
+  "testData": {
+    "testUser": {
+      "username": "testuser_automation",
+      "fullName": "Automation Test User",
+      "email": "automation@test.local",
+      "password": "Test123!",
+      "roles": ["STUDENT"]
+    },
+    "testCourse": {
+      "shortDescription": "Test course for automation",
+      "passingScore": 60,
+      "status": "DRAFT"
+    }
+  }
+}

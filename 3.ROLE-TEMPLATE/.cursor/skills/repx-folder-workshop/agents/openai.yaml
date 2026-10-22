@@ -1,0 +1,4 @@
+interface:
+  display_name: "REPX Folder Workshop"
+  short_description: "Repair and generate REPX templates by folder"
+  default_prompt: "Use $repx-folder-workshop to inspect this job folder, compare its canonical REPX samples and source, then safely repair or generate the required templates."

@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Sunday, Oct 11, 2026, 5:00 PM (UTC+7)</timestamp>\n<user_query>\ncheck model AI đang dùng \n</user_query>"}]}}
+{"type":"turn_ended","status":"error","error":"User Provided API Key Rate Limit Exceeded. User API Key Rate limit exceeded"}

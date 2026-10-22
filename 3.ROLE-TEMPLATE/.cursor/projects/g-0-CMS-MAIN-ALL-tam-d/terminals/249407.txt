@@ -1,0 +1,13 @@
+---
+pid: 15588
+cwd: "g:\\0.CMS-MAIN-ALL\\tam-d"
+command: "curl -s \"https://tamduchearthospital.com/y-hoc-thuong-thuc/tang-cuong-hormone-hanh-phuc\" | findstr /i \"og:image\""
+started_at: 2026-06-29T00:22:53.670Z
+running_for_ms: 4290424  
+---
+
+---
+exit_code: unknown
+elapsed_ms: 4295286
+ended_at: 2026-06-29T01:34:28.956Z
+---

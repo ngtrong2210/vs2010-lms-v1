@@ -1,0 +1,959 @@
+
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/BACKEND_ARCHITECTURE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/DEPLOYMENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/DEVELOPMENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/PRODUCTION_DEPLOYMENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/SQL_INJECTION_SECURITY_REVIEW.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/production/Invoke-ProductionDatabaseSync.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/production/Publish-Backend.ps1', LF will be replaced by CRLF the next time Git touches it
+ .gitignore                                         |    69 +-
+ 51T.XD1_MC_QP_102251_KeHoach.pdf                   |   Bin 28057 -> 0 bytes
+ README.md                                          |    16 +-
+ STGV.pdf                                           |   Bin 2177204 -> 0 bytes
+ Sims.sln                                           |   131 -
+ data-mau/data-mau-update-V2.sql                    |   Bin 111562 -> 0 bytes
+ database/SCHEMA_NAMING.md                          |    26 -
+ database/bootstrap/001_CreateDatabase.sql          |     5 -
+ database/indexes/001_Indexes.sql                   |    74 -
+ database/migrations/001_NormalizeSchemaNames.sql   |   314 -
+ database/migrations/002_NormalizeMediaPaths.sql    |    50 -
+ .../003_IndependentInteractiveVideos.sql           |   132 -
+ database/migrations/004_VideoVersioning.sql        |   527 -
+ database/migrations/005_Notifications.sql          |   439 -
+ database/migrations/006_SystemAdministration.sql   |   148 -
+ database/migrations/006_YouTubeVideoSources.sql    |   175 -
+ database/migrations/007_AcademicTrainingModel.sql  |   641 -
+ database/migrations/008_AcademicDemoData.sql       |   733 -
+ .../009_CompleteClassSubjectLearningFlow.sql       |   190 -
+ .../migrations/010_ClassSubjectContentDemoData.sql |   255 -
+ database/migrations/011_QuizLearningFlow.sql       |   241 -
+ database/migrations/012_LessonComments.sql         |   510 -
+ database/migrations/013_InteractiveContent.sql     |   190 -
+ .../migrations/014_InteractiveContentDemoData.sql  |   211 -
+ .../015_FullSubjectLessonTypesDemoData.sql         |   713 -
+ .../migrations/016_DockerCourseFullDemoData.sql    |   721 -
+ database/migrations/017_ClozeDragDropQuestions.sql |   127 -
+ database/production/PRODUCTION_SYNC_20260821.sql   |    80 -
+ database/seed/001_RolesPermissions.sql             |    12 -
+ database/seed/002_Users.sql                        |     5 -
+ database/seed/003_DemoCourse.sql                   |    34 -
+ database/seed/004_FullDemoData.sql                 |   189 -
+ database/seed/005_DemoConsistency.sql              |     9 -
+ database/seed/006_VideoStorageCompliance.sql       |     5 -
+ database/seed/007_VideoLibraryConsistency.sql      |     9 -
+ database/seed/008_AttachedVideoDemoData.sql        |   157 -
+ database/seed/009_TeacherVideoAssetCopies.sql      |    47 -
+ database/seed/010_LearningFilesDemo.sql            |   313 -
+ database/seed/011_LessonCommentsDemo.sql           |   105 -
+ database/seed/012_ClozeDragDropDemo.sql            |   446 -
+ database/stored-procedures/Academic.sql            |   788 -
+ database/stored-procedures/AcademicCompletion.sql  |   768 -
+ database/stored-procedures/Auth.sql                |   136 -
+ database/stored-procedures/Content.sql             |  1670 --
+ database/stored-procedures/Courses.sql             |   593 -
+ database/stored-procedures/InteractiveContent.sql  |   780 -
+ database/stored-procedures/Notifications.sql       |   143 -
+ database/stored-procedures/Progress.sql            |  1001 -
+ database/stored-procedures/Questions.sql           |   405 -
+ database/stored-procedures/Quiz.sql                |   484 -
+ database/stored-procedures/Reports.sql             |   138 -
+ database/stored-procedures/Search.sql              |   187 -
+ database/stored-procedures/Students.sql            |   326 -
+ .../stored-procedures/SystemAdministration.sql     |   422 -
+ database/stored-procedures/VideoVersioning.sql     |  2211 --
+ database/tables/001_SecurityTables.sql             |    19 -
+ database/tables/002_CourseTables.sql               |    50 -
+ database/tables/003_LearningTables.sql             |    12 -
+ database/tables/004_ColumnDescriptions.sql         |   393 -
+ docs/BACKEND_ARCHITECTURE.md                       |    10 +-
+ docs/DEPLOYMENT.md                                 |     4 +-
+ docs/DEVELOPMENT.md                                |     4 +-
+ docs/PRODUCTION_DEPLOYMENT.md                      |    12 +-
+ docs/SQL_INJECTION_SECURITY_REVIEW.md              |    50 +-
+ docs/VS_CODE_COMMANDS.html                         |    26 +-
+ frontend/.gitignore                                |     2 -
+ frontend/vercel.json                               |    10 -
+ mau_hk.pdf                                         |   Bin 863090 -> 0 bytes
+ scripts/production/Deploy-Frontend.ps1             |    27 -
+ .../production/Invoke-ProductionDatabaseSync.ps1   |     7 +-
+ scripts/production/Publish-Backend.ps1             |     4 +-
+ .../Velura-Spa-Video-Hero/about-v1.html"           |  1015 -
+ .../Velura-Spa-Video-Hero/about-v2.html"           |  1023 -
+ .../Velura-Spa-Video-Hero/about.html"              |     0
+ .../Velura-Spa-Video-Hero/blog-list-option-1.html" |   654 -
+ .../Velura-Spa-Video-Hero/blog-list-option-2.html" |   782 -
+ .../Velura-Spa-Video-Hero/blog-list.html"          |     0
+ .../Velura-Spa-Video-Hero/blog-single-post.html"   |   720 -
+ .../book-appointment-v1.html"                      |   221 -
+ .../book-appointment-v2.html"                      |   642 -
+ .../Velura-Spa-Video-Hero/book-appointment.html"   |     0
+ .../Velura-Spa-Video-Hero/contact-us.html"         |   632 -
+ .../Velura-Spa-Video-Hero/css/animate.css"         |  3479 ---
+ .../Velura-Spa-Video-Hero/css/bootstrap.css"       |     7 -
+ .../Velura-Spa-Video-Hero/css/custom-animate.css"  |   959 -
+ .../Velura-Spa-Video-Hero/css/font-awesome.css"    | 26698 -------------------
+ .../Velura-Spa-Video-Hero/css/global.css"          |   972 -
+ .../css/images/ui-icons_444444_256x240.png"        |   Bin 7006 -> 0 bytes
+ .../css/images/ui-icons_555555_256x240.png"        |   Bin 7001 -> 0 bytes
+ .../css/images/ui-icons_777620_256x240.html"       |     0
+ .../css/images/ui-icons_777777_256x240.html"       |     0
+ .../css/images/ui-icons_cc0000_256x240.html"       |     0
+ .../css/images/ui-icons_ffffff_256x240.html"       |     0
+ .../Velura-Spa-Video-Hero/css/jquery-ui.css"       |     7 -
+ .../css/jquery.fancybox.min.css"                   |     1 -
+ .../Velura-Spa-Video-Hero/css/owl.css"             |     6 -
+ .../Velura-Spa-Video-Hero/css/owl.video.play.html" |     0
+ .../Velura-Spa-Video-Hero/css/preloader.css"       |   145 -
+ .../Velura-Spa-Video-Hero/css/responsive.css"      |  2577 --
+ .../css/simple-line-icons.css"                     |   589 -
+ .../Velura-Spa-Video-Hero/css/style.css"           |  8555 ------
+ .../Velura-Spa-Video-Hero/css/swiper.css"          |    13 -
+ .../fonts/Simple-Line-Iconsb26c.eot"               |   Bin 54266 -> 0 bytes
+ .../fonts/Simple-Line-Iconsb26c.svg"               |   200 -
+ .../fonts/Simple-Line-Iconsb26c.ttf"               |   Bin 54056 -> 0 bytes
+ .../fonts/Simple-Line-Iconsb26c.woff"              |   Bin 81332 -> 0 bytes
+ .../fonts/Simple-Line-Iconsb26c.woff2"             |   Bin 30064 -> 0 bytes
+ .../Velura-Spa-Video-Hero/fonts/fa-brands-400.ttf" |   Bin 182388 -> 0 bytes
+ .../fonts/fa-brands-400.woff2"                     |   Bin 105768 -> 0 bytes
+ .../fonts/fa-duotone-900.ttf"                      |   Bin 1235716 -> 0 bytes
+ .../fonts/fa-duotone-900.woff2"                    |   Bin 430200 -> 0 bytes
+ .../Velura-Spa-Video-Hero/fonts/fa-light-300.ttf"  |   Bin 1100404 -> 0 bytes
+ .../fonts/fa-light-300.woff2"                      |   Bin 424536 -> 0 bytes
+ .../fonts/fa-regular-400.ttf"                      |   Bin 977380 -> 0 bytes
+ .../fonts/fa-regular-400.woff2"                    |   Bin 388900 -> 0 bytes
+ .../Velura-Spa-Video-Hero/fonts/fa-solid-900.ttf"  |   Bin 866192 -> 0 bytes
+ .../fonts/fa-solid-900.woff2"                      |   Bin 329204 -> 0 bytes
+ .../Velura-Spa-Video-Hero/fonts/fa-thin-100.ttf"   |   Bin 1216884 -> 0 bytes
+ .../Velura-Spa-Video-Hero/fonts/fa-thin-100.woff2" |   Bin 464316 -> 0 bytes
+ .../fonts/fa-v4compatibility.ttf"                  |   Bin 10556 -> 0 bytes
+ .../fonts/fa-v4compatibility.woff2"                |   Bin 4960 -> 0 bytes
+ .../Velura-Spa-Video-Hero/gallery-masonry.html"    |   576 -
+ .../images/background/banner-about.jpg"            |   Bin 82846 -> 0 bytes
+ .../images/background/banner-gallery.jpg"          |   Bin 163403 -> 0 bytes
+ .../images/background/banner-image-blog.jpg"       |   Bin 96048 -> 0 bytes
+ .../images/background/banner-image-contact.jpg"    |   Bin 191666 -> 0 bytes
+ .../images/background/banner-membership.jpg"       |   Bin 166338 -> 0 bytes
+ .../images/background/banner-package.jpg"          |   Bin 178024 -> 0 bytes
+ .../images/background/banner-service-details.jpg"  |   Bin 109382 -> 0 bytes
+ .../images/background/banner-testimonial.jpg"      |   Bin 196042 -> 0 bytes
+ .../images/background/banner-treatment.jpg"        |   Bin 163403 -> 0 bytes
+ .../images/background/body-pattern.png"            |   Bin 9852 -> 0 bytes
+ .../images/background/body-pattern2.png"           |   Bin 3368 -> 0 bytes
+ .../images/background/offerbg.jpg"                 |   Bin 203799 -> 0 bytes
+ .../images/background/reservation-bg.html"         |     0
+ .../images/background/treatment1.jpg"              |   Bin 60726 -> 0 bytes
+ .../images/background/treatment2.jpg"              |   Bin 56776 -> 0 bytes
+ .../images/background/treatment3.jpg"              |   Bin 60961 -> 0 bytes
+ .../images/background/treatment4.jpg"              |   Bin 45704 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/favicon.png"      |   Bin 1873 -> 0 bytes
+ .../images/gallery/gallery-1-big.jpg"              |   Bin 240270 -> 0 bytes
+ .../images/gallery/gallery-1-sm.jpg"               |   Bin 90488 -> 0 bytes
+ .../images/gallery/gallery-2-big.jpg"              |   Bin 162613 -> 0 bytes
+ .../images/gallery/gallery-2-sm.jpg"               |   Bin 61918 -> 0 bytes
+ .../images/gallery/gallery-3-big.jpg"              |   Bin 164127 -> 0 bytes
+ .../images/gallery/gallery-3-sm.jpg"               |   Bin 67717 -> 0 bytes
+ .../images/gallery/gallery-4-big.jpg"              |   Bin 244043 -> 0 bytes
+ .../images/gallery/gallery-4-sm.jpg"               |   Bin 94125 -> 0 bytes
+ .../images/gallery/gallery-5-big.jpg"              |   Bin 146856 -> 0 bytes
+ .../images/gallery/gallery-5-sm.jpg"               |   Bin 64255 -> 0 bytes
+ .../images/gallery/gallery-6-big.jpg"              |   Bin 150228 -> 0 bytes
+ .../images/gallery/gallery-6-sm.jpg"               |   Bin 62338 -> 0 bytes
+ .../images/gallery/pic1-thumb.jpg"                 |   Bin 43017 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic1.jpg" |   Bin 109018 -> 0 bytes
+ .../images/gallery/pic10-thumb.jpg"                |   Bin 33316 -> 0 bytes
+ .../images/gallery/pic10.jpg"                      |   Bin 140346 -> 0 bytes
+ .../images/gallery/pic2-thumb.jpg"                 |   Bin 67234 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic2.jpg" |   Bin 180098 -> 0 bytes
+ .../images/gallery/pic3-thumb.jpg"                 |   Bin 51021 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic3.jpg" |   Bin 139276 -> 0 bytes
+ .../images/gallery/pic4-thumb.jpg"                 |   Bin 112215 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic4.jpg" |   Bin 24585 -> 0 bytes
+ .../images/gallery/pic5-thumb.jpg"                 |   Bin 33251 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic5.jpg" |   Bin 181880 -> 0 bytes
+ .../images/gallery/pic6-thumb.jpg"                 |   Bin 37470 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic6.jpg" |   Bin 203992 -> 0 bytes
+ .../images/gallery/pic7-thumb.jpg"                 |   Bin 59960 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic7.jpg" |   Bin 164833 -> 0 bytes
+ .../images/gallery/pic8-thumb.jpg"                 |   Bin 66196 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic8.jpg" |   Bin 292756 -> 0 bytes
+ .../images/gallery/pic9-thumb.jpg"                 |   Bin 37772 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/gallery/pic9.jpg" |   Bin 186478 -> 0 bytes
+ .../images/icons/leaf-left-white.svg"              |    11 -
+ .../images/icons/leaf-left.svg"                    |    11 -
+ .../images/icons/leaf-right-white.svg"             |    11 -
+ .../images/icons/leaf-right.svg"                   |    11 -
+ .../images/icons/star-element.svg"                 |     8 -
+ .../Velura-Spa-Video-Hero/images/logo-dark.png"    |   Bin 2883 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/logo.png"         |   Bin 3192 -> 0 bytes
+ .../images/resource/about-banner-img1.jpg"         |   Bin 32767 -> 0 bytes
+ .../images/resource/about-banner-img2.jpg"         |   Bin 53888 -> 0 bytes
+ .../images/resource/about-banner-img3.jpg"         |   Bin 32380 -> 0 bytes
+ .../images/resource/abt-img1.jpg"                  |   Bin 84610 -> 0 bytes
+ .../images/resource/author-blog-detail.jpg"        |   Bin 18022 -> 0 bytes
+ .../images/resource/badge-inner2.png"              |   Bin 2966 -> 0 bytes
+ .../images/resource/badge-outer.png"               |   Bin 13194 -> 0 bytes
+ .../images/resource/badge-outer2.png"              |   Bin 15505 -> 0 bytes
+ .../images/resource/blog-list-1.jpg"               |   Bin 43640 -> 0 bytes
+ .../images/resource/blog-list-2.jpg"               |   Bin 54660 -> 0 bytes
+ .../images/resource/blog-list-3.jpg"               |   Bin 59954 -> 0 bytes
+ .../images/resource/blog-list-4.jpg"               |   Bin 59186 -> 0 bytes
+ .../images/resource/blog-recent-1.jpg"             |   Bin 4113 -> 0 bytes
+ .../images/resource/blog-recent-2.jpg"             |   Bin 4246 -> 0 bytes
+ .../images/resource/blog-recent-3.jpg"             |   Bin 3775 -> 0 bytes
+ .../images/resource/blog-recent-4.jpg"             |   Bin 4983 -> 0 bytes
+ .../images/resource/blog-single-sm1.jpg"           |   Bin 59405 -> 0 bytes
+ .../images/resource/blog-single-sm2.jpg"           |   Bin 37358 -> 0 bytes
+ .../images/resource/blog-single.jpg"               |   Bin 52223 -> 0 bytes
+ .../images/resource/comment1.jpg"                  |   Bin 10911 -> 0 bytes
+ .../images/resource/comment2.jpg"                  |   Bin 8549 -> 0 bytes
+ .../images/resource/comment3.jpg"                  |   Bin 10248 -> 0 bytes
+ .../images/resource/feature1.png"                  |   Bin 2496 -> 0 bytes
+ .../images/resource/feature2.png"                  |   Bin 2265 -> 0 bytes
+ .../images/resource/feature3.png"                  |   Bin 2476 -> 0 bytes
+ .../images/resource/feature4.png"                  |   Bin 2771 -> 0 bytes
+ .../images/resource/ftr1.png"                      |   Bin 2495 -> 0 bytes
+ .../images/resource/ftr2.png"                      |   Bin 2265 -> 0 bytes
+ .../images/resource/ftr3.png"                      |   Bin 2465 -> 0 bytes
+ .../images/resource/ftr4.png"                      |   Bin 2771 -> 0 bytes
+ .../images/resource/ftr5.png"                      |   Bin 2558 -> 0 bytes
+ .../images/resource/ftr6.png"                      |   Bin 2098 -> 0 bytes
+ .../images/resource/google.png"                    |   Bin 1487 -> 0 bytes
+ .../images/resource/insta1.jpg"                    |   Bin 60136 -> 0 bytes
+ .../images/resource/insta2.jpg"                    |   Bin 49408 -> 0 bytes
+ .../images/resource/insta3.jpg"                    |   Bin 42859 -> 0 bytes
+ .../images/resource/insta4.jpg"                    |   Bin 43080 -> 0 bytes
+ .../images/resource/leaf-1.svg"                    |   116 -
+ .../images/resource/leaf-2-white.svg"              |   198 -
+ .../images/resource/leaf-2.svg"                    |   198 -
+ .../images/resource/leaf-white.svg"                |   116 -
+ .../images/resource/menu-badge.png"                |   Bin 6192 -> 0 bytes
+ .../images/resource/nav-1-thumb.jpg"               |   Bin 16996 -> 0 bytes
+ .../images/resource/nav-2-thumb.jpg"               |   Bin 16893 -> 0 bytes
+ .../images/resource/nav-3-thumb.jpg"               |   Bin 66409 -> 0 bytes
+ .../images/resource/nav-4-thumb.jpg"               |   Bin 52922 -> 0 bytes
+ .../images/resource/nav-5-thumb.jpg"               |   Bin 53855 -> 0 bytes
+ .../images/resource/nav-6-thumb.jpg"               |   Bin 59613 -> 0 bytes
+ .../images/resource/nav-7-thumb.jpg"               |   Bin 54304 -> 0 bytes
+ .../images/resource/nav-8-thumb.jpg"               |   Bin 52838 -> 0 bytes
+ .../images/resource/nav-9-thumb.jpg"               |   Bin 51819 -> 0 bytes
+ .../images/resource/news-1.jpg"                    |   Bin 20009 -> 0 bytes
+ .../images/resource/news-2.jpg"                    |   Bin 22426 -> 0 bytes
+ .../images/resource/news-3.jpg"                    |   Bin 23325 -> 0 bytes
+ .../images/resource/news-4.jpg"                    |   Bin 18980 -> 0 bytes
+ .../images/resource/news-5.jpg"                    |   Bin 32079 -> 0 bytes
+ .../images/resource/news-6.jpg"                    |   Bin 32244 -> 0 bytes
+ .../images/resource/news-7.jpg"                    |   Bin 24615 -> 0 bytes
+ .../images/resource/news-8.jpg"                    |   Bin 27073 -> 0 bytes
+ .../images/resource/offer-icon.png"                |   Bin 8747 -> 0 bytes
+ .../images/resource/offerbanner.jpg"               |   Bin 29637 -> 0 bytes
+ .../images/resource/pkg1.jpg"                      |   Bin 22453 -> 0 bytes
+ .../images/resource/pkg2.jpg"                      |   Bin 26465 -> 0 bytes
+ .../images/resource/pkg3.jpg"                      |   Bin 29627 -> 0 bytes
+ .../images/resource/pkg4.jpg"                      |   Bin 23076 -> 0 bytes
+ .../images/resource/pkg5.jpg"                      |   Bin 22380 -> 0 bytes
+ .../images/resource/pkg6.jpg"                      |   Bin 24860 -> 0 bytes
+ .../images/resource/review-graphic1.png"           |   Bin 20173 -> 0 bytes
+ .../images/resource/review-graphic2.png"           |   Bin 20498 -> 0 bytes
+ .../images/resource/review1.jpg"                   |   Bin 4402 -> 0 bytes
+ .../images/resource/review2.jpg"                   |   Bin 4366 -> 0 bytes
+ .../images/resource/review3.jpg"                   |   Bin 4946 -> 0 bytes
+ .../images/resource/review4.jpg"                   |   Bin 10911 -> 0 bytes
+ .../images/resource/review5.jpg"                   |   Bin 8549 -> 0 bytes
+ .../images/resource/review6.jpg"                   |   Bin 10248 -> 0 bytes
+ .../images/resource/sd-feature1.png"               |   Bin 2274 -> 0 bytes
+ .../images/resource/sd-feature2.png"               |   Bin 2581 -> 0 bytes
+ .../images/resource/sd-feature3.png"               |   Bin 2808 -> 0 bytes
+ .../images/resource/sd-feature4.png"               |   Bin 2429 -> 0 bytes
+ .../images/resource/sd-gallery1-big.jpg"           |   Bin 197595 -> 0 bytes
+ .../images/resource/sd-gallery1-thumb.jpg"         |   Bin 72207 -> 0 bytes
+ .../images/resource/sd-gallery2-big.jpg"           |   Bin 278177 -> 0 bytes
+ .../images/resource/sd-gallery2-thumb.jpg"         |   Bin 69362 -> 0 bytes
+ .../images/resource/sd-gallery3-big.jpg"           |   Bin 270652 -> 0 bytes
+ .../images/resource/sd-gallery3-thumb.jpg"         |   Bin 82407 -> 0 bytes
+ .../images/resource/sd-gallery4-big.jpg"           |   Bin 316044 -> 0 bytes
+ .../images/resource/sd-gallery4-thumb.jpg"         |   Bin 85127 -> 0 bytes
+ .../images/resource/service-image.png"             |   Bin 395954 -> 0 bytes
+ .../images/resource/spa-element.png"               |   Bin 34407 -> 0 bytes
+ .../images/resource/stone-flower.png"              |   Bin 21097 -> 0 bytes
+ .../images/resource/t-smily.png"                   |   Bin 5459 -> 0 bytes
+ .../images/resource/team-1.jpg"                    |   Bin 38421 -> 0 bytes
+ .../images/resource/team-2.jpg"                    |   Bin 37398 -> 0 bytes
+ .../images/resource/team-3.jpg"                    |   Bin 40202 -> 0 bytes
+ .../images/resource/team-4.jpg"                    |   Bin 39983 -> 0 bytes
+ .../images/resource/timg.jpg"                      |   Bin 33331 -> 0 bytes
+ .../images/resource/treatment-acor1a.jpg"          |   Bin 44932 -> 0 bytes
+ .../images/resource/treatment-acor1b.jpg"          |   Bin 47632 -> 0 bytes
+ .../images/resource/treatment-acor1c.jpg"          |   Bin 32264 -> 0 bytes
+ .../images/resource/treatment-acor2a.jpg"          |   Bin 41975 -> 0 bytes
+ .../images/resource/treatment-acor2b.jpg"          |   Bin 23597 -> 0 bytes
+ .../images/resource/treatment-acor2c.jpg"          |   Bin 30764 -> 0 bytes
+ .../images/resource/treatment-acor3a.jpg"          |   Bin 35371 -> 0 bytes
+ .../images/resource/treatment-acor3b.jpg"          |   Bin 32264 -> 0 bytes
+ .../images/resource/treatment-acor3c.jpg"          |   Bin 36541 -> 0 bytes
+ .../images/resource/treatment-acor4a.jpg"          |   Bin 42712 -> 0 bytes
+ .../images/resource/treatment-acor4b.jpg"          |   Bin 56571 -> 0 bytes
+ .../images/resource/treatment-acor4c.jpg"          |   Bin 55522 -> 0 bytes
+ .../images/resource/treatment-acor5a.jpg"          |   Bin 47632 -> 0 bytes
+ .../images/resource/treatment-acor5b.jpg"          |   Bin 39174 -> 0 bytes
+ .../images/resource/treatment-acor5c.jpg"          |   Bin 31623 -> 0 bytes
+ .../images/resource/treatment-block1.jpg"          |   Bin 176279 -> 0 bytes
+ .../images/resource/treatment-block2.jpg"          |   Bin 178712 -> 0 bytes
+ .../images/resource/treatment-block3.jpg"          |   Bin 213052 -> 0 bytes
+ .../images/resource/treatment-tab1.jpg"            |   Bin 105362 -> 0 bytes
+ .../images/resource/treatment-tab2.jpg"            |   Bin 97907 -> 0 bytes
+ .../images/resource/treatment-tab3.jpg"            |   Bin 93233 -> 0 bytes
+ .../images/resource/treatment-tab4.jpg"            |   Bin 85702 -> 0 bytes
+ .../images/resource/treatment-tab5.jpg"            |   Bin 86728 -> 0 bytes
+ .../images/resource/treatment-thumb1.png"          |   Bin 28979 -> 0 bytes
+ .../images/resource/treatment-thumb2.png"          |   Bin 26273 -> 0 bytes
+ .../images/resource/treatment-thumb3.png"          |   Bin 27113 -> 0 bytes
+ .../images/resource/treatment-thumb4.png"          |   Bin 25803 -> 0 bytes
+ .../images/resource/treatment1-icon.png"           |   Bin 4405 -> 0 bytes
+ .../images/resource/treatment1.jpg"                |   Bin 43365 -> 0 bytes
+ .../images/resource/treatment1.png"                |   Bin 3101 -> 0 bytes
+ .../images/resource/treatment2-icon.png"           |   Bin 4333 -> 0 bytes
+ .../images/resource/treatment2.jpg"                |   Bin 186860 -> 0 bytes
+ .../images/resource/treatment2.png"                |   Bin 3488 -> 0 bytes
+ .../images/resource/treatment3-icon.png"           |   Bin 3879 -> 0 bytes
+ .../images/resource/treatment3.jpg"                |   Bin 195344 -> 0 bytes
+ .../images/resource/treatment3.png"                |   Bin 3062 -> 0 bytes
+ .../images/resource/treatment4-icon.png"           |   Bin 4515 -> 0 bytes
+ .../images/resource/treatment4.jpg"                |   Bin 158527 -> 0 bytes
+ .../images/resource/treatment4.png"                |   Bin 3532 -> 0 bytes
+ .../images/resource/treatment5.png"                |   Bin 3394 -> 0 bytes
+ .../images/resource/trip.png"                      |   Bin 2227 -> 0 bytes
+ .../images/resource/user-thumb1.png"               |   Bin 5557 -> 0 bytes
+ .../images/resource/user-thumb2.png"               |   Bin 6524 -> 0 bytes
+ .../images/resource/user-thumb3.png"               |   Bin 6557 -> 0 bytes
+ .../images/resource/user-thumb4.png"               |   Bin 2882 -> 0 bytes
+ .../images/resource/why1.jpg"                      |   Bin 32846 -> 0 bytes
+ .../images/resource/why2.jpg"                      |   Bin 34094 -> 0 bytes
+ .../images/resource/why3.jpg"                      |   Bin 24104 -> 0 bytes
+ .../images/resource/why4.jpg"                      |   Bin 28499 -> 0 bytes
+ .../images/resource/yelp.png"                      |   Bin 1458 -> 0 bytes
+ .../Velura-Spa-Video-Hero/images/sidebar-logo.png" |   Bin 3192 -> 0 bytes
+ .../Velura-Spa-Video-Hero/index.html"              |  1353 -
+ .../Velura-Spa-Video-Hero/js/appear.js"            |   302 -
+ .../Velura-Spa-Video-Hero/js/bootstrap.min.js"     |     7 -
+ .../Velura-Spa-Video-Hero/js/custom-script.js"     |   578 -
+ .../Velura-Spa-Video-Hero/js/jquery-ui.js"         |     6 -
+ .../Velura-Spa-Video-Hero/js/jquery.fancybox.js"   |  5238 ----
+ .../Velura-Spa-Video-Hero/js/jquery.js"            |     2 -
+ .../Velura-Spa-Video-Hero/js/owl.js"               |     7 -
+ .../Velura-Spa-Video-Hero/js/parallax.min.js"      |     2 -
+ .../Velura-Spa-Video-Hero/js/popper.min.js"        |     5 -
+ .../Velura-Spa-Video-Hero/js/swiper.js"            |    14 -
+ .../Velura-Spa-Video-Hero/js/wow.js"               |     3 -
+ .../Velura-Spa-Video-Hero/membership.html"         |   843 -
+ .../Velura-Spa-Video-Hero/menu-list-1.html"        |     0
+ .../Velura-Spa-Video-Hero/packages.html"           |  1005 -
+ .../Velura-Spa-Video-Hero/service-details.html"    |   897 -
+ .../Velura-Spa-Video-Hero/testimonial.html"        |   680 -
+ .../treatment-accordian-style.html"                |  1072 -
+ .../treatment-block-style.html"                    |   824 -
+ .../treatment-tab-style.html"                      |   894 -
+ .../Velura-Spa-Video-Hero/treatment.html"          |   832 -
+ .../Velura-Spa-Video-Hero/treatments.html"         |     0
+ .../video/vellura-preview-demo.mp4"                |   Bin 17902673 -> 0 bytes
+ "soure-code-m\341\272\253u/main-html/404.html"     |   875 -
+ "soure-code-m\341\272\253u/main-html/about.html"   |  2140 --
+ .../main-html/assets/css/animate.min.css"          |  3610 ---
+ .../main-html/assets/css/aos.css"                  |     1 -
+ .../main-html/assets/css/bootstrap.min.css"        | 11685 --------
+ .../main-html/assets/css/color-2.css"              |    86 -
+ .../main-html/assets/css/color-3.css"              |    87 -
+ .../main-html/assets/css/color-4.css"              |    91 -
+ .../main-html/assets/css/custom-animate.css"       |  1927 --
+ .../main-html/assets/css/flaticon.css"             |   356 -
+ .../main-html/assets/css/font-awesome-all.css"     |  8249 ------
+ .../css/images/ui-bg_glass_55_fbf9ee_1x400.html"   |    14 -
+ .../css/images/ui-bg_glass_65_ffffff_1x400.html"   |    14 -
+ .../css/images/ui-bg_glass_75_dadada_1x400.html"   |    14 -
+ .../css/images/ui-bg_glass_75_e6e6e6_1x400.html"   |    14 -
+ .../css/images/ui-bg_glass_95_fef1ec_1x400.html"   |    14 -
+ .../ui-bg_highlight-soft_75_cccccc_1x100.html"     |    14 -
+ .../css/images/ui-icons_222222_256x240.html"       |    14 -
+ .../css/images/ui-icons_2e83ff_256x240.html"       |    14 -
+ .../css/images/ui-icons_454545_256x240.html"       |    14 -
+ .../css/images/ui-icons_888888_256x240.html"       |    14 -
+ .../css/images/ui-icons_cd0a0a_256x240.html"       |    14 -
+ .../main-html/assets/css/jarallax.css"             |    15 -
+ .../main-html/assets/css/jquery-ui.css"            |  1214 -
+ .../assets/css/jquery.magnific-popup.css"          |   351 -
+ .../main-html/assets/css/nice-select.css"          |   194 -
+ .../main-html/assets/css/odometer.min.css"         |     1 -
+ .../main-html/assets/css/owl.carousel.min.css"     |     6 -
+ .../assets/css/owl.theme.default.min.css"          |     6 -
+ .../main-html/assets/css/owl.video.play.html"      |    14 -
+ .../main-html/assets/css/responsive.css"           |  4017 ---
+ .../main-html/assets/css/style.css"                | 24290 -----------------
+ .../main-html/assets/css/swiper.min.css"           |    13 -
+ .../main-html/assets/css/twentytwenty.css"         |   264 -
+ .../main-html/assets/fonts/fa-brands-400.eot"      |   Bin 129924 -> 0 bytes
+ .../main-html/assets/fonts/fa-brands-400.html"     |    14 -
+ .../main-html/assets/fonts/fa-brands-400.ttf"      |   Bin 129620 -> 0 bytes
+ .../main-html/assets/fonts/fa-brands-400.woff"     |   Bin 87688 -> 0 bytes
+ .../main-html/assets/fonts/fa-brands-400.woff2"    |   Bin 74700 -> 0 bytes
+ .../main-html/assets/fonts/fa-brands-400d41d.eot"  |   Bin 129924 -> 0 bytes
+ .../main-html/assets/fonts/fa-light-300.html"      |    14 -
+ .../main-html/assets/fonts/fa-light-300.woff"      |   Bin 207100 -> 0 bytes
+ .../main-html/assets/fonts/fa-light-300.woff2"     |   Bin 156896 -> 0 bytes
+ .../main-html/assets/fonts/fa-light-300d41d.html"  |    14 -
+ .../main-html/assets/fonts/fa-light-301.html"      |    14 -
+ .../main-html/assets/fonts/fa-light-302.html"      |    14 -
+ .../main-html/assets/fonts/fa-regular-400.eot"     |   Bin 369628 -> 0 bytes
+ .../main-html/assets/fonts/fa-regular-400.html"    |    14 -
+ .../main-html/assets/fonts/fa-regular-400.woff"    |   Bin 191300 -> 0 bytes
+ .../main-html/assets/fonts/fa-regular-400.woff2"   |   Bin 145152 -> 0 bytes
+ .../main-html/assets/fonts/fa-regular-400d41d.eot" |   Bin 369628 -> 0 bytes
+ .../main-html/assets/fonts/fa-regular-401.html"    |    14 -
+ .../main-html/assets/fonts/fa-solid-900.html"      |    14 -
+ .../main-html/assets/fonts/fa-solid-900.woff"      |   Bin 155948 -> 0 bytes
+ .../main-html/assets/fonts/fa-solid-900.woff2"     |   Bin 117452 -> 0 bytes
+ .../main-html/assets/fonts/fa-solid-900d41d.html"  |    14 -
+ .../main-html/assets/fonts/fa-solid-901.html"      |    14 -
+ .../main-html/assets/fonts/fa-solid-902.html"      |    14 -
+ .../main-html/assets/fonts/icomoon78ed.eot"        |   Bin 71884 -> 0 bytes
+ .../main-html/assets/fonts/icomoon78ed.svg"        |    91 -
+ .../main-html/assets/fonts/icomoon78ed.ttf"        |   Bin 71720 -> 0 bytes
+ .../main-html/assets/fonts/icomoon78ed.woff"       |   Bin 71796 -> 0 bytes
+ .../assets/images/backgrounds/about-one-bg.jpg"    |   Bin 119122 -> 0 bytes
+ .../images/backgrounds/admission-one-bg.jpg"       |   Bin 250527 -> 0 bytes
+ .../images/backgrounds/career-area-bg-1.jpg"       |   Bin 59824 -> 0 bytes
+ .../images/backgrounds/career-area-bg-2.jpg"       |   Bin 58206 -> 0 bytes
+ .../backgrounds/course-details-video-link-bg.jpg"  |   Bin 14244 -> 0 bytes
+ .../assets/images/backgrounds/cta-one-bg.jpg"      |   Bin 24487 -> 0 bytes
+ .../images/backgrounds/feature-one-content-bg.jpg" |   Bin 15537 -> 0 bytes
+ .../assets/images/backgrounds/page-header-bg.jpg"  |   Bin 105617 -> 0 bytes
+ .../images/backgrounds/sidebar-contact-bg.jpg"     |   Bin 20615 -> 0 bytes
+ .../images/backgrounds/site-footer-four-bg.jpg"    |   Bin 126161 -> 0 bytes
+ .../images/backgrounds/site-footer-two-bg.jpg"     |   Bin 154575 -> 0 bytes
+ .../assets/images/backgrounds/slider-1-1.jpg"      |   Bin 160599 -> 0 bytes
+ .../assets/images/backgrounds/slider-1-2.jpg"      |   Bin 175277 -> 0 bytes
+ .../assets/images/backgrounds/slider-1-3.jpg"      |   Bin 156648 -> 0 bytes
+ .../assets/images/backgrounds/slider-2-1.jpg"      |   Bin 233720 -> 0 bytes
+ .../assets/images/backgrounds/slider-2-2.jpg"      |   Bin 250892 -> 0 bytes
+ .../assets/images/backgrounds/slider-2-3.jpg"      |   Bin 143073 -> 0 bytes
+ .../assets/images/backgrounds/video-one-bg.jpg"    |   Bin 111669 -> 0 bytes
+ .../images/backgrounds/why-choose-one-bg.jpg"      |   Bin 157789 -> 0 bytes
+ .../main-html/assets/images/blog/blog-1-1.jpg"     |   Bin 24285 -> 0 bytes
+ .../main-html/assets/images/blog/blog-1-2.jpg"     |   Bin 19542 -> 0 bytes
+ .../main-html/assets/images/blog/blog-1-3.jpg"     |   Bin 19780 -> 0 bytes
+ .../main-html/assets/images/blog/blog-1-4.jpg"     |   Bin 18559 -> 0 bytes
+ .../main-html/assets/images/blog/blog-1-5.jpg"     |   Bin 13710 -> 0 bytes
+ .../main-html/assets/images/blog/blog-1-6.jpg"     |   Bin 19875 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-1.jpg"     |   Bin 18392 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-10.jpg"    |   Bin 21236 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-2.jpg"     |   Bin 19287 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-3.jpg"     |   Bin 18037 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-4.jpg"     |   Bin 20491 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-5.jpg"     |   Bin 20411 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-6.jpg"     |   Bin 18740 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-7.jpg"     |   Bin 15472 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-8.jpg"     |   Bin 22742 -> 0 bytes
+ .../main-html/assets/images/blog/blog-2-9.jpg"     |   Bin 16017 -> 0 bytes
+ .../main-html/assets/images/blog/blog-3-1.jpg"     |   Bin 23351 -> 0 bytes
+ .../main-html/assets/images/blog/blog-3-2.jpg"     |   Bin 18475 -> 0 bytes
+ .../main-html/assets/images/blog/blog-3-3.jpg"     |   Bin 23165 -> 0 bytes
+ .../main-html/assets/images/blog/blog-4-1.jpg"     |   Bin 32805 -> 0 bytes
+ .../main-html/assets/images/blog/blog-4-2.jpg"     |   Bin 28663 -> 0 bytes
+ .../main-html/assets/images/blog/blog-4-3.jpg"     |   Bin 30663 -> 0 bytes
+ .../assets/images/blog/blog-details-img-1.jpg"     |   Bin 60054 -> 0 bytes
+ .../images/blog/blog-details-img-box-img-1.jpg"    |   Bin 17747 -> 0 bytes
+ .../images/blog/blog-details-img-box-img-2.jpg"    |   Bin 18280 -> 0 bytes
+ .../assets/images/blog/blog-four-author-img-1.jpg" |   Bin 2486 -> 0 bytes
+ .../assets/images/blog/blog-four-author-img-2.jpg" |   Bin 2834 -> 0 bytes
+ .../assets/images/blog/blog-four-author-img-3.jpg" |   Bin 2614 -> 0 bytes
+ .../assets/images/blog/blog-list-1-1.jpg"          |   Bin 50336 -> 0 bytes
+ .../assets/images/blog/blog-list-1-2.jpg"          |   Bin 56938 -> 0 bytes
+ .../assets/images/blog/blog-list-1-3.jpg"          |   Bin 55457 -> 0 bytes
+ .../assets/images/blog/blog-one-author-img-1.jpg"  |   Bin 2084 -> 0 bytes
+ .../assets/images/blog/blog-one-author-img-2.jpg"  |   Bin 2335 -> 0 bytes
+ .../assets/images/blog/blog-one-author-img-3.jpg"  |   Bin 1971 -> 0 bytes
+ .../assets/images/blog/blog-one-author-img-4.jpg"  |   Bin 1367 -> 0 bytes
+ .../assets/images/blog/blog-one-author-img-5.jpg"  |   Bin 1855 -> 0 bytes
+ .../assets/images/blog/blog-one-author-img-6.jpg"  |   Bin 1166 -> 0 bytes
+ .../assets/images/blog/blog-three-user-img-1.jpg"  |   Bin 1384 -> 0 bytes
+ .../assets/images/blog/blog-three-user-img-2.jpg"  |   Bin 1131 -> 0 bytes
+ .../assets/images/blog/blog-three-user-img-3.jpg"  |   Bin 1324 -> 0 bytes
+ .../main-html/assets/images/blog/comment-1-1.jpg"  |   Bin 2558 -> 0 bytes
+ .../main-html/assets/images/blog/comment-1-2.jpg"  |   Bin 2595 -> 0 bytes
+ .../assets/images/blog/recent-post-img-1.jpg"      |   Bin 13654 -> 0 bytes
+ .../assets/images/blog/recent-post-img-2.jpg"      |   Bin 11487 -> 0 bytes
+ .../assets/images/blog/recent-post-img-3.jpg"      |   Bin 9442 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-1.png"   |   Bin 3419 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-10.png"  |   Bin 1397 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-2.png"   |   Bin 3680 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-3.png"   |   Bin 1600 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-4.png"   |   Bin 2879 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-5.png"   |   Bin 1094 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-6.png"   |   Bin 2979 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-7.png"   |   Bin 2443 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-8.png"   |   Bin 1998 -> 0 bytes
+ .../main-html/assets/images/brand/brand-1-9.png"   |   Bin 3505 -> 0 bytes
+ .../courses/course-details-Instructor-img.jpg"     |   Bin 20401 -> 0 bytes
+ .../courses/course-details-client-img-1.jpg"       |   Bin 1682 -> 0 bytes
+ .../images/courses/course-details-img-1.jpg"       |   Bin 40915 -> 0 bytes
+ .../images/courses/course-list-client-img-1.jpg"   |   Bin 758 -> 0 bytes
+ .../images/courses/course-list-client-img-2.jpg"   |   Bin 822 -> 0 bytes
+ .../images/courses/course-list-client-img-3.jpg"   |   Bin 875 -> 0 bytes
+ .../images/courses/course-list-client-img-4.jpg"   |   Bin 842 -> 0 bytes
+ .../images/courses/course-list-client-img-5.jpg"   |   Bin 844 -> 0 bytes
+ .../assets/images/courses/course-list-img-1.jpg"   |   Bin 8574 -> 0 bytes
+ .../assets/images/courses/course-list-img-2.jpg"   |   Bin 15690 -> 0 bytes
+ .../assets/images/courses/course-list-img-3.jpg"   |   Bin 10280 -> 0 bytes
+ .../assets/images/courses/course-list-img-4.jpg"   |   Bin 8559 -> 0 bytes
+ .../assets/images/courses/course-list-img-5.jpg"   |   Bin 12849 -> 0 bytes
+ .../assets/images/courses/courses-1-1.jpg"         |   Bin 18510 -> 0 bytes
+ .../assets/images/courses/courses-1-2.jpg"         |   Bin 14836 -> 0 bytes
+ .../assets/images/courses/courses-1-3.jpg"         |   Bin 14381 -> 0 bytes
+ .../assets/images/courses/courses-1-4.jpg"         |   Bin 14057 -> 0 bytes
+ .../assets/images/courses/courses-2-1.jpg"         |   Bin 17168 -> 0 bytes
+ .../assets/images/courses/courses-2-2.jpg"         |   Bin 19147 -> 0 bytes
+ .../assets/images/courses/courses-2-3.jpg"         |   Bin 16488 -> 0 bytes
+ .../assets/images/courses/courses-3-1.jpg"         |   Bin 26006 -> 0 bytes
+ .../assets/images/courses/courses-3-2.jpg"         |   Bin 10147 -> 0 bytes
+ .../assets/images/courses/courses-3-3.jpg"         |   Bin 23763 -> 0 bytes
+ .../assets/images/courses/courses-3-4.jpg"         |   Bin 22234 -> 0 bytes
+ .../assets/images/courses/courses-3-5.jpg"         |   Bin 29200 -> 0 bytes
+ .../assets/images/courses/courses-3-6.jpg"         |   Bin 28662 -> 0 bytes
+ .../images/courses/courses-one-client-img-1.jpg"   |   Bin 1297 -> 0 bytes
+ .../images/courses/courses-one-client-img-2.jpg"   |   Bin 1314 -> 0 bytes
+ .../images/courses/courses-one-client-img-3.jpg"   |   Bin 1366 -> 0 bytes
+ .../images/courses/courses-one-client-img-4.jpg"   |   Bin 1306 -> 0 bytes
+ .../images/courses/courses-three-client-img-1.jpg" |   Bin 1332 -> 0 bytes
+ .../images/courses/courses-three-client-img-2.jpg" |   Bin 1169 -> 0 bytes
+ .../images/courses/courses-three-client-img-3.jpg" |   Bin 1182 -> 0 bytes
+ .../images/courses/courses-three-client-img-4.jpg" |   Bin 1308 -> 0 bytes
+ .../images/courses/courses-three-client-img-5.jpg" |   Bin 1294 -> 0 bytes
+ .../images/courses/courses-three-client-img-6.jpg" |   Bin 1428 -> 0 bytes
+ .../assets/images/favicons/apple-touch-icon.png"   |   Bin 51325 -> 0 bytes
+ .../assets/images/favicons/favicon-16x16.png"      |   Bin 881 -> 0 bytes
+ .../assets/images/favicons/favicon-32x32.png"      |   Bin 2627 -> 0 bytes
+ .../assets/images/favicons/site.webmanifest"       |     1 -
+ .../assets/images/gallery/gallery-1-1.jpg"         |   Bin 23337 -> 0 bytes
+ .../assets/images/gallery/gallery-1-2.jpg"         |   Bin 30406 -> 0 bytes
+ .../assets/images/gallery/gallery-1-3.jpg"         |   Bin 19709 -> 0 bytes
+ .../assets/images/gallery/gallery-1-4.jpg"         |   Bin 24842 -> 0 bytes
+ .../assets/images/gallery/gallery-1-5.jpg"         |   Bin 18438 -> 0 bytes
+ .../images/home-showcase/home-showcase-1-1.jpg"    |   Bin 18925 -> 0 bytes
+ .../images/home-showcase/home-showcase-1-2.jpg"    |   Bin 18100 -> 0 bytes
+ .../images/home-showcase/home-showcase-1-3.jpg"    |   Bin 20359 -> 0 bytes
+ .../images/home-showcase/home-showcase-1-4.jpg"    |   Bin 15293 -> 0 bytes
+ .../main-html/assets/images/icon/apple-icon.png"   |   Bin 10389 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-1.png"    |   Bin 1742 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-2.png"    |   Bin 2178 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-3.png"    |   Bin 2195 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-4.png"    |   Bin 2145 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-5.png"    |   Bin 2018 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-6.png"    |   Bin 1683 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-7.png"    |   Bin 2215 -> 0 bytes
+ .../assets/images/icon/categoyr-two-icon-8.png"    |   Bin 1748 -> 0 bytes
+ .../main-html/assets/images/icon/cross-out.png"    |   Bin 413 -> 0 bytes
+ .../assets/images/icon/google-play-icon.png"       |   Bin 9310 -> 0 bytes
+ .../assets/images/icon/icon-facebook.png"          |   Bin 1771 -> 0 bytes
+ .../assets/images/icon/icon-google-2.png"          |   Bin 1678 -> 0 bytes
+ .../assets/images/resources/about-three-img-1.jpg" |   Bin 22504 -> 0 bytes
+ .../assets/images/resources/about-three-img-2.jpg" |   Bin 17124 -> 0 bytes
+ .../assets/images/resources/about-two-img-1.jpg"   |   Bin 32645 -> 0 bytes
+ .../assets/images/resources/about-two-img-2.jpg"   |   Bin 24441 -> 0 bytes
+ .../images/resources/activities-one-shape-1.png"   |   Bin 29429 -> 0 bytes
+ .../assets/images/resources/banner-one-img-1.png"  |   Bin 116322 -> 0 bytes
+ .../images/resources/banner-one-review-img-1.jpg"  |   Bin 1553 -> 0 bytes
+ .../images/resources/banner-one-review-img-2.jpg"  |   Bin 1937 -> 0 bytes
+ .../images/resources/banner-one-review-img-3.jpg"  |   Bin 2192 -> 0 bytes
+ .../images/resources/become-a-teacher-img-1.jpg"   |   Bin 36683 -> 0 bytes
+ .../assets/images/resources/campus-1-1.jpg"        |   Bin 25965 -> 0 bytes
+ .../assets/images/resources/campus-1-2.jpg"        |   Bin 45427 -> 0 bytes
+ .../assets/images/resources/campus-1-3.jpg"        |   Bin 24926 -> 0 bytes
+ .../assets/images/resources/campus-1-4.jpg"        |   Bin 25875 -> 0 bytes
+ .../assets/images/resources/campus-1-5.jpg"        |   Bin 22998 -> 0 bytes
+ .../resources/course-grid-discount-img-1.png"      |   Bin 20882 -> 0 bytes
+ .../images/resources/enterprise-plan-img-1.jpg"    |   Bin 20336 -> 0 bytes
+ .../images/resources/enterprise-plan-img-2.jpg"    |   Bin 16538 -> 0 bytes
+ .../assets/images/resources/event-1-1.jpg"         |   Bin 4226 -> 0 bytes
+ .../assets/images/resources/event-1-2.jpg"         |   Bin 3337 -> 0 bytes
+ .../assets/images/resources/event-1-3.jpg"         |   Bin 3975 -> 0 bytes
+ .../assets/images/resources/event-1-4.jpg"         |   Bin 3634 -> 0 bytes
+ .../assets/images/resources/event-2-1.jpg"         |   Bin 19889 -> 0 bytes
+ .../assets/images/resources/event-2-2.jpg"         |   Bin 22017 -> 0 bytes
+ .../assets/images/resources/event-2-3.jpg"         |   Bin 27010 -> 0 bytes
+ .../assets/images/resources/event-2-4.jpg"         |   Bin 23538 -> 0 bytes
+ .../assets/images/resources/event-2-5.jpg"         |   Bin 19616 -> 0 bytes
+ .../assets/images/resources/event-2-6.jpg"         |   Bin 25692 -> 0 bytes
+ .../images/resources/event-details-top-img-1.jpg"  |   Bin 79260 -> 0 bytes
+ .../assets/images/resources/event-one-1-1.jpg"     |   Bin 58548 -> 0 bytes
+ .../assets/images/resources/event-one-1-2.jpg"     |   Bin 100245 -> 0 bytes
+ .../assets/images/resources/event-one-1-3.jpg"     |   Bin 65024 -> 0 bytes
+ .../assets/images/resources/event-one-1-4.jpg"     |   Bin 52549 -> 0 bytes
+ .../assets/images/resources/faq-one-img-1.jpg"     |   Bin 24969 -> 0 bytes
+ .../assets/images/resources/footer-logo-2.png"     |   Bin 1775 -> 0 bytes
+ .../assets/images/resources/footer-logo-3.png"     |   Bin 1668 -> 0 bytes
+ .../assets/images/resources/footer-logo-4.png"     |   Bin 1668 -> 0 bytes
+ .../assets/images/resources/live-class-img-1.jpg"  |   Bin 51911 -> 0 bytes
+ .../assets/images/resources/live-class-img-2.jpg"  |   Bin 37716 -> 0 bytes
+ .../assets/images/resources/live-class-img-3.jpg"  |   Bin 56437 -> 0 bytes
+ .../main-html/assets/images/resources/logo-1.png"  |   Bin 1791 -> 0 bytes
+ .../main-html/assets/images/resources/logo-2.png"  |   Bin 1554 -> 0 bytes
+ .../main-html/assets/images/resources/logo-3.png"  |   Bin 1613 -> 0 bytes
+ .../main-html/assets/images/resources/logo-4.png"  |   Bin 1575 -> 0 bytes
+ .../images/resources/main-slider-img-1-1.png"      |   Bin 143319 -> 0 bytes
+ .../images/resources/main-slider-img-1-2.png"      |   Bin 121609 -> 0 bytes
+ .../images/resources/main-slider-img-1-3.png"      |   Bin 129018 -> 0 bytes
+ .../images/resources/main-slider-student-1-1.jpg"  |   Bin 1649 -> 0 bytes
+ .../images/resources/main-slider-student-1-2.jpg"  |   Bin 2030 -> 0 bytes
+ .../images/resources/main-slider-student-1-3.jpg"  |   Bin 1929 -> 0 bytes
+ .../assets/images/resources/our-program-1-1.jpg"   |   Bin 17828 -> 0 bytes
+ .../assets/images/resources/our-program-1-2.jpg"   |   Bin 19607 -> 0 bytes
+ .../assets/images/resources/our-program-1-3.jpg"   |   Bin 18238 -> 0 bytes
+ .../assets/images/resources/research-1-1.jpg"      |   Bin 19644 -> 0 bytes
+ .../assets/images/resources/research-1-2.jpg"      |   Bin 19385 -> 0 bytes
+ .../assets/images/resources/research-1-3.jpg"      |   Bin 27398 -> 0 bytes
+ .../assets/images/resources/research-1-4.jpg"      |   Bin 24671 -> 0 bytes
+ .../resources/site-footer-four-payment-img1.png"   |   Bin 313 -> 0 bytes
+ .../resources/site-footer-four-payment-img2.png"   |   Bin 291 -> 0 bytes
+ .../resources/site-footer-four-payment-img3.png"   |   Bin 275 -> 0 bytes
+ .../resources/site-footer-four-payment-img4.png"   |   Bin 287 -> 0 bytes
+ .../resources/site-footer-four-payment-img5.png"   |   Bin 345 -> 0 bytes
+ .../resources/why-choose-one-single-img-1.png"     |   Bin 23973 -> 0 bytes
+ .../images/shapes/about-one-right-shape-1.png"     |   Bin 2569 -> 0 bytes
+ .../assets/images/shapes/banner-one-shape-1.png"   |   Bin 12906 -> 0 bytes
+ .../assets/images/shapes/banner-one-shape-2.png"   |   Bin 2956 -> 0 bytes
+ .../assets/images/shapes/banner-one-shape-3.png"   |   Bin 2370 -> 0 bytes
+ .../assets/images/shapes/banner-one-shape-4.png"   |   Bin 7169 -> 0 bytes
+ .../assets/images/shapes/banner-one-shape-5.png"   |   Bin 6426 -> 0 bytes
+ .../assets/images/shapes/banner-one-shape-bg.jpg"  |   Bin 239934 -> 0 bytes
+ .../images/shapes/banner-two-shape-bg-2.png"       |   Bin 25170 -> 0 bytes
+ .../assets/images/shapes/banner-two-shape-bg.jpg"  |   Bin 12544 -> 0 bytes
+ .../assets/images/shapes/contact-info-one-map.png" |   Bin 15088 -> 0 bytes
+ .../assets/images/shapes/contact-one-bg-shape.png" |   Bin 173049 -> 0 bytes
+ .../assets/images/shapes/counter-one-shape-bg.png" |   Bin 2410 -> 0 bytes
+ .../assets/images/shapes/counter-two-bg-shape.png" |   Bin 130362 -> 0 bytes
+ .../shapes/course-grid-discount-shape-bg.html"     |    14 -
+ .../assets/images/shapes/courses-one-bg-shape.png" |   Bin 40148 -> 0 bytes
+ .../images/shapes/department-one-bg-shape.png"     |   Bin 55024 -> 0 bytes
+ .../assets/images/shapes/footer-one-map.png"       |   Bin 63889 -> 0 bytes
+ .../assets/images/shapes/footer-three-map.png"     |   Bin 61554 -> 0 bytes
+ .../assets/images/shapes/our-program-shape-bg.png" |   Bin 4052 -> 0 bytes
+ .../assets/images/shapes/process-one-bg-shape.png" |   Bin 662 -> 0 bytes
+ .../assets/images/shapes/process-one-shape-1.png"  |   Bin 335 -> 0 bytes
+ .../assets/images/shapes/process-one-shape-2.png"  |   Bin 342 -> 0 bytes
+ .../assets/images/shapes/sliding-text-icon-1.png"  |   Bin 752 -> 0 bytes
+ .../assets/images/shop/cart-page-img-1.jpg"        |   Bin 5144 -> 0 bytes
+ .../assets/images/shop/cart-page-img-2.jpg"        |   Bin 3833 -> 0 bytes
+ .../assets/images/shop/cart-page-img-3.jpg"        |   Bin 3482 -> 0 bytes
+ .../assets/images/shop/cart-page-img-4.jpg"        |   Bin 4223 -> 0 bytes
+ .../assets/images/shop/product-details-img-1.jpg"  |   Bin 57609 -> 0 bytes
+ .../assets/images/shop/product-details-img-2.jpg"  |   Bin 31133 -> 0 bytes
+ .../assets/images/shop/product-details-img-3.jpg"  |   Bin 42166 -> 0 bytes
+ .../images/shop/product-details-thumb-img-1.jpg"   |   Bin 5320 -> 0 bytes
+ .../images/shop/product-details-thumb-img-2.jpg"   |   Bin 3849 -> 0 bytes
+ .../images/shop/product-details-thumb-img-3.jpg"   |   Bin 5818 -> 0 bytes
+ .../assets/images/shop/product-thumb-1.jpg"        |   Bin 2586 -> 0 bytes
+ .../assets/images/shop/product-thumb-2.jpg"        |   Bin 2376 -> 0 bytes
+ .../assets/images/shop/product-thumb-3.jpg"        |   Bin 2621 -> 0 bytes
+ .../assets/images/shop/product-thumb-4.jpg"        |   Bin 2672 -> 0 bytes
+ .../main-html/assets/images/shop/review-1-1.jpg"   |   Bin 11589 -> 0 bytes
+ .../main-html/assets/images/shop/review-1-2.jpg"   |   Bin 13431 -> 0 bytes
+ .../assets/images/shop/shop-product-1-1.jpg"       |   Bin 12714 -> 0 bytes
+ .../assets/images/shop/shop-product-1-2.jpg"       |   Bin 11167 -> 0 bytes
+ .../assets/images/shop/shop-product-1-3.jpg"       |   Bin 9556 -> 0 bytes
+ .../assets/images/shop/shop-product-1-4.jpg"       |   Bin 21209 -> 0 bytes
+ .../assets/images/shop/shop-product-1-5.jpg"       |   Bin 16008 -> 0 bytes
+ .../assets/images/shop/shop-product-1-6.jpg"       |   Bin 16736 -> 0 bytes
+ .../assets/images/shop/shop-product-1-7.jpg"       |   Bin 12291 -> 0 bytes
+ .../assets/images/shop/shop-product-1-8.jpg"       |   Bin 13310 -> 0 bytes
+ .../assets/images/shop/shop-product-1-9.jpg"       |   Bin 18114 -> 0 bytes
+ .../assets/images/shop/shop-product-2-1.jpg"       |   Bin 7553 -> 0 bytes
+ .../assets/images/shop/shop-product-2-2.jpg"       |   Bin 6964 -> 0 bytes
+ .../assets/images/shop/shop-product-2-3.jpg"       |   Bin 6442 -> 0 bytes
+ .../assets/images/shop/shop-product-2-4.jpg"       |   Bin 11645 -> 0 bytes
+ .../assets/images/shop/shop-product-2-5.jpg"       |   Bin 9645 -> 0 bytes
+ .../assets/images/shop/shop-product-2-6.jpg"       |   Bin 10642 -> 0 bytes
+ .../assets/images/shop/shop-product-2-7.jpg"       |   Bin 8161 -> 0 bytes
+ .../assets/images/shop/shop-product-2-8.jpg"       |   Bin 8809 -> 0 bytes
+ .../assets/images/shop/shop-product-2-9.jpg"       |   Bin 10857 -> 0 bytes
+ .../assets/images/shop/wishlist-page-img-1.jpg"    |   Bin 5144 -> 0 bytes
+ .../assets/images/shop/wishlist-page-img-2.jpg"    |   Bin 3603 -> 0 bytes
+ .../assets/images/shop/wishlist-page-img-3.jpg"    |   Bin 5946 -> 0 bytes
+ .../assets/images/shop/wishlist-page-img-4.jpg"    |   Bin 3482 -> 0 bytes
+ .../assets/images/team/instructors-1-1.jpg"        |   Bin 10026 -> 0 bytes
+ .../assets/images/team/instructors-1-2.jpg"        |   Bin 13282 -> 0 bytes
+ .../assets/images/team/instructors-1-3.jpg"        |   Bin 10945 -> 0 bytes
+ .../assets/images/team/instructors-1-4.jpg"        |   Bin 12244 -> 0 bytes
+ .../assets/images/team/instructors-1-5.jpg"        |   Bin 10186 -> 0 bytes
+ .../assets/images/team/instructors-1-6.jpg"        |   Bin 8517 -> 0 bytes
+ .../assets/images/team/instructors-1-7.jpg"        |   Bin 8760 -> 0 bytes
+ .../assets/images/team/instructors-1-8.jpg"        |   Bin 8694 -> 0 bytes
+ .../assets/images/team/instructors-2-1.jpg"        |   Bin 17816 -> 0 bytes
+ .../assets/images/team/instructors-2-2.jpg"        |   Bin 10990 -> 0 bytes
+ .../assets/images/team/instructors-2-3.jpg"        |   Bin 11914 -> 0 bytes
+ .../assets/images/team/instructors-2-4.jpg"        |   Bin 19659 -> 0 bytes
+ .../assets/images/team/team-details-img-1.jpg"     |   Bin 32017 -> 0 bytes
+ .../assets/images/testimonial/testimonial-1-1.png" |   Bin 15254 -> 0 bytes
+ .../assets/images/testimonial/testimonial-1-2.png" |   Bin 16094 -> 0 bytes
+ .../assets/images/testimonial/testimonial-1-3.png" |   Bin 17536 -> 0 bytes
+ .../assets/images/testimonial/testimonial-2-1.jpg" |   Bin 3076 -> 0 bytes
+ .../assets/images/testimonial/testimonial-2-2.jpg" |   Bin 2773 -> 0 bytes
+ .../assets/images/testimonial/testimonial-2-3.jpg" |   Bin 2895 -> 0 bytes
+ .../assets/images/testimonial/testimonial-2-4.jpg" |   Bin 2561 -> 0 bytes
+ .../assets/images/testimonial/testimonial-2-5.jpg" |   Bin 2377 -> 0 bytes
+ .../assets/images/testimonial/testimonial-2-6.jpg" |   Bin 2738 -> 0 bytes
+ .../assets/images/testimonial/testimonial-4-1.jpg" |   Bin 9754 -> 0 bytes
+ .../assets/images/testimonial/testimonial-4-2.jpg" |   Bin 7667 -> 0 bytes
+ .../assets/images/testimonial/testimonial-4-3.jpg" |   Bin 7259 -> 0 bytes
+ .../images/testimonial/testimonial-one-img-1.jpg"  |   Bin 21825 -> 0 bytes
+ .../main-html/assets/js/aos.js"                    |     1 -
+ .../main-html/assets/js/bootstrap.bundle.min.js"   |     7 -
+ .../main-html/assets/js/gsap/ScrollTrigger.js"     |   509 -
+ .../main-html/assets/js/gsap/SplitText.js"         |   145 -
+ .../main-html/assets/js/gsap/gsap.js"              |   680 -
+ .../main-html/assets/js/isotope.js"                |     8 -
+ .../main-html/assets/js/jarallax.min.js"           |     7 -
+ .../main-html/assets/js/jquery-latest.js"          |  3182 ---
+ .../main-html/assets/js/jquery-sidebar-content.js" |    39 -
+ .../main-html/assets/js/jquery-ui.js"              | 16159 -----------
+ .../main-html/assets/js/jquery.appear.min.js"      |     1 -
+ .../main-html/assets/js/jquery.event.move.js"      |   599 -
+ .../assets/js/jquery.magnific-popup.min.js"        |     4 -
+ .../main-html/assets/js/jquery.nice-select.min.js" |     4 -
+ .../main-html/assets/js/jquery.validate.min.js"    |     4 -
+ .../main-html/assets/js/marquee.min.js"            |     1 -
+ .../main-html/assets/js/odometer.min.js"           |     2 -
+ .../main-html/assets/js/owl.carousel.min.js"       |     7 -
+ .../main-html/assets/js/script.js"                 |  1561 --
+ .../main-html/assets/js/swiper.min.js"             |    14 -
+ .../main-html/assets/js/twentytwenty.js"           |   151 -
+ .../main-html/assets/js/wow.js"                    |     2 -
+ .../main-html/become-a-teacher.html"               |   984 -
+ .../main-html/blog-details.html"                   |  1170 -
+ .../main-html/blog-left-sidebar.html"              |  1361 -
+ .../main-html/blog-right-sidebar.html"             |  1362 -
+ .../main-html/blog-standard.html"                  |  1101 -
+ "soure-code-m\341\272\253u/main-html/blog.html"    |  1143 -
+ "soure-code-m\341\272\253u/main-html/cart.html"    |  1083 -
+ .../main-html/checkout.html"                       |  1110 -
+ .../main-html/contact-1.html"                      |    14 -
+ "soure-code-m\341\272\253u/main-html/contact.html" |   949 -
+ .../main-html/course-details.html"                 |  1861 --
+ .../main-html/course-list.html"                    |  1330 -
+ "soure-code-m\341\272\253u/main-html/course.html"  |  1432 -
+ .../main-html/event-details.html"                  |  1144 -
+ "soure-code-m\341\272\253u/main-html/events.html"  |  1024 -
+ "soure-code-m\341\272\253u/main-html/faq.html"     |  1001 -
+ .../main-html/index-one-page.html"                 |  2834 --
+ "soure-code-m\341\272\253u/main-html/index.html"   |  2868 --
+ .../main-html/index2-one-page.html"                |  2249 --
+ "soure-code-m\341\272\253u/main-html/index2.html"  |  2283 --
+ .../main-html/index3-one-page.html"                |  2219 --
+ "soure-code-m\341\272\253u/main-html/index3.html"  |  2254 --
+ .../main-html/index4-one-page.html"                |  2830 --
+ "soure-code-m\341\272\253u/main-html/index4.html"  |  2864 --
+ .../main-html/instructor-details.html"             |  1055 -
+ .../main-html/instructor.html"                     |  1187 -
+ "soure-code-m\341\272\253u/main-html/login.html"   |   905 -
+ "soure-code-m\341\272\253u/main-html/pricing.html" |   952 -
+ "soure-code-m\341\272\253u/main-html/privacy.html" |  1051 -
+ .../main-html/product-details.html"                |  1455 -
+ .../main-html/products.html"                       |  2719 --
+ "soure-code-m\341\272\253u/main-html/sign-up.html" |   918 -
+ .../main-html/testimonials.html"                   |  1035 -
+ .../main-html/wishlist.html"                       |   972 -
+ src/Sims.Api/Controllers/AcademicController.cs     |    33 -
+ src/Sims.Api/Controllers/AuthController.cs         |    31 -
+ src/Sims.Api/Controllers/ContentController.cs      |    48 -
+ src/Sims.Api/Controllers/CoursesController.cs      |    63 -
+ .../Controllers/LearningFilesController.cs         |    27 -
+ .../Controllers/LessonCommentsController.cs        |    55 -
+ src/Sims.Api/Controllers/LmsController.cs          |   132 -
+ .../Controllers/NotificationsController.cs         |    42 -
+ src/Sims.Api/Controllers/QuestionsController.cs    |    14 -
+ src/Sims.Api/Controllers/QuizController.cs         |    40 -
+ src/Sims.Api/Controllers/ReportsController.cs      |    16 -
+ src/Sims.Api/Controllers/SearchController.cs       |    30 -
+ src/Sims.Api/Controllers/StudentsController.cs     |    13 -
+ .../Controllers/SystemAdministrationController.cs  |    92 -
+ src/Sims.Api/Controllers/TeachingController.cs     |    34 -
+ src/Sims.Api/Controllers/VideoFilesController.cs   |    29 -
+ src/Sims.Api/Filters/PositiveRouteIdFilter.cs      |    36 -
+ .../Middleware/GlobalExceptionMiddleware.cs        |    58 -
+ src/Sims.Api/Program.cs                            |   105 -
+ src/Sims.Api/Properties/launchSettings.json        |    41 -
+ src/Sims.Api/Sims.Api.csproj                       |    26 -
+ src/Sims.Api/Sims.Api.http                         |     6 -
+ src/Sims.Api/appsettings.Development.json          |     3 -
+ src/Sims.Api/appsettings.json                      |    52 -
+ src/Sims.Api/logs/.gitkeep                         |     1 -
+ src/Sims.Api/storage/cache/.gitkeep                |     1 -
+ src/Sims.Api/storage/exports/.gitkeep              |     1 -
+ src/Sims.Api/storage/processing/.gitkeep           |     1 -
+ src/Sims.Api/storage/temp/.gitkeep                 |     1 -
+ src/Sims.Api/web.config                            |    21 -
+ src/Sims.Api/wwwroot/Media/Audio/.gitkeep          |     1 -
+ src/Sims.Api/wwwroot/Media/File/.gitkeep           |     1 -
+ .../Lessons/Demo/51T.XD1_MC_QP_102251_KeHoach.pdf  |   Bin 28057 -> 0 bytes
+ .../wwwroot/Media/File/Lessons/Demo/STGV.pdf       |   Bin 2177204 -> 0 bytes
+ .../wwwroot/Media/File/Lessons/Demo/mau_hk.pdf     |   Bin 863090 -> 0 bytes
+ src/Sims.Api/wwwroot/Media/Image/.gitkeep          |     1 -
+ src/Sims.Api/wwwroot/Media/Thumbnail/.gitkeep      |     1 -
+ src/Sims.Api/wwwroot/Media/Video/.gitkeep          |     1 -
+ src/SimsData/Data/DatabaseInitializer.cs           |    91 -
+ src/SimsData/Data/SqlConnectionFactory.cs          |    13 -
+ src/SimsData/Health/SqlServerHealthCheck.cs        |    22 -
+ src/SimsData/Security/TokenService.cs              |    23 -
+ src/SimsData/SimsData.csproj                       |    28 -
+ .../Storage/LocalAssignmentStorageService.cs       |   177 -
+ src/SimsData/Storage/LocalVideoStorageService.cs   |   109 -
+ src/SimsData/Storage/MediaStorageOptions.cs        |    13 -
+ src/SimsData/Storage/ProjectStorageOptions.cs      |    16 -
+ src/SimsData/Storage/ProjectStorageService.cs      |   135 -
+ .../Storage/StorageCleanupHostedService.cs         |    38 -
+ .../Base/LMS_AssignmentSubmissionFilesBase.cs      |    81 -
+ .../Base/LMS_AssignmentSubmissionsBase.cs          |   161 -
+ src/SimsObject/Base/LMS_ContentInteractionsBase.cs |   137 -
+ src/SimsObject/Base/LMS_EnrollmentsBase.cs         |   105 -
+ src/SimsObject/Base/LMS_InteractiveContentsBase.cs |   105 -
+ src/SimsObject/Base/LMS_LearningSessionsBase.cs    |   145 -
+ src/SimsObject/Base/LMS_LessonCommentsBase.cs      |   113 -
+ src/SimsObject/Base/LMS_QuestionAnswerKeysBase.cs  |    57 -
+ src/SimsObject/Base/LMS_QuestionBlanksBase.cs      |    35 -
+ src/SimsObject/Base/LMS_QuestionOptionsBase.cs     |    73 -
+ src/SimsObject/Base/LMS_QuestionsBase.cs           |   121 -
+ src/SimsObject/Base/LMS_QuizAttemptAnswersBase.cs  |    73 -
+ src/SimsObject/Base/LMS_QuizAttemptsBase.cs        |   105 -
+ src/SimsObject/Base/LMS_QuizQuestionsBase.cs       |    65 -
+ src/SimsObject/Base/LMS_QuizzesBase.cs             |   113 -
+ .../Base/LMS_StudentAnswerOptionsBase.cs           |    33 -
+ src/SimsObject/Base/LMS_StudentAnswersBase.cs      |   177 -
+ .../Base/LMS_StudentLessonProgressBase.cs          |   137 -
+ .../Base/LMS_StudentVideoProgressBase.cs           |   153 -
+ src/SimsObject/Base/LMS_StudySessionsBase.cs       |   129 -
+ src/SimsObject/Base/LMS_VideoInteractionsBase.cs   |   153 -
+ src/SimsObject/Base/README.md                      |    21 -
+ src/SimsObject/Base/SIM_ChaptersBase.cs            |    89 -
+ src/SimsObject/Base/SIM_ClassBase.cs               |   129 -
+ src/SimsObject/Base/SIM_Class_SubjectBase.cs       |   177 -
+ src/SimsObject/Base/SIM_CourseBase.cs              |    65 -
+ src/SimsObject/Base/SIM_CourseCategoriesBase.cs    |    65 -
+ src/SimsObject/Base/SIM_CoursesBase.cs             |   177 -
+ src/SimsObject/Base/SIM_LessonResourcesBase.cs     |   113 -
+ src/SimsObject/Base/SIM_LessonsBase.cs             |   217 -
+ src/SimsObject/Base/SIM_ScienceBase.cs             |    57 -
+ src/SimsObject/Base/SIM_StudentBase.cs             |   137 -
+ src/SimsObject/Base/SIM_SubjectBase.cs             |   105 -
+ src/SimsObject/Base/SIM_TeacherBase.cs             |    97 -
+ src/SimsObject/Base/SIM_TimetableBase.cs           |   129 -
+ src/SimsObject/Base/SIM_VideoAssetSharesBase.cs    |    57 -
+ src/SimsObject/Base/SIM_VideoAssetsBase.cs         |   145 -
+ src/SimsObject/Base/SIM_VideoVersionsBase.cs       |   185 -
+ src/SimsObject/Base/SIM_VideosBase.cs              |   129 -
+ src/SimsObject/Base/SIM_YearBase.cs                |    65 -
+ src/SimsObject/Base/SYS_AuditLogsBase.cs           |   105 -
+ src/SimsObject/Base/SYS_NotificationsBase.cs       |   129 -
+ src/SimsObject/Base/SYS_PermissionCategoryBase.cs  |    57 -
+ src/SimsObject/Base/SYS_PermissionGroupBase.cs     |    57 -
+ src/SimsObject/Base/SYS_PermissionsBase.cs         |    73 -
+ src/SimsObject/Base/SYS_RefreshTokensBase.cs       |    89 -
+ src/SimsObject/Base/SYS_RolePermissionsBase.cs     |    33 -
+ src/SimsObject/Base/SYS_RolesBase.cs               |    57 -
+ src/SimsObject/Base/SYS_SystemSettingsBase.cs      |   113 -
+ src/SimsObject/Base/SYS_UserRolesBase.cs           |    33 -
+ src/SimsObject/Base/SYS_UsersBase.cs               |   161 -
+ src/SimsObject/Common/ApiResponse.cs               |    12 -
+ src/SimsObject/Common/InputGuard.cs                |    46 -
+ src/SimsObject/DTOs/Dtos.cs                        |   459 -
+ src/SimsObject/Interfaces/Services.cs              |   170 -
+ src/SimsObject/LMS_AssignmentSubmissionFiles.cs    |     9 -
+ src/SimsObject/LMS_AssignmentSubmissions.cs        |     9 -
+ src/SimsObject/LMS_ContentInteractions.cs          |     9 -
+ src/SimsObject/LMS_Enrollments.cs                  |     9 -
+ src/SimsObject/LMS_InteractiveContents.cs          |     9 -
+ src/SimsObject/LMS_LearningSessions.cs             |     9 -
+ src/SimsObject/LMS_LessonComments.cs               |     9 -
+ src/SimsObject/LMS_QuestionAnswerKeys.cs           |     9 -
+ src/SimsObject/LMS_QuestionOptions.cs              |     9 -
+ src/SimsObject/LMS_Questions.cs                    |     9 -
+ src/SimsObject/LMS_QuizAttemptAnswers.cs           |     9 -
+ src/SimsObject/LMS_QuizAttempts.cs                 |     9 -
+ src/SimsObject/LMS_QuizQuestions.cs                |     9 -
+ src/SimsObject/LMS_Quizzes.cs                      |     9 -
+ src/SimsObject/LMS_StudentAnswerOptions.cs         |     9 -
+ src/SimsObject/LMS_StudentAnswers.cs               |     9 -
+ src/SimsObject/LMS_StudentLessonProgress.cs        |     9 -
+ src/SimsObject/LMS_StudentVideoProgress.cs         |     9 -
+ src/SimsObject/LMS_StudySessions.cs                |     9 -
+ src/SimsObject/LMS_VideoInteractions.cs            |     9 -
+ src/SimsObject/Models.cs                           |    33 -
+ src/SimsObject/SIM_Chapters.cs                     |     9 -
+ src/SimsObject/SIM_Class.cs                        |     9 -
+ src/SimsObject/SIM_Class_Subject.cs                |     9 -
+ src/SimsObject/SIM_Course.cs                       |     9 -
+ src/SimsObject/SIM_CourseCategories.cs             |     9 -
+ src/SimsObject/SIM_Courses.cs                      |     9 -
+ src/SimsObject/SIM_LessonResources.cs              |     9 -
+ src/SimsObject/SIM_Lessons.cs                      |     9 -
+ src/SimsObject/SIM_Science.cs                      |     9 -
+ src/SimsObject/SIM_Student.cs                      |     9 -
+ src/SimsObject/SIM_Subject.cs                      |     9 -
+ src/SimsObject/SIM_Teacher.cs                      |     9 -
+ src/SimsObject/SIM_Timetable.cs                    |     9 -
+ src/SimsObject/SIM_VideoAssetShares.cs             |     9 -
+ src/SimsObject/SIM_VideoAssets.cs                  |     9 -
+ src/SimsObject/SIM_VideoVersions.cs                |     9 -
+ src/SimsObject/SIM_Videos.cs                       |     9 -
+ src/SimsObject/SIM_Year.cs                         |     9 -
+ src/SimsObject/SYS_AuditLogs.cs                    |     9 -
+ src/SimsObject/SYS_Notifications.cs                |     9 -
+ src/SimsObject/SYS_PermissionCategory.cs           |     9 -
+ src/SimsObject/SYS_PermissionGroup.cs              |     9 -
+ src/SimsObject/SYS_Permissions.cs                  |     9 -
+ src/SimsObject/SYS_RefreshTokens.cs                |     9 -
+ src/SimsObject/SYS_RolePermissions.cs              |     9 -
+ src/SimsObject/SYS_Roles.cs                        |     9 -
+ src/SimsObject/SYS_SystemSettings.cs               |     9 -
+ src/SimsObject/SYS_UserRoles.cs                    |     9 -
+ src/SimsObject/SYS_Users.cs                        |     9 -
+ src/SimsObject/SimsObject.csproj                   |     9 -
+ src/SimsService/DependencyInjection.cs             |    39 -
+ src/SimsService/Services/AcademicService.cs        |   116 -
+ src/SimsService/Services/AuthService.cs            |    35 -
+ src/SimsService/Services/ContentService.cs         |   171 -
+ src/SimsService/Services/CourseService.cs          |    69 -
+ src/SimsService/Services/LearningService.cs        |   219 -
+ src/SimsService/Services/LessonCommentService.cs   |   136 -
+ src/SimsService/Services/NotificationService.cs    |    61 -
+ src/SimsService/Services/QuestionService.cs        |    79 -
+ src/SimsService/Services/QuizService.cs            |    97 -
+ src/SimsService/Services/ReportService.cs          |    30 -
+ src/SimsService/Services/SearchService.cs          |    23 -
+ src/SimsService/Services/StudentService.cs         |    16 -
+ .../Services/SystemAdministrationService.cs        |   178 -
+ src/SimsService/Services/TeachingService.cs        |    56 -
+ src/SimsService/SimsService.csproj                 |    23 -
+ tests/Sims.IntegrationTests/ApiContractTests.cs    |    15 -
+ tests/Sims.IntegrationTests/AssemblyInfo.cs        |     3 -
+ tests/Sims.IntegrationTests/SecurityTests.cs       |   160 -
+ .../Sims.IntegrationTests.csproj                   |    31 -
+ tests/Sims.IntegrationTests/SystemTests.cs         |  1268 -
+ tests/Sims.UnitTests/ApiResponseTests.cs           |    22 -
+ tests/Sims.UnitTests/InputGuardTests.cs            |    36 -
+ tests/Sims.UnitTests/Sims.UnitTests.csproj         |    27 -
+ tools/SimsObjectGenerator/Program.cs               |   345 -
+ .../SimsObjectGenerator/SimsObjectGenerator.csproj |    14 -
+ z22.mp4                                            |   Bin 3130713 -> 0 bytes
+ z3.mp4                                             |   Bin 3130713 -> 0 bytes
+ z5.mp4                                             |   Bin 3130713 -> 0 bytes
+ z6.mp4                                             |   Bin 3130713 -> 0 bytes
+ z7.mp4                                             |   Bin 3130713 -> 0 bytes
+ 939 files changed, 106 insertions(+), 229552 deletions(-)
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/BACKEND_ARCHITECTURE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/DEPLOYMENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/DEVELOPMENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/PRODUCTION_DEPLOYMENT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/SQL_INJECTION_SECURITY_REVIEW.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/production/Invoke-ProductionDatabaseSync.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/production/Publish-Backend.ps1', LF will be replaced by CRLF the next time Git touches it

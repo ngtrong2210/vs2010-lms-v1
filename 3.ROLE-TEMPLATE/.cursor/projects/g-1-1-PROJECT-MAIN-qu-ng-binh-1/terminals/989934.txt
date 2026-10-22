@@ -1,0 +1,28 @@
+---
+pid: 22432
+cwd: "G:\\1.1-PROJECT-MAIN\\quảng binh-1"
+command: "$ErrorActionPreference = \"Stop\"\n$work = \"C:\\Users\\trong\\AppData\\Local\\Temp\\mau2_build\"\n$srcAscii = Join-Path $work \"source.docx\"\n\n$wdFindStop = 0\n$wdFieldMergeField = 59\n$wdAlertsNone = 0\n$wdDoNotSaveChanges = 0\n$wdFormatDocument = 0\n\nfunction Find-From($doc, [int]$from, [string]$text) {\n  $rng = $doc.Range($from, $doc.Content.End)\n  $rng.Find.ClearFormatting() | Out-Null\n  $rng.Find.Text = $text\n  $rng.Find.Forward = $true\n  $rng.Find.Wrap = $wdFindStop\n  $rng.Find.MatchWildcards = $false\n  if ($rng.Find.Execute()) { return $rng }\n  return $null\n}\n\nfunction Insert-FieldAfterLabel($doc, [ref]$cursor, [string]$label, [string]$fieldName, [string]$untilLabel) {\n  $found = Find-From $doc $cursor.Value $label\n  if ($null -eq $found) { Write-Host \"NOT FOUND: $label\"; return }\n  $insertStart = $found.End\n  $paraEnd = $found.Paragraphs.Item(1).Range.End - 1\n  $cutEnd = $paraEnd\n  if ($untilLabel -ne \"\") {\n    $untilRng = Find-From $doc $insertStart $untilLabel\n    if ($null -ne $untilRng -and $untilRng.Start -le $paraEnd) { $cutEnd = $untilRng.Start }\n  }\n  if ($cutEnd -lt $insertStart) { $cutEnd = $insertStart }\n  $replaceRng = $doc.Range($insertStart, $cutEnd)\n  $replaceRng.Text = \" \"\n  $fldRng = $doc.Range($replaceRng.End, $replaceRng.End)\n  $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, $fieldName, $true)\n  $cursor.Value = $replaceRng.End + 2\n  Write-Host (\"OK {0}\" -f $fieldName)\n}\n\n$word = New-Object -ComObject Word.Application\n$word.Visible = $false\n$word.DisplayAlerts = $wdAlertsNone\n$word.Options.BackgroundSave = $false\n$doc = $word.Documents.Open($srcAscii, $false, $true)\n\n$cursor = 0\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"Tôi là\" \"FullName\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"Sinh ngày:\" \"BirthDateText\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"nhân dân:\" \"PersonId\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"PersonIdDate\" \"nơi cấp\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"nơi cấp\" \"PersonIdPlace\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe số:\" \"DriverCerNo\" \"hạng\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"hạng\" \"BangLX\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"do:\" \"DriverCerPlace\" \"cấp ngày:\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"DriverCerDate\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe hạng:\" \"Specialbranchid\" \"\"\n$dateFound = Find-From $doc $cursor \"Quảng Trị\"\nif ($null -eq $dateFound) { $dateFound = Find-From $doc 0 \"Quảng Trị\" }\nif ($null -ne $dateFound) {\n  $para = $dateFound.Paragraphs.Item(1)\n  $paraRng = $doc.Range($para.Range.Start, $para.Range.End - 1)\n  $paraRng.Text = \"\"\n  $fldRng = $doc.Range($paraRng.Start, $paraRng.Start)\n  $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, \"NgayKy\", $true)\n  Write-Host \"OK NgayKy\"\n}\n\nWrite-Host \"Creating new doc via FormattedText...\"\n$newDoc = $word.Documents.Add()\n$newDoc.PageSetup.PageWidth = $doc.PageSetup.PageWidth\n$newDoc.PageSetup.PageHeight = $doc.PageSetup.PageHeight\n$newDoc.PageSetup.TopMargin = $doc.PageSetup.TopMargin\n$newDoc.PageSetup.BottomMargin = $doc.PageSetup.BottomMargin\n$newDoc.PageSetup.LeftMargin = $doc.PageSetup.LeftMargin\n$newDoc.PageSetup.RightMargin = $doc.PageSetup.RightMargin\n$newDoc.Content.FormattedText = $doc.Content.FormattedText\n\n$out = Join-Path $work \"Mau2_DonLaiXeCongNongNghiep.doc\"\nif (Test-Path $out) { Remove-Item $out -Force }\nWrite-Host \"SaveAs new doc as .doc...\"\n$newDoc.SaveAs($out, $wdFormatDocument)\nWrite-Host \"saved size=$((Get-Item $out).Length)\"\n\nWrite-Host \"FIELDS in new doc:\"\nforeach ($f in @($newDoc.Fields)) { Write-Host (\"  \" + $f.Code.Text.Trim()) }\n\n$newDoc.Close($wdDoNotSaveChanges)\n$doc.Close($wdDoNotSaveChanges)\n$word.Quit()\nWrite-Host \"done\""
+title: "Copy content to new Word doc then SaveAs .doc"
+status: failed   
+started_at: 2026-08-25T06:46:46.851Z
+running_for_ms: 115684   
+---
+OK FullName
+OK BirthDateText
+OK PersonId
+OK PersonIdDate
+OK PersonIdPlace
+OK DriverCerNo
+OK BangLX
+OK DriverCerPlace
+OK DriverCerDate
+OK Specialbranchid
+OK NgayKy
+Creating new doc via FormattedText...
+SaveAs new doc as .doc...
+
+---
+exit_code: 4294967295
+elapsed_ms: 115684
+ended_at: 2026-08-25T06:48:42.535Z
+---

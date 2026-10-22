@@ -1,0 +1,1128 @@
+Build started 17/10/2026 14:28:02.
+
+Project "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj" on node 1 (Build target(s)).
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2189,5): warning MSB9008: The referenced project ..\GeneralObject\GeneralObject.csproj does not exist. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+ResolveAssemblyReferences:
+  Primary reference "BusinessObject".
+      Could not find dependent files. Expected file "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\BusinessObject.dll" does not exist.
+      Could not find dependent files. Expected file "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\BusinessObject.dll" does not exist.
+      Resolved file path is "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\BusinessObject.dll".
+      Reference found at search path location "".
+      The ImageRuntimeVersion for this reference is "".
+  Primary reference "DataAccess".
+      Could not find dependent files. Expected file "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DataAccess.dll" does not exist.
+      Could not find dependent files. Expected file "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DataAccess.dll" does not exist.
+      Resolved file path is "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DataAccess.dll".
+      Reference found at search path location "".
+      The ImageRuntimeVersion for this reference is "".
+  Primary reference "SimsObject".
+      Could not find dependent files. Expected file "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SimsObject.dll" does not exist.
+      Could not find dependent files. Expected file "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SimsObject.dll" does not exist.
+      Resolved file path is "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SimsObject.dll".
+      Reference found at search path location "".
+      The ImageRuntimeVersion for this reference is "".
+  Primary reference "Aspose.Words".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Aspose.Words". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\Aspose.Words.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Aspose.Words.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Aspose.Words.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Aspose.Words.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Aspose.Words.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Aspose.Words.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Aspose.Words.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Aspose.Words", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Aspose.Words, Version=11.3.0.0, Culture=neutral, PublicKeyToken=47d5d0e1ef9d080b, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\Aspose.Words.winmd", but it didn't exist.
+          Considered "..\bin\Debug\Aspose.Words.dll", but it didn't exist.
+          Considered "..\bin\Debug\Aspose.Words.exe", but it didn't exist.
+  Primary reference "C1.C1Excel.2".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "C1.C1Excel.2". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\C1.C1Excel.2.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\C1.C1Excel.2.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\C1.C1Excel.2.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\C1.C1Excel.2.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\C1.C1Excel.2.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "C1.C1Excel.2", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "C1.C1Excel.2, Version=2.1.20092.120, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\C1.C1Excel.2.winmd", but it didn't exist.
+          Considered "..\bin\Debug\C1.C1Excel.2.dll", but it didn't exist.
+          Considered "..\bin\Debug\C1.C1Excel.2.exe", but it didn't exist.
+  Primary reference "Control".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Control". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\Control.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Control.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Control.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Control.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Control.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Control.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Control.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Control.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Control.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Control.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Control.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Control.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Control.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Control.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Control.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Control.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Control.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Control.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Control.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Control.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Control.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Control", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Control, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\Control.winmd", but it didn't exist.
+          Considered "..\bin\Debug\Control.dll", but it didn't exist.
+          Considered "..\bin\Debug\Control.exe", but it didn't exist.
+  Primary reference "Core".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Core". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\Core.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Core.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Core.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Core.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Core.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Core.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Core.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Core.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Core.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Core.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Core.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Core.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Core.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Core.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Core.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Core", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Core, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\Core.winmd", but it didn't exist.
+          Considered "..\bin\Debug\Core.dll", but it didn't exist.
+          Considered "..\bin\Debug\Core.exe", but it didn't exist.
+  Primary reference "DCore".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DCore". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DCore.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\DCore.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\DCore.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\DCore.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\DCore.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\DCore.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\DCore.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\DCore.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\DCore.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\DCore.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DCore.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\DCore.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\DCore.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\DCore.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "DCore", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "DCore, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\DCore.winmd", but it didn't exist.
+          Considered "..\bin\Debug\DCore.dll", but it didn't exist.
+          Considered "..\bin\Debug\DCore.exe", but it didn't exist.
+  Primary reference "DeclarationManager".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DeclarationManager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DeclarationManager.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\DeclarationManager.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\DeclarationManager.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\DeclarationManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\DeclarationManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\DeclarationManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\DeclarationManager.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "DeclarationManager", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "DeclarationManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\DeclarationManager.winmd", but it didn't exist.
+          Considered "..\bin\Debug\DeclarationManager.dll", but it didn't exist.
+          Considered "..\bin\Debug\DeclarationManager.exe", but it didn't exist.
+  Primary reference "ExamManager".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "ExamManager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\ExamManager.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\ExamManager.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\ExamManager.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\ExamManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\ExamManager.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\ExamManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\ExamManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\ExamManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\ExamManager.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "ExamManager", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "ExamManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\ExamManager.winmd", but it didn't exist.
+          Considered "..\bin\Debug\ExamManager.dll", but it didn't exist.
+          Considered "..\bin\Debug\ExamManager.exe", but it didn't exist.
+  Primary reference "Global".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Global". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\Global.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Global.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Global.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Global.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Global.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Global.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Global.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Global.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Global.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Global.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Global.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Global.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Global.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Global.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Global.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Global.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Global.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Global.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Global.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Global.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Global.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Global", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\Global.winmd", but it didn't exist.
+          Considered "..\bin\Debug\Global.dll", but it didn't exist.
+          Considered "..\bin\Debug\Global.exe", but it didn't exist.
+  Primary reference "Libs".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Libs". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\Libs.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Libs.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\Libs.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\Libs.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\Libs.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Libs.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Libs.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\Libs.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\Libs.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\Libs.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\Libs.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Libs.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Libs.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\Libs.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "Libs", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "Libs, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\Libs.winmd", but it didn't exist.
+          Considered "..\bin\Debug\Libs.dll", but it didn't exist.
+          Considered "..\bin\Debug\Libs.exe", but it didn't exist.
+  Primary reference "SimsService".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SimsService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SimsService.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SimsService.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SimsService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SimsService.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SimsService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SimsService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SimsService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SimsService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SimsService.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SimsService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SimsService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SimsService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SimsService.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "SimsService", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "SimsService, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\SimsService.winmd", but it didn't exist.
+          Considered "..\bin\Debug\SimsService.dll", but it didn't exist.
+          Considered "..\bin\Debug\SimsService.exe", but it didn't exist.
+  Primary reference "SystemManager".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemManager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SystemManager.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemManager.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemManager.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemManager.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemManager.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemManager.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemManager.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemManager.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "SystemManager", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "SystemManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\SystemManager.winmd", but it didn't exist.
+          Considered "..\bin\Debug\SystemManager.dll", but it didn't exist.
+          Considered "..\bin\Debug\SystemManager.exe", but it didn't exist.
+  Primary reference "SystemObject".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SystemObject.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemObject.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemObject.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemObject.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemObject.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemObject.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemObject.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemObject.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemObject.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "SystemObject", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "SystemObject, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\SystemObject.winmd", but it didn't exist.
+          Considered "..\bin\Debug\SystemObject.dll", but it didn't exist.
+          Considered "..\bin\Debug\SystemObject.exe", but it didn't exist.
+  Primary reference "SystemService".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SystemService.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\SystemService.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\SystemService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\SystemService.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\SystemService.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemService.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\SystemService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\SystemService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\SystemService.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\SystemService.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemService.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemService.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\SystemService.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "SystemService", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "SystemService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\SystemService.winmd", but it didn't exist.
+          Considered "..\bin\Debug\SystemService.dll", but it didn't exist.
+          Considered "..\bin\Debug\SystemService.exe", but it didn't exist.
+  Primary reference "TrainingPlan".
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "TrainingPlan". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+          For SearchPath "{HintPathFromItem}".
+          Considered "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\TrainingPlan.dll", but it didn't exist.
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\TrainingPlan.exe", but it didn't exist.
+          For SearchPath "{AssemblyFoldersFromConfig:C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\AssemblyFolders.config,v4.0}".
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v4.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\ReferenceAssemblies\v2.0\TrainingPlan.exe", but it didn't exist.
+          For SearchPath "{Registry:Software\Microsoft\.NETFramework,v4.0,AssemblyFoldersEx}".
+          Considered AssemblyFoldersEx locations.
+          For SearchPath "{AssemblyFolders}".
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft.NET\ADOMD.NET\160\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2902.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2903.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2904.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2905.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2906.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2907.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2908.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2909.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2910.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\WINDOWS\Microsoft.NET\DirectX for Managed Code\1.0.2911.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files\IIS\Microsoft Web Deploy V3\TrainingPlan.exe", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\TrainingPlan.winmd", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\TrainingPlan.dll", but it didn't exist.
+          Considered "C:\Program Files (x86)\Microsoft SQL Server\100\SDK\Assemblies\TrainingPlan.exe", but it didn't exist.
+          For SearchPath "{GAC}".
+          Considered "TrainingPlan", which was not found in the GAC.
+          For SearchPath "{RawFileName}".
+          Considered treating "TrainingPlan, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" as a file name, but it didn't exist.
+          For SearchPath "..\bin\Debug\".
+          Considered "..\bin\Debug\TrainingPlan.winmd", but it didn't exist.
+          Considered "..\bin\Debug\TrainingPlan.dll", but it didn't exist.
+          Considered "..\bin\Debug\TrainingPlan.exe", but it didn't exist.
+CoreResGen:
+  Could not read state file "obj\Debug\ScheduleManager.csproj.GenerateResource.cache". The format of this state file is not valid.
+  Processing resource file "Controls\UCSPlan_QuickViewStatus.resx" into "obj\Debug\ScheduleManager.Controls.UCSPlan_QuickViewStatus.resources".
+  Processing resource file "Controls\UScheduleOfTeacher.resx" into "obj\Debug\ScheduleManager.Controls.UScheduleOfTeacher.resources".
+  Processing resource file "frmCheckingTeachingStatistics.resx" into "obj\Debug\ScheduleManager.frmCheckingTeachingStatistics.resources".
+  Processing resource file "frmCheckingTeachingStatisticsV2.resx" into "obj\Debug\ScheduleManager.frmCheckingTeachingStatisticsV2.resources".
+  Processing resource file "frmTongHopLich.resx" into "obj\Debug\ScheduleManager.frmTongHopLich.resources".
+  Processing resource file "frmTongHopLichLop.resx" into "obj\Debug\ScheduleManager.frmTongHopLichLop.resources".
+  Processing resource file "Sys\frmScheduleBackup.resx" into "obj\Debug\ScheduleManager.Sys.frmScheduleBackup.resources".
+  Processing resource file "TeacherWork\frmTeachingTimeAdded_Multi.resx" into "obj\Debug\ScheduleManager.TeacherWork.frmTeachingTimeAdded_Multi.resources".
+  Processing resource file "TeacherWork\frmTeacherWork.resx" into "obj\Debug\ScheduleManager.TeacherWork.frmTeacherWork.resources".
+  Processing resource file "TeacherWork\frmTeacherWorkGroupGroup.resx" into "obj\Debug\ScheduleManager.TeacherWork.frmTeacherWorkGroup.resources".
+  Processing resource file "TeacherWork\frmTeacherWorkRatio.resx" into "obj\Debug\ScheduleManager.TeacherWork.frmTeacherWorkRatio.resources".
+  Processing resource file "TeacherWork\frmTeachingTimeAdded.resx" into "obj\Debug\ScheduleManager.TeacherWork.frmTeachingTimeAdded.resources".
+  Processing resource file "Teaching\frmBangDiemDanhHocSinh.resx" into "obj\Debug\ScheduleManager.Teaching.frmBangDiemDanhHocSinh.resources".
+  Processing resource file "Teaching\frmBangTinhGioDayGiangVien_Thang.resx" into "obj\Debug\ScheduleManager.Teaching.frmBangTinhGioDayGiangVien_Thang.resources".
+  Processing resource file "Teaching\frmBangTinhGioDayGiangVien.resx" into "obj\Debug\ScheduleManager.Teaching.frmBangTinhGioDayGiangVien.resources".
+  Processing resource file "Teaching\frmDetailTeachingPlanDone.resx" into "obj\Debug\ScheduleManager.Teaching.frmDetailTeachingPlanDone.resources".
+  Processing resource file "Teaching\frmThongKeGioCoiThiChamThi.resx" into "obj\Debug\ScheduleManager.Teaching.frmThongKeGioCoiThiChamThi.resources".
+  Processing resource file "Teaching\XrtDetailTeachingPlan2.resx" into "obj\Debug\ScheduleManager.Teaching.XrtDetailTeachingPlan2.resources".
+  Processing resource file "XrtTestSchedule.resx" into "obj\Debug\ScheduleManager.XrtTestSchedule.resources".
+  Processing resource file "TestScheduling\frmTestScheduleEdit.resx" into "obj\Debug\ScheduleManager.TestScheduling.frmTestScheduleEdit.resources".
+  Processing resource file "TestScheduling\frmTestScheduleOfTeacher.resx" into "obj\Debug\ScheduleManager.TestScheduling.frmTestScheduleOfTeacher.resources".
+  Processing resource file "frmSummaryScheduleOfTeacher.resx" into "obj\Debug\ScheduleManager.frmSummaryScheduleOfTeacher.resources".
+  Processing resource file "frmUsedScheduleOfClass.resx" into "obj\Debug\ScheduleManager.frmUsedScheduleOfClass.resources".
+  Processing resource file "frmUsedScheduleOfTeacher.resx" into "obj\Debug\ScheduleManager.frmUsedScheduleOfTeacher.resources".
+  Processing resource file "frmQuickChangeSchedule.resx" into "obj\Debug\ScheduleManager.frmQuickChangeSchedule.resources".
+  Processing resource file "frmUsedScheduleOfRoom.resx" into "obj\Debug\ScheduleManager.frmUsedScheduleOfRoom.resources".
+  Processing resource file "frmSummaryScheduleOfRoom.resx" into "obj\Debug\ScheduleManager.frmSummaryScheduleOfRoom.resources".
+  Processing resource file "Sys\frmRepairDataForScheduling.resx" into "obj\Debug\ScheduleManager.Sys.frmRepairDataForScheduling.resources".
+  Processing resource file "XrtScheduleOfTeacher1.resx" into "obj\Debug\ScheduleManager.XrtScheduleOfTeacher1.resources".
+  Processing resource file "frmScheduleOfClassEdit.resx" into "obj\Debug\ScheduleManager.frmScheduleOfClassEdit.resources".
+  Processing resource file "frmScheduleOfRoom.resx" into "obj\Debug\ScheduleManager.frmScheduleOfRoom.resources".
+  Processing resource file "frmScheduleOfTeacher.resx" into "obj\Debug\ScheduleManager.frmScheduleOfTeacher.resources".
+  Processing resource file "frmScheduleOfClass.resx" into "obj\Debug\ScheduleManager.frmScheduleOfClass.resources".
+  Processing resource file "frmSummaryScheduleOfClass.resx" into "obj\Debug\ScheduleManager.frmSummaryScheduleOfClass.resources".
+  Processing resource file "Properties\Resources.resx" into "obj\Debug\ScheduleManager.Properties.Resources.resources".
+  Processing resource file "Scheduling\frmScheduleTemplate.resx" into "obj\Debug\ScheduleManager.Scheduling.frmScheduleTemplate.resources".
+  Processing resource file "Scheduling\frmAutoScheduling.resx" into "obj\Debug\ScheduleManager.Scheduling.frmAutoScheduling.resources".
+  Processing resource file "Teaching\XrtTeachingTimeAdded.resx" into "obj\Debug\ScheduleManager.Teaching.XrtTeachingTimeAdded.resources".
+  Processing resource file "Teaching\frmTeachingTimeAdded.resx" into "obj\Debug\ScheduleManager.Teaching.frmTeachingTimeAdded.resources".
+  Processing resource file "Teaching\XrtDetailTeachingPlan.resx" into "obj\Debug\ScheduleManager.Teaching.XrtDetailTeachingPlan.resources".
+  Processing resource file "Teaching\XrtTeachingTimeStatistic.resx" into "obj\Debug\ScheduleManager.Teaching.XrtTeachingTimeStatistic.resources".
+  Processing resource file "Teaching\XrtTeachingTimeCoefficientDetail.resx" into "obj\Debug\ScheduleManager.Teaching.XrtTeachingTimeCoefficientDetail.resources".
+  Processing resource file "Teaching\XrtTeachingTimeCoefficient.resx" into "obj\Debug\ScheduleManager.Teaching.XrtTeachingTimeCoefficient.resources".
+  Processing resource file "Teaching\frmTeachingTimeCoefficientDetail.resx" into "obj\Debug\ScheduleManager.Teaching.frmTeachingTimeCoefficientDetail.resources".
+  Processing resource file "Teaching\frmTeachingTimeCoefficient.resx" into "obj\Debug\ScheduleManager.Teaching.frmTeachingTimeCoefficient.resources".
+  Processing resource file "Teaching\frmDetailTeachingTimeStatistic.resx" into "obj\Debug\ScheduleManager.Teaching.frmDetailTeachingTimeStatistic.resources".
+  Processing resource file "Teaching\frmTeachingProcessOfTeacher.resx" into "obj\Debug\ScheduleManager.Teaching.frmTeachingProcessOfTeacher.resources".
+  Processing resource file "Teaching\frmSubjectTeachingProcess.resx" into "obj\Debug\ScheduleManager.Teaching.frmSubjectTeachingProcess.resources".
+  Processing resource file "Teaching\frmCheckingTeachingTime.resx" into "obj\Debug\ScheduleManager.Teaching.frmCheckingTeachingTime.resources".
+  Processing resource file "Teaching\frmTeachingTimeStatistic.resx" into "obj\Debug\ScheduleManager.Teaching.frmTeachingTimeStatistic.resources".
+  Processing resource file "Teaching\frmDetailTeachingSchedule.resx" into "obj\Debug\ScheduleManager.Teaching.frmDetailTeachingSchedule.resources".
+  Processing resource file "Teaching\frmDetailTeachingPlan.resx" into "obj\Debug\ScheduleManager.Teaching.frmDetailTeachingPlan.resources".
+  Processing resource file "Teaching\frmSummaryTeachingSchedule.resx" into "obj\Debug\ScheduleManager.Teaching.frmSummaryTeachingSchedule.resources".
+  Processing resource file "Teaching\frmTeachingPlan.resx" into "obj\Debug\ScheduleManager.Teaching.frmTeachingPlan.resources".
+  Processing resource file "TestScheduling\frmAutoTestSchedule.resx" into "obj\Debug\ScheduleManager.TestScheduling.frmAutoTestSchedule.resources".
+  Processing resource file "TestScheduling\frmTestScheduleOfClass.resx" into "obj\Debug\ScheduleManager.TestScheduling.frmTestScheduleOfClass.resources".
+  Processing resource file "TestScheduling\frmTestScheduleOfClassEdit.resx" into "obj\Debug\ScheduleManager.TestScheduling.frmTestScheduleOfClassEdit.resources".
+  Processing resource file "TestScheduling\frmSummaryTestScheduleOfClass.resx" into "obj\Debug\ScheduleManager.TestScheduling.frmSummaryTestScheduleOfClass.resources".
+  Processing resource file "XrtScheduleOfTeacher.resx" into "obj\Debug\ScheduleManager.XrtScheduleOfTeacher.resources".
+CompileLicxFiles:
+  C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8.1 Tools\lc.exe /target:ScheduleManager.dll /complist:Properties\licenses.licx /outdir:obj\Debug\ /i:"G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\BusinessObject.dll" /i:"G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DataAccess.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Data.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Printing.v11.1.Core.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.RichEdit.v11.1.Core.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Utils.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraBars.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraEditors.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraGrid.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraReports.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraRichEdit.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraTreeList.v11.1.dll" /i:"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Excel.dll" /i:"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Word.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /i:"G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SimsObject.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Deployment.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Design.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Configuration.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Transactions.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraLayout.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraCharts.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.Charts.v11.1.Core.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraPivotGrid.v11.1.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.PivotGrid.v11.1.Core.dll" /i:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Runtime.Serialization.Formatters.Soap.dll" /i:"C:\Program Files (x86)\DevExpress 2011.1\Components\Sources\DevExpress.DLL\DevExpress.XtraNavBar.v11.1.dll" 
+LC : warning LC0000: 'Unable to find assembly 'G:\1.1-PROJECT-MAIN\LONG THANH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\BusinessObject.dll' [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+LC : warning LC0000: 'Unable to find assembly 'G:\1.1-PROJECT-MAIN\LONG THANH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DataAccess.dll' [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+LC : warning LC0000: 'Unable to find assembly 'G:\1.1-PROJECT-MAIN\LONG THANH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SimsObject.dll' [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+Properties\licenses.licx(1): error LC0004: Exception occurred creating type 'DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' System.TypeInitializationException: The type initializer for 'DevExpress.XtraEditors.Repository.RepositoryItem' threw an exception. ---> System.IO.FileLoadException: Could not load file or assembly 'DevExpress.Design.v11.1' or one of its dependencies. Invalid pointer (Exception from HRESULT: 0x80004003 (E_POINTER)) ---> System.NullReferenceException: Object reference not set to an instance of an object. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+Properties\licenses.licx(2): error LC0004: Exception occurred creating type 'DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' System.TypeInitializationException: The type initializer for 'DevExpress.XtraEditors.Repository.RepositoryItem' threw an exception. ---> System.IO.FileLoadException: Could not load file or assembly 'DevExpress.Design.v11.1' or one of its dependencies. Invalid pointer (Exception from HRESULT: 0x80004003 (E_POINTER)) ---> System.NullReferenceException: Object reference not set to an instance of an object. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+Done Building Project "G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+"G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj" (Build target) (1) ->
+(ResolveProjectReferences target) -> 
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2189,5): warning MSB9008: The referenced project ..\GeneralObject\GeneralObject.csproj does not exist. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+
+
+"G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj" (Build target) (1) ->
+(ResolveAssemblyReferences target) -> 
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Aspose.Words". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "C1.C1Excel.2". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Control". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Core". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DCore". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "DeclarationManager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "ExamManager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Global". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "Libs". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SimsService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemManager". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemObject". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "SystemService". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(2433,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "TrainingPlan". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+
+
+"G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj" (Build target) (1) ->
+(CompileLicxFiles target) -> 
+  LC : warning LC0000: 'Unable to find assembly 'G:\1.1-PROJECT-MAIN\LONG THANH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\BusinessObject.dll' [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  LC : warning LC0000: 'Unable to find assembly 'G:\1.1-PROJECT-MAIN\LONG THANH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\DataAccess.dll' [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  LC : warning LC0000: 'Unable to find assembly 'G:\1.1-PROJECT-MAIN\LONG THANH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\bin\Debug\SimsObject.dll' [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+
+
+"G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj" (Build target) (1) ->
+(CompileLicxFiles target) -> 
+  Properties\licenses.licx(1): error LC0004: Exception occurred creating type 'DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' System.TypeInitializationException: The type initializer for 'DevExpress.XtraEditors.Repository.RepositoryItem' threw an exception. ---> System.IO.FileLoadException: Could not load file or assembly 'DevExpress.Design.v11.1' or one of its dependencies. Invalid pointer (Exception from HRESULT: 0x80004003 (E_POINTER)) ---> System.NullReferenceException: Object reference not set to an instance of an object. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+  Properties\licenses.licx(2): error LC0004: Exception occurred creating type 'DevExpress.XtraEditors.ComboBoxEdit, DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' System.TypeInitializationException: The type initializer for 'DevExpress.XtraEditors.Repository.RepositoryItem' threw an exception. ---> System.IO.FileLoadException: Could not load file or assembly 'DevExpress.Design.v11.1' or one of its dependencies. Invalid pointer (Exception from HRESULT: 0x80004003 (E_POINTER)) ---> System.NullReferenceException: Object reference not set to an instance of an object. [G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\ScheduleManager\ScheduleManager.csproj]
+
+    18 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.76

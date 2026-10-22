@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Thursday, Oct 15, 2026, 7:26 AM (UTC+7)</timestamp>\n<user_query>\n@1.WEB -CTT/Controls/StudentCollection/StudentCollectionForm.ascx mã xác nhận nên để dưới cùng không\n</user_query>"}]}}
+{"type":"turn_ended","status":"error","error":"Invalid API key. Unauthorized User API key"}

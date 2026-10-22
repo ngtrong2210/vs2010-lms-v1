@@ -1,0 +1,23 @@
+-- Export remaining procedures
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Enrollment_GetByStudent.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Lesson_TrackProgress.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Notification_GetForUser.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Notification_MarkAllAsRead.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Notification_MarkAsRead.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Quiz_Create.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Quiz_Delete.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Quiz_GetByLesson.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Quiz_GetQuestions.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Quiz_Update.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_QuizAttempt_Create.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_QuizAttempt_GetDetails.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_QuizQuestion_Create.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_QuizQuestion_Delete.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_QuizQuestion_Update.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Survey_SubmitResponse.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_SurveyAnswer_Create.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Video_DetachFromLesson.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/LMS_Video_GetByLesson.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/SIM_Notification_GetList.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/SIM_Notification_MarkAllRead.sql
+:r G:/0.DỰ ÁN/2.LMS-VS2010/WEB-LMS-VS2010/9.TOOL/procs/SIM_Notification_MarkRead.sql

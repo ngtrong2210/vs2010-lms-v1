@@ -1,0 +1,4 @@
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\bin\Release\LmsObject.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\bin\Release\LmsObject.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\obj\Release\LmsObject.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\obj\Release\LmsObject.pdb

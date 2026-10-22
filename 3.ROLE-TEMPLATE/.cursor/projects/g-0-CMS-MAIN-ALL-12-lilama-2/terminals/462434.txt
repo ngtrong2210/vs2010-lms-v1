@@ -1,0 +1,16 @@
+---
+pid: 14556
+cwd: "G:\\0.CMS-MAIN-ALL-12\\lilama-2"
+command: "powershell -Command \"$url='http://localhost:3000'; Start-Process $url; Start-Sleep -Seconds 4; Write-Host 'Browser opened to:' $url\""
+started_at: 2026-07-09T06:45:48.692Z
+running_for_ms: 12281038 
+---
+=http://localhost:3000 : The term '=http://localhost:3000' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:1
++ ='http://localhost:3000'; Start-Process ; Start-Sleep -Seconds 4; Wri ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (=http://localhost:3000:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 

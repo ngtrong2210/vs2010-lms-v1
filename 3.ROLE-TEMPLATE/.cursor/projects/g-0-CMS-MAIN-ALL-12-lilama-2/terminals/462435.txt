@@ -1,0 +1,13 @@
+---
+pid: 2496
+cwd: "G:\\0.CMS-MAIN-ALL-12\\lilama-2"
+command: "cmd.exe /c \"start http://localhost:3000\""
+started_at: 2026-07-09T06:46:09.607Z
+running_for_ms: 5007     
+---
+
+---
+exit_code: 0
+elapsed_ms: 5429
+ended_at: 2026-07-09T06:46:15.036Z
+---

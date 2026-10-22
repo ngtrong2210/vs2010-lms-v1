@@ -1,0 +1,992 @@
+External Models in ChatGPT App | CC Switch & Providers | Get started
+
+ 
+
+ Contact goolvyouyou@gmail.com 
+
+# Connect external models to ChatGPT App
+
+Local Codex clients are not limited to OpenAI-hosted models. You can connect Codex to a third-party model vendor, an API aggregation service, or an internal company gateway by using CC Switch or a custom Codex model provider.
+
+This guide covers two integration paths for hosted third-party models:
+
+| Integration path | Best for / Protocol conversion |
+| --- | --- |
+| CC Switch | Providers that expose Chat Completions or Anthropic Messages, or users who want to switch providers through a graphical interface Protocol conversion: CC Switch handles conversion according to the upstream protocol |
+| Custom `model provider` | Services that natively and fully implement the OpenAI Responses API Protocol conversion: Not required |
+
+There is one important limitation to understand first:
+
+Custom Codex providers use the OpenAI Responses API. The only supported `wire_api` value is `responses`. A service that only exposes `/v1/chat/completions` cannot be connected merely by placing its URL in `config.toml`; use CC Switch or another protocol-conversion gateway instead.
+
+This guide applies to locally running Codex clients, including Codex CLI, the Codex IDE extension, and desktop clients that read the same `config.toml`. Codex cloud chats currently cannot switch to a custom model through this configuration.
+
+### Install or update Codex CLI
+
+```bash
+npm install -g @openai/codex@latest
+codex --version
+```
+
+After the first installation, run Codex at least once:
+
+```bash
+codex
+```
+
+This initializes the user configuration directory.
+
+### Codex configuration file locations
+
+macOS and Linux:
+
+```text
+~/.codex/config.toml
+```
+
+Windows:
+
+```text
+%USERPROFILE%\.codex\config.toml
+```
+
+Back up the file before making changes.
+
+macOS / Linux:
+
+```bash
+mkdir -p ~/.codex/backup
+cp ~/.codex/config.toml \
+  ~/.codex/backup/config.toml.$(date +%Y%m%d-%H%M%S) \
+  2>/dev/null || true
+```
+
+PowerShell:
+
+```powershell
+$codexDir = Join-Path $HOME ".codex"
+$backupDir = Join-Path $codexDir "backup"
+New-Item -ItemType Directory -Force -Path $backupDir | Out-Null
+
+$configFile = Join-Path $codexDir "config.toml"
+if (Test-Path $configFile) {
+  $timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
+  Copy-Item $configFile (Join-Path $backupDir "config.toml.$timestamp")
+}
+```
+
+### Providers, MCP, and model gateways are different
+
+These concepts solve different problems:
+
+- `model_provider` determines where Codex sends model requests;
+- MCP adds tools and context such as GitHub, browsers, or databases;
+- a model gateway handles protocol conversion, authentication, routing, logging, or rate limiting between Codex and an upstream model.
+
+To change the underlying model, configure a provider rather than MCP.
+
+### Protect API keys
+
+Do not commit real API keys to a Git repository or expose full keys in screenshots, logs, or support tickets.
+
+For manually configured providers, prefer environment variables:
+
+```toml
+[model_providers.example]
+env_key = "EXAMPLE_API_KEY"
+```
+
+CC Switch stores provider configuration locally and modifies the local Codex configuration when you switch providers. It is a third-party open-source tool, not an OpenAI product. Install it only from the official CC Switch website or GitHub repository, and protect its local database, configuration, and backups.
+
+## 1. Connect third-party models with CC Switch
+
+CC Switch is the easier option for most third-party models. It manages providers, API keys, model lists, and local routing, and it can translate incompatible upstream protocols.
+
+### 1.1 What CC Switch solves
+
+Modern Codex clients send Responses API requests, while many third-party services expose one of the following:
+
+- OpenAI Chat Completions;
+- Anthropic Messages;
+- model IDs that Codex does not list by default;
+- vendor-specific reasoning parameters or streaming event formats.
+
+CC Switch can translate the request path as follows:
+
+```text
+Codex
+  │  Responses API
+  ▼
+CC Switch local route
+  │  Converts the protocol and model name when required
+  ▼
+Third-party model API
+  │
+  ▼
+CC Switch converts JSON, SSE, reasoning data, and tool calls back to Responses
+  │
+  ▼
+Codex
+```
+
+A provider that natively supports Responses does not need Chat protocol conversion. A Chat Completions or Anthropic Messages provider requires local routing.
+
+### 1.2 Install CC Switch
+
+Use only the official distribution channels:
+
+- CC Switch official website
+- CC Switch GitHub repository
+- CC Switch Releases
+
+On macOS, Homebrew is recommended:
+
+```bash
+brew install --cask cc-switch
+```
+
+```bash
+brew upgrade --cask cc-switch
+```
+
+On Windows, download the `.msi` installer or portable archive from Releases.
+
+On Linux, download the `.deb`, `.rpm`, or AppImage package from Releases. Labels may change slightly between versions, so use the latest stable release and treat the options shown in the application as authoritative.
+
+### 1.3 Prerequisites
+
+Prepare the following:
+
+1. Codex is installed and has been launched at least once;
+2. CC Switch is installed and starts correctly;
+3. you have an API key for the target model service;
+4. you have confirmed the Base URL, model ID, and upstream protocol in the provider documentation;
+5. if you need official Codex account features, complete one official login first.
+
+Check the current Codex login state:
+
+```bash
+codex login status
+```
+
+Sign in when necessary:
+
+```bash
+codex login
+```
+
+Device-code login is also available:
+
+```bash
+codex login --device-auth
+```
+
+### 1.4 Optional: preserve the official login while using a third-party provider
+
+This is mainly useful when you want to keep desktop features, official plugins, or remote-control features while model requests are sent to a third-party provider. CLI-only users who do not depend on official account features can skip it.
+
+Recommended order:
+
+1. select OpenAI Official in the CC Switch Codex panel;
+2. launch Codex and sign in with an official account;
+3. open Settings → General → Codex App Enhancements in CC Switch;
+4. enable Keep official login when switching third-party providers;
+5. add or switch to the third-party provider.
+
+With this option enabled, CC Switch attempts to keep:
+
+- `~/.codex/auth.json` for the official login state;
+- `~/.codex/config.toml` for the active third-party provider, model, endpoint, and authentication configuration.
+
+`auth.json` contains sensitive login data. Do not share it or commit it to version control.
+
+### 1.5 Add a third-party provider
+
+Open CC Switch, switch to the top-level Codex panel, and click the add button in the upper-right corner.
+
+#### Prefer a built-in preset
+
+When a preset exists, use it and enter only the API key and any required account-specific values. A preset normally configures:
+
+- the Base URL;
+- the default model;
+- the upstream protocol;
+- whether local routing is required;
+- model mappings;
+- selected reasoning parameters.
+
+The preset list changes as CC Switch evolves. Long-lived documentation should not hard-code a vendor's current model ID; use the list in the application and the provider's official documentation.
+
+#### Create a custom provider
+
+When no preset is available, choose a custom configuration and provide:
+
+| Field | Description |
+| --- | --- |
+| Provider Name | A local display name |
+| API Key | The third-party service key |
+| Base URL | The API root documented by the provider |
+| Model ID | The exact upstream model identifier |
+| Upstream Format | The protocol actually exposed by the upstream service |
+| Model Mapping | The models shown and used by Codex |
+
+The most important setting is Upstream Format:
+
+| Upstream format | Use it when | Local routing |
+| --- | --- | --- |
+| Responses (native) | The upstream natively implements Responses | Usually no protocol conversion is needed |
+| Chat Completions (routing required) | The upstream exposes `/chat/completions` | Required |
+| Anthropic Messages (routing required) | The upstream exposes the Anthropic Messages protocol | Required |
+
+Do not select Responses merely because a provider advertises “OpenAI compatibility.” Many OpenAI-compatible APIs implement only Chat Completions.
+
+### 1.6 Enter the Base URL correctly
+
+By default, CC Switch appends the appropriate API path to the Base URL. In most cases, enter the API root from the provider documentation rather than repeating `/chat/completions` or `/responses` yourself.
+
+For example, if the provider documents:
+
+```text
+POST https://api.example.com/v1/chat/completions
+```
+
+you may need to enter:
+
+```text
+https://api.example.com
+```
+
+or, depending on the preset and provider documentation:
+
+```text
+https://api.example.com/v1
+```
+
+Whether `/v1` belongs in the Base URL depends on the provider and CC Switch preset. Use the built-in connectivity check or routing logs to confirm the final request URL.
+
+Use Full URL Mode only when the provider requires a non-standard complete endpoint path.
+
+### 1.7 Configure Needs Local Routing and model mapping
+
+Enable Needs Local Routing when the provider uses Chat Completions, Anthropic Messages, or model names that Codex does not recognize by default.
+
+Chat-oriented presets normally enable it automatically. Verify the option for custom providers.
+
+Once enabled, a model-mapping table becomes available. Common fields include:
+
+| Field | Description |
+| --- | --- |
+| Model ID | The exact model name accepted by the upstream API |
+| Display Name | Optional name shown in the Codex `/model` menu |
+| Context Window | Optional, the model's real context length |
+
+Important points:
+
+- use the exact model ID from the provider documentation;
+- do not guess the context window;
+- restart Codex after changing the model list;
+- CC Switch generates the Codex model catalog from these mappings;
+- if a relay changes the domain or model name, automatic reasoning-capability detection may be wrong and should be reviewed in advanced settings.
+
+### 1.8 Enable local routing and Codex takeover
+
+In CC Switch, open:
+
+```text
+Settings → Routing → Local Routing
+```
+
+Then:
+
+1. enable the main local-routing switch;
+2. enable Codex under Routing Enabled;
+3. confirm the provider's Needs Local Routing setting;
+4. keep CC Switch running while the provider is in use.
+
+The default local route is commonly:
+
+```text
+http://127.0.0.1:15721
+```
+
+After takeover, the live Codex configuration points to the CC Switch local route. CC Switch then forwards requests to the currently selected upstream provider.
+
+For a Chat Completions upstream, the flow is typically:
+
+```text
+Codex POST /responses
+  → CC Switch converts it to POST /chat/completions
+  → the provider returns JSON or SSE
+  → CC Switch rebuilds Responses JSON or SSE
+  → Codex continues the tool-call loop
+```
+
+### 1.9 Switch providers and restart Codex
+
+Return to the CC Switch Codex provider list, select the provider you configured, and enable it.
+
+Fully restart Codex after switching because:
+
+- Codex reads `config.toml` during startup;
+- the `/model` menu commonly loads its catalog at startup;
+- the IDE extension or desktop client may cache the previous provider;
+- existing sessions may retain old model metadata.
+
+CLI users can simply start a new process:
+
+```bash
+codex
+```
+
+### 1.10 Verify the integration
+
+Inside Codex, run:
+
+```text
+/status
+```
+
+Review the active model, provider, permissions, and context information.
+
+```text
+/model
+```
+
+Inspect configuration layers:
+
+```text
+/debug-config
+```
+
+- the active Codex provider in CC Switch;
+- CC Switch local-routing logs or statistics;
+- request history and balance changes in the provider dashboard;
+- whether `~/.codex/config.toml` currently points to the local route.
+
+Do not validate the setup with a simple greeting alone. Run at least one agent-capability test:
+
+1. ask Codex to list files in the current project;
+2. ask it to read and summarize one file;
+3. ask it to modify a small file;
+4. ask it to run the tests;
+5. leave a simple failure in place and verify that it can use the test result to continue fixing the project.
+
+Successful text generation does not prove that tool calling and multi-turn agent workflows are compatible.
+
+### 1.11 Switch back to the official OpenAI provider
+
+Select OpenAI Official in CC Switch and restart Codex.
+
+Check the login state:
+
+```bash
+codex login status
+```
+
+If necessary, sign in again:
+
+```bash
+codex login
+```
+
+When you need both official login state and third-party model requests, confirm that Keep official login when switching third-party providers remains enabled.
+
+### 1.12 Limitations and operational considerations
+
+CC Switch simplifies configuration, but it does not eliminate upstream limitations:
+
+- CC Switch must remain running for Chat or Messages conversion;
+- protocol conversion cannot reproduce every vendor-specific feature;
+- some models can chat but do not perform reliable tool calls;
+- Web Search, image input, WebSockets, or response storage may be unavailable;
+- the upstream provider's rate limits, billing, and data-retention policies still apply;
+- an API relay may modify requests and responses again;
+- configurations should be retested after upgrades to CC Switch, Codex, or the provider.
+
+CC Switch is best suited to local desktop development. For servers, CI, or long-running headless automation, prefer a native Responses provider or a self-hosted gateway.
+
+## 2. Connect a hosted API with a custom model provider
+
+Configure a provider directly only when the service natively supports the Responses API required by Codex.
+
+If the service exposes only `/chat/completions` or Anthropic Messages, use the CC Switch workflow in section 1. Do not try to solve the mismatch with `wire_api = "chat"`.
+
+### 2.1 Required API capabilities
+
+A provider suitable for direct Codex integration should support at least:
+
+- `POST /responses`;
+- Responses JSON objects;
+- Responses SSE streaming events;
+- function or tool calling;
+- JSON Schema tool parameters;
+- continuation after tool results are returned;
+- multi-turn requests or an equivalent to `previous_response_id`;
+- a sufficient context window and stable long-running requests;
+- documented authentication, rate limits, and error responses.
+
+Ordinary text generation alone is not sufficient for a reliable Codex agent.
+
+### 2.2 Generic configuration
+
+Edit the user-level configuration:
+
+```text
+~/.codex/config.toml
+```
+
+Add:
+
+```toml
+model_provider = "third_party"
+model = "provider-model-id"
+
+# Set this only when the model explicitly supports it.
+model_reasoning_effort = "high"
+
+# Optional: use the real value published by the provider when no catalog exists.
+# model_context_window = 131072
+
+[model_providers.third_party]
+name = "My Responses-compatible Provider"
+base_url = "https://provider.example.com/v1"
+env_key = "THIRD_PARTY_API_KEY"
+wire_api = "responses"
+request_max_retries = 4
+stream_max_retries = 5
+stream_idle_timeout_ms = 300000
+```
+
+Do not use these reserved provider IDs:
+
+```text
+openai
+ollama
+lmstudio
+```
+
+Use a custom ID such as `third_party` or `company_gateway` instead.
+
+### 2.3 Configuration fields
+
+| Field | Purpose |
+| --- | --- |
+| `model_provider` | Selects a provider declared under `[model_providers.]` |
+| `model` | The exact model ID accepted by the third-party service |
+| `name` | Human-readable provider name |
+| `base_url` | Root URL for the provider's Responses API |
+| `env_key` | Name of the environment variable containing the API key |
+| `wire_api` | Only `responses` is supported; it is also the default when omitted |
+| `request_max_retries` | Retries for regular HTTP request failures |
+| `stream_max_retries` | Retries after streaming interruptions |
+| `stream_idle_timeout_ms` | Time without SSE events before the stream is considered idle |
+| `model_context_window` | Optional real context-window size |
+| `model_reasoning_effort` | Optional reasoning level supported by the model |
+
+Whether `base_url` includes `/v1` depends on the provider documentation. A common final endpoint is:
+
+```text
+https://provider.example.com/v1/responses
+```
+
+### 2.4 Set the API key
+
+Current bash / zsh session:
+
+```bash
+export THIRD_PARTY_API_KEY="your API key"
+```
+
+```fish
+set -gx THIRD_PARTY_API_KEY "your API key"
+```
+
+Current PowerShell session:
+
+```powershell
+$env:THIRD_PARTY_API_KEY = "your API key"
+```
+
+Persist it for the current Windows user:
+
+```powershell
+[Environment]::SetEnvironmentVariable(
+  "THIRD_PARTY_API_KEY",
+  "your API key",
+  [EnvironmentVariableTarget]::User
+)
+```
+
+Restart the terminal, IDE, or desktop client after setting a persistent environment variable.
+
+### 2.5 Test the Responses endpoint first
+
+Before launching Codex, call the provider directly:
+
+```bash
+export PROVIDER_BASE_URL="https://provider.example.com/v1"
+
+curl "$PROVIDER_BASE_URL/responses" \
+  -H "Authorization: Bearer $THIRD_PARTY_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "provider-model-id",
+    "input": "Reply with exactly: PROVIDER_OK",
+    "stream": false
+  }'
+```
+
+Verify that:
+
+- the endpoint does not return 404;
+- the response has a Responses-style structure rather than only a Chat Completions `choices` array;
+- the model ID is accepted;
+- authentication is correct;
+- errors contain useful diagnostic information.
+
+Then test separately:
+
+- `stream: true`;
+- tool calls;
+- tool-result continuation;
+- multiple turns;
+- long context;
+- concurrency and rate limits.
+
+### 2.6 Validate the Codex configuration
+
+Start in strict mode:
+
+```bash
+codex --strict-config
+```
+
+`--strict-config` treats unknown configuration keys as errors, which helps identify fields copied from outdated guides.
+
+Inside Codex, run:
+
+```text
+/status
+```
+
+To inspect configuration sources, run:
+
+```text
+/debug-config
+```
+
+Override the provider and model for a single run without changing the default configuration:
+
+```bash
+codex \
+  -c 'model_provider="third_party"' \
+  -m 'provider-model-id'
+```
+
+### 2.7 Model catalogs and `Unknown model`
+
+A Codex model catalog can describe:
+
+- context-window size;
+- supported reasoning levels;
+- input modalities;
+- tool-call capabilities;
+- truncation behavior;
+- minimum client versions.
+
+When the provider supplies a Codex-compatible model catalog, save it locally and configure:
+
+```toml
+model_catalog_json = "~/.codex/provider-models.json"
+```
+
+When no catalog exists, set a context window only after confirming the real value:
+
+```toml
+model_context_window = 131072
+```
+
+Do not copy metadata from an unrelated model simply to remove a warning. Incorrect capability or context metadata can cause premature truncation, upstream limit errors, or broken tool calls.
+
+### 2.8 Full compatibility checklist
+
+Before production use, test:
+
+- non-streaming `/responses` text;
+- Responses SSE streaming;
+- one tool call;
+- multiple sequential or parallel tool calls;
+- JSON Schema parameters;
+- tool-result continuation;
+- long context and automatic compaction;
+- reasoning parameters;
+- image or other input modalities;
+- rate limits and retry behavior;
+- whether a proxy buffers SSE;
+- whether the provider drops or rewrites tool fields;
+- data retention, logging, and privacy policies.
+
+### 2.9 Where provider configuration belongs
+
+Place `model_provider`, `model_providers`, and provider authentication in the user-level file:
+
+```text
+~/.codex/config.toml
+```
+
+Do not place them in the repository-level file:
+
+```text
+<project>/.codex/config.toml
+```
+
+Codex ignores project-local fields that could redirect model requests or change provider authentication. This prevents an untrusted cloned repository from silently forwarding requests to another server.
+
+## 3. Manage multiple third-party providers with profiles
+
+CC Switch users can normally switch providers in the application and do not need Codex profiles.
+
+Profiles are useful when you manually configure multiple native Responses providers. Keep provider definitions in the base configuration and use separate profile files to select a provider and model.
+
+Base `~/.codex/config.toml`:
+
+```toml
+[model_providers.provider_a]
+name = "Provider A"
+base_url = "https://api.provider-a.example/v1"
+env_key = "PROVIDER_A_API_KEY"
+wire_api = "responses"
+
+[model_providers.provider_b]
+name = "Provider B"
+base_url = "https://api.provider-b.example/v1"
+env_key = "PROVIDER_B_API_KEY"
+wire_api = "responses"
+```
+
+```text
+~/.codex/fast.config.toml
+```
+
+```toml
+model_provider = "provider_a"
+model = "provider-a-fast-model"
+model_reasoning_effort = "medium"
+```
+
+Create another profile:
+
+```text
+~/.codex/quality.config.toml
+```
+
+```toml
+model_provider = "provider_b"
+model = "provider-b-quality-model"
+model_reasoning_effort = "high"
+```
+
+Select a profile when launching Codex:
+
+```bash
+codex --profile fast
+codex --profile quality
+```
+
+Non-interactive mode:
+
+```bash
+codex exec --profile quality "Review the current changes"
+```
+
+Profile files live at:
+
+```text
+$CODEX_HOME/<profile-name>.config.toml
+```
+
+The default `CODEX_HOME` is `~/.codex`.
+
+Recent Codex versions use separate profile files and no longer read legacy `[profiles.]` tables. Migrate each legacy profile into its own `.config.toml` file.
+
+### 4.1 Standard bearer tokens
+
+Most third-party services work with:
+
+```toml
+[model_providers.third_party]
+env_key = "THIRD_PARTY_API_KEY"
+```
+
+Codex reads the key from the environment and applies the provider's bearer authentication.
+
+### 4.2 Custom API-key headers
+
+Some services require:
+
+```text
+x-api-key: <key>
+```
+
+Use `env_http_headers`:
+
+```toml
+model_provider = "custom_header_provider"
+model = "provider-model-id"
+
+[model_providers.custom_header_provider]
+name = "Custom Header Provider"
+base_url = "https://provider.example.com/v1"
+wire_api = "responses"
+env_http_headers = { "x-api-key" = "VENDOR_API_KEY" }
+```
+
+The value `VENDOR_API_KEY` is an environment-variable name, not the secret itself.
+
+```bash
+export VENDOR_API_KEY="your API key"
+```
+
+### 4.3 Static headers and query parameters
+
+Add non-sensitive static headers:
+
+```toml
+http_headers = { "X-Client-Name" = "codex", "X-Environment" = "development" }
+```
+
+Add query parameters:
+
+```toml
+query_params = { "api-version" = "2026-08-01" }
+```
+
+Do not place real secrets in `http_headers`.
+
+### 4.4 Command-backed authentication
+
+An enterprise environment may obtain short-lived tokens from a keychain, cloud credential helper, or internal command:
+
+```toml
+[model_providers.corporate]
+name = "Corporate Gateway"
+base_url = "https://gateway.example.com/v1"
+wire_api = "responses"
+
+[model_providers.corporate.auth]
+command = "/usr/local/bin/fetch-codex-token"
+args = ["--audience", "codex"]
+timeout_ms = 5000
+refresh_interval_ms = 300000
+```
+
+The command must print only the token to standard output.
+
+Do not combine these authentication methods:
+
+- `[model_providers..auth]`;
+- `env_key`;
+- `experimental_bearer_token`;
+- `requires_openai_auth`.
+
+### 4.5 Reuse OpenAI authentication through a proxy
+
+Set the following only when the proxy still accesses OpenAI models and Codex should use official OpenAI authentication:
+
+```toml
+requires_openai_auth = true
+```
+
+This is not the correct setting for a normal third-party model API key. When enabled, Codex ignores the provider's `env_key`.
+
+### 5.1 CC Switch changes providers, but Codex still uses the old model
+
+Check each item:
+
+1. the intended Codex provider is enabled in CC Switch;
+2. the local-routing master switch is on;
+3. Codex is enabled under Routing Enabled;
+4. Chat or Messages providers have Needs Local Routing enabled;
+5. CC Switch is still running;
+6. Codex, the IDE, or the desktop client has been fully restarted;
+7. `/debug-config` shows the expected configuration source.
+
+Restart Codex after changing model mappings so the `/model` menu can reload its catalog.
+
+### 5.2 `404`, `400`, or a missing `/responses` endpoint
+
+Common causes include:
+
+- treating a Chat Completions provider as a native Responses provider;
+- adding or removing `/v1` incorrectly;
+- appending `/chat/completions` twice;
+- failing to enable Full URL Mode for a non-standard endpoint;
+- local routing not taking over Codex;
+- an incomplete Responses implementation in the third-party gateway.
+
+CC Switch users should inspect Upstream Format and routing logs. Direct-provider users should call `<base_url>/responses` with `curl`.
+
+### 5.3 `401 Unauthorized` or `403 Forbidden`
+
+- whether the API key is valid;
+- whether it belongs to the correct region, project, or plan;
+- whether the account has sufficient balance and permissions;
+- whether the service expects a bearer token or `x-api-key`;
+- whether the environment-variable name exactly matches `env_key`;
+- whether CC Switch saved the correct key;
+- whether a proxy removed the authentication header.
+
+Do not print a complete key into shared logs.
+
+```bash
+printenv THIRD_PARTY_API_KEY
+```
+
+```powershell
+$env:THIRD_PARTY_API_KEY
+```
+
+### 5.4 The model is missing from `/model`
+
+- whether CC Switch Model Mapping contains the exact upstream model ID;
+- whether the provider has been saved and enabled;
+- whether Codex was restarted;
+- whether a manual provider has a valid `model_catalog_json`;
+- whether the catalog JSON is valid;
+- whether the provider renamed or retired the model.
+
+### 5.5 Text works, but Codex cannot read files, edit code, or run commands
+
+- the model is weak at tool calling;
+- the upstream does not implement function calling;
+- a relay drops tool-call IDs;
+- streaming tool-call fragments are not reassembled correctly;
+- JSON Schema is rewritten;
+- tool results are not returned in the next turn;
+- the model context is too short;
+- the model catalog incorrectly advertises capabilities.
+
+Test a real “read → edit → run tests → inspect failure → fix” loop rather than a simple chat prompt.
+
+### 5.6 Streaming disconnects frequently
+
+CC Switch users should inspect local-routing logs and upstream responses first. Common causes include:
+
+- upstream queueing or long reasoning time;
+- a gateway that does not emit SSE promptly;
+- CDN, reverse-proxy, or corporate-network buffering;
+- non-standard upstream events;
+- compatibility problems in a particular CC Switch or provider version.
+
+For a direct provider, you can increase:
+
+```toml
+request_max_retries = 4
+stream_max_retries = 5
+stream_idle_timeout_ms = 600000
+```
+
+Longer timeouts can mitigate network or slow-inference problems, but they cannot repair an incorrect protocol implementation.
+
+### 5.7 `wire_api = "chat"` prevents Codex from starting
+
+This value appears in older guides. Current Codex configuration supports only:
+
+```toml
+wire_api = "responses"
+```
+
+Use CC Switch when the upstream exposes only Chat Completions.
+
+Check for other obsolete fields with:
+
+```bash
+codex --strict-config
+```
+
+### 5.8 Editing project configuration does not change the provider
+
+```text
+~/.codex/config.toml
+```
+
+A project-level `.codex/config.toml` cannot override fields that redirect requests or change provider authentication, including `model_provider` and `model_providers`.
+
+### 5.9 The terminal works, but the IDE extension cannot find the API key
+
+GUI applications often do not inherit variables that were exported temporarily in an existing terminal.
+
+- launch the IDE from the terminal where the variable is set;
+- persist the variable in the operating-system user environment;
+- fully quit and reopen the IDE;
+- use CC Switch to manage the local provider configuration.
+
+### 5.10 Official login or official features stop working after a switch
+
+- whether OpenAI Official has been selected again;
+- whether Keep official login when switching third-party providers is enabled;
+- whether an older workflow overwrote `~/.codex/auth.json`;
+- whether `codex login status` succeeds.
+
+When necessary, sign in again:
+
+```bash
+codex login
+```
+
+Do not share or manually edit an `auth.json` file containing access tokens.
+
+### 5.11 Web Search, images, or other advanced capabilities do not work
+
+A provider that supports text and tool calls does not necessarily implement every Codex capability.
+
+Custom providers do not advertise standalone Web Search by default. Set the following only when the provider, model, and endpoint genuinely support it:
+
+```toml
+supports_standalone_web_search = true
+```
+
+Enabling it incorrectly only causes Codex to send requests the upstream cannot process. Validate image input, WebSockets, response storage, and other advanced features separately.
+
+## 6. Choose an integration path
+
+| Requirement | Recommended path |
+| --- | --- |
+| The provider exposes only Chat Completions | CC Switch |
+| The provider exposes only Anthropic Messages | CC Switch |
+| You switch among several third-party models frequently | CC Switch |
+| You want a graphical interface for keys and models | CC Switch |
+| The provider fully and natively supports Responses | Custom `model provider` |
+| You run on a server, in CI, or without a desktop | Native Responses provider or a self-hosted gateway |
+| Your company needs centralized authentication, audit, and rate limits | Enterprise gateway plus a custom provider |
+| The model can only chat and cannot call tools | Not suitable as a full Codex agent provider |
+
+Validate every integration at three levels:
+
+1. Connectivity: it returns text reliably;
+2. Tool use: it can read files, run commands, and continue from tool results;
+3. Task completion: it can complete an edit, test, and repair loop.
+
+Also review:
+
+- third-party pricing;
+- rate limits;
+- whether source code and prompts are logged;
+- data-storage regions;
+- team or enterprise compliance requirements;
+- whether model upgrades require regression testing.
+
+When you use a third-party API key, usage is billed by that provider or relay. It does not automatically consume or share allowances included with ChatGPT Plus, Pro, or a Codex subscription.
+
+## References
+
+- Codex Config Basics
+- Codex Advanced Configuration
+- Codex Configuration Reference
+- Codex Authentication
+- Codex Developer Commands
+- Codex Models
+- CC Switch GitHub
+- CC Switch User Manual
+- CC Switch: Add Provider
+- CC Switch: Preserve Codex Official Login

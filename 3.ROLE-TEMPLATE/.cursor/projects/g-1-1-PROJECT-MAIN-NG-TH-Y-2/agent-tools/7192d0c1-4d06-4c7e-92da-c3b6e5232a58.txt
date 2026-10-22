@@ -1,0 +1,478 @@
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:485:            int[] quantityOfWeek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:522:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:525:                            quantityOfWeek[54] = 0;
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:534:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:569:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:578:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:602:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:604:                drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:741:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:743:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:754:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:759:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:761:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:762:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:485:            int[] quantityOfWeek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:522:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:525:                            quantityOfWeek[54] = 0;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:534:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:569:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:578:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:602:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:604:                drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:741:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:743:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:754:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:759:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:761:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:762:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\BÌNH DƯƠNG - Kinh tế\hos\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:484:            int[] quantityOfWeek = new int[Global.Variable.MaxWeekOfYear + 1]; // { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:520:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:523:                            drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            quantityOfWeek[Global.Variable.MaxWeekOfYear] = 0;
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:533:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:567:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:576:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:601:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:603:                drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmClassSubjectReport.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:775:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:777:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:788:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:793:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:795:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:796:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekClassPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NÔNG LÂM -------------\NÔNG LÂM - thoikhoabieu\1.WIN-FORM 0813\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmWeekClassPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmClassSubjectReport.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh đồng nai\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:484:            int[] quantityOfWeek = new int[Global.Variable.MaxWeekOfYear + 1]; // { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:520:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:523:                            drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            quantityOfWeek[Global.Variable.MaxWeekOfYear] = 0;
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:533:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:567:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:576:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:601:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:603:                drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:775:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:777:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:788:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:793:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:795:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:796:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekClassPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmWeekClassPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmClassSubjectReport.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\Cao đẳng 21 - ký số\1.WINFORM\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:485:            int[] quantityOfWeek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:522:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:525:                            quantityOfWeek[54] = 0;
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:534:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:569:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:578:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:602:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:604:                drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:775:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:777:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:788:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:793:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:795:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:796:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekClassPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmWeekClassPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmClassSubjectReport.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:485:            int[] quantityOfWeek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:522:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:525:                            quantityOfWeek[54] = 0;
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:534:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:569:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:578:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:602:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:604:                drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:741:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:743:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:754:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:759:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:761:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:762:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmClassSubjectReport.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\Z.WEB-CDN-QUYNHON\0.WINFORM\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:484:            int[] quantityOfWeek = new int[Global.Variable.MaxWeekOfYear + 1]; // { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:520:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:523:                            drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            quantityOfWeek[Global.Variable.MaxWeekOfYear] = 0;
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:533:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:567:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:576:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:601:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:603:                drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:775:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:777:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:788:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:793:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:795:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:796:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekClassPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekClassPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassSubjectReport.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:485:            int[] quantityOfWeek = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:522:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:525:                            quantityOfWeek[54] = 0;
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:534:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:569:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:578:                        quantityOfWeek[54] = quantityOfWeek[54] + intQuantity;
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:602:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:604:                drwNew["TotalQuantity"] = quantityOfWeek[54];
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:741:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:743:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:754:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:759:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:761:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:762:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmClassSubjectReport.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\QUY NHƠN - Tài sản\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:484:            int[] quantityOfWeek = new int[Global.Variable.MaxWeekOfYear + 1]; // { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:520:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:523:                            drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            quantityOfWeek[Global.Variable.MaxWeekOfYear] = 0;
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:533:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:567:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:576:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:601:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:603:                drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:775:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:777:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:788:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:793:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:795:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:796:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassSubjectReport.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekClassPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmWeekClassPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\ZED\1.TRƯỜNG\LONG THÀNH\CNC LONG THANH - thoikhoabieu\1.WIN-FORM 1216\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan_SelectTeacher.cs:28:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlanSummary.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan2.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.Designer.cs:3:    partial class frmWeekTeachingPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:26:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:28:    public partial class frmWeekTeachingPlan : FormBase, IForm
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:484:            int[] quantityOfWeek = new int[Global.Variable.MaxWeekOfYear + 1]; // { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:520:                                drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:521:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:523:                            drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:524:                            quantityOfWeek[Global.Variable.MaxWeekOfYear] = 0;
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:533:                                quantityOfWeek[k] = 0;
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:567:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:568:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:576:                        quantityOfWeek[intWeek] = quantityOfWeek[intWeek] + intQuantity; // nhớ giá trị để tính tổng
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:577:                        quantityOfWeek[Global.Variable.MaxWeekOfYear] = quantityOfWeek[Global.Variable.MaxWeekOfYear] + intQuantity;
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:601:                    drwNew["Week" + k.ToString()] = quantityOfWeek[k];
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekTeachingPlan.cs:603:                drwNew["TotalQuantity"] = quantityOfWeek[Global.Variable.MaxWeekOfYear];
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekRoomPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekRoomPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:775:        private void QuickSetQuantityForRow(DataRow drwData, int quantityOfWeek, int startWeekIndex)
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:777:            int a = quantityOfWeek;
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:788:                        if (intCount >= dtbWeekList.Rows.Count && quantityOfWeek != 0) // nếu là tuần cuối thì cộng hết cho nó nếu còn, ngoại trừ đang set 0 cho tất cả
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:793:                        else if (intSum + quantityOfWeek <= intQuantity)      // nếu vẫn còn đủ để phân                  
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:795:                            drwData["Week" + i.ToString()] = quantityOfWeek == 0 ? "" : quantityOfWeek.ToString();
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekDetailPlan.cs:796:                            intSum += quantityOfWeek;
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekClassPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmWeekClassPlan.cs:27:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmTongHopNgayBatDauKetThucHoc.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmSummaryPlanEdit_Multi.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmSummaryPlanEdit.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmSummaryPlanEdit.cs:15:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmSummaryPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmSummaryPlan.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmClassTestDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmClassTestDetailPlan.cs:21:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmClassSubjectReport.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmClassSubjectReport.cs:19:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmClassDetailPlan.Designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmClassDetailPlan.cs:22:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs:1:namespace TrainingPlan.ReportPlan
+G:\1.1-PROJECT-MAIN\CĐ NGHỀ - kyso\1.WIN-FORM 30\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs:19:namespace TrainingPlan.ReportPlan

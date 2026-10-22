@@ -1,0 +1,21 @@
+---
+pid: 41788
+cwd: "g:\\0.0TOOL\\CODEX\\CMS-POLL-KHẢO SÁT\\CMS-POLL-KH-O-S-T"
+command: "npm run dev -- --host=127.0.0.1 --port=4174"
+title: "start vite with static page"
+status: running  
+started_at: 2026-10-14T08:46:52.680Z
+running_for_ms: 3821730  
+---
+
+> cms-poll-kh-o-s-t@0.0.0 dev
+> vite
+
+15:46:55 [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v8.2.2  ready in 2059 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+15:48:22 [vite] (client) page reload survey-static.html
+15:54:13 [vite] (client) page reload survey-static-dropdown.html

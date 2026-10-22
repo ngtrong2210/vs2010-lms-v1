@@ -1,0 +1,1152 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+    <base />
+
+    <link rel="shortcut icon" href="/assets/client/img/favicon.ico" type="image/x-icon">
+
+    <meta name="google-site-verification" content="V7AOP6PwUqe36rcBVz5C2xpAb16Q9eBbCKi6w07RfUQ" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <title>THONG TIN TUY?N SINH - TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON</title>
+    <meta name="keywords" content="cao dang, cao dang ky thuat, cao d?ng, truong cao dang, tru?ng Cao d?ng, truong cao dang nghe, truong Cao d?ng ngh?, cao dang chinh quy, lien thong, cao d?ng ch�nh quy, tuyen sinh cao dang, tuy?n sinh cao d?ng, cao dang, cao dang ky thuat cong nghe, cao dang lien thong" />
+    <meta name="description" content="Tru?ng Cao d?ng ngh? uy t�n ch?t lu?ng h�ng d?u Vi?t Nam, d�o t?o da ng�nh ngh?, d?m b?o th?c t?p, vi?c l�m cho sinh vi�n theo h?c." />
+    <meta name="copyright" content="Tru?ng Cao d?ng K? Thu?t C�ng ngh? Quy Nhon" />
+    <meta name="author" content="Tru?ng Cao d?ng K? Thu?t C�ng ngh? Quy Nhon" />
+    <meta http-equiv="audience" content="General" />
+    <meta name="resource-type" content="Document" />
+    <meta name="distribution" content="Global" />
+    <meta name="GENERATOR" content="Tru?ng Cao d?ng K? Thu?t C�ng ngh? Quy Nhon" />
+    <link rel="publisher" href="https://cdktcnqn.edu.vn" />
+    <link rel="author" href="https://cdktcnqn.edu.vn" />
+    <meta itemprop="name" content="cdktcnqn.edu.vn">
+    <meta itemprop="description" content="Tru?ng Cao d?ng uy t�n ch?t lu?ng h�ng d?u Vi?t Nam, d�o t?o da ng�nh ngh?, d?m b?o th?c t?p, vi?c l�m cho sinh vi�n theo h?c">
+    
+
+    <link rel="stylesheet" href="/assets/client/css/style.css" />
+    <link href="/assets/client/css/jquery.toast.css" rel="stylesheet" />
+    <link href="/assets/client/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+    
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div id="fb-root"></div>
+    <div id="sb-site">
+        <section class="content nopadding">
+            <div class="container nopadding">
+                <!-- Template Start: site/common/WrapHeader -->
+                <div class="block-nopadding back-blue" id="menumobile">
+                    <div class="content noidung">
+                        <div class="col-xs-6 nopadding menumobile-left">
+                            <span id="openmenu" class="sb-open-left"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;Danh m?c</span>
+                            <span id="closemenu" class="sb-open-left2"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;Danh m?c</span>
+                        </div>
+                        <div class="col-xs-6 nopadding text-right">
+                        </div>
+                    </div>
+                </div>
+                <div class="block nopadding">
+                    <div class="content noidung back-white desktop">
+                        <div id="bannertuyensinh" class="headertop">
+                            <a href="/trang-chu">
+                                <img class="img-responsive" src="/assets/client/img/banner/img/banner.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="content noidung back-white mobi">
+                        <div id="bannertuyensinh" class="headertop" style="padding: 5px 0;">
+                            <a href="/trang-chu">
+                                <img class="img-responsive" src="/assets/client/img/banner/img/SmallBanner.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Template End: site/common/WrapHeader -->
+                <div class="block-nopadding">
+                    <div class="content noidung menu-desktop">
+                        <ul class="table autoLayout absSubMenus" id="ja-cssmenu">
+                            <!-- Template Start: site/tuyensinh/WrapMenu -->
+                            <li class="active havechild">
+                                <a href="/trang-chu">
+                                    <i class="fa fa-home fa-1-5" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li class="havechild">
+                                <a><span class="menu-title">Gi?i thi?u</span></a>
+                                <ul>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/tong-quan"><span class="menu-title">Gi?i thi?u v? tru?ng</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/lich-su-phat-trien"><span class="menu-title">L?ch s? ph�t tri?n</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/so-do-to-chuc"><span class="menu-title">So d? t? ch?c</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a><span class="menu-title">T? ch?c</span></a>
+                                        <ul>
+                                            <li class="havechild">
+                                                <a href="/gioi-thieu/dang-bo"><span class="menu-title">D?ng b? Nh� tru?ng</span></a>
+                                            </li>
+                                            <li class="havechild">
+                                                <a href="/gioi-thieu/ban-giam-hieu"><span class="menu-title">Ban gi�m hi?u</span></a>
+                                            </li>
+                                            <li class="havechild">
+                                                <a href="/phong-khoa/danh-sach-phong"><span class="menu-title">Ph�ng ch?c nang</span></a>
+                                                <ul style="width:calc(210%)">
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/phong-hanh-chinh-quan-tri/70"><span class="menu-title">Ph&#242;ng H&#224;nh ch&#237;nh - Qu?n tr?</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/phong-quan-ly-dao-tao/53"><span class="menu-title">Ph&#242;ng Qu?n l&#253; D&#224;o t?o</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/phong-tai-chinh/58"><span class="menu-title">Ph&#242;ng T&#224;i ch&#237;nh</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/phong-to-chuc-dam-bao-chat-luong/71"><span class="menu-title">Ph&#242;ng T? ch?c - D?m b?o ch?t lu?ng</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/phong-tuyen-sinh-hop-tac-quoc-te/68"><span class="menu-title">Ph&#242;ng Tuy?n sinh - H?p t&#225;c Qu?c t?</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/trung-tam-so-truyen-thong/87"><span class="menu-title">Trung t&#226;m S? - Truy?n th&#244;ng</span></a>
+                                                            </li>
+                                                </ul>
+                                            </li>
+                                            <li class="havechild">
+                                                <a href="/phong-khoa/danh-sach-khoa"><span class="menu-title">Khoa chuy�n m�n</span></a>
+                                                <ul style="width:calc(210%)">
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-co-khi/66"><span class="menu-title">Khoa Co kh&#237;</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-cong-nghe-o-to/62"><span class="menu-title">Khoa C&#244;ng ngh? &#244; t&#244;</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-dien/61"><span class="menu-title">Khoa Di?n</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-dien-tu-tin-hoc/52"><span class="menu-title">Khoa Di?n t? - Tin h?c</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-du-lich/67"><span class="menu-title">Khoa Du l?ch</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-kinh-te-tong-hop/90"><span class="menu-title">Khoa Kinh t? - T?ng h?p</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-ky-thuat-nong-nghiep/89"><span class="menu-title">Khoa K? thu?t n&#244;ng nghi?p</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-van-hoa-nghe-thuat/91"><span class="menu-title">Khoa Van h&#243;a ngh? thu?t</span></a>
+                                                            </li>
+                                                            <li class="havechild">
+                                                                <a href="/phong-khoa/khoa-van-hoa-trung-hoc-pho-thong/73"><span class="menu-title">Khoa Van h&#243;a trung h?c ph? th&#244;ng</span></a>
+                                                            </li>
+                                                </ul>
+                                            </li>
+                                            <li class="havechild">
+                                                <a><span class="menu-title">T? ch?c ch�nh tr? - Xa h?i</span></a>
+                                                <ul>
+                                                    <li class="havechild">
+                                                        <a href="/gioi-thieu/cong-doan"><span class="menu-title">C�ng do�n</span></a>
+                                                    </li>
+                                                    <li class="havechild">
+                                                        <a href="/gioi-thieu/doan-thanh-nien"><span class="menu-title">Do�n thanh ni�n - H?i sinh vi�n</span></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/co-so-vat-chat"><span class="menu-title">Co s? v?t ch?t</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/nang-luc-dao-tao"><span class="menu-title">Nang l?c d�o t?o</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/thanh-tich-dat-duoc"><span class="menu-title">Th�nh t�ch d?t du?c</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/dinh-huong-phat-trien"><span class="menu-title">D?nh hu?ng ph�t tri?n</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/muc-tieu-chat-luong"><span class="menu-title">M?c ti�u ch?t lu?ng</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/gioi-thieu/ky-yeu-nha-truong"><span class="menu-title">K? y?u nh� tru?ng</span></a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="havechild">
+                                <a href="/tin-tuyen-sinh/thong-bao-tuyen-sinh"><span class="menu-title">Th�ng B�o</span></a>
+                            </li>
+                            <li class="havechild">
+                                <a href="/sinh-vien-tieu-bieu"><span class="menu-title">H?c sinh - Sinh vi�n ti�u bi?u</span></a>
+                            </li>
+                            <li class="havechild">
+                                <a href="/danh-muc-nghe"><span class="menu-title">Ngh? d�o t?o</span></a>
+                                
+                            </li>
+                            <li class="havechild">
+                                <a><span class="menu-title">Dang ky x�t tuy?n tr?c tuy?n</span></a>
+                                <ul>
+                                    <li class="havechild">
+                                        <a href="/dang-ky/cao-dang"><span class="menu-title">Cao D?ng</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/dang-ky/lien-thong-cao-dang"><span class="menu-title">Li�n th�ng cao d?ng</span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/dang-ky/trung-cap-thcs"><span class="menu-title">Trung c?p 2 nam </span></a>
+                                    </li>
+                                    <li class="havechild">
+                                        <a href="/dang-ky/trung-cap-thpt"><span class="menu-title">Trung c?p 1,5 nam</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="havechild">
+                                <a href="/ket-qua"><span class="menu-title">K?t qu? x�t tuy?n</span></a>
+                            </li>
+                            <li class="havechild">
+                                <a href="/hoi-dap"><span class="menu-title">H?i d�p</span></a>
+                            </li>
+                            <!-- Template End: site/tuyensinh/WrapMenu -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Template End: site/common/WrapBanner -->
+
+                
+
+<div class="block-nopadding no-padding-home">
+    <div class="content noidung">
+        <div class="col-sm-9 no-padding-left padding-right-5">
+            <div class="col-sm-12 block-content nopadding">
+                <div class="row ">
+                    <div class="col-sm-12">
+                        <p class="titlepax text-center mt-10">
+                            Danh m?c ngh? d�o t?o
+                        </p>
+                    </div>
+                </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-bieu-dien-nhac-cu-phuong-tay-70" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/BI?U DI?N NH?C C? PHUONG T&#194;Y-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-cat-got-kim-loai-23" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LG CGKL.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-chan-nuoi-thu-y-65" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/CHAN NU&#212;I - TH&#218; Y-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-che-tao-thiet-bi-co-khi-25" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO CTTBCK.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-co-dien-tu-22" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO CDT.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-cong-nghe-may-66" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/C&#212;NG NGH? MAY-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-cong-nghe-o-to-17" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LG CNOTO.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-cong-nghe-thong-tin-ung-dung-phan-mem-12" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/CNTT.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-dien-cong-nghiep-19" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO DCN.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-dien-tu-cong-nghiep-26" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO DTCN.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-han-27" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO HAN.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-hoi-hoa-67" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/H?I H?A-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-huong-dan-du-lich-52" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/HUONG DAN DU LICH-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-ke-toan-doanh-nghiep-29" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO KTDN.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-ky-thuat-che-bien-mon-an-28" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO KTCBMA.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-ky-thuat-sua-chua-lap-rap-may-tinh-16" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/KTSCLRMT.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-organ-69" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/ORGAN-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-quan-tri-khach-san-53" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/QUAN TR? KHACH SAN-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-quan-tri-kinh-doanh-58" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/QU?N TR? KINH DOANH-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-quan-tri-nha-hangnghiep-vu-nha-hang-30" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO QTNH.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-thanh-nhac-68" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/THANH NH?C-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-trong-trot-va-bao-ve-thuc-vat-64" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/TR?NG TR?T V&#192; B?O V? TH?C V?T-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/nghe-van-hanh-sua-chua-thiet-bi-lanh-31" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/LOGO VHSCTBL.png" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+                    <div class="col-xs-12 col-md-6" style="margin-bottom:20px">
+                        <a href="/danh-muc-nghe/tieng-anh-56" class="ChiTietNghe">
+                            <img style="width:100%;" src="http://api.cdktcnqn.edu.vn//UploadedFiles/HinhAnhNghe/TI?NG ANH-01.jpg" alt="TRU?NG CAO D?NG K? THU?T CONG NGH? QUY NHON, TRU?NG NGH? CH?T LU?NG CAO T?I VI?T NAM">
+                        </a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-sm-3 nopadding">
+            
+            <div class="block-content">
+                <div class="header-block">
+                    <img class="icon-tin-noi-bat" src="/assets/client/img/img_blank.gif" />
+                    <span class="title-block text-red">
+                        <div class="title-right"> Th�ng tin m?i</div>
+                    </span>
+                </div>
+                <div class="content-block">
+
+                        <ul class="latestnews">
+                            <li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
+                                <a class="latestnews" href="/tin-tuyen-sinh/thong-bao-tuyen-sinh-nam-2026-20166">
+                                    TH&#212;NG B&#193;O TUY?N SINH - NAM 2026
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="latestnews">
+                            <li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
+                                <a class="latestnews" href="/tin-tuyen-sinh/thong-bao-tuyen-sinh-nam-2025-20164">
+                                    TH&#212;NG B&#193;O TUY?N SINH - NAM 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="latestnews">
+                            <li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
+                                <a class="latestnews" href="/tin-tuyen-sinh/tu-van-huong-nghiep-tai-thi-xa-an-khe-tinh-gia-lai-20163">
+                                    TU V?N HU?NG NGHI?P T?I TH? X&#195; AN KH&#202; (T?NH GIA LAI)
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="latestnews">
+                            <li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
+                                <a class="latestnews" href="/tin-tuyen-sinh/tu-van-huong-nghiep-hoc-sinh-thcs-tai-huyen-tuy-phuoc-20162">
+                                    TU V?N HU?NG NGHI?P H?C SINH THCS T?I HUY?N TUY PHU?C
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="latestnews">
+                            <li class="wow slideInUp animated" style="visibility: visible; animation-name: slideInUp;">
+                                <a class="latestnews" href="/tin-tuyen-sinh/tu-van-huong-nghiep-dot-8-nam-2024-20161">
+                                    TU V?N HU?NG NGHI?P - D?T 8, NAM 2024
+                                </a>
+                            </li>
+                        </ul>
+
+                    <div class="col-sm-12 text-right padding wow slideInUp animated animated" style="visibility: visible; animation-name: slideInUp;">
+                        <a href="/tin-tuyen-sinh/thong-bao-tuyen-sinh" class="text-red text-bold"><i class="fa fa-plus-square fa-1 text-red" aria-hidden="true"></i> Xem t?t c?</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="block-content">
+                    <div class="tinlienquan">
+                        <a style="background-color:#fc5053;" href="https://tuyensinh.cdktcnqn.edu.vn/tin-tuyen-sinh/thong-bao-tuyen-sinh-nam-2026-20166">
+                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;TH&#212;NG B&#193;O TUY?N SINH - NAM 2026</span>
+                        </a>
+                    </div>
+                    <div class="tinlienquan">
+                        <a style="background-color:#fb9e20;" href="http://tuyensinh.cdktcnqn.edu.vn/tin-tuyen-sinh/huong-dan-dang-ky-tuyen-sinh-truc-tuyen-89">
+                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;Hu?ng d?n dang k&#253; h? so tr?c tuy?n</span>
+                        </a>
+                    </div>
+                    <div class="tinlienquan">
+                        <a style="background-color:#3366ff;" href="http://tuyensinh.cdktcnqn.edu.vn/tin-tuyen-sinh/thong-bao-tuyen-sinh-dao-tao-lien-thong-dai-hoc-vua-lam-vua-hoc-10124">
+                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;Tuy?n sinh li&#234;n th&#244;ng d&#224;o t?o d?i h?c</span>
+                        </a>
+                    </div>
+                    <div class="tinlienquan">
+                        <a style="background-color:#fc5053;" href="http://tuyensinh.cdktcnqn.edu.vn/tin-tuyen-sinh/thong-bao-tuyen-sinh-lop-nghiep-vu-su-pham-day-trinh-do-cao-dang-khoa-40-109">
+                            <span class="top" style="display:inline-block;">&nbsp;&nbsp;Nghi?p v? Su ph?m d?y Cao d?ng</span>
+                        </a>
+                    </div>
+            </div>
+            
+            <div class="block-content">
+                <div class="header-block">
+                    <div class="">
+                        <img class="icon-hutech-tv" src="/assets/client/img/img_blank.gif">
+                        <span class="title-block text-orange">Dang ky tr?c tuy?n</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="/dang-ky">
+                        <img class="wi-100" src="/assets/client/img/banner/img/DANGKYTRUCTUYEN.png" />
+                    </a>
+                </div>
+            </div>
+            
+            <div class="block-content">
+                <div class="header-block">
+                    <div class="">
+                        <img class="icon-hutech-tv" src="/assets/client/img/img_blank.gif">
+                        <span class="title-block text-orange">H?i d�p</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="/hoi-dap">
+                        <img class="wi-100" frameborder="0" src="/assets/client/img/banner/img/TUVANTRUCTUYEN.png" />
+                    </a>
+                </div>
+            </div>
+            
+            <div class="block-content">
+                <div class="header-block">
+                    <div class="">
+                        <img class="icon-hutech-tv" src="/assets/client/img/img_blank.gif">
+                        <span class="title-block text-orange">Tra c?u k?t qu?</span>
+                    </div>
+                </div>
+                <div class="video">
+                    <a href="/ket-qua">
+                        <img class="wi-100" frameborder="0" src="/assets/client/img/banner/img/TRACUUKETQUA.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <div class="block-nopadding nopadding footer">
+                    <div class="content noidung back-blue">
+                        <div class="row">
+                            <div class="pull-left">
+                                <span class="modtitle">
+                                    Cao D?ng K? Thu?t C�ng Ngh? Quy Nhon<br>
+                                </span>
+                                <span class="modtitle">
+                                    Ph�ng Tuy?n sinh - H?p t�c qu?c t?
+                                </span>
+                                <ul>
+                                    <li>
+                                        <em class="fa fa-map-marker" aria-hidden="true"></em>
+                                        <span> &nbsp;684 H�ng Vuong, P. Quy Nhon B?c, T. Gia Lai</span>
+                                    </li>
+                                    <li><em class="fa fa-envelope-o" aria-hidden="true"></em><span> tuyensinh@cdktcnqn.edu.vn &nbsp;</span></li>
+                                    <li>
+                                        <em class="fa fa-phone-square" aria-hidden="true"></em>
+                                        <span>02563.900.222 - 0394.245.566</span>
+                                    </li>
+                                    <li><em class="fa fa-globe" aria-hidden="true"></em><a href="http://tuyensinh.cdktcnqn.edu.vn"><span> tuyensinh.cdktcnqn.edu.vn</span></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pull-right desktop">
+                                <h4 style="padding-right:10px;">K?t n?i v?i QCET</h4>
+                                <div style="font-size:35px">
+                                    <a target="_blank" class="fa fa-facebook-official" href="https://www.facebook.com/caodangktcnqn/"><em class="mdi mdi-facebook"></em></a>
+                                    <a style="margin-left:5px;" target="_blank" class="fa fa-youtube-square" href="https://www.youtube.com/channel/UCo2b1PSEz9TLqM1UGwtJsSQ?fbclid=IwAR1O6PudfuX_PATzAKKO0HCp1OJNOBeIOWCk-ZlF9Zozn-ZE_T6XGFgE-64"><em class="mdi mdi-youtube-play"></em></a>
+                                    <a target="_blank" href="https://zalo.me/792420467717054099">
+                                        <img style="width: 35px;height: 35px;margin: 0;margin-bottom :3px;" src="/assets/client/img/zalo-icon.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="sb-slidebar sb-left">
+        <div id="wrap">
+            <ul class="menu" style="margin-top:0px;">
+                <!-- Template Start: site/tuyensinh/WrapMenu -->
+                <li class="active havechild">
+                    <a href="/trang-chu">
+                        <i class="fa fa-home fa-1-5" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="havechild">
+                    <a><span class="menu-title">Gi?i thi?u</span></a>
+                    <ul>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/tong-quan"><span class="menu-title">Gi?i thi?u v? tru?ng</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/lich-su-phat-trien"><span class="menu-title">L?ch s? ph�t tri?n</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/so-do-to-chuc"><span class="menu-title">So d? t? ch?c</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a><span class="menu-title">T? ch?c</span></a>
+                            <ul>
+                                <li class="havechild">
+                                    <a href="/gioi-thieu/dang-bo"><span class="menu-title">D?ng b? Nh� tru?ng</span></a>
+                                </li>
+                                <li class="havechild">
+                                    <a href="/gioi-thieu/ban-giam-hieu"><span class="menu-title">Ban gi�m hi?u</span></a>
+                                </li>
+                                <li class="havechild">
+                                    <a href="/phong-khoa/danh-sach-phong"><span class="menu-title">Ph�ng ch?c nang</span></a>
+                                    <ul style="width:calc(210%)">
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/phong-hanh-chinh-quan-tri/70"><span class="menu-title">Ph&#242;ng H&#224;nh ch&#237;nh - Qu?n tr?</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/phong-quan-ly-dao-tao/53"><span class="menu-title">Ph&#242;ng Qu?n l&#253; D&#224;o t?o</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/phong-tai-chinh/58"><span class="menu-title">Ph&#242;ng T&#224;i ch&#237;nh</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/phong-to-chuc-dam-bao-chat-luong/71"><span class="menu-title">Ph&#242;ng T? ch?c - D?m b?o ch?t lu?ng</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/phong-tuyen-sinh-hop-tac-quoc-te/68"><span class="menu-title">Ph&#242;ng Tuy?n sinh - H?p t&#225;c Qu?c t?</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/trung-tam-so-truyen-thong/87"><span class="menu-title">Trung t&#226;m S? - Truy?n th&#244;ng</span></a>
+                                                </li>
+                                    </ul>
+                                </li>
+                                <li class="havechild">
+                                    <a href="/phong-khoa/danh-sach-khoa"><span class="menu-title">Khoa chuy�n m�n</span></a>
+                                    <ul style="width:calc(210%)">
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-co-khi/66"><span class="menu-title">Khoa Co kh&#237;</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-cong-nghe-o-to/62"><span class="menu-title">Khoa C&#244;ng ngh? &#244; t&#244;</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-dien/61"><span class="menu-title">Khoa Di?n</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-dien-tu-tin-hoc/52"><span class="menu-title">Khoa Di?n t? - Tin h?c</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-du-lich/67"><span class="menu-title">Khoa Du l?ch</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-kinh-te-tong-hop/90"><span class="menu-title">Khoa Kinh t? - T?ng h?p</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-ky-thuat-nong-nghiep/89"><span class="menu-title">Khoa K? thu?t n&#244;ng nghi?p</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-van-hoa-nghe-thuat/91"><span class="menu-title">Khoa Van h&#243;a ngh? thu?t</span></a>
+                                                </li>
+                                                <li class="havechild">
+                                                    <a href="/phong-khoa/khoa-van-hoa-trung-hoc-pho-thong/73"><span class="menu-title">Khoa Van h&#243;a trung h?c ph? th&#244;ng</span></a>
+                                                </li>
+                                    </ul>
+                                </li>
+                                <li class="havechild">
+                                    <a><span class="menu-title">T? ch?c ch�nh tr? - Xa h?i</span></a>
+                                    <ul>
+                                        <li class="havechild">
+                                            <a href="/gioi-thieu/cong-doan"><span class="menu-title">C�ng do�n</span></a>
+                                        </li>
+                                        <li class="havechild">
+                                            <a href="/gioi-thieu/doan-thanh-nien"><span class="menu-title">Do�n thanh ni�n - H?i sinh vi�n</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/co-so-vat-chat"><span class="menu-title">Co s? v?t ch?t</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/nang-luc-dao-tao"><span class="menu-title">Nang l?c d�o t?o</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/thanh-tich-dat-duoc"><span class="menu-title">Th�nh t�ch d?t du?c</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/dinh-huong-phat-trien"><span class="menu-title">D?nh hu?ng ph�t tri?n</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/muc-tieu-chat-luong"><span class="menu-title">M?c ti�u ch?t lu?ng</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/gioi-thieu/ky-yeu-nha-truong"><span class="menu-title">K? y?u nh� tru?ng</span></a>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="havechild">
+                    <a href="/tin-tuyen-sinh/thong-bao-tuyen-sinh"><span class="menu-title">Th�ng B�o</span></a>
+                </li>
+                <li class="havechild">
+                    <a href="/sinh-vien-tieu-bieu"><span class="menu-title">H?c sinh - Sinh vi�n ti�u bi?u</span></a>
+                </li>
+                <li class="havechild">
+                    <a href="/danh-muc-nghe"><span class="menu-title">Ngh? d�o t?o</span></a>
+                    
+                </li>
+                <li class="havechild">
+                    <a href="#"><span class="menu-title">Dang ky x�t tuy?n tr?c tuy?n</span></a>
+                    <ul>
+                        <li class="havechild">
+                            <a href="/dang-ky/cao-dang"><span class="menu-title">Cao D?ng</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/dang-ky/lien-thong-cao-dang"><span class="menu-title">Li�n th�ng cao d?ng</span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/dang-ky/trung-cap-thcs"><span class="menu-title">Trung c?p 2 nam </span></a>
+                        </li>
+                        <li class="havechild">
+                            <a href="/dang-ky/trung-cap-thpt"><span class="menu-title">Trung c?p 1,5 nam</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="havechild">
+                    <a href="/ket-qua"><span class="menu-title">K?t qu? x�t tuy?n</span></a>
+                </li>
+                <li class="havechild">
+                    <a href="/hoi-dap"><span class="menu-title">H?i d�p</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- jQuery library -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Initialize Bootstrap functionality -->
+    <script>
+        // Initialize tooltip component
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+        // Initialize popover component
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+
+        })
+    </script>
+    <script type="text/javascript" src="/assets/client/js/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/client/js/ui-mask.js"></script>
+    <script type="text/javascript" src="/assets/client/js/ui-bootstrap-tpls-1.3.3.js"></script>
+    <script type="text/javascript" src="/assets/client/js/ddaccordion.js"></script>
+    <script type="text/javascript" src="/assets/client/js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="/assets/client/js/slidebars.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                try {
+                    $.slidebars();
+                } catch (e) { }
+            });
+        })(jQuery);
+    </script>
+    <script src="/assets/client/js/bootbox.js"></script>
+    <script src="/assets/client/js/jquery.toast.js"></script>
+    <script src="/assets/client/js/bootstrap-datepicker.js"></script>
+    <script src="/assets/client/js/bootstrap-datepicker-vi.js"></script>
+    <script>
+        $(function () {
+            $('.datepicker').datepicker({
+                autoclose: true,
+                language: 'vi'
+            });
+        });
+    </script>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=493464654515869&autoLogAppEvents=1"></script>
+    
+    <script>
+  window.chatwootSettings = {"position":"right","type":"standard","launcherTitle":""};
+  (function(d,t) {
+    var BASE_URL="https://chat.cdktcnqn.edu.vn";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: '18MWrdTJNVXq1R4Xtp9kf7L9',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
+</script>
+
+
+
+<!-- WIDGET TUY?N SINH TR?C TUY?N - FLOATING & POPOVER -->
+<div class="admission-container" id="admissionWidgetContainer">
+    
+    <!-- H?p tho?i l?a ch?n (Popover) -->
+    <div class="admission-popover" id="admissionPopover">
+
+        <div class="popover-options-list">
+            
+            <!-- Option 1: Dang ky x�t tuy?n -->
+            <a href="https://tuyensinh.cdktcnqn.edu.vn/dang-ky/" target="_blank" class="popover-option-item">
+                <div class="option-icon-wrap icon-blue-bg">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                    </svg>
+                </div>
+                <div class="option-content-wrap">
+                    <div class="option-title-row">
+                        <h4 class="option-heading">Dang ky x�t tuy?n</h4>
+                        <span class="option-arrow">?</span>
+                    </div>
+                    <p class="option-description">
+                        N?p h? so x�t tuy?n tr?c tuy?n <span class="highlight-red">mi?n ph�</span>. Tra c?u k?t qu? x�t tuy?n t? d?ng, ch�nh x�c v� nhanh ch�ng ngay tr�n trang <span class="highlight-red">k?t qu?</span>.
+                    </p>
+                </div>
+            </a>
+
+            <!-- Option 2: Dang ky tu v?n -->
+            <a href="https://tuvanhocnghe.cdktcnqn.edu.vn/" target="_blank" class="popover-option-item">
+                <div class="option-icon-wrap icon-green-bg">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <div class="option-content-wrap">
+                    <div class="option-title-row">
+                        <h4 class="option-heading">Dang ky tu v?n</h4>
+                        <span class="option-arrow">?</span>
+                    </div>
+                    <p class="option-description">
+                        Nh?n h? tr? tu v?n tr?c ti?p t? Nh� tru?ng ho?c k?t n?i v?i <span class="highlight-red">Tr? ly AI tuy?n sinh</span> th�ng minh d? ch?n ng�nh/ngh? ph� h?p nh?t.
+                    </p>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+
+    <!-- N�t k�ch ho?t ch�nh (Floating Button) -->
+    <button class="floating-admission-widget" id="admissionTriggerBtn" onclick="toggleAdmissionPopover(event)">
+        <div class="admission-capsule">
+            <div class="admission-icon-box">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 3L1 9L12 15L21 10.09V17H23V9L12 3M5.45 12.5L12 16L18.55 12.5L12 9L5.45 12.5M12 18C8.67 18 6 15.33 6 12H8C8 14.21 9.79 16 12 16S16 14.21 16 12H18C18 15.33 15.33 18 12 18Z"/>
+                </svg>
+                <div class="live-badge"></div>
+            </div>
+            <div class="admission-text-box">
+                <span class="admission-title">Tuy?n sinh 2026</span>
+                <span class="admission-desc">Dang ky Online</span>
+            </div>
+        </div>
+    </button>
+
+</div>
+
+<style>
+    .admission-container {
+        position: fixed;
+        bottom: 120px;
+        right: 30px;
+        z-index: 99999;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .floating-admission-widget {
+        display: flex;
+        align-items: center;
+        text-decoration: none !important;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        animation: float-shake 3.5s infinite ease-in-out; /* L?c nhanh hon */
+        width: auto;
+        height: auto;
+        border: none;
+        outline: none;
+        background: none;
+        padding: 0;
+    }
+    .admission-capsule {
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #f68c22, #e65c00); /* M�u cam ch? d?o */
+        padding: 10px 22px 10px 12px;
+        border-radius: 50px;
+        box-shadow: 0 10px 25px rgba(230, 92, 0, 0.3);
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: visible;
+        white-space: nowrap;
+    }
+    .admission-icon-box {
+        width: 44px;
+        height: 44px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: relative;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+    .admission-icon-box svg {
+        width: 24px;
+        height: 24px;
+        fill: #e65c00;
+    }
+    .live-badge {
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 12px;
+        height: 12px;
+        background-color: #2ecc71;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+    .live-badge::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 2px solid #2ecc71;
+        animation: live-pulse 1s infinite ease-in-out; /* Nh�y nhanh hon */
+        opacity: 0;
+    }
+    .admission-text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+    .admission-title {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgba(255, 255, 255, 0.95);
+        font-weight: bold;
+        margin-bottom: 2px;
+        white-space: nowrap;
+    }
+    .admission-desc {
+        font-size: 14px;
+        font-weight: 800;
+        color: #ffffff;
+        white-space: nowrap;
+        letter-spacing: 0.3px;
+    }
+    
+    /* Hover n�t v?n m�u cam nhung s�ng l�n */
+    .floating-admission-widget:hover .admission-capsule {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(230, 92, 0, 0.6);
+        background: linear-gradient(135deg, #ff9b36, #f76b00);
+    }
+    .floating-admission-widget:hover .admission-icon-box {
+        transform: rotate(-10deg) scale(1.1);
+    }
+    
+    /* Click k�ch ho?t v?n gi? m�u cam d?m, kh�ng d?i d? */
+    .floating-admission-widget.active-btn .admission-capsule {
+        transform: scale(0.95);
+        background: linear-gradient(135deg, #e65c00, #cf5300);
+        box-shadow: 0 4px 12px rgba(230, 92, 0, 0.4);
+    }
+    .floating-admission-widget.active-btn .admission-icon-box svg {
+        fill: #e65c00;
+    }
+    
+    .admission-popover {
+        position: absolute;
+        bottom: 0;
+        right: 100%;
+        margin-right: 20px;
+        width: 395px;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+        padding: 28px 24px;
+        box-sizing: border-box;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        transform: scale(0.9) translateX(10px);
+        opacity: 0;
+        pointer-events: none;
+        transform-origin: bottom right;
+    }
+    .admission-popover.active {
+        transform: scale(1) translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .popover-header {
+        margin-bottom: 20px;
+        text-align: left;
+        padding-left: 6px;
+    }
+    .popover-subtitle {
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #7f8c8d;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        margin: 0 0 6px 0;
+        display: block;
+    }
+    .popover-title {
+        font-size: 16px;
+        font-weight: 800;
+        color: #d61a21;
+        margin: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+    }
+    .popover-options-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .popover-option-item {
+        display: flex;
+        align-items: flex-start;
+        text-decoration: none;
+        padding: 16px;
+        border-radius: 20px;
+        transition: all 0.2s ease-in-out;
+        background-color: transparent;
+    }
+    
+    /* Hover c�c option d?i sang m�u cam s?a r?t m?n */
+    .popover-option-item:hover {
+        --background-color: #fff5eb;
+    }
+    .option-icon-wrap {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        flex-shrink: 0;
+    }
+    .icon-blue-bg {
+        background-color: #e8f0fe;
+    }
+    .icon-blue-bg svg {
+        width: 22px;
+        height: 22px;
+        fill: #1a73e8;
+    }
+    .icon-green-bg {
+        background-color: #e6f4ea;
+    }
+    .icon-green-bg svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: #137333;
+        stroke-width: 2.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    .option-content-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .option-title-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+    .option-heading {
+        font-size: 15.5px;
+        font-weight: 700;
+        color: #1e293b;
+        margin: 0 6px 0 0;
+    }
+    .option-arrow {
+        font-size: 15px;
+        color: #94a3b8;
+        transition: transform 0.2s ease, color 0.2s ease;
+        line-height: 1;
+    }
+    .popover-option-item:hover .option-heading {
+        color: #e65c00; /* Ch? chuy?n cam khi hover */
+    }
+    .popover-option-item:hover .option-arrow {
+        transform: translateX(4px);
+        color: #e65c00;
+    }
+    .option-description {
+        font-size: 13px;
+        color: #57606f;
+        line-height: 1.55;
+        margin: 0;
+    }
+    .highlight-red {
+        color: #d61a21;
+        font-weight: 700;
+    }
+
+    @keyframes live-pulse {
+        0% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(2.2); opacity: 0; }
+    }
+    
+    /* Animation l?c gi?t nh?y d?n d?p */
+    @keyframes float-shake {
+        0%, 80%, 100% { transform: translateY(0); }
+        82% { transform: translateY(-6px) rotate(3deg); }
+        84% { transform: translateY(-6px) rotate(-3deg); }
+        86% { transform: translateY(-4px) rotate(2deg); }
+        88% { transform: translateY(-4px) rotate(-2deg); }
+        90% { transform: translateY(-2px) rotate(1deg); }
+        92% { transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+        .admission-container {
+            bottom: 100px;
+            right: 20px;
+        }
+        .admission-capsule {
+            padding: 8px 18px 8px 10px;
+        }
+        .admission-icon-box {
+            width: 36px;
+            height: 36px;
+            margin-right: 8px;
+        }
+        .admission-icon-box svg {
+            width: 20px;
+            height: 20px;
+        }
+        .admission-title {
+            font-size: 10px;
+        }
+        .admission-desc {
+            font-size: 15px;
+        }
+        .admission-popover {
+            right: 0;
+            bottom: 100%;
+            margin-bottom: 15px;
+            margin-right: 0;
+            width: 340px;
+            transform-origin: bottom right;
+            transform: scale(0.9) translateY(10px);
+            padding: 20px 16px;
+        }
+        .admission-popover.active {
+            transform: scale(1) translateY(0);
+        }
+    }
+</style>
+
+<script>
+    (function () {
+        var popover = document.getElementById('admissionPopover');
+        var btn = document.getElementById('admissionTriggerBtn');
+        var container = document.getElementById('admissionWidgetContainer');
+
+        window.toggleAdmissionPopover = function (event) {
+            event.stopPropagation();
+            popover.classList.toggle('active');
+            btn.classList.toggle('active-btn');
+        };
+
+        document.addEventListener('click', function (event) {
+            if (!container.contains(event.target)) {
+                popover.classList.remove('active');
+                btn.classList.remove('active-btn');
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape') {
+                popover.classList.remove('active');
+                btn.classList.remove('active-btn');
+            }
+        });
+    })();
+</script>
+
+</body>
+</html>
+

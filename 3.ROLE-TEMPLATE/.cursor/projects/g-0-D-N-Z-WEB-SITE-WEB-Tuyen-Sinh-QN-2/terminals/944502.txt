@@ -1,0 +1,69 @@
+---
+pid: 37216
+cwd: "g:\\0.DỰ ÁN\\Z.WEB_SITE\\WEB-Tuyen-Sinh-QN-2\\1.SOUECE"
+command: ".\\publish-ready.cmd"
+title: "build with generated API key"
+status: succeeded
+started_at: 2026-10-14T07:24:52.985Z
+running_for_ms: 6865     
+---
+
+> build
+> vite build
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+vite v5.4.21 building for production...
+
+/assets/css/bootstrap.min.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+
+/assets/css/font-awesome-all.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+
+/assets/css/style.css doesn't exist at build time, it will remain unchanged to be resolved at runtime
+transforming...
+✓ 32 modules transformed.
+rendering chunks...
+computing gzip size...
+../InformationWeb/VuePublic/index.html          0.62 kB │ gzip:  0.36 kB
+../InformationWeb/VuePublic/assets/index.css    3.24 kB │ gzip:  1.10 kB
+../InformationWeb/VuePublic/assets/index.js   106.73 kB │ gzip: 40.39 kB
+✓ built in 755ms
+Microsoft (R) Build Engine version 4.8.9037.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 14/10/2026 14:24:55.
+Project "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWeb.sln" on node 1 (Build target(s)).
+ValidateSolutionConfiguration:
+  Building solution configuration "Release|Any CPU".
+Project "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWeb.sln" (1) is building "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWeb\InformationWeb.csproj" (2) on node 1 (default targets).
+Project "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWeb\InformationWeb.csproj" (2) is building "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWebObject\InformationWebObject.csproj" (3) on node 1 (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  InformationWebObject -> G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWebObject\bin\Release\InformationWebObject.dll
+Done Building Project "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWebObject\InformationWebObject.csproj" (default targets).
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+CopyFilesToOutputDirectory:
+  InformationWeb -> G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWeb\bin\InformationWeb.dll
+Done Building Project "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWeb\InformationWeb.csproj" (default targets).
+Done Building Project "G:\0.DỰ ÁN\Z.WEB_SITE\WEB-Tuyen-Sinh-QN-2\1.SOUECE\InformationWeb.sln" (Build target(s)).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.55
+
+Publish ready. Open Visual Studio 2010 and publish InformationWeb.
+
+---
+exit_code: 0
+elapsed_ms: 6864
+ended_at: 2026-10-14T07:24:59.849Z
+---

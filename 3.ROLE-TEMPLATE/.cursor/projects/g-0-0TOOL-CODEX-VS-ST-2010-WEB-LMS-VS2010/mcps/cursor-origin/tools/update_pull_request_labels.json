@@ -1,0 +1,35 @@
+{
+  "name": "update_pull_request_labels",
+  "description": "Replace every label on a pull request with the provided names. Each name must be an existing repository label, spelled exactly, including case; this tool never creates labels. For a label that does not exist yet, call create_label first, then call this tool. Omitted labels are removed. An empty list removes all labels.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Origin namespace (owner) slug, taken from list_namespaces or an earlier Origin result. A GitHub owner or org name is not an Origin namespace unless list_namespaces returns it."
+      },
+      "name": {
+        "type": "string",
+        "description": "Origin repository name within that namespace"
+      },
+      "number": {
+        "type": "number"
+      },
+      "labels": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Complete replacement label names. Omitted names are removed. An empty list removes all labels."
+      }
+    },
+    "required": [
+      "owner",
+      "name",
+      "number",
+      "labels"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

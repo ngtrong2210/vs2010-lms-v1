@@ -1,0 +1,15 @@
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\InformationWeb.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\InformationWeb.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsObject.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsService.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\DCore.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\BCrypt.Net-Next.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsObject.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsService.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\obj\Debug\InformationWeb.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\obj\Debug\InformationWeb.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\obj\Debug\InformationWeb.csprojResolveAssemblyReference.cache
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\InformationWeb\obj\Debug\InformationWeb.dll
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\InformationWeb\obj\Debug\InformationWeb.pdb
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\InformationWeb\obj\Debug\InformationWeb.csproj.AssemblyReference.cache
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\InformationWeb\obj\Debug\InformationWeb.csproj.CoreCompileInputs.cache

@@ -1,0 +1,10 @@
+.grading-page-size{align-items:center;display:flex;min-height:38px;color:#60716b;background:#f8faf9}
+.grading-table .aspNetDisabled{opacity:.55;pointer-events:none}
+.grading-table .badge{white-space:nowrap}
+.grading-table .late-text:empty{display:none}
+.grading-table td:last-child{white-space:nowrap}
+.grading-modal .d-none{display:none!important}
+.grading-modal textarea{resize:vertical}
+.grading-file-link:before{content:'\f30a';font-family:'bootstrap-icons';margin-right:.4rem}
+body.grading-modal-open{overflow:hidden}
+@media(max-width:767.98px){.grading-modal{padding:1rem}.grading-table-card{border-radius:10px}.grading-filters>label{min-width:0}.modal-actions .btn{width:100%}}

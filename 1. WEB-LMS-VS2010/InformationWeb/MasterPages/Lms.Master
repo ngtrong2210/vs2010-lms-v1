@@ -1,0 +1,102 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Lms.Master.cs" Inherits="InformationWeb.MasterPages.LmsMaster" %>
+<!DOCTYPE html>
+<html lang="vi">
+    <head runat="server">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title><%= Server.HtmlEncode(Page.Title) %> - Thiên Hà Số</title>
+        <link rel="icon" type="image/png" href="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap.min.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap-icons.min.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/style.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/responsive.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/index.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/webforms.css?v=20260901-ui10") %>" />
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+    </head>
+    <body>
+        <form id="MainForm" runat="server">
+            <asp:ScriptManager ID="MainScriptManager" runat="server" EnablePageMethods="true" />
+            <div class="lms-shell">
+                <div class="learning-strip">
+                    <div class="container">
+                        <span>
+                            <i class="bi bi-mortarboard"></i>
+                            Hệ thống học tập trực tuyến Thiên Hà Số
+                        </span>
+                        <span class="d-none d-md-inline">
+                            <i class="bi bi-headset"></i>
+                            Hỗ trợ học viên: Bộ phận đào tạo
+                        </span>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg sticky-top lms-nav">
+                    <div class="container py-2">
+                        <a class="brand brand-lockup" href="<%= ResolveUrl("~/lms/dashboard") %>" aria-label="Thiên Hà Số">
+                            <img class="brand-symbol" src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
+                            <span class="brand-name">Thiên Hà Số</span>
+                        </a>
+                        <button
+                            type="button"
+                            class="navbar-toggler border-0"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#lmsNav"
+                            aria-label="Mở trình đơn"
+                        >
+                            <i class="bi bi-list fs-2"></i>
+                        </button>
+                        <div id="lmsNav" class="collapse navbar-collapse">
+                            <div class="navbar-nav mx-auto gap-lg-2 student-nav">
+                                <a class="nav-link" href="<%= ResolveUrl("~/lms/dashboard") %>">Tổng quan</a>
+                                <a class="nav-link" href="<%= ResolveUrl("~/lms/courses") %>">Môn học của tôi</a>
+                                <a class="nav-link" href="<%= ResolveUrl("~/lms/results") %>">Kết quả</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                                <div class="notification-center" data-notification-center data-handler-url="<%= ResolveUrl("~/Handlers/Lms/Module.ashx") %>">
+                                    <button
+                                        type="button"
+                                        class="btn btn-light position-relative"
+                                        data-notification-toggle
+                                        aria-label="Thông báo"
+                                    >
+                                        <i class="bi bi-bell"></i>
+                                        <span class="notification-count"><asp:Literal ID="NotificationCountText" runat="server" /></span>
+                                    </button>
+                                    <div class="notification-panel" data-notification-panel hidden>
+                                        <div class="notification-panel-head">
+                                            <strong>Thông báo</strong>
+                                            <button type="button" class="btn btn-sm btn-link" data-notification-read-all>Đọc tất cả</button>
+                                        </div>
+                                        <div data-notification-list class="notification-list">
+                                            <span class="text-secondary">Đang tải...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="<%= ResolveUrl("~/lms/profile") %>" class="profile-link d-flex align-items-center gap-2">
+                                    <img class="avatar user-avatar" src="<%= ResolveUrl("~/assets/lms/images/avatar-student.jpg") %>" alt="Ảnh đại diện" />
+                                    <span class="profile-copy d-none d-xl-grid">
+                                        <strong><asp:Literal ID="UserNameText" runat="server" /></strong>
+                                        <small>Học viên</small>
+                                    </span>
+                                </a>
+                                <a class="btn btn-action-delete btn-sm" href="<%= ResolveUrl("~/logout") %>" title="Đăng xuất" aria-label="Đăng xuất">
+                                    <i class="bi bi-box-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <main class="lms-content container py-4 py-lg-5"><asp:ContentPlaceHolder ID="MainContent" runat="server" /></main>
+                <footer class="lms-footer">
+                    <div class="container">
+                        <span>© 2026 Thiên Hà Số · Hệ thống quản lý học tập</span>
+                        <span>Hỗ trợ · Quy định học tập · Bảo mật</span>
+                    </div>
+                </footer>
+            </div>
+            <script src="<%= ResolveUrl("~/assets/lms/vendor/bootstrap.bundle.min.js") %>"></script>
+            <script src="<%= ResolveUrl("~/assets/lms/js/app.js?v=20260901-ui5") %>"></script>
+            <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
+        </form>
+    </body>
+</html>

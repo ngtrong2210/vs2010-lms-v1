@@ -1,0 +1,362 @@
+cd : Cannot find path 'G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\StudentManager' because it does not exist.
+At C:\Users\trong\AppData\Local\Temp\ps-script-be0b1e2e-69f4-48a4-86c2-b86990167eec.ps1:111 char:1
++ cd "g:\1.1-PROJECT-MAIN\NAM SAI GON -WB\StudentManager"; Get-ChildIte ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (G:\1.1-PROJECT-...\StudentManager:String) [Set-Location], ItemNotFoundE 
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+
+FullName                                                                                                               
+--------                                                                                                               
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\DeclarationManager\Training\USubjectKind.cs                        
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\DeclarationManager\Training\USubjectKind.Designer.cs               
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.cs             
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.designer.cs    
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                 
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs        
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                  
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs         
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs                   
+G:\1.1-PROJECT-MAIN\0.FIX nhanh\long thanh d?ng nai\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs          
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\DeclarationManager\Training\USubjectKind.cs                               
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\DeclarationManager\Training\USubjectKind.Designer.cs                      
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Graduation\frmThongKeTotNghiep_V2.cs                       
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Graduation\frmThongKeTotNghiep_V2.designer.cs              
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmThongKeDiemHocTapNienKy.cs                       
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmThongKeDiemHocTapNienKy.Designer.cs              
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.cs                    
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.designer.cs           
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                        
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs               
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmTKKetQuaVLSauTN.cs                               
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Report\frmTKKetQuaVLSauTN.designer.cs                      
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                         
+G:\1.1-PROJECT-MAIN\BINH DUONG - Kinh t?\hos\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs                
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.cs               
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.designer.cs      
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\GDQP\frmThongKeDaoTaoGDQP.cs                          
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\GDQP\frmThongKeDaoTaoGDQP.designer.cs                 
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeDiemHocTapNienKy.cs                  
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeDiemHocTapNienKy.Designer.cs         
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.cs               
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.designer.cs      
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                   
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs          
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeSoLuongDaoTao.cs                     
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmThongKeSoLuongDaoTao.Designer.cs            
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmTKKetQuaVLSauTN.cs                          
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Report\frmTKKetQuaVLSauTN.designer.cs                 
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                    
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs           
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.cs                     
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\1.WINFORM\TrainingPlan\ReportPlan\frmBaoCaoTienDoXepTKB.designer.cs            
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\KhaoSat.aspx.cs                                                      
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\KhaoSat.aspx.designer.cs                                             
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\Poll\DoPoll.ascx.cs                                         
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\Poll\DoPoll.ascx.designer.cs                                
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\TeacherPoll\DoPoll.ascx.cs                                  
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\TeacherPoll\DoPoll.ascx.designer.cs                         
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\TeacherPoll\Poll.ascx.cs                                    
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\TeacherPoll\Poll.ascx.designer.cs                           
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\TeacherPoll\PollSummary.ascx.cs                             
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Controls\TeacherPoll\PollSummary.ascx.designer.cs                    
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Pages\Poll\DoPoll.aspx.cs                                            
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Pages\Poll\DoPoll.aspx.designer.cs                                   
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Pages\TeacherPoll\PollSummary.aspx.cs                                
+G:\1.1-PROJECT-MAIN\Cao d?ng 21 - ky s?\2.WEB-CTT\Pages\TeacherPoll\PollSummary.aspx.designer.cs                       
+G:\1.1-PROJECT-MAIN\CO GI?I QU?NG NGAI\StudentManager\Report\frmThongKeDiemHocTapNienKy.cs                             
+G:\1.1-PROJECT-MAIN\CO GI?I QU?NG NGAI\StudentManager\Report\frmThongKeDiemHocTapNienKy.Designer.cs                    
+G:\1.1-PROJECT-MAIN\CO GI?I QU?NG NGAI\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                              
+G:\1.1-PROJECT-MAIN\CO GI?I QU?NG NGAI\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs                     
+G:\1.1-PROJECT-MAIN\CO GI?I QU?NG NGAI\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                               
+G:\1.1-PROJECT-MAIN\CO GI?I QU?NG NGAI\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs                      
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.cs             
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.designer.cs    
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\GDQP\frmThongKeDaoTaoGDQP.cs                        
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\GDQP\frmThongKeDaoTaoGDQP.designer.cs               
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmThongKeDiemHocTapNienKy.cs                
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmThongKeDiemHocTapNienKy.Designer.cs       
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.cs             
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.designer.cs    
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                 
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs        
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmTKKetQuaVLSauTN.cs                        
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Report\frmTKKetQuaVLSauTN.designer.cs               
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                  
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs         
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Student\frmStudentKTX.cs                            
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\1.WINFORM\StudentManager\Student\frmStudentKTX.Designer.cs                   
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\KhaoSat.aspx.cs                                                   
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\KhaoSat.aspx.designer.cs                                          
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\Poll\DoPoll.ascx.cs                                      
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\Poll\DoPoll.ascx.designer.cs                             
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\TeacherPoll\DoPoll.ascx.cs                               
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\TeacherPoll\DoPoll.ascx.designer.cs                      
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\TeacherPoll\Poll.ascx.cs                                 
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\TeacherPoll\Poll.ascx.designer.cs                        
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\TeacherPoll\PollSummary.ascx.cs                          
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Controls\TeacherPoll\PollSummary.ascx.designer.cs                 
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Pages\Poll\DoPoll.aspx.cs                                         
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Pages\Poll\DoPoll.aspx.designer.cs                                
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Pages\TeacherPoll\PollSummary.aspx.cs                             
+G:\1.1-PROJECT-MAIN\HU? -  TINH GI? GI?NG\2.WEB-SITE\Pages\TeacherPoll\PollSummary.aspx.designer.cs                    
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.cs                        
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\ScheduleManager\Teaching\frmThongKeGioCoiThiChamThi.designer.cs               
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\GDQP\frmThongKeDaoTaoGDQP.cs                       
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\GDQP\frmThongKeDaoTaoGDQP.designer.cs              
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeDangKyTinChi.cs                   
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeDangKyTinChi.Designer.cs          
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeDiemHocTapNienKy.cs               
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeDiemHocTapNienKy.Designer.cs      
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeKetQuaDangKyTotNghiep.cs          
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeKetQuaDangKyTotNghiep.designer.cs 
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeKetQuaHocBong.cs                  
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeKetQuaHocBong.designer.cs         
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs       
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeNhapHoc.cs                        
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeNhapHoc.Designer.cs               
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeXetDuThiTheoDot.cs                
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmThongKeXetDuThiTheoDot.Designer.cs       
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmTKKetQuaVLSauTN.cs                       
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmTKKetQuaVLSauTN.designer.cs              
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmTKTotNghiepCapSoQuyetDinh.cs             
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Report\frmTKTotNghiepCapSoQuyetDinh.designer.cs    
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                 
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\source kh�c\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs        
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\GDQP\frmThongKeDaoTaoGDQP.cs                                   
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\GDQP\frmThongKeDaoTaoGDQP.designer.cs                          
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmThongKeDiemHocTapNienKy.cs                           
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmThongKeDiemHocTapNienKy.Designer.cs                  
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.cs                        
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.designer.cs               
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                            
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs                   
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmTKKetQuaVLSauTN.cs                                   
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Report\frmTKKetQuaVLSauTN.designer.cs                          
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                             
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs                    
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Student\frmStudentKTX.cs                                       
+G:\1.1-PROJECT-MAIN\HU? - X�t t?t nghi?p\StudentManager\Student\frmStudentKTX.Designer.cs                              
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\KhaoSat.aspx.cs                                                      
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\KhaoSat.aspx.designer.cs                                             
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\Poll\DoPoll.ascx.cs                                         
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\Poll\DoPoll.ascx.designer.cs                                
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\TeacherPoll\DoPoll.ascx.cs                                  
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\TeacherPoll\DoPoll.ascx.designer.cs                         
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\TeacherPoll\Poll.ascx.cs                                    
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\TeacherPoll\Poll.ascx.designer.cs                           
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\TeacherPoll\PollSummary.ascx.cs                             
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Controls\TeacherPoll\PollSummary.ascx.designer.cs                    
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Pages\Poll\DoPoll.aspx.cs                                            
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Pages\Poll\DoPoll.aspx.designer.cs                                   
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Pages\TeacherPoll\PollSummary.aspx.cs                                
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\01.WEB\Pages\TeacherPoll\PollSummary.aspx.designer.cs                       
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\02.WINFORM\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs               
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\02.WINFORM\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs      
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\02.WINFORM\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                
+G:\1.1-PROJECT-MAIN\HA TINH  WEB DI?M DANH\02.WINFORM\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs       
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\1.WIN-FORM\PollObject\Base\POL_PollBase.cs                             
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\1.WIN-FORM\PollObject\Base\POL_PollGroupBase.cs                        
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\1.WIN-FORM\PollObject\Base\POL_PollPartBase.cs                         
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\1.WIN-FORM\PollObject\Base\POL_PollTypeBase.cs                         
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\1.WIN-FORM\PollService\POL_PollGroupService.cs                         
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\1.WIN-FORM\PollService\POL_PollPartService.cs                          
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\1.WIN-FORM\PollService\POL_PollService.cs                              
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\KhaoSat.aspx.cs                                                    
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\KhaoSat.aspx.designer.cs                                           
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\KhaoSatHSSV.aspx.cs                                                
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\KhaoSatHSSV.aspx.designer.cs                                       
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\Poll\DoPoll.ascx.cs                                       
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\Poll\DoPoll.ascx.designer.cs                              
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\PollNew\DoPoll.ascx.cs                                    
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\PollNew\DoPoll.ascx.designer.cs                           
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\Report\DashboardThongKeDiemGiuaKy.ascx.cs                 
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\Report\DashboardThongKeDiemGiuaKy.ascx.designer.cs        
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\Report\ThongKeDiemGiuaKy.ascx.cs                          
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\Report\ThongKeDiemGiuaKy.ascx.designer.cs                 
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\TeacherPoll\DoPoll.ascx.cs                                
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\TeacherPoll\DoPoll.ascx.designer.cs                       
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\TeacherPoll\Poll.ascx.cs                                  
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\TeacherPoll\Poll.ascx.designer.cs                         
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\TeacherPoll\PollSummary.ascx.cs                           
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Controls\TeacherPoll\PollSummary.ascx.designer.cs                  
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Pages\Poll\DoPoll.aspx.cs                                          
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Pages\Poll\DoPoll.aspx.designer.cs                                 
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Pages\PollNew\DoPoll.aspx.cs                                       
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Pages\PollNew\DoPoll.aspx.designer.cs                              
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Pages\TeacherPoll\PollSummary.aspx.cs                              
+G:\1.1-PROJECT-MAIN\KH?O SAT - NSG - 20-08-2026\hos\Pages\TeacherPoll\PollSummary.aspx.designer.cs                     
+G:\1.1-PROJECT-MAIN\KINH T? S? 2\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                                    
+G:\1.1-PROJECT-MAIN\KINH T? S? 2\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs                           
+G:\1.1-PROJECT-MAIN\KINH T? S? 2\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                                     
+G:\1.1-PROJECT-MAIN\KINH T? S? 2\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs                            
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\KhaoSat.aspx.cs                                                              
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\KhaoSat.aspx.designer.cs                                                     
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\KhaoSatHSSV.aspx.cs                                                          
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\KhaoSatHSSV.aspx.designer.cs                                                 
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\Poll\DoPoll.ascx.cs                                                 
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\Poll\DoPoll.ascx.designer.cs                                        
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\PollNew\DoPoll.ascx.cs                                              
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\PollNew\DoPoll.ascx.designer.cs                                     
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\Report\DashboardThongKeDiemGiuaKy.ascx.cs                           
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\Report\DashboardThongKeDiemGiuaKy.ascx.designer.cs                  
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\Report\ThongKeDiemGiuaKy.ascx.cs                                    
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\Report\ThongKeDiemGiuaKy.ascx.designer.cs                           
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\TeacherPoll\DoPoll.ascx.cs                                          
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\TeacherPoll\DoPoll.ascx.designer.cs                                 
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\TeacherPoll\Poll.ascx.cs                                            
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\TeacherPoll\Poll.ascx.designer.cs                                   
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\TeacherPoll\PollSummary.ascx.cs                                     
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Controls\TeacherPoll\PollSummary.ascx.designer.cs                            
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Pages\Poll\DoPoll.aspx.cs                                                    
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Pages\Poll\DoPoll.aspx.designer.cs                                           
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Pages\PollNew\DoPoll.aspx.cs                                                 
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Pages\PollNew\DoPoll.aspx.designer.cs                                        
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Pages\TeacherPoll\PollSummary.aspx.cs                                        
+G:\1.1-PROJECT-MAIN\NAM SAI GON -WB\1.WEB\Pages\TeacherPoll\PollSummary.aspx.designer.cs                               
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.cs                             
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.designer.cs                    
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Report\frmThongKeKetQuaHocBong.cs                                   
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Report\frmThongKeKetQuaHocBong.designer.cs                          
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                                 
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs                        
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                                  
+G:\1.1-PROJECT-MAIN\NAM D?NH - S? 8\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs                         
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\GDQP\frmThongKeDaoTaoGDQP.cs                 
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\GDQP\frmThongKeDaoTaoGDQP.designer.cs        
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeDangKyTinChi.cs             
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeDangKyTinChi.Designer.cs    
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeDiemHocTapNienKy.cs         
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeDiemHocTapNienKy.Designer.cs
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeKetQuaDangKyTotNghiep.cs    
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeKetQuaDangKyTotNghiep.des...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeKetQuaHocBong.cs            
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeKetQuaHocBong.designer.cs   
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs          
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs 
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeNhapHoc.cs                  
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeNhapHoc.Designer.cs         
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeXetDuThiTheoDot.cs          
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmThongKeXetDuThiTheoDot.Designer.cs 
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmTKKetQuaVLSauTN.cs                 
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmTKKetQuaVLSauTN.designer.cs        
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmTKTotNghiepCapSoQuyetDinh.cs       
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Report\frmTKTotNghiepCapSoQuyetDinh.design...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs           
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - So s�nh nh?p h?c\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs  
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\GDQP\frmThongKeDaoTaoGDQP.cs     
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\GDQP\frmThongKeDaoTaoGDQP.desi...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeDangKyTinChi.cs 
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeDangKyTinChi....
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeDiemHocTapNie...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeDiemHocTapNie...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeKetQuaDangKyT...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeKetQuaDangKyT...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeKetQuaHocBong.cs
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeKetQuaHocBong...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeKetQuaTotNghi...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeKetQuaTotNghi...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeNhapHoc.cs      
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeNhapHoc.Desig...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeXetDuThiTheoD...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmThongKeXetDuThiTheoD...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmTKKetQuaVLSauTN.cs     
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmTKKetQuaVLSauTN.desi...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmTKTotNghiepCapSoQuye...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Report\frmTKTotNghiepCapSoQuye...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Student\frmBaoCaoThongKeHocSin...
+G:\1.1-PROJECT-MAIN\NHA TRANG\NHA TRANG - thoikhoabieu\1.WIN-FORM 1424\StudentManager\Student\frmBaoCaoThongKeHocSin...
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\KhaoSat.aspx.cs                                                
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\KhaoSat.aspx.designer.cs                                       
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\Poll\DoPoll.ascx.cs                                   
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\Poll\DoPoll.ascx.designer.cs                          
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\Report\ThongKeThongTinSinhVien.ascx.cs                
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\Report\ThongKeThongTinSinhVien.ascx.designer.cs       
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\TeacherPoll\DoPoll.ascx.cs                            
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\TeacherPoll\DoPoll.ascx.designer.cs                   
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\TeacherPoll\Poll.ascx.cs                              
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\TeacherPoll\Poll.ascx.designer.cs                     
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\TeacherPoll\PollSummary.ascx.cs                       
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Controls\TeacherPoll\PollSummary.ascx.designer.cs              
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Pages\Poll\DoPoll.aspx.cs                                      
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Pages\Poll\DoPoll.aspx.designer.cs                             
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Pages\Report\ThongKeThongTinSinhVien.aspx.cs                   
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Pages\Report\ThongKeThongTinSinhVien.aspx.designer.cs          
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Pages\TeacherPoll\PollSummary.aspx.cs                          
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\1.WEB -HOS\1.WEB\Pages\TeacherPoll\PollSummary.aspx.designer.cs                 
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\DeclarationManager\Training\USubjectKind.cs                                     
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\DeclarationManager\Training\USubjectKind.Designer.cs                            
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                              
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs                     
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\StudentManager\Student\frmStudentKTX.cs                                         
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\StudentManager\Student\frmStudentKTX.designer.cs                                
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_AttendFull_Student.cs                                             
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_CheckEvent.cs                                                     
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_CheckEvent_Student.cs                                             
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_CheckInOut.cs                                                     
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_Face.cs                                                           
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_Finger.cs                                                         
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_InOutSchedule_ForStudent.cs                                       
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_InOutTime.cs                                                      
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_Machine.cs                                                        
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_Person.cs                                                         
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_Shift.cs                                                          
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\TKS_SummaryAttendFull.cs                                              
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_AttendFullBase.cs                                            
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_CheckEventBase.cs                                            
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_CheckEvent_StudentBase.cs                                    
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_CheckInOutBase.cs                                            
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_FaceBase.cs                                                  
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_FingerBase.cs                                                
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_InOutScheduleBase.cs                                         
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_InOutTimeBase.cs                                             
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_MachineBase.cs                                               
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_PersonalBase.cs                                              
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_PersonBase.cs                                                
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_ScheduleBase.cs                                              
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_ScheduleDetailBase.cs                                        
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_ShiftBase.cs                                                 
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\Base\TKS_SummaryAttendFullBase.cs                                     
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSObject\MachineSDK\TKS_Machine.cs                                             
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSService\TKS_CheckEventService.cs                                             
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSService\TKS_InOutScheduleService.cs                                          
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSService\TKS_PersonService.cs                                                 
+G:\1.1-PROJECT-MAIN\QUY NHON - T�i s?n\TKSService\TKS_ShiftService.cs                                                  
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Controls\TeacherPoll\DoPoll.ascx.cs                                    
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Controls\TeacherPoll\DoPoll.ascx.designer.cs                           
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Controls\TeacherPoll\Poll.ascx.cs                                      
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Controls\TeacherPoll\Poll.ascx.designer.cs                             
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Controls\TeacherPoll\PollSummary.ascx.cs                               
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Controls\TeacherPoll\PollSummary.ascx.designer.cs                      
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Pages\TeacherPoll\PollSummary.aspx.cs                                  
+G:\1.1-PROJECT-MAIN\QU?NG BINH - L�i xe app\hos\Pages\TeacherPoll\PollSummary.aspx.designer.cs                         
+G:\1.1-PROJECT-MAIN\ZED\long thanh\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                                  
+G:\1.1-PROJECT-MAIN\ZED\long thanh\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs                         
+G:\1.1-PROJECT-MAIN\ZED\long thanh\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                                   
+G:\1.1-PROJECT-MAIN\ZED\long thanh\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs                          
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.cs                           
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Report\frmThongKeKetQuaCanhCaoHocTap.designer.cs                  
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Report\frmThongKeKetQuaHocBong.cs                                 
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Report\frmThongKeKetQuaHocBong.designer.cs                        
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Report\frmThongKeKetQuaTotNghiep.cs                               
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Report\frmThongKeKetQuaTotNghiep.designer.cs                      
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Student\frmBaoCaoThongKeHocSinh.cs                                
+G:\1.1-PROJECT-MAIN\ZED\s? 8 nam dnhj\StudentManager\Student\frmBaoCaoThongKeHocSinh.Designer.cs                       
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\KhaoSat.aspx.cs                                                             
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\KhaoSat.aspx.designer.cs                                                    
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\Poll\DoPoll.ascx.cs                                                
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\Poll\DoPoll.ascx.designer.cs                                       
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\TeacherPoll\DoPoll.ascx.cs                                         
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\TeacherPoll\DoPoll.ascx.designer.cs                                
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\TeacherPoll\Poll.ascx.cs                                           
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\TeacherPoll\Poll.ascx.designer.cs                                  
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\TeacherPoll\PollSummary.ascx.cs                                    
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Controls\TeacherPoll\PollSummary.ascx.designer.cs                           
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Pages\Poll\DoPoll.aspx.cs                                                   
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Pages\Poll\DoPoll.aspx.designer.cs                                          
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Pages\TeacherPoll\PollSummary.aspx.cs                                       
+G:\1.1-PROJECT-MAIN\D?NG THAP ------\1.WEB\Pages\TeacherPoll\PollSummary.aspx.designer.cs                              
+
+

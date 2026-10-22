@@ -1,0 +1,2628 @@
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+WROTE Mau1_HopDong_A1.doc paras=81 pages=2
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+WROTE Mau2_HopDong_A.doc paras=78 pages=3
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+WROTE Mau3_HopDong_A1_2.doc paras=78 pages=3
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+Cannot convert argument "newChar", with value: "<BR>", for "Replace" to type "System.Char": "Cannot convert value 
+"<BR>" to type "System.Char". Error: "String must be exactly one character long.""
+At C:\Users\trong\AppData\Local\Temp\ps-script-843cd624-c4a2-4862-b14b-baa73986b32b.ps1:130 char:5
++     $t = $rng.Text.Replace("`r","").Replace("`a","").Replace("`7","") ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodException
+    + FullyQualifiedErrorId : MethodArgumentConversionInvalidCastArgument
+ 
+WROTE Mau4_HopDong_B.doc paras=91 pages=3

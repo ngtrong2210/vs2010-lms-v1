@@ -1,0 +1,7 @@
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsService\bin\Release\LmsService.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsService\bin\Release\LmsService.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsService\bin\Release\LmsObject.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsService\bin\Release\LmsObject.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsService\obj\Release\LmsService.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsService\obj\Release\LmsService.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsService\obj\Release\LmsService.csprojResolveAssemblyReference.cache

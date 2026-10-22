@@ -1,0 +1,6 @@
+---
+pid: 16628
+cwd: |
+  G:\0.CMS-MAIN-ALL-12\qb-1
+---
+PS G:\0.CMS-MAIN-ALL-12\qb-1> 

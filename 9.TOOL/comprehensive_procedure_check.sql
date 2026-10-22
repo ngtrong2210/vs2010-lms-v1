@@ -1,0 +1,840 @@
+-- Comprehensive Stored Procedure Check Script for LMS Database
+-- Run this in SQL Server Management Studio to check which procedures exist
+-- Generated from codebase analysis
+
+-- ============================================
+-- LMS_ Custom Procedures (Business Logic)
+-- ============================================
+SELECT
+    'LMS_Auth_GetUserByUsername' AS ProcedureName,
+    CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Auth_GetUserByUsername') THEN 'EXISTS' ELSE 'MISSING' END AS Status
+UNION ALL
+SELECT 'LMS_Auth_GetUserById', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Auth_GetUserById') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Auth_GetUserPermissions', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Auth_GetUserPermissions') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_ContentInteractions_GetStats', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_ContentInteractions_GetStats') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_GetActive', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_GetActive') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_EndSession', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_EndSession') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_GetByAssignment', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_GetByAssignment') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_Grade', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_Grade') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_InteractiveContents_GetQuestions', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_InteractiveContents_GetQuestions') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissionFiles_DeleteBySubmission', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissionFiles_DeleteBySubmission') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_UpdateStatus', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_UpdateStatus') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_UpdateProgress', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_UpdateProgress') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_UpdateLastAccess', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_UpdateLastAccess') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_GetByCourse', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_GetByCourse') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_GetByStudent', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_GetByStudent') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_CheckEnrollment', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_CheckEnrollment') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_GetOptions', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_GetOptions') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_GetAnswerKey', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_GetAnswerKey') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizQuestions_Clear', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizQuestions_Clear') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_GetUserHistory', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_GetUserHistory') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_GetAnswers', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_GetAnswers') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionOptions_DeleteByQuestion', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionOptions_DeleteByQuestion') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionBlanks_DeleteByQuestion', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionBlanks_DeleteByQuestion') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_GetByQuestion', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_GetByQuestion') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_DeleteByAttempt', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_DeleteByAttempt') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionAnswerKeys_DeleteByQuestion', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionAnswerKeys_DeleteByQuestion') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_UpdateWatchProgress', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_UpdateWatchProgress') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_MarkCompleted', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_MarkCompleted') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LessonComments_GetByUser', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LessonComments_GetByUser') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_GetByUserCourse', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_GetByUserCourse') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_UpdateProgress', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_UpdateProgress') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswerOptions_DeleteByAnswer', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswerOptions_DeleteByAnswer') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswers_CalculateScore', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswers_CalculateScore') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_GetQuestions', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_GetQuestions') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_CountAttempts', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_CountAttempts') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_VideoInteractions_GetStats', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_VideoInteractions_GetStats') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_GetByUserCourse', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_GetByUserCourse') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_GetDailyStats', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_GetDailyStats') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_SEARCHCBX', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_SEARCHCBX') THEN 'EXISTS' ELSE 'MISSING' END;
+
+-- ============================================
+-- LMS_ CRUD Procedures (Code-Generated)
+-- ============================================
+SELECT
+    'LMS_AssignmentSubmissionFiles_GET' AS ProcedureName,
+    CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissionFiles_GET') THEN 'EXISTS' ELSE 'MISSING' END AS Status
+UNION ALL
+SELECT 'LMS_AssignmentSubmissionFiles_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissionFiles_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissionFiles_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissionFiles_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissionFiles_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissionFiles_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissionFiles_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissionFiles_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissionFiles_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissionFiles_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_AssignmentSubmissions_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_AssignmentSubmissions_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_ContentInteractions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_ContentInteractions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_ContentInteractions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_ContentInteractions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_ContentInteractions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_ContentInteractions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_ContentInteractions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_ContentInteractions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_ContentInteractions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_ContentInteractions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_ContentInteractions_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_ContentInteractions_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Enrollments_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Enrollments_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_InteractiveContents_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_InteractiveContents_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_InteractiveContents_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_InteractiveContents_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_InteractiveContents_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_InteractiveContents_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_InteractiveContents_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_InteractiveContents_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_InteractiveContents_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_InteractiveContents_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_InteractiveContents_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_InteractiveContents_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LearningSessions_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LearningSessions_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LessonComments_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LessonComments_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LessonComments_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LessonComments_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LessonComments_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LessonComments_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LessonComments_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LessonComments_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LessonComments_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LessonComments_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_LessonComments_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_LessonComments_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionAnswerKeys_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionAnswerKeys_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionAnswerKeys_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionAnswerKeys_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionAnswerKeys_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionAnswerKeys_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionAnswerKeys_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionAnswerKeys_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionAnswerKeys_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionAnswerKeys_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionAnswerKeys_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionAnswerKeys_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionBlanks_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionBlanks_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionBlanks_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionBlanks_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionBlanks_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionBlanks_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionBlanks_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionBlanks_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionBlanks_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionBlanks_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionBlanks_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionBlanks_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionOptions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionOptions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionOptions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionOptions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionOptions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionOptions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionOptions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionOptions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionOptions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionOptions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuestionOptions_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuestionOptions_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Questions_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Questions_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttemptAnswers_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttemptAnswers_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizAttempts_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizAttempts_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizQuestions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizQuestions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizQuestions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizQuestions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizQuestions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizQuestions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizQuestions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizQuestions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizQuestions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizQuestions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_QuizQuestions_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_QuizQuestions_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_Quizzes_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_Quizzes_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswerOptions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswerOptions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswerOptions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswerOptions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswerOptions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswerOptions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswerOptions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswerOptions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswerOptions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswerOptions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswerOptions_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswerOptions_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswers_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswers_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswers_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswers_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswers_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswers_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswers_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswers_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswers_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswers_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentAnswers_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentAnswers_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentLessonProgress_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentLessonProgress_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudentVideoProgress_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudentVideoProgress_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_StudySessions_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_StudySessions_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_VideoInteractions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_VideoInteractions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_VideoInteractions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_VideoInteractions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_VideoInteractions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_VideoInteractions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_VideoInteractions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_VideoInteractions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_VideoInteractions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_VideoInteractions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'LMS_VideoInteractions_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'LMS_VideoInteractions_delete') THEN 'EXISTS' ELSE 'MISSING' END;
+
+-- ============================================
+-- SIM_ Custom Procedures (Business Logic)
+-- ============================================
+SELECT
+    'SIM_Chapters_UpdateStatus' AS ProcedureName,
+    CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_UpdateStatus') THEN 'EXISTS' ELSE 'MISSING' END AS Status
+UNION ALL
+SELECT 'SIM_Chapters_Reorder', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_Reorder') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_UpdateStatus', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_UpdateStatus') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_UpdateStatus', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_UpdateStatus') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Course_GetWithLessonCount', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Course_GetWithLessonCount') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_Subject_GetBySubject', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_Subject_GetBySubject') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_GetStudents', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_GetStudents') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Student_GetByUser', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Student_GetByUser') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Science_GetClasses', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Science_GetClasses') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_LessonResources_DeleteByLesson', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_LessonResources_DeleteByLesson') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_GetByChapter', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_GetByChapter') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_GetByType', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_GetByType') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_UpdateSortOrder', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_UpdateSortOrder') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_GetByStatus', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_GetByStatus') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_UpdateCurrentVersion', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_UpdateCurrentVersion') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Timetable_GetByTeacher', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Timetable_GetByTeacher') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssetShares_GetByRecipient', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssetShares_GetByRecipient') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Teacher_GetByUser', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Teacher_GetByUser') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Subject_GetWithCourseCount', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Subject_GetWithCourseCount') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssets_GetWithVersions', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssets_GetWithVersions') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_GetCurrent', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_GetCurrent') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_GetActive', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_GetActive') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoVersions_GetLatest', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoVersions_GetLatest') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_SEARCHCBX', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_SEARCHCBX') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_SEARCHCBX', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_SEARCHCBX') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Chapters_SEARCHCBX', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_SEARCHCBX') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_GetByCategory', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_GetByCategory') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_GetByTeacher', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_GetByTeacher') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_GetActive', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_GetActive') THEN 'EXISTS' ELSE 'MISSING' END;
+
+-- ============================================
+-- SIM_ CRUD Procedures (Code-Generated)
+-- ============================================
+SELECT
+    'SIM_Courses_GET' AS ProcedureName,
+    CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_GET') THEN 'EXISTS' ELSE 'MISSING' END AS Status
+UNION ALL
+SELECT 'SIM_Courses_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Courses_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Courses_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_CourseCategories_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_CourseCategories_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Chapters_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Chapters_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Chapters_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Chapters_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Chapters_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Chapters_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Chapters_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_Subject_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_Subject_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_Subject_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_Subject_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_Subject_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_Subject_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_Subject_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_Subject_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_Subject_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_Subject_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Class_Subject_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Class_Subject_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Course_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Course_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Course_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Course_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Course_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Course_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Course_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Course_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Course_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Course_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Course_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Course_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Department_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Department_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Department_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Department_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Department_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Department_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Department_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Department_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Department_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Department_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Department_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Department_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_District_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_District_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_District_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_District_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_District_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_District_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_District_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_District_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_District_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_District_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_District_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_District_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Ethnicity_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Ethnicity_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Ethnicity_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Ethnicity_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Ethnicity_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Ethnicity_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Ethnicity_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Ethnicity_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Ethnicity_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Ethnicity_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Ethnicity_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Ethnicity_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Faculty_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Faculty_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Faculty_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Faculty_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Faculty_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Faculty_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Faculty_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Faculty_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Faculty_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Faculty_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Faculty_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Faculty_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_GradeLevel_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_GradeLevel_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_GradeLevel_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_GradeLevel_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_GradeLevel_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_GradeLevel_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_GradeLevel_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_GradeLevel_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_GradeLevel_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_GradeLevel_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_GradeLevel_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_GradeLevel_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_LessonResources_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_LessonResources_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_LessonResources_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_LessonResources_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_LessonResources_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_LessonResources_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_LessonResources_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_LessonResources_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_LessonResources_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_LessonResources_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_LessonResources_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_LessonResources_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Lessons_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Lessons_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Province_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Province_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Province_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Province_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Province_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Province_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Province_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Province_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Province_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Province_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Province_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Province_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Religion_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Religion_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Religion_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Religion_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Religion_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Religion_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Religion_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Religion_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Religion_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Religion_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Religion_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Religion_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Science_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Science_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Science_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Science_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Science_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Science_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Science_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Science_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Science_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Science_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Science_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Science_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Student_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Student_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Student_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Student_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Student_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Student_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Student_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Student_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Student_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Student_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Student_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Student_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Subject_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Subject_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Subject_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Subject_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Subject_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Subject_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Subject_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Subject_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Subject_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Subject_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Subject_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Subject_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Teacher_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Teacher_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Teacher_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Teacher_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Teacher_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Teacher_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Teacher_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Teacher_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Teacher_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Teacher_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Teacher_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Teacher_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Timetable_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Timetable_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Timetable_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Timetable_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Timetable_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Timetable_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Timetable_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Timetable_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Timetable_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Timetable_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Timetable_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Timetable_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssetShares_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssetShares_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssetShares_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssetShares_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssetShares_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssetShares_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssetShares_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssetShares_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssetShares_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssetShares_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssetShares_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssetShares_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssets_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssets_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssets_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssets_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssets_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssets_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssets_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssets_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssets_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssets_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoAssets_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoAssets_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoVersions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoVersions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoVersions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoVersions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoVersions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoVersions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoVersions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoVersions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoVersions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoVersions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_VideoVersions_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_VideoVersions_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Videos_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Videos_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SIM_Year_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SIM_Year_delete') THEN 'EXISTS' ELSE 'MISSING' END;
+
+-- ============================================
+-- SYS_ Custom Procedures (Business Logic)
+-- ============================================
+SELECT
+    'SYS_PermissionGroup_GetWithPermissions' AS ProcedureName,
+    CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionGroup_GetWithPermissions') THEN 'EXISTS' ELSE 'MISSING' END AS Status
+UNION ALL
+SELECT 'SYS_RefreshTokens_DeleteExpired', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_RefreshTokens_DeleteExpired') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Permissions_GetByRole', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Permissions_GetByRole') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_GetActive', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_GetActive') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_GetWithCount', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_GetWithCount') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Roles_GetActive', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Roles_GetActive') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Roles_GetWithPermissions', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Roles_GetWithPermissions') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Notifications_MarkAsRead', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Notifications_MarkAsRead') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_AuditLogs_GetByAction', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_AuditLogs_GetByAction') THEN 'EXISTS' ELSE 'MISSING' END;
+
+-- ============================================
+-- SYS_ CRUD Procedures (Code-Generated)
+-- ============================================
+SELECT
+    'SYS_Users_GET' AS ProcedureName,
+    CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Users_GET') THEN 'EXISTS' ELSE 'MISSING' END AS Status
+UNION ALL
+SELECT 'SYS_Users_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Users_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Users_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Users_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Users_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Users_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Users_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Users_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Users_DELETE', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Users_DELETE') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_AuditLogs_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_AuditLogs_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_AuditLogs_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_AuditLogs_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_AuditLogs_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_AuditLogs_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_AuditLogs_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_AuditLogs_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_AuditLogs_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_AuditLogs_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_AuditLogs_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_AuditLogs_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Notifications_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Notifications_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Notifications_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Notifications_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Notifications_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Notifications_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Notifications_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Notifications_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Notifications_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Notifications_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Notifications_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Notifications_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionCategory_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionCategory_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionGroup_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionGroup_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionGroup_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionGroup_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionGroup_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionGroup_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionGroup_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionGroup_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionGroup_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionGroup_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_PermissionGroup_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_PermissionGroup_delete') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Permissions_GET', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Permissions_GET') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Permissions_GETALL', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Permissions_GETALL') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Permissions_SEARCH', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Permissions_SEARCH') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Permissions_ADD', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Permissions_ADD') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Permissions_EDIT', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Permissions_EDIT') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'SYS_Permissions_delete', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'SYS_Permissions_delete') THEN 'EXISTS' ELSE 'MISSING' END;
+
+-- ============================================
+-- sp_ Lookup Procedures
+-- ============================================
+SELECT
+    'sp_Faculty_GetAll' AS ProcedureName,
+    CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_Faculty_GetAll') THEN 'EXISTS' ELSE 'MISSING' END AS Status
+UNION ALL
+SELECT 'sp_Department_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_Department_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_ClassStatus_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_ClassStatus_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_Subject_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_Subject_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_Ethnicity_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_Ethnicity_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_Religion_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_Religion_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_Province_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_Province_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_District_GetByProvince', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_District_GetByProvince') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_ClassType_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_ClassType_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_GradeLevel_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_GradeLevel_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_UserRole_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_UserRole_GetAll') THEN 'EXISTS' ELSE 'MISSING' END
+UNION ALL
+SELECT 'sp_UserStatus_GetAll', CASE WHEN EXISTS (SELECT 1 FROM sys.objects WHERE name = 'sp_UserStatus_GetAll') THEN 'EXISTS' ELSE 'MISSING' END;

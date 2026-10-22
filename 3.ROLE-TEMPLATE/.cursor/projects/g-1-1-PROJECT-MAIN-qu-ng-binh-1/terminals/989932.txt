@@ -1,0 +1,37 @@
+---
+pid: 12016
+cwd: "G:\\1.1-PROJECT-MAIN\\quảng binh-1"
+command: "$ErrorActionPreference = \"Stop\"\n$work = \"C:\\Users\\trong\\AppData\\Local\\Temp\\mau2_build\"\n$srcAscii = Join-Path $work \"source.docx\"\nif (-not (Test-Path $srcAscii)) { throw \"source.docx missing\" }\n\n$missing = [System.Reflection.Missing]::Value\n$wdFindStop = 0\n$wdFieldMergeField = 59\n$wdFormatDocument = 0\n$wdAlertsNone = 0\n$wdDoNotSaveChanges = 0\n\nfunction Find-From($doc, [int]$from, [string]$text) {\n  $rng = $doc.Range($from, $doc.Content.End)\n  $rng.Find.ClearFormatting() | Out-Null\n  $rng.Find.Text = $text\n  $rng.Find.Forward = $true\n  $rng.Find.Wrap = $wdFindStop\n  $rng.Find.MatchWildcards = $false\n  if ($rng.Find.Execute()) { return $rng }\n  return $null\n}\n\nfunction Insert-FieldAfterLabel($doc, [ref]$cursor, [string]$label, [string]$fieldName, [string]$untilLabel) {\n  $found = Find-From $doc $cursor.Value $label\n  if ($null -eq $found) { Write-Host \"NOT FOUND: $label\"; return }\n  Write-Host (\"FOUND {0}\" -f $label)\n  $insertStart = $found.End\n  $paraEnd = $found.Paragraphs.Item(1).Range.End - 1\n  $cutEnd = $paraEnd\n  if ($untilLabel -ne \"\") {\n    $untilRng = Find-From $doc $insertStart $untilLabel\n    if ($null -ne $untilRng -and $untilRng.Start -le $paraEnd) { $cutEnd = $untilRng.Start }\n  }\n  if ($cutEnd -lt $insertStart) { $cutEnd = $insertStart }\n  $replaceRng = $doc.Range($insertStart, $cutEnd)\n  $replaceRng.Text = \" \"\n  $fldRng = $doc.Range($replaceRng.End, $replaceRng.End)\n  $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, $fieldName, $true)\n  $cursor.Value = $replaceRng.End + 2\n  Write-Host (\"  field {0}\" -f $fieldName)\n}\n\n$word = New-Object -ComObject Word.Application\n$word.Visible = $false\n$word.DisplayAlerts = $wdAlertsNone\n$word.Options.BackgroundSave = $false\n$doc = $word.Documents.Open($srcAscii, $false, $true)\n\n$cursor = 0\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"Tôi là\" \"FullName\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"Sinh ngày:\" \"BirthDateText\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"nhân dân:\" \"PersonId\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"PersonIdDate\" \"nơi cấp\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"nơi cấp\" \"PersonIdPlace\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe số:\" \"DriverCerNo\" \"hạng\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"hạng\" \"BangLX\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"do:\" \"DriverCerPlace\" \"cấp ngày:\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"DriverCerDate\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe hạng:\" \"Specialbranchid\" \"\"\n\n$dateFound = Find-From $doc $cursor \"Quảng Trị\"\nif ($null -eq $dateFound) { $dateFound = Find-From $doc 0 \"Quảng Trị\" }\nif ($null -ne $dateFound) {\n  $para = $dateFound.Paragraphs.Item(1)\n  $paraRng = $doc.Range($para.Range.Start, $para.Range.End - 1)\n  $paraRng.Text = \"\"\n  $fldRng = $doc.Range($paraRng.Start, $paraRng.Start)\n  $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, \"NgayKy\", $true)\n  Write-Host \"field NgayKy\"\n}\n\n$outAscii = Join-Path $work \"Mau2_DonLaiXeCongNongNghiep.doc\"\nif (Test-Path $outAscii) { Remove-Item $outAscii -Force }\nWrite-Host \"Saving...\"\n\n# PowerShell COM: pass Missing for optional args so Word does not hang\n$doc.SaveAs($outAscii, $wdFormatDocument, $false, $missing, $false, $missing, $false, $false, $false, $false, $false, $missing, $false, $missing, $missing, $missing)\nWrite-Host \"Saved OK\"\n\nWrite-Host \"FIELDS:\"\nforeach ($f in @($doc.Fields)) {\n  Write-Host (\"  \" + $f.Code.Text.Trim())\n}\n\n$doc.Close($wdDoNotSaveChanges)\n$word.Quit()\n[System.Runtime.InteropServices.Marshal]::ReleaseComObject($doc) | Out-Null\n[System.Runtime.InteropServices.Marshal]::ReleaseComObject($word) | Out-Null\n[GC]::Collect()\n[GC]::WaitForPendingFinalizers()\n\nWrite-Host \"size=$((Get-Item $outAscii).Length)\""
+title: "Insert fields and SaveAs .doc with COM Missing args"
+status: failed   
+started_at: 2026-08-25T06:42:05.261Z
+running_for_ms: 86412    
+---
+FOUND T�i l�
+  field FullName
+FOUND Sinh ng�y:
+  field BirthDateText
+FOUND nh�n d�n:
+  field PersonId
+FOUND c?p ng�y:
+  field PersonIdDate
+FOUND noi c?p
+  field PersonIdPlace
+FOUND l�i xe s?:
+  field DriverCerNo
+FOUND h?ng
+  field BangLX
+FOUND do:
+  field DriverCerPlace
+FOUND c?p ng�y:
+  field DriverCerDate
+FOUND l�i xe h?ng:
+  field Specialbranchid
+field NgayKy
+Saving...
+
+---
+exit_code: 4294967295
+elapsed_ms: 86412
+ended_at: 2026-08-25T06:43:31.673Z
+---

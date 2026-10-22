@@ -1,0 +1,5 @@
+interface:
+  display_name: "Web Forms UI Sync"
+  short_description: "Đồng bộ UI Web Forms, giữ nguyên logic"
+  brand_color: "#3167F3"
+  default_prompt: "Dùng $webforms-ui-only-sync để chuyển giao diện ASP.NET Web Forms theo mẫu mà không thay đổi logic."

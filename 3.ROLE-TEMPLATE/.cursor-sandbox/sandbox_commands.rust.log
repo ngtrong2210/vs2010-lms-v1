@@ -1,0 +1,120 @@
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1e5d300b-61ad-4c90-bf2b-ef35c3ff0911.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1e5d300b-61ad-4c90-bf2b-ef35c3ff0911.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e62318de-f7e7-474e-99b1-ee72c2da09c4.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e62318de-f7e7-474e-99b1-ee72c2da09c4.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-712c89d6-05af-4d47-8e4d-946f5bf082bc.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-712c89d6-05af-4d47-8e4d-946f5bf082bc.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-269ba568-ce99-4441-8992-8bcc6c6db973.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-269ba568-ce99-4441-8992-8bcc6c6db973.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1c437e56-d518-4252-901f-70361098d353.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1c437e56-d518-4252-901f-70361098d353.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-18093cc0-b394-4ed9-bd15-85f613569a0b.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-18093cc0-b394-4ed9-bd15-85f613569a0b.ps1 (exit code 9009)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-04556586-1294-4ae3-96a4-7e7d3b574d30.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-04556586-1294-4ae3-96a4-7e7d3b574d30.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-d3269c17-b41e-4592-a022-42c784261caf.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-d3269c17-b41e-4592-a022-42c784261caf.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-d560c81a-2efd-4ec3-807e-7e5122037fa8.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-d560c81a-2efd-4ec3-807e-7e5122037fa8.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-267ad985-40e9-4105-8b5f-5759ecd7858b.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-267ad985-40e9-4105-8b5f-5759ecd7858b.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-f1fab52a-c80f-4cc3-a64e-61d4f8e629cb.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-f1fab52a-c80f-4cc3-a64e-61d4f8e629cb.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-f385ef3c-ded2-43de-b673-b310df4d3472.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-f385ef3c-ded2-43de-b673-b310df4d3472.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-b4ab8d9a-c3fe-4c8d-9550-f7f0bf2e0162.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-b4ab8d9a-c3fe-4c8d-9550-f7f0bf2e0162.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8233b96d-52e6-4cec-b8ac-7144e9bf4c0c.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8233b96d-52e6-4cec-b8ac-7144e9bf4c0c.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-76bcc77c-e411-4ebe-90b3-0308f088c364.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-76bcc77c-e411-4ebe-90b3-0308f088c364.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-aab7a56b-8d6c-4b42-aee9-0ae453eab05d.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-aab7a56b-8d6c-4b42-aee9-0ae453eab05d.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-63fd5fe3-2ca3-4f25-b1f3-a48f15acb2e6.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-63fd5fe3-2ca3-4f25-b1f3-a48f15acb2e6.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-4db94c59-35d8-4fce-98c2-5932747c7142.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-4db94c59-35d8-4fce-98c2-5932747c7142.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-0d3bc5ac-3728-4ce8-8c8a-2aecda30e69b.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-0d3bc5ac-3728-4ce8-8c8a-2aecda30e69b.ps1 (exit code 9009)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-63f01c53-d8cc-40ad-8653-c3f0d057719e.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-63f01c53-d8cc-40ad-8653-c3f0d057719e.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-362c945e-a68c-43e3-8edf-04f9f65130e6.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-362c945e-a68c-43e3-8edf-04f9f65130e6.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e0e6f766-48d4-4fd2-9d2d-b32b1a9cd91f.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e0e6f766-48d4-4fd2-9d2d-b32b1a9cd91f.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c957da34-93c9-4048-a632-efecd42eb2c7.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c957da34-93c9-4048-a632-efecd42eb2c7.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-510cdcd5-641e-4bd3-af9a-cb2c3b55343f.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-510cdcd5-641e-4bd3-af9a-cb2c3b55343f.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8eae43fe-5f25-40e4-9275-52ec36ae3838.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8eae43fe-5f25-40e4-9275-52ec36ae3838.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-616bc953-68db-4aad-8ce1-68fd4bdcd1a7.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-616bc953-68db-4aad-8ce1-68fd4bdcd1a7.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-2cfc304b-3ba9-4d2e-8175-4d5b3fcdef64.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-2cfc304b-3ba9-4d2e-8175-4d5b3fcdef64.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-0da2a1ec-5614-4c26-865d-2a0ffd62800c.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-0da2a1ec-5614-4c26-865d-2a0ffd62800c.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-5ad01131-2cef-487a-9bcc-f1a1b955696e.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-5ad01131-2cef-487a-9bcc-f1a1b955696e.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-97ecb943-b2f0-41ca-a077-7ce8b070037e.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-97ecb943-b2f0-41ca-a077-7ce8b070037e.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8cd5c085-0c4a-46ad-9847-933812fe2158.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8cd5c085-0c4a-46ad-9847-933812fe2158.ps1 (exit code -4048)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-197aa837-77c0-475e-b973-faf879ed21f8.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-197aa837-77c0-475e-b973-faf879ed21f8.ps1 (exit code -4048)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-bd33727c-db19-42d5-badc-dc76a6c39db1.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-bd33727c-db19-42d5-badc-dc76a6c39db1.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1b6fe55f-866d-41c5-a4c0-45a57c71a480.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1b6fe55f-866d-41c5-a4c0-45a57c71a480.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e08c1a4b-af22-4922-b02a-be6e36763a25.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e08c1a4b-af22-4922-b02a-be6e36763a25.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-9524b6c7-6e4f-4fc3-ad93-e60f3ba31567.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-9524b6c7-6e4f-4fc3-ad93-e60f3ba31567.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-9a0db606-baaf-45cc-95ce-007c471bd525.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-9a0db606-baaf-45cc-95ce-007c471bd525.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e6418207-6320-49de-a393-5db9a26191e2.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-e6418207-6320-49de-a393-5db9a26191e2.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-35916e3b-1e17-497e-a1de-a81791b82d33.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-35916e3b-1e17-497e-a1de-a81791b82d33.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-0772b633-4e72-411f-80b3-08001a713ad4.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-0772b633-4e72-411f-80b3-08001a713ad4.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-bb53cbbc-6888-4feb-80c4-83656dd70e07.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-bb53cbbc-6888-4feb-80c4-83656dd70e07.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-672f5a60-7aca-43c3-aeb1-16f1145efb89.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-672f5a60-7aca-43c3-aeb1-16f1145efb89.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c340d680-1e72-48d5-896b-a104cd4924e6.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c340d680-1e72-48d5-896b-a104cd4924e6.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-fee8f03d-ed61-4d58-a73f-6a7bcb7f3588.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-fee8f03d-ed61-4d58-a73f-6a7bcb7f3588.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-fa580ab2-eed3-41ff-ad4a-5bf8bf81ab1c.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-fa580ab2-eed3-41ff-ad4a-5bf8bf81ab1c.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-7704dccf-8625-4e2a-b724-68a961e4349f.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-7704dccf-8625-4e2a-b724-68a961e4349f.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-58185f6c-a38e-49f9-a7ff-d510c6af95d2.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-58185f6c-a38e-49f9-a7ff-d510c6af95d2.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c2847295-dd2a-494a-986c-f9672267e67e.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c2847295-dd2a-494a-986c-f9672267e67e.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-b5a82721-31be-4be0-a85e-af7f649e5d2b.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-b5a82721-31be-4be0-a85e-af7f649e5d2b.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1fc6c781-d59c-4e91-b161-eed1c9017015.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1fc6c781-d59c-4e91-b161-eed1c9017015.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8756d9f1-a638-4c35-8f37-83ab81772fcb.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8756d9f1-a638-4c35-8f37-83ab81772fcb.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-68c97b80-9c64-46d7-ae52-a6c9b25cc2dc.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-68c97b80-9c64-46d7-ae52-a6c9b25cc2dc.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-26807a33-adbb-42c3-88f8-73c51d73a18f.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-26807a33-adbb-42c3-88f8-73c51d73a18f.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c3a350ca-c3c5-4016-ae7f-9e4012357434.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-c3a350ca-c3c5-4016-ae7f-9e4012357434.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1d2bd331-0dfe-4111-b94b-af34bccbb930.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-1d2bd331-0dfe-4111-b94b-af34bccbb930.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-ddf1cd19-6633-4a5c-a97f-2b92fe73e9f7.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-ddf1cd19-6633-4a5c-a97f-2b92fe73e9f7.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-7fa61278-5a48-41d4-a1e1-a93e3601fe61.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-7fa61278-5a48-41d4-a1e1-a93e3601fe61.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8f1a42ea-75e6-4002-b22d-628d36247927.ps1
+FAILURE: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-8f1a42ea-75e6-4002-b22d-628d36247927.ps1 (exit code 1)
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-6d325cea-0f24-489c-a573-729e03c605c0.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -NonInteractive -File C:\Users\trong\AppData\Local\Temp\ps-script-6d325cea-0f24-489c-a573-729e03c605c0.ps1
+START: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\trong\AppData\Local\Temp\ps-script-2aa2f525-c9a2-41b1-b15f-f4706bc696e4.ps1
+SUCCESS: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\trong\AppData\Local\Temp\ps-script-2aa2f525-c9a2-41b1-b15f-f4706bc696e4.ps1

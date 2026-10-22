@@ -1,0 +1,8 @@
+.page-search input[type=text]{width:100%}
+.search-validation{display:flex!important}
+.search-validation:before{content:'\f431';font-family:'bootstrap-icons'}
+.result-card{text-decoration:none}
+.result-card[hidden]{display:none!important}
+.search-filter-empty[hidden]{display:none!important}
+.search-guide[style*="display:none"]{display:none!important}
+@media(max-width:700px){.type-tabs{-webkit-overflow-scrolling:touch}.result-copy{overflow:hidden}}

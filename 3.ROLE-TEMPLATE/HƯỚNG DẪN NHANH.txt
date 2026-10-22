@@ -1,0 +1,74 @@
+╔══════════════════════════════════════════════════════════════╗
+║          HƯỚNG DẪN SỬ DỤNG CLAUDE CONFIG TEMPLATE           ║
+╚══════════════════════════════════════════════════════════════╝
+
+📍 Vị trí template: G:\1.1-PROJECT-MAIN\CLAUDE-TEMPLATE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 CÁCH SỬ DỤNG CHO PROJECT MỚI
+
+Cách 1: Dùng file .bat (Đơn giản nhất)
+────────────────────────────────────────────────────────────────
+1. Double-click vào file: install-claude-config.bat
+2. Nhập đường dẫn project mới khi được hỏi
+   Ví dụ: G:\1.1-PROJECT-MAIN\PROJECT-MOI
+3. Enter → Hoàn thành!
+
+Cách 2: Dùng file .bat với tham số
+────────────────────────────────────────────────────────────────
+1. Mở CMD hoặc PowerShell
+2. Chạy lệnh:
+   cd "G:\1.1-PROJECT-MAIN\CLAUDE-TEMPLATE"
+   install-claude-config.bat "G:\1.1-PROJECT-MAIN\PROJECT-MOI"
+
+Cách 3: Copy thủ công
+────────────────────────────────────────────────────────────────
+1. Copy thư mục .claude vào project mới
+2. Copy file .ai-conventions.md vào project mới
+3. Mở .ai-conventions.md và sửa:
+   - {{PROJECT_PATH}} → đường dẫn project
+   - {{PROJECT_NAME}} → tên project
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 NỘI DUNG ĐƯỢC CÀI ĐẶT
+
+✅ File .claude/settings.json
+   - Block tất cả ổ đĩa trừ G:
+   - Chỉ làm việc trong workspace project
+
+✅ File .claude/README.md
+   - Hướng dẫn cho AI về quy tắc làm việc
+
+✅ File .claude/skills/*.md
+   - Các skill cho AI (find-code, fix-bug, code-review, v.v.)
+
+✅ File .ai-conventions.md
+   - Quy ước làm việc cho AI
+   - Tự động cập nhật tên project khi cài đặt
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  LƯU Ý QUAN TRỌNG
+
+• Project PHẢI nằm trên ổ đĩa G:
+• Script sẽ GHI ĐÈ nếu đã có cấu hình cũ
+• Script tự động cập nhật tên project trong .ai-conventions.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 CẬP NHẬT TEMPLATE
+
+Nếu muốn thay đổi cấu hình cho project mới:
+1. Sửa file trong thư mục CLAUDE-TEMPLATE
+2. Project đã tạo sẽ KHÔNG tự động cập nhật
+3. Cần chạy lại script cho project cũ nếu muốn cập nhật
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 Hỗ trợ
+
+Xem file README.md chi tiết hơn trong thư mục template.
+
+Created: 2026-10-22

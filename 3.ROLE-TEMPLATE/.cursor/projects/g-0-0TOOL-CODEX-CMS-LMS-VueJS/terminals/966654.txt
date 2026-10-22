@@ -1,0 +1,15 @@
+---
+pid: 16580
+cwd: "g:\\0.0TOOL\\CODEX\\CMS-LMS-VueJS\\frontend"
+command: "npm run preview"
+title: "Start Vite preview server for dist"
+status: running  
+started_at: 2026-10-21T09:05:27.702Z
+running_for_ms: 110188   
+---
+
+> lms-cms-frontend@0.0.0 preview
+> vite preview
+
+  ➜  Local:   http://localhost:4173/
+  ➜  Network: use --host to expose

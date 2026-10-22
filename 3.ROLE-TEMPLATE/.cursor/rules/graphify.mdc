@@ -1,0 +1,10 @@
+---
+description: graphify knowledge graph context
+alwaysApply: true
+---
+Use Graphify first when a project already has `graphify-out/graph.json`:
+- `graphify query "<question>"` for codebase and architecture questions.
+- `graphify path "<A>" "<B>"` for dependency paths.
+- `graphify explain "<concept>"` for related nodes.
+Use Read, Grep, Glob, or shell search directly when Graphify has oriented the task and exact lines are needed, or when the project has no graph yet.
+After modifying code in a graph-enabled project, run `graphify update .` to keep the graph current.

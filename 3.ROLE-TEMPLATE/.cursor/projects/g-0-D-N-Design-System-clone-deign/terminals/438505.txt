@@ -1,0 +1,40 @@
+---
+pid: 892
+cwd: "G:\\0.DỰ ÁN\\# Design System\\clone-deign\\net88"
+command: "cd \"g:\\0.DỰ ÁN\\# Design System\\clone-deign\\net88\"; npm run dev"
+title: "Start development server"
+status: failed   
+started_at: 2026-10-19T15:40:02.331Z
+running_for_ms: 223475   
+---
+
+> net88-ai-router-dashboard@1.0.0 dev
+> vite
+
+The project root contains the "#" character (G:/0.DỰ ÁN/# Design System/clone-deign/net88), which may not work when running Vite. Consider renaming the directory to remove the characters.
+
+  VITE v5.4.21  ready in 656 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+22:40:42 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:40:52 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:40:52 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:41:12 [vite] vite.config.ts changed, restarting server...
+The project root contains the "#" character (G:/0.DỰ ÁN/# Design System/clone-deign/net88), which may not work when running Vite. Consider renaming the directory to remove the characters.
+22:41:12 [vite] server restarted.
+22:42:26 [vite] vite.config.ts changed, restarting server...
+The project root contains the "#" character (G:/0.DỰ ÁN/# Design System/clone-deign/net88), which may not work when running Vite. Consider renaming the directory to remove the characters.
+22:42:26 [vite] server restarted.
+22:42:36 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:42:36 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:42:42 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:42:42 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:42:46 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+22:42:46 [vite] Pre-transform error: Failed to load url /src/main.ts (resolved id: /src/main.ts). Does the file exist?
+
+---
+exit_code: 1
+elapsed_ms: 223475
+ended_at: 2026-10-19T15:43:45.806Z
+---

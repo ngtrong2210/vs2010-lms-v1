@@ -1,0 +1,392 @@
+LMS_Certificate_Generate CREATE PROCEDURE dbo.LMS_Certificate_Generate
+    @StudentUserId Bigint,
+    @CourseId Bigint,
+    @GeneratedByUserId Bigint,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    If Exists
+        (
+            Sel
+LMS_Certificate_GetByUser CREATE PROCEDURE dbo.LMS_Certificate_GetByUser
+    @UserId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        sc.CertificateID,
+        sc.StudentUserID,
+        sc.CourseID,
+        sc.IssuedAt,
+        sc.ExpiresAt,
+        sc.
+LMS_Content_GetByLesson CREATE PROCEDURE dbo.LMS_Content_GetByLesson
+    @LessonId Bigint,
+    @StudentUserId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        ci.ContentID,
+        ci.LessonID,
+        ci.Title,
+        ci.Description,
+        ci.Cont
+LMS_Content_TrackProgress CREATE PROCEDURE dbo.LMS_Content_TrackProgress
+    @ContentId Bigint,
+    @StudentUserId Bigint,
+    @WatchedSeconds Int = 0,
+    @IsCompleted Bit = 0,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    If Not Ex
+LMS_Course_GetDetails CREATE PROCEDURE dbo.LMS_Course_GetDetails
+    @CourseId Bigint,
+    @StudentUserId Bigint = Null,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        c.CourseID,
+        c.Title,
+        c.Description,
+        c.ThumbnailUrl,
+        c.C
+LMS_Discussion_Create CREATE   PROCEDURE dbo.LMS_Discussion_Create
+    @CourseId Bigint,
+    @LessonId Bigint = Null,
+    @UserId Bigint,
+    @Title NVARCHAR(500),
+    @Content NVARCHAR(MAX),
+    @ParentId Bigint = Null,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set No
+LMS_Discussion_GetByCourse CREATE   PROCEDURE dbo.LMS_Discussion_GetByCourse
+    @CourseId Bigint,
+    @LessonId Bigint = Null,
+    @PageNumber Int = 1,
+    @PageSize Int = 20
+As
+Begin
+    Set Nocount On;
+
+    Declare @Offset Int = (@PageNumber - 1) * @PageSize;
+
+    Select
+        
+LMS_Discussion_GetDetails CREATE   PROCEDURE dbo.LMS_Discussion_GetDetails
+    @DiscussionId Bigint
+As
+Begin
+    Set Nocount On;
+
+    -- Main discussion
+    Select
+        d.DiscussionID,
+        d.CourseID,
+        d.LessonID,
+        d.UserID,
+        u.FullName As UserName,
+    
+LMS_Discussion_Update CREATE   PROCEDURE dbo.LMS_Discussion_Update
+    @DiscussionId Bigint,
+    @UserId Bigint,
+    @Title NVARCHAR(500) = Null,
+    @Content NVARCHAR(MAX) = Null,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    If
+LMS_Enrollment_GetByStudent CREATE PROCEDURE dbo.LMS_Enrollment_GetByStudent
+    @StudentUserId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        e.EnrollmentID,
+        e.StudentUserID,
+        e.CourseID,
+        e.EnrolledAt,
+        e.Status,
+        e
+LMS_Lesson_TrackProgress CREATE PROCEDURE dbo.LMS_Lesson_TrackProgress
+    @LessonId Bigint,
+    @StudentUserId Bigint,
+    @AccessedSeconds Int = 0,
+    @IsCompleted Bit = 0,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    If Not Exi
+LMS_Notification_GetForUser CREATE   PROCEDURE dbo.LMS_Notification_GetForUser
+    @UserId Bigint,
+    @PageNumber Int = 1,
+    @PageSize Int = 20
+As
+Begin
+    Set Nocount On;
+
+    Declare @Offset Int = (@PageNumber - 1) * @PageSize;
+
+    Select
+        n.NotificationID,
+        n.Us
+LMS_Notification_MarkAllAsRead CREATE   PROCEDURE dbo.LMS_Notification_MarkAllAsRead
+    @UserId Bigint,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    Begin Transaction;
+
+    Update dbo.SIM_Notifications
+    Set IsRead = 1,
+        ReadAt
+LMS_Notification_MarkAsRead CREATE   PROCEDURE dbo.LMS_Notification_MarkAsRead
+    @NotificationId Bigint,
+    @UserId Bigint,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    If Not Exists
+    (
+        Select
+            1
+        From 
+LMS_Quiz_Create 
+CREATE PROCEDURE dbo.LMS_Quiz_Create
+    @Id Bigint = Null,
+    @LessonId Bigint,
+    @Title Nvarchar(200),
+    @Description Nvarchar(Max) = Null,
+    @PassingScore Decimal(8, 2),
+    @MaxAttempts Int,
+    @TimeLimitMinutes Int = Null,
+    @ShuffleQuestio
+LMS_Quiz_Delete CREATE PROCEDURE dbo.LMS_Quiz_Delete
+    @Id Bigint,
+    @ActorId Bigint,
+    @IsAdmin Bit = 0,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+
+    Update dbo.SIM_Quizzes
+    Set IsDeleted = 1,
+        UpdatedAt = Sysutcdatetime(),
+    
+LMS_Quiz_GetByLesson CREATE PROCEDURE dbo.LMS_Quiz_GetByLesson
+    @LessonId Bigint,
+    @ActorId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        q.QuizID,
+        q.LessonID,
+        q.Title,
+        q.Description,
+        q.PassingScore,
+       
+LMS_Quiz_GetQuestions CREATE PROCEDURE dbo.LMS_Quiz_GetQuestions
+    @QuizId Bigint,
+    @ActorId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        qq.QuestionID,
+        qq.QuizID,
+        qq.QuestionText,
+        qq.QuestionType,
+        qq.Points,
+LMS_Quiz_Update 
+CREATE PROCEDURE dbo.LMS_Quiz_Update
+    @Id Bigint,
+    @Title Nvarchar(200),
+    @Description Nvarchar(Max) = Null,
+    @PassingScore Decimal(8, 2),
+    @MaxAttempts Int,
+    @TimeLimitMinutes Int = Null,
+    @ShuffleQuestions Bit = 0,
+    @Status Varch
+LMS_QuizAttempt_Create CREATE PROCEDURE dbo.LMS_QuizAttempt_Create
+    @QuizId Bigint,
+    @StudentUserId Bigint,
+    @CreatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+
+    If Not Exists
+        (
+            Select
+                1
+            From dbo.SIM_Quizzes
+LMS_QuizAttempt_GetDetails CREATE PROCEDURE dbo.LMS_QuizAttempt_GetDetails
+    @QuizAttemptId Bigint,
+    @ActorId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        qa.QuizAttemptID,
+        qa.QuizID,
+        qa.StudentUserID,
+        u.FullName As Stude
+LMS_QuizQuestion_Create CREATE PROCEDURE dbo.LMS_QuizQuestion_Create
+    @Id Bigint = Null,
+    @QuizId Bigint,
+    @QuestionText Nvarchar(Max),
+    @QuestionType Varchar(50),
+    @Points Decimal(8, 2) = 1.0,
+    @CorrectAnswerText Nvarchar(Max) = Null,
+    @Option1 Nvarchar(500)
+LMS_QuizQuestion_Delete CREATE PROCEDURE dbo.LMS_QuizQuestion_Delete
+    @Id Bigint,
+    @ActorId Bigint,
+    @IsAdmin Bit = 0,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+
+    Update dbo.SIM_QuizQuestions
+    Set IsDeleted = 1,
+        UpdatedAt = Sysutcda
+LMS_QuizQuestion_Update CREATE PROCEDURE dbo.LMS_QuizQuestion_Update
+    @Id Bigint,
+    @QuestionText Nvarchar(Max),
+    @QuestionType Varchar(50),
+    @Points Decimal(8, 2) = 1.0,
+    @CorrectAnswerText Nvarchar(Max) = Null,
+    @Option1 Nvarchar(500) = Null,
+    @Option2 Nvarc
+LMS_Survey_SubmitResponse CREATE   PROCEDURE dbo.LMS_Survey_SubmitResponse
+    @SurveyId Bigint,
+    @StudentUserId Bigint,
+    @ActorId Bigint,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    If Not Exists
+    (
+        Select
+       
+LMS_SurveyAnswer_Create CREATE   PROCEDURE dbo.LMS_SurveyAnswer_Create
+    @ResponseId Bigint,
+    @QuestionId Bigint,
+    @AnswerText NVARCHAR(MAX) = NULL,
+    @SelectedOptionId Bigint = NULL,
+    @NumericValue Decimal(10,2) = NULL,
+    @ActorId Bigint,
+    @UpdatedUser NVARCHAR
+LMS_Video_DetachFromLesson CREATE PROCEDURE dbo.LMS_Video_DetachFromLesson
+    @LessonId Bigint,
+    @ActorId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    If Not Exists
+        (
+            Select
+                1
+            From dbo.SIM_Lessons
+                
+LMS_Video_GetByLesson CREATE PROCEDURE dbo.LMS_Video_GetByLesson
+    @LessonId Bigint,
+    @ActorId Bigint,
+    @IsAdmin Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Select
+        v.VideoID,
+        v.Title,
+        v.VideoUrl,
+        v.PosterUrl,
+        v.DurationSeconds,
+    
+SIM_Notification_GetList CREATE   PROCEDURE dbo.SIM_Notification_GetList
+    @RecipientUserID Bigint,
+    @Limit Int = 20,
+    @UnreadOnly Bit = 0
+As
+Begin
+    Set Nocount On;
+
+    Set @Limit = Case When @Limit < 1 Then 1 When @Limit > 100 Then 100 Else @Limit End;
+
+    Select Top
+SIM_Notification_MarkAllRead 
+CREATE   PROCEDURE dbo.SIM_Notification_MarkAllRead
+    @UserId Bigint,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    Begin Transaction;
+
+    Update dbo.SIM_Notifications
+    Set IsRead = 1,
+        ReadAt 
+SIM_Notification_MarkRead 
+CREATE   PROCEDURE dbo.SIM_Notification_MarkRead
+    @NotificationId Bigint,
+    @UserId Bigint,
+    @UpdatedUser NVARCHAR(100) = NULL
+As
+Begin
+    Set Nocount On;
+    Set Xact_abort On;
+
+    If Not Exists
+    (
+        Select
+            1
+        From d
+
+(31 rows affected)

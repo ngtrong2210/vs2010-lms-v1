@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Saturday, Sep 5, 2026, 5:49 PM (UTC+7)</timestamp>\n<user_query>\ncheck\n</user_query>"}]}}
+{"type":"turn_ended","status":"error","error":"Provider Error Provider returned error: Access to private networks is forbidden\n"}

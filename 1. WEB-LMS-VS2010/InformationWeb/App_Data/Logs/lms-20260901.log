@@ -1,0 +1,164 @@
+2026-09-01 05:12:31Z | Nạp trang Ngân hàng câu hỏi thất bại.
+System.Web.HttpException (0x80004005): A field or property with the name 'UpdatedAt' was not found on the selected data source.
+   at System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object& data)
+   at System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   at System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at InformationWeb.LmsInfrastructure.WebData.Bind(GridView grid, DataTable table, Label empty, Label error) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\WebData.cs:line 20
+   at InformationWeb.LmsInfrastructure.CmsStorePage.LoadData() in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\CmsStorePage.cs:line 44
+2026-09-01 05:18:51Z | Nạp trang Ngân hàng câu hỏi thất bại.
+System.Web.HttpException (0x80004005): A field or property with the name 'UpdatedAt' was not found on the selected data source.
+   at System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object& data)
+   at System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   at System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at InformationWeb.LmsInfrastructure.WebData.Bind(GridView grid, DataTable table, Label empty, Label error) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\WebData.cs:line 20
+   at InformationWeb.LmsInfrastructure.CmsStorePage.LoadData() in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\CmsStorePage.cs:line 44
+2026-09-01 05:23:59Z | Nạp trang Ngân hàng câu hỏi thất bại.
+System.Web.HttpException (0x80004005): A field or property with the name 'UpdatedAt' was not found on the selected data source.
+   at System.Web.UI.WebControls.BoundField.TryGetSimplePropertyValue(Object dataItem, Object& data)
+   at System.Web.UI.WebControls.BoundField.GetValue(Control controlContainer)
+   at System.Web.UI.WebControls.BoundField.OnDataBindField(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at InformationWeb.LmsInfrastructure.WebData.Bind(GridView grid, DataTable table, Label empty, Label error) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\WebData.cs:line 20
+   at InformationWeb.LmsInfrastructure.CmsStorePage.LoadData() in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\CmsStorePage.cs:line 44
+2026-09-01 08:30:30Z | Lỗi ứng dụng chưa xử lý: /cms/courses/3/content
+System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRow' does not contain a property with the name 'LessonType'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.pages_cms_contentbuilder_aspx.__DataBind__control15(Object sender, EventArgs e) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Cms\ContentBuilder.aspx:line 49
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   at System.Web.UI.WebControls.Repeater.AddDataItemsIntoItemsArray(IEnumerable dataSource, Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.PostGetDataAction(IEnumerable dataSource)
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem)
+   at System.Web.UI.WebControls.Repeater.AddDataItemsIntoItemsArray(IEnumerable dataSource, Boolean useDataSource)
+   at System.Web.UI.WebControls.Repeater.PostGetDataAction(IEnumerable dataSource)
+   at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)
+   at InformationWeb.Pages.Cms.ContentBuilder.BindContent(DataSet content) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Cms\ContentBuilder.aspx.cs:line 72
+   at InformationWeb.Pages.Cms.ContentBuilder.LoadCourse() in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Cms\ContentBuilder.aspx.cs:line 63
+   at InformationWeb.Pages.Cms.ContentBuilder.Page_Load(Object sender, EventArgs e) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Cms\ContentBuilder.aspx.cs:line 34
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.pages_cms_contentbuilder_aspx.ProcessRequest(HttpContext context) in c:\Users\trong\AppData\Local\Temp\Temporary ASP.NET Files\root\13aaf654\f5321f5d\App_Web_rximchel.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2026-09-01 09:35:21Z | Nạp trang Ngân hàng câu hỏi thất bại.
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'UpdatedAt'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.pages_cms_questions_aspx.__DataBind__control13(Object sender, EventArgs e) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Cms\Questions.aspx:line 11
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at InformationWeb.LmsInfrastructure.WebData.Bind(GridView grid, DataTable table, Label empty, Label error) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\WebData.cs:line 20
+   at InformationWeb.LmsInfrastructure.CmsStorePage.LoadData() in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\CmsStorePage.cs:line 44
+2026-09-01 09:35:58Z | Nạp trang Ngân hàng câu hỏi thất bại.
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'UpdatedAt'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at ASP.pages_cms_questions_aspx.__DataBind__control13(Object sender, EventArgs e) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Cms\Questions.aspx:line 11
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at InformationWeb.LmsInfrastructure.WebData.Bind(GridView grid, DataTable table, Label empty, Label error) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\WebData.cs:line 20
+   at InformationWeb.LmsInfrastructure.CmsStorePage.LoadData() in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\LmsInfrastructure\CmsStorePage.cs:line 44
+2026-09-01 10:36:09Z | Nạp hoặc xử lý bài học thất bại.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at InformationWeb.Pages.Lms.LessonPlayer.BindHeader(DataRow lesson, DataRow course, DataRow video, DataRow progress, DataTable interactions, DataTable answered, String lessonType) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Lms\LessonPlayer.aspx.cs:line 128
+   at InformationWeb.Pages.Lms.LessonPlayer.Page_Load(Object sender, EventArgs e) in g:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\Pages\Lms\LessonPlayer.aspx.cs:line 62
+2026-09-01 11:23:56Z | Lỗi ứng dụng chưa xử lý: /favicon.ico
+System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2026-09-01 15:09:19Z | Lỗi ứng dụng chưa xử lý: /favicon.ico
+System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2026-09-01 15:21:31Z | Lỗi ứng dụng chưa xử lý: /favicon.ico
+System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

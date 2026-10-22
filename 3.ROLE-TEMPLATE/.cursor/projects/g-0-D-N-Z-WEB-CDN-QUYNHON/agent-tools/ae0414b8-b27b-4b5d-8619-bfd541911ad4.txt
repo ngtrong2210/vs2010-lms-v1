@@ -1,0 +1,1463 @@
+warning: Not a git repository. Use --no-index to compare two paths outside a working tree
+usage: git diff --no-index [<options>] <path> <path> [<pathspec>...]
+
+Diff output format options
+    -p, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=<n>]   generate diffs with <n> lines context
+    -W, --[no-]function-context
+                          generate diffs with <n> lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=<param1>,<param2>...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=<param1>,<param2>...]
+                          synonym for --dirstat=files,<param1>,<param2>...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=<width>[,<name-width>[,<count>]]]
+                          generate diffstat
+    --stat-width <width>  generate diffstat with a given width
+    --stat-name-width <width>
+                          generate diffstat with a given name width
+    --stat-graph-width <width>
+                          generate diffstat with a given graph width
+    --stat-count <count>  generate diffstat with limited lines
+    --[no-]compact-summary
+                          generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --[no-]full-index     show full pre- and post-image object names on the "index" lines
+    --[no-]color[=<when>] show colored diff
+    --ws-error-highlight <kind>
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+    --src-prefix <prefix> show the given source prefix instead of "a/"
+    --dst-prefix <prefix> show the given destination prefix instead of "b/"
+    --line-prefix <prefix>
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --default-prefix      use default prefixes a/ and b/
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new <char>
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old <char>
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context <char>
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=<n>[/<m>]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=<n>]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=<n>]
+                          detect copies
+    --[no-]find-copies-harder
+                          use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --[no-]rename-empty   use empty blobs as rename source
+    --[no-]follow         continue listing the history of a file beyond renames
+    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --[no-]ignore-matching-lines <regex>
+                          ignore changes whose all lines match <regex>
+    --[no-]indent-heuristic
+                          heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm <algorithm>
+                          choose a diff algorithm
+    --anchored <text>     generate diff using the "anchored diff" algorithm
+    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
+    --word-diff-regex <regex>
+                          use <regex> to decide what a word is
+    --color-words[=<regex>]
+                          equivalent to --word-diff=color --word-diff-regex=<regex>
+    --[no-]color-moved[=<mode>]
+                          moved lines of code are colored differently
+    --[no-]color-moved-ws <mode>
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --[no-]relative[=<prefix>]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --[no-]text       treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --[no-]exit-code      exit with 1 if there were differences, 0 otherwise
+    --[no-]quiet          disable all output of the program
+    --[no-]ext-diff       allow an external diff helper to be executed
+    --[no-]textconv       run external text conversion filters when comparing binary files
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules in the diff generation
+    --submodule[=<format>]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S <string>           look for differences that change the number of occurrences of the specified string
+    -G <regex>            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression
+    -O <file>             control the order in which files appear in the output
+    --rotate-to <path>    show the change in the specified path first
+    --skip-to <path>      skip the output to the specified path
+    --find-object <object-id>
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --max-depth <depth>   maximum tree depth to recurse
+    --output <file>       output to a specific file
+
+diff --git a/1.WEB -CTT/Controls/StudentCollection/StudentCollectionForm.ascx b/1.WEB -CTT/Controls/StudentCollection/StudentCollectionForm.ascx.cs
+index 01048ee..b88a1f0 100644
+--- a/1.WEB -CTT/Controls/StudentCollection/StudentCollectionForm.ascx	
++++ b/1.WEB -CTT/Controls/StudentCollection/StudentCollectionForm.ascx.cs	
+@@ -1,766 +1,578 @@
+-﻿    <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="StudentCollectionForm.ascx.cs"
+-    Inherits="InformationWeb.Controls.StudentCollection.StudentCollectionForm" %>
+-<%@ Register Assembly="CommonControls" Namespace="CommonControls.MessageBox" TagPrefix="cc1" %>
+-<%@ Register src="../LocationContent/Detail.ascx" tagname="Detail" tagprefix="uc1" %>
++﻿using System;
++using System.Collections;
++using System.Configuration;
++using System.Data;
++using System.IO;
++using System.Web;
++using System.Web.Security;
++using System.Web.UI;
++using System.Web.UI.HtmlControls;
++using System.Web.UI.WebControls;
++using System.Web.UI.WebControls.WebParts;
++using System.Xml.Linq;
++using DCore;
++using InformationWebObject;
++using SimsObject;
+ 
+-<style type="text/css">
+-.student-collection-survey { --main-color: rgb(2, 70, 143); --main-color-soft: rgb(232, 239, 248); --main-color-pale: rgb(245, 248, 252); --white-color: rgb(255, 255, 255); --text-color-light: rgb(115, 110, 105); --text-color-dark: rgb(80, 75, 70); --color-four: rgb(94, 111, 109); --black-color-opacity-four: rgba(0, 0, 0, 0.2); --black-color-opacity-five: rgba(0, 0, 0, 0.1); --font-family-sans: 'Noto Sans', 'Segoe UI', Arial, sans-serif; --font-family-serif: 'Noto Serif', 'Times New Roman', serif; --page-color: rgb(246, 244, 239); --focus-ring: rgba(2, 70, 143, 0.2); width: 100vw; min-height: 100vh; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); padding: 48px 24px 72px; color: var(--text-color-dark); font-family: var(--font-family-sans); font-size: 18px; line-height: 1.65; }
+-.student-collection-survey *, .student-collection-survey *::before, .student-collection-survey *::after { box-sizing: border-box; }
+-.student-collection-survey input, .student-collection-survey select, .student-collection-survey button { font: inherit; }
+-.student-collection-document { width: min(1080px, 100%); margin: 0 auto; overflow: hidden; background: var(--white-color); border: 1px solid var(--black-color-opacity-five); box-shadow: 0 26px 70px rgba(28, 48, 44, 0.1); }
+-.student-collection-header { position: relative; padding: 0 64px 52px; overflow: hidden; background: var(--main-color); color: var(--white-color); }
+-.student-collection-header::after { position: absolute; right: -84px; bottom: -116px; width: 260px; height: 260px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 50%; content: ''; }
+-.student-collection-brand { position: relative; z-index: 1; text-align: center; }
+-.student-collection-brand img { display: block; height: auto; max-height: 250px; margin: 0; object-fit: contain; }
+-.student-collection-header__layout { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 340px); align-items: start; gap: 54px; }
+-.student-collection-header__intro { min-width: 0; }
+-.student-collection-header h1 { margin: 0; color: var(--white-color); font-family: var(--font-family-serif); font-size: clamp(36px, 4.1vw, 52px); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; }
+-.student-collection-header__subtitle { margin: 18px 0 0; color: rgba(255, 255, 255, 0.9); font-family: var(--font-family-serif); font-size: 20px; font-style: italic; line-height: 1.5; }
+-.student-collection-header__notice { margin: 7px 0 0; color: rgba(255, 255, 255, 0.88); font-size: 15px; line-height: 1.5; }
+-.student-collection-header__notice .required { color: #ffb3bf; }
+-.student-collection-contact-card { padding: 22px 26px; border: 1px solid rgba(255, 255, 255, 0.65); border-radius: 14px; background: rgba(255, 255, 255, 0.98); color: #263858; box-shadow: 0 14px 34px rgba(0, 35, 82, 0.2); }
+-.student-collection-contact-card__code { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 15px; border-bottom: 2px solid #e2ecf8; }
+-.student-collection-contact-card__code span { font-size: 17px; font-weight: 600; }
+-.student-collection-contact-card__code strong { padding-left: 20px; border-left: 2px solid #dbe7f6; color: #064caa; font-size: 42px; line-height: 1; }
+-.student-collection-contact-card__item { display: grid; grid-template-columns: 52px minmax(0, 1fr); align-items: center; gap: 14px; padding-top: 15px; }
+-.student-collection-contact-card__item + .student-collection-contact-card__item { margin-top: 13px; border-top: 2px solid #e2ecf8; }
+-.student-collection-contact-card__icon { display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; background: #e8f3ff; color: #075fc7; font-size: 25px; font-weight: 800; line-height: 1; }
+-.student-collection-contact-card__icon--zalo { background: #dceeff; font-size: 13px; }
+-.student-collection-contact-card__text { min-width: 0; }
+-.student-collection-contact-card__text span { display: block; color: #45536c; font-size: 15px; line-height: 1.3; }
+-.student-collection-contact-card__text strong { display: block; margin-top: 2px; color: #064caa; font-size: 20px; line-height: 1.25; white-space: nowrap; }
+-.student-collection-body { padding: 48px 64px 64px; }
+-.student-info { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-bottom: 42px; border: 1px solid var(--black-color-opacity-four); }
+-.student-info__group { min-width: 0; padding: 26px 28px 30px; }
+-.student-info__group + .student-info__group { border-left: 1px solid var(--black-color-opacity-four); }
+-.student-info__group--wide { grid-column: 1 / -1; border-top: 1px solid var(--black-color-opacity-four); }
+-.student-info__group--wide + .student-info__group--wide { border-left: 0; }
+-.student-info__title { margin: -26px -28px 26px; padding: 15px 28px; background: var(--main-color-pale); color: var(--main-color); font-family: var(--font-family-serif); font-size: 20px; font-weight: 700; line-height: 1.35; }
+-.student-info__fields { display: grid; gap: 24px; }
+-.student-info__fields--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+-.student-info__fields--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+-.student-collection-id-card-row { display: grid; grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+-.student-collection-transcript-detail { display: none; }
+-.student-collection-upload-group { margin-top: 22px; padding: 18px; border: 1px solid rgba(2, 70, 143, 0.18); border-radius: 4px; background: var(--main-color-pale); }
+-.student-collection-upload-title { margin: 0 0 14px; color: var(--main-color); font-family: var(--font-family-serif); font-size: 18px; font-weight: 700; line-height: 1.35; }
+-.student-collection-upload-group:first-child { margin-top: 0; }
+-.student-collection-upload-group .form-label { margin-bottom: 6px; font-size: 14px; }
+-.form-field { min-width: 0; }
+-.student-collection-survey .form-label { display: block; margin-bottom: 8px; color: var(--text-color-dark); font-size: 16px; font-weight: 600; }
+-.student-collection-survey .required { color: #ff1200; }
+-.student-collection-survey .form-control { width: 100%; min-height: 54px; padding: 12px 16px; border: 1px solid rgba(2, 70, 143, 0.28); border-radius: 3px; background: var(--white-color); color: var(--text-color-dark); box-shadow: none; transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease; }
+-.student-collection-survey .form-control:hover { border-color: rgba(2, 70, 143, 0.55); background-color: var(--main-color-pale); }
+-.student-collection-survey .form-control:focus { border-color: var(--main-color); background: var(--white-color); box-shadow: 0 0 0 3px var(--focus-ring); color: var(--text-color-dark); outline: none; }
+-.student-collection-survey .form-control.student-collection-invalid { border-color: #dc2626; background: #fff7f7; box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.12); }
+-.student-collection-survey .form-select { width: 100%; min-height: 54px; padding: 12px 48px 12px 16px; border: 1px solid rgba(2, 70, 143, 0.28); border-radius: 3px; background-color: var(--white-color); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='10' viewBox='0 0 14 10'%3E%3Cpath fill='none' stroke='%2302468f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M1 1.5l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; background-size: 14px 10px; color: var(--text-color-dark); cursor: pointer; outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none; transition: border-color 180ms ease, box-shadow 180ms ease, background-color 180ms ease; }
+-.student-collection-survey .form-select:hover { border-color: rgba(2, 70, 143, 0.55); background-color: var(--main-color-pale); }
+-.student-collection-survey .form-select:focus { border-color: var(--main-color); box-shadow: 0 0 0 3px var(--focus-ring); }
+-.student-collection-survey input[type="file"].form-control-file, .student-collection-survey input[type="file"].form-control { padding: 11px 0 8px; font-size: 15px; }
+-.student-collection-survey .form-text { display: block; margin-top: 6px; color: var(--text-color-light); font-size: 14px; line-height: 1.4; }
+-.captcha-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 220px; align-items: center; gap: 16px; }
+-.captcha-wrap img { width: 220px; height: 48px; object-fit: cover; border: 1px solid var(--black-color-opacity-five); border-radius: 3px !important; background: var(--main-color-pale); }
+-.survey-submit { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 24px; margin-top: 42px; padding: 28px 30px; border: 1px solid rgba(0, 71, 65, 0.18); border-radius: 4px; background: var(--main-color-pale); }
+-.survey-submit__title { margin: 0 0 4px; color: var(--main-color); font-family: var(--font-family-serif); font-size: 23px; font-weight: 700; line-height: 1.35; }
+-.survey-submit__progress { margin: 0; color: var(--text-color-light); font-size: 16px; }
+-.survey-submit__actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end; }
+-.student-collection-survey .btn-dangky-submit { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 13px 26px; border: 1px solid var(--main-color); border-radius: 3px; background: var(--main-color); color: var(--white-color); font-size: 17px; font-weight: 700; line-height: 1.4; cursor: pointer; transition: background-color 180ms ease, box-shadow 180ms ease, transform 180ms ease; }
+-.student-collection-survey .btn-dangky-submit:hover { background: rgb(0, 88, 80); box-shadow: 0 8px 20px rgba(0, 71, 65, 0.18); color: var(--white-color); transform: translateY(-1px); }
+-.student-collection-survey input[type="reset"] { min-height: 48px; padding: 10px 18px; border: 1px solid var(--black-color-opacity-four); border-radius: 3px; background: var(--white-color); color: var(--text-color-dark); cursor: pointer; }
+-.student-collection-survey .alert { grid-column: 1 / -1; margin: 0 0 12px; padding: 12px 14px; border: 1px solid rgba(156, 94, 0, 0.25); border-radius: 3px; background: rgb(255, 247, 232); color: rgb(126, 75, 0); font-size: 15px; line-height: 1.5; }
+-.student-collection-result { grid-column: 1 / -1; margin-top: 12px; color: var(--text-color-light); font-size: 15px; line-height: 1.5; }
+-.student-collection-success-overlay { display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.48); z-index: 9998; }
+-.student-collection-success-modal { display: none; position: fixed; top: 50%; left: 50%; width: min(520px, calc(100vw - 32px)); max-height: calc(100vh - 32px); padding: 32px 34px; overflow: auto; transform: translate(-50%, -50%); background: var(--white-color); border-radius: 10px; box-shadow: 0 26px 70px rgba(28, 48, 44, 0.24); z-index: 9999; text-align: center; }
+-.student-collection-success-modal .modal-icon { display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; margin-bottom: 16px; border-radius: 50%; background: #eaf8ef; color: #16a34a; font-size: 34px; font-weight: 800; line-height: 1; }
+-.student-collection-success-modal .modal-title { margin-bottom: 8px; color: var(--main-color); font-family: var(--font-family-serif); font-size: 23px; font-weight: 700; }
+-.student-collection-success-modal .modal-msg { margin: 0 0 24px; color: var(--text-color-dark); font-size: 16px; line-height: 1.55; }
+-.student-collection-success-modal .modal-close { display: inline-flex; align-items: center; justify-content: center; min-width: 120px; min-height: 46px; padding: 10px 28px; background: var(--main-color); color: var(--white-color); border: 1px solid var(--main-color); border-radius: 3px; font-size: 16px; font-weight: 700; cursor: pointer; }
+-.student-collection-messagebox-fix { position: fixed; inset: 0; z-index: 10000; pointer-events: none; }
+-.student-collection-messagebox-fix table { width: min(576px, calc(100vw - 32px)) !important; max-width: calc(100vw - 32px) !important; height: auto !important; border-collapse: separate !important; border-spacing: 0 !important; color: var(--text-color-dark); font-family: var(--font-family-sans); pointer-events: auto; }
+-.student-collection-messagebox-fix table table { width: 100% !important; max-width: 100% !important; }
+-.student-collection-messagebox-fix td { height: auto !important; padding: 10px 14px !important; line-height: 1.55; vertical-align: middle; }
+-.student-collection-messagebox-fix tr:last-child td { padding: 14px 18px 18px !important; text-align: center !important; }
+-.student-collection-messagebox-fix input[type="button"], .student-collection-messagebox-fix input[type="submit"], .student-collection-messagebox-fix button { min-width: 96px; min-height: 40px; padding: 8px 22px; border: 1px solid var(--main-color) !important; border-radius: 3px !important; background: var(--main-color) !important; color: var(--white-color) !important; font-family: var(--font-family-sans); font-weight: 700; cursor: pointer; box-shadow: none !important; }
+-.student-collection-messagebox-fix input[type="button"]:hover, .student-collection-messagebox-fix input[type="submit"]:hover, .student-collection-messagebox-fix button:hover { background: #013a78 !important; }
+-.student-collection-messagebox-fix img { max-width: 44px; height: auto; }
+-@media (min-width: 992px) {
+-  .student-collection-header { padding-bottom: 34px; }
+-  .student-collection-brand img { margin: 0 auto; }
+-  .student-collection-header__layout { grid-template-columns: 1fr; gap: 26px; }
+-  .student-collection-header__intro { max-width: 760px; margin-left: auto; margin-right: auto; text-align: center; }
+-  .student-collection-header h1 { font-size: clamp(42px, 5vw, 62px); }
+-  .student-collection-header__subtitle { margin-top: 10px; font-size: 21px; }
+-  .student-collection-contact-card { display: grid; grid-template-columns: minmax(180px, 0.8fr) repeat(2, minmax(0, 1.2fr)); align-items: center; gap: 0; padding: 18px 28px; }
+-  .student-collection-contact-card__code { display: block; padding: 0 28px 0 0; border-right: 2px solid #dbe7f6; border-bottom: 0; }
+-  .student-collection-contact-card__code span { display: block; font-size: 16px; }
+-  .student-collection-contact-card__code strong { display: block; margin-top: 2px; padding-left: 0; border-left: 0; font-size: 48px; }
+-  .student-collection-contact-card__item { grid-template-columns: 58px minmax(0, 1fr); gap: 16px; padding: 0 28px; }
+-  .student-collection-contact-card__item + .student-collection-contact-card__item { margin-top: 0; border-top: 0; border-left: 2px solid #dbe7f6; }
+-  .student-collection-contact-card__icon { width: 58px; height: 58px; }
+-  .student-collection-contact-card__text span { font-size: 16px; }
+-  .student-collection-contact-card__text strong { font-size: 24px; }
+-}
+-@media (max-width: 767.98px) {
+-  .student-collection-survey { padding: 0; font-size: 16px; }
+-  .student-collection-document { border: 0; box-shadow: none; }
+-  .student-collection-header { padding: 0 20px 36px; }
+-  .student-collection-brand { margin-bottom: 18px; }
+-  .student-collection-brand img { margin: 0 auto; }
+-  .student-collection-header__layout { grid-template-columns: 1fr; gap: 26px; }
+-  .student-collection-header__intro { text-align: center; }
+-  .student-collection-header h1 { font-size: clamp(30px, 9vw, 40px); }
+-  .student-collection-header__subtitle { margin-top: 13px; font-size: 17px; }
+-  .student-collection-header__notice { font-size: 14px; }
+-  .student-collection-contact-card { width: min(100%, 380px); margin: 0 auto; padding: 19px 20px; }
+-  .student-collection-contact-card__code strong { font-size: 38px; }
+-  .student-collection-contact-card__text strong { font-size: 19px; }
+-  .student-collection-body { padding: 32px 0 48px; }
+-  .student-info { grid-template-columns: 1fr; margin-bottom: 34px; }
+-  .student-info__group + .student-info__group, .student-info__group--wide { border-top: 1px solid var(--black-color-opacity-four); border-left: 0; }
+-  .student-info__fields--two, .student-info__fields--three, .student-collection-id-card-row { grid-template-columns: 1fr; }
+-  .student-info__fields--birth { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+-  .student-info__fields--birth .form-select { min-height: 48px; padding: 10px 30px 10px 10px; background-position: right 10px center; }
+-  .captcha-wrap { grid-template-columns: 1fr; }
+-  .captcha-wrap img { width: 100%; max-width: 220px; }
+-  .survey-submit { grid-template-columns: 1fr; margin-top: 38px; padding: 24px 20px; text-align: center; }
+-  .survey-submit__actions { justify-content: stretch; }
+-  .student-collection-survey .btn-dangky-submit, .student-collection-survey input[type="reset"] { width: 100%; }
+-  .student-collection-messagebox-fix table { width: calc(100vw - 24px) !important; max-width: calc(100vw - 24px) !important; }
+-  .student-collection-messagebox-fix td { display: block; width: 100% !important; padding: 8px 12px !important; text-align: center !important; }
+-  .student-collection-messagebox-fix img { margin: 0 auto; }
+-  .student-collection-messagebox-fix input[type="button"], .student-collection-messagebox-fix input[type="submit"], .student-collection-messagebox-fix button { width: 100%; max-width: 220px; }
+-  .student-collection-success-modal { width: calc(100vw - 24px); padding: 28px 18px; }
+-  .student-collection-success-modal .modal-close { width: 100%; }
+-}
+-@media (max-width: 390px) {
+-  .student-collection-header { padding-left: 14px; padding-right: 14px; }
+-}
+-@media (min-width: 768px) and (max-width: 991.98px) {
+-  .student-collection-survey { padding: 32px 20px 56px; }
+-  .student-collection-header { padding: 0 48px 48px; }
+-  .student-collection-header__layout { grid-template-columns: minmax(0, 1fr) 300px; gap: 32px; }
+-  .student-collection-contact-card { padding: 18px 20px; }
+-  .student-collection-contact-card__code strong { font-size: 36px; }
+-  .student-collection-contact-card__text strong { font-size: 18px; }
+-  .student-collection-body { padding: 42px 48px 56px; }
+-}
+-</style>
++namespace InformationWeb.Controls.StudentCollection
++{
++    public partial class StudentCollectionForm : System.Web.UI.UserControl
++    {
++        private const int LearningLevelThcsId = 2;
++        private const int LearningLevelThptId = 3;
++        private const int LearningLevelVocationalId = 7;
++        private const int LearningLevelOtherId = 8;
++        private const string TrainingLevelVocationalId = "11";
++        private const string TrainingLevelCollegeId = "12";
++        protected void Page_Load(object sender, EventArgs e)
++        {
++            if (Page.Form != null)
++                Page.Form.Enctype = "multipart/form-data";
++            if (!IsPostBack)
++            {
++                LoadLearningLevel();
++                InitTrainingLevelPlaceholder();
++                InitSpecialBranchPlaceholder();
++                LoadEthnicity();
+ 
+-<section class="student-collection-survey" id="dang-ky">
+-   <article class="student-collection-document">
+-      <header class="student-collection-header">
+-         <div class="student-collection-brand">
+-            <img src="/Media/NewImage/QCET_banner_1.png" alt="Trường Cao đẳng Kỹ thuật Công nghệ Quy Nhơn" />
+-         </div>
+-         <div class="student-collection-header__layout">
+-            <div class="student-collection-header__intro">
+-               <h1>Đăng ký tuyển sinh</h1>
+-               <p class="student-collection-header__subtitle">Vui lòng điền các thông tin bên dưới</p>
+-               <p class="student-collection-header__notice">Các mục có dấu <strong class="required">*</strong> là thông tin bắt buộc</p>
+-            </div>
+-            <aside class="student-collection-contact-card" aria-label="Thông tin tư vấn tuyển sinh">
+-               <div class="student-collection-contact-card__code">
+-                  <span>Mã tuyển sinh</span>
+-                  <strong>C72</strong>
+-               </div>
+-               <div class="student-collection-contact-card__item">
+-                  <span class="student-collection-contact-card__icon" aria-hidden="true">&#9742;</span>
+-                  <div class="student-collection-contact-card__text">
+-                     <span>Điện thoại</span>
+-                     <strong>02563.900.222</strong>
+-                  </div>
+-               </div>
+-               <div class="student-collection-contact-card__item">
+-                  <span class="student-collection-contact-card__icon student-collection-contact-card__icon--zalo" aria-hidden="true">Zalo</span>
+-                  <div class="student-collection-contact-card__text">
+-                     <span>Zalo tư vấn</span>
+-                     <strong>0394.24.55.66</strong>
+-                  </div>
+-               </div>
+-            </aside>
+-         </div>
+-      </header>
+-      <div class="student-collection-body">
+-         <section class="student-info" aria-label="Thông tin thí sinh">
+-            <div class="student-info__group">
+-               <h2 class="student-info__title">Thông tin cá nhân</h2>
+-               <div class="student-info__fields">
+-                  <div class="form-field">
+-                     <label class="form-label" for="txtFullname">Họ và tên <span class="required">*</span></label>
+-                     <asp:TextBox ID="txtFullname" runat="server" TabIndex="1" CssClass="form-control" placeholder="Nhập họ và tên"></asp:TextBox>
+-                     <asp:RequiredFieldValidator ID="rfv1" runat="server" ControlToValidate="txtFullname" ErrorMessage="Họ và tên" ValidationGroup="Update" Display="None"></asp:RequiredFieldValidator>
+-      </div>
+-                  <div class="form-field">
+-                     <label class="form-label">Ngày tháng năm sinh <span class="required">*</span></label>
+-                     <div class="student-info__fields student-info__fields--three student-info__fields--birth">
+-                        <div class="form-field">
+-                           <asp:DropDownList ID="ddlDay" runat="server" CssClass="form-control form-select"></asp:DropDownList>
+-                           <asp:RequiredFieldValidator ID="rfvDay" runat="server" ControlToValidate="ddlDay" ErrorMessage="Ngày sinh" ValidationGroup="Update" Display="None"></asp:RequiredFieldValidator>
+-                        </div>
+-                        <div class="form-field">
+-                                 <asp:DropDownList ID="ddlMonth" runat="server" CssClass="form-control form-select"></asp:DropDownList>
+-                           <asp:RequiredFieldValidator ID="rfvMonth" runat="server" ControlToValidate="ddlMonth" ErrorMessage="Tháng sinh" ValidationGroup="Update" Display="None"></asp:RequiredFieldValidator>
+-                              </div>
+-                        <div class="form-field">
+-                                 <asp:DropDownList ID="ddlYear" runat="server" CssClass="form-control form-select"></asp:DropDownList>
+-                        </div>
+-                     </div>
+-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ddlYear" ErrorMessage="Ngày tháng năm sinh" ValidationGroup="Update" Display="None"></asp:RequiredFieldValidator>
+-                  </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="ddlGioiTinh">Giới tính <span class="required">*</span></label>
+-                           <asp:DropDownList ID="ddlGioiTinh" runat="server" CssClass="form-control form-select">
+-                              <asp:ListItem Value="">-- Chọn giới tính --</asp:ListItem>
+-                              <asp:ListItem Value="1">Nam</asp:ListItem>
+-                              <asp:ListItem Value="0">Nữ</asp:ListItem>
+-                           </asp:DropDownList>
+-                     <asp:RequiredFieldValidator ID="rfvGender" runat="server" ControlToValidate="ddlGioiTinh" ErrorMessage="Giới tính" ValidationGroup="Update" Display="None"></asp:RequiredFieldValidator>
+-                        </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="ddlDanToc">Dân tộc <span class="required">*</span></label>
+-                           <asp:DropDownList ID="ddlDanToc" runat="server" CssClass="form-control form-select"></asp:DropDownList>
+-                     <asp:RequiredFieldValidator ID="rfvDanToc" runat="server" ControlToValidate="ddlDanToc" ValidationGroup="Update" ErrorMessage="Dân tộc" Display="None"></asp:RequiredFieldValidator>
+-                        </div>
+-                     </div>
+-            </div>
+-            <div class="student-info__group">
+-               <h2 class="student-info__title">Thông tin liên hệ</h2>
+-               <div class="student-info__fields">
+-                  <div class="form-field">
+-                     <label class="form-label" for="txtTel">Điện thoại <span class="required">*</span></label>
+-                           <asp:TextBox ID="txtTel" runat="server" TabIndex="2" MaxLength="11" CssClass="form-control student-collection-numeric" placeholder="Số điện thoại" inputmode="numeric" pattern="[0-9]*"></asp:TextBox>
+-                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtTel" ValidationGroup="Update" ErrorMessage="Điện thoại" Display="None"></asp:RequiredFieldValidator>
+-                     <asp:RegularExpressionValidator ID="revTelNumeric" runat="server" ControlToValidate="txtTel" ValidationGroup="Update" ValidationExpression="^[0-9]+$" ErrorMessage="Điện thoại chỉ được nhập số" Display="None"></asp:RegularExpressionValidator>
+-                  </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="txtTelZalo">Zalo <span class="required">*</span></label>
+-                     <asp:TextBox ID="txtTelZalo" runat="server" MaxLength="20" CssClass="form-control student-collection-numeric" placeholder="Số điện thoại Zalo" inputmode="numeric" pattern="[0-9]*"></asp:TextBox>
+-                     <asp:RequiredFieldValidator ID="rfvTelZalo" runat="server" ControlToValidate="txtTelZalo" ValidationGroup="Update" ErrorMessage="Zalo" Display="None"></asp:RequiredFieldValidator>
+-                     <asp:RegularExpressionValidator ID="revTelZaloNumeric" runat="server" ControlToValidate="txtTelZalo" ValidationGroup="Update" ValidationExpression="^[0-9]+$" ErrorMessage="Zalo chỉ được nhập số" Display="None"></asp:RegularExpressionValidator>
+-                  </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="txtEmail">Email</label>
+-                     <asp:TextBox ID="txtEmail" runat="server" MaxLength="100" CssClass="form-control" placeholder="Email" TextMode="Email"></asp:TextBox>
+-                     <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ValidationGroup="Update" ValidationExpression="^[^@\s]+@[^@\s]+\.[^@\s]+$" ErrorMessage="Email không đúng định dạng" Display="None"></asp:RegularExpressionValidator>
+-                  </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="txtAddress">Địa chỉ <span class="required">*</span></label>
+-                     <asp:TextBox ID="txtAddress" runat="server" TabIndex="3" CssClass="form-control" placeholder="Địa chỉ"></asp:TextBox>
+-                  </div>
+-                        </div>
+-                     </div>
+-            <div class="student-info__group student-info__group--wide">
+-               <h2 class="student-info__title">Ngành đăng ký</h2>
+-               <div class="student-info__fields student-info__fields--two">
+-                  <div class="form-field">
+-                     <label class="form-label" for="ddlLearningLevel">Đã tốt nghiệp <span class="required">*</span></label>
+-                           <asp:UpdatePanel ID="udpLearningLevel" runat="server" UpdateMode="Conditional">
+-                              <ContentTemplate>
+-                           <asp:DropDownList ID="ddlLearningLevel" runat="server" CssClass="form-control form-select" AutoPostBack="true" OnSelectedIndexChanged="ddlLearningLevel_SelectedIndexChanged"></asp:DropDownList>
+-                           <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="ddlLearningLevel" ValidationGroup="Update" ErrorMessage="Đã tốt nghiệp" Display="None"></asp:RequiredFieldValidator>
+-                              </ContentTemplate>
+-                           </asp:UpdatePanel>
+-                        </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="ddlTrainingLevel">Đăng ký học trình độ <span class="required">*</span></label>
+-                           <asp:UpdatePanel ID="udpTrainingLevel" runat="server" UpdateMode="Conditional">
+-                              <ContentTemplate>
+-                           <asp:DropDownList ID="ddlTrainingLevel" runat="server" CssClass="form-control form-select" AutoPostBack="true" OnSelectedIndexChanged="ddlTrainingLevel_SelectedIndexChanged"></asp:DropDownList>
+-                           <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="ddlTrainingLevel" ValidationGroup="Update" ErrorMessage="Đăng ký học trình độ" Display="None"></asp:RequiredFieldValidator>
+-                              </ContentTemplate>
+-                           </asp:UpdatePanel>
+-                        </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="ddlSpecialBranch">Nghề đăng ký học (Nguyện vọng 1) <span class="required">*</span></label>
+-                           <asp:UpdatePanel ID="udpSpecialBranch" runat="server" UpdateMode="Conditional">
+-                              <ContentTemplate>
+-                                 <asp:DropDownList ID="ddlSpecialBranch" runat="server" CssClass="form-control form-select"></asp:DropDownList>
+-                           <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="ddlSpecialBranch" ValidationGroup="Update" ErrorMessage="Nghề đăng ký học" Display="None"></asp:RequiredFieldValidator>
+-                              </ContentTemplate>
+-                           </asp:UpdatePanel>
+-                  </div>
+-                  <div class="form-field">
+-                     <label class="form-label" for="ddlSpecialBranch2">Nghề đăng ký học (Nguyện vọng 2)</label>
+-                     <asp:UpdatePanel ID="udpSpecialBranch2" runat="server" UpdateMode="Conditional">
+-                        <ContentTemplate>
+-                           <asp:DropDownList ID="ddlSpecialBranch2" runat="server" CssClass="form-control form-select"></asp:DropDownList>
+-                        </ContentTemplate>
+-                     </asp:UpdatePanel>
+-                  </div>
+-               </div>
+-            </div>
+-            <div class="student-info__group student-info__group--wide" id="studentCollectionLearningResults">
+-               <h2 class="student-info__title">Kết quả học tập</h2>
+-               <div class="student-info__fields student-info__fields--two">
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs">
+-                     <label class="form-label" for="ddlKQHT9" data-thcs-text="Xếp loại học tập lớp 6">Xếp loại học tập lớp 6 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlKQHT9" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs">
+-                     <label class="form-label" for="ddlEthicLevel1" data-thcs-text="Xếp loại rèn luyện lớp 6">Xếp loại rèn luyện lớp 6 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlEthicLevel1" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs thpt">
+-                     <label class="form-label" for="ddlKQHT10" data-thcs-text="Xếp loại học tập lớp 7" data-other-text="Xếp loại học tập lớp 10">Xếp loại học tập lớp 10 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlKQHT10" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs thpt">
+-                     <label class="form-label" for="ddlEthicLevel2" data-thcs-text="Xếp loại rèn luyện lớp 7" data-other-text="Xếp loại rèn luyện lớp 10">Xếp loại rèn luyện lớp 10 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlEthicLevel2" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs thpt">
+-                     <label class="form-label" for="ddlKQHT11" data-thcs-text="Xếp loại học tập lớp 8" data-other-text="Xếp loại học tập lớp 11">Xếp loại học tập lớp 11 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlKQHT11" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs thpt">
+-                     <label class="form-label" for="ddlEthicLevel3" data-thcs-text="Xếp loại rèn luyện lớp 8" data-other-text="Xếp loại rèn luyện lớp 11">Xếp loại rèn luyện lớp 11 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlEthicLevel3" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs thpt">
+-                     <label class="form-label" for="ddlKQHT12" data-thcs-text="Xếp loại học tập lớp 9" data-other-text="Xếp loại học tập lớp 12">Xếp loại học tập lớp 12 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlKQHT12" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-                  <div class="form-field student-collection-result-detail" data-result-track="thcs thpt">
+-                     <label class="form-label" for="ddlEthicLevel4" data-thcs-text="Xếp loại rèn luyện lớp 9" data-other-text="Xếp loại rèn luyện lớp 12">Xếp loại rèn luyện lớp 12 <span class="required">*</span></label>
+-                     <asp:DropDownList ID="ddlEthicLevel4" runat="server" CssClass="form-control form-select">
+-                        <asp:ListItem Value="">-- Chọn xếp loại --</asp:ListItem>
+-                        <asp:ListItem Value="Tốt">Tốt</asp:ListItem>
+-                        <asp:ListItem Value="Khá">Khá</asp:ListItem>
+-                        <asp:ListItem Value="Đạt">Đạt</asp:ListItem>
+-                        <asp:ListItem Value="Chưa đạt">Chưa đạt</asp:ListItem>
+-                     </asp:DropDownList>
+-                  </div>
+-               </div>
+-            </div>
+-            <div class="student-info__group student-info__group--wide">
+-               <h2 class="student-info__title">Hồ sơ đính kèm</h2>
+-               <div class="student-info__fields student-info__fields--two">
+-                  <div class="form-field">
+-                     <label class="form-label" for="FUploadDiploma">Minh chứng đã tốt nghiệp <span class="required">*</span></label>
+-                     <asp:FileUpload ID="FUploadDiploma" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                     <small id="studentCollectionDiplomaHint" class="form-text text-muted">(Bằng / Chứng nhận / Kết quả thi / Hình mặt sau của học bạ lớp 9)</small>
+-                  </div>
+-                  <div class="form-field">
+-                     <label id="studentCollectionTranscriptLabel" class="form-label" for="FUploadTranscript">Giấy tờ khác</label>
+-                     <asp:FileUpload ID="FUploadTranscript" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                     <small id="studentCollectionTranscriptHint" class="form-text text-muted">Bổ sung minh chứng để xác định trình độ</small>
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thcs thpt">
+-                     <label class="form-label" for="FUploadTranscriptCover">Hình bìa trước học bạ</label>
+-                     <asp:FileUpload ID="FUploadTranscriptCover" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thcs">
+-                     <div class="student-collection-upload-group">
+-                        <h3 class="student-collection-upload-title">Hình học bạ lớp 6</h3>
+-                        <div class="student-info__fields student-info__fields--two">
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass6File1">Hình mặt trước</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass6File1" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass6File2">Hình mặt sau</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass6File2" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                        </div>
+-                     </div>
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thcs">
+-                     <div class="student-collection-upload-group">
+-                        <h3 class="student-collection-upload-title">Hình học bạ lớp 7</h3>
+-                        <div class="student-info__fields student-info__fields--two">
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass7File1">Hình mặt trước</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass7File1" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass7File2">Hình mặt sau</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass7File2" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                        </div>
+-                     </div>
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thcs">
+-                     <div class="student-collection-upload-group">
+-                        <h3 class="student-collection-upload-title">Hình học bạ lớp 8</h3>
+-                        <div class="student-info__fields student-info__fields--two">
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass8File1">Hình mặt trước</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass8File1" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass8File2">Hình mặt sau</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass8File2" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                        </div>
+-                     </div>
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thcs">
+-                     <div class="student-collection-upload-group">
+-                        <h3 class="student-collection-upload-title">Hình học bạ lớp 9</h3>
+-                        <div class="student-info__fields student-info__fields--two">
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass9File1">Hình mặt trước</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass9File1" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass9File2">Hình mặt sau</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass9File2" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                        </div>
+-                     </div>
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thpt">
+-                     <div class="student-collection-upload-group">
+-                        <h3 class="student-collection-upload-title">Hình học bạ lớp 10</h3>
+-                        <div class="student-info__fields student-info__fields--two">
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass10File1">Hình mặt trước</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass10File1" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass10File2">Hình mặt sau</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass10File2" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                        </div>
+-                     </div>
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thpt">
+-                     <div class="student-collection-upload-group">
+-                        <h3 class="student-collection-upload-title">Hình học bạ lớp 11</h3>
+-                        <div class="student-info__fields student-info__fields--two">
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass11File1">Hình mặt trước</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass11File1" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass11File2">Hình mặt sau</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass11File2" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                        </div>
+-                     </div>
+-                  </div>
+-                  <div class="form-field student-collection-transcript-detail" data-academic-track="thpt">
+-                     <div class="student-collection-upload-group">
+-                        <h3 class="student-collection-upload-title">Hình học bạ lớp 12</h3>
+-                        <div class="student-info__fields student-info__fields--two">
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass12File1">Hình mặt trước</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass12File1" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                           </div>
+-                           <div class="form-field">
+-                              <label class="form-label" for="FUploadTranscriptClass12File2">Hình mặt sau</label>
+-                              <asp:FileUpload ID="FUploadTranscriptClass12File2" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                                 </div>
+-                        </div>
+-                     </div>
+-                  </div>
+-                  <div class="student-collection-id-card-row">
+-                     <div class="form-field">
+-                        <label class="form-label" for="FUploadIdCardFront">Hình căn cước - mặt trước: <span class="required">*</span></label>
+-                        <asp:FileUpload ID="FUploadIdCardFront" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                        <small class="form-text text-muted">Định dạng: JPG, PNG, PDF</small>
+-                     </div>
+-                     <div class="form-field">
+-                        <label class="form-label" for="FUploadIdCardBack">Hình căn cước - mặt sau: <span class="required">*</span></label>
+-                        <asp:FileUpload ID="FUploadIdCardBack" runat="server" CssClass="form-control form-control-file" accept=".jpg,.jpeg,.png,.pdf" />
+-                        <small class="form-text text-muted">Định dạng: JPG, PNG, PDF</small>
+-                     </div>
+-                  </div>
+-               </div>
+-            </div>
+-         </section>
+-         <section class="survey-submit" aria-labelledby="student-collection-submit-title">
+-            <div class="form-field" style="grid-column: 1 / -1;">
+-               <label class="form-label" for="txtCode">Mã xác nhận <span class="required">*</span></label>
+-               <div class="captcha-wrap">
+-                  <div>
+-                     <asp:TextBox ID="txtCode" runat="server" placeholder="Nhập các con số" TabIndex="7" CssClass="form-control"></asp:TextBox>
+-                     <asp:RequiredFieldValidator ID="rfv5" runat="server" ControlToValidate="txtCode" ErrorMessage="Mã xác nhận" ValidationGroup="Update" Display="None"></asp:RequiredFieldValidator>
+-                  </div>
+-                  <img id="imgCode" src="<%=DCore.Globals.ApplicationVRoot%>/Controls/Security/CaptCha.ashx" onclick="RefreshCode(this);" style="cursor: pointer;" alt="Click vào hình để lấy mã số khác" title="Click vào hình để lấy mã số khác" width="100" height="38" />
+-               </div>
+-            </div>
+-            <div>
+-               <h2 id="student-collection-submit-title" class="survey-submit__title">Hoàn tất đăng ký</h2>
+-               <p class="survey-submit__progress">Vui lòng kiểm tra lại thông tin và hồ sơ đính kèm trước khi gửi.</p>
+-            </div>
+-            <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional">
+-               <Triggers>
+-                  <asp:PostBackTrigger ControlID="btnUpdate" />
+-               </Triggers>
+-               <ContentTemplate>
+-                  <asp:ValidationSummary ID="valSummary" runat="server" ValidationGroup="Update" DisplayMode="BulletList" ShowMessageBox="False" ShowSummary="True" CssClass="alert alert-warning py-2 mb-2 small" HeaderText="Vui lòng nhập đầy đủ: " />
+-                  <div class="survey-submit__actions">
+-                     <asp:Button ID="btnUpdate" runat="server" Text="ĐĂNG KÝ TUYỂN SINH" OnClick="btnUpdate_Click" OnClientClick="if (!studentCollectionValidate()) return false;" ValidationGroup="Update" CssClass="button-primary btn-dangky-submit" TabIndex="8" />
+-                     <input name="btnReset" id="btnReset" type="reset" value="Làm lại" style="display: none;" />
+-                  </div>
+-                  <div class="student-collection-result">
+-                     <asp:Label runat="server" ID="lblResult" CssClass="form-text"></asp:Label>
+-         </div>
+-               </ContentTemplate>
+-            </asp:UpdatePanel>
+-         </section>
+-      </div>
+-   </article>
+-   <div id="studentCollectionSuccessOverlay" class="student-collection-success-overlay" onclick="studentCollectionCloseSuccessModal();"></div>
+-   <div id="studentCollectionSuccessModal" class="student-collection-success-modal">
+-      <div class="modal-icon" aria-hidden="true">&#10003;</div>
+-      <div class="modal-title">THÔNG BÁO</div>
+-      <div id="studentCollectionSuccessMessage" class="modal-msg">Đã đăng ký thành công!</div>
+-      <button type="button" class="modal-close" onclick="studentCollectionCloseSuccessModal();">OK</button>
+-   </div>
+-</section>
++                ddlDay.Items.Add("");
++                for (int i = 1; i < 32; i++)
++                    ddlDay.Items.Add(i.ToString());
+ 
+-<asp:UpdatePanel ID="udpMsgBox" runat="server" UpdateMode="Conditional">
+-   <ContentTemplate>
+-      <div class="student-collection-messagebox-fix">
+-      <cc1:MessageBox ID="msgBox" runat="server" />
+-      </div>
+-   </ContentTemplate>
+-</asp:UpdatePanel>
+-
+-<script type="text/javascript">
+-    document.getElementById('<%=txtFullname.ClientID%>').focus();
+-    function RefreshCode(img) {
+-        var random = Math.random();
+-        img.src = '<%=DCore.Globals.ApplicationVRoot %>/Controls/Security/CaptCha.ashx?' + random;
+-    }
+-    function ResetForm() {
+-        var random = Math.random();
+-        var imgCode = document.getElementById('imgCode');
+-        if (imgCode) imgCode.src = '<%=DCore.Globals.ApplicationVRoot %>/Controls/Security/CaptCha.ashx?' + random;
+-        var btnReset = document.getElementById('btnReset');
+-        if (btnReset) btnReset.click();
+-    }
+-    function ResetCode() {
+-        var random = Math.random();
+-        var imgCode = document.getElementById('imgCode');
+-        if (imgCode) imgCode.src = '<%=DCore.Globals.ApplicationVRoot %>/Controls/Security/CaptCha.ashx?' + random;
+-    }
+-    function studentCollectionCloseSuccessModal() {
+-        var o = document.getElementById('studentCollectionSuccessOverlay');
+-        var m = document.getElementById('studentCollectionSuccessModal');
+-        if (o) o.style.display = 'none';
+-        if (m) m.style.display = 'none';
+-    }
+-    function studentCollectionShowSuccessModal(message) {
+-        var o = document.getElementById('studentCollectionSuccessOverlay');
+-        var m = document.getElementById('studentCollectionSuccessModal');
+-        var c = document.getElementById('studentCollectionSuccessMessage');
+-        if (c && message) c.innerHTML = message;
+-        if (o) o.style.display = 'block';
+-        if (m) m.style.display = 'block';
+-    }
+-    function studentCollectionValidate() {
+-        if (typeof Page_ClientValidate === 'function')
+-            Page_ClientValidate('Update');
+-        var validators = window.Page_Validators || [];
+-        var invalidControls = [];
+-        var messages = [];
+-        for (var i = 0; i < validators.length; i++) {
+-            var validator = validators[i];
+-            var control = document.getElementById(validator.controltovalidate);
+-            if (control)
+-                control.classList.remove('student-collection-invalid');
+-            if (validator.validationGroup === 'Update' && validator.isvalid === false && control) {
+-                control.classList.add('student-collection-invalid');
+-                if (invalidControls.indexOf(control) < 0)
+-                    invalidControls.push(control);
+-                if (messages.indexOf(validator.errormessage) < 0)
+-                    messages.push(validator.errormessage);
++                ddlMonth.Items.Add("");
++                for (int i = 1; i < 13; i++)
++                    ddlMonth.Items.Add(i.ToString());
++                int intYear = DateTime.Now.Year;
++                intYear = intYear - 10;//không cho đăng ký dưới mười tuổi
++                ddlYear.Items.Add("");
++                for (int i = intYear; i > 1953; i--)
++                    ddlYear.Items.Add(i.ToString());
++                if (Session["WEB_StudentCollection_SuccessMessage"] != null)
++                {
++                    string strSuccessMessage = Session["WEB_StudentCollection_SuccessMessage"].ToString();
++                    Session.Remove("WEB_StudentCollection_SuccessMessage");
++                    ScriptManager.RegisterStartupScript(Page, Page.GetType(), "_studentCollectionSuccess", "studentCollectionShowSuccessModal('" + HttpUtility.JavaScriptStringEncode(strSuccessMessage) + "');", true);
++                }
+             }
+         }
+-        function requireControl(id, message) {
+-            var control = document.getElementById(id);
+-            if (!control || control.offsetParent === null || control.value)
++
++        //private void Reset()
++        //{
++        //    txtFullname.Text = "";
++        //    txtAddress.Text = "";
++        //    txtCode.Text = "";
++        //    txtEmail.Text = "";
++        //    txtPersonID.Text = "";
++        //    txtSchoolName.Text = "";
++        //    txtTel.Text = "";
++        //    ddlDay.SelectedIndex = 0;
++        //    ddlMonth.SelectedIndex = 0;
++        //    ddlYear.SelectedIndex = 0;
++        //    ddlLearningLevel.SelectedIndex = 0;
++        //    ddlTrainingLevel.SelectedIndex = 0;
++        //    ddlSpecialBranch.SelectedIndex = 0;
++        //    txtCode.Text = "";
++        //}
++
++
++
++        protected void btnUpdate_Click(object sender, EventArgs e)
++        {
++            lblResult.ForeColor = System.Drawing.Color.Red;
++            lblResult.Text = "Đang xử lý...";
++            Page.Validate("Update");
++            if (!Page.IsValid)
++            {
++                lblResult.Text = "Bạn chưa điền đầy đủ thông tin!";
++                return;
++            }
++            if (!IsDigitsOnly(txtTel.Text))
++            {
++                lblResult.Text = "Điện thoại chỉ được nhập số!";
++                return;
++            }
++            if (!IsDigitsOnly(txtTelZalo.Text))
++            {
++                lblResult.Text = "Zalo chỉ được nhập số!";
++                return;
++            }
++            if (!FUploadDiploma.HasFile)
++            {
++                lblResult.Text = "Vui lòng tải Minh chứng đã tốt nghiệp!";
+                 return;
+-            control.classList.add('student-collection-invalid');
+-            invalidControls.push(control);
+-            messages.push(message);
++            }
++            DateTime dtmBirthDate;
++            string strBirthDateValue = ddlDay.SelectedValue + "/" + ddlMonth.SelectedValue + "/" + ddlYear.SelectedValue;
++            if (!DateTime.TryParseExact(strBirthDateValue, "d/M/yyyy", null, System.Globalization.DateTimeStyles.None, out dtmBirthDate))
++            {
++                lblResult.Text = "Ngày tháng năm sinh không hợp lệ!";
++                return;
++            }
++            if (Session[CaptChaImage.SESSION_CAPTCHA] != null && Session[CaptChaImage.SESSION_CAPTCHA].ToString() == txtCode.Text)
++            {
++                InformationWebObject.WEB_StudentCollection obj = new InformationWebObject.WEB_StudentCollection();
++                obj.FullName = txtFullname.Text.Trim();
++
++                #region ngày sinh
++
++                obj.BirthDay = Convert.ToInt32(ddlDay.SelectedValue);
++                obj.BirthMonth = Convert.ToInt32(ddlMonth.SelectedValue);
++                obj.BirthYear = Convert.ToInt32(ddlYear.SelectedValue);
++
++                string strBirthDateText = "";
++                if (obj.BirthYear != null)
++                {
++                    strBirthDateText = obj.BirthYear.ToString();
++                    if (obj.BirthMonth != null)
++                    {
++                        string strMonth = "00" + obj.BirthMonth.ToString();
++                        strBirthDateText = strMonth.Substring(strMonth.Length - 2, 2) + "/" + strBirthDateText;
++                        if (obj.BirthDay != null)
++                        {
++                            string strDay = "00" + obj.BirthDay.ToString();
++                            strBirthDateText = strDay.Substring(strDay.Length - 2, 2) + "/" + strBirthDateText;
++                        }
++                    }
++                }
++                obj.BirthDateText = strBirthDateText;
++
++                #endregion
++
++                // Giới tính dùng chung với WinForms: true = Nam, false = Nữ.
++                string gioiTinhVal = ddlGioiTinh.SelectedValue;
++                obj.Gender = (gioiTinhVal == "1");
++
++                obj.EthnicityID = string.IsNullOrEmpty(ddlDanToc.SelectedValue) ? null : ddlDanToc.SelectedValue.Trim();
++
++                obj.Tel = txtTel.Text.Trim();
++                //obj.Tel2 = txtTel2.Text.Trim();
++                obj.Email = txtEmail.Text.Trim();
++                //obj.Facebook = txtFacebook.Text.Trim();
++                //obj.SchoolName = txtSchoolName.Text.Trim();
++                obj.Address = txtAddress.Text.Trim();
++                obj.SpecialBranchID1 = WebGlobal.ToString(ddlSpecialBranch.SelectedValue);
++                obj.SpecialBranchID2 = WebGlobal.ToString(ddlSpecialBranch2.SelectedValue);
++                if (!string.IsNullOrEmpty(obj.SpecialBranchID2) && obj.SpecialBranchID1 == obj.SpecialBranchID2)
++                {
++                    lblResult.Text = "Nguyện vọng 2 phải khác Nguyện vọng 1!";
++                    return;
++                }
++                obj.LearningLevelID = WebGlobal.ToInt32(ddlLearningLevel.SelectedValue); // bậc tốt nghiệp
++                obj.TrainingLevelID = WebGlobal.ToString(ddlTrainingLevel.SelectedValue); // hệ đào tạo (dùng tạm của bậc đào tạo, vì thằng này bậc giống nhau)
++                obj.IsRegisterOnline = true;
++                int learningLevelId = GetLearningLevelId();
++                bool isVocationalToCollege = IsVocationalToCollege();
++                bool isOtherToVocational = IsOtherToVocational();
++                bool isOtherToCollege = IsOtherToCollege();
++                if (learningLevelId == LearningLevelThcsId)
++                {
++                    if (string.IsNullOrEmpty(ddlKQHT9.SelectedValue) || string.IsNullOrEmpty(ddlEthicLevel1.SelectedValue)
++                        || string.IsNullOrEmpty(ddlKQHT10.SelectedValue) || string.IsNullOrEmpty(ddlEthicLevel2.SelectedValue)
++                        || string.IsNullOrEmpty(ddlKQHT11.SelectedValue) || string.IsNullOrEmpty(ddlEthicLevel3.SelectedValue)
++                        || string.IsNullOrEmpty(ddlKQHT12.SelectedValue) || string.IsNullOrEmpty(ddlEthicLevel4.SelectedValue))
++                    {
++                        lblResult.Text = "Bạn phải chọn đầy đủ xếp loại học tập và rèn luyện lớp 6, 7, 8, 9!";
++                        return;
++                    }
++                    obj.KQHT9 = ddlKQHT9.SelectedValue;
++                    obj.KQHT10 = ddlKQHT10.SelectedValue;
++                    obj.KQHT11 = ddlKQHT11.SelectedValue;
++                    obj.KQHT12 = ddlKQHT12.SelectedValue;
++                    obj.EthicLevel1 = ddlEthicLevel1.SelectedValue;
++                    obj.EthicLevel2 = ddlEthicLevel2.SelectedValue;
++                    obj.EthicLevel3 = ddlEthicLevel3.SelectedValue;
++                    obj.EthicLevel4 = ddlEthicLevel4.SelectedValue;
++                }
++                else if (learningLevelId == LearningLevelThptId || (learningLevelId == LearningLevelVocationalId && !isVocationalToCollege))
++                {
++                    if (string.IsNullOrEmpty(ddlKQHT10.SelectedValue) || string.IsNullOrEmpty(ddlEthicLevel2.SelectedValue)
++                        || string.IsNullOrEmpty(ddlKQHT11.SelectedValue) || string.IsNullOrEmpty(ddlEthicLevel3.SelectedValue)
++                        || string.IsNullOrEmpty(ddlKQHT12.SelectedValue) || string.IsNullOrEmpty(ddlEthicLevel4.SelectedValue))
++                    {
++                        lblResult.Text = "Bạn phải chọn đầy đủ xếp loại học tập và rèn luyện lớp 10, 11, 12!";
++                        return;
++                    }
++                    obj.KQHT10 = ddlKQHT10.SelectedValue;
++                    obj.KQHT11 = ddlKQHT11.SelectedValue;
++                    obj.KQHT12 = ddlKQHT12.SelectedValue;
++                    obj.EthicLevel2 = ddlEthicLevel2.SelectedValue;
++                    obj.EthicLevel3 = ddlEthicLevel3.SelectedValue;
++                    obj.EthicLevel4 = ddlEthicLevel4.SelectedValue;
++                }
++                else if (isVocationalToCollege)
++                {
++                    obj.KQHT10 = ddlKQHT10.SelectedValue;
++                    obj.KQHT11 = ddlKQHT11.SelectedValue;
++                    obj.KQHT12 = ddlKQHT12.SelectedValue;
++                    obj.EthicLevel2 = ddlEthicLevel2.SelectedValue;
++                    obj.EthicLevel3 = ddlEthicLevel3.SelectedValue;
++                    obj.EthicLevel4 = ddlEthicLevel4.SelectedValue;
++                }
++                else if (isOtherToVocational)
++                {
++                    obj.KQHT9 = ddlKQHT9.SelectedValue;
++                    obj.KQHT10 = ddlKQHT10.SelectedValue;
++                    obj.KQHT11 = ddlKQHT11.SelectedValue;
++                    obj.KQHT12 = ddlKQHT12.SelectedValue;
++                    obj.EthicLevel1 = ddlEthicLevel1.SelectedValue;
++                    obj.EthicLevel2 = ddlEthicLevel2.SelectedValue;
++                    obj.EthicLevel3 = ddlEthicLevel3.SelectedValue;
++                    obj.EthicLevel4 = ddlEthicLevel4.SelectedValue;
++                }
++                else if (isOtherToCollege)
++                {
++                    obj.KQHT10 = ddlKQHT10.SelectedValue;
++                    obj.KQHT11 = ddlKQHT11.SelectedValue;
++                    obj.KQHT12 = ddlKQHT12.SelectedValue;
++                    obj.EthicLevel2 = ddlEthicLevel2.SelectedValue;
++                    obj.EthicLevel3 = ddlEthicLevel3.SelectedValue;
++                    obj.EthicLevel4 = ddlEthicLevel4.SelectedValue;
++                }
++                // Bắt chước cơ chế bản dùng AjaxUploader: dùng PhysicalDirectory_Upload + \Data\StudentCollection\
++                string basePath = Globals.GetConfig("PhysicalDirectory_Upload");
++                if (string.IsNullOrEmpty(basePath))
++                    basePath = Server.MapPath("~/Media");
++                basePath = Path.Combine(basePath.TrimEnd('\\', '/'), "Data", "StudentCollection");
++                if (!Directory.Exists(basePath))
++                {
++                    try { Directory.CreateDirectory(basePath); }
++                    catch (Exception ex)
++                    {
++                        lblResult.Text = "Không tạo được thư mục lưu file: " + ex.Message;
++                        return;
++                    }
++                }
++
++                Random rdom = new Random();
++                string prefix = DateTime.Now.ToString("yyyyMMdd.HHmmss.");
++                string strFile1Name = SaveStudentCollectionFile(FUploadDiploma, basePath, prefix, rdom, "1", "bằng/chứng nhận");
++                if (strFile1Name == null)
++                    return;
++                obj.File1 = strFile1Name;
++                FileUpload transcriptUpload = FindStudentCollectionFileUpload("FUploadTranscript");
++                if (isVocationalToCollege && (transcriptUpload == null || !transcriptUpload.HasFile))
++                {
++                    lblResult.Text = "Vui lòng tải Giấy tờ khác!";
++                    return;
++                }
++                string strFile2Name = SaveStudentCollectionFile(transcriptUpload, basePath, prefix, rdom, "2", "học bạ");
++                if (strFile2Name == null)
++                    return;
++                obj.File2 = strFile2Name;
++                string strTranscriptCoverFile = "";
++                string strTranscriptClass6File1 = "";
++                string strTranscriptClass6File2 = "";
++                string strTranscriptClass7File1 = "";
++                string strTranscriptClass7File2 = "";
++                string strTranscriptClass8File1 = "";
++                string strTranscriptClass8File2 = "";
++                string strTranscriptClass9File1 = "";
++                string strTranscriptClass9File2 = "";
++                string strTranscriptClass10File1 = "";
++                string strTranscriptClass10File2 = "";
++                string strTranscriptClass11File1 = "";
++                string strTranscriptClass11File2 = "";
++                string strTranscriptClass12File1 = "";
++                string strTranscriptClass12File2 = "";
++                if (learningLevelId == LearningLevelThcsId || learningLevelId == LearningLevelThptId || isOtherToVocational || isOtherToCollege)
++                {
++                    strTranscriptCoverFile = SaveStudentCollectionFile(FUploadTranscriptCover, basePath, prefix, rdom, "HB.BIA", "bìa học bạ");
++                    if (strTranscriptCoverFile == null)
++                        return;
++                    if (learningLevelId == LearningLevelThcsId || isOtherToVocational)
++                    {
++                        strTranscriptClass6File1 = SaveStudentCollectionFile(FUploadTranscriptClass6File1, basePath, prefix, rdom, "HB.6.1", "học bạ lớp 6 ảnh 1");
++                        if (strTranscriptClass6File1 == null)
++                            return;
++                        strTranscriptClass6File2 = SaveStudentCollectionFile(FUploadTranscriptClass6File2, basePath, prefix, rdom, "HB.6.2", "học bạ lớp 6 ảnh 2");
++                        if (strTranscriptClass6File2 == null)
++                            return;
++                        strTranscriptClass7File1 = SaveStudentCollectionFile(FUploadTranscriptClass7File1, basePath, prefix, rdom, "HB.7.1", "học bạ lớp 7 ảnh 1");
++                        if (strTranscriptClass7File1 == null)
++                            return;
++                        strTranscriptClass7File2 = SaveStudentCollectionFile(FUploadTranscriptClass7File2, basePath, prefix, rdom, "HB.7.2", "học bạ lớp 7 ảnh 2");
++                        if (strTranscriptClass7File2 == null)
++                            return;
++                        strTranscriptClass8File1 = SaveStudentCollectionFile(FUploadTranscriptClass8File1, basePath, prefix, rdom, "HB.8.1", "học bạ lớp 8 ảnh 1");
++                        if (strTranscriptClass8File1 == null)
++                            return;
++                        strTranscriptClass8File2 = SaveStudentCollectionFile(FUploadTranscriptClass8File2, basePath, prefix, rdom, "HB.8.2", "học bạ lớp 8 ảnh 2");
++                        if (strTranscriptClass8File2 == null)
++                            return;
++                        strTranscriptClass9File1 = SaveStudentCollectionFile(FUploadTranscriptClass9File1, basePath, prefix, rdom, "HB.9.1", "học bạ lớp 9 ảnh 1");
++                        if (strTranscriptClass9File1 == null)
++                            return;
++                        strTranscriptClass9File2 = SaveStudentCollectionFile(FUploadTranscriptClass9File2, basePath, prefix, rdom, "HB.9.2", "học bạ lớp 9 ảnh 2");
++                        if (strTranscriptClass9File2 == null)
++                            return;
++                    }
++                    if (learningLevelId == LearningLevelThptId || isOtherToCollege)
++                    {
++                        strTranscriptClass10File1 = SaveStudentCollectionFile(FUploadTranscriptClass10File1, basePath, prefix, rdom, "HB.10.1", "học bạ lớp 10 ảnh 1");
++                        if (strTranscriptClass10File1 == null)
++                            return;
++                        strTranscriptClass10File2 = SaveStudentCollectionFile(FUploadTranscriptClass10File2, basePath, prefix, rdom, "HB.10.2", "học bạ lớp 10 ảnh 2");
++                        if (strTranscriptClass10File2 == null)
++                            return;
++                        strTranscriptClass11File1 = SaveStudentCollectionFile(FUploadTranscriptClass11File1, basePath, prefix, rdom, "HB.11.1", "học bạ lớp 11 ảnh 1");
++                        if (strTranscriptClass11File1 == null)
++                            return;
++                        strTranscriptClass11File2 = SaveStudentCollectionFile(FUploadTranscriptClass11File2, basePath, prefix, rdom, "HB.11.2", "học bạ lớp 11 ảnh 2");
++                        if (strTranscriptClass11File2 == null)
++                            return;
++                        strTranscriptClass12File1 = SaveStudentCollectionFile(FUploadTranscriptClass12File1, basePath, prefix, rdom, "HB.12.1", "học bạ lớp 12 ảnh 1");
++                        if (strTranscriptClass12File1 == null)
++                            return;
++                        strTranscriptClass12File2 = SaveStudentCollectionFile(FUploadTranscriptClass12File2, basePath, prefix, rdom, "HB.12.2", "học bạ lớp 12 ảnh 2");
++                        if (strTranscriptClass12File2 == null)
++                            return;
++                    }
++                }
++                string strFile3Name = SaveStudentCollectionFile(FindStudentCollectionFileUpload("FUploadIdCardFront"), basePath, prefix, rdom, "3", "căn cước mặt trước");
++                if (strFile3Name == null)
++                    return;
++                string strFile4Name = SaveStudentCollectionFile(FindStudentCollectionFileUpload("FUploadIdCardBack"), basePath, prefix, rdom, "4", "căn cước mặt sau");
++                if (strFile4Name == null)
++                    return;
++                //obj.Checked1 = chkChecked1.Checked;
++                //obj.Checked2 = chkChecked2.Checked;
++                if (obj.CheckExist())
++                {
++                    lblResult.Text = "Hồ sơ này đã được đăng ký!";
++                }
++                else
++                {
++                    if (obj.Add())
++                    {
++                        if (!obj.ExecNonQuery("WEB_StudentCollection_UpdateFiles",
++                            "@StudentCollectionID", obj.StudentCollectionID,
++                            "@TelZalo", txtTelZalo.Text.Trim(),
++                            "@File1", strFile1Name,
++                            "@File2", strFile2Name,
++                            "@File3", strFile3Name,
++                            "@File4", strFile4Name,
++                            "@TranscriptCoverFile", strTranscriptCoverFile,
++                            "@TranscriptClass6File1", strTranscriptClass6File1,
++                            "@TranscriptClass6File2", strTranscriptClass6File2,
++                            "@TranscriptClass7File1", strTranscriptClass7File1,
++                            "@TranscriptClass7File2", strTranscriptClass7File2,
++                            "@TranscriptClass8File1", strTranscriptClass8File1,
++                            "@TranscriptClass8File2", strTranscriptClass8File2,
++                            "@TranscriptClass9File1", strTranscriptClass9File1,
++                            "@TranscriptClass9File2", strTranscriptClass9File2,
++                            "@TranscriptClass10File1", strTranscriptClass10File1,
++                            "@TranscriptClass10File2", strTranscriptClass10File2,
++                            "@TranscriptClass11File1", strTranscriptClass11File1,
++                            "@TranscriptClass11File2", strTranscriptClass11File2,
++                            "@TranscriptClass12File1", strTranscriptClass12File1,
++                            "@TranscriptClass12File2", strTranscriptClass12File2))
++                        {
++                            lblResult.Text = "Việc cập nhật hình hồ sơ bị lỗi! Vui lòng thử lại sau!";
++                            return;
++                        }
++                        if (!obj.ExecNonQuery("WEB_StudentCollection_UpdateLearningResults",
++                            "@StudentCollectionID", obj.StudentCollectionID,
++                            "@KQHT9", obj.KQHT9,
++                            "@KQHT10", obj.KQHT10,
++                            "@KQHT11", obj.KQHT11,
++                            "@KQHT12", obj.KQHT12,
++                            "@EthicLevel1", obj.EthicLevel1,
++                            "@EthicLevel2", obj.EthicLevel2,
++                            "@EthicLevel3", obj.EthicLevel3,
++                            "@EthicLevel4", obj.EthicLevel4))
++                        {
++                            lblResult.Text = "Việc cập nhật kết quả học tập bị lỗi! Vui lòng thử lại sau!";
++                            return;
++                        }
++                        string strSuccessfull = "Đăng ký thành công!<br>" +
++                            "Thông tin đăng ký của bạn đã được gửi đến Trường Cao đẳng Kỹ thuật Công nghệ Quy Nhơn.<br>" +
++                            "Địa chỉ: 684 Hùng Vương - Phường Quy Nhơn Bắc - Tỉnh Gia Lai<br>" +
++                            "Điện thoại / Zalo: 0394.24.55.66 - Email: tuyensinh@cdktcnqn.edu.vn<br>" +
++                            "Nếu cần hỗ trợ, bạn vui lòng liên hệ đến Số điện thoại / Zalo hoặc Email trên<br>" +
++                            "Đăng ký của bạn, Nhà trường sẽ xử lý và liên hệ lại bạn ngay khi có thể.";
++                        lblResult.Text = "Đăng ký thành công!";
++                        lblResult.ForeColor = System.Drawing.Color.Blue;
++                        Session["WEB_StudentCollection_SuccessMessage"] = strSuccessfull;
++                        Response.Redirect(Request.RawUrl, false);
++                        Context.ApplicationInstance.CompleteRequest();
++                        return;
++                    }
++                    else
++                        lblResult.Text = "Việc gởi thông tin đăng ký bị lỗi! Vui lòng thử lại sau!";
++                }
++            }
++            else
++            {
++                lblResult.Text = "Chưa nhập đúng mã bảo mật!";
++                ScriptManager.RegisterStartupScript(Page, Page.GetType(), "_resetCode", "ResetCode()", true);
++            }
++
++
+         }
+-        requireControl('<%=FUploadDiploma.ClientID%>', 'Minh chứng đã tốt nghiệp');
+-        var learningLevelId = studentCollectionGetLearningLevelId();
+-        var isVocationalToCollege = studentCollectionIsVocationalToCollege();
+-        if (learningLevelId === '2') {
+-            requireControl('<%=ddlKQHT9.ClientID%>', 'Xếp loại học tập lớp 6');
+-            requireControl('<%=ddlEthicLevel1.ClientID%>', 'Xếp loại rèn luyện lớp 6');
+-            requireControl('<%=ddlKQHT10.ClientID%>', 'Xếp loại học tập lớp 7');
+-            requireControl('<%=ddlEthicLevel2.ClientID%>', 'Xếp loại rèn luyện lớp 7');
+-            requireControl('<%=ddlKQHT11.ClientID%>', 'Xếp loại học tập lớp 8');
+-            requireControl('<%=ddlEthicLevel3.ClientID%>', 'Xếp loại rèn luyện lớp 8');
+-            requireControl('<%=ddlKQHT12.ClientID%>', 'Xếp loại học tập lớp 9');
+-            requireControl('<%=ddlEthicLevel4.ClientID%>', 'Xếp loại rèn luyện lớp 9');
++        private string SaveStudentCollectionFile(FileUpload fileUpload, string basePath, string prefix, Random rdom, string fileIndex, string fileLabel)
++        {
++            if (fileUpload == null)
++            {
++                lblResult.Text = "Không tìm thấy control upload file " + fileLabel + "!";
++                return null;
++            }
++            if (!fileUpload.HasFile)
++                return "";
++            string[] allowedExtensions = { ".jpg", ".jpeg", ".png", ".pdf" };
++            string ext = Path.GetExtension(fileUpload.FileName).ToLowerInvariant();
++            if (Array.IndexOf(allowedExtensions, ext) < 0)
++            {
++                lblResult.Text = "File " + fileLabel + " không đúng định dạng JPG, PNG hoặc PDF!";
++                return null;
++            }
++            string strFileName = prefix + rdom.Next(1000, 99999).ToString() + "." + fileIndex + ext;
++            string fullPath = Path.Combine(basePath, strFileName);
++            try
++            {
++                fileUpload.SaveAs(fullPath);
++            }
++            catch (Exception ex)
++            {
++                lblResult.Text = "Lỗi lưu file " + fileLabel + ": " + ex.Message;
++                return null;
++            }
++            return strFileName;
+         }
+-        if (learningLevelId === '3' || (learningLevelId === '7' && !isVocationalToCollege)) {
+-            requireControl('<%=ddlKQHT10.ClientID%>', 'Xếp loại học tập lớp 10');
+-            requireControl('<%=ddlEthicLevel2.ClientID%>', 'Xếp loại rèn luyện lớp 10');
+-            requireControl('<%=ddlKQHT11.ClientID%>', 'Xếp loại học tập lớp 11');
+-            requireControl('<%=ddlEthicLevel3.ClientID%>', 'Xếp loại rèn luyện lớp 11');
+-            requireControl('<%=ddlKQHT12.ClientID%>', 'Xếp loại học tập lớp 12');
+-            requireControl('<%=ddlEthicLevel4.ClientID%>', 'Xếp loại rèn luyện lớp 12');
++        private FileUpload FindStudentCollectionFileUpload(string controlID)
++        {
++            return this.FindControl(controlID) as FileUpload;
+         }
+-        if (isVocationalToCollege)
+-            requireControl('<%=FUploadTranscript.ClientID%>', 'Giấy tờ khác');
+-        var summary = document.getElementById('<%=valSummary.ClientID%>');
+-        if (summary) {
+-            summary.style.display = messages.length ? 'block' : 'none';
+-            summary.innerHTML = messages.length ? '<strong>Vui lòng nhập đầy đủ:</strong><ul><li>' + messages.join('</li><li>') + '</li></ul>' : '';
++        private bool IsDigitsOnly(string value)
++        {
++            if (string.IsNullOrEmpty(value))
++                return false;
++            for (int i = 0; i < value.Length; i++)
++            {
++                if (value[i] < '0' || value[i] > '9')
++                    return false;
++            }
++            return true;
+         }
+-        return invalidControls.length === 0;
+-    }
+-    function studentCollectionInitValidation() {
+-        var controls = document.querySelectorAll('.student-collection-survey .form-control');
+-        for (var i = 0; i < controls.length; i++) {
+-            if (controls[i].getAttribute('data-validation-bound') === '1')
+-                continue;
+-            controls[i].setAttribute('data-validation-bound', '1');
+-            controls[i].addEventListener('change', function () {
+-                if (this.value)
+-                    this.classList.remove('student-collection-invalid');
+-            });
+-            controls[i].addEventListener('input', function () {
+-                if (this.value)
+-                    this.classList.remove('student-collection-invalid');
+-            });
++        private int GetLearningLevelId()
++        {
++            int learningLevelId;
++            return int.TryParse(ddlLearningLevel.SelectedValue, out learningLevelId) ? learningLevelId : 0;
+         }
+-    }
+-    function studentCollectionInitNumericInputs() {
+-        var controls = document.querySelectorAll('.student-collection-survey .student-collection-numeric');
+-        for (var i = 0; i < controls.length; i++) {
+-            if (controls[i].getAttribute('data-numeric-bound') === '1')
+-                continue;
+-            controls[i].setAttribute('data-numeric-bound', '1');
+-            controls[i].addEventListener('input', function () {
+-                this.value = this.value.replace(/[^0-9]/g, '');
+-            });
++        private bool IsVocationalToCollege()
++        {
++            return GetLearningLevelId() == LearningLevelVocationalId && ddlTrainingLevel.SelectedValue == TrainingLevelCollegeId;
+         }
+-    }
+-    function studentCollectionGetLearningLevelId() {
+-        var ddl = document.getElementById('<%=ddlLearningLevel.ClientID%>');
+-        return ddl ? ddl.value : '';
+-    }
+-    function studentCollectionGetTrainingLevelId() {
+-        var ddl = document.getElementById('<%=ddlTrainingLevel.ClientID%>');
+-        return ddl ? ddl.value : '';
+-    }
+-    function studentCollectionGetResultTrack() {
+-        var learningLevelId = studentCollectionGetLearningLevelId();
+-        var trainingLevelId = studentCollectionGetTrainingLevelId();
+-        if (learningLevelId === '2' || (learningLevelId === '8' && trainingLevelId === '11'))
+-            return 'thcs';
+-        if (learningLevelId === '3' || learningLevelId === '7' || (learningLevelId === '8' && trainingLevelId === '12'))
+-            return 'thpt';
+-        return '';
+-    }
+-    function studentCollectionGetTranscriptTrack() {
+-        var learningLevelId = studentCollectionGetLearningLevelId();
+-        var trainingLevelId = studentCollectionGetTrainingLevelId();
+-        if (learningLevelId === '2' || (learningLevelId === '8' && trainingLevelId === '11'))
+-            return 'thcs';
+-        if (learningLevelId === '3' || (learningLevelId === '8' && trainingLevelId === '12'))
+-            return 'thpt';
+-        return '';
+-    }
+-    function studentCollectionIsVocationalToCollege() {
+-        return studentCollectionGetLearningLevelId() === '7' && studentCollectionGetTrainingLevelId() === '12';
+-    }
+-    function studentCollectionToggleTranscriptUploads() {
+-        var learningLevelId = studentCollectionGetLearningLevelId();
+-        var resultTrack = studentCollectionGetResultTrack();
+-        var transcriptTrack = studentCollectionGetTranscriptTrack();
+-        var isOtherAcademicTrack = learningLevelId === '8' && resultTrack !== '';
+-        var isVocationalToCollege = studentCollectionIsVocationalToCollege();
+-        var items = document.querySelectorAll('.student-collection-transcript-detail');
+-        var resultItems = document.querySelectorAll('.student-collection-result-detail');
+-        var resultGroup = document.getElementById('studentCollectionLearningResults');
+-        var transcript = document.getElementById('<%=FUploadTranscript.ClientID%>');
+-        var diplomaHint = document.getElementById('studentCollectionDiplomaHint');
+-        var transcriptLabel = document.getElementById('studentCollectionTranscriptLabel');
+-        var transcriptHint = document.getElementById('studentCollectionTranscriptHint');
+-        if (diplomaHint) {
+-            if (isVocationalToCollege)
+-                diplomaHint.textContent = '(Bằng / Giấy chứng nhận tốt nghiệp Trung cấp)';
+-            else if (resultTrack === 'thcs')
+-                diplomaHint.textContent = '(Hình bằng THCS / Hình mặt sau của học bạ lớp 9)';
+-            else if (resultTrack === 'thpt')
+-                diplomaHint.textContent = '(Hình bằng THPT / Hình chứng nhận kết quả thi)';
+-            else
+-                diplomaHint.textContent = '(Bằng / Chứng nhận / Kết quả thi / Hình mặt sau của học bạ lớp 9)';
++        private bool IsOtherToVocational()
++        {
++            return GetLearningLevelId() == LearningLevelOtherId && ddlTrainingLevel.SelectedValue == TrainingLevelVocationalId;
++        }
++        private bool IsOtherToCollege()
++        {
++            return GetLearningLevelId() == LearningLevelOtherId && ddlTrainingLevel.SelectedValue == TrainingLevelCollegeId;
++        }
++
++        private void LoadLearningLevel()
++        {
++            SIM_LearningLevel obj = new SIM_LearningLevel();
++            ddlLearningLevel.DataSource = obj.GetDataTable("SIM_LearningLevel_SearchForWeb", "@IsActived", 1);
++            ddlLearningLevel.DataValueField = "LearningLevelID";
++            ddlLearningLevel.DataTextField = "LearningLevelName";
++            ddlLearningLevel.DataBind();
++            ddlLearningLevel.Items.Insert(0, new ListItem("--Chọn--", ""));
++        }
++        private void InitTrainingLevelPlaceholder()
++        {
++            ddlTrainingLevel.Items.Clear();
++            ddlTrainingLevel.Items.Add(new ListItem("Vui lòng chọn Đã tốt nghiệp trước", ""));
++            ddlTrainingLevel.Enabled = false;
+         }
+-        if (transcriptLabel)
+-            transcriptLabel.innerHTML = 'Giấy tờ khác' + (isVocationalToCollege ? ' <span class="required">*</span>' : '');
+-        if (transcriptHint)
+-            transcriptHint.textContent = isVocationalToCollege ? '(Hình bằng THPT / Chứng nhận hoàn thành văn hóa THPT)' : 'Bổ sung minh chứng để xác định trình độ';
+-        for (var i = 0; i < items.length; i++) {
+-            var academicTracks = (items[i].getAttribute('data-academic-track') || '').split(' ');
+-            items[i].style.display = academicTracks.indexOf(transcriptTrack) >= 0 ? 'block' : 'none';
++        private void InitSpecialBranchPlaceholder()
++        {
++            ddlSpecialBranch.Items.Clear();
++            ddlSpecialBranch.Items.Add(new ListItem("--Chọn--", ""));
++            ddlSpecialBranch.Enabled = false;
++            ddlSpecialBranch2.Items.Clear();
++            ddlSpecialBranch2.Items.Add(new ListItem("--Chọn--", ""));
++            ddlSpecialBranch2.Enabled = false;
+         }
+-        for (var j = 0; j < resultItems.length; j++) {
+-            var resultTracks = (resultItems[j].getAttribute('data-result-track') || '').split(' ');
+-            resultItems[j].style.display = resultTracks.indexOf(resultTrack) >= 0 ? '' : 'none';
+-            var resultLabel = resultItems[j].querySelector('.form-label');
+-            if (resultLabel) {
+-                var labelText = resultTrack === 'thcs' ? resultLabel.getAttribute('data-thcs-text') : resultLabel.getAttribute('data-other-text');
+-                if (labelText)
+-                    resultLabel.innerHTML = labelText + (isVocationalToCollege || isOtherAcademicTrack ? '' : ' <span class="required">*</span>');
++        private void LoadTrainingLevel()
++        {
++            if (string.IsNullOrEmpty(ddlLearningLevel.SelectedValue))
++            {
++                InitTrainingLevelPlaceholder();
++                return;
+             }
++            SimsObject.SIM_TrainingLevel objTrainingLevel = new SimsObject.SIM_TrainingLevel();
++            ddlTrainingLevel.DataSource = objTrainingLevel.GetDataTable(
++                                "SIM_TrainingLevel_SearchForWeb",
++                                "@LearningLevelID", ddlLearningLevel.SelectedValue);
++            ddlTrainingLevel.DataValueField = "TrainingLevelID";
++            ddlTrainingLevel.DataTextField = "TrainingLevelName";
++            ddlTrainingLevel.DataBind();
++            ddlTrainingLevel.Items.Insert(0, new ListItem("--Chọn--", ""));
++            ddlTrainingLevel.Enabled = true;
+         }
+-        if (resultGroup)
+-            resultGroup.style.display = resultTrack ? '' : 'none';
+-        if (transcript) {
+-            var parent = transcript.closest ? transcript.closest('.form-field') : transcript.parentNode;
+-            if (parent)
+-                parent.style.display = learningLevelId === '7' ? '' : 'none';
++
++        private void LoadSpecialBranch()
++        {
++            if (string.IsNullOrEmpty(ddlLearningLevel.SelectedValue) || string.IsNullOrEmpty(ddlTrainingLevel.SelectedValue))
++            {
++                InitSpecialBranchPlaceholder();
++                return;
++            }
++            ddlSpecialBranch.Enabled = true;
++            SIM_SpecialBranch obj = new SIM_SpecialBranch();
++            ddlSpecialBranch.DataSource = obj.GetDataTable(
++                                "SIM_SpecialBranch_SearchForWeb",
++                                "@LearningLevelID", ddlLearningLevel.SelectedValue,
++                                "@TrainingLevelID", ddlTrainingLevel.SelectedValue);
++            ddlSpecialBranch.DataValueField = "SpecialBranchID";
++            ddlSpecialBranch.DataTextField = "SpecialBranchName";
++            ddlSpecialBranch.DataBind();
++            ddlSpecialBranch.Items.Insert(0, new ListItem("--Chọn--", ""));
++            ddlSpecialBranch2.Enabled = true;
++            ddlSpecialBranch2.DataSource = obj.GetDataTable(
++                                "SIM_SpecialBranch_SearchForWeb",
++                                "@LearningLevelID", ddlLearningLevel.SelectedValue,
++                                "@TrainingLevelID", ddlTrainingLevel.SelectedValue);
++            ddlSpecialBranch2.DataValueField = "SpecialBranchID";
++            ddlSpecialBranch2.DataTextField = "SpecialBranchName";
++            ddlSpecialBranch2.DataBind();
++            ddlSpecialBranch2.Items.Insert(0, new ListItem("--Chọn--", ""));
+         }
++
++        private void LoadEthnicity()
++        {
++            InformationWebObject.WEB_StudentCollection obj = new InformationWebObject.WEB_StudentCollection();
++            DataTable dt = obj.GetDataTable("GEN_Ethnicity_SearchForWeb", "@IsActived", 1);
++            if (dt != null && dt.Rows.Count > 0)
++            {
++                ddlDanToc.DataSource = dt;
++                ddlDanToc.DataValueField = "EthnicityID";
++                ddlDanToc.DataTextField = "EthnicityName";
++                ddlDanToc.DataBind();
++            }
++            ddlDanToc.Items.Insert(0, new ListItem("-- Chọn dân tộc --", ""));
++            try { ddlDanToc.SelectedValue = "KINH"; }
++            catch { }
++        }
++
++        protected void ddlLearningLevel_SelectedIndexChanged(object sender, EventArgs e)
++        {
++            LoadTrainingLevel();
++            LoadSpecialBranch();
++            udpTrainingLevel.Update();
++            udpSpecialBranch.Update();
++            udpSpecialBranch2.Update();
++        }
++
++        protected void ddlTrainingLevel_SelectedIndexChanged(object sender, EventArgs e)
++        {
++            LoadSpecialBranch();
++            udpSpecialBranch.Update();
++            udpSpecialBranch2.Update();
++        }
++
++
+     }
+-    if (window.Sys && Sys.Application) {
+-        Sys.Application.add_load(studentCollectionToggleTranscriptUploads);
+-        Sys.Application.add_load(studentCollectionInitValidation);
+-        Sys.Application.add_load(studentCollectionInitNumericInputs);
+-    } else {
+-        document.addEventListener('DOMContentLoaded', studentCollectionToggleTranscriptUploads);
+-        document.addEventListener('DOMContentLoaded', studentCollectionInitValidation);
+-        document.addEventListener('DOMContentLoaded', studentCollectionInitNumericInputs);
+-    }
+-</script>
++}
+\ No newline at end of file

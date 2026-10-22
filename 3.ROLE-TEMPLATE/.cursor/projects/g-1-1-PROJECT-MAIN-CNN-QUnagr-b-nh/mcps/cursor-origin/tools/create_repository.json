@@ -1,0 +1,26 @@
+{
+  "name": "create_repository",
+  "description": "Create an empty Origin-hosted repository. Pick an owner from list_namespaces where viewerCanCreateRepositories is true; omit owner to use the caller's personal namespace, which Origin claims on first use (needs an eligible plan, a Privacy Mode that allows code storage, and no team membership; team members pass their team slug). Both steps are one approval: confirm with the user before calling. defaultBranch defaults to main. Repository names are unique per owner, so retrying after a success fails with a conflict; read the repository with get_repository instead. Returns the created repository, including cloneUrl.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Origin namespace (owner) slug, taken from list_namespaces or an earlier Origin result. A GitHub owner or org name is not an Origin namespace unless list_namespaces returns it."
+      },
+      "name": {
+        "type": "string",
+        "description": "Origin repository name within that namespace"
+      },
+      "defaultBranch": {
+        "type": "string",
+        "description": "Default branch name. Omit for main."
+      }
+    },
+    "required": [
+      "name"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

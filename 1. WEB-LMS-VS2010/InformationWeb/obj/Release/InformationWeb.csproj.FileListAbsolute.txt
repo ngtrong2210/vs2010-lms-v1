@@ -1,0 +1,11 @@
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\InformationWeb.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\InformationWeb.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsObject.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsService.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\DCore.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\BCrypt.Net-Next.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsObject.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\bin\LmsService.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\obj\Release\InformationWeb.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\obj\Release\InformationWeb.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\InformationWeb\obj\Release\InformationWeb.csprojResolveAssemblyReference.cache

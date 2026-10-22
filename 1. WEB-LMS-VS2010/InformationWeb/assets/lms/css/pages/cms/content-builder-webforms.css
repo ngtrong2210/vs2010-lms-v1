@@ -1,0 +1,26 @@
+.content-builder-page [hidden] { display: none !important; }
+.content-builder-course-contract { display: none !important; }
+.chapter-card.is-collapsed .chapter-lessons { display: none; }
+.chapter-card.is-collapsed .chapter-toggle i { transform: rotate(-90deg); }
+.chapter-toggle i { transition: transform 0.18s ease; }
+.chapter-copy > strong, .lesson-copy > strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lesson-actions .btn, .chapter-header-actions .btn { align-items: center; display: inline-flex; justify-content: center; }
+.builder-check input { margin: 0; }
+.lesson-rich-editor { display: block; min-height: 180px; width: 100%; }
+.assignment-panel { background: #f8fafc; border: 1px solid #e5ece9; border-radius: 12px; padding: 1rem; }
+.assignment-heading { align-items: center; display: flex; gap: 0.75rem; margin-bottom: 1rem; }
+.assignment-heading > span { align-items: center; background: #e5f1fa; border-radius: 10px; color: #005099; display: inline-flex; flex: 0 0 42px; height: 42px; justify-content: center; }
+.assignment-heading > div { display: grid; }
+.assignment-heading small { color: #75857f; }
+.video-item { text-align: left; width: 100%; }
+.video-item > i:last-child { color: #75857f; margin-left: auto; }
+@media (max-width: 767.98px) {
+  .chapter-card > header { align-items: flex-start; flex-wrap: wrap; }
+  .chapter-header-actions { margin-left: 78px !important; width: calc(100% - 78px); }
+  .chapter-header-actions .chapter-add-button { margin-right: auto; }
+  .lesson { grid-template-columns: 38px minmax(0, 1fr) auto; }
+  .lesson > .badge { grid-column: 2; justify-self: start; }
+  .lesson-actions { grid-column: 2 / -1; justify-content: flex-end; }
+  .chapter-display-toolbar { align-items: flex-start; gap: 0.75rem; }
+  .chapter-display-actions { flex-direction: column; }
+}

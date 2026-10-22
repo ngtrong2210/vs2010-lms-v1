@@ -1,0 +1,1808 @@
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+Cannot overwrite variable PID because it is read-only or constant.
+At C:\Users\trong\AppData\Local\Temp\compare_chucvu.ps1:47 char:3
++   $pid = Map-ExcelPosition $posName
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (PID:String) [], SessionStateUnauthorizedAccessException
+    + FullyQualifiedErrorId : VariableNotWritable
+ 
+REPORT=C:\Users\trong\.cursor\projects\g-1-1-PROJECT-MAIN-QUY-NH-N-T-i-s-n\agent-tools\chucvu_compare.txt
+PATCH=C:\Users\trong\.cursor\projects\g-1-1-PROJECT-MAIN-QUY-NH-N-T-i-s-n\agent-tools\Update_HRS_Employee_PositionID_from_excel.sql
+UPDATES=0
+Excel rows: 254
+DB employees parsed: 314
+Unknown excel position labels: 0
+Mismatches: 0
+Missing in DB (from excel): 254
+  052077008678 | excel=Gi?ng vi�n co h?u | expected=27052
+  052084012212 | excel=Gi?ng vi�n co h?u | expected=27052
+  052195013260 | excel=Nh�n vi�n | expected=27052
+  052090005385 | excel=Gi?ng vi�n co h?u | expected=27052
+  052077002119 | excel=Ph� Hi?u tru?ng | expected=27052
+  052077003234 | excel=Ph� Hi?u tru?ng | expected=27052
+  052180015589 | excel=Gi?ng vi�n co h?u | expected=27052
+  058186005150 | excel=Gi?ng vi�n co h?u | expected=27052
+  052185005330 | excel=Gi?ng vi�n co h?u | expected=27052
+  052078007818 | excel=Gi?ng vi�n co h?u | expected=27052
+  052076014731 | excel=Gi?ng vi�n co h?u | expected=27052
+  025178005003 | excel=Gi?ng vi�n co h?u | expected=27052
+  052186010869 | excel=Gi?ng vi�n co h?u | expected=27052
+  052087015292 | excel=Tru?ng b? m�n v� tuong duong | expected=27052
+  052086012886 | excel=Gi?ng vi�n co h?u | expected=27052
+  052068024870 | excel=Gi?ng vi�n co h?u | expected=27052
+  052189003777 | excel=Gi?ng vi�n co h?u | expected=27052
+  052183011823 | excel=Gi?ng vi�n co h?u | expected=27052
+  052085003051 | excel=Gi?ng vi�n co h?u | expected=27052
+  052178003105 | excel=Gi?ng vi�n co h?u | expected=27052
+Missing in Excel (from sql dump): 314
+

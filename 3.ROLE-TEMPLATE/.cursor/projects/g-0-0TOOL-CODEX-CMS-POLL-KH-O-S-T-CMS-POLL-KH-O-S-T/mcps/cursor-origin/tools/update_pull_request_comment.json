@@ -1,0 +1,32 @@
+{
+  "name": "update_pull_request_comment",
+  "description": "Correct an existing pull request comment body.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Origin namespace (owner) slug, taken from list_namespaces or an earlier Origin result. A GitHub owner or org name is not an Origin namespace unless list_namespaces returns it."
+      },
+      "name": {
+        "type": "string",
+        "description": "Origin repository name within that namespace"
+      },
+      "commentId": {
+        "type": "string",
+        "description": "Stable comment id from pull_request_read with view comments"
+      },
+      "body": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "owner",
+      "name",
+      "commentId",
+      "body"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

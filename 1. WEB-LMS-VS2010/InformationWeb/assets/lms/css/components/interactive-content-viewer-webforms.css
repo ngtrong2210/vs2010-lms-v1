@@ -1,0 +1,220 @@
+/*
+ * Presentation bridge for the server-rendered InteractiveContentViewer.
+ * Input names, values and lessonAction buttons remain unchanged.
+ */
+.interactive-content-webforms {
+  color: #223b4f;
+  overflow: auto;
+}
+
+.interactive-webforms-heading {
+  align-items: center;
+  background: #005099;
+  border-radius: 14px;
+  color: #fff;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto minmax(0, 1fr);
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+}
+
+.interactive-webforms-heading .content-type-icon {
+  color: #fff;
+}
+
+.interactive-webforms-heading > div > span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.interactive-webforms-heading h2 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.25rem 0;
+}
+
+.interactive-webforms-heading p {
+  color: rgba(255, 255, 255, 0.86);
+  margin: 0;
+}
+
+.interactive-webforms-body > .alert {
+  background: #fff;
+  border: 0 !important;
+  border-radius: 16px;
+  color: #71827b;
+  margin: 0;
+  padding: 1rem 1.25rem;
+}
+
+.interactive-webforms-body > .alert strong {
+  color: #102f4a;
+}
+
+.interactive-content-webforms fieldset {
+  background: #fff !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  box-shadow: 0 10px 28px rgba(17, 53, 83, 0.08);
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1rem 0 0 !important;
+  min-width: 0;
+  padding: 1.25rem !important;
+}
+
+.interactive-content-webforms fieldset legend {
+  background: #eaf3fb;
+  border-radius: 8px;
+  color: #005099;
+  float: none;
+  font-size: 0.75rem !important;
+  font-weight: 700;
+  grid-column: 1 / -1;
+  margin: 0 0 0.4rem;
+  padding: 0.45rem 0.6rem !important;
+  width: max-content !important;
+}
+
+.interactive-content-webforms fieldset > p,
+.interactive-content-webforms fieldset > textarea,
+.interactive-content-webforms fieldset > .lh-lg {
+  grid-column: 1 / -1;
+}
+
+.interactive-content-webforms fieldset > p {
+  color: #102f4a;
+  font-size: 1rem;
+  margin: 0 0 0.4rem;
+}
+
+.interactive-content-webforms fieldset > label {
+  align-items: center;
+  background: #f6f8f8;
+  border: 0 !important;
+  border-radius: 10px !important;
+  cursor: pointer;
+  display: flex !important;
+  gap: 0.65rem;
+  margin: 0 !important;
+  min-height: 52px;
+  min-width: 0;
+  padding: 0.8rem !important;
+  transition: background 0.16s ease, color 0.16s ease;
+}
+
+.interactive-content-webforms fieldset > label:hover,
+.interactive-content-webforms fieldset > label:focus-within {
+  background: #eef4f7;
+}
+
+.interactive-content-webforms fieldset > label:has(input:checked) {
+  background: #e8f2fa;
+  color: #005099;
+}
+
+.interactive-content-webforms input[type='radio'],
+.interactive-content-webforms input[type='checkbox'] {
+  accent-color: #005099;
+  flex: 0 0 auto;
+  margin: 0 !important;
+}
+
+.interactive-content-webforms textarea.form-control {
+  border-color: #dce5e8;
+  border-radius: 10px;
+  min-height: 110px;
+}
+
+.interactive-content-webforms .lh-lg select {
+  border-color: #ccdadd;
+  border-radius: 8px;
+}
+
+.interactive-webforms-body > .small.text-secondary {
+  align-items: center;
+  background: #e5f5ef;
+  border-radius: 10px;
+  color: #07875a !important;
+  display: flex;
+  margin: 0.75rem 0 !important;
+  min-height: 42px;
+  padding: 0.7rem 0.85rem;
+}
+
+.interactive-webforms-body > button[name='lessonAction'] {
+  align-items: center;
+  background: #d3224d;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  font-weight: 700;
+  margin: 0.75rem 0 0 !important;
+  padding: 0.65rem 0.95rem;
+}
+
+.interactive-webforms-body > button[name='lessonAction']:hover,
+.interactive-webforms-body > button[name='lessonAction']:focus {
+  background: #b51f48;
+  color: #fff;
+}
+
+.interactive-webforms-body > .d-flex.gap-2 {
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+}
+
+.interactive-webforms-body > .d-flex.gap-2 .btn {
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 0.65rem 0.95rem;
+}
+
+.interactive-webforms-body > .d-flex.gap-2 .btn-outline-primary {
+  background: #eef3f5;
+  border-color: transparent;
+  color: #123552;
+}
+
+.interactive-webforms-body > .d-flex.gap-2 .btn-primary {
+  background: #d3224d;
+  border-color: #d3224d;
+}
+
+@media (max-width: 560px) {
+  .interactive-content-webforms {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    padding: 0.75rem;
+  }
+
+  .interactive-webforms-heading {
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+
+  .interactive-content-webforms fieldset {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1rem !important;
+  }
+
+  .interactive-webforms-body > .d-flex.gap-2 {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .interactive-webforms-body > .d-flex.gap-2 .btn,
+  .interactive-webforms-body > button[name='lessonAction'] {
+    justify-content: center;
+    width: 100%;
+  }
+}

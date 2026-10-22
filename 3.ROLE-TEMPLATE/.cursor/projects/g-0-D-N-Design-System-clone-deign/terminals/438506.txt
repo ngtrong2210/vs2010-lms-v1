@@ -1,0 +1,281 @@
+---
+pid: 27416
+cwd: "G:\\0.DỰ ÁN"
+command: "cd \"G:\\0.DỰ ÁN\\net88\"; npm run dev"
+title: "Start dev server in new location"
+status: running  
+started_at: 2026-10-19T15:43:53.631Z
+running_for_ms: 2653124  
+---
+
+> net88-ai-router-dashboard@1.0.0 dev
+> vite
+
+Re-optimizing dependencies because vite config has changed
+Port 5173 is in use, trying another one...
+Port 5174 is in use, trying another one...
+
+  VITE v5.4.21  ready in 3119 ms
+
+  ➜  Local:   http://localhost:5175/
+  ➜  Network: use --host to expose
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\main.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './utilities.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\main.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\utilities.scss 1:9  @import
+    src\design-system\styles\main.scss 2:9       root stylesheet
+
+22:45:55 [vite] Internal server error: [sass] Undefined variable.
+    ╷
+227 │ .border { border: $net88-border-width-1 solid $net88-border-color !important; }
+    │                   ^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src\design-system\styles\utilities.scss 227:19  @import
+  src\design-system\styles\main.scss 2:9          root stylesheet
+  Plugin: vite:css
+  File: G:\0.DỰ ÁN\net88\src\design-system\styles\utilities.scss:227:19
+  Error: Undefined variable.
+      ╷
+  227 │ .border { border: $net88-border-width-1 solid $net88-border-color !important; }
+      │                   ^^^^^^^^^^^^^^^^^^^^^
+      ╵
+    src\design-system\styles\utilities.scss 227:19  @import
+    src\design-system\styles\main.scss 2:9          root stylesheet
+      at Object.wrapException (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:2317:47)
+      at G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92284:23
+      at _wrapJsFunctionForAsync_closure.$protected (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:4988:15)
+      at _wrapJsFunctionForAsync_closure.call$2 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:39061:12)
+      at Object._asyncStartSync (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:4952:20)
+      at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92290:16)
+      at _EvaluateVisitor2.visitVariableExpression$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92264:19)
+      at VariableExpression0.accept$1$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:130858:22)
+      at VariableExpression0.accept$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:130861:19)
+      at _EvaluateVisitor_visitListExpression_closure2.call$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:98204:25)
+22:45:55 [vite] Pre-transform error: [sass] Undefined variable.
+    ╷
+227 │ .border { border: $net88-border-width-1 solid $net88-border-color !important; }
+    │                   ^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src\design-system\styles\utilities.scss 227:19  @import
+  src\design-system\styles\main.scss 2:9          root stylesheet
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../styles/variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\components\Table.vue 2:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../styles/variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\components\Card.vue 2:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../styles/variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\components\Input.vue 2:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../styles/variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\components\Badge.vue 2:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import '../styles/variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\components\Avatar.vue 2:9  root stylesheet
+
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\main.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './utilities.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\main.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\utilities.scss 1:9  @import
+    src\design-system\styles\main.scss 2:9       root stylesheet
+
+22:50:02 [vite] Internal server error: [sass] Undefined variable.
+    ╷
+227 │ .border { border: $net88-border-width-1 solid $net88-border-color !important; }
+    │                   ^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src\design-system\styles\utilities.scss 227:19  @import
+  src\design-system\styles\main.scss 2:9          root stylesheet
+  Plugin: vite:css
+  File: G:\0.DỰ ÁN\net88\src\design-system\styles\utilities.scss:227:19
+  Error: Undefined variable.
+      ╷
+  227 │ .border { border: $net88-border-width-1 solid $net88-border-color !important; }
+      │                   ^^^^^^^^^^^^^^^^^^^^^
+      ╵
+    src\design-system\styles\utilities.scss 227:19  @import
+    src\design-system\styles\main.scss 2:9          root stylesheet
+      at Object.wrapException (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:2317:47)
+      at G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92284:23
+      at _wrapJsFunctionForAsync_closure.$protected (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:4988:15)
+      at _wrapJsFunctionForAsync_closure.call$2 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:39061:12)
+      at Object._asyncStartSync (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:4952:20)
+      at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92290:16)
+      at _EvaluateVisitor2.visitVariableExpression$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92264:19)
+      at VariableExpression0.accept$1$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:130858:22)
+      at VariableExpression0.accept$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:130861:19)
+      at _EvaluateVisitor_visitListExpression_closure2.call$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:98204:25)
+DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+
+More info: https://sass-lang.com/d/legacy-js-api
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\main.scss 1:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+2 │ @import './utilities.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\main.scss 2:9  root stylesheet
+
+DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+
+More info and automated migrator: https://sass-lang.com/d/import
+
+  ╷
+1 │ @import './variables.scss';
+  │         ^^^^^^^^^^^^^^^^^^
+  ╵
+    src\design-system\styles\utilities.scss 1:9  @import
+    src\design-system\styles\main.scss 2:9       root stylesheet
+
+22:50:07 [vite] Internal server error: [sass] Undefined variable.
+    ╷
+227 │ .border { border: $net88-border-width-1 solid $net88-border-color !important; }
+    │                   ^^^^^^^^^^^^^^^^^^^^^
+    ╵
+  src\design-system\styles\utilities.scss 227:19  @import
+  src\design-system\styles\main.scss 2:9          root stylesheet
+  Plugin: vite:css
+  File: G:\0.DỰ ÁN\net88\src\design-system\styles\utilities.scss:227:19
+  Error: Undefined variable.
+      ╷
+  227 │ .border { border: $net88-border-width-1 solid $net88-border-color !important; }
+      │                   ^^^^^^^^^^^^^^^^^^^^^
+      ╵
+    src\design-system\styles\utilities.scss 227:19  @import
+    src\design-system\styles\main.scss 2:9          root stylesheet
+      at Object.wrapException (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:2317:47)
+      at G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92284:23
+      at _wrapJsFunctionForAsync_closure.$protected (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:4988:15)
+      at _wrapJsFunctionForAsync_closure.call$2 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:39061:12)
+      at Object._asyncStartSync (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:4952:20)
+      at _EvaluateVisitor2.visitVariableExpression$body$_EvaluateVisitor0 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92290:16)
+      at _EvaluateVisitor2.visitVariableExpression$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:92264:19)
+      at VariableExpression0.accept$1$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:130858:22)
+      at VariableExpression0.accept$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:130861:19)
+      at _EvaluateVisitor_visitListExpression_closure2.call$1 (G:\0.DỰ ÁN\net88\node_modules\sass\sass.dart.js:98204:25)

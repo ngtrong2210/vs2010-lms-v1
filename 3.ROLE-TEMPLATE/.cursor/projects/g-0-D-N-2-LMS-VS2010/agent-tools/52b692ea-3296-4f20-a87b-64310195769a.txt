@@ -1,0 +1,1491 @@
+Folder PATH listing
+Volume serial number is 00000052 1210:C6E1
+G:\0.D? AN\2.LMS-VS2010
++---WEB-LMS-VS2010
+|   |   InformationWeb.sln
+|   |   
+|   +---docs
+|   |   |   Implementation_Guide_Mixed_Quiz.md
+|   |   |   interactive-video-flow.html
+|   |   |   KE_HOACH_CHUYEN_DOI_FULL.md
+|   |   |   Notification_Flow_Test.sql
+|   |   |   Notification_Test_Results_2026-10-19.md
+|   |   |   Quiz_Flow_Test_Corrected.sql
+|   |   |   Quiz_Flow_Test_Fixed.sql
+|   |   |   Quiz_Flow_Test_Simple.sql
+|   |   |   Quiz_Flow_Test_Summary.md
+|   |   |   Test_ContentTree_MultiLevel.sql
+|   |   |   Test_Quiz_Mixed_Grading.sql
+|   |   |   
+|   |   +---.skill
+|   |   |       winforms-object-service-common.mdc
+|   |   |       
+|   |   +---design-system
+|   |   |       boxes.md
+|   |   |       buttons.md
+|   |   |       cards.md
+|   |   |       colors.md
+|   |   |       forms.md
+|   |   |       icons.md
+|   |   |       lists.md
+|   |   |       modals.md
+|   |   |       notifications.md
+|   |   |       README.md
+|   |   |       spacing.md
+|   |   |       tables.md
+|   |   |       typography.md
+|   |   |       
+|   |   \---_backup
+|   |           LMSCMS_DB_SAMPLE_20261014_111255.bak
+|   |           
+|   +---Documents
+|   |       CodingStandards.md
+|   |       CONTENT_TREE_IMPLEMENTATION_SUMMARY.md
+|   |       CONTENT_TREE_SAMPLE_DATA_GUIDE.md
+|   |       CONTENT_TREE_SERVICE_LAYER_SUMMARY.md
+|   |       CONTENT_TREE_UI_UX_SUMMARY.md
+|   |       README.md
+|   |       
+|   +---InformationWeb
+|   |   |   Default.aspx
+|   |   |   Default.aspx.cs
+|   |   |   Default.aspx.designer.cs
+|   |   |   favicon.svg
+|   |   |   Global.asax
+|   |   |   Global.asax.cs
+|   |   |   icons.svg
+|   |   |   InformationWeb.csproj
+|   |   |   InformationWeb.csproj.user
+|   |   |   urlrewrite.config
+|   |   |   Web.config
+|   |   |   
+|   |   +---App_Data
+|   |   |   +---Logs
+|   |   |   |       lms-20260901.log
+|   |   |   |       lms-20261014.log
+|   |   |   |       lms-20261019.log
+|   |   |   |       
+|   |   |   \---Temp
+|   |   +---assets
+|   |   |   \---lms
+|   |   |       +---css
+|   |   |       |   |   index.css
+|   |   |       |   |   webforms.css
+|   |   |       |   |   
+|   |   |       |   +---components
+|   |   |       |   |       action-buttons.css
+|   |   |       |   |       cms-page-actions.css
+|   |   |       |   |       confirm-dialog.css
+|   |   |       |   |       controls.css
+|   |   |       |   |       data-display.css
+|   |   |       |   |       feedback-states.css
+|   |   |       |   |       filter-bar.css
+|   |   |       |   |       forms.css
+|   |   |       |   |       interactive-content-viewer-webforms.css
+|   |   |       |   |       interactive-content-viewer.css
+|   |   |       |   |       interactive-video-player.css
+|   |   |       |   |       notification-center.css
+|   |   |       |   |       overlays.css
+|   |   |       |   |       page-back-button.css
+|   |   |       |   |       page-header.css
+|   |   |       |   |       pagination.css
+|   |   |       |   |       student-learning-actions.css
+|   |   |       |   |       subject-authoring.css
+|   |   |       |   |       surfaces.css
+|   |   |       |   |       typography.css
+|   |   |       |   |       youtube-video-player.css
+|   |   |       |   |       
+|   |   |       |   +---core
+|   |   |       |   |       base.css
+|   |   |       |   |       responsive.css
+|   |   |       |   |       tokens.css
+|   |   |       |   |       typography-system.css
+|   |   |       |   |       utilities.css
+|   |   |       |   |       
+|   |   |       |   +---layouts
+|   |   |       |   |       cms-layout.css
+|   |   |       |   |       lms-layout.css
+|   |   |       |   |       
+|   |   |       |   \---pages
+|   |   |       |       +---auth
+|   |   |       |       |       login.css
+|   |   |       |       |       
+|   |   |       |       +---cms
+|   |   |       |       |       academic-dialogs.css
+|   |   |       |       |       academic-structure.css
+|   |   |       |       |       academic-timetable.css
+|   |   |       |       |       academic-webforms.css
+|   |   |       |       |       assignment-grading-webforms.css
+|   |   |       |       |       assignment-grading.css
+|   |   |       |       |       content-builder-webforms.css
+|   |   |       |       |       content-builder.css
+|   |   |       |       |       content-file-upload.css
+|   |   |       |       |       content-progress-dashboard.css
+|   |   |       |       |       content-tree-manager.css
+|   |   |       |       |       course-management.css
+|   |   |       |       |       dashboard.css
+|   |   |       |       |       generic.css
+|   |   |       |       |       global-search-webforms.css
+|   |   |       |       |       global-search.css
+|   |   |       |       |       question-bank.css
+|   |   |       |       |       reports.css
+|   |   |       |       |       students.css
+|   |   |       |       |       system-management-webforms.css
+|   |   |       |       |       system-management.css
+|   |   |       |       |       video-editor.css
+|   |   |       |       |       video-library.css
+|   |   |       |       |       
+|   |   |       |       +---errors
+|   |   |       |       |       error.css
+|   |   |       |       |       
+|   |   |       |       \---lms
+|   |   |       |               dashboard.css
+|   |   |       |               lesson-discussion.css
+|   |   |       |               lesson-player-webforms.css
+|   |   |       |               lesson-player.css
+|   |   |       |               results.css
+|   |   |       |               simple.css
+|   |   |       |               
+|   |   |       +---eduvers
+|   |   |       |   +---css
+|   |   |       |   |       responsive.css
+|   |   |       |   |       style.css
+|   |   |       |   |       
+|   |   |       |   \---images
+|   |   |       |       +---courses
+|   |   |       |       |       course-details-client-img-1.jpg
+|   |   |       |       |       course-details-img-1.jpg
+|   |   |       |       |       course-details-Instructor-img.jpg
+|   |   |       |       |       course-list-client-img-1.jpg
+|   |   |       |       |       course-list-client-img-2.jpg
+|   |   |       |       |       course-list-client-img-3.jpg
+|   |   |       |       |       course-list-client-img-4.jpg
+|   |   |       |       |       course-list-client-img-5.jpg
+|   |   |       |       |       course-list-img-1.jpg
+|   |   |       |       |       course-list-img-2.jpg
+|   |   |       |       |       course-list-img-3.jpg
+|   |   |       |       |       course-list-img-4.jpg
+|   |   |       |       |       course-list-img-5.jpg
+|   |   |       |       |       courses-1-1.jpg
+|   |   |       |       |       courses-1-2.jpg
+|   |   |       |       |       courses-1-3.jpg
+|   |   |       |       |       courses-1-4.jpg
+|   |   |       |       |       courses-2-1.jpg
+|   |   |       |       |       courses-2-2.jpg
+|   |   |       |       |       courses-2-3.jpg
+|   |   |       |       |       courses-3-1.jpg
+|   |   |       |       |       courses-3-2.jpg
+|   |   |       |       |       courses-3-3.jpg
+|   |   |       |       |       courses-3-4.jpg
+|   |   |       |       |       courses-3-5.jpg
+|   |   |       |       |       courses-3-6.jpg
+|   |   |       |       |       courses-one-client-img-1.jpg
+|   |   |       |       |       courses-one-client-img-2.jpg
+|   |   |       |       |       courses-one-client-img-3.jpg
+|   |   |       |       |       courses-one-client-img-4.jpg
+|   |   |       |       |       courses-three-client-img-1.jpg
+|   |   |       |       |       courses-three-client-img-2.jpg
+|   |   |       |       |       courses-three-client-img-3.jpg
+|   |   |       |       |       courses-three-client-img-4.jpg
+|   |   |       |       |       courses-three-client-img-5.jpg
+|   |   |       |       |       courses-three-client-img-6.jpg
+|   |   |       |       |       
+|   |   |       |       \---icon
+|   |   |       |               cross-out.png
+|   |   |       |               
+|   |   |       +---icons
+|   |   |       |   \---solar-bold
+|   |   |       |           chart-square.svg
+|   |   |       |           clipboard-check.svg
+|   |   |       |           notebook-bookmark.svg
+|   |   |       |           question-square.svg
+|   |   |       |           settings.svg
+|   |   |       |           shield-user.svg
+|   |   |       |           structure.svg
+|   |   |       |           user-id.svg
+|   |   |       |           users-group-rounded.svg
+|   |   |       |           video-library.svg
+|   |   |       |           widget-5.svg
+|   |   |       |           
+|   |   |       +---images
+|   |   |       |   |   avatar-admin.jpg
+|   |   |       |   |   avatar-student.jpg
+|   |   |       |   |   avatar-teacher.jpg
+|   |   |       |   |   learnhub-mark.svg
+|   |   |       |   |   
+|   |   |       |   +---brand
+|   |   |       |   |       thien-ha-so.png
+|   |   |       |   |       
+|   |   |       |   +---eduvers
+|   |   |       |   |       logo-1.png
+|   |   |       |   |       logo-2.png
+|   |   |       |   |       
+|   |   |       |   \---favicons
+|   |   |       |           apple-touch-icon.png
+|   |   |       |           favicon-16x16.png
+|   |   |       |           favicon-32x32.png
+|   |   |       |           favicon.ico
+|   |   |       |           
+|   |   |       +---js
+|   |   |       |       academic-webforms.js
+|   |   |       |       app.js
+|   |   |       |       assignment-grading-webforms.js
+|   |   |       |       content-builder-webforms.js
+|   |   |       |       course-management-webforms.js
+|   |   |       |       global-search-webforms.js
+|   |   |       |       interactive-video.js
+|   |   |       |       question-bank-webforms.js
+|   |   |       |       reports-webforms.js
+|   |   |       |       system-roles-webforms.js
+|   |   |       |       system-settings-webforms.js
+|   |   |       |       system-users-webforms.js
+|   |   |       |       video-editor.js
+|   |   |       |       
+|   |   |       \---vendor
+|   |   |           |   bootstrap-icons.min.css
+|   |   |           |   bootstrap.bundle.min.js
+|   |   |           |   bootstrap.min.css
+|   |   |           |   
+|   |   |           \---fonts
+|   |   |                   bootstrap-icons.woff
+|   |   |                   bootstrap-icons.woff2
+|   |   |                   
+|   |   +---bin
+|   |   |       BCrypt.Net-Next.dll
+|   |   |       DCore.dll
+|   |   |       InformationWeb.dll
+|   |   |       InformationWeb.pdb
+|   |   |       LmsObject.dll
+|   |   |       LmsObject.pdb
+|   |   |       LmsService.dll
+|   |   |       LmsService.pdb
+|   |   |       UrlRewritingNet.UrlRewriter.dll
+|   |   |       
+|   |   +---Controls
+|   |   |   +---Auth
+|   |   |   |       Login.ascx
+|   |   |   |       Login.ascx.cs
+|   |   |   |       Login.ascx.designer.cs
+|   |   |   |       Logout.ascx
+|   |   |   |       Logout.ascx.cs
+|   |   |   |       Logout.ascx.designer.cs
+|   |   |   |       
+|   |   |   +---Cms
+|   |   |   |       AcademicStructure.ascx
+|   |   |   |       AcademicStructure.ascx.cs
+|   |   |   |       AcademicStructure.ascx.designer.cs
+|   |   |   |       AssignmentGrading.ascx
+|   |   |   |       AssignmentGrading.ascx.cs
+|   |   |   |       AssignmentGrading.ascx.designer.cs
+|   |   |   |       ContentBuilder.ascx
+|   |   |   |       ContentBuilder.ascx.cs
+|   |   |   |       ContentBuilder.ascx.designer.cs
+|   |   |   |       Courses.ascx
+|   |   |   |       Courses.ascx.cs
+|   |   |   |       Courses.ascx.designer.cs
+|   |   |   |       Dashboard.ascx
+|   |   |   |       Dashboard.ascx.cs
+|   |   |   |       Dashboard.ascx.designer.cs
+|   |   |   |       Enrollments.ascx
+|   |   |   |       Enrollments.ascx.cs
+|   |   |   |       Enrollments.ascx.designer.cs
+|   |   |   |       Questions.ascx
+|   |   |   |       Questions.ascx.cs
+|   |   |   |       Questions.ascx.designer.cs
+|   |   |   |       Reports.ascx
+|   |   |   |       Reports.ascx.cs
+|   |   |   |       Reports.ascx.designer.cs
+|   |   |   |       Roles.ascx
+|   |   |   |       Roles.ascx.cs
+|   |   |   |       Roles.ascx.designer.cs
+|   |   |   |       Search.ascx
+|   |   |   |       Search.ascx.cs
+|   |   |   |       Search.ascx.designer.cs
+|   |   |   |       Settings.ascx
+|   |   |   |       Settings.ascx.cs
+|   |   |   |       Settings.ascx.designer.cs
+|   |   |   |       Students.ascx
+|   |   |   |       Students.ascx.cs
+|   |   |   |       Students.ascx.designer.cs
+|   |   |   |       Users.ascx
+|   |   |   |       Users.ascx.cs
+|   |   |   |       Users.ascx.designer.cs
+|   |   |   |       VideoEditor.ascx
+|   |   |   |       VideoEditor.ascx.cs
+|   |   |   |       VideoEditor.ascx.designer.cs
+|   |   |   |       VideoLibrary.ascx
+|   |   |   |       VideoLibrary.ascx.cs
+|   |   |   |       VideoLibrary.ascx.designer.cs
+|   |   |   |       
+|   |   |   +---Errors
+|   |   |   |       Error.ascx
+|   |   |   |       Forbidden.ascx
+|   |   |   |       NotFound.ascx
+|   |   |   |       
+|   |   |   \---Lms
+|   |   |           Course.ascx
+|   |   |           Course.ascx.cs
+|   |   |           Course.ascx.designer.cs
+|   |   |           Courses.ascx
+|   |   |           Courses.ascx.cs
+|   |   |           Courses.ascx.designer.cs
+|   |   |           Dashboard.ascx
+|   |   |           Dashboard.ascx.cs
+|   |   |           Dashboard.ascx.designer.cs
+|   |   |           LessonPlayer.ascx
+|   |   |           LessonPlayer.ascx.cs
+|   |   |           LessonPlayer.ascx.designer.cs
+|   |   |           Profile.ascx
+|   |   |           Profile.ascx.cs
+|   |   |           Profile.ascx.designer.cs
+|   |   |           Results.ascx
+|   |   |           Results.ascx.cs
+|   |   |           Results.ascx.designer.cs
+|   |   |           
+|   |   +---Handlers
+|   |   |   \---Lms
+|   |   |           Module.ashx
+|   |   |           Module.ashx.cs
+|   |   |           Upload.ashx
+|   |   |           Upload.ashx.cs
+|   |   |           
+|   |   +---LmsInfrastructure
+|   |   |       CmsStorePage.cs
+|   |   |       LmsRouteConfig.cs
+|   |   |       PageBases.cs
+|   |   |       StudentStorePage.cs
+|   |   |       UserSession.cs
+|   |   |       WebData.cs
+|   |   |       WebLog.cs
+|   |   |       
+|   |   +---MasterPages
+|   |   |       Cms.Master
+|   |   |       Cms.Master.cs
+|   |   |       Lms.Master
+|   |   |       Lms.Master.cs
+|   |   |       
+|   |   +---Media
+|   |   |   +---File
+|   |   |   |   +---Assignments
+|   |   |   |   |   +---192
+|   |   |   |   |   |   \---Students
+|   |   |   |   |   |       \---3
+|   |   |   |   |   |           \---2026
+|   |   |   |   |   |               \---08
+|   |   |   |   |   |                       ec40a9405fef4335b27efacc3e50f023.png
+|   |   |   |   |   |                       
+|   |   |   |   |   +---194
+|   |   |   |   |   |   \---Students
+|   |   |   |   |   |       \---3
+|   |   |   |   |   |           \---2026
+|   |   |   |   |   |               \---08
+|   |   |   |   |   |                       341f563bdc614028a1c0182c5b69fed3.pdf
+|   |   |   |   |   |                       
+|   |   |   |   |   +---60
+|   |   |   |   |   |   \---Students
+|   |   |   |   |   |       \---3
+|   |   |   |   |   |           \---2026
+|   |   |   |   |   |               \---08
+|   |   |   |   |   |                       17b40f90862d43ed9769f64c9ae1b368.png
+|   |   |   |   |   |                       93f17e3ded3f47ebb86ccc9d907c536e.pdf
+|   |   |   |   |   |                       
+|   |   |   |   |   \---62
+|   |   |   |   |       \---Teacher
+|   |   |   |   |           \---2026
+|   |   |   |   |               \---08
+|   |   |   |   |                       e6d0958332a64280bcf596676322a843.pdf
+|   |   |   |   |                       
+|   |   |   |   \---Lessons
+|   |   |   |       \---Demo
+|   |   |   |               51T.XD1_MC_QP_102251_KeHoach.pdf
+|   |   |   |               mau_hk.pdf
+|   |   |   |               STGV.pdf
+|   |   |   |               
+|   |   |   +---Temp
+|   |   |   \---Video
+|   |   |       +---2026
+|   |   |       |   \---08
+|   |   |       |           0ab45ee274d340bfa4ab4ebe6daa9e64.mp4
+|   |   |       |           ab6bc04b520a4b7297c1d22bf339eeef.mp4
+|   |   |       |           
+|   |   |       \---demo
+|   |   |               z22.mp4
+|   |   |               z3.mp4
+|   |   |               z5.mp4
+|   |   |               z6.mp4
+|   |   |               z7.mp4
+|   |   |               
+|   |   +---obj
+|   |   |   +---Debug
+|   |   |   |   |   .NETFramework,Version=v4.0.AssemblyAttributes.cs
+|   |   |   |   |   DesignTimeResolveAssemblyReferencesInput.cache
+|   |   |   |   |   InformationWeb.csproj.FileListAbsolute.txt
+|   |   |   |   |   InformationWeb.csprojResolveAssemblyReference.cache
+|   |   |   |   |   InformationWeb.dll
+|   |   |   |   |   InformationWeb.pdb
+|   |   |   |   |   
+|   |   |   |   \---TempPE
+|   |   |   \---Release
+|   |   |           .NETFramework,Version=v4.0.AssemblyAttributes.cs
+|   |   |           InformationWeb.csproj.FileListAbsolute.txt
+|   |   |           InformationWeb.csprojResolveAssemblyReference.cache
+|   |   |           InformationWeb.dll
+|   |   |           InformationWeb.pdb
+|   |   |           
+|   |   +---Pages
+|   |   |   +---Auth
+|   |   |   |       Login.aspx
+|   |   |   |       Login.aspx.cs
+|   |   |   |       Login.aspx.designer.cs
+|   |   |   |       Logout.aspx
+|   |   |   |       Logout.aspx.cs
+|   |   |   |       Logout.aspx.designer.cs
+|   |   |   |       
+|   |   |   +---Cms
+|   |   |   |       AcademicStructure.aspx
+|   |   |   |       AcademicStructure.aspx.cs
+|   |   |   |       AcademicStructure.aspx.designer.cs
+|   |   |   |       AssignmentGrading.aspx
+|   |   |   |       AssignmentGrading.aspx.cs
+|   |   |   |       AssignmentGrading.aspx.designer.cs
+|   |   |   |       ContentBuilder.aspx
+|   |   |   |       ContentBuilder.aspx.cs
+|   |   |   |       ContentBuilder.aspx.designer.cs
+|   |   |   |       ContentFileUpload.aspx
+|   |   |   |       ContentFileUpload.aspx.cs
+|   |   |   |       ContentProgressDashboard.aspx
+|   |   |   |       ContentProgressDashboard.aspx.cs
+|   |   |   |       ContentTreeManager.aspx
+|   |   |   |       ContentTreeManager.aspx.cs
+|   |   |   |       Courses.aspx
+|   |   |   |       Courses.aspx.cs
+|   |   |   |       Courses.aspx.designer.cs
+|   |   |   |       Dashboard.aspx
+|   |   |   |       Dashboard.aspx.cs
+|   |   |   |       Dashboard.aspx.designer.cs
+|   |   |   |       Enrollments.aspx
+|   |   |   |       Enrollments.aspx.cs
+|   |   |   |       Enrollments.aspx.designer.cs
+|   |   |   |       Questions.aspx
+|   |   |   |       Questions.aspx.cs
+|   |   |   |       Questions.aspx.designer.cs
+|   |   |   |       Reports.aspx
+|   |   |   |       Reports.aspx.cs
+|   |   |   |       Reports.aspx.designer.cs
+|   |   |   |       Roles.aspx
+|   |   |   |       Roles.aspx.cs
+|   |   |   |       Roles.aspx.designer.cs
+|   |   |   |       Search.aspx
+|   |   |   |       Search.aspx.cs
+|   |   |   |       Search.aspx.designer.cs
+|   |   |   |       Settings.aspx
+|   |   |   |       Settings.aspx.cs
+|   |   |   |       Settings.aspx.designer.cs
+|   |   |   |       Students.aspx
+|   |   |   |       Students.aspx.cs
+|   |   |   |       Students.aspx.designer.cs
+|   |   |   |       Users.aspx
+|   |   |   |       Users.aspx.cs
+|   |   |   |       Users.aspx.designer.cs
+|   |   |   |       VideoEditor.aspx
+|   |   |   |       VideoEditor.aspx.cs
+|   |   |   |       VideoEditor.aspx.designer.cs
+|   |   |   |       VideoLibrary.aspx
+|   |   |   |       VideoLibrary.aspx.cs
+|   |   |   |       VideoLibrary.aspx.designer.cs
+|   |   |   |       
+|   |   |   +---Errors
+|   |   |   |       Error.aspx
+|   |   |   |       Error.aspx.cs
+|   |   |   |       Error.aspx.designer.cs
+|   |   |   |       Forbidden.aspx
+|   |   |   |       Forbidden.aspx.cs
+|   |   |   |       Forbidden.aspx.designer.cs
+|   |   |   |       NotFound.aspx
+|   |   |   |       NotFound.aspx.cs
+|   |   |   |       NotFound.aspx.designer.cs
+|   |   |   |       
+|   |   |   \---Lms
+|   |   |           Course.aspx
+|   |   |           Course.aspx.cs
+|   |   |           Course.aspx.designer.cs
+|   |   |           Courses.aspx
+|   |   |           Courses.aspx.cs
+|   |   |           Courses.aspx.designer.cs
+|   |   |           Dashboard.aspx
+|   |   |           Dashboard.aspx.cs
+|   |   |           Dashboard.aspx.designer.cs
+|   |   |           LessonPlayer.aspx
+|   |   |           LessonPlayer.aspx.cs
+|   |   |           LessonPlayer.aspx.designer.cs
+|   |   |           Profile.aspx
+|   |   |           Profile.aspx.cs
+|   |   |           Profile.aspx.designer.cs
+|   |   |           Results.aspx
+|   |   |           Results.aspx.cs
+|   |   |           Results.aspx.designer.cs
+|   |   |           
+|   |   +---Properties
+|   |   |       AssemblyInfo.cs
+|   |   |       
+|   |   \---uploads
+|   +---LmsObject
+|   |   |   LmsObject.csproj
+|   |   |   LMS_AssignmentSubmissionFiles.cs
+|   |   |   LMS_AssignmentSubmissions.cs
+|   |   |   LMS_ContentInteractions.cs
+|   |   |   LMS_Enrollments.cs
+|   |   |   LMS_InteractiveContents.cs
+|   |   |   LMS_LearningSessions.cs
+|   |   |   LMS_LessonComments.cs
+|   |   |   LMS_QuestionAnswerKeys.cs
+|   |   |   LMS_QuestionBlanks.cs
+|   |   |   LMS_QuestionOptions.cs
+|   |   |   LMS_Questions.cs
+|   |   |   LMS_QuizAttemptAnswers.cs
+|   |   |   LMS_QuizAttempts.cs
+|   |   |   LMS_QuizQuestions.cs
+|   |   |   LMS_Quizzes.cs
+|   |   |   LMS_StudentAnswerOptions.cs
+|   |   |   LMS_StudentAnswers.cs
+|   |   |   LMS_StudentLessonProgress.cs
+|   |   |   LMS_StudentVideoProgress.cs
+|   |   |   LMS_StudySessions.cs
+|   |   |   LMS_VideoInteractions.cs
+|   |   |   SIM_Chapters.cs
+|   |   |   SIM_Class.cs
+|   |   |   SIM_Class_Subject.cs
+|   |   |   SIM_Course.cs
+|   |   |   SIM_CourseCategories.cs
+|   |   |   SIM_Courses.cs
+|   |   |   SIM_LessonResources.cs
+|   |   |   SIM_Lessons.cs
+|   |   |   SIM_Science.cs
+|   |   |   SIM_Student.cs
+|   |   |   SIM_Subject.cs
+|   |   |   SIM_Teacher.cs
+|   |   |   SIM_Timetable.cs
+|   |   |   SIM_VideoAssets.cs
+|   |   |   SIM_VideoAssetShares.cs
+|   |   |   SIM_Videos.cs
+|   |   |   SIM_VideoVersions.cs
+|   |   |   SIM_Year.cs
+|   |   |   SYS_AuditLogs.cs
+|   |   |   SYS_Notifications.cs
+|   |   |   SYS_PermissionCategory.cs
+|   |   |   SYS_PermissionGroup.cs
+|   |   |   SYS_Permissions.cs
+|   |   |   SYS_RefreshTokens.cs
+|   |   |   SYS_RolePermissions.cs
+|   |   |   SYS_Roles.cs
+|   |   |   SYS_SystemSettings.cs
+|   |   |   SYS_UserRoles.cs
+|   |   |   SYS_Users.cs
+|   |   |   
+|   |   +---Base
+|   |   |       LMS_AssignmentSubmissionFilesBase.cs
+|   |   |       LMS_AssignmentSubmissionsBase.cs
+|   |   |       LMS_ContentFilesBase.cs
+|   |   |       LMS_ContentInteractionsBase.cs
+|   |   |       LMS_ContentProgressBase.cs
+|   |   |       LMS_ContentTreeBase.cs
+|   |   |       LMS_EnrollmentsBase.cs
+|   |   |       LMS_InteractiveContentsBase.cs
+|   |   |       LMS_LearningSessionsBase.cs
+|   |   |       LMS_LessonCommentsBase.cs
+|   |   |       LMS_QuestionAnswerKeysBase.cs
+|   |   |       LMS_QuestionBlanksBase.cs
+|   |   |       LMS_QuestionOptionsBase.cs
+|   |   |       LMS_QuestionsBase.cs
+|   |   |       LMS_QuizAttemptAnswersBase.cs
+|   |   |       LMS_QuizAttemptsBase.cs
+|   |   |       LMS_QuizQuestionsBase.cs
+|   |   |       LMS_QuizzesBase.cs
+|   |   |       LMS_StudentAnswerOptionsBase.cs
+|   |   |       LMS_StudentAnswersBase.cs
+|   |   |       LMS_StudentLessonProgressBase.cs
+|   |   |       LMS_StudentVideoProgressBase.cs
+|   |   |       LMS_StudySessionsBase.cs
+|   |   |       LMS_VideoInteractionsBase.cs
+|   |   |       SIM_ChaptersBase.cs
+|   |   |       SIM_ClassBase.cs
+|   |   |       SIM_Class_SubjectBase.cs
+|   |   |       SIM_CourseBase.cs
+|   |   |       SIM_CourseCategoriesBase.cs
+|   |   |       SIM_CoursesBase.cs
+|   |   |       SIM_LessonResourcesBase.cs
+|   |   |       SIM_LessonsBase.cs
+|   |   |       SIM_ScienceBase.cs
+|   |   |       SIM_StudentBase.cs
+|   |   |       SIM_SubjectBase.cs
+|   |   |       SIM_TeacherBase.cs
+|   |   |       SIM_TimetableBase.cs
+|   |   |       SIM_VideoAssetsBase.cs
+|   |   |       SIM_VideoAssetSharesBase.cs
+|   |   |       SIM_VideosBase.cs
+|   |   |       SIM_VideoVersionsBase.cs
+|   |   |       SIM_YearBase.cs
+|   |   |       SYS_AuditLogsBase.cs
+|   |   |       SYS_NotificationsBase.cs
+|   |   |       SYS_PermissionCategoryBase.cs
+|   |   |       SYS_PermissionGroupBase.cs
+|   |   |       SYS_PermissionsBase.cs
+|   |   |       SYS_RefreshTokensBase.cs
+|   |   |       SYS_RolePermissionsBase.cs
+|   |   |       SYS_RolesBase.cs
+|   |   |       SYS_SystemSettingsBase.cs
+|   |   |       SYS_UserRolesBase.cs
+|   |   |       SYS_UsersBase.cs
+|   |   |       
+|   |   +---bin
+|   |   |   |   DCore.dll
+|   |   |   |   
+|   |   |   +---Debug
+|   |   |   |       LmsObject.dll
+|   |   |   |       LmsObject.pdb
+|   |   |   |       
+|   |   |   \---Release
+|   |   |           LmsObject.dll
+|   |   |           LmsObject.pdb
+|   |   |           
+|   |   +---obj
+|   |   |   +---Debug
+|   |   |   |   |   .NETFramework,Version=v4.0.AssemblyAttributes.cs
+|   |   |   |   |   DesignTimeResolveAssemblyReferencesInput.cache
+|   |   |   |   |   LmsObject.csproj.FileListAbsolute.txt
+|   |   |   |   |   LmsObject.csprojResolveAssemblyReference.cache
+|   |   |   |   |   LmsObject.dll
+|   |   |   |   |   LmsObject.pdb
+|   |   |   |   |   
+|   |   |   |   \---TempPE
+|   |   |   \---Release
+|   |   |           .NETFramework,Version=v4.0.AssemblyAttributes.cs
+|   |   |           LmsObject.csproj.FileListAbsolute.txt
+|   |   |           LmsObject.dll
+|   |   |           LmsObject.pdb
+|   |   |           
+|   |   \---Properties
+|   |           AssemblyInfo.cs
+|   |           
+|   +---LmsService
+|   |   |   AuthService.cs
+|   |   |   InputGuard.cs
+|   |   |   LmsService.csproj
+|   |   |   LMS_ContentFilesService.cs
+|   |   |   LMS_ContentProgressService.cs
+|   |   |   LMS_ContentTreeService.cs
+|   |   |   LMS_EnrollmentsService.cs
+|   |   |   LMS_LessonCommentsService.cs
+|   |   |   LMS_QuestionsService.cs
+|   |   |   LMS_QuizzesService.cs
+|   |   |   ModuleService.cs
+|   |   |   ModuleServices.cs
+|   |   |   ServiceRegistry.cs
+|   |   |   SIM_CourseService.cs
+|   |   |   SIM_StudentService.cs
+|   |   |   
+|   |   +---bin
+|   |   |   |   BCrypt.Net-Next.dll
+|   |   |   |   
+|   |   |   +---Debug
+|   |   |   |       LmsObject.dll
+|   |   |   |       LmsObject.pdb
+|   |   |   |       LmsService.dll
+|   |   |   |       LmsService.pdb
+|   |   |   |       
+|   |   |   \---Release
+|   |   |           LmsObject.dll
+|   |   |           LmsObject.pdb
+|   |   |           LmsService.dll
+|   |   |           LmsService.pdb
+|   |   |           
+|   |   +---obj
+|   |   |   +---Debug
+|   |   |   |   |   .NETFramework,Version=v4.0.AssemblyAttributes.cs
+|   |   |   |   |   DesignTimeResolveAssemblyReferencesInput.cache
+|   |   |   |   |   LmsService.csproj.FileListAbsolute.txt
+|   |   |   |   |   LmsService.csprojResolveAssemblyReference.cache
+|   |   |   |   |   LmsService.dll
+|   |   |   |   |   LmsService.pdb
+|   |   |   |   |   
+|   |   |   |   \---TempPE
+|   |   |   \---Release
+|   |   |           .NETFramework,Version=v4.0.AssemblyAttributes.cs
+|   |   |           LmsService.csproj.FileListAbsolute.txt
+|   |   |           LmsService.csprojResolveAssemblyReference.cache
+|   |   |           LmsService.dll
+|   |   |           LmsService.pdb
+|   |   |           
+|   |   \---Properties
+|   |           AssemblyInfo.cs
+|   |           
+|   \---SQL_Scripts
+|           Alter_Quiz_AddQuestionBank.sql
+|           Cleanup_SampleData.sql
+|           Create_ContentTree_StoredProcedures.sql
+|           Create_ContentTree_Table.sql
+|           Create_Notifications_Table.sql
+|           Create_Sim_Notification_Procedures.sql
+|           Insert_ContentFiles_SampleData.sql
+|           Insert_ContentProgress_SampleData.sql
+|           Insert_ContentTree_SampleData.sql
+|           INSTALLATION_INSTRUCTIONS.md
+|           Install_SampleData.ps1
+|           NOTIFICATION_FEATURE_IMPLEMENTATION.md
+|           README_SampleData.md
+|           Run_ContentTree_SampleData.bat
+|           Run_SampleData.bat
+|           Test_ContentTree_Workflow.sql
+|           Update_AssignmentSubmission_Grade.sql
+|           Update_AssignmentSubmission_Save.sql
+|           Update_Certificate_Generate.sql
+|           Update_Certificate_GetByUser.sql
+|           Update_Chapter_Create.sql
+|           Update_Chapter_Delete.sql
+|           Update_Chapter_Update.sql
+|           Update_ContentIDs.ps1
+|           Update_ContentProgress_Update.sql
+|           Update_ContentTree_Create.sql
+|           Update_ContentTree_GetTree.sql
+|           Update_ContentTree_Move.sql
+|           Update_Content_GetByLesson.sql
+|           Update_Content_TrackProgress.sql
+|           Update_Course_ChangeStatus.sql
+|           Update_Course_Create.sql
+|           Update_Course_Delete.sql
+|           Update_Course_GetById.sql
+|           Update_Course_GetContent.sql
+|           Update_Course_GetDetails.sql
+|           Update_Course_GetList.sql
+|           Update_Course_Update.sql
+|           Update_Discussion_Create.sql
+|           Update_Discussion_GetByCourse.sql
+|           Update_Discussion_GetDetails.sql
+|           Update_Discussion_Update.sql
+|           Update_Enrollment_Cancel.sql
+|           Update_Enrollment_Create.sql
+|           Update_Enrollment_GetByStudent.sql
+|           Update_Enrollment_RecalculateProgress.sql
+|           Update_Lesson_Create.sql
+|           Update_Lesson_Delete.sql
+|           Update_Lesson_TrackProgress.sql
+|           Update_Lesson_Update.sql
+|           Update_Notification_GetForUser.sql
+|           Update_Notification_MarkAllAsRead.sql
+|           Update_Notification_MarkAsRead.sql
+|           Update_QuestionAnswerKey_Create.sql
+|           Update_QuestionOption_Create.sql
+|           Update_Question_Create.sql
+|           Update_Question_Delete.sql
+|           Update_Question_GetById.sql
+|           Update_Question_GetList.sql
+|           Update_Question_Update.sql
+|           Update_QuizAttempt_Create.sql
+|           Update_QuizAttempt_GetDetails.sql
+|           Update_QuizAttempt_GetGradingView.sql
+|           Update_QuizAttempt_GradeEssay.sql
+|           Update_QuizAttempt_Submit.sql
+|           Update_QuizAttempt_Submit_Mixed.sql
+|           Update_QuizQuestion_Create.sql
+|           Update_QuizQuestion_Delete.sql
+|           Update_QuizQuestion_Update.sql
+|           Update_Quiz_Create.sql
+|           Update_Quiz_Delete.sql
+|           Update_Quiz_GenerateQuestions.sql
+|           Update_Quiz_GetByLesson.sql
+|           Update_Quiz_GetForStudent.sql
+|           Update_Quiz_GetQuestions.sql
+|           Update_Quiz_Update.sql
+|           Update_SurveyAnswer_Create.sql
+|           Update_Survey_SubmitResponse.sql
+|           Update_VideoLibrary_Delete.sql
+|           Update_Video_AttachToLesson.sql
+|           Update_Video_DetachFromLesson.sql
+|           Update_Video_GetByLesson.sql
+|           
+\---WEB-LMS-VS2010-V2
+    |   InformationWeb.sln
+    |   
+    +---docs
+    |   |   interactive-video-flow.html
+    |   |   KE_HOACH_CHUYEN_DOI_FULL.md
+    |   |   
+    |   +---.skill
+    |   |       winforms-object-service-common.mdc
+    |   |       
+    |   +---design-system
+    |   |       boxes.md
+    |   |       buttons.md
+    |   |       cards.md
+    |   |       colors.md
+    |   |       forms.md
+    |   |       icons.md
+    |   |       lists.md
+    |   |       modals.md
+    |   |       notifications.md
+    |   |       README.md
+    |   |       spacing.md
+    |   |       tables.md
+    |   |       typography.md
+    |   |       
+    |   \---_backup
+    |           LMSCMS_DB_SAMPLE_20261014_111255.bak
+    |           
+    +---InformationWeb
+    |   |   Default.aspx
+    |   |   Default.aspx.cs
+    |   |   Default.aspx.designer.cs
+    |   |   favicon.svg
+    |   |   Global.asax
+    |   |   Global.asax.cs
+    |   |   icons.svg
+    |   |   InformationWeb.csproj
+    |   |   InformationWeb.csproj.user
+    |   |   urlrewrite.config
+    |   |   Web.config
+    |   |   
+    |   +---App_Data
+    |   |   +---Logs
+    |   |   |       lms-20260901.log
+    |   |   |       lms-20261014.log
+    |   |   |       lms-20261019.log
+    |   |   |       
+    |   |   \---Temp
+    |   +---assets
+    |   |   \---lms
+    |   |       +---css
+    |   |       |   |   index.css
+    |   |       |   |   webforms.css
+    |   |       |   |   
+    |   |       |   +---components
+    |   |       |   |       action-buttons.css
+    |   |       |   |       cms-page-actions.css
+    |   |       |   |       confirm-dialog.css
+    |   |       |   |       controls.css
+    |   |       |   |       data-display.css
+    |   |       |   |       feedback-states.css
+    |   |       |   |       filter-bar.css
+    |   |       |   |       forms.css
+    |   |       |   |       interactive-content-viewer-webforms.css
+    |   |       |   |       interactive-content-viewer.css
+    |   |       |   |       interactive-video-player.css
+    |   |       |   |       notification-center.css
+    |   |       |   |       overlays.css
+    |   |       |   |       page-back-button.css
+    |   |       |   |       page-header.css
+    |   |       |   |       pagination.css
+    |   |       |   |       student-learning-actions.css
+    |   |       |   |       subject-authoring.css
+    |   |       |   |       surfaces.css
+    |   |       |   |       typography.css
+    |   |       |   |       youtube-video-player.css
+    |   |       |   |       
+    |   |       |   +---core
+    |   |       |   |       base.css
+    |   |       |   |       responsive.css
+    |   |       |   |       tokens.css
+    |   |       |   |       typography-system.css
+    |   |       |   |       utilities.css
+    |   |       |   |       
+    |   |       |   +---layouts
+    |   |       |   |       cms-layout.css
+    |   |       |   |       lms-layout.css
+    |   |       |   |       
+    |   |       |   \---pages
+    |   |       |       +---auth
+    |   |       |       |       login.css
+    |   |       |       |       
+    |   |       |       +---cms
+    |   |       |       |       academic-dialogs.css
+    |   |       |       |       academic-structure.css
+    |   |       |       |       academic-timetable.css
+    |   |       |       |       academic-webforms.css
+    |   |       |       |       assignment-grading-webforms.css
+    |   |       |       |       assignment-grading.css
+    |   |       |       |       content-builder-webforms.css
+    |   |       |       |       content-builder.css
+    |   |       |       |       course-management.css
+    |   |       |       |       dashboard.css
+    |   |       |       |       generic.css
+    |   |       |       |       global-search-webforms.css
+    |   |       |       |       global-search.css
+    |   |       |       |       question-bank.css
+    |   |       |       |       reports.css
+    |   |       |       |       students.css
+    |   |       |       |       system-management-webforms.css
+    |   |       |       |       system-management.css
+    |   |       |       |       video-editor.css
+    |   |       |       |       video-library.css
+    |   |       |       |       
+    |   |       |       +---errors
+    |   |       |       |       error.css
+    |   |       |       |       
+    |   |       |       \---lms
+    |   |       |               dashboard.css
+    |   |       |               lesson-discussion.css
+    |   |       |               lesson-player-webforms.css
+    |   |       |               lesson-player.css
+    |   |       |               results.css
+    |   |       |               simple.css
+    |   |       |               
+    |   |       +---eduvers
+    |   |       |   +---css
+    |   |       |   |       responsive.css
+    |   |       |   |       style.css
+    |   |       |   |       
+    |   |       |   \---images
+    |   |       |       +---courses
+    |   |       |       |       course-details-client-img-1.jpg
+    |   |       |       |       course-details-img-1.jpg
+    |   |       |       |       course-details-Instructor-img.jpg
+    |   |       |       |       course-list-client-img-1.jpg
+    |   |       |       |       course-list-client-img-2.jpg
+    |   |       |       |       course-list-client-img-3.jpg
+    |   |       |       |       course-list-client-img-4.jpg
+    |   |       |       |       course-list-client-img-5.jpg
+    |   |       |       |       course-list-img-1.jpg
+    |   |       |       |       course-list-img-2.jpg
+    |   |       |       |       course-list-img-3.jpg
+    |   |       |       |       course-list-img-4.jpg
+    |   |       |       |       course-list-img-5.jpg
+    |   |       |       |       courses-1-1.jpg
+    |   |       |       |       courses-1-2.jpg
+    |   |       |       |       courses-1-3.jpg
+    |   |       |       |       courses-1-4.jpg
+    |   |       |       |       courses-2-1.jpg
+    |   |       |       |       courses-2-2.jpg
+    |   |       |       |       courses-2-3.jpg
+    |   |       |       |       courses-3-1.jpg
+    |   |       |       |       courses-3-2.jpg
+    |   |       |       |       courses-3-3.jpg
+    |   |       |       |       courses-3-4.jpg
+    |   |       |       |       courses-3-5.jpg
+    |   |       |       |       courses-3-6.jpg
+    |   |       |       |       courses-one-client-img-1.jpg
+    |   |       |       |       courses-one-client-img-2.jpg
+    |   |       |       |       courses-one-client-img-3.jpg
+    |   |       |       |       courses-one-client-img-4.jpg
+    |   |       |       |       courses-three-client-img-1.jpg
+    |   |       |       |       courses-three-client-img-2.jpg
+    |   |       |       |       courses-three-client-img-3.jpg
+    |   |       |       |       courses-three-client-img-4.jpg
+    |   |       |       |       courses-three-client-img-5.jpg
+    |   |       |       |       courses-three-client-img-6.jpg
+    |   |       |       |       
+    |   |       |       \---icon
+    |   |       |               cross-out.png
+    |   |       |               
+    |   |       +---icons
+    |   |       |   \---solar-bold
+    |   |       |           chart-square.svg
+    |   |       |           clipboard-check.svg
+    |   |       |           notebook-bookmark.svg
+    |   |       |           question-square.svg
+    |   |       |           settings.svg
+    |   |       |           shield-user.svg
+    |   |       |           structure.svg
+    |   |       |           user-id.svg
+    |   |       |           users-group-rounded.svg
+    |   |       |           video-library.svg
+    |   |       |           widget-5.svg
+    |   |       |           
+    |   |       +---images
+    |   |       |   |   avatar-admin.jpg
+    |   |       |   |   avatar-student.jpg
+    |   |       |   |   avatar-teacher.jpg
+    |   |       |   |   learnhub-mark.svg
+    |   |       |   |   
+    |   |       |   +---brand
+    |   |       |   |       thien-ha-so.png
+    |   |       |   |       
+    |   |       |   +---eduvers
+    |   |       |   |       logo-1.png
+    |   |       |   |       logo-2.png
+    |   |       |   |       
+    |   |       |   \---favicons
+    |   |       |           apple-touch-icon.png
+    |   |       |           favicon-16x16.png
+    |   |       |           favicon-32x32.png
+    |   |       |           favicon.ico
+    |   |       |           
+    |   |       +---js
+    |   |       |       academic-webforms.js
+    |   |       |       app.js
+    |   |       |       assignment-grading-webforms.js
+    |   |       |       content-builder-webforms.js
+    |   |       |       course-management-webforms.js
+    |   |       |       global-search-webforms.js
+    |   |       |       interactive-video.js
+    |   |       |       question-bank-webforms.js
+    |   |       |       reports-webforms.js
+    |   |       |       system-roles-webforms.js
+    |   |       |       system-settings-webforms.js
+    |   |       |       system-users-webforms.js
+    |   |       |       video-editor.js
+    |   |       |       
+    |   |       \---vendor
+    |   |           |   bootstrap-icons.min.css
+    |   |           |   bootstrap.bundle.min.js
+    |   |           |   bootstrap.min.css
+    |   |           |   
+    |   |           \---fonts
+    |   |                   bootstrap-icons.woff
+    |   |                   bootstrap-icons.woff2
+    |   |                   
+    |   +---bin
+    |   |       BCrypt.Net-Next.dll
+    |   |       DCore.dll
+    |   |       InformationWeb.dll
+    |   |       InformationWeb.pdb
+    |   |       LmsObject.dll
+    |   |       LmsObject.pdb
+    |   |       LmsService.dll
+    |   |       LmsService.pdb
+    |   |       UrlRewritingNet.UrlRewriter.dll
+    |   |       
+    |   +---Controls
+    |   |   +---Auth
+    |   |   |       Login.ascx
+    |   |   |       Login.ascx.cs
+    |   |   |       Login.ascx.designer.cs
+    |   |   |       Logout.ascx
+    |   |   |       Logout.ascx.cs
+    |   |   |       Logout.ascx.designer.cs
+    |   |   |       
+    |   |   +---Cms
+    |   |   |       AcademicStructure.ascx
+    |   |   |       AcademicStructure.ascx.cs
+    |   |   |       AcademicStructure.ascx.designer.cs
+    |   |   |       AssignmentGrading.ascx
+    |   |   |       AssignmentGrading.ascx.cs
+    |   |   |       AssignmentGrading.ascx.designer.cs
+    |   |   |       ContentBuilder.ascx
+    |   |   |       ContentBuilder.ascx.cs
+    |   |   |       ContentBuilder.ascx.designer.cs
+    |   |   |       Courses.ascx
+    |   |   |       Courses.ascx.cs
+    |   |   |       Courses.ascx.designer.cs
+    |   |   |       Dashboard.ascx
+    |   |   |       Dashboard.ascx.cs
+    |   |   |       Dashboard.ascx.designer.cs
+    |   |   |       Enrollments.ascx
+    |   |   |       Enrollments.ascx.cs
+    |   |   |       Enrollments.ascx.designer.cs
+    |   |   |       Questions.ascx
+    |   |   |       Questions.ascx.cs
+    |   |   |       Questions.ascx.designer.cs
+    |   |   |       Reports.ascx
+    |   |   |       Reports.ascx.cs
+    |   |   |       Reports.ascx.designer.cs
+    |   |   |       Roles.ascx
+    |   |   |       Roles.ascx.cs
+    |   |   |       Roles.ascx.designer.cs
+    |   |   |       Search.ascx
+    |   |   |       Search.ascx.cs
+    |   |   |       Search.ascx.designer.cs
+    |   |   |       Settings.ascx
+    |   |   |       Settings.ascx.cs
+    |   |   |       Settings.ascx.designer.cs
+    |   |   |       Students.ascx
+    |   |   |       Students.ascx.cs
+    |   |   |       Students.ascx.designer.cs
+    |   |   |       Users.ascx
+    |   |   |       Users.ascx.cs
+    |   |   |       Users.ascx.designer.cs
+    |   |   |       VideoEditor.ascx
+    |   |   |       VideoEditor.ascx.cs
+    |   |   |       VideoEditor.ascx.designer.cs
+    |   |   |       VideoLibrary.ascx
+    |   |   |       VideoLibrary.ascx.cs
+    |   |   |       VideoLibrary.ascx.designer.cs
+    |   |   |       
+    |   |   +---Errors
+    |   |   |       Error.ascx
+    |   |   |       Forbidden.ascx
+    |   |   |       NotFound.ascx
+    |   |   |       
+    |   |   \---Lms
+    |   |           Course.ascx
+    |   |           Course.ascx.cs
+    |   |           Course.ascx.designer.cs
+    |   |           Courses.ascx
+    |   |           Courses.ascx.cs
+    |   |           Courses.ascx.designer.cs
+    |   |           Dashboard.ascx
+    |   |           Dashboard.ascx.cs
+    |   |           Dashboard.ascx.designer.cs
+    |   |           LessonPlayer.ascx
+    |   |           LessonPlayer.ascx.cs
+    |   |           LessonPlayer.ascx.designer.cs
+    |   |           Profile.ascx
+    |   |           Profile.ascx.cs
+    |   |           Profile.ascx.designer.cs
+    |   |           Results.ascx
+    |   |           Results.ascx.cs
+    |   |           Results.ascx.designer.cs
+    |   |           
+    |   +---Handlers
+    |   |   \---Lms
+    |   |           Module.ashx
+    |   |           Module.ashx.cs
+    |   |           Upload.ashx
+    |   |           Upload.ashx.cs
+    |   |           
+    |   +---LmsInfrastructure
+    |   |       CmsStorePage.cs
+    |   |       LmsRouteConfig.cs
+    |   |       PageBases.cs
+    |   |       StudentStorePage.cs
+    |   |       UserSession.cs
+    |   |       WebData.cs
+    |   |       WebLog.cs
+    |   |       
+    |   +---MasterPages
+    |   |       Cms.Master
+    |   |       Cms.Master.cs
+    |   |       Lms.Master
+    |   |       Lms.Master.cs
+    |   |       
+    |   +---Media
+    |   |   +---File
+    |   |   |   +---Assignments
+    |   |   |   |   +---192
+    |   |   |   |   |   \---Students
+    |   |   |   |   |       \---3
+    |   |   |   |   |           \---2026
+    |   |   |   |   |               \---08
+    |   |   |   |   |                       ec40a9405fef4335b27efacc3e50f023.png
+    |   |   |   |   |                       
+    |   |   |   |   +---194
+    |   |   |   |   |   \---Students
+    |   |   |   |   |       \---3
+    |   |   |   |   |           \---2026
+    |   |   |   |   |               \---08
+    |   |   |   |   |                       341f563bdc614028a1c0182c5b69fed3.pdf
+    |   |   |   |   |                       
+    |   |   |   |   +---60
+    |   |   |   |   |   \---Students
+    |   |   |   |   |       \---3
+    |   |   |   |   |           \---2026
+    |   |   |   |   |               \---08
+    |   |   |   |   |                       17b40f90862d43ed9769f64c9ae1b368.png
+    |   |   |   |   |                       93f17e3ded3f47ebb86ccc9d907c536e.pdf
+    |   |   |   |   |                       
+    |   |   |   |   \---62
+    |   |   |   |       \---Teacher
+    |   |   |   |           \---2026
+    |   |   |   |               \---08
+    |   |   |   |                       e6d0958332a64280bcf596676322a843.pdf
+    |   |   |   |                       
+    |   |   |   \---Lessons
+    |   |   |       \---Demo
+    |   |   |               51T.XD1_MC_QP_102251_KeHoach.pdf
+    |   |   |               mau_hk.pdf
+    |   |   |               STGV.pdf
+    |   |   |               
+    |   |   +---Temp
+    |   |   \---Video
+    |   |       +---2026
+    |   |       |   \---08
+    |   |       |           0ab45ee274d340bfa4ab4ebe6daa9e64.mp4
+    |   |       |           ab6bc04b520a4b7297c1d22bf339eeef.mp4
+    |   |       |           
+    |   |       \---demo
+    |   |               z22.mp4
+    |   |               z3.mp4
+    |   |               z5.mp4
+    |   |               z6.mp4
+    |   |               z7.mp4
+    |   |               
+    |   +---obj
+    |   |   +---Debug
+    |   |   |   |   .NETFramework,Version=v4.0.AssemblyAttributes.cs
+    |   |   |   |   DesignTimeResolveAssemblyReferencesInput.cache
+    |   |   |   |   InformationWeb.csproj.FileListAbsolute.txt
+    |   |   |   |   InformationWeb.csprojResolveAssemblyReference.cache
+    |   |   |   |   InformationWeb.dll
+    |   |   |   |   InformationWeb.pdb
+    |   |   |   |   
+    |   |   |   \---TempPE
+    |   |   \---Release
+    |   |           .NETFramework,Version=v4.0.AssemblyAttributes.cs
+    |   |           InformationWeb.csproj.FileListAbsolute.txt
+    |   |           InformationWeb.csprojResolveAssemblyReference.cache
+    |   |           InformationWeb.dll
+    |   |           InformationWeb.pdb
+    |   |           
+    |   +---Pages
+    |   |   +---Auth
+    |   |   |       Login.aspx
+    |   |   |       Login.aspx.cs
+    |   |   |       Login.aspx.designer.cs
+    |   |   |       Logout.aspx
+    |   |   |       Logout.aspx.cs
+    |   |   |       Logout.aspx.designer.cs
+    |   |   |       
+    |   |   +---Cms
+    |   |   |       AcademicStructure.aspx
+    |   |   |       AcademicStructure.aspx.cs
+    |   |   |       AcademicStructure.aspx.designer.cs
+    |   |   |       AssignmentGrading.aspx
+    |   |   |       AssignmentGrading.aspx.cs
+    |   |   |       AssignmentGrading.aspx.designer.cs
+    |   |   |       ContentBuilder.aspx
+    |   |   |       ContentBuilder.aspx.cs
+    |   |   |       ContentBuilder.aspx.designer.cs
+    |   |   |       Courses.aspx
+    |   |   |       Courses.aspx.cs
+    |   |   |       Courses.aspx.designer.cs
+    |   |   |       Dashboard.aspx
+    |   |   |       Dashboard.aspx.cs
+    |   |   |       Dashboard.aspx.designer.cs
+    |   |   |       Enrollments.aspx
+    |   |   |       Enrollments.aspx.cs
+    |   |   |       Enrollments.aspx.designer.cs
+    |   |   |       Questions.aspx
+    |   |   |       Questions.aspx.cs
+    |   |   |       Questions.aspx.designer.cs
+    |   |   |       Reports.aspx
+    |   |   |       Reports.aspx.cs
+    |   |   |       Reports.aspx.designer.cs
+    |   |   |       Roles.aspx
+    |   |   |       Roles.aspx.cs
+    |   |   |       Roles.aspx.designer.cs
+    |   |   |       Search.aspx
+    |   |   |       Search.aspx.cs
+    |   |   |       Search.aspx.designer.cs
+    |   |   |       Settings.aspx
+    |   |   |       Settings.aspx.cs
+    |   |   |       Settings.aspx.designer.cs
+    |   |   |       Students.aspx
+    |   |   |       Students.aspx.cs
+    |   |   |       Students.aspx.designer.cs
+    |   |   |       Users.aspx
+    |   |   |       Users.aspx.cs
+    |   |   |       Users.aspx.designer.cs
+    |   |   |       VideoEditor.aspx
+    |   |   |       VideoEditor.aspx.cs
+    |   |   |       VideoEditor.aspx.designer.cs
+    |   |   |       VideoLibrary.aspx
+    |   |   |       VideoLibrary.aspx.cs
+    |   |   |       VideoLibrary.aspx.designer.cs
+    |   |   |       
+    |   |   +---Errors
+    |   |   |       Error.aspx
+    |   |   |       Error.aspx.cs
+    |   |   |       Error.aspx.designer.cs
+    |   |   |       Forbidden.aspx
+    |   |   |       Forbidden.aspx.cs
+    |   |   |       Forbidden.aspx.designer.cs
+    |   |   |       NotFound.aspx
+    |   |   |       NotFound.aspx.cs
+    |   |   |       NotFound.aspx.designer.cs
+    |   |   |       
+    |   |   \---Lms
+    |   |           Course.aspx
+    |   |           Course.aspx.cs
+    |   |           Course.aspx.designer.cs
+    |   |           Courses.aspx
+    |   |           Courses.aspx.cs
+    |   |           Courses.aspx.designer.cs
+    |   |           Dashboard.aspx
+    |   |           Dashboard.aspx.cs
+    |   |           Dashboard.aspx.designer.cs
+    |   |           LessonPlayer.aspx
+    |   |           LessonPlayer.aspx.cs
+    |   |           LessonPlayer.aspx.designer.cs
+    |   |           Profile.aspx
+    |   |           Profile.aspx.cs
+    |   |           Profile.aspx.designer.cs
+    |   |           Results.aspx
+    |   |           Results.aspx.cs
+    |   |           Results.aspx.designer.cs
+    |   |           
+    |   +---Properties
+    |   |       AssemblyInfo.cs
+    |   |       
+    |   \---uploads
+    +---LmsObject
+    |   |   LmsObject.csproj
+    |   |   LMS_AssignmentSubmissionFiles.cs
+    |   |   LMS_AssignmentSubmissions.cs
+    |   |   LMS_ContentInteractions.cs
+    |   |   LMS_Enrollments.cs
+    |   |   LMS_InteractiveContents.cs
+    |   |   LMS_LearningSessions.cs
+    |   |   LMS_LessonComments.cs
+    |   |   LMS_QuestionAnswerKeys.cs
+    |   |   LMS_QuestionBlanks.cs
+    |   |   LMS_QuestionOptions.cs
+    |   |   LMS_Questions.cs
+    |   |   LMS_QuizAttemptAnswers.cs
+    |   |   LMS_QuizAttempts.cs
+    |   |   LMS_QuizQuestions.cs
+    |   |   LMS_Quizzes.cs
+    |   |   LMS_StudentAnswerOptions.cs
+    |   |   LMS_StudentAnswers.cs
+    |   |   LMS_StudentLessonProgress.cs
+    |   |   LMS_StudentVideoProgress.cs
+    |   |   LMS_StudySessions.cs
+    |   |   LMS_VideoInteractions.cs
+    |   |   SIM_Chapters.cs
+    |   |   SIM_Class.cs
+    |   |   SIM_Class_Subject.cs
+    |   |   SIM_Course.cs
+    |   |   SIM_CourseCategories.cs
+    |   |   SIM_Courses.cs
+    |   |   SIM_LessonResources.cs
+    |   |   SIM_Lessons.cs
+    |   |   SIM_Science.cs
+    |   |   SIM_Student.cs
+    |   |   SIM_Subject.cs
+    |   |   SIM_Teacher.cs
+    |   |   SIM_Timetable.cs
+    |   |   SIM_VideoAssets.cs
+    |   |   SIM_VideoAssetShares.cs
+    |   |   SIM_Videos.cs
+    |   |   SIM_VideoVersions.cs
+    |   |   SIM_Year.cs
+    |   |   SYS_AuditLogs.cs
+    |   |   SYS_Notifications.cs
+    |   |   SYS_PermissionCategory.cs
+    |   |   SYS_PermissionGroup.cs
+    |   |   SYS_Permissions.cs
+    |   |   SYS_RefreshTokens.cs
+    |   |   SYS_RolePermissions.cs
+    |   |   SYS_Roles.cs
+    |   |   SYS_SystemSettings.cs
+    |   |   SYS_UserRoles.cs
+    |   |   SYS_Users.cs
+    |   |   
+    |   +---Base
+    |   |       LMS_AssignmentSubmissionFilesBase.cs
+    |   |       LMS_AssignmentSubmissionsBase.cs
+    |   |       LMS_ContentInteractionsBase.cs
+    |   |       LMS_EnrollmentsBase.cs
+    |   |       LMS_InteractiveContentsBase.cs
+    |   |       LMS_LearningSessionsBase.cs
+    |   |       LMS_LessonCommentsBase.cs
+    |   |       LMS_QuestionAnswerKeysBase.cs
+    |   |       LMS_QuestionBlanksBase.cs
+    |   |       LMS_QuestionOptionsBase.cs
+    |   |       LMS_QuestionsBase.cs
+    |   |       LMS_QuizAttemptAnswersBase.cs
+    |   |       LMS_QuizAttemptsBase.cs
+    |   |       LMS_QuizQuestionsBase.cs
+    |   |       LMS_QuizzesBase.cs
+    |   |       LMS_StudentAnswerOptionsBase.cs
+    |   |       LMS_StudentAnswersBase.cs
+    |   |       LMS_StudentLessonProgressBase.cs
+    |   |       LMS_StudentVideoProgressBase.cs
+    |   |       LMS_StudySessionsBase.cs
+    |   |       LMS_VideoInteractionsBase.cs
+    |   |       SIM_ChaptersBase.cs
+    |   |       SIM_ClassBase.cs
+    |   |       SIM_Class_SubjectBase.cs
+    |   |       SIM_CourseBase.cs
+    |   |       SIM_CourseCategoriesBase.cs
+    |   |       SIM_CoursesBase.cs
+    |   |       SIM_LessonResourcesBase.cs
+    |   |       SIM_LessonsBase.cs
+    |   |       SIM_ScienceBase.cs
+    |   |       SIM_StudentBase.cs
+    |   |       SIM_SubjectBase.cs
+    |   |       SIM_TeacherBase.cs
+    |   |       SIM_TimetableBase.cs
+    |   |       SIM_VideoAssetsBase.cs
+    |   |       SIM_VideoAssetSharesBase.cs
+    |   |       SIM_VideosBase.cs
+    |   |       SIM_VideoVersionsBase.cs
+    |   |       SIM_YearBase.cs
+    |   |       SYS_AuditLogsBase.cs
+    |   |       SYS_NotificationsBase.cs
+    |   |       SYS_PermissionCategoryBase.cs
+    |   |       SYS_PermissionGroupBase.cs
+    |   |       SYS_PermissionsBase.cs
+    |   |       SYS_RefreshTokensBase.cs
+    |   |       SYS_RolePermissionsBase.cs
+    |   |       SYS_RolesBase.cs
+    |   |       SYS_SystemSettingsBase.cs
+    |   |       SYS_UserRolesBase.cs
+    |   |       SYS_UsersBase.cs
+    |   |       
+    |   +---bin
+    |   |   |   DCore.dll
+    |   |   |   
+    |   |   +---Debug
+    |   |   |       LmsObject.dll
+    |   |   |       LmsObject.pdb
+    |   |   |       
+    |   |   \---Release
+    |   |           LmsObject.dll
+    |   |           LmsObject.pdb
+    |   |           
+    |   +---obj
+    |   |   +---Debug
+    |   |   |   |   .NETFramework,Version=v4.0.AssemblyAttributes.cs
+    |   |   |   |   DesignTimeResolveAssemblyReferencesInput.cache
+    |   |   |   |   LmsObject.csproj.FileListAbsolute.txt
+    |   |   |   |   LmsObject.csprojResolveAssemblyReference.cache
+    |   |   |   |   LmsObject.dll
+    |   |   |   |   LmsObject.pdb
+    |   |   |   |   
+    |   |   |   \---TempPE
+    |   |   \---Release
+    |   |           .NETFramework,Version=v4.0.AssemblyAttributes.cs
+    |   |           LmsObject.csproj.FileListAbsolute.txt
+    |   |           LmsObject.dll
+    |   |           LmsObject.pdb
+    |   |           
+    |   \---Properties
+    |           AssemblyInfo.cs
+    |           
+    \---LmsService
+        |   AuthService.cs
+        |   InputGuard.cs
+        |   LmsService.csproj
+        |   LMS_EnrollmentsService.cs
+        |   LMS_LessonCommentsService.cs
+        |   LMS_QuestionsService.cs
+        |   LMS_QuizzesService.cs
+        |   ModuleService.cs
+        |   ModuleServices.cs
+        |   ServiceRegistry.cs
+        |   SIM_CourseService.cs
+        |   SIM_StudentService.cs
+        |   
+        +---bin
+        |   |   BCrypt.Net-Next.dll
+        |   |   
+        |   +---Debug
+        |   |       LmsObject.dll
+        |   |       LmsObject.pdb
+        |   |       LmsService.dll
+        |   |       LmsService.pdb
+        |   |       
+        |   \---Release
+        |           LmsObject.dll
+        |           LmsObject.pdb
+        |           LmsService.dll
+        |           LmsService.pdb
+        |           
+        +---obj
+        |   +---Debug
+        |   |   |   .NETFramework,Version=v4.0.AssemblyAttributes.cs
+        |   |   |   DesignTimeResolveAssemblyReferencesInput.cache
+        |   |   |   LmsService.csproj.FileListAbsolute.txt
+        |   |   |   LmsService.csprojResolveAssemblyReference.cache
+        |   |   |   LmsService.dll
+        |   |   |   LmsService.pdb
+        |   |   |   
+        |   |   \---TempPE
+        |   \---Release
+        |           .NETFramework,Version=v4.0.AssemblyAttributes.cs
+        |           LmsService.csproj.FileListAbsolute.txt
+        |           LmsService.csprojResolveAssemblyReference.cache
+        |           LmsService.dll
+        |           LmsService.pdb
+        |           
+        \---Properties
+                AssemblyInfo.cs
+                

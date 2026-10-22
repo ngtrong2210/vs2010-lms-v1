@@ -1,0 +1,36 @@
+{
+  "name": "dismiss_pull_request_review",
+  "description": "Dismiss a submitted approve or request-changes review.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Origin namespace (owner) slug, taken from list_namespaces or an earlier Origin result. A GitHub owner or org name is not an Origin namespace unless list_namespaces returns it."
+      },
+      "name": {
+        "type": "string",
+        "description": "Origin repository name within that namespace"
+      },
+      "number": {
+        "type": "number"
+      },
+      "reviewId": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string",
+        "description": "Reason recorded with the dismissal"
+      }
+    },
+    "required": [
+      "owner",
+      "name",
+      "number",
+      "reviewId",
+      "message"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

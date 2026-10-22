@@ -1,0 +1,3 @@
+interface:
+  display_name: "Tách nền chữ ký ZED"
+  short_description: "Tách nền chữ ký số ZED/CD21 theo đúng IN/OUT, canvas, màu và nét."

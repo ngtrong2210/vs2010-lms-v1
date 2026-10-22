@@ -1,0 +1,1940 @@
+{
+  "project": "LMS Web Forms",
+  "version": "1.0",
+  "generatedDate": "2026-10-22",
+  "modules": [
+    {
+      "name": "Authentication",
+      "description": "Login and logout functionality",
+      "testCases": [
+        {
+          "id": "AUTH-001",
+          "title": "Login with valid credentials - Student",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "Controls/Auth/Login.ascx"],
+          "description": "Verify that a student can successfully login with valid credentials",
+          "preconditions": [
+            "User is not authenticated",
+            "Student account exists in database",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter username 'student'",
+            "Enter password '123456'",
+            "Click 'Đăng nhập' button",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456",
+            "expectedRedirect": "/lms/dashboard"
+          },
+          "expectedResult": "User is redirected to /lms/dashboard and session is created",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-002",
+          "title": "Login with valid credentials - Teacher",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "Controls/Auth/Login.ascx"],
+          "description": "Verify that a teacher can successfully login with valid credentials",
+          "preconditions": [
+            "User is not authenticated",
+            "Teacher account exists in database",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter username 'teacher'",
+            "Enter password '123456'",
+            "Click 'Đăng nhập' button",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "username": "teacher",
+            "password": "123456",
+            "expectedRedirect": "/cms/dashboard"
+          },
+          "expectedResult": "User is redirected to /cms/dashboard and session is created",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-003",
+          "title": "Login with valid credentials - Admin",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "Controls/Auth/Login.ascx"],
+          "description": "Verify that an admin can successfully login with valid credentials",
+          "preconditions": [
+            "User is not authenticated",
+            "Admin account exists in database",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter username 'admin'",
+            "Enter password '123456'",
+            "Click 'Đăng nhập' button",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "username": "admin",
+            "password": "123456",
+            "expectedRedirect": "/cms/dashboard"
+          },
+          "expectedResult": "User is redirected to /cms/dashboard and session is created",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-004",
+          "title": "Login with empty username",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "Controls/Auth/Login.ascx"],
+          "description": "Verify that login fails when username is empty",
+          "preconditions": [
+            "User is not authenticated",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Leave username field empty",
+            "Enter password '123456'",
+            "Click 'Đăng nhập' button"
+          ],
+          "testData": {
+            "username": "",
+            "password": "123456"
+          },
+          "expectedResult": "Validation error message 'Vui lòng nhập tên đăng nhập.' is displayed",
+          "priority": "High",
+          "type": "Form Validation",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-005",
+          "title": "Login with empty password",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "Controls/Auth/Login.ascx"],
+          "description": "Verify that login fails when password is empty",
+          "preconditions": [
+            "User is not authenticated",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter username 'student'",
+            "Leave password field empty",
+            "Click 'Đăng nhập' button"
+          ],
+          "testData": {
+            "username": "student",
+            "password": ""
+          },
+          "expectedResult": "Validation error message 'Vui lòng nhập mật khẩu.' is displayed",
+          "priority": "High",
+          "type": "Form Validation",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-006",
+          "title": "Login with invalid credentials",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "Controls/Auth/Login.ascx"],
+          "description": "Verify that login fails with invalid username or password",
+          "preconditions": [
+            "User is not authenticated",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter username 'invaliduser'",
+            "Enter password 'wrongpassword'",
+            "Click 'Đăng nhập' button"
+          ],
+          "testData": {
+            "username": "invaliduser",
+            "password": "wrongpassword"
+          },
+          "expectedResult": "Error message from service is displayed, user stays on login page",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-007",
+          "title": "Remember Me functionality",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "LmsInfrastructure/UserSession.cs"],
+          "description": "Verify that Remember Me checkbox creates persistent cookie",
+          "preconditions": [
+            "User is not authenticated",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter username 'student'",
+            "Enter password '123456'",
+            "Check 'Ghi nhớ đăng nhập' checkbox",
+            "Click 'Đăng nhập' button",
+            "Verify cookie expiration is set"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456",
+            "rememberMe": true
+          },
+          "expectedResult": "Authentication cookie has extended expiration time (120 minutes)",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "Medium"
+        },
+        {
+          "id": "AUTH-008",
+          "title": "Logout functionality",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Logout.ascx.cs", "LmsInfrastructure/UserSession.cs"],
+          "description": "Verify that logout clears session and authentication",
+          "preconditions": [
+            "User is authenticated",
+            "User is logged in"
+          ],
+          "testSteps": [
+            "Navigate to /logout",
+            "Wait for redirect",
+            "Try to access protected page"
+          ],
+          "testData": {},
+          "expectedResult": "User is redirected to login page, session is cleared, authentication cookie is removed",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-009",
+          "title": "Return URL after login - Valid URL",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs"],
+          "description": "Verify that user is redirected to return URL after login",
+          "preconditions": [
+            "User is not authenticated",
+            "Return URL is valid and allowed"
+          ],
+          "testSteps": [
+            "Navigate to /lms/dashboard (should redirect to login with returnUrl)",
+            "Login with valid credentials",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "returnUrl": "/lms/dashboard",
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "User is redirected to the original return URL",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-010",
+          "title": "Return URL validation - Block physical paths",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs"],
+          "description": "Verify that physical paths in return URL are blocked",
+          "preconditions": [
+            "User is not authenticated"
+          ],
+          "testSteps": [
+            "Navigate to /login?returnUrl=/Pages/Cms/Dashboard.aspx",
+            "Login with valid credentials",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "returnUrl": "/Pages/Cms/Dashboard.aspx",
+            "username": "admin",
+            "password": "123456"
+          },
+          "expectedResult": "Return URL is ignored, user redirected to default dashboard",
+          "priority": "High",
+          "type": "Security",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-011",
+          "title": "Return URL validation - Student cannot access CMS",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs"],
+          "description": "Verify that students cannot access CMS via return URL",
+          "preconditions": [
+            "User is not authenticated"
+          ],
+          "testSteps": [
+            "Navigate to /login?returnUrl=/cms/dashboard",
+            "Login with student credentials",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "returnUrl": "/cms/dashboard",
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Return URL is ignored, student redirected to /lms/dashboard",
+          "priority": "High",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-012",
+          "title": "Demo account auto-fill - Student",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx"],
+          "description": "Verify that demo account button auto-fills student credentials",
+          "preconditions": [
+            "User is not authenticated",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Click 'Sinh viên' demo button",
+            "Verify username field contains 'student'",
+            "Verify password field contains '123456'"
+          ],
+          "testData": {
+            "demoButton": "student"
+          },
+          "expectedResult": "Username and password fields are auto-filled with demo credentials",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTH-013",
+          "title": "Password toggle visibility",
+          "module": "Authentication",
+          "sourceFiles": ["Controls/Auth/Login.ascx"],
+          "description": "Verify that password can be shown/hidden via toggle button",
+          "preconditions": [
+            "User is not authenticated",
+            "Login page is accessible"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter password in password field",
+            "Click password toggle button",
+            "Verify password is visible",
+            "Click toggle button again",
+            "Verify password is hidden"
+          ],
+          "testData": {
+            "password": "123456"
+          },
+          "expectedResult": "Password field type toggles between 'password' and 'text'",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        }
+      ]
+    },
+    {
+      "name": "CMS Dashboard",
+      "description": "Admin dashboard with statistics",
+      "testCases": [
+        {
+          "id": "CMS-DASH-001",
+          "title": "Load CMS Dashboard - Admin",
+          "module": "CMS Dashboard",
+          "sourceFiles": ["Controls/Cms/Dashboard.ascx.cs", "Controls/Cms/Dashboard.ascx"],
+          "description": "Verify that admin can load CMS dashboard with statistics",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User has CMS access permission"
+          ],
+          "testSteps": [
+            "Login as admin",
+            "Navigate to /cms/dashboard",
+            "Wait for page load",
+            "Verify statistics are displayed"
+          ],
+          "testData": {
+            "username": "admin",
+            "password": "123456"
+          },
+          "expectedResult": "Dashboard loads with statistics: TotalCourses, TotalStudents, TotalLessons, AverageScore, etc.",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-DASH-002",
+          "title": "CMS Dashboard - Refresh button",
+          "module": "CMS Dashboard",
+          "sourceFiles": ["Controls/Cms/Dashboard.ascx.cs"],
+          "description": "Verify that refresh button reloads dashboard data",
+          "preconditions": [
+            "User is authenticated as admin",
+            "CMS dashboard is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/dashboard",
+            "Click 'Làm mới' button",
+            "Wait for PostBack",
+            "Verify statistics are updated"
+          ],
+          "testData": {},
+          "expectedResult": "Dashboard data is reloaded and statistics are updated",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-DASH-003",
+          "title": "CMS Dashboard - Recent courses display",
+          "module": "CMS Dashboard",
+          "sourceFiles": ["Controls/Cms/Dashboard.ascx.cs"],
+          "description": "Verify that recent courses are displayed (max 6)",
+          "preconditions": [
+            "User is authenticated as admin",
+            "CMS dashboard is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/dashboard",
+            "Count recent courses displayed",
+            "Verify maximum 6 courses shown"
+          ],
+          "testData": {},
+          "expectedResult": "Recent courses list shows up to 6 courses with title, status, and progress",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-DASH-004",
+          "title": "CMS Dashboard - Error handling",
+          "module": "CMS Dashboard",
+          "sourceFiles": ["Controls/Cms/Dashboard.ascx.cs"],
+          "description": "Verify error handling when service fails",
+          "preconditions": [
+            "User is authenticated as admin",
+            "ServiceRegistry.Reports service is unavailable or returns error"
+          ],
+          "testSteps": [
+            "Simulate service failure",
+            "Navigate to /cms/dashboard",
+            "Verify error message is displayed"
+          ],
+          "testData": {},
+          "expectedResult": "Error message 'Không thể nạp số liệu dashboard.' is displayed",
+          "priority": "Medium",
+          "type": "Error Handling",
+          "automationStatus": "Not Automated",
+          "reliability": "Low"
+        },
+        {
+          "id": "CMS-DASH-005",
+          "title": "CMS Dashboard - Admin menu visibility",
+          "module": "CMS Dashboard",
+          "sourceFiles": ["MasterPages/Cms.Master.cs"],
+          "description": "Verify that admin menu is visible for admin users",
+          "preconditions": [
+            "User is authenticated as admin"
+          ],
+          "testSteps": [
+            "Login as admin",
+            "Navigate to /cms/dashboard",
+            "Verify admin menu is visible"
+          ],
+          "testData": {
+            "username": "admin",
+            "password": "123456"
+          },
+          "expectedResult": "Admin menu items are visible in the navigation",
+          "priority": "High",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-DASH-006",
+          "title": "CMS Dashboard - Notification count",
+          "module": "CMS Dashboard",
+          "sourceFiles": ["MasterPages/Cms.Master.cs"],
+          "description": "Verify that notification count is displayed",
+          "preconditions": [
+            "User is authenticated as admin"
+          ],
+          "testSteps": [
+            "Login as admin",
+            "Navigate to /cms/dashboard",
+            "Verify notification count is displayed"
+          ],
+          "testData": {},
+          "expectedResult": "Notification count badge is shown (or 0 if no notifications)",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "Medium"
+        }
+      ]
+    },
+    {
+      "name": "CMS Course Management",
+      "description": "Course CRUD operations in CMS",
+      "testCases": [
+        {
+          "id": "CMS-CRS-001",
+          "title": "Load Course List",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs", "Controls/Cms/Courses.ascx"],
+          "description": "Verify that course list loads successfully",
+          "preconditions": [
+            "User is authenticated as admin or teacher",
+            "User has CMS access permission"
+          ],
+          "testSteps": [
+            "Login as admin",
+            "Navigate to /cms/courses",
+            "Wait for page load",
+            "Verify DataGrid is displayed"
+          ],
+          "testData": {
+            "username": "admin",
+            "password": "123456"
+          },
+          "expectedResult": "Course list is displayed with columns: Year/Semester, Class/Subject, Teacher, Content Status, Students, Actions",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-002",
+          "title": "Course List - Search by subject name",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that search filter works for subject name",
+          "preconditions": [
+            "User is authenticated",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Enter subject name in search field",
+            "Click 'Áp dụng bộ lọc' button",
+            "Wait for PostBack",
+            "Verify filtered results"
+          ],
+          "testData": {
+            "searchTerm": "Toán"
+          },
+          "expectedResult": "Only courses matching the search term are displayed",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-003",
+          "title": "Course List - Filter by Year",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that year filter works correctly",
+          "preconditions": [
+            "User is authenticated",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Select a year from Year dropdown",
+            "Click 'Áp dụng bộ lọc' button",
+            "Wait for PostBack",
+            "Verify filtered results"
+          ],
+          "testData": {
+            "yearFilter": "2024-2025"
+          },
+          "expectedResult": "Only courses for selected year are displayed",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-004",
+          "title": "Course List - Filter by Semester",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that semester filter works correctly",
+          "preconditions": [
+            "User is authenticated",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Select 'Học kỳ 1' from Semester dropdown",
+            "Click 'Áp dụng bộ lọc' button",
+            "Wait for PostBack",
+            "Verify filtered results"
+          ],
+          "testData": {
+            "semesterFilter": "1"
+          },
+          "expectedResult": "Only courses for semester 1 are displayed",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-005",
+          "title": "Course List - Filter by Status",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that course status filter works correctly",
+          "preconditions": [
+            "User is authenticated",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Select 'Đã xuất bản' from Status dropdown",
+            "Click 'Áp dụng bộ lọc' button",
+            "Wait for PostBack",
+            "Verify filtered results"
+          ],
+          "testData": {
+            "statusFilter": "PUBLISHED"
+          },
+          "expectedResult": "Only courses with PUBLISHED status are displayed",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-006",
+          "title": "Course List - Pagination",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that GridView pagination works correctly",
+          "preconditions": [
+            "User is authenticated",
+            "Course list has more than 20 items"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Verify page size is 20",
+            "Click page 2",
+            "Wait for PostBack",
+            "Verify different items are shown"
+          ],
+          "testData": {
+            "pageSize": 20
+          },
+          "expectedResult": "Pagination works, 20 items per page, page navigation changes displayed items",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-007",
+          "title": "Course List - Empty result",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify empty state message when no courses match filter",
+          "preconditions": [
+            "User is authenticated",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Enter non-existent search term",
+            "Click 'Áp dụng bộ lọc' button",
+            "Wait for PostBack"
+          ],
+          "testData": {
+            "searchTerm": "NONEXISTENT123"
+          },
+          "expectedResult": "Message 'Không có môn học lớp phù hợp bộ lọc.' is displayed",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-008",
+          "title": "Open Course Settings Modal",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that course settings modal opens correctly",
+          "preconditions": [
+            "User is authenticated",
+            "Course with existing content is in list"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Click 'Thiết lập' button on a course row",
+            "Wait for modal to appear",
+            "Verify modal fields are populated"
+          ],
+          "testData": {},
+          "expectedResult": "Modal opens with course data: ShortDescription, PassingScore, Status populated correctly",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-009",
+          "title": "Save Course Settings - Valid data",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that course settings can be saved with valid data",
+          "preconditions": [
+            "User is authenticated",
+            "Course settings modal is open"
+          ],
+          "testSteps": [
+            "Open course settings modal",
+            "Modify ShortDescription",
+            "Set PassingScore to 60",
+            "Select Status 'Đã xuất bản'",
+            "Click 'Lưu thiết lập' button",
+            "Wait for UpdatePanel update",
+            "Verify success message"
+          ],
+          "testData": {
+            "shortDescription": "Updated description",
+            "passingScore": 60,
+            "status": "PUBLISHED"
+          },
+          "expectedResult": "Success message 'Đã cập nhật thiết lập môn học lớp.' is displayed, modal closes, data is updated",
+          "priority": "High",
+          "type": "CRUD",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-010",
+          "title": "Save Course Settings - Invalid Passing Score",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that invalid passing score is rejected",
+          "preconditions": [
+            "User is authenticated",
+            "Course settings modal is open"
+          ],
+          "testSteps": [
+            "Open course settings modal",
+            "Set PassingScore to 150 (out of range)",
+            "Click 'Lưu thiết lập' button",
+            "Wait for response"
+          ],
+          "testData": {
+            "passingScore": 150
+          },
+          "expectedResult": "Error message 'Thiết lập môn học không hợp lệ.' is displayed, modal stays open",
+          "priority": "High",
+          "type": "Form Validation",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-011",
+          "title": "Save Course Settings - Negative Passing Score",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that negative passing score is rejected",
+          "preconditions": [
+            "User is authenticated",
+            "Course settings modal is open"
+          ],
+          "testSteps": [
+            "Open course settings modal",
+            "Set PassingScore to -10",
+            "Click 'Lưu thiết lập' button",
+            "Wait for response"
+          ],
+          "testData": {
+            "passingScore": -10
+          },
+          "expectedResult": "Error message 'Thiết lập môn học không hợp lệ.' is displayed, modal stays open",
+          "priority": "High",
+          "type": "Form Validation",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-012",
+          "title": "Save Course Settings - Non-numeric Passing Score",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that non-numeric passing score is rejected",
+          "preconditions": [
+            "User is authenticated",
+            "Course settings modal is open"
+          ],
+          "testSteps": [
+            "Open course settings modal",
+            "Set PassingScore to 'abc'",
+            "Click 'Lưu thiết lập' button",
+            "Wait for response"
+          ],
+          "testData": {
+            "passingScore": "abc"
+          },
+          "expectedResult": "Error message 'Thiết lập môn học không hợp lệ.' is displayed, modal stays open",
+          "priority": "High",
+          "type": "Form Validation",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-013",
+          "title": "Close Course Settings Modal",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx"],
+          "description": "Verify that modal can be closed without saving",
+          "preconditions": [
+            "User is authenticated",
+            "Course settings modal is open"
+          ],
+          "testSteps": [
+            "Open course settings modal",
+            "Modify some fields",
+            "Click 'Hủy' button or close button",
+            "Wait for modal to close",
+            "Verify changes were not saved"
+          ],
+          "testData": {},
+          "expectedResult": "Modal closes, changes are discarded, no success message shown",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-014",
+          "title": "Ensure Workspace - Create new course",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that new course workspace can be created",
+          "preconditions": [
+            "User is authenticated",
+            "ClassSubject without OnlineCourse exists in list"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Find row with 'Chưa khởi tạo' status",
+            "Click 'Khởi tạo nội dung' button",
+            "Wait for PostBack",
+            "Verify success message"
+          ],
+          "testData": {},
+          "expectedResult": "Success message 'Đã khởi tạo nội dung môn học lớp.' is displayed, course status changes to 'Bản nháp'",
+          "priority": "High",
+          "type": "CRUD",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-015",
+          "title": "Navigate to Course Content Editor",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that 'Soạn bài' button navigates to content editor",
+          "preconditions": [
+            "User is authenticated",
+            "Course with content exists"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Click 'Soạn bài' button on a course row",
+            "Wait for navigation"
+          ],
+          "testData": {},
+          "expectedResult": "User is navigated to /cms/courses/{id}/content",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-CRS-016",
+          "title": "Course Status Labels",
+          "module": "CMS Course Management",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that course status labels are displayed correctly",
+          "preconditions": [
+            "User is authenticated",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Verify status badges for different courses",
+            "Check: 'Chưa khởi tạo', 'Bản nháp', 'Đã xuất bản', 'Lưu trữ'"
+          ],
+          "testData": {},
+          "expectedResult": "Status badges display correct labels and colors for each status",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        }
+      ]
+    },
+    {
+      "name": "CMS User Management",
+      "description": "User CRUD operations in CMS",
+      "testCases": [
+        {
+          "id": "CMS-USR-001",
+          "title": "Load User List",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs", "Controls/Cms/Users.ascx"],
+          "description": "Verify that user list loads successfully",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User has admin permission"
+          ],
+          "testSteps": [
+            "Login as admin",
+            "Navigate to /cms/users",
+            "Wait for page load",
+            "Verify DataGrid is displayed"
+          ],
+          "testData": {
+            "username": "admin",
+            "password": "123456"
+          },
+          "expectedResult": "User list is displayed with columns: Avatar, Name, Email, Code, Status, Last Login, Actions",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-002",
+          "title": "User Management - Admin only access",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that only admins can access user management",
+          "preconditions": [
+            "User is authenticated as teacher (not admin)"
+          ],
+          "testSteps": [
+            "Login as teacher",
+            "Navigate to /cms/users",
+            "Verify access is denied"
+          ],
+          "testData": {
+            "username": "teacher",
+            "password": "123456"
+          },
+          "expectedResult": "User is redirected to 403 Forbidden page",
+          "priority": "High",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-003",
+          "title": "Create New User - Valid data",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that new user can be created with valid data",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User management page is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Click 'Thêm người dùng mới' button",
+            "Wait for modal to open",
+            "Enter username 'testuser'",
+            "Enter full name 'Test User'",
+            "Enter email 'test@example.com'",
+            "Select at least one role",
+            "Enter password 'Test123!'",
+            "Click 'Lưu người dùng' button",
+            "Wait for response"
+          ],
+          "testData": {
+            "username": "testuser",
+            "fullName": "Test User",
+            "email": "test@example.com",
+            "password": "Test123!",
+            "roles": ["STUDENT"]
+          },
+          "expectedResult": "Success message 'Đã tạo người dùng.' is displayed, new user appears in list",
+          "priority": "High",
+          "type": "CRUD",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-004",
+          "title": "Create User - Missing required fields",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user creation fails with missing required fields",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User management page is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Click 'Thêm người dùng mới' button",
+            "Leave username empty",
+            "Leave full name empty",
+            "Leave email empty",
+            "Click 'Lưu người dùng' button"
+          ],
+          "testData": {},
+          "expectedResult": "Error message 'Vui lòng nhập tên đăng nhập, họ tên và email.' is displayed",
+          "priority": "High",
+          "type": "Form Validation",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-005",
+          "title": "Create User - No role selected",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user creation fails when no role is selected",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User management page is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Click 'Thêm người dùng mới' button",
+            "Enter username 'testuser2'",
+            "Enter full name 'Test User 2'",
+            "Enter email 'test2@example.com'",
+            "Deselect all roles",
+            "Click 'Lưu người dùng' button"
+          ],
+          "testData": {
+            "username": "testuser2",
+            "fullName": "Test User 2",
+            "email": "test2@example.com",
+            "roles": []
+          },
+          "expectedResult": "Error message 'Người dùng phải có ít nhất một vai trò.' is displayed",
+          "priority": "High",
+          "type": "Form Validation",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-006",
+          "title": "Edit User",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that existing user can be edited",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Click 'Edit' button on a user row",
+            "Wait for modal to open",
+            "Verify user data is populated",
+            "Modify full name",
+            "Click 'Lưu người dùng' button",
+            "Wait for response"
+          ],
+          "testData": {
+            "newFullName": "Updated Name"
+          },
+          "expectedResult": "Success message 'Đã cập nhật người dùng.' is displayed, changes are saved",
+          "priority": "High",
+          "type": "CRUD",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-007",
+          "title": "Edit User - Username disabled",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that username field is disabled when editing user",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Click 'Edit' button on a user row",
+            "Wait for modal to open",
+            "Verify username field is disabled"
+          ],
+          "testData": {},
+          "expectedResult": "Username field is read-only/disabled, cannot be modified",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-008",
+          "title": "Set User Status - Active",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user status can be set to Active",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User with non-active status exists"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Click 'Activate' button on a locked/inactive user",
+            "Wait for PostBack",
+            "Verify success message"
+          ],
+          "testData": {},
+          "expectedResult": "Success message 'Đã mở tài khoản.' is displayed, user status changes to ACTIVE",
+          "priority": "High",
+          "type": "CRUD",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-009",
+          "title": "Set User Status - Locked",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user status can be set to Locked",
+          "preconditions": [
+            "User is authenticated as admin",
+            "Active user exists"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Click 'Lock' button on an active user",
+            "Wait for PostBack",
+            "Verify success message"
+          ],
+          "testData": {},
+          "expectedResult": "Success message 'Đã khóa tài khoản.' is displayed, user status changes to LOCKED",
+          "priority": "High",
+          "type": "CRUD",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-010",
+          "title": "User Search - By name",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user search works by name",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Enter user name in search field",
+            "Click search or press Enter",
+            "Wait for PostBack",
+            "Verify filtered results"
+          ],
+          "testData": {
+            "searchTerm": "student"
+          },
+          "expectedResult": "Only users matching search term are displayed",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-011",
+          "title": "User Filter - By Role",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user can be filtered by role",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Select role from Role dropdown",
+            "Click apply filter",
+            "Wait for PostBack",
+            "Verify filtered results"
+          ],
+          "testData": {
+            "roleFilter": "STUDENT"
+          },
+          "expectedResult": "Only users with selected role are displayed",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-012",
+          "title": "User Filter - By Status",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user can be filtered by status",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Select status from Status dropdown",
+            "Click apply filter",
+            "Wait for PostBack",
+            "Verify filtered results"
+          ],
+          "testData": {
+            "statusFilter": "ACTIVE"
+          },
+          "expectedResult": "Only users with selected status are displayed",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-013",
+          "title": "User Initials Display",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user initials are displayed correctly in avatar",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Check avatar initials for various users"
+          ],
+          "testData": {},
+          "expectedResult": "Initials are generated correctly (first letter of first and last name, or first letter if single name)",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-014",
+          "title": "User Status Labels",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that user status labels are displayed correctly",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Verify status badges for different users",
+            "Check: 'Đang hoạt động', 'Ngừng hoạt động', 'Đã khóa'"
+          ],
+          "testData": {},
+          "expectedResult": "Status badges display correct labels and colors (green for ACTIVE, red for LOCKED, yellow for INACTIVE)",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "CMS-USR-015",
+          "title": "Last Login Display",
+          "module": "CMS User Management",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that last login time is displayed correctly",
+          "preconditions": [
+            "User is authenticated as admin",
+            "User list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/users",
+            "Check last login column"
+          ],
+          "testData": {},
+          "expectedResult": "Last login time is displayed in format 'dd/MM/yyyy HH:mm' or 'Chưa đăng nhập' if never logged in",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        }
+      ]
+    },
+    {
+      "name": "LMS Dashboard",
+      "description": "Student dashboard with learning progress",
+      "testCases": [
+        {
+          "id": "LMS-DASH-001",
+          "title": "Load LMS Dashboard - Student",
+          "module": "LMS Dashboard",
+          "sourceFiles": ["Controls/Lms/Dashboard.ascx.cs", "Controls/Lms/Dashboard.ascx"],
+          "description": "Verify that student can load LMS dashboard",
+          "preconditions": [
+            "User is authenticated as student",
+            "User has LMS access permission"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /lms/dashboard",
+            "Wait for page load",
+            "Verify dashboard elements are displayed"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Dashboard loads with: ActiveCourseCount, CompletedLessonCount, AverageScore, LearningTime, recent courses",
+          "priority": "Critical",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "LMS-DASH-002",
+          "title": "LMS Dashboard - Personalized greeting",
+          "module": "LMS Dashboard",
+          "sourceFiles": ["Controls/Lms/Dashboard.ascx.cs"],
+          "description": "Verify that dashboard shows personalized greeting with user name",
+          "preconditions": [
+            "User is authenticated as student"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /lms/dashboard",
+            "Check page title"
+          ],
+          "testData": {
+            "username": "student"
+          },
+          "expectedResult": "Page title shows 'Xin chào, {FullName} 👋'",
+          "priority": "Low",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "LMS-DASH-003",
+          "title": "LMS Dashboard - Statistics display",
+          "module": "LMS Dashboard",
+          "sourceFiles": ["Controls/Lms/Dashboard.ascx.cs"],
+          "description": "Verify that learning statistics are displayed correctly",
+          "preconditions": [
+            "User is authenticated as student"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /lms/dashboard",
+            "Verify statistics values"
+          ],
+          "testData": {},
+          "expectedResult": "Statistics displayed: ActiveCourseCount, CompletedLessonCount, AverageScore, LearningTime (formatted as Xg Yp)",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "LMS-DASH-004",
+          "title": "LMS Dashboard - Recent courses",
+          "module": "LMS Dashboard",
+          "sourceFiles": ["Controls/Lms/Dashboard.ascx.cs"],
+          "description": "Verify that recent courses are displayed (max 2)",
+          "preconditions": [
+            "User is authenticated as student",
+            "Student has enrolled courses"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /lms/dashboard",
+            "Count recent courses displayed"
+          ],
+          "testData": {},
+          "expectedResult": "Recent courses list shows up to 2 courses with progress information",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "LMS-DASH-005",
+          "title": "LMS Dashboard - Continue button",
+          "module": "LMS Dashboard",
+          "sourceFiles": ["Controls/Lms/Dashboard.ascx.cs"],
+          "description": "Verify that continue button navigates to correct lesson",
+          "preconditions": [
+            "User is authenticated as student",
+            "Student has enrolled courses with progress"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /lms/dashboard",
+            "Click 'Tiếp tục học' button",
+            "Wait for navigation"
+          ],
+          "testData": {},
+          "expectedResult": "User is navigated to /lms/courses/{id}/lessons/{lessonId} (continue lesson)",
+          "priority": "High",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "LMS-DASH-006",
+          "title": "LMS Dashboard - Empty state",
+          "module": "LMS Dashboard",
+          "sourceFiles": ["Controls/Lms/Dashboard.ascx.cs"],
+          "description": "Verify dashboard shows empty state when no courses",
+          "preconditions": [
+            "User is authenticated as student",
+            "Student has no enrolled courses"
+          ],
+          "testSteps": [
+            "Login as student with no courses",
+            "Navigate to /lms/dashboard",
+            "Verify empty state message"
+          ],
+          "testData": {},
+          "expectedResult": "Empty state message is displayed, continue button is hidden",
+          "priority": "Medium",
+          "type": "Functional",
+          "automationStatus": "Not Automated",
+          "reliability": "Medium"
+        },
+        {
+          "id": "LMS-DASH-007",
+          "title": "LMS Dashboard - Error handling",
+          "module": "LMS Dashboard",
+          "sourceFiles": ["Controls/Lms/Dashboard.ascx.cs"],
+          "description": "Verify error handling when service fails",
+          "preconditions": [
+            "User is authenticated as student",
+            "ServiceRegistry.Learning service is unavailable"
+          ],
+          "testSteps": [
+            "Simulate service failure",
+            "Navigate to /lms/dashboard",
+            "Verify error message"
+          ],
+          "testData": {},
+          "expectedResult": "Error message 'Không thể nạp dữ liệu học tập.' is displayed",
+          "priority": "Medium",
+          "type": "Error Handling",
+          "automationStatus": "Not Automated",
+          "reliability": "Low"
+        }
+      ]
+    },
+    {
+      "name": "Authorization",
+      "description": "Role-based access control tests",
+      "testCases": [
+        {
+          "id": "AUTHZ-001",
+          "title": "Student cannot access CMS Dashboard",
+          "module": "Authorization",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs"],
+          "description": "Verify that students are redirected from CMS to LMS",
+          "preconditions": [
+            "User is authenticated as student"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /cms/dashboard",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Student is redirected to /lms/dashboard",
+          "priority": "Critical",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTHZ-002",
+          "title": "Student cannot access CMS Courses",
+          "module": "Authorization",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs"],
+          "description": "Verify that students cannot access course management",
+          "preconditions": [
+            "User is authenticated as student"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /cms/courses",
+            "Wait for redirect"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Student is redirected to /lms/dashboard",
+          "priority": "Critical",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTHZ-003",
+          "title": "Student cannot access CMS Users",
+          "module": "Authorization",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs", "Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that students cannot access user management",
+          "preconditions": [
+            "User is authenticated as student"
+          ],
+          "testSteps": [
+            "Login as student",
+            "Navigate to /cms/users",
+            "Wait for redirect or 403"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Student is redirected to /lms/dashboard or shown 403 Forbidden",
+          "priority": "Critical",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTHZ-004",
+          "title": "Teacher can access CMS Dashboard",
+          "module": "Authorization",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs"],
+          "description": "Verify that teachers can access CMS",
+          "preconditions": [
+            "User is authenticated as teacher"
+          ],
+          "testSteps": [
+            "Login as teacher",
+            "Navigate to /cms/dashboard",
+            "Wait for page load"
+          ],
+          "testData": {
+            "username": "teacher",
+            "password": "123456"
+          },
+          "expectedResult": "CMS dashboard loads successfully",
+          "priority": "High",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTHZ-005",
+          "title": "Admin can access CMS Users",
+          "module": "Authorization",
+          "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that admins can access user management",
+          "preconditions": [
+            "User is authenticated as admin"
+          ],
+          "testSteps": [
+            "Login as admin",
+            "Navigate to /cms/users",
+            "Wait for page load"
+          ],
+          "testData": {
+            "username": "admin",
+            "password": "123456"
+          },
+          "expectedResult": "User management page loads successfully",
+          "priority": "High",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTHZ-006",
+          "title": "Teacher cannot access CMS Users",
+          "module": "Authorization",
+      "sourceFiles": ["Controls/Cms/Users.ascx.cs"],
+          "description": "Verify that teachers cannot access user management",
+          "preconditions": [
+            "User is authenticated as teacher"
+          ],
+          "testSteps": [
+            "Login as teacher",
+            "Navigate to /cms/users",
+            "Wait for redirect or 403"
+          ],
+          "testData": {
+            "username": "teacher",
+            "password": "123456"
+          },
+          "expectedResult": "Teacher is redirected to 403 Forbidden page",
+          "priority": "High",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTHZ-007",
+          "title": "Guest cannot access protected pages",
+          "module": "Authorization",
+          "sourceFiles": ["Web.config"],
+          "description": "Verify that unauthenticated users are redirected to login",
+          "preconditions": [
+            "User is not authenticated"
+          ],
+          "testSteps": [
+            "Navigate to /cms/dashboard",
+            "Wait for redirect"
+          ],
+          "testData": {},
+          "expectedResult": "User is redirected to /login with returnUrl",
+          "priority": "Critical",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "AUTHZ-008",
+          "title": "Admin menu visibility",
+          "module": "Authorization",
+          "sourceFiles": ["MasterPages/Cms.Master.cs"],
+          "description": "Verify that admin menu is only visible to admins",
+          "preconditions": [
+            "User is authenticated"
+          ],
+          "testSteps": [
+            "Login as admin",
+            "Navigate to /cms/dashboard",
+            "Verify admin menu is visible",
+            "Logout",
+            "Login as teacher",
+            "Navigate to /cms/dashboard",
+            "Verify admin menu is not visible"
+          ],
+          "testData": {},
+          "expectedResult": "Admin menu visible for admin, hidden for teacher",
+          "priority": "High",
+          "type": "Authorization",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        }
+      ]
+    },
+    {
+      "name": "Error Handling",
+      "description": "Error page and error handling tests",
+      "testCases": [
+        {
+          "id": "ERR-001",
+          "title": "404 Not Found page",
+          "module": "Error Handling",
+          "sourceFiles": ["Pages/Errors/NotFound.aspx", "Web.config"],
+          "description": "Verify that 404 page is displayed for non-existent routes",
+          "preconditions": [
+            "Any user state"
+          ],
+          "testSteps": [
+            "Navigate to /non-existent-page",
+            "Wait for response"
+          ],
+          "testData": {},
+          "expectedResult": "404 Not Found page is displayed",
+          "priority": "Medium",
+          "type": "Error Handling",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "ERR-002",
+          "title": "403 Forbidden page",
+          "module": "Error Handling",
+          "sourceFiles": ["Pages/Errors/Forbidden.aspx", "Web.config"],
+          "description": "Verify that 403 page is displayed for unauthorized access",
+          "preconditions": [
+            "User is authenticated but lacks permission"
+          ],
+          "testSteps": [
+            "Login as teacher",
+            "Navigate to /cms/users",
+            "Wait for response"
+          ],
+          "testData": {
+            "username": "teacher",
+            "password": "123456"
+          },
+          "expectedResult": "403 Forbidden page is displayed",
+          "priority": "Medium",
+          "type": "Error Handling",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "ERR-003",
+          "title": "General Error page",
+          "module": "Error Handling",
+          "sourceFiles": ["Pages/Errors/Error.aspx", "Web.config"],
+          "description": "Verify that general error page is displayed for unhandled errors",
+          "preconditions": [
+            "Application error occurs"
+          ],
+          "testSteps": [
+            "Trigger an application error (simulated)",
+            "Wait for response"
+          ],
+          "testData": {},
+          "expectedResult": "General error page is displayed",
+          "priority": "Low",
+          "type": "Error Handling",
+          "automationStatus": "Not Automated",
+          "reliability": "Low"
+        }
+      ]
+    },
+    {
+      "name": "PostBack",
+      "description": "ASP.NET PostBack mechanism tests",
+      "testCases": [
+        {
+          "id": "PB-001",
+          "title": "Login Full PostBack",
+          "module": "PostBack",
+          "sourceFiles": ["Controls/Auth/Login.ascx.cs"],
+          "description": "Verify that login triggers full PostBack",
+          "preconditions": [
+            "User is not authenticated"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Enter credentials",
+            "Click login button",
+            "Monitor network activity"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Full page PostBack occurs, form data is submitted to server",
+          "priority": "Medium",
+          "type": "PostBack",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "PB-002",
+          "title": "Course Settings Partial PostBack",
+          "module": "PostBack",
+          "sourceFiles": ["Controls/Cms/Courses.ascx"],
+          "description": "Verify that course settings modal uses UpdatePanel",
+          "preconditions": [
+            "User is authenticated as admin",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Click 'Thiết lập' button",
+            "Monitor network activity",
+            "Modify settings and save",
+            "Monitor network activity"
+          ],
+          "testData": {},
+          "expectedResult": "Partial PostBack occurs via UpdatePanel, only modal content updates",
+          "priority": "Medium",
+          "type": "PostBack",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "PB-003",
+          "title": "GridView RowCommand PostBack",
+          "module": "PostBack",
+          "sourceFiles": ["Controls/Cms/Courses.ascx.cs"],
+          "description": "Verify that GridView row commands trigger PostBack",
+          "preconditions": [
+            "User is authenticated as admin",
+            "Course list is loaded"
+          ],
+          "testSteps": [
+            "Navigate to /cms/courses",
+            "Click 'Khởi tạo nội dung' button",
+            "Monitor network activity"
+          ],
+          "testData": {},
+          "expectedResult": "PostBack occurs with CommandName and CommandArgument",
+          "priority": "Medium",
+          "type": "PostBack",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        }
+      ]
+    },
+    {
+      "name": "Session",
+      "description": "Session management tests",
+      "testCases": [
+        {
+          "id": "SESS-001",
+          "title": "Session creation on login",
+          "module": "Session",
+          "sourceFiles": ["LmsInfrastructure/UserSession.cs"],
+          "description": "Verify that session is created when user logs in",
+          "preconditions": [
+            "User is not authenticated"
+          ],
+          "testSteps": [
+            "Navigate to /login",
+            "Login with valid credentials",
+            "Check session cookie",
+            "Access protected page"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Session is created, authentication cookie is set, user can access protected pages",
+          "priority": "High",
+          "type": "Session",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "SESS-002",
+          "title": "Session clear on logout",
+          "module": "Session",
+          "sourceFiles": ["LmsInfrastructure/UserSession.cs"],
+          "description": "Verify that session is cleared when user logs out",
+          "preconditions": [
+            "User is authenticated"
+          ],
+          "testSteps": [
+            "Login with valid credentials",
+            "Navigate to /logout",
+            "Try to access protected page"
+          ],
+          "testData": {
+            "username": "student",
+            "password": "123456"
+          },
+          "expectedResult": "Session is cleared, authentication cookie is removed, user is redirected to login",
+          "priority": "High",
+          "type": "Session",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "SESS-003",
+          "title": "Session persistence across pages",
+          "module": "Session",
+          "sourceFiles": ["LmsInfrastructure/UserSession.cs"],
+          "description": "Verify that session persists across page navigation",
+          "preconditions": [
+            "User is authenticated"
+          ],
+          "testSteps": [
+            "Login with valid credentials",
+            "Navigate to /cms/dashboard",
+            "Navigate to /cms/courses",
+            "Navigate to /cms/users",
+            "Verify user remains authenticated"
+          ],
+          "testData": {
+            "username": "admin",
+            "password": "123456"
+          },
+          "expectedResult": "Session persists, user remains authenticated across all pages",
+          "priority": "High",
+          "type": "Session",
+          "automationStatus": "Not Automated",
+          "reliability": "High"
+        },
+        {
+          "id": "SESS-004",
+          "title": "Session timeout behavior",
+          "module": "Session",
+          "sourceFiles": ["Web.config", "LmsInfrastructure/UserSession.cs"],
+          "description": "Verify that session expires after timeout (120 minutes)",
+          "preconditions": [
+            "User is authenticated"
+          ],
+          "testSteps": [
+            "Login with valid credentials",
+            "Wait for session timeout (120 minutes or simulate)",
+            "Try to access protected page"
+          ],
+          "testData": {
+            "timeoutMinutes": 120
+          },
+          "expectedResult": "Session is expired, user is redirected to login",
+          "priority": "Medium",
+          "type": "Session",
+          "automationStatus": "Not Automated",
+          "reliability": "Medium"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "totalTestCases": 67,
+    "byPriority": {
+      "Critical": 16,
+      "High": 34,
+      "Medium": 15,
+      "Low": 2
+    },
+    "byType": {
+      "Functional": 35,
+      "Form Validation": 12,
+      "CRUD": 9,
+      "Authorization": 8,
+      "Error Handling": 3,
+      "PostBack": 3,
+      "Session": 4,
+      "Security": 1
+    },
+    "byModule": {
+      "Authentication": 13,
+      "CMS Dashboard": 6,
+      "CMS Course Management": 16,
+      "CMS User Management": 15,
+      "LMS Dashboard": 7,
+      "Authorization": 8,
+      "Error Handling": 3,
+      "PostBack": 3,
+      "Session": 4
+    },
+    "automationStatus": {
+      "Not Automated": 67,
+      "Automated": 0,
+      "Partially Automated": 0
+    }
+  }
+}

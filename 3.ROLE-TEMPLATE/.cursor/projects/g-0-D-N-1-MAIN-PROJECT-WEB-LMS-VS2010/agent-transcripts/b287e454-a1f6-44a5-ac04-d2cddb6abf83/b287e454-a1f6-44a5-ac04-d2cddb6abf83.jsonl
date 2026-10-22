@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Wednesday, Oct 21, 2026, 11:32 PM (UTC+7)</timestamp>\n<user_query>\ntrả lời ok\n</user_query>"}]}}
+{"type":"turn_ended","status":"error","error":"[invalid_argument] Error"}

@@ -1,0 +1,480 @@
+  warning: skill at C:\Users\trong\.agents\skills\graphify is from graphify 0.9.91, package is 0.9.92. Run 'graphify install --platform agents' to update it (a plain 'graphify install' refreshes only the detected platform).
+Graph: graphify-out/graph.json (23197 nodes) | Traversal: BFS depth=2 | Start: ['frmDeviceCheckingSave', 'frmDeviceCheckingSave.cs', '.frmDeviceCheckingSave_Load()', 'Caption', 'Save', 'KeyEventArgs', '.RollBackTransaction()', 'frmDeviceChecking', 'frmCustomerAllocationDetail', '.worker_RunWorkerCompleted()', 'ItemWorkflowNo', '.lstData_DoubleClick()'] | Context: import (heuristic) | 63 nodes found
+
+[i] Complete answer over budget: all 63 nodes and 412 edges shown (~19439 tokens vs the requested ~2000-token budget). Edges are never dropped once every node fits, so this is already the full answer — raising --budget further will not shrink it. Narrow with context_filter=['call'] or use get_node for a specific symbol to reduce size instead.
+
+NODE frmDeviceCheckingSave [src=FamManager/Device/frmDeviceCheckingSave.cs loc=L21 community=Community 22]
+NODE frmDeviceCheckingSave.cs [src=FamManager/Device/frmDeviceCheckingSave.cs loc=L1 community=Community 1]
+NODE .frmDeviceCheckingSave_Load() [src=FamManager/Device/frmDeviceCheckingSave.cs loc=L808 community=Community 22]
+NODE Caption [src=General/UDeclaration2Level.cs loc=L46 community=Community 352]
+NODE Save [src=Account/Properties/Resources.Designer.cs loc=L189 community=Community 288]
+NODE KeyEventArgs [src= loc= community=Community 5]
+NODE .RollBackTransaction() [src=SMSObject/Base/SMS_RepairVoucherBase.cs loc=L1825 community=Community 14]
+NODE frmDeviceChecking [src=FamManager/Device/frmDeviceChecking.cs loc=L21 community=Community 242]
+NODE frmCustomerAllocationDetail [src=CRMManager/CustomerAllocation/frmCustomerAllocationDetail.Designer.cs loc=L3 community=Community 112]
+NODE .worker_RunWorkerCompleted() [src=TKSManager/TimeKeeping/frmProgressForm.cs loc=L162 community=Community 177]
+NODE ItemWorkflowNo [src=SMSObject/Base/SMS_DeviceInfoBase.cs loc=L244 community=Community 105]
+NODE .lstData_DoubleClick() [src=StockManager/Voucher/Retail/URoomMap.cs loc=L246 community=Community 221]
+NODE system [src= loc= community=Community 0]
+NODE system_data [src= loc= community=Community 0]
+NODE system_collections [src= loc= community=Community 0]
+NODE system_collections_generic [src= loc= community=Community 1]
+NODE system_text [src= loc= community=Community 1]
+NODE Global.csproj [src=Global/Global.csproj loc=None community=Community 1]
+NODE system_drawing [src= loc= community=Community 1]
+NODE system_windows_forms [src= loc= community=Community 1]
+NODE system_componentmodel [src= loc= community=Community 1]
+NODE Libs [src=ExportExcel/Excel.cs loc=L9 community=Community 1]
+NODE devexpress_xtraeditors [src= loc= community=Community 1]
+NODE system_threading [src= loc= community=Community 1]
+NODE systemservice [src= loc= community=Community 1]
+NODE TKSObject [src=TKSObject/Base/HRS_ContractBase.cs loc=L11 community=Community 0]
+NODE TKSService [src=TKSService/HRS_EmployeeService.cs loc=L11 community=Community 1]
+NODE FamObject [src=FamObject/Base/FAM_DeviceBase.cs loc=L11 community=Community 3]
+NODE FamService [src=FamService/FAM_DeviceBranchService.cs loc=L11 community=Community 3]
+NODE frmDeviceDetail.cs [src=FamManager/Device/frmDeviceDetail.cs loc=L1 community=Community 1]
+NODE frmRepairVoucherDetail.cs [src=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs loc=L1 community=Community 1]
+NODE frmMoveVoucherDetail.cs [src=FamManager/Voucher/Move/frmMoveVoucherDetail.cs loc=L1 community=Community 3]
+NODE frmRemoveVoucherDetail.cs [src=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs loc=L1 community=Community 1]
+NODE frmImportDevice.cs [src=FamManager/Device/frmImportDevice.cs loc=L1 community=Community 1]
+NODE frmDeviceList.cs [src=FamManager/Device/frmDeviceList.cs loc=L1 community=Community 3]
+NODE frmDeviceChecking.cs [src=FamManager/Device/frmDeviceChecking.cs loc=L1 community=Community 1]
+NODE frmDeviceDetail1.cs [src=FamManager/Device/frmDeviceDetail1.cs loc=L1 community=Community 3]
+NODE frmDeviceTree.cs [src=FamManager/Device/frmDeviceTree.cs loc=L1 community=Community 3]
+NODE frmMoveVoucherList.cs [src=FamManager/Voucher/Move/frmMoveVoucherList.cs loc=L1 community=Community 1]
+NODE frmDeviceDep.cs [src=FamManager/Device/frmDeviceDep.cs loc=L1 community=Community 1]
+NODE frmBaoCaoTangGiamTaiSan.cs [src=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs loc=L1 community=Community 1]
+NODE frmRemoveVoucherList.cs [src=FamManager/Voucher/Remove/frmRemoveVoucherList.cs loc=L1 community=Community 1]
+NODE frmRepairVoucherList.cs [src=FamManager/Voucher/Repair/frmRepairVoucherList.cs loc=L1 community=Community 1]
+NODE DeviceList.cs [src=FamManager/Device/DeviceList.cs loc=L1 community=Community 3]
+NODE frmDeviceBranch.cs [src=FamManager/Declaration/frmDeviceBranch.cs loc=L1 community=Community 1]
+NODE frmDeviceCategory.cs [src=FamManager/Declaration/frmDeviceCategory.cs loc=L1 community=Community 1]
+NODE frmDeviceGroup.cs [src=FamManager/Declaration/frmDeviceGroup.cs loc=L1 community=Community 1]
+NODE frmDeviceKind.cs [src=FamManager/Declaration/frmDeviceKind.cs loc=L1 community=Community 1]
+NODE frmDeviceStatus.cs [src=FamManager/Declaration/frmDeviceStatus.cs loc=L1 community=Community 1]
+NODE frmDeviceSelect.cs [src=FamManager/Device/frmDeviceSelect.cs loc=L1 community=Community 1]
+NODE UDevice.cs [src=FamManager/Device/UDevice.cs loc=L1 community=Community 3]
+NODE URoom2.cs [src=FamManager/Declaration/URoom2.cs loc=L1 community=Community 1]
+NODE FAM_DeviceBranchService.cs [src=FamService/FAM_DeviceBranchService.cs loc=L1 community=Community 3]
+NODE FAM_DeviceCategoryService.cs [src=FamService/FAM_DeviceCategoryService.cs loc=L1 community=Community 3]
+NODE FAM_DeviceGroupService.cs [src=FamService/FAM_DeviceGroupService.cs loc=L1 community=Community 3]
+NODE FAM_DeviceKindService.cs [src=FamService/FAM_DeviceKindService.cs loc=L1 community=Community 3]
+NODE FAM_DeviceService.cs [src=FamService/FAM_DeviceService.cs loc=L1 community=Community 3]
+NODE FAM_DeviceStatusService.cs [src=FamService/FAM_DeviceStatusService.cs loc=L1 community=Community 3]
+NODE FAM_GroupOneService.cs [src=FamService/FAM_GroupOneService.cs loc=L1 community=Community 3]
+NODE FAM_GroupTwoService.cs [src=FamService/FAM_GroupTwoService.cs loc=L1 community=Community 3]
+NODE FAM_RepairTypeService.cs [src=FamService/FAM_RepairTypeService.cs loc=L1 community=Community 3]
+NODE SIM_RoomService.cs [src=FamService/SIM_RoomService.cs loc=L1 community=Community 3]
+NODE FAM_DeviceVehicleSyncService.cs [src=FamService/FAM_DeviceVehicleSyncService.cs loc=L1 community=Community 3]
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Device/frmDeviceCheckingSave.cs:L16
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceCheckingSave.cs:L11
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Device/frmDeviceCheckingSave.cs:L17
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceCheckingSave.cs:L8
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceCheckingSave.cs:L14
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceCheckingSave.cs:L15
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceCheckingSave.cs:L12
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceCheckingSave.cs:L1
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Device/frmDeviceCheckingSave.cs:L10
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceCheckingSave.cs:L2
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceCheckingSave.cs:L3
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceCheckingSave.cs:L4
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceCheckingSave.cs:L5
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceCheckingSave.cs:L6
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceCheckingSave.cs:L9
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceCheckingSave.cs:L7
+EDGE frmDeviceCheckingSave.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Device/frmDeviceCheckingSave.cs:L13
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Declaration/frmDeviceBranch.cs:L12
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Declaration/frmDeviceCategory.cs:L12
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Declaration/frmDeviceGroup.cs:L12
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Declaration/frmDeviceKind.cs:L12
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Declaration/frmDeviceStatus.cs:L12
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceChecking.cs:L14
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceDep.cs:L14
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceDetail.cs:L13
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceSelect.cs:L12
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmImportDevice.cs:L12
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L14
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L14
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L13
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L14
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L13
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L14
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/DeviceList.cs:L11
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceDetail1.cs:L16
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceList.cs:L14
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/frmDeviceTree.cs:L16
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Device/UDevice.cs:L11
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> FamObject at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L13
+EDGE FAM_DeviceBranchService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_DeviceBranchService.cs:L8
+EDGE FAM_DeviceCategoryService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_DeviceCategoryService.cs:L8
+EDGE FAM_DeviceGroupService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_DeviceGroupService.cs:L8
+EDGE FAM_DeviceKindService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_DeviceKindService.cs:L8
+EDGE FAM_DeviceService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_DeviceService.cs:L8
+EDGE FAM_DeviceStatusService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_DeviceStatusService.cs:L8
+EDGE FAM_DeviceVehicleSyncService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_DeviceVehicleSyncService.cs:L3
+EDGE FAM_GroupOneService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_GroupOneService.cs:L8
+EDGE FAM_GroupTwoService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_GroupTwoService.cs:L8
+EDGE FAM_RepairTypeService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/FAM_RepairTypeService.cs:L8
+EDGE SIM_RoomService.cs --imports [EXTRACTED context=import]--> FamObject at=FamService/SIM_RoomService.cs:L7
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Declaration/frmDeviceBranch.cs:L13
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Declaration/frmDeviceCategory.cs:L13
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Declaration/frmDeviceGroup.cs:L13
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Declaration/frmDeviceKind.cs:L13
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Declaration/frmDeviceStatus.cs:L13
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Declaration/URoom2.cs:L9
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceChecking.cs:L15
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceDep.cs:L15
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceDetail.cs:L21
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceSelect.cs:L13
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmImportDevice.cs:L13
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L15
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L15
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L21
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L15
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L21
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L15
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/DeviceList.cs:L12
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceDetail1.cs:L17
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceList.cs:L15
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/frmDeviceTree.cs:L17
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Device/UDevice.cs:L9
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> FamService at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L21
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Device/frmDeviceChecking.cs:L16
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Device/frmDeviceDetail.cs:L16
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Device/frmDeviceDetail1.cs:L13
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Device/frmImportDevice.cs:L18
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L16
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L16
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> TKSObject at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L16
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Declaration/frmDeviceBranch.cs:L10
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Declaration/frmDeviceCategory.cs:L10
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Declaration/frmDeviceGroup.cs:L10
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Declaration/frmDeviceKind.cs:L10
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Declaration/frmDeviceStatus.cs:L10
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Declaration/URoom2.cs:L10
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/DeviceList.cs:L9
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceChecking.cs:L11
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceDep.cs:L11
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceDetail.cs:L11
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceDetail1.cs:L10
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceList.cs:L11
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceSelect.cs:L10
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmDeviceTree.cs:L13
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/frmImportDevice.cs:L10
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Device/UDevice.cs:L10
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L11
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L11
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L11
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L11
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L11
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L11
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> Libs at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L11
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Device/frmDeviceChecking.cs:L17
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Device/frmDeviceDetail.cs:L17
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Device/frmDeviceDetail1.cs:L12
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Device/frmImportDevice.cs:L19
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L17
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L17
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> TKSService at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L17
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Declaration/frmDeviceBranch.cs:L8
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Declaration/frmDeviceBranch.cs:L11
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system at=FamManager/Declaration/frmDeviceBranch.cs:L1
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Declaration/frmDeviceBranch.cs:L2
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Declaration/frmDeviceBranch.cs:L3
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Declaration/frmDeviceBranch.cs:L4
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Declaration/frmDeviceBranch.cs:L5
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Declaration/frmDeviceBranch.cs:L6
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Declaration/frmDeviceBranch.cs:L9
+EDGE frmDeviceBranch.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Declaration/frmDeviceBranch.cs:L7
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Declaration/frmDeviceCategory.cs:L8
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Declaration/frmDeviceCategory.cs:L11
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system at=FamManager/Declaration/frmDeviceCategory.cs:L1
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Declaration/frmDeviceCategory.cs:L2
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Declaration/frmDeviceCategory.cs:L3
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Declaration/frmDeviceCategory.cs:L4
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Declaration/frmDeviceCategory.cs:L5
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Declaration/frmDeviceCategory.cs:L6
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Declaration/frmDeviceCategory.cs:L9
+EDGE frmDeviceCategory.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Declaration/frmDeviceCategory.cs:L7
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Declaration/frmDeviceGroup.cs:L8
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Declaration/frmDeviceGroup.cs:L11
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system at=FamManager/Declaration/frmDeviceGroup.cs:L1
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Declaration/frmDeviceGroup.cs:L2
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Declaration/frmDeviceGroup.cs:L3
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Declaration/frmDeviceGroup.cs:L4
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Declaration/frmDeviceGroup.cs:L5
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Declaration/frmDeviceGroup.cs:L6
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Declaration/frmDeviceGroup.cs:L9
+EDGE frmDeviceGroup.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Declaration/frmDeviceGroup.cs:L7
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Declaration/frmDeviceKind.cs:L8
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Declaration/frmDeviceKind.cs:L11
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system at=FamManager/Declaration/frmDeviceKind.cs:L1
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Declaration/frmDeviceKind.cs:L2
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Declaration/frmDeviceKind.cs:L3
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Declaration/frmDeviceKind.cs:L4
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Declaration/frmDeviceKind.cs:L5
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Declaration/frmDeviceKind.cs:L6
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Declaration/frmDeviceKind.cs:L9
+EDGE frmDeviceKind.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Declaration/frmDeviceKind.cs:L7
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Declaration/frmDeviceStatus.cs:L8
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Declaration/frmDeviceStatus.cs:L11
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system at=FamManager/Declaration/frmDeviceStatus.cs:L1
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Declaration/frmDeviceStatus.cs:L2
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Declaration/frmDeviceStatus.cs:L3
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Declaration/frmDeviceStatus.cs:L4
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Declaration/frmDeviceStatus.cs:L5
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Declaration/frmDeviceStatus.cs:L6
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Declaration/frmDeviceStatus.cs:L9
+EDGE frmDeviceStatus.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Declaration/frmDeviceStatus.cs:L7
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Declaration/URoom2.cs:L8
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> system at=FamManager/Declaration/URoom2.cs:L1
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Declaration/URoom2.cs:L2
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Declaration/URoom2.cs:L3
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Declaration/URoom2.cs:L5
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Declaration/URoom2.cs:L4
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Declaration/URoom2.cs:L6
+EDGE URoom2.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Declaration/URoom2.cs:L7
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/DeviceList.cs:L10
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/DeviceList.cs:L8
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/DeviceList.cs:L1
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/DeviceList.cs:L2
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/DeviceList.cs:L3
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/DeviceList.cs:L5
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/DeviceList.cs:L4
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/DeviceList.cs:L6
+EDGE DeviceList.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/DeviceList.cs:L7
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceChecking.cs:L8
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceChecking.cs:L12
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceChecking.cs:L1
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Device/frmDeviceChecking.cs:L10
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceChecking.cs:L2
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceChecking.cs:L3
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceChecking.cs:L4
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceChecking.cs:L5
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceChecking.cs:L6
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceChecking.cs:L9
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceChecking.cs:L7
+EDGE frmDeviceChecking.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Device/frmDeviceChecking.cs:L13
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceDep.cs:L8
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceDep.cs:L12
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceDep.cs:L1
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Device/frmDeviceDep.cs:L10
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceDep.cs:L2
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceDep.cs:L3
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceDep.cs:L4
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceDep.cs:L5
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceDep.cs:L6
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceDep.cs:L9
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceDep.cs:L7
+EDGE frmDeviceDep.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Device/frmDeviceDep.cs:L13
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceDetail.cs:L9
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceDetail.cs:L12
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceDetail.cs:L1
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Device/frmDeviceDetail.cs:L3
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceDetail.cs:L2
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceDetail.cs:L4
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceDetail.cs:L5
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceDetail.cs:L6
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceDetail.cs:L7
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceDetail.cs:L10
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceDetail.cs:L8
+EDGE frmDeviceDetail.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Device/frmDeviceDetail.cs:L18
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceDetail1.cs:L11
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceDetail1.cs:L8
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceDetail1.cs:L1
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceDetail1.cs:L2
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceDetail1.cs:L3
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceDetail1.cs:L4
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceDetail1.cs:L5
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceDetail1.cs:L6
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceDetail1.cs:L9
+EDGE frmDeviceDetail1.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceDetail1.cs:L7
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceList.cs:L12
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceList.cs:L8
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceList.cs:L1
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Device/frmDeviceList.cs:L10
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceList.cs:L2
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceList.cs:L3
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceList.cs:L4
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceList.cs:L5
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceList.cs:L6
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceList.cs:L9
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceList.cs:L7
+EDGE frmDeviceList.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Device/frmDeviceList.cs:L13
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceSelect.cs:L8
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceSelect.cs:L11
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceSelect.cs:L1
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceSelect.cs:L2
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceSelect.cs:L3
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceSelect.cs:L4
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceSelect.cs:L5
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceSelect.cs:L6
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceSelect.cs:L9
+EDGE frmDeviceSelect.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceSelect.cs:L7
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmDeviceTree.cs:L14
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmDeviceTree.cs:L8
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmDeviceTree.cs:L1
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Device/frmDeviceTree.cs:L10
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmDeviceTree.cs:L2
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmDeviceTree.cs:L3
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmDeviceTree.cs:L4
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmDeviceTree.cs:L5
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmDeviceTree.cs:L6
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmDeviceTree.cs:L9
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmDeviceTree.cs:L7
+EDGE frmDeviceTree.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Device/frmDeviceTree.cs:L15
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/frmImportDevice.cs:L8
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Device/frmImportDevice.cs:L11
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/frmImportDevice.cs:L1
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Device/frmImportDevice.cs:L17
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/frmImportDevice.cs:L2
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/frmImportDevice.cs:L3
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/frmImportDevice.cs:L4
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/frmImportDevice.cs:L5
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/frmImportDevice.cs:L6
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Device/frmImportDevice.cs:L9
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/frmImportDevice.cs:L7
+EDGE frmImportDevice.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Device/frmImportDevice.cs:L16
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Device/UDevice.cs:L8
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> system at=FamManager/Device/UDevice.cs:L1
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Device/UDevice.cs:L2
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Device/UDevice.cs:L3
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Device/UDevice.cs:L5
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Device/UDevice.cs:L4
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Device/UDevice.cs:L6
+EDGE UDevice.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Device/UDevice.cs:L7
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L8
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L12
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L1
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L10
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L2
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L3
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L4
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L5
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L6
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L9
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L7
+EDGE frmBaoCaoTangGiamTaiSan.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Statistic/frmBaoCaoTangGiamTaiSan.cs:L13
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L12
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L9
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L1
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L3
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L2
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L4
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L5
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L6
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L7
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L10
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L8
+EDGE frmMoveVoucherDetail.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Voucher/Move/frmMoveVoucherDetail.cs:L18
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L8
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L12
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L1
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L10
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L2
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L3
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L4
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L5
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L6
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L9
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L7
+EDGE frmMoveVoucherList.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Voucher/Move/frmMoveVoucherList.cs:L13
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L9
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L12
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L1
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L3
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L2
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L4
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L5
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L6
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L7
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L10
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L8
+EDGE frmRemoveVoucherDetail.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Voucher/Remove/frmRemoveVoucherDetail.cs:L18
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L8
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L12
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L1
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L10
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L2
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L3
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L4
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L5
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L6
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L9
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L7
+EDGE frmRemoveVoucherList.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Voucher/Remove/frmRemoveVoucherList.cs:L13
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L9
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L12
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L1
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L3
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L2
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L4
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L5
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L6
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L7
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L10
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L8
+EDGE frmRepairVoucherDetail.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Voucher/Repair/frmRepairVoucherDetail.cs:L18
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> devexpress_xtraeditors at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L8
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L12
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L1
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_collections at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L10
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L2
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_componentmodel at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L3
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_data at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L4
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_drawing at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L5
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_text at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L6
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_threading at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L9
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> system_windows_forms at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L7
+EDGE frmRepairVoucherList.cs --imports [EXTRACTED context=import]--> systemservice at=FamManager/Voucher/Repair/frmRepairVoucherList.cs:L13
+EDGE FAM_DeviceBranchService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_DeviceBranchService.cs:L7
+EDGE FAM_DeviceBranchService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_DeviceBranchService.cs:L1
+EDGE FAM_DeviceBranchService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_DeviceBranchService.cs:L2
+EDGE FAM_DeviceBranchService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_DeviceBranchService.cs:L5
+EDGE FAM_DeviceBranchService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_DeviceBranchService.cs:L4
+EDGE FAM_DeviceCategoryService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_DeviceCategoryService.cs:L7
+EDGE FAM_DeviceCategoryService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_DeviceCategoryService.cs:L1
+EDGE FAM_DeviceCategoryService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_DeviceCategoryService.cs:L2
+EDGE FAM_DeviceCategoryService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_DeviceCategoryService.cs:L5
+EDGE FAM_DeviceCategoryService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_DeviceCategoryService.cs:L4
+EDGE FAM_DeviceGroupService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_DeviceGroupService.cs:L7
+EDGE FAM_DeviceGroupService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_DeviceGroupService.cs:L1
+EDGE FAM_DeviceGroupService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_DeviceGroupService.cs:L2
+EDGE FAM_DeviceGroupService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_DeviceGroupService.cs:L5
+EDGE FAM_DeviceGroupService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_DeviceGroupService.cs:L4
+EDGE FAM_DeviceKindService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_DeviceKindService.cs:L7
+EDGE FAM_DeviceKindService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_DeviceKindService.cs:L1
+EDGE FAM_DeviceKindService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_DeviceKindService.cs:L2
+EDGE FAM_DeviceKindService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_DeviceKindService.cs:L5
+EDGE FAM_DeviceKindService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_DeviceKindService.cs:L4
+EDGE FAM_DeviceService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_DeviceService.cs:L7
+EDGE FAM_DeviceService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_DeviceService.cs:L1
+EDGE FAM_DeviceService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_DeviceService.cs:L2
+EDGE FAM_DeviceService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_DeviceService.cs:L5
+EDGE FAM_DeviceService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_DeviceService.cs:L4
+EDGE FAM_DeviceStatusService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_DeviceStatusService.cs:L7
+EDGE FAM_DeviceStatusService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_DeviceStatusService.cs:L1
+EDGE FAM_DeviceStatusService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_DeviceStatusService.cs:L2
+EDGE FAM_DeviceStatusService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_DeviceStatusService.cs:L5
+EDGE FAM_DeviceStatusService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_DeviceStatusService.cs:L4
+EDGE FAM_DeviceVehicleSyncService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_DeviceVehicleSyncService.cs:L1
+EDGE FAM_GroupOneService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_GroupOneService.cs:L7
+EDGE FAM_GroupOneService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_GroupOneService.cs:L1
+EDGE FAM_GroupOneService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_GroupOneService.cs:L2
+EDGE FAM_GroupOneService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_GroupOneService.cs:L5
+EDGE FAM_GroupOneService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_GroupOneService.cs:L4
+EDGE FAM_GroupTwoService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_GroupTwoService.cs:L7
+EDGE FAM_GroupTwoService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_GroupTwoService.cs:L1
+EDGE FAM_GroupTwoService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_GroupTwoService.cs:L2
+EDGE FAM_GroupTwoService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_GroupTwoService.cs:L5
+EDGE FAM_GroupTwoService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_GroupTwoService.cs:L4
+EDGE FAM_RepairTypeService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/FAM_RepairTypeService.cs:L7
+EDGE FAM_RepairTypeService.cs --imports [EXTRACTED context=import]--> system at=FamService/FAM_RepairTypeService.cs:L1
+EDGE FAM_RepairTypeService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/FAM_RepairTypeService.cs:L2
+EDGE FAM_RepairTypeService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/FAM_RepairTypeService.cs:L5
+EDGE FAM_RepairTypeService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/FAM_RepairTypeService.cs:L4
+EDGE SIM_RoomService.cs --imports [EXTRACTED context=import]--> Global.csproj at=FamService/SIM_RoomService.cs:L6
+EDGE SIM_RoomService.cs --imports [EXTRACTED context=import]--> system at=FamService/SIM_RoomService.cs:L1
+EDGE SIM_RoomService.cs --imports [EXTRACTED context=import]--> system_collections_generic at=FamService/SIM_RoomService.cs:L2
+EDGE SIM_RoomService.cs --imports [EXTRACTED context=import]--> system_data at=FamService/SIM_RoomService.cs:L5
+EDGE SIM_RoomService.cs --imports [EXTRACTED context=import]--> system_text at=FamService/SIM_RoomService.cs:L4

@@ -1,0 +1,21 @@
+---
+pid: 268
+cwd: "D:\\ThuVienThienHaSo\\tool"
+command: "dir \"d:\\ThuVienThienHaSo\\tool\\icon.ico\""
+started_at: 2026-06-22T12:13:14.810Z
+running_for_ms: 5016     
+---
+
+
+    Directory: D:\ThuVienThienHaSo\tool
+
+
+Mode                 LastWriteTime         Length Name                                                                 
+----                 -------------         ------ ----                                                                 
+-a----        22/06/2026     19:13            766 icon.ico                                                             
+
+---
+exit_code: 0
+elapsed_ms: 5318
+ended_at: 2026-06-22T12:13:20.128Z
+---

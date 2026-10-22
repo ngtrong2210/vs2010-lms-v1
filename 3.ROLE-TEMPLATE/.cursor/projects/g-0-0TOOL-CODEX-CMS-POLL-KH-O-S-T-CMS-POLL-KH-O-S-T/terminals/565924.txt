@@ -1,0 +1,19 @@
+---
+pid: 40624
+cwd: "g:\\0.0TOOL\\CODEX\\CMS-POLL-KHẢO SÁT\\CMS-POLL-KH-O-S-T"
+command: "@'\nconst fs = require('fs');\nconst html = fs.readFileSync('survey-static.html', 'utf8');\nconst css = fs.readFileSync('survey-static.css', 'utf8');\nconst count = (text) => html.split(text).length - 1;\nconst required = [\n  ['fieldset', count('<fieldset class=\"survey-question\">'), 36],\n  ['radio', count('type=\"radio\"'), 72],\n  ['sections', count('<section class=\"survey-section\"'), 4],\n  ['css-main-color', css.includes('--main-color: rgb(0, 71, 65);'), true]\n];\nlet ok = true;\nfor (const [name, actual, expected] of required) {\n  const pass = actual === expected;\n  ok &&= pass;\n  console.log(`${name}: ${actual} ${pass ? 'OK' : `expected ${expected}`}`);\n}\nprocess.exit(ok ? 0 : 1);\n'@ | node"
+title: "verify static survey files"
+status: succeeded
+started_at: 2026-10-14T08:47:49.415Z
+running_for_ms: 5235     
+---
+fieldset: 36 OK
+radio: 72 OK
+sections: 4 OK
+css-main-color: true OK
+
+---
+exit_code: 0
+elapsed_ms: 5235
+ended_at: 2026-10-14T08:47:54.650Z
+---

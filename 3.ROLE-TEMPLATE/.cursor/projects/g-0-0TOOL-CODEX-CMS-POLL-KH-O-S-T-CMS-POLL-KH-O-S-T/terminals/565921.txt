@@ -1,0 +1,16 @@
+---
+pid: 10872
+cwd: "g:\\0.0TOOL\\CODEX\\CMS-POLL-KHẢO SÁT\\CMS-POLL-KH-O-S-T"
+command: "python -m http.server 4174"
+title: "serve static files"
+status: failed   
+started_at: 2026-10-14T08:46:14.245Z
+running_for_ms: 5310     
+---
+Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+
+---
+exit_code: 9009
+elapsed_ms: 5310
+ended_at: 2026-10-14T08:46:19.555Z
+---

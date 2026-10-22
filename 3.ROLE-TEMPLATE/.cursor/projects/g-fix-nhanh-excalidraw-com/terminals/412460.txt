@@ -1,0 +1,135 @@
+---
+pid: 15140
+cwd: "g:\\fix_nhanh\\excalidraw.com"
+command: "npm run dev"
+started_at: 2026-07-21T00:31:12.847Z
+running_for_ms: 2072286  
+---
+
+> excalidraw-clone@1.0.0 dev
+> concurrently -n client,server -c cyan,magenta "npm run dev:client" "npm run dev:server"
+
+[client] 
+[client] > excalidraw-clone@1.0.0 dev:client
+[client] > vite
+[client] 
+[server] 
+[server] > excalidraw-clone@1.0.0 dev:server
+[server] > tsx watch server/index.ts
+[server] 
+[client] 
+[client]   VITE v6.4.3  ready in 569 ms
+[client] 
+[client]   ➜  Local:   http://localhost:5173/
+[client]   ➜  Network: use --host to expose
+[server] [server] listening on http://localhost:3001
+[client] 07:34:20 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:34:21 [vite] (client) hmr update /src/components/Toolbar.tsx, /src/index.css
+[client] 07:34:23 [vite] (client) hmr update /src/components/Toolbar.tsx, /src/index.css
+[client] 07:34:23 [vite] (client) hmr update /src/pages/WhiteboardPage.tsx, /src/index.css
+[client] 07:34:23 [vite] (client) hmr update /src/pages/WhiteboardPage.tsx, /src/index.css
+[client] 07:34:24 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:34:26 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:35:01 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:35:01 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:35:04 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:35:05 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:35:06 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:35:11 [vite] (client) hmr update /src/components/CanvasBoard.tsx, /src/index.css
+[client] 07:36:45 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Minimap.tsx, /src/components/Toolbar.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:36:45 [vite] (client) page reload src/types/index.ts
+[client] 07:36:45 [vite] (client) page reload src/types/index.ts
+[client] 07:36:48 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:36:52 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:36:55 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:36:57 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:36:57 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:36:58 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:36:59 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:37:01 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:37:09 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:37:10 [vite] (client) hmr update /src/components/Toolbar.tsx, /src/index.css
+[client] 07:37:11 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:37:12 [vite] (client) hmr update /src/components/CanvasBoard.tsx, /src/index.css
+[client] 07:37:12 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Minimap.tsx, /src/components/Toolbar.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:37:17 [vite] (client) hmr update /src/pages/WhiteboardPage.tsx, /src/index.css
+[client] 07:37:21 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:37:40 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Toolbar.tsx, /src/components/PropertiesPanel.tsx, /src/components/Minimap.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx
+[client] 07:38:59 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:39:01 [vite] (client) hmr update /src/pages/WhiteboardPage.tsx, /src/index.css
+[client] 07:39:48 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:39:49 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:39:50 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Minimap.tsx, /src/components/Toolbar.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:39:51 [vite] (client) hmr update /src/components/CanvasBoard.tsx, /src/index.css
+[client] 07:42:46 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:43:09 [vite] (client) hmr update /src/components/CanvasBoard.tsx, /src/index.css
+[client] 07:43:23 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:43:23 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:43:24 [vite] (client) hmr update /src/pages/WhiteboardPage.tsx, /src/index.css
+[client] 07:45:32 [vite] (client) hmr update /src/components/TopBar.tsx, /src/index.css
+[client] 07:45:37 [vite] (client) hmr update /src/pages/WhiteboardPage.tsx, /src/index.css
+[client] 07:46:13 [vite] (client) page reload src/types/index.ts
+[client] 07:46:13 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Minimap.tsx, /src/components/Toolbar.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:46:14 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:46:18 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:46:25 [vite] (client) hmr update /src/components/Toolbar.tsx, /src/index.css
+[client] 07:46:27 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:46:28 [vite] (client) hmr update /src/components/Toolbar.tsx, /src/index.css
+[client] 07:46:29 [vite] (client) hmr update /src/components/Toolbar.tsx, /src/index.css
+[client] 07:48:05 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:48:45 [vite] (client) hmr update /src/components/TopBar.tsx, /src/index.css
+[client] 07:48:46 [vite] (client) hmr update /src/components/TopBar.tsx, /src/index.css
+[client] 07:48:47 [vite] (client) hmr update /src/components/TopBar.tsx, /src/index.css
+[client] 07:48:47 [vite] (client) hmr update /src/components/TopBar.tsx, /src/index.css
+[client] 07:49:56 [vite] (client) page reload src/types/index.ts
+[client] 07:49:57 [vite] (client) page reload src/types/index.ts
+[client] 07:49:57 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Toolbar.tsx, /src/components/PropertiesPanel.tsx, /src/components/Minimap.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx
+[client] 07:49:59 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Toolbar.tsx, /src/components/PropertiesPanel.tsx, /src/components/Minimap.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx
+[client] 07:49:59 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Toolbar.tsx, /src/components/PropertiesPanel.tsx, /src/components/Minimap.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx
+[client] 07:49:59 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:50:00 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:50:02 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:50:05 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:50:06 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:50:07 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:50:08 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:50:09 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:50:11 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:50:22 [vite] (client) hmr update /src/components/Toolbar.tsx, /src/index.css
+[client] 07:50:23 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx
+[client] 07:50:23 [vite] (client) hmr update /src/components/CanvasBoard.tsx, /src/index.css
+[client] 07:50:24 [vite] (client) hmr update /src/components/CanvasBoard.tsx, /src/index.css
+[client] 07:50:26 [vite] (client) hmr update /src/components/CanvasBoard.tsx, /src/index.css
+[client] 07:50:29 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:50:32 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 07:51:06 [vite] (client) page reload src/types/index.ts
+[client] 07:51:06 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Minimap.tsx, /src/components/Toolbar.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:51:06 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:51:06 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:51:09 [vite] (client) hmr update /src/index.css, /src/pages/WhiteboardPage.tsx, /src/components/Minimap.tsx, /src/components/Toolbar.tsx, /src/components/CanvasBoard.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx
+[client] 07:51:13 [vite] (client) hmr update /src/components/PropertiesPanel.tsx, /src/index.css
+[client] 07:51:14 [vite] (client) hmr update /src/components/TopBar.tsx, /src/index.css
+[client] 07:51:15 [vite] (client) hmr update /src/components/TopBar.tsx, /src/index.css
+[client] 07:52:39 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:52:40 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:52:43 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:52:48 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:52:48 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:52:51 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:52:52 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:52:59 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[server] 07:55:53 [tsx] change in ./server\index.ts Restarting...
+[client] 07:55:53 [vite] (client) hmr update /src/index.css, /src/components/Toolbar.tsx, /src/components/TopBar.tsx, /src/components/PropertiesPanel.tsx, /src/components/CanvasBoard.tsx
+[server] [server] listening on http://localhost:3001
+[server] [server] serving frontend from G:\fix_nhanh\excalidraw.com\dist
+[client] 07:58:16 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 07:58:17 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 08:00:47 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx, /src/components/Toolbar.tsx, /src/components/TopBar.tsx
+[client] 08:00:48 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 08:00:53 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 08:00:56 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 08:00:58 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 08:01:00 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 08:01:06 [vite] (client) hmr update /src/index.css, /src/components/CanvasBoard.tsx
+[client] 08:04:14 [vite] (client) ✨ new dependencies optimized: lucide-react
+[client] 08:04:14 [vite] (client) ✨ optimized dependencies changed. reloading

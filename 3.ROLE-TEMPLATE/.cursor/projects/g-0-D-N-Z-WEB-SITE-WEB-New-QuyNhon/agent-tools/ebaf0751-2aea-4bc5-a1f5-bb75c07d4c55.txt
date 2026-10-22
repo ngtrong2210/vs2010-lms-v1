@@ -1,0 +1,325 @@
+Graph: graphify-out/graph.json (9179 nodes) | Traversal: BFS depth=2 | Start: ['InformationID', 'CreatedDate', 'Information', '[dbo].[INFO_Information_List_ByCateID]()', 'Content', '.ValidateRequiredFields()', '.getFileName()', 'Image', 'InformationWebObject', 'InsertItemSuccessful', 'IsActived', 'CurrentLanguageID', 'STORED_IMAGE', '.Summary()', 'Title', 'Update'] | Context: field (heuristic) | 130 nodes found
+
+[i] Complete answer over budget: all 130 nodes and 191 edges shown (~13131 tokens vs the requested ~6000-token budget). Edges are never dropped once every node fits, so this is already the full answer — raising --budget further will not shrink it. Narrow with context_filter=['call'] or use get_node for a specific symbol to reduce size instead.
+
+NODE InformationID [src=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs loc=L52 community=String]
+NODE CreatedDate [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L94 community=EXT_LocationContent]
+NODE Information [src=1.HOS/InformationCMS/Pages/Information/Information.aspx.cs loc=L10 community=Page]
+NODE [dbo].[INFO_Information_List_ByCateID]() [src=sql/patches/20261011_INFO_Information_List_ByCateID_web_contract.sql loc=L13 community=20261011_INFO_Information_List_ByCateID_web_contract.sql]
+NODE Content [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L76 community=EXT_LocationContent]
+NODE .ValidateRequiredFields() [src=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs loc=L1183 community=String]
+NODE .getFileName() [src=1.HOS/InformationCMS/ckfinder/ckfinder.js loc=L7 community=b]
+NODE Image [src= loc= community=SYS_User]
+NODE InformationWebObject [src=1.HOS/InformationWebObject/AD_Advertisement.cs loc=L11 community=system]
+NODE InsertItemSuccessful [src=1.HOS/InformationCMS/App_GlobalResources/Lang.designer.cs loc=L507 community=Lang]
+NODE IsActived [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L94 community=IDataReader]
+NODE CurrentLanguageID [src=1.HOS/InformationWeb/Utility/ResourceManager.cs loc=L59 community=ResourceManager]
+NODE STORED_IMAGE [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L80 community=CMSGlobal]
+NODE .Summary() [src=1.HOS/InformationCMS/Controls/User/List.ascx.cs loc=L143 community=List]
+NODE Title [src=1.HOS/InformationCMS/App_GlobalResources/Lang.designer.cs loc=L723 community=Lang]
+NODE Update [src=.agents/skills/ponytail-help/SKILL.md loc=L62 community=Ponytail Help]
+NODE Lang [src=1.HOS/InformationCMS/App_GlobalResources/Lang.designer.cs loc=L22 community=Lang]
+NODE InformationEdit [src=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs loc=L25 community=String]
+NODE AD_Advertisement_Comment [src=1.HOS/InformationWebObject/AD_Advertisement_Comment.cs loc=L18 community=IDataReader]
+NODE EXT_LocationContent [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L18 community=EXT_LocationContent]
+NODE SystemMenuManager [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs loc=L24 community=SystemMenuManager]
+NODE Edit [src=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs loc=L25 community=SYS_User]
+NODE EditProfile [src=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.cs loc=L20 community=SYS_User]
+NODE SystemMenuEdit [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs loc=L22 community=SystemMenuEdit]
+NODE CMSGlobal [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L13 community=CMSGlobal]
+NODE Edit [src=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.cs loc=L9 community=DropDownList]
+NODE Detail [src=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.cs loc=L10 community=Detail]
+NODE Detail_Info_Section1 [src=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.cs loc=L16 community=DataRow]
+NODE ResManager [src=1.HOS/InformationWeb/Utility/ResourceManager.cs loc=L16 community=ResourceManager]
+NODE InformationList [src= loc= community=Page]
+NODE String [src= loc= community=String]
+NODE Exception [src= loc= community=Exception]
+NODE IData [src= loc= community=IData]
+NODE DateTime [src= loc= community=DateTime]
+NODE SYS_User [src=1.HOS/InformationWebObject/Base/SYS_UserBase.cs loc=L18 community=SYS_User]
+NODE Button [src= loc= community=EventArgs]
+NODE UpdatePanel [src= loc= community=UpdatePanel]
+NODE TextBox [src= loc= community=ControlBase]
+NODE System_Menu [src=1.HOS/InformationWebObject/Base/System_MenuBase.cs loc=L18 community=System_Menu]
+NODE Repeater [src= loc= community=Repeater]
+NODE GridView [src= loc= community=GridView]
+NODE Label [src= loc= community=GridView]
+NODE HtmlGenericControl [src= loc= community=DetailList]
+NODE RequiredFieldValidator [src= loc= community=ControlBase]
+NODE DropDownList [src= loc= community=DropDownList]
+NODE Panel [src= loc= community=.GetString]
+NODE LinkButton [src= loc= community=SYS_Role]
+NODE CheckBox [src= loc= community=ControlBase]
+NODE ModalPopupExtender [src= loc= community=.GetString]
+NODE Literal [src= loc= community=List_Info_SectionReuft]
+NODE PlaceHolder [src= loc= community=Detail]
+NODE FileUpload [src= loc= community=SystemMenuEdit]
+NODE HtmlTableRow [src= loc= community=EXT_SupportGroup]
+NODE HyperLink [src= loc= community=List_Info_SectionReuft]
+NODE ImageButton [src= loc= community=DropDownList]
+NODE ResourceManager [src= loc= community=ResourceManager]
+NODE RadNumericTextBox [src= loc= community=ControlBase]
+NODE CompareValidator [src= loc= community=SYS_User]
+NODE NotFound404 [src= loc= community=List_Info_Section1]
+NODE RegularExpressionValidator [src= loc= community=SYS_User]
+NODE AsyncFileUpload [src= loc= community=List]
+NODE HtmlAnchor [src= loc= community=GridView]
+NODE RadDatePicker [src= loc= community=SYS_User]
+NODE RadDateTimePicker [src= loc= community=SYS_User]
+NODE RadioButton [src= loc= community=InformationList]
+NODE RadTreeView [src= loc= community=SystemMenuManager]
+NODE AdminRoot [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L55 community=CMSGlobal]
+NODE Advertisement_Physical_ImagePath [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L39 community=CMSGlobal]
+NODE ECO_DataGroupID [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L302 community=CMSGlobal]
+NODE ECO_DepartmentID [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L310 community=CMSGlobal]
+NODE ECO_RootURL [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L294 community=CMSGlobal]
+NODE ECO_UserID [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L318 community=CMSGlobal]
+NODE EditorDataDirectory [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L64 community=CMSGlobal]
+NODE EditorImageDirectory [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L72 community=CMSGlobal]
+NODE Information_Physical_ImagePath [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L31 community=CMSGlobal]
+NODE User_Logical_ImagePath [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L23 community=CMSGlobal]
+NODE User_Physical_ImagePath [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L15 community=CMSGlobal]
+NODE WebsiteRoot [src=1.HOS/InformationCMS/CMSGlobal.cs loc=L47 community=CMSGlobal]
+NODE RegisterVerificationPage [src=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.cs loc=L38 community=SYS_User]
+NODE ReturnPage [src=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.cs loc=L32 community=SYS_User]
+NODE CopySourceID [src=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs loc=L58 community=String]
+NODE ListPage [src=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs loc=L40 community=String]
+NODE RelatePage [src=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs loc=L46 community=String]
+NODE MenuID [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs loc=L46 community=SystemMenuEdit]
+NODE objMenu [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs loc=L58 community=SystemMenuEdit]
+NODE PageList [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs loc=L40 community=SystemMenuEdit]
+NODE objSelectedMenu [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs loc=L57 community=SystemMenuManager]
+NODE objSelectedNode [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs loc=L71 community=SystemMenuManager]
+NODE PageAddLink [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs loc=L51 community=SystemMenuManager]
+NODE Pagesize [src=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs loc=L45 community=SystemMenuManager]
+NODE IsSimple [src=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs loc=L45 community=SYS_User]
+NODE Username [src=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs loc=L37 community=SYS_User]
+NODE ListPageBaseUrl [src=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.cs loc=L17 community=Detail]
+NODE ActivedDate [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L103 community=IDataReader]
+NODE ActivedUser [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L112 community=IDataReader]
+NODE AdvertisementID [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L58 community=IDataReader]
+NODE CommentID [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L49 community=IDataReader]
+NODE Content [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L76 community=IDataReader]
+NODE CreatedDate [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L121 community=IDataReader]
+NODE CreatedUser [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L130 community=IDataReader]
+NODE DeletedDate [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L166 community=IDataReader]
+NODE DeletedUser [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L175 community=IDataReader]
+NODE Email [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L85 community=IDataReader]
+NODE ErrorException [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L199 community=IDataReader]
+NODE IDB [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L185 community=IDataReader]
+NODE IsDeleted [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L157 community=IDataReader]
+NODE Title [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L67 community=IDataReader]
+NODE UpdatedDate [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L139 community=IDataReader]
+NODE UpdatedUser [src=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs loc=L148 community=IDataReader]
+NODE ContentEn [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L139 community=EXT_LocationContent]
+NODE CreatedUser [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L103 community=EXT_LocationContent]
+NODE DeletedDate [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L166 community=EXT_LocationContent]
+NODE DeletedUser [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L175 community=EXT_LocationContent]
+NODE Description [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L67 community=EXT_LocationContent]
+NODE DescriptionEn [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L148 community=EXT_LocationContent]
+NODE ErrorException [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L199 community=EXT_LocationContent]
+NODE IDB [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L185 community=EXT_LocationContent]
+NODE IsActived [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L85 community=EXT_LocationContent]
+NODE IsDeleted [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L157 community=EXT_LocationContent]
+NODE LocationContentID [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L49 community=EXT_LocationContent]
+NODE Title [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L58 community=EXT_LocationContent]
+NODE TitleEn [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L130 community=EXT_LocationContent]
+NODE UpdatedDate [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L112 community=EXT_LocationContent]
+NODE UpdatedUser [src=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs loc=L121 community=EXT_LocationContent]
+NODE Boolean [src= loc= community=SYS_User]
+NODE CheckBoxList [src= loc= community=String]
+NODE HiddenField [src= loc= community=String]
+NODE RadTreeNode [src= loc= community=SystemMenuManager]
+NODE SearchObject [src= loc= community=String]
+NODE SystemMenuEdit [src= loc= community=SystemMenuManager]
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> Content at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L76
+EDGE Detail --references [EXTRACTED context=field]--> Image at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L16
+EDGE InformationEdit --references [EXTRACTED context=field]--> Image at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L175
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> Image at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L85
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> Image at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L112
+EDGE Edit --references [EXTRACTED context=field]--> Image at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L148
+EDGE EditProfile --references [EXTRACTED context=field]--> Image at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L292
+EDGE Edit --references [EXTRACTED context=field]--> Image at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L346
+EDGE Detail_Info_Section1 --references [EXTRACTED context=field]--> Image at=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.designer.cs:L76
+EDGE Information --references [EXTRACTED context=field]--> InformationList at=1.HOS/InformationCMS/Pages/Information/Information.aspx.designer.cs:L22
+EDGE Lang --defines [EXTRACTED context=field]--> InsertItemSuccessful at=1.HOS/InformationCMS/App_GlobalResources/Lang.designer.cs:L507
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> STORED_IMAGE at=1.HOS/InformationCMS/CMSGlobal.cs:L80
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> CreatedDate at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L94
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> IsActived at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L94
+EDGE ResManager --defines [EXTRACTED context=field]--> CurrentLanguageID at=1.HOS/InformationWeb/Utility/ResourceManager.cs:L59
+EDGE Lang --defines [EXTRACTED context=field]--> Title at=1.HOS/InformationCMS/App_GlobalResources/Lang.designer.cs:L723
+EDGE InformationEdit --defines [EXTRACTED context=field]--> InformationID at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs:L52
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> User_Physical_ImagePath at=1.HOS/InformationCMS/CMSGlobal.cs:L15
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> User_Logical_ImagePath at=1.HOS/InformationCMS/CMSGlobal.cs:L23
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> ECO_RootURL at=1.HOS/InformationCMS/CMSGlobal.cs:L294
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> ECO_DataGroupID at=1.HOS/InformationCMS/CMSGlobal.cs:L302
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> Information_Physical_ImagePath at=1.HOS/InformationCMS/CMSGlobal.cs:L31
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> ECO_DepartmentID at=1.HOS/InformationCMS/CMSGlobal.cs:L310
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> ECO_UserID at=1.HOS/InformationCMS/CMSGlobal.cs:L318
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> Advertisement_Physical_ImagePath at=1.HOS/InformationCMS/CMSGlobal.cs:L39
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> WebsiteRoot at=1.HOS/InformationCMS/CMSGlobal.cs:L47
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> AdminRoot at=1.HOS/InformationCMS/CMSGlobal.cs:L55
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> EditorDataDirectory at=1.HOS/InformationCMS/CMSGlobal.cs:L64
+EDGE CMSGlobal --defines [EXTRACTED context=field]--> EditorImageDirectory at=1.HOS/InformationCMS/CMSGlobal.cs:L72
+EDGE AD_Advertisement_Comment --references [EXTRACTED context=field]--> DateTime at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L166
+EDGE AD_Advertisement_Comment --references [EXTRACTED context=field]--> Exception at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L199
+EDGE AD_Advertisement_Comment --references [EXTRACTED context=field]--> IData at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L185
+EDGE AD_Advertisement_Comment --references [EXTRACTED context=field]--> String at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L613
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> ActivedDate at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L103
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> ActivedUser at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L112
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> CreatedDate at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L121
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> CreatedUser at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L130
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> UpdatedDate at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L139
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> UpdatedUser at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L148
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> IsDeleted at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L157
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> DeletedDate at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L166
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> DeletedUser at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L175
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> IDB at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L185
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> ErrorException at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L199
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> CommentID at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L49
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> AdvertisementID at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L58
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> Title at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L67
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> Content at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L76
+EDGE AD_Advertisement_Comment --defines [EXTRACTED context=field]--> Email at=1.HOS/InformationWebObject/Base/AD_Advertisement_CommentBase.cs:L85
+EDGE Detail_Info_Section1 --references [EXTRACTED context=field]--> NotFound404 at=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.designer.cs:L31
+EDGE Detail_Info_Section1 --references [EXTRACTED context=field]--> HtmlGenericControl at=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.designer.cs:L67
+EDGE Detail_Info_Section1 --references [EXTRACTED context=field]--> HyperLink at=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.designer.cs:L85
+EDGE Detail_Info_Section1 --references [EXTRACTED context=field]--> Literal at=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.designer.cs:L112
+EDGE Detail_Info_Section1 --references [EXTRACTED context=field]--> Panel at=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.designer.cs:L157
+EDGE Detail_Info_Section1 --references [EXTRACTED context=field]--> Repeater at=4.SOURCE-MẪU/Controls -MẪU/InfomationNew/Detail_Info_Section1.ascx.designer.cs:L166
+EDGE EXT_LocationContent --references [EXTRACTED context=field]--> DateTime at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L166
+EDGE EXT_LocationContent --references [EXTRACTED context=field]--> Exception at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L199
+EDGE EXT_LocationContent --references [EXTRACTED context=field]--> IData at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L185
+EDGE EXT_LocationContent --references [EXTRACTED context=field]--> String at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L638
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> CreatedUser at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L103
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> UpdatedDate at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L112
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> UpdatedUser at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L121
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> TitleEn at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L130
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> ContentEn at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L139
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> DescriptionEn at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L148
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> IsDeleted at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L157
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> DeletedDate at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L166
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> DeletedUser at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L175
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> IDB at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L185
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> ErrorException at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L199
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> LocationContentID at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L49
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> Title at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L58
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> Description at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L67
+EDGE EXT_LocationContent --defines [EXTRACTED context=field]--> IsActived at=1.HOS/InformationWebObject/Base/EXT_LocationContentBase.cs:L85
+EDGE ResManager --references [EXTRACTED context=field]--> ResourceManager at=1.HOS/InformationWeb/Utility/ResourceManager.cs:L18
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> ModalPopupExtender at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L238
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> SystemMenuEdit at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L220
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> UpdatePanel at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L184
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> HtmlGenericControl at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L229
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> Button at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L166
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> CheckBox at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L148
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> DropDownList at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L139
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> GridView at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L175
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> Label at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L202
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> LinkButton at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L211
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> Panel at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L193
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> TextBox at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L130
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> RadTreeView at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.designer.cs:L49
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> RadTreeNode at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs:L71
+EDGE SystemMenuManager --references [EXTRACTED context=field]--> System_Menu at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs:L57
+EDGE SystemMenuManager --defines [EXTRACTED context=field]--> Pagesize at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs:L45
+EDGE SystemMenuManager --defines [EXTRACTED context=field]--> PageAddLink at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs:L51
+EDGE SystemMenuManager --defines [EXTRACTED context=field]--> objSelectedMenu at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs:L57
+EDGE SystemMenuManager --defines [EXTRACTED context=field]--> objSelectedNode at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuManager.ascx.cs:L71
+EDGE Detail --references [EXTRACTED context=field]--> HtmlAnchor at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L17
+EDGE Detail --references [EXTRACTED context=field]--> HtmlGenericControl at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L27
+EDGE Detail --references [EXTRACTED context=field]--> HyperLink at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L21
+EDGE Detail --references [EXTRACTED context=field]--> Literal at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L23
+EDGE Detail --references [EXTRACTED context=field]--> Panel at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L14
+EDGE Detail --references [EXTRACTED context=field]--> PlaceHolder at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L28
+EDGE Detail --references [EXTRACTED context=field]--> Repeater at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.designer.cs:L26
+EDGE Detail --defines [EXTRACTED context=field]--> ListPageBaseUrl at=1.HOS/InformationWeb/Controls/InfoSection/News/NewsDetail.ascx.cs:L17
+EDGE EditProfile --references [EXTRACTED context=field]--> UpdatePanel at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L373
+EDGE EditProfile --references [EXTRACTED context=field]--> HtmlGenericControl at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L391
+EDGE EditProfile --references [EXTRACTED context=field]--> Button at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L382
+EDGE EditProfile --references [EXTRACTED context=field]--> CompareValidator at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L76
+EDGE EditProfile --references [EXTRACTED context=field]--> DropDownList at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L148
+EDGE EditProfile --references [EXTRACTED context=field]--> FileUpload at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L283
+EDGE EditProfile --references [EXTRACTED context=field]--> ImageButton at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L301
+EDGE EditProfile --references [EXTRACTED context=field]--> Label at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L364
+EDGE EditProfile --references [EXTRACTED context=field]--> RegularExpressionValidator at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L202
+EDGE EditProfile --references [EXTRACTED context=field]--> RequiredFieldValidator at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L328
+EDGE EditProfile --references [EXTRACTED context=field]--> TextBox at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L319
+EDGE EditProfile --references [EXTRACTED context=field]--> RadDateTimePicker at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.designer.cs:L229
+EDGE EditProfile --references [EXTRACTED context=field]--> SYS_User at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.cs:L44
+EDGE EditProfile --defines [EXTRACTED context=field]--> ReturnPage at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.cs:L32
+EDGE EditProfile --defines [EXTRACTED context=field]--> RegisterVerificationPage at=1.HOS/InformationCMS/Controls/Account/EditProfile.ascx.cs:L38
+EDGE InformationEdit --references [EXTRACTED context=field]--> AsyncFileUpload at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L166
+EDGE InformationEdit --references [EXTRACTED context=field]--> ModalPopupExtender at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L490
+EDGE InformationEdit --references [EXTRACTED context=field]--> SearchObject at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L481
+EDGE InformationEdit --references [EXTRACTED context=field]--> UpdatePanel at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L715
+EDGE InformationEdit --references [EXTRACTED context=field]--> HtmlGenericControl at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L40
+EDGE InformationEdit --references [EXTRACTED context=field]--> Button at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L724
+EDGE InformationEdit --references [EXTRACTED context=field]--> CheckBox at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L508
+EDGE InformationEdit --references [EXTRACTED context=field]--> CheckBoxList at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L337
+EDGE InformationEdit --references [EXTRACTED context=field]--> DropDownList at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L157
+EDGE InformationEdit --references [EXTRACTED context=field]--> GridView at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L499
+EDGE InformationEdit --references [EXTRACTED context=field]--> HiddenField at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L31
+EDGE InformationEdit --references [EXTRACTED context=field]--> ImageButton at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L193
+EDGE InformationEdit --references [EXTRACTED context=field]--> Label at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L706
+EDGE InformationEdit --references [EXTRACTED context=field]--> LinkButton at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L562
+EDGE InformationEdit --references [EXTRACTED context=field]--> Panel at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L652
+EDGE InformationEdit --references [EXTRACTED context=field]--> RadioButton at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L679
+EDGE InformationEdit --references [EXTRACTED context=field]--> RequiredFieldValidator at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L373
+EDGE InformationEdit --references [EXTRACTED context=field]--> TextBox at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L688
+EDGE InformationEdit --references [EXTRACTED context=field]--> RadDateTimePicker at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L292
+EDGE InformationEdit --references [EXTRACTED context=field]--> RadNumericTextBox at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.designer.cs:L148
+EDGE InformationEdit --references [EXTRACTED context=field]--> String at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs:L77
+EDGE InformationEdit --defines [EXTRACTED context=field]--> ListPage at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs:L40
+EDGE InformationEdit --defines [EXTRACTED context=field]--> RelatePage at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs:L46
+EDGE InformationEdit --defines [EXTRACTED context=field]--> CopySourceID at=1.HOS/InformationCMS/Controls/Information/InformationEdit.ascx.cs:L58
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> UpdatePanel at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L256
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> HtmlTableRow at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L193
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> Button at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L292
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> CheckBox at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L247
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> DropDownList at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L211
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> FileUpload at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L94
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> GridView at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L265
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> ImageButton at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L121
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> RequiredFieldValidator at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L67
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> TextBox at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L220
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> RadNumericTextBox at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.designer.cs:L85
+EDGE SystemMenuEdit --references [EXTRACTED context=field]--> System_Menu at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs:L58
+EDGE SystemMenuEdit --defines [EXTRACTED context=field]--> PageList at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs:L40
+EDGE SystemMenuEdit --defines [EXTRACTED context=field]--> MenuID at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs:L46
+EDGE SystemMenuEdit --defines [EXTRACTED context=field]--> objMenu at=1.HOS/InformationCMS/Controls/SystemMenu/SystemMenuEdit.ascx.cs:L58
+EDGE Edit --references [EXTRACTED context=field]--> UpdatePanel at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L391
+EDGE Edit --references [EXTRACTED context=field]--> HtmlGenericControl at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L310
+EDGE Edit --references [EXTRACTED context=field]--> Button at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L400
+EDGE Edit --references [EXTRACTED context=field]--> CheckBox at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L328
+EDGE Edit --references [EXTRACTED context=field]--> CompareValidator at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L58
+EDGE Edit --references [EXTRACTED context=field]--> DropDownList at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L256
+EDGE Edit --references [EXTRACTED context=field]--> FileUpload at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L274
+EDGE Edit --references [EXTRACTED context=field]--> ImageButton at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L283
+EDGE Edit --references [EXTRACTED context=field]--> Label at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L382
+EDGE Edit --references [EXTRACTED context=field]--> RegularExpressionValidator at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L202
+EDGE Edit --references [EXTRACTED context=field]--> RequiredFieldValidator at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L265
+EDGE Edit --references [EXTRACTED context=field]--> TextBox at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L337
+EDGE Edit --references [EXTRACTED context=field]--> RadDatePicker at=1.HOS/InformationCMS/Controls/User/Edit.ascx.designer.cs:L220
+EDGE Edit --references [EXTRACTED context=field]--> Boolean at=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs:L45
+EDGE Edit --references [EXTRACTED context=field]--> SYS_User at=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs:L43
+EDGE Edit --references [EXTRACTED context=field]--> String at=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs:L67
+EDGE Edit --defines [EXTRACTED context=field]--> Username at=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs:L37
+EDGE Edit --defines [EXTRACTED context=field]--> IsSimple at=1.HOS/InformationCMS/Controls/User/Edit.ascx.cs:L45
+EDGE Edit --references [EXTRACTED context=field]--> UpdatePanel at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L157
+EDGE Edit --references [EXTRACTED context=field]--> Button at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L220
+EDGE Edit --references [EXTRACTED context=field]--> CheckBox at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L94
+EDGE Edit --references [EXTRACTED context=field]--> DropDownList at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L76
+EDGE Edit --references [EXTRACTED context=field]--> ImageButton at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L166
+EDGE Edit --references [EXTRACTED context=field]--> RequiredFieldValidator at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L67
+EDGE Edit --references [EXTRACTED context=field]--> TextBox at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.designer.cs:L193
+EDGE Edit --references [EXTRACTED context=field]--> String at=1.HOS/InformationCMS/Controls/1ContenPageAuto/Edit.ascx.cs:L17
+EDGE Lang --references [EXTRACTED context=field]--> ResourceManager at=1.HOS/InformationCMS/App_GlobalResources/Lang.designer.cs:L38
+EDGE SYS_User --references [EXTRACTED context=field]--> DateTime at=1.HOS/InformationWebObject/Base/SYS_UserBase.cs:L455
+EDGE SYS_User --references [EXTRACTED context=field]--> Exception at=1.HOS/InformationWebObject/Base/SYS_UserBase.cs:L479
+EDGE SYS_User --references [EXTRACTED context=field]--> IData at=1.HOS/InformationWebObject/Base/SYS_UserBase.cs:L465
+EDGE SYS_User --references [EXTRACTED context=field]--> String at=1.HOS/InformationWebObject/Base/SYS_UserBase.cs:L1087
+EDGE System_Menu --references [EXTRACTED context=field]--> DateTime at=1.HOS/InformationWebObject/Base/System_MenuBase.cs:L245
+EDGE System_Menu --references [EXTRACTED context=field]--> Exception at=1.HOS/InformationWebObject/Base/System_MenuBase.cs:L359
+EDGE System_Menu --references [EXTRACTED context=field]--> IData at=1.HOS/InformationWebObject/Base/System_MenuBase.cs:L345
+EDGE System_Menu --references [EXTRACTED context=field]--> String at=1.HOS/InformationWebObject/Base/System_MenuBase.cs:L894

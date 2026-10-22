@@ -1,0 +1,15 @@
+---
+pid: 25416
+cwd: "g:\\0.DỰ ÁN\\1.LMS\\.1.LMS"
+command: "uv run --python 3.12 python -m http.server 8765 --directory WEB-LMS-VS2010"
+title: "Serve responsive map preview"
+status: failed   
+started_at: 2026-10-19T07:01:28.726Z
+running_for_ms: 210843   
+---
+
+---
+exit_code: 4294967295
+elapsed_ms: 210842
+ended_at: 2026-10-19T07:04:59.568Z
+---

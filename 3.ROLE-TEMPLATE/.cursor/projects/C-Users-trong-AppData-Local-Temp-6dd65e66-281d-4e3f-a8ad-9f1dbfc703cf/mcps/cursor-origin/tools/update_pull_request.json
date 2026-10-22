@@ -1,0 +1,47 @@
+{
+  "name": "update_pull_request",
+  "description": "Update a pull request's title, description, and lifecycle through the public fields. Omit title or body to leave that field unchanged; pass an empty body to clear the description. Lifecycle is state (open or closed) plus draft, sent independently: state closed closes and ignores draft; state open reopens, and without draft true marks ready and publishes an existing draft; draft true reopens as a draft, alone or together with state open; draft false marks ready and reopens a closed pull request. Send one lifecycle field, both, or neither, so a metadata-only update is valid. Metadata and lifecycle together send one public UpdatePullRequest. Origin applies present fields in its documented order; a failure can leave some fields applied, so re-read after an error. merged is not writable, and ready is draft false or state open rather than a state value.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Origin namespace (owner) slug, taken from list_namespaces or an earlier Origin result. A GitHub owner or org name is not an Origin namespace unless list_namespaces returns it."
+      },
+      "name": {
+        "type": "string",
+        "description": "Origin repository name within that namespace"
+      },
+      "number": {
+        "type": "number"
+      },
+      "title": {
+        "type": "string",
+        "description": "New title. Omit to leave unchanged."
+      },
+      "body": {
+        "type": "string",
+        "description": "New description. Omit to leave unchanged. Pass \"\" to clear."
+      },
+      "state": {
+        "type": "string",
+        "enum": [
+          "open",
+          "closed"
+        ],
+        "description": "open or closed. Omit to leave unchanged."
+      },
+      "draft": {
+        "type": "boolean",
+        "description": "Draft flag. Omit to leave unchanged."
+      }
+    },
+    "required": [
+      "owner",
+      "name",
+      "number"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sqlcmd *)",
+      "Bash(sqlcmd*)",
+      "Bash(*sql*)",
+      "PowerShell(*sql*)",
+      "PowerShell(*Invoke-Sql*)",
+      "PowerShell(*SQLServer*)"
+    ]
+  },
+  "description": "SQL commands only allowed in this LMS project. Other projects without this setting will not have these permissions."
+}

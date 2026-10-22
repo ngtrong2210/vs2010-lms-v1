@@ -1,0 +1,25 @@
+.academic-page [hidden] { display: none !important; }
+.academic-page .academic-toolbar label,
+.academic-page .view-mode-field { min-width: 0; max-width: 100%; }
+.academic-page .academic-table td > small,
+.academic-page .academic-table td > strong { display: block; }
+.academic-page .academic-table .action-cell { white-space: nowrap; }
+.academic-page .catalog-card .btn { align-self: flex-start; }
+.academic-page .academic-modal { max-height: min(90vh, 900px); overflow-y: auto; }
+.academic-page .academic-modal .modal-actions input.btn { width: auto; }
+.academic-page .student-select-list label input { flex: 0 0 auto; }
+.academic-page .course-link { text-decoration: none; }
+.academic-page .empty-cell.app-card { padding: 2rem; text-align: center; }
+.academic-page .academic-filter { min-width: 150px; }
+.academic-page .academic-results-count { color: var(--text-muted, #6b7280); font-size: .82rem; }
+
+@media (max-width: 767.98px) {
+  .academic-page .academic-toolbar > label,
+  .academic-page .view-mode-field { width: 100%; }
+  .academic-page .academic-toolbar select,
+  .academic-page .academic-toolbar input { width: 100%; }
+  .academic-page .academic-tabs { overflow-x: auto; flex-wrap: nowrap; }
+  .academic-page .academic-tab { flex: 0 0 auto; }
+  .academic-page .modal-actions { flex-wrap: wrap; }
+  .academic-page .modal-actions .selection-count { width: 100%; }
+}

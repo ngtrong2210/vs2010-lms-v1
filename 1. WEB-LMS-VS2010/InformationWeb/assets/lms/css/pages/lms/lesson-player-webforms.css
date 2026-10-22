@@ -1,0 +1,108 @@
+/*
+ * Presentation bridge between LessonPlayer.ascx and LessonPlayerView.vue.
+ * Keep this file scoped to the student lesson player; server controls and
+ * postback behavior remain owned by the ASCX/code-behind.
+ */
+
+/* Vue only renders watch progress for VIDEO and INTERACTIVE_VIDEO lessons. */
+.lesson-player-page:not(.video-lesson) .lesson-watch-status {
+  display: none;
+}
+
+/*
+ * Web Forms returns due date, score and attempt count in one metadata block.
+ * Place those existing values in the same visual positions used by Vue:
+ * deadline below the title, score/attempts aligned on the right.
+ */
+.lesson-player-page .assignment-heading {
+  column-gap: 16px;
+  row-gap: 10px;
+}
+
+.lesson-player-page .assignment-heading > .content-type-icon {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.lesson-player-page .assignment-heading > div:not(.assignment-metadata) {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+}
+
+.lesson-player-page .assignment-heading .assignment-metadata {
+  display: contents;
+}
+
+.lesson-player-page .assignment-heading .assignment-metadata > span {
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.lesson-player-page .assignment-heading .assignment-metadata > span:first-child {
+  align-items: center;
+  background: var(--player-primary);
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  gap: 0.5rem;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: start;
+  line-height: 1.4;
+  padding: 0.55rem 0.8rem;
+}
+
+.lesson-player-page .assignment-heading .assignment-metadata > span:first-child i {
+  color: inherit;
+}
+
+.lesson-player-page .assignment-heading .assignment-metadata > span:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.lesson-player-page .assignment-heading .assignment-metadata > span:nth-child(3) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.lesson-player-page .assignment-form,
+.lesson-player-page .submission-editor,
+.lesson-player-page .submission-upload {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.lesson-player-page .submission-editor textarea {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .lesson-player-page .assignment-heading {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .lesson-player-page .assignment-heading > .content-type-icon {
+    grid-row: 1;
+  }
+
+  .lesson-player-page .assignment-heading .assignment-metadata {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .lesson-player-page .assignment-heading .assignment-metadata > span {
+    justify-self: auto;
+    white-space: normal;
+  }
+
+  .lesson-player-page .assignment-heading .assignment-metadata > span:first-child {
+    padding: 0.5rem 0.7rem;
+  }
+}

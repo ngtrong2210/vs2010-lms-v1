@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsSchedule" targetNamespace="http://tempuri.org/DsSchedule.xsd" xmlns:mstns="http://tempuri.org/DsSchedule.xsd" xmlns="http://tempuri.org/DsSchedule.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="2" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SIM_Data_DongConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="SIM_Data_DongConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StudentManager.Properties.Settings.GlobalReference.Default.SIM_Data_DongConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="donganConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="donganConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StudentManager.Properties.Settings.GlobalReference.Default.donganConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SIMS_DataConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="SIMS_DataConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.StudentManager.Properties.Settings.GlobalReference.Default.SIMS_DataConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsSchedule" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DsSchedule" msprop:Generator_DataSetName="DsSchedule" msprop:EnableTableAdapterManager="True">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Student_Search" msprop:Generator_UserTableName="Student_Search" msprop:Generator_RowDeletedName="Student_SearchRowDeleted" msprop:Generator_RowChangedName="Student_SearchRowChanged" msprop:Generator_RowClassName="Student_SearchRow" msprop:Generator_RowChangingName="Student_SearchRowChanging" msprop:Generator_RowEvArgName="Student_SearchRowChangeEvent" msprop:Generator_RowEvHandlerName="Student_SearchRowChangeEventHandler" msprop:Generator_TableClassName="Student_SearchDataTable" msprop:Generator_TableVarName="tableStudent_Search" msprop:Generator_RowDeletingName="Student_SearchRowDeleting" msprop:Generator_TablePropName="Student_Search">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="StudentID" msdata:ReadOnly="true" msprop:Generator_UserColumnName="StudentID" msprop:Generator_ColumnPropNameInRow="StudentID" msprop:Generator_ColumnVarNameInTable="columnStudentID" msprop:Generator_ColumnPropNameInTable="StudentIDColumn" type="xs:string" />
+              <xs:element name="StudentFirstName" msdata:ReadOnly="true" msprop:Generator_UserColumnName="StudentFirstName" msprop:Generator_ColumnPropNameInRow="StudentFirstName" msprop:Generator_ColumnVarNameInTable="columnStudentFirstName" msprop:Generator_ColumnPropNameInTable="StudentFirstNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StudentLastName" msprop:Generator_UserColumnName="StudentLastName" msprop:Generator_ColumnPropNameInRow="StudentLastName" msprop:Generator_ColumnVarNameInTable="columnStudentLastName" msprop:Generator_ColumnPropNameInTable="StudentLastNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BirthDateText" msprop:Generator_UserColumnName="BirthDateText" msprop:Generator_ColumnPropNameInRow="BirthDateText" msprop:Generator_ColumnVarNameInTable="columnBirthDateText" msprop:Generator_ColumnPropNameInTable="BirthDateTextColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GenderText" msprop:Generator_UserColumnName="GenderText" msprop:Generator_ColumnPropNameInRow="GenderText" msprop:Generator_ColumnVarNameInTable="columnGenderText" msprop:Generator_ColumnPropNameInTable="GenderTextColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Week1" msprop:Generator_UserColumnName="Week1" msprop:Generator_ColumnPropNameInRow="Week1" msprop:Generator_ColumnVarNameInTable="columnWeek1" msprop:Generator_ColumnPropNameInTable="Week1Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Week2" msprop:Generator_UserColumnName="Week2" msprop:Generator_ColumnPropNameInRow="Week2" msprop:Generator_ColumnVarNameInTable="columnWeek2" msprop:Generator_ColumnPropNameInTable="Week2Column" type="xs:int" />
+              <xs:element name="Week3" msprop:Generator_UserColumnName="Week3" msprop:Generator_ColumnPropNameInRow="Week3" msprop:Generator_ColumnVarNameInTable="columnWeek3" msprop:Generator_ColumnPropNameInTable="Week3Column" type="xs:int" />
+              <xs:element name="Week4" msprop:Generator_UserColumnName="Week4" msprop:Generator_ColumnPropNameInRow="Week4" msprop:Generator_ColumnVarNameInTable="columnWeek4" msprop:Generator_ColumnPropNameInTable="Week4Column" type="xs:boolean" />
+              <xs:element name="Week5" msprop:Generator_UserColumnName="Week5" msprop:Generator_ColumnPropNameInRow="Week5" msprop:Generator_ColumnVarNameInTable="columnWeek5" msprop:Generator_ColumnPropNameInTable="Week5Column">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Week6" msprop:Generator_UserColumnName="Week6" msprop:Generator_ColumnPropNameInRow="Week6" msprop:Generator_ColumnVarNameInTable="columnWeek6" msprop:Generator_ColumnPropNameInTable="Week6Column" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Week7" msprop:Generator_UserColumnName="Week7" msprop:Generator_ColumnPropNameInRow="Week7" msprop:Generator_ColumnVarNameInTable="columnWeek7" msprop:Generator_ColumnPropNameInTable="Week7Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Week8" msprop:Generator_UserColumnName="Week8" msprop:Generator_ColumnPropNameInRow="Week8" msprop:Generator_ColumnVarNameInTable="columnWeek8" msprop:Generator_ColumnPropNameInTable="Week8Column" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Week9" msprop:Generator_UserColumnName="Week9" msprop:Generator_ColumnPropNameInRow="Week9" msprop:Generator_ColumnVarNameInTable="columnWeek9" msprop:Generator_ColumnPropNameInTable="Week9Column" type="xs:boolean" />
+              <xs:element name="Week10" msprop:Generator_UserColumnName="Week10" msprop:Generator_ColumnPropNameInRow="Week10" msprop:Generator_ColumnVarNameInTable="columnWeek10" msprop:Generator_ColumnPropNameInTable="Week10Column" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Week11" msprop:Generator_UserColumnName="Week11" msprop:Generator_ColumnPropNameInRow="Week11" msprop:Generator_ColumnVarNameInTable="columnWeek11" msprop:Generator_ColumnPropNameInTable="Week11Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week12" msprop:Generator_UserColumnName="Week12" msprop:Generator_ColumnPropNameInRow="Week12" msprop:Generator_ColumnVarNameInTable="columnWeek12" msprop:Generator_ColumnPropNameInTable="Week12Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week13" msprop:Generator_UserColumnName="Week13" msprop:Generator_ColumnPropNameInRow="Week13" msprop:Generator_ColumnVarNameInTable="columnWeek13" msprop:Generator_ColumnPropNameInTable="Week13Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week14" msprop:Generator_UserColumnName="Week14" msprop:Generator_ColumnPropNameInRow="Week14" msprop:Generator_ColumnVarNameInTable="columnWeek14" msprop:Generator_ColumnPropNameInTable="Week14Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week15" msprop:Generator_UserColumnName="Week15" msprop:Generator_ColumnPropNameInRow="Week15" msprop:Generator_ColumnVarNameInTable="columnWeek15" msprop:Generator_ColumnPropNameInTable="Week15Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week16" msprop:Generator_UserColumnName="Week16" msprop:Generator_ColumnPropNameInRow="Week16" msprop:Generator_ColumnVarNameInTable="columnWeek16" msprop:Generator_ColumnPropNameInTable="Week16Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week17" msprop:Generator_UserColumnName="Week17" msprop:Generator_ColumnPropNameInRow="Week17" msprop:Generator_ColumnVarNameInTable="columnWeek17" msprop:Generator_ColumnPropNameInTable="Week17Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week18" msprop:Generator_UserColumnName="Week18" msprop:Generator_ColumnPropNameInRow="Week18" msprop:Generator_ColumnVarNameInTable="columnWeek18" msprop:Generator_ColumnPropNameInTable="Week18Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week19" msprop:Generator_UserColumnName="Week19" msprop:Generator_ColumnPropNameInRow="Week19" msprop:Generator_ColumnVarNameInTable="columnWeek19" msprop:Generator_ColumnPropNameInTable="Week19Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week20" msprop:Generator_UserColumnName="Week20" msprop:Generator_ColumnPropNameInRow="Week20" msprop:Generator_ColumnVarNameInTable="columnWeek20" msprop:Generator_ColumnPropNameInTable="Week20Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week21" msprop:Generator_UserColumnName="Week21" msprop:Generator_ColumnPropNameInRow="Week21" msprop:Generator_ColumnVarNameInTable="columnWeek21" msprop:Generator_ColumnPropNameInTable="Week21Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week22" msprop:Generator_UserColumnName="Week22" msprop:Generator_ColumnPropNameInRow="Week22" msprop:Generator_ColumnVarNameInTable="columnWeek22" msprop:Generator_ColumnPropNameInTable="Week22Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week23" msprop:Generator_UserColumnName="Week23" msprop:Generator_ColumnPropNameInRow="Week23" msprop:Generator_ColumnVarNameInTable="columnWeek23" msprop:Generator_ColumnPropNameInTable="Week23Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week24" msprop:Generator_UserColumnName="Week24" msprop:Generator_ColumnPropNameInRow="Week24" msprop:Generator_ColumnVarNameInTable="columnWeek24" msprop:Generator_ColumnPropNameInTable="Week24Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week25" msprop:Generator_UserColumnName="Week25" msprop:Generator_ColumnPropNameInRow="Week25" msprop:Generator_ColumnVarNameInTable="columnWeek25" msprop:Generator_ColumnPropNameInTable="Week25Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week26" msprop:Generator_UserColumnName="Week26" msprop:Generator_ColumnPropNameInRow="Week26" msprop:Generator_ColumnVarNameInTable="columnWeek26" msprop:Generator_ColumnPropNameInTable="Week26Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week30" msprop:Generator_UserColumnName="Week30" msprop:Generator_ColumnPropNameInRow="Week30" msprop:Generator_ColumnVarNameInTable="columnWeek30" msprop:Generator_ColumnPropNameInTable="Week30Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week27" msprop:Generator_UserColumnName="Week27" msprop:Generator_ColumnPropNameInRow="Week27" msprop:Generator_ColumnVarNameInTable="columnWeek27" msprop:Generator_ColumnPropNameInTable="Week27Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week28" msprop:Generator_UserColumnName="Week28" msprop:Generator_ColumnPropNameInRow="Week28" msprop:Generator_ColumnVarNameInTable="columnWeek28" msprop:Generator_ColumnPropNameInTable="Week28Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week29" msprop:Generator_UserColumnName="Week29" msprop:Generator_ColumnPropNameInRow="Week29" msprop:Generator_ColumnVarNameInTable="columnWeek29" msprop:Generator_ColumnPropNameInTable="Week29Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week31" msprop:Generator_UserColumnName="Week31" msprop:Generator_ColumnPropNameInRow="Week31" msprop:Generator_ColumnVarNameInTable="columnWeek31" msprop:Generator_ColumnPropNameInTable="Week31Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week32" msprop:Generator_UserColumnName="Week32" msprop:Generator_ColumnPropNameInRow="Week32" msprop:Generator_ColumnVarNameInTable="columnWeek32" msprop:Generator_ColumnPropNameInTable="Week32Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week33" msprop:Generator_UserColumnName="Week33" msprop:Generator_ColumnPropNameInRow="Week33" msprop:Generator_ColumnVarNameInTable="columnWeek33" msprop:Generator_ColumnPropNameInTable="Week33Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week34" msprop:Generator_UserColumnName="Week34" msprop:Generator_ColumnPropNameInRow="Week34" msprop:Generator_ColumnVarNameInTable="columnWeek34" msprop:Generator_ColumnPropNameInTable="Week34Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week35" msprop:Generator_UserColumnName="Week35" msprop:Generator_ColumnPropNameInRow="Week35" msprop:Generator_ColumnVarNameInTable="columnWeek35" msprop:Generator_ColumnPropNameInTable="Week35Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week36" msprop:Generator_UserColumnName="Week36" msprop:Generator_ColumnPropNameInRow="Week36" msprop:Generator_ColumnVarNameInTable="columnWeek36" msprop:Generator_ColumnPropNameInTable="Week36Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week37" msprop:Generator_UserColumnName="Week37" msprop:Generator_ColumnPropNameInRow="Week37" msprop:Generator_ColumnVarNameInTable="columnWeek37" msprop:Generator_ColumnPropNameInTable="Week37Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week38" msprop:Generator_UserColumnName="Week38" msprop:Generator_ColumnPropNameInRow="Week38" msprop:Generator_ColumnVarNameInTable="columnWeek38" msprop:Generator_ColumnPropNameInTable="Week38Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week39" msprop:Generator_UserColumnName="Week39" msprop:Generator_ColumnPropNameInRow="Week39" msprop:Generator_ColumnVarNameInTable="columnWeek39" msprop:Generator_ColumnPropNameInTable="Week39Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week40" msprop:Generator_UserColumnName="Week40" msprop:Generator_ColumnPropNameInRow="Week40" msprop:Generator_ColumnVarNameInTable="columnWeek40" msprop:Generator_ColumnPropNameInTable="Week40Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week41" msprop:Generator_UserColumnName="Week41" msprop:Generator_ColumnPropNameInRow="Week41" msprop:Generator_ColumnVarNameInTable="columnWeek41" msprop:Generator_ColumnPropNameInTable="Week41Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week42" msprop:Generator_UserColumnName="Week42" msprop:Generator_ColumnPropNameInRow="Week42" msprop:Generator_ColumnVarNameInTable="columnWeek42" msprop:Generator_ColumnPropNameInTable="Week42Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week43" msprop:Generator_UserColumnName="Week43" msprop:Generator_ColumnPropNameInRow="Week43" msprop:Generator_ColumnVarNameInTable="columnWeek43" msprop:Generator_ColumnPropNameInTable="Week43Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week44" msprop:Generator_UserColumnName="Week44" msprop:Generator_ColumnPropNameInRow="Week44" msprop:Generator_ColumnVarNameInTable="columnWeek44" msprop:Generator_ColumnPropNameInTable="Week44Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week45" msprop:Generator_UserColumnName="Week45" msprop:Generator_ColumnPropNameInRow="Week45" msprop:Generator_ColumnVarNameInTable="columnWeek45" msprop:Generator_ColumnPropNameInTable="Week45Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week46" msprop:Generator_UserColumnName="Week46" msprop:Generator_ColumnPropNameInRow="Week46" msprop:Generator_ColumnVarNameInTable="columnWeek46" msprop:Generator_ColumnPropNameInTable="Week46Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week47" msprop:Generator_UserColumnName="Week47" msprop:Generator_ColumnPropNameInRow="Week47" msprop:Generator_ColumnVarNameInTable="columnWeek47" msprop:Generator_ColumnPropNameInTable="Week47Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week48" msprop:Generator_UserColumnName="Week48" msprop:Generator_ColumnPropNameInRow="Week48" msprop:Generator_ColumnVarNameInTable="columnWeek48" msprop:Generator_ColumnPropNameInTable="Week48Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week49" msprop:Generator_UserColumnName="Week49" msprop:Generator_ColumnPropNameInRow="Week49" msprop:Generator_ColumnVarNameInTable="columnWeek49" msprop:Generator_ColumnPropNameInTable="Week49Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week50" msprop:Generator_UserColumnName="Week50" msprop:Generator_ColumnPropNameInRow="Week50" msprop:Generator_ColumnVarNameInTable="columnWeek50" msprop:Generator_ColumnPropNameInTable="Week50Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week51" msprop:Generator_UserColumnName="Week51" msprop:Generator_ColumnPropNameInRow="Week51" msprop:Generator_ColumnVarNameInTable="columnWeek51" msprop:Generator_ColumnPropNameInTable="Week51Column" type="xs:string" minOccurs="0" />
+              <xs:element name="Week52" msprop:Generator_UserColumnName="Week52" msprop:Generator_ColumnPropNameInRow="Week52" msprop:Generator_ColumnVarNameInTable="columnWeek52" msprop:Generator_ColumnPropNameInTable="Week52Column" type="xs:string" minOccurs="0" />
+              <xs:element name="ClassID" msprop:Generator_UserColumnName="ClassID" msprop:Generator_ColumnPropNameInRow="ClassID" msprop:Generator_ColumnVarNameInTable="columnClassID" msprop:Generator_ColumnPropNameInTable="ClassIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Student_Search" />
+      <xs:field xpath="mstns:StudentID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

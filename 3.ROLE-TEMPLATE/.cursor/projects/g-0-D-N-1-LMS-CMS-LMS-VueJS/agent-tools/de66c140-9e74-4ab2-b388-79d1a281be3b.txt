@@ -1,0 +1,1884 @@
+ M .gitignore
+ D 51T.XD1_MC_QP_102251_KeHoach.pdf
+ D README.md
+ D STGV.pdf
+ D Sims.sln
+ D data-mau/data-mau-update-V2.sql
+ D database/SCHEMA_NAMING.md
+ D database/bootstrap/001_CreateDatabase.sql
+ D database/indexes/001_Indexes.sql
+ D database/migrations/001_NormalizeSchemaNames.sql
+ D database/migrations/002_NormalizeMediaPaths.sql
+ D database/migrations/003_IndependentInteractiveVideos.sql
+ D database/migrations/004_VideoVersioning.sql
+ D database/migrations/005_Notifications.sql
+ D database/migrations/006_SystemAdministration.sql
+ D database/migrations/006_YouTubeVideoSources.sql
+ D database/migrations/007_AcademicTrainingModel.sql
+ D database/migrations/008_AcademicDemoData.sql
+ D database/migrations/009_CompleteClassSubjectLearningFlow.sql
+ D database/migrations/010_ClassSubjectContentDemoData.sql
+ D database/migrations/011_QuizLearningFlow.sql
+ D database/migrations/012_LessonComments.sql
+ D database/migrations/013_InteractiveContent.sql
+ D database/migrations/014_InteractiveContentDemoData.sql
+ D database/migrations/015_FullSubjectLessonTypesDemoData.sql
+ D database/migrations/016_DockerCourseFullDemoData.sql
+ D database/migrations/017_ClozeDragDropQuestions.sql
+ D database/production/PRODUCTION_SYNC_20260821.sql
+ D database/seed/001_RolesPermissions.sql
+ D database/seed/002_Users.sql
+ D database/seed/003_DemoCourse.sql
+ D database/seed/004_FullDemoData.sql
+ D database/seed/005_DemoConsistency.sql
+ D database/seed/006_VideoStorageCompliance.sql
+ D database/seed/007_VideoLibraryConsistency.sql
+ D database/seed/008_AttachedVideoDemoData.sql
+ D database/seed/009_TeacherVideoAssetCopies.sql
+ D database/seed/010_LearningFilesDemo.sql
+ D database/seed/011_LessonCommentsDemo.sql
+ D database/seed/012_ClozeDragDropDemo.sql
+ D database/stored-procedures/Academic.sql
+ D database/stored-procedures/AcademicCompletion.sql
+ D database/stored-procedures/Auth.sql
+ D database/stored-procedures/Content.sql
+ D database/stored-procedures/Courses.sql
+ D database/stored-procedures/InteractiveContent.sql
+ D database/stored-procedures/Notifications.sql
+ D database/stored-procedures/Progress.sql
+ D database/stored-procedures/Questions.sql
+ D database/stored-procedures/Quiz.sql
+ D database/stored-procedures/Reports.sql
+ D database/stored-procedures/Search.sql
+ D database/stored-procedures/Students.sql
+ D database/stored-procedures/SystemAdministration.sql
+ D database/stored-procedures/VideoVersioning.sql
+ D database/tables/001_SecurityTables.sql
+ D database/tables/002_CourseTables.sql
+ D database/tables/003_LearningTables.sql
+ D database/tables/004_ColumnDescriptions.sql
+ M docs/BACKEND_ARCHITECTURE.md
+ M docs/DEPLOYMENT.md
+ M docs/DEVELOPMENT.md
+ M docs/PRODUCTION_DEPLOYMENT.md
+ M docs/SQL_INJECTION_SECURITY_REVIEW.md
+ M docs/VS_CODE_COMMANDS.html
+ M frontend/.gitignore
+ M frontend/package-lock.json
+ M frontend/package.json
+ M frontend/src/api/apiErrorHandler.js
+ D frontend/vercel.json
+ D mau_hk.pdf
+ D scripts/production/Deploy-Frontend.ps1
+ M scripts/production/Invoke-ProductionDatabaseSync.ps1
+ M scripts/production/Publish-Backend.ps1
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/about-v1.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/about-v2.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/about.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/blog-list-option-1.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/blog-list-option-2.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/blog-list.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/blog-single-post.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/book-appointment-v1.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/book-appointment-v2.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/book-appointment.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/contact-us.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/animate.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/bootstrap.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/custom-animate.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/font-awesome.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/global.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/images/ui-icons_444444_256x240.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/images/ui-icons_555555_256x240.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/images/ui-icons_777620_256x240.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/images/ui-icons_777777_256x240.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/images/ui-icons_cc0000_256x240.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/images/ui-icons_ffffff_256x240.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/jquery-ui.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/jquery.fancybox.min.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/owl.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/owl.video.play.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/preloader.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/responsive.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/simple-line-icons.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/style.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/css/swiper.css"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.eot"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.woff"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-brands-400.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-brands-400.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-duotone-900.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-duotone-900.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-light-300.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-light-300.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-regular-400.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-regular-400.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-solid-900.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-solid-900.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-thin-100.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-thin-100.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-v4compatibility.ttf"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/fonts/fa-v4compatibility.woff2"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/gallery-masonry.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-about.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-gallery.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-image-blog.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-image-contact.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-membership.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-package.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-service-details.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-testimonial.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/banner-treatment.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/body-pattern.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/body-pattern2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/offerbg.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/reservation-bg.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/treatment1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/treatment2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/treatment3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/background/treatment4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/favicon.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-1-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-1-sm.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-2-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-2-sm.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-3-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-3-sm.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-4-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-4-sm.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-5-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-5-sm.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-6-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/gallery-6-sm.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic1-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic10-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic10.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic2-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic3-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic4-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic5-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic5.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic6-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic6.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic7-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic7.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic8-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic8.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic9-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/gallery/pic9.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/icons/leaf-left-white.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/icons/leaf-left.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/icons/leaf-right-white.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/icons/leaf-right.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/icons/star-element.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/logo-dark.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/logo.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/about-banner-img1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/about-banner-img2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/about-banner-img3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/abt-img1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/author-blog-detail.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/badge-inner2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/badge-outer.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/badge-outer2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-list-1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-list-2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-list-3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-list-4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-recent-1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-recent-2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-recent-3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-recent-4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-single-sm1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-single-sm2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/blog-single.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/comment1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/comment2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/comment3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/feature1.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/feature2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/feature3.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/feature4.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/ftr1.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/ftr2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/ftr3.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/ftr4.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/ftr5.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/ftr6.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/google.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/insta1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/insta2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/insta3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/insta4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/leaf-1.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/leaf-2-white.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/leaf-2.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/leaf-white.svg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/menu-badge.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-1-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-2-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-3-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-4-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-5-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-6-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-7-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-8-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/nav-9-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-5.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-6.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-7.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/news-8.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/offer-icon.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/offerbanner.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/pkg1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/pkg2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/pkg3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/pkg4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/pkg5.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/pkg6.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review-graphic1.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review-graphic2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review5.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/review6.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-feature1.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-feature2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-feature3.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-feature4.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery1-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery1-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery2-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery2-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery3-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery3-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery4-big.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/sd-gallery4-thumb.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/service-image.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/spa-element.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/stone-flower.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/t-smily.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/team-1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/team-2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/team-3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/team-4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/timg.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor1a.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor1b.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor1c.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor2a.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor2b.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor2c.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor3a.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor3b.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor3c.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor4a.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor4b.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor4c.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor5a.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor5b.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-acor5c.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-block1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-block2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-block3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-tab1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-tab2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-tab3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-tab4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-tab5.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-thumb1.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-thumb2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-thumb3.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment-thumb4.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment1-icon.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment1.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment2-icon.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment3-icon.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment3.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment4-icon.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment4.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/treatment5.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/trip.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/user-thumb1.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/user-thumb2.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/user-thumb3.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/user-thumb4.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/why1.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/why2.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/why3.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/why4.jpg"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/resource/yelp.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/images/sidebar-logo.png"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/index.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/appear.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/bootstrap.min.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/custom-script.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/jquery-ui.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/jquery.fancybox.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/jquery.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/owl.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/parallax.min.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/popper.min.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/swiper.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/js/wow.js"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/membership.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/menu-list-1.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/packages.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/service-details.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/testimonial.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/treatment-accordian-style.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/treatment-block-style.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/treatment-tab-style.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/treatment.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/treatments.html"
+ D "soure-code-m\341\272\253u/Velura-Spa-Video-Hero/video/vellura-preview-demo.mp4"
+ D "soure-code-m\341\272\253u/main-html/404.html"
+ D "soure-code-m\341\272\253u/main-html/about.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/animate.min.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/aos.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/bootstrap.min.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/color-2.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/color-3.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/color-4.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/custom-animate.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/flaticon.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/font-awesome-all.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-bg_glass_55_fbf9ee_1x400.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-bg_glass_65_ffffff_1x400.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-bg_glass_75_dadada_1x400.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-bg_glass_75_e6e6e6_1x400.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-bg_glass_95_fef1ec_1x400.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-bg_highlight-soft_75_cccccc_1x100.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-icons_222222_256x240.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-icons_2e83ff_256x240.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-icons_454545_256x240.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-icons_888888_256x240.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/images/ui-icons_cd0a0a_256x240.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/jarallax.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/jquery-ui.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/jquery.magnific-popup.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/nice-select.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/odometer.min.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/owl.carousel.min.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/owl.theme.default.min.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/owl.video.play.html"
+ D "soure-code-m\341\272\253u/main-html/assets/css/responsive.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/style.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/swiper.min.css"
+ D "soure-code-m\341\272\253u/main-html/assets/css/twentytwenty.css"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-brands-400.eot"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-brands-400.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-brands-400.ttf"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-brands-400.woff"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-brands-400.woff2"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-brands-400d41d.eot"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-light-300.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-light-300.woff"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-light-300.woff2"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-light-300d41d.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-light-301.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-light-302.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-regular-400.eot"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-regular-400.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-regular-400.woff"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-regular-400.woff2"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-regular-400d41d.eot"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-regular-401.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-solid-900.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-solid-900.woff"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-solid-900.woff2"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-solid-900d41d.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-solid-901.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/fa-solid-902.html"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/icomoon78ed.eot"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/icomoon78ed.svg"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/icomoon78ed.ttf"
+ D "soure-code-m\341\272\253u/main-html/assets/fonts/icomoon78ed.woff"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/about-one-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/admission-one-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/career-area-bg-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/career-area-bg-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/course-details-video-link-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/cta-one-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/feature-one-content-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/page-header-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/sidebar-contact-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/site-footer-four-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/site-footer-two-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/slider-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/slider-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/slider-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/slider-2-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/slider-2-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/slider-2-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/video-one-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/backgrounds/why-choose-one-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-1-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-1-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-10.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-7.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-8.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-2-9.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-3-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-3-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-3-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-4-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-4-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-4-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-details-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-details-img-box-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-details-img-box-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-four-author-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-four-author-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-four-author-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-list-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-list-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-list-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-one-author-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-one-author-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-one-author-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-one-author-img-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-one-author-img-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-one-author-img-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-three-user-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-three-user-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/blog-three-user-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/comment-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/comment-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/recent-post-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/recent-post-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/blog/recent-post-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-10.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-4.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-5.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-6.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-7.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-8.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/brand/brand-1-9.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-details-Instructor-img.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-details-client-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-details-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-client-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-client-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-client-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-client-img-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-client-img-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-img-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/course-list-img-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-2-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-2-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-2-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-3-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-3-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-3-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-3-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-3-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-3-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-one-client-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-one-client-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-one-client-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-one-client-img-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-three-client-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-three-client-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-three-client-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-three-client-img-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-three-client-img-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/courses/courses-three-client-img-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/favicons/apple-touch-icon.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/favicons/favicon-16x16.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/favicons/favicon-32x32.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/favicons/site.webmanifest"
+ D "soure-code-m\341\272\253u/main-html/assets/images/gallery/gallery-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/gallery/gallery-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/gallery/gallery-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/gallery/gallery-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/gallery/gallery-1-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/home-showcase/home-showcase-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/home-showcase/home-showcase-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/home-showcase/home-showcase-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/home-showcase/home-showcase-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/apple-icon.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-4.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-5.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-6.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-7.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/categoyr-two-icon-8.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/cross-out.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/google-play-icon.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/icon-facebook.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/icon/icon-google-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/about-three-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/about-three-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/about-two-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/about-two-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/activities-one-shape-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/banner-one-img-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/banner-one-review-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/banner-one-review-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/banner-one-review-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/become-a-teacher-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/campus-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/campus-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/campus-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/campus-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/campus-1-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/course-grid-discount-img-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/enterprise-plan-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/enterprise-plan-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-2-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-2-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-2-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-2-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-2-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-2-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-details-top-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-one-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-one-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-one-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/event-one-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/faq-one-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/footer-logo-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/footer-logo-3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/footer-logo-4.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/live-class-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/live-class-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/live-class-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/logo-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/logo-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/logo-3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/logo-4.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/main-slider-img-1-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/main-slider-img-1-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/main-slider-img-1-3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/main-slider-student-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/main-slider-student-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/main-slider-student-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/our-program-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/our-program-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/our-program-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/research-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/research-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/research-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/research-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/site-footer-four-payment-img1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/site-footer-four-payment-img2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/site-footer-four-payment-img3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/site-footer-four-payment-img4.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/site-footer-four-payment-img5.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/resources/why-choose-one-single-img-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/about-one-right-shape-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-one-shape-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-one-shape-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-one-shape-3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-one-shape-4.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-one-shape-5.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-one-shape-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-two-shape-bg-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/banner-two-shape-bg.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/contact-info-one-map.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/contact-one-bg-shape.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/counter-one-shape-bg.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/counter-two-bg-shape.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/course-grid-discount-shape-bg.html"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/courses-one-bg-shape.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/department-one-bg-shape.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/footer-one-map.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/footer-three-map.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/our-program-shape-bg.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/process-one-bg-shape.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/process-one-shape-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/process-one-shape-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shapes/sliding-text-icon-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/cart-page-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/cart-page-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/cart-page-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/cart-page-img-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-details-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-details-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-details-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-details-thumb-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-details-thumb-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-details-thumb-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-thumb-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-thumb-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-thumb-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/product-thumb-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/review-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/review-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-7.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-8.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-1-9.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-7.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-8.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/shop-product-2-9.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/wishlist-page-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/wishlist-page-img-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/wishlist-page-img-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/shop/wishlist-page-img-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-7.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-1-8.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-2-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-2-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-2-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/instructors-2-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/team/team-details-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-1-1.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-1-2.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-1-3.png"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-2-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-2-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-2-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-2-4.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-2-5.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-2-6.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-4-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-4-2.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-4-3.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/images/testimonial/testimonial-one-img-1.jpg"
+ D "soure-code-m\341\272\253u/main-html/assets/js/aos.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/bootstrap.bundle.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/gsap/ScrollTrigger.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/gsap/SplitText.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/gsap/gsap.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/isotope.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jarallax.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery-latest.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery-sidebar-content.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery-ui.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery.appear.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery.event.move.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery.magnific-popup.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery.nice-select.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/jquery.validate.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/marquee.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/odometer.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/owl.carousel.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/script.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/swiper.min.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/twentytwenty.js"
+ D "soure-code-m\341\272\253u/main-html/assets/js/wow.js"
+ D "soure-code-m\341\272\253u/main-html/become-a-teacher.html"
+ D "soure-code-m\341\272\253u/main-html/blog-details.html"
+ D "soure-code-m\341\272\253u/main-html/blog-left-sidebar.html"
+ D "soure-code-m\341\272\253u/main-html/blog-right-sidebar.html"
+ D "soure-code-m\341\272\253u/main-html/blog-standard.html"
+ D "soure-code-m\341\272\253u/main-html/blog.html"
+ D "soure-code-m\341\272\253u/main-html/cart.html"
+ D "soure-code-m\341\272\253u/main-html/checkout.html"
+ D "soure-code-m\341\272\253u/main-html/contact-1.html"
+ D "soure-code-m\341\272\253u/main-html/contact.html"
+ D "soure-code-m\341\272\253u/main-html/course-details.html"
+ D "soure-code-m\341\272\253u/main-html/course-list.html"
+ D "soure-code-m\341\272\253u/main-html/course.html"
+ D "soure-code-m\341\272\253u/main-html/event-details.html"
+ D "soure-code-m\341\272\253u/main-html/events.html"
+ D "soure-code-m\341\272\253u/main-html/faq.html"
+ D "soure-code-m\341\272\253u/main-html/index-one-page.html"
+ D "soure-code-m\341\272\253u/main-html/index.html"
+ D "soure-code-m\341\272\253u/main-html/index2-one-page.html"
+ D "soure-code-m\341\272\253u/main-html/index2.html"
+ D "soure-code-m\341\272\253u/main-html/index3-one-page.html"
+ D "soure-code-m\341\272\253u/main-html/index3.html"
+ D "soure-code-m\341\272\253u/main-html/index4-one-page.html"
+ D "soure-code-m\341\272\253u/main-html/index4.html"
+ D "soure-code-m\341\272\253u/main-html/instructor-details.html"
+ D "soure-code-m\341\272\253u/main-html/instructor.html"
+ D "soure-code-m\341\272\253u/main-html/login.html"
+ D "soure-code-m\341\272\253u/main-html/pricing.html"
+ D "soure-code-m\341\272\253u/main-html/privacy.html"
+ D "soure-code-m\341\272\253u/main-html/product-details.html"
+ D "soure-code-m\341\272\253u/main-html/products.html"
+ D "soure-code-m\341\272\253u/main-html/sign-up.html"
+ D "soure-code-m\341\272\253u/main-html/testimonials.html"
+ D "soure-code-m\341\272\253u/main-html/wishlist.html"
+ D src/Sims.Api/Controllers/AcademicController.cs
+ D src/Sims.Api/Controllers/AuthController.cs
+ D src/Sims.Api/Controllers/ContentController.cs
+ D src/Sims.Api/Controllers/CoursesController.cs
+ D src/Sims.Api/Controllers/LearningFilesController.cs
+ D src/Sims.Api/Controllers/LessonCommentsController.cs
+ D src/Sims.Api/Controllers/LmsController.cs
+ D src/Sims.Api/Controllers/NotificationsController.cs
+ D src/Sims.Api/Controllers/QuestionsController.cs
+ D src/Sims.Api/Controllers/QuizController.cs
+ D src/Sims.Api/Controllers/ReportsController.cs
+ D src/Sims.Api/Controllers/SearchController.cs
+ D src/Sims.Api/Controllers/StudentsController.cs
+ D src/Sims.Api/Controllers/SystemAdministrationController.cs
+ D src/Sims.Api/Controllers/TeachingController.cs
+ D src/Sims.Api/Controllers/VideoFilesController.cs
+ D src/Sims.Api/Filters/PositiveRouteIdFilter.cs
+ D src/Sims.Api/Middleware/GlobalExceptionMiddleware.cs
+ D src/Sims.Api/Program.cs
+ D src/Sims.Api/Properties/launchSettings.json
+ D src/Sims.Api/Sims.Api.csproj
+ D src/Sims.Api/Sims.Api.http
+ D src/Sims.Api/appsettings.Development.json
+ D src/Sims.Api/appsettings.json
+ D src/Sims.Api/logs/.gitkeep
+ D src/Sims.Api/storage/cache/.gitkeep
+ D src/Sims.Api/storage/exports/.gitkeep
+ D src/Sims.Api/storage/processing/.gitkeep
+ D src/Sims.Api/storage/temp/.gitkeep
+ D src/Sims.Api/web.config
+ D src/Sims.Api/wwwroot/Media/Audio/.gitkeep
+ D src/Sims.Api/wwwroot/Media/File/.gitkeep
+ D src/Sims.Api/wwwroot/Media/File/Lessons/Demo/51T.XD1_MC_QP_102251_KeHoach.pdf
+ D src/Sims.Api/wwwroot/Media/File/Lessons/Demo/STGV.pdf
+ D src/Sims.Api/wwwroot/Media/File/Lessons/Demo/mau_hk.pdf
+ D src/Sims.Api/wwwroot/Media/Image/.gitkeep
+ D src/Sims.Api/wwwroot/Media/Thumbnail/.gitkeep
+ D src/Sims.Api/wwwroot/Media/Video/.gitkeep
+ D src/SimsData/Data/DatabaseInitializer.cs
+ D src/SimsData/Data/SqlConnectionFactory.cs
+ D src/SimsData/Health/SqlServerHealthCheck.cs
+ D src/SimsData/Security/TokenService.cs
+ D src/SimsData/SimsData.csproj
+ D src/SimsData/Storage/LocalAssignmentStorageService.cs
+ D src/SimsData/Storage/LocalVideoStorageService.cs
+ D src/SimsData/Storage/MediaStorageOptions.cs
+ D src/SimsData/Storage/ProjectStorageOptions.cs
+ D src/SimsData/Storage/ProjectStorageService.cs
+ D src/SimsData/Storage/StorageCleanupHostedService.cs
+ D src/SimsObject/Base/LMS_AssignmentSubmissionFilesBase.cs
+ D src/SimsObject/Base/LMS_AssignmentSubmissionsBase.cs
+ D src/SimsObject/Base/LMS_ContentInteractionsBase.cs
+ D src/SimsObject/Base/LMS_EnrollmentsBase.cs
+ D src/SimsObject/Base/LMS_InteractiveContentsBase.cs
+ D src/SimsObject/Base/LMS_LearningSessionsBase.cs
+ D src/SimsObject/Base/LMS_LessonCommentsBase.cs
+ D src/SimsObject/Base/LMS_QuestionAnswerKeysBase.cs
+ D src/SimsObject/Base/LMS_QuestionBlanksBase.cs
+ D src/SimsObject/Base/LMS_QuestionOptionsBase.cs
+ D src/SimsObject/Base/LMS_QuestionsBase.cs
+ D src/SimsObject/Base/LMS_QuizAttemptAnswersBase.cs
+ D src/SimsObject/Base/LMS_QuizAttemptsBase.cs
+ D src/SimsObject/Base/LMS_QuizQuestionsBase.cs
+ D src/SimsObject/Base/LMS_QuizzesBase.cs
+ D src/SimsObject/Base/LMS_StudentAnswerOptionsBase.cs
+ D src/SimsObject/Base/LMS_StudentAnswersBase.cs
+ D src/SimsObject/Base/LMS_StudentLessonProgressBase.cs
+ D src/SimsObject/Base/LMS_StudentVideoProgressBase.cs
+ D src/SimsObject/Base/LMS_StudySessionsBase.cs
+ D src/SimsObject/Base/LMS_VideoInteractionsBase.cs
+ D src/SimsObject/Base/README.md
+ D src/SimsObject/Base/SIM_ChaptersBase.cs
+ D src/SimsObject/Base/SIM_ClassBase.cs
+ D src/SimsObject/Base/SIM_Class_SubjectBase.cs
+ D src/SimsObject/Base/SIM_CourseBase.cs
+ D src/SimsObject/Base/SIM_CourseCategoriesBase.cs
+ D src/SimsObject/Base/SIM_CoursesBase.cs
+ D src/SimsObject/Base/SIM_LessonResourcesBase.cs
+ D src/SimsObject/Base/SIM_LessonsBase.cs
+ D src/SimsObject/Base/SIM_ScienceBase.cs
+ D src/SimsObject/Base/SIM_StudentBase.cs
+ D src/SimsObject/Base/SIM_SubjectBase.cs
+ D src/SimsObject/Base/SIM_TeacherBase.cs
+ D src/SimsObject/Base/SIM_TimetableBase.cs
+ D src/SimsObject/Base/SIM_VideoAssetSharesBase.cs
+ D src/SimsObject/Base/SIM_VideoAssetsBase.cs
+ D src/SimsObject/Base/SIM_VideoVersionsBase.cs
+ D src/SimsObject/Base/SIM_VideosBase.cs
+ D src/SimsObject/Base/SIM_YearBase.cs
+ D src/SimsObject/Base/SYS_AuditLogsBase.cs
+ D src/SimsObject/Base/SYS_NotificationsBase.cs
+ D src/SimsObject/Base/SYS_PermissionCategoryBase.cs
+ D src/SimsObject/Base/SYS_PermissionGroupBase.cs
+ D src/SimsObject/Base/SYS_PermissionsBase.cs
+ D src/SimsObject/Base/SYS_RefreshTokensBase.cs
+ D src/SimsObject/Base/SYS_RolePermissionsBase.cs
+ D src/SimsObject/Base/SYS_RolesBase.cs
+ D src/SimsObject/Base/SYS_SystemSettingsBase.cs
+ D src/SimsObject/Base/SYS_UserRolesBase.cs
+ D src/SimsObject/Base/SYS_UsersBase.cs
+ D src/SimsObject/Common/ApiResponse.cs
+ D src/SimsObject/Common/InputGuard.cs
+ D src/SimsObject/DTOs/Dtos.cs
+ D src/SimsObject/Interfaces/Services.cs
+ D src/SimsObject/LMS_AssignmentSubmissionFiles.cs
+ D src/SimsObject/LMS_AssignmentSubmissions.cs
+ D src/SimsObject/LMS_ContentInteractions.cs
+ D src/SimsObject/LMS_Enrollments.cs
+ D src/SimsObject/LMS_InteractiveContents.cs
+ D src/SimsObject/LMS_LearningSessions.cs
+ D src/SimsObject/LMS_LessonComments.cs
+ D src/SimsObject/LMS_QuestionAnswerKeys.cs
+ D src/SimsObject/LMS_QuestionOptions.cs
+ D src/SimsObject/LMS_Questions.cs
+ D src/SimsObject/LMS_QuizAttemptAnswers.cs
+ D src/SimsObject/LMS_QuizAttempts.cs
+ D src/SimsObject/LMS_QuizQuestions.cs
+ D src/SimsObject/LMS_Quizzes.cs
+ D src/SimsObject/LMS_StudentAnswerOptions.cs
+ D src/SimsObject/LMS_StudentAnswers.cs
+ D src/SimsObject/LMS_StudentLessonProgress.cs
+ D src/SimsObject/LMS_StudentVideoProgress.cs
+ D src/SimsObject/LMS_StudySessions.cs
+ D src/SimsObject/LMS_VideoInteractions.cs
+ D src/SimsObject/Models.cs
+ D src/SimsObject/SIM_Chapters.cs
+ D src/SimsObject/SIM_Class.cs
+ D src/SimsObject/SIM_Class_Subject.cs
+ D src/SimsObject/SIM_Course.cs
+ D src/SimsObject/SIM_CourseCategories.cs
+ D src/SimsObject/SIM_Courses.cs
+ D src/SimsObject/SIM_LessonResources.cs
+ D src/SimsObject/SIM_Lessons.cs
+ D src/SimsObject/SIM_Science.cs
+ D src/SimsObject/SIM_Student.cs
+ D src/SimsObject/SIM_Subject.cs
+ D src/SimsObject/SIM_Teacher.cs
+ D src/SimsObject/SIM_Timetable.cs
+ D src/SimsObject/SIM_VideoAssetShares.cs
+ D src/SimsObject/SIM_VideoAssets.cs
+ D src/SimsObject/SIM_VideoVersions.cs
+ D src/SimsObject/SIM_Videos.cs
+ D src/SimsObject/SIM_Year.cs
+ D src/SimsObject/SYS_AuditLogs.cs
+ D src/SimsObject/SYS_Notifications.cs
+ D src/SimsObject/SYS_PermissionCategory.cs
+ D src/SimsObject/SYS_PermissionGroup.cs
+ D src/SimsObject/SYS_Permissions.cs
+ D src/SimsObject/SYS_RefreshTokens.cs
+ D src/SimsObject/SYS_RolePermissions.cs
+ D src/SimsObject/SYS_Roles.cs
+ D src/SimsObject/SYS_SystemSettings.cs
+ D src/SimsObject/SYS_UserRoles.cs
+ D src/SimsObject/SYS_Users.cs
+ D src/SimsObject/SimsObject.csproj
+ D src/SimsService/DependencyInjection.cs
+ D src/SimsService/Services/AcademicService.cs
+ D src/SimsService/Services/AuthService.cs
+ D src/SimsService/Services/ContentService.cs
+ D src/SimsService/Services/CourseService.cs
+ D src/SimsService/Services/LearningService.cs
+ D src/SimsService/Services/LessonCommentService.cs
+ D src/SimsService/Services/NotificationService.cs
+ D src/SimsService/Services/QuestionService.cs
+ D src/SimsService/Services/QuizService.cs
+ D src/SimsService/Services/ReportService.cs
+ D src/SimsService/Services/SearchService.cs
+ D src/SimsService/Services/StudentService.cs
+ D src/SimsService/Services/SystemAdministrationService.cs
+ D src/SimsService/Services/TeachingService.cs
+ D src/SimsService/SimsService.csproj
+ D tests/Sims.IntegrationTests/ApiContractTests.cs
+ D tests/Sims.IntegrationTests/AssemblyInfo.cs
+ D tests/Sims.IntegrationTests/SecurityTests.cs
+ D tests/Sims.IntegrationTests/Sims.IntegrationTests.csproj
+ D tests/Sims.IntegrationTests/SystemTests.cs
+ D tests/Sims.UnitTests/ApiResponseTests.cs
+ D tests/Sims.UnitTests/InputGuardTests.cs
+ D tests/Sims.UnitTests/Sims.UnitTests.csproj
+ D tools/SimsObjectGenerator/Program.cs
+ D tools/SimsObjectGenerator/SimsObjectGenerator.csproj
+ D z22.mp4
+ D z3.mp4
+ D z5.mp4
+ D z6.mp4
+ D z7.mp4
+?? .claude/skills/playwright-cli/SKILL.md
+?? .claude/skills/playwright-cli/references/element-attributes.md
+?? .claude/skills/playwright-cli/references/playwright-tests.md
+?? .claude/skills/playwright-cli/references/pr-attachments.md
+?? .claude/skills/playwright-cli/references/request-mocking.md
+?? .claude/skills/playwright-cli/references/running-code.md
+?? .claude/skills/playwright-cli/references/session-management.md
+?? .claude/skills/playwright-cli/references/storage-state.md
+?? .claude/skills/playwright-cli/references/test-generation.md
+?? .claude/skills/playwright-cli/references/tracing.md
+?? .claude/skills/playwright-cli/references/video-recording.md
+?? .cursor/rules/graphify.mdc
+?? backend/Sims.sln
+?? backend/database/SCHEMA_NAMING.md
+?? backend/database/bootstrap/001_CreateDatabase.sql
+?? backend/database/indexes/001_Indexes.sql
+?? backend/database/migrations/001_NormalizeSchemaNames.sql
+?? backend/database/migrations/002_NormalizeMediaPaths.sql
+?? backend/database/migrations/003_IndependentInteractiveVideos.sql
+?? backend/database/migrations/004_VideoVersioning.sql
+?? backend/database/migrations/005_Notifications.sql
+?? backend/database/migrations/006_SystemAdministration.sql
+?? backend/database/migrations/006_YouTubeVideoSources.sql
+?? backend/database/migrations/007_AcademicTrainingModel.sql
+?? backend/database/migrations/008_AcademicDemoData.sql
+?? backend/database/migrations/009_CompleteClassSubjectLearningFlow.sql
+?? backend/database/migrations/010_ClassSubjectContentDemoData.sql
+?? backend/database/migrations/011_QuizLearningFlow.sql
+?? backend/database/migrations/012_LessonComments.sql
+?? backend/database/migrations/013_InteractiveContent.sql
+?? backend/database/migrations/014_InteractiveContentDemoData.sql
+?? backend/database/migrations/015_FullSubjectLessonTypesDemoData.sql
+?? backend/database/migrations/016_DockerCourseFullDemoData.sql
+?? backend/database/migrations/017_ClozeDragDropQuestions.sql
+?? backend/database/production/PRODUCTION_SYNC_20260821.sql
+?? backend/database/seed/001_RolesPermissions.sql
+?? backend/database/seed/002_Users.sql
+?? backend/database/seed/003_DemoCourse.sql
+?? backend/database/seed/004_FullDemoData.sql
+?? backend/database/seed/005_DemoConsistency.sql
+?? backend/database/seed/006_VideoStorageCompliance.sql
+?? backend/database/seed/007_VideoLibraryConsistency.sql
+?? backend/database/seed/008_AttachedVideoDemoData.sql
+?? backend/database/seed/009_TeacherVideoAssetCopies.sql
+?? backend/database/seed/010_LearningFilesDemo.sql
+?? backend/database/seed/011_LessonCommentsDemo.sql
+?? backend/database/seed/012_ClozeDragDropDemo.sql
+?? backend/database/stored-procedures/Academic.sql
+?? backend/database/stored-procedures/AcademicCompletion.sql
+?? backend/database/stored-procedures/Auth.sql
+?? backend/database/stored-procedures/Content.sql
+?? backend/database/stored-procedures/Courses.sql
+?? backend/database/stored-procedures/InteractiveContent.sql
+?? backend/database/stored-procedures/Notifications.sql
+?? backend/database/stored-procedures/Progress.sql
+?? backend/database/stored-procedures/Questions.sql
+?? backend/database/stored-procedures/Quiz.sql
+?? backend/database/stored-procedures/Reports.sql
+?? backend/database/stored-procedures/Search.sql
+?? backend/database/stored-procedures/Students.sql
+?? backend/database/stored-procedures/SystemAdministration.sql
+?? backend/database/stored-procedures/VideoVersioning.sql
+?? backend/database/tables/001_SecurityTables.sql
+?? backend/database/tables/002_CourseTables.sql
+?? backend/database/tables/003_LearningTables.sql
+?? backend/database/tables/004_ColumnDescriptions.sql
+?? backend/src/Sims.Api/Controllers/AcademicController.cs
+?? backend/src/Sims.Api/Controllers/AuthController.cs
+?? backend/src/Sims.Api/Controllers/ContentController.cs
+?? backend/src/Sims.Api/Controllers/CoursesController.cs
+?? backend/src/Sims.Api/Controllers/LearningFilesController.cs
+?? backend/src/Sims.Api/Controllers/LessonCommentsController.cs
+?? backend/src/Sims.Api/Controllers/LmsController.cs
+?? backend/src/Sims.Api/Controllers/NotificationsController.cs
+?? backend/src/Sims.Api/Controllers/QuestionsController.cs
+?? backend/src/Sims.Api/Controllers/QuizController.cs
+?? backend/src/Sims.Api/Controllers/ReportsController.cs
+?? backend/src/Sims.Api/Controllers/SearchController.cs
+?? backend/src/Sims.Api/Controllers/StudentsController.cs
+?? backend/src/Sims.Api/Controllers/SystemAdministrationController.cs
+?? backend/src/Sims.Api/Controllers/TeachingController.cs
+?? backend/src/Sims.Api/Controllers/VideoFilesController.cs
+?? backend/src/Sims.Api/Filters/PositiveRouteIdFilter.cs
+?? backend/src/Sims.Api/Middleware/GlobalExceptionMiddleware.cs
+?? backend/src/Sims.Api/Program.cs
+?? backend/src/Sims.Api/Properties/launchSettings.json
+?? backend/src/Sims.Api/Sims.Api.csproj
+?? backend/src/Sims.Api/Sims.Api.http
+?? backend/src/Sims.Api/appsettings.Development.json
+?? backend/src/Sims.Api/appsettings.json
+?? backend/src/Sims.Api/logs/.gitkeep
+?? backend/src/Sims.Api/storage/cache/.gitkeep
+?? backend/src/Sims.Api/storage/exports/.gitkeep
+?? backend/src/Sims.Api/storage/processing/.gitkeep
+?? backend/src/Sims.Api/storage/temp/.gitkeep
+?? backend/src/Sims.Api/web.config
+?? backend/src/Sims.Api/wwwroot/Media/Audio/.gitkeep
+?? backend/src/Sims.Api/wwwroot/Media/File/.gitkeep
+?? backend/src/Sims.Api/wwwroot/Media/File/Lessons/Demo/51T.XD1_MC_QP_102251_KeHoach.pdf
+?? backend/src/Sims.Api/wwwroot/Media/File/Lessons/Demo/STGV.pdf
+?? backend/src/Sims.Api/wwwroot/Media/File/Lessons/Demo/mau_hk.pdf
+?? backend/src/Sims.Api/wwwroot/Media/Image/.gitkeep
+?? backend/src/Sims.Api/wwwroot/Media/Thumbnail/.gitkeep
+?? backend/src/Sims.Api/wwwroot/Media/Video/.gitkeep
+?? backend/src/SimsData/Data/DatabaseInitializer.cs
+?? backend/src/SimsData/Data/SqlConnectionFactory.cs
+?? backend/src/SimsData/Health/SqlServerHealthCheck.cs
+?? backend/src/SimsData/Security/TokenService.cs
+?? backend/src/SimsData/SimsData.csproj
+?? backend/src/SimsData/Storage/LocalAssignmentStorageService.cs
+?? backend/src/SimsData/Storage/LocalVideoStorageService.cs
+?? backend/src/SimsData/Storage/MediaStorageOptions.cs
+?? backend/src/SimsData/Storage/ProjectStorageOptions.cs
+?? backend/src/SimsData/Storage/ProjectStorageService.cs
+?? backend/src/SimsData/Storage/StorageCleanupHostedService.cs
+?? backend/src/SimsObject/Base/LMS_AssignmentSubmissionFilesBase.cs
+?? backend/src/SimsObject/Base/LMS_AssignmentSubmissionsBase.cs
+?? backend/src/SimsObject/Base/LMS_ContentInteractionsBase.cs
+?? backend/src/SimsObject/Base/LMS_EnrollmentsBase.cs
+?? backend/src/SimsObject/Base/LMS_InteractiveContentsBase.cs
+?? backend/src/SimsObject/Base/LMS_LearningSessionsBase.cs
+?? backend/src/SimsObject/Base/LMS_LessonCommentsBase.cs
+?? backend/src/SimsObject/Base/LMS_QuestionAnswerKeysBase.cs
+?? backend/src/SimsObject/Base/LMS_QuestionBlanksBase.cs
+?? backend/src/SimsObject/Base/LMS_QuestionOptionsBase.cs
+?? backend/src/SimsObject/Base/LMS_QuestionsBase.cs
+?? backend/src/SimsObject/Base/LMS_QuizAttemptAnswersBase.cs
+?? backend/src/SimsObject/Base/LMS_QuizAttemptsBase.cs
+?? backend/src/SimsObject/Base/LMS_QuizQuestionsBase.cs
+?? backend/src/SimsObject/Base/LMS_QuizzesBase.cs
+?? backend/src/SimsObject/Base/LMS_StudentAnswerOptionsBase.cs
+?? backend/src/SimsObject/Base/LMS_StudentAnswersBase.cs
+?? backend/src/SimsObject/Base/LMS_StudentLessonProgressBase.cs
+?? backend/src/SimsObject/Base/LMS_StudentVideoProgressBase.cs
+?? backend/src/SimsObject/Base/LMS_StudySessionsBase.cs
+?? backend/src/SimsObject/Base/LMS_VideoInteractionsBase.cs
+?? backend/src/SimsObject/Base/README.md
+?? backend/src/SimsObject/Base/SIM_ChaptersBase.cs
+?? backend/src/SimsObject/Base/SIM_ClassBase.cs
+?? backend/src/SimsObject/Base/SIM_Class_SubjectBase.cs
+?? backend/src/SimsObject/Base/SIM_CourseBase.cs
+?? backend/src/SimsObject/Base/SIM_CourseCategoriesBase.cs
+?? backend/src/SimsObject/Base/SIM_CoursesBase.cs
+?? backend/src/SimsObject/Base/SIM_LessonResourcesBase.cs
+?? backend/src/SimsObject/Base/SIM_LessonsBase.cs
+?? backend/src/SimsObject/Base/SIM_ScienceBase.cs
+?? backend/src/SimsObject/Base/SIM_StudentBase.cs
+?? backend/src/SimsObject/Base/SIM_SubjectBase.cs
+?? backend/src/SimsObject/Base/SIM_TeacherBase.cs
+?? backend/src/SimsObject/Base/SIM_TimetableBase.cs
+?? backend/src/SimsObject/Base/SIM_VideoAssetSharesBase.cs
+?? backend/src/SimsObject/Base/SIM_VideoAssetsBase.cs
+?? backend/src/SimsObject/Base/SIM_VideoVersionsBase.cs
+?? backend/src/SimsObject/Base/SIM_VideosBase.cs
+?? backend/src/SimsObject/Base/SIM_YearBase.cs
+?? backend/src/SimsObject/Base/SYS_AuditLogsBase.cs
+?? backend/src/SimsObject/Base/SYS_NotificationsBase.cs
+?? backend/src/SimsObject/Base/SYS_PermissionCategoryBase.cs
+?? backend/src/SimsObject/Base/SYS_PermissionGroupBase.cs
+?? backend/src/SimsObject/Base/SYS_PermissionsBase.cs
+?? backend/src/SimsObject/Base/SYS_RefreshTokensBase.cs
+?? backend/src/SimsObject/Base/SYS_RolePermissionsBase.cs
+?? backend/src/SimsObject/Base/SYS_RolesBase.cs
+?? backend/src/SimsObject/Base/SYS_SystemSettingsBase.cs
+?? backend/src/SimsObject/Base/SYS_UserRolesBase.cs
+?? backend/src/SimsObject/Base/SYS_UsersBase.cs
+?? backend/src/SimsObject/Common/ApiResponse.cs
+?? backend/src/SimsObject/Common/InputGuard.cs
+?? backend/src/SimsObject/DTOs/Dtos.cs
+?? backend/src/SimsObject/Interfaces/Services.cs
+?? backend/src/SimsObject/LMS_AssignmentSubmissionFiles.cs
+?? backend/src/SimsObject/LMS_AssignmentSubmissions.cs
+?? backend/src/SimsObject/LMS_ContentInteractions.cs
+?? backend/src/SimsObject/LMS_Enrollments.cs
+?? backend/src/SimsObject/LMS_InteractiveContents.cs
+?? backend/src/SimsObject/LMS_LearningSessions.cs
+?? backend/src/SimsObject/LMS_LessonComments.cs
+?? backend/src/SimsObject/LMS_QuestionAnswerKeys.cs
+?? backend/src/SimsObject/LMS_QuestionOptions.cs
+?? backend/src/SimsObject/LMS_Questions.cs
+?? backend/src/SimsObject/LMS_QuizAttemptAnswers.cs
+?? backend/src/SimsObject/LMS_QuizAttempts.cs
+?? backend/src/SimsObject/LMS_QuizQuestions.cs
+?? backend/src/SimsObject/LMS_Quizzes.cs
+?? backend/src/SimsObject/LMS_StudentAnswerOptions.cs
+?? backend/src/SimsObject/LMS_StudentAnswers.cs
+?? backend/src/SimsObject/LMS_StudentLessonProgress.cs
+?? backend/src/SimsObject/LMS_StudentVideoProgress.cs
+?? backend/src/SimsObject/LMS_StudySessions.cs
+?? backend/src/SimsObject/LMS_VideoInteractions.cs
+?? backend/src/SimsObject/Models.cs
+?? backend/src/SimsObject/SIM_Chapters.cs
+?? backend/src/SimsObject/SIM_Class.cs
+?? backend/src/SimsObject/SIM_Class_Subject.cs
+?? backend/src/SimsObject/SIM_Course.cs
+?? backend/src/SimsObject/SIM_CourseCategories.cs
+?? backend/src/SimsObject/SIM_Courses.cs
+?? backend/src/SimsObject/SIM_LessonResources.cs
+?? backend/src/SimsObject/SIM_Lessons.cs
+?? backend/src/SimsObject/SIM_Science.cs
+?? backend/src/SimsObject/SIM_Student.cs
+?? backend/src/SimsObject/SIM_Subject.cs
+?? backend/src/SimsObject/SIM_Teacher.cs
+?? backend/src/SimsObject/SIM_Timetable.cs
+?? backend/src/SimsObject/SIM_VideoAssetShares.cs
+?? backend/src/SimsObject/SIM_VideoAssets.cs
+?? backend/src/SimsObject/SIM_VideoVersions.cs
+?? backend/src/SimsObject/SIM_Videos.cs
+?? backend/src/SimsObject/SIM_Year.cs
+?? backend/src/SimsObject/SYS_AuditLogs.cs
+?? backend/src/SimsObject/SYS_Notifications.cs
+?? backend/src/SimsObject/SYS_PermissionCategory.cs
+?? backend/src/SimsObject/SYS_PermissionGroup.cs
+?? backend/src/SimsObject/SYS_Permissions.cs
+?? backend/src/SimsObject/SYS_RefreshTokens.cs
+?? backend/src/SimsObject/SYS_RolePermissions.cs
+?? backend/src/SimsObject/SYS_Roles.cs
+?? backend/src/SimsObject/SYS_SystemSettings.cs
+?? backend/src/SimsObject/SYS_UserRoles.cs
+?? backend/src/SimsObject/SYS_Users.cs
+?? backend/src/SimsObject/SimsObject.csproj
+?? backend/src/SimsService/DependencyInjection.cs
+?? backend/src/SimsService/Services/AcademicService.cs
+?? backend/src/SimsService/Services/AuthService.cs
+?? backend/src/SimsService/Services/ContentService.cs
+?? backend/src/SimsService/Services/CourseService.cs
+?? backend/src/SimsService/Services/LearningService.cs
+?? backend/src/SimsService/Services/LessonCommentService.cs
+?? backend/src/SimsService/Services/NotificationService.cs
+?? backend/src/SimsService/Services/QuestionService.cs
+?? backend/src/SimsService/Services/QuizService.cs
+?? backend/src/SimsService/Services/ReportService.cs
+?? backend/src/SimsService/Services/SearchService.cs
+?? backend/src/SimsService/Services/StudentService.cs
+?? backend/src/SimsService/Services/SystemAdministrationService.cs
+?? backend/src/SimsService/Services/TeachingService.cs
+?? backend/src/SimsService/SimsService.csproj
+?? backend/tests/Sims.IntegrationTests/ApiContractTests.cs
+?? backend/tests/Sims.IntegrationTests/AssemblyInfo.cs
+?? backend/tests/Sims.IntegrationTests/SecurityTests.cs
+?? backend/tests/Sims.IntegrationTests/Sims.IntegrationTests.csproj
+?? backend/tests/Sims.IntegrationTests/SystemTests.cs
+?? backend/tests/Sims.UnitTests/ApiResponseTests.cs
+?? backend/tests/Sims.UnitTests/InputGuardTests.cs
+?? backend/tests/Sims.UnitTests/Sims.UnitTests.csproj
+?? backend/tools/SimsObjectGenerator/Program.cs
+?? backend/tools/SimsObjectGenerator/SimsObjectGenerator.csproj
+?? docs/AI_TOOLS_SETUP_REPORT.md
+?? docs/README.md
+?? references/README.md
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/about-v1.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/about-v2.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/about.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/blog-list-option-1.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/blog-list-option-2.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/blog-list.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/blog-single-post.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/book-appointment-v1.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/book-appointment-v2.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/book-appointment.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/contact-us.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/animate.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/bootstrap.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/custom-animate.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/font-awesome.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/global.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/images/ui-icons_444444_256x240.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/images/ui-icons_555555_256x240.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/images/ui-icons_777620_256x240.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/images/ui-icons_777777_256x240.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/images/ui-icons_cc0000_256x240.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/images/ui-icons_ffffff_256x240.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/jquery-ui.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/jquery.fancybox.min.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/owl.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/owl.video.play.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/preloader.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/responsive.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/simple-line-icons.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/style.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/css/swiper.css
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.eot
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.woff
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/Simple-Line-Iconsb26c.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-brands-400.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-brands-400.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-duotone-900.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-duotone-900.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-light-300.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-light-300.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-regular-400.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-regular-400.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-solid-900.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-solid-900.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-thin-100.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-thin-100.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-v4compatibility.ttf
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/fonts/fa-v4compatibility.woff2
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/gallery-masonry.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-about.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-gallery.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-image-blog.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-image-contact.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-membership.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-package.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-service-details.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-testimonial.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/banner-treatment.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/body-pattern.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/body-pattern2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/offerbg.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/reservation-bg.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/treatment1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/treatment2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/treatment3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/background/treatment4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/favicon.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-1-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-1-sm.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-2-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-2-sm.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-3-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-3-sm.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-4-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-4-sm.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-5-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-5-sm.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-6-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/gallery-6-sm.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic1-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic10-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic10.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic2-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic3-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic4-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic5-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic5.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic6-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic6.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic7-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic7.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic8-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic8.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic9-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/gallery/pic9.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/icons/leaf-left-white.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/icons/leaf-left.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/icons/leaf-right-white.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/icons/leaf-right.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/icons/star-element.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/logo-dark.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/logo.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/about-banner-img1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/about-banner-img2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/about-banner-img3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/abt-img1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/author-blog-detail.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/badge-inner2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/badge-outer.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/badge-outer2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-list-1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-list-2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-list-3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-list-4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-recent-1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-recent-2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-recent-3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-recent-4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-single-sm1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-single-sm2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/blog-single.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/comment1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/comment2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/comment3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/feature1.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/feature2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/feature3.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/feature4.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/ftr1.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/ftr2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/ftr3.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/ftr4.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/ftr5.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/ftr6.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/google.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/insta1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/insta2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/insta3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/insta4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/leaf-1.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/leaf-2-white.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/leaf-2.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/leaf-white.svg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/menu-badge.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-1-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-2-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-3-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-4-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-5-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-6-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-7-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-8-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/nav-9-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-5.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-6.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-7.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/news-8.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/offer-icon.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/offerbanner.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/pkg1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/pkg2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/pkg3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/pkg4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/pkg5.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/pkg6.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review-graphic1.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review-graphic2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review5.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/review6.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-feature1.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-feature2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-feature3.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-feature4.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery1-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery1-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery2-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery2-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery3-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery3-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery4-big.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/sd-gallery4-thumb.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/service-image.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/spa-element.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/stone-flower.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/t-smily.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/team-1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/team-2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/team-3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/team-4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/timg.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor1a.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor1b.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor1c.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor2a.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor2b.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor2c.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor3a.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor3b.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor3c.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor4a.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor4b.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor4c.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor5a.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor5b.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-acor5c.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-block1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-block2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-block3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-tab1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-tab2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-tab3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-tab4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-tab5.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-thumb1.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-thumb2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-thumb3.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment-thumb4.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment1-icon.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment1.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment2-icon.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment3-icon.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment3.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment4-icon.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment4.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/treatment5.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/trip.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/user-thumb1.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/user-thumb2.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/user-thumb3.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/user-thumb4.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/why1.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/why2.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/why3.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/why4.jpg
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/resource/yelp.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/images/sidebar-logo.png
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/index.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/appear.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/bootstrap.min.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/custom-script.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/jquery-ui.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/jquery.fancybox.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/jquery.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/owl.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/parallax.min.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/popper.min.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/swiper.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/js/wow.js
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/membership.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/menu-list-1.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/packages.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/service-details.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/testimonial.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/treatment-accordian-style.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/treatment-block-style.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/treatment-tab-style.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/treatment.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/treatments.html
+?? references/legacy-templates/source-code-mau/Velura-Spa-Video-Hero/video/vellura-preview-demo.mp4
+?? references/legacy-templates/source-code-mau/main-html/404.html
+?? references/legacy-templates/source-code-mau/main-html/about.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/animate.min.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/aos.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/bootstrap.min.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/color-2.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/color-3.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/color-4.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/custom-animate.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/flaticon.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/font-awesome-all.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-bg_glass_55_fbf9ee_1x400.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-bg_glass_65_ffffff_1x400.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-bg_glass_75_dadada_1x400.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-bg_glass_75_e6e6e6_1x400.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-bg_glass_95_fef1ec_1x400.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-bg_highlight-soft_75_cccccc_1x100.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-icons_222222_256x240.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-icons_2e83ff_256x240.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-icons_454545_256x240.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-icons_888888_256x240.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/images/ui-icons_cd0a0a_256x240.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/jarallax.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/jquery-ui.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/jquery.magnific-popup.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/nice-select.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/odometer.min.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/owl.carousel.min.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/owl.theme.default.min.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/owl.video.play.html
+?? references/legacy-templates/source-code-mau/main-html/assets/css/responsive.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/style.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/swiper.min.css
+?? references/legacy-templates/source-code-mau/main-html/assets/css/twentytwenty.css
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-brands-400.eot
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-brands-400.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-brands-400.ttf
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-brands-400.woff
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-brands-400.woff2
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-brands-400d41d.eot
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-light-300.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-light-300.woff
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-light-300.woff2
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-light-300d41d.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-light-301.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-light-302.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-regular-400.eot
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-regular-400.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-regular-400.woff
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-regular-400.woff2
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-regular-400d41d.eot
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-regular-401.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-solid-900.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-solid-900.woff
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-solid-900.woff2
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-solid-900d41d.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-solid-901.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/fa-solid-902.html
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/icomoon78ed.eot
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/icomoon78ed.svg
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/icomoon78ed.ttf
+?? references/legacy-templates/source-code-mau/main-html/assets/fonts/icomoon78ed.woff
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/about-one-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/admission-one-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/career-area-bg-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/career-area-bg-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/course-details-video-link-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/cta-one-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/feature-one-content-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/page-header-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/sidebar-contact-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/site-footer-four-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/site-footer-two-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/slider-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/slider-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/slider-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/slider-2-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/slider-2-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/slider-2-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/video-one-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/backgrounds/why-choose-one-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-1-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-1-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-10.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-7.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-8.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-2-9.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-3-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-3-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-3-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-4-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-4-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-4-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-details-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-details-img-box-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-details-img-box-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-four-author-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-four-author-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-four-author-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-list-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-list-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-list-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-one-author-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-one-author-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-one-author-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-one-author-img-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-one-author-img-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-one-author-img-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-three-user-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-three-user-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/blog-three-user-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/comment-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/comment-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/recent-post-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/recent-post-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/blog/recent-post-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-10.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-4.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-5.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-6.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-7.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-8.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/brand/brand-1-9.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-details-Instructor-img.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-details-client-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-details-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-client-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-client-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-client-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-client-img-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-client-img-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-img-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/course-list-img-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-2-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-2-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-2-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-3-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-3-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-3-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-3-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-3-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-3-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-one-client-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-one-client-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-one-client-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-one-client-img-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-three-client-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-three-client-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-three-client-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-three-client-img-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-three-client-img-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/courses/courses-three-client-img-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/favicons/apple-touch-icon.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/favicons/favicon-16x16.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/favicons/favicon-32x32.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/favicons/site.webmanifest
+?? references/legacy-templates/source-code-mau/main-html/assets/images/gallery/gallery-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/gallery/gallery-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/gallery/gallery-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/gallery/gallery-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/gallery/gallery-1-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/home-showcase/home-showcase-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/home-showcase/home-showcase-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/home-showcase/home-showcase-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/home-showcase/home-showcase-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/apple-icon.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-4.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-5.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-6.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-7.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/categoyr-two-icon-8.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/cross-out.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/google-play-icon.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/icon-facebook.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/icon/icon-google-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/about-three-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/about-three-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/about-two-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/about-two-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/activities-one-shape-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/banner-one-img-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/banner-one-review-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/banner-one-review-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/banner-one-review-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/become-a-teacher-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/campus-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/campus-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/campus-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/campus-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/campus-1-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/course-grid-discount-img-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/enterprise-plan-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/enterprise-plan-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-2-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-2-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-2-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-2-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-2-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-2-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-details-top-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-one-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-one-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-one-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/event-one-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/faq-one-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/footer-logo-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/footer-logo-3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/footer-logo-4.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/live-class-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/live-class-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/live-class-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/logo-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/logo-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/logo-3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/logo-4.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/main-slider-img-1-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/main-slider-img-1-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/main-slider-img-1-3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/main-slider-student-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/main-slider-student-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/main-slider-student-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/our-program-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/our-program-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/our-program-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/research-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/research-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/research-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/research-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/site-footer-four-payment-img1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/site-footer-four-payment-img2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/site-footer-four-payment-img3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/site-footer-four-payment-img4.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/site-footer-four-payment-img5.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/resources/why-choose-one-single-img-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/about-one-right-shape-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-one-shape-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-one-shape-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-one-shape-3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-one-shape-4.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-one-shape-5.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-one-shape-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-two-shape-bg-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/banner-two-shape-bg.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/contact-info-one-map.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/contact-one-bg-shape.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/counter-one-shape-bg.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/counter-two-bg-shape.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/course-grid-discount-shape-bg.html
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/courses-one-bg-shape.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/department-one-bg-shape.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/footer-one-map.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/footer-three-map.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/our-program-shape-bg.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/process-one-bg-shape.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/process-one-shape-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/process-one-shape-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shapes/sliding-text-icon-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/cart-page-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/cart-page-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/cart-page-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/cart-page-img-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-details-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-details-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-details-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-details-thumb-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-details-thumb-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-details-thumb-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-thumb-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-thumb-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-thumb-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/product-thumb-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/review-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/review-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-7.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-8.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-1-9.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-7.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-8.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/shop-product-2-9.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/wishlist-page-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/wishlist-page-img-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/wishlist-page-img-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/shop/wishlist-page-img-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-7.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-1-8.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-2-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-2-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-2-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/instructors-2-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/team/team-details-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-1-1.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-1-2.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-1-3.png
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-2-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-2-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-2-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-2-4.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-2-5.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-2-6.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-4-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-4-2.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-4-3.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/images/testimonial/testimonial-one-img-1.jpg
+?? references/legacy-templates/source-code-mau/main-html/assets/js/aos.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/bootstrap.bundle.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/gsap/ScrollTrigger.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/gsap/SplitText.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/gsap/gsap.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/isotope.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jarallax.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery-latest.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery-sidebar-content.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery-ui.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery.appear.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery.event.move.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery.magnific-popup.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery.nice-select.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/jquery.validate.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/marquee.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/odometer.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/owl.carousel.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/script.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/swiper.min.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/twentytwenty.js
+?? references/legacy-templates/source-code-mau/main-html/assets/js/wow.js
+?? references/legacy-templates/source-code-mau/main-html/become-a-teacher.html
+?? references/legacy-templates/source-code-mau/main-html/blog-details.html
+?? references/legacy-templates/source-code-mau/main-html/blog-left-sidebar.html
+?? references/legacy-templates/source-code-mau/main-html/blog-right-sidebar.html
+?? references/legacy-templates/source-code-mau/main-html/blog-standard.html
+?? references/legacy-templates/source-code-mau/main-html/blog.html
+?? references/legacy-templates/source-code-mau/main-html/cart.html
+?? references/legacy-templates/source-code-mau/main-html/checkout.html
+?? references/legacy-templates/source-code-mau/main-html/contact-1.html
+?? references/legacy-templates/source-code-mau/main-html/contact.html
+?? references/legacy-templates/source-code-mau/main-html/course-details.html
+?? references/legacy-templates/source-code-mau/main-html/course-list.html
+?? references/legacy-templates/source-code-mau/main-html/course.html
+?? references/legacy-templates/source-code-mau/main-html/event-details.html
+?? references/legacy-templates/source-code-mau/main-html/events.html
+?? references/legacy-templates/source-code-mau/main-html/faq.html
+?? references/legacy-templates/source-code-mau/main-html/index-one-page.html
+?? references/legacy-templates/source-code-mau/main-html/index.html
+?? references/legacy-templates/source-code-mau/main-html/index2-one-page.html
+?? references/legacy-templates/source-code-mau/main-html/index2.html
+?? references/legacy-templates/source-code-mau/main-html/index3-one-page.html
+?? references/legacy-templates/source-code-mau/main-html/index3.html
+?? references/legacy-templates/source-code-mau/main-html/index4-one-page.html
+?? references/legacy-templates/source-code-mau/main-html/index4.html
+?? references/legacy-templates/source-code-mau/main-html/instructor-details.html
+?? references/legacy-templates/source-code-mau/main-html/instructor.html
+?? references/legacy-templates/source-code-mau/main-html/login.html
+?? references/legacy-templates/source-code-mau/main-html/pricing.html
+?? references/legacy-templates/source-code-mau/main-html/privacy.html
+?? references/legacy-templates/source-code-mau/main-html/product-details.html
+?? references/legacy-templates/source-code-mau/main-html/products.html
+?? references/legacy-templates/source-code-mau/main-html/sign-up.html
+?? references/legacy-templates/source-code-mau/main-html/testimonials.html
+?? references/legacy-templates/source-code-mau/main-html/wishlist.html
+?? references/sample-data/data-mau/data-mau-update-V2.sql
+?? references/sample-media/51T.XD1_MC_QP_102251_KeHoach.pdf
+?? references/sample-media/STGV.pdf
+?? references/sample-media/mau_hk.pdf
+?? references/sample-media/z22.mp4
+?? references/sample-media/z3.mp4
+?? references/sample-media/z5.mp4
+?? references/sample-media/z6.mp4
+?? references/sample-media/z7.mp4
+

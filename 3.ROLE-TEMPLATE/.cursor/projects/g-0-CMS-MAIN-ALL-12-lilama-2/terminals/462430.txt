@@ -1,0 +1,7 @@
+---
+pid: 312
+cwd: "g:\\0.CMS-MAIN-ALL-12\\lilama-2"
+command: "curl -s \"https://chatbot-ld47.onrender.com/\" 2>&1"
+started_at: 2026-07-09T06:31:38.683Z
+running_for_ms: 13131047 
+---

@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<user_query>\nhttps://github.com/ntrong22/THS-2026-UpLoad-File-MinhVan \n\nset up \nMuốn là nới chuwacs các file để khi tôi giao nhưng file word cần sửa thì coomit lên sửa xong , người khác có thể up lên lại ,,,,\n\n</user_query>"}]}}
+{"type":"turn_ended","status":"error","error":"User aborted request"}

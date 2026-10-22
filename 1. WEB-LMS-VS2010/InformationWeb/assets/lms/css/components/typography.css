@@ -1,0 +1,24 @@
+/*
+ * Shared supporting headings.
+ * The ID selector intentionally outranks scoped page styles so Vietnamese
+ * text keeps one readable type treatment throughout CMS/LMS dialogs.
+ */
+#app :where(
+  .eyebrow,
+  .builder-eyebrow,
+  .grading-eyebrow,
+  .search-kicker,
+  .editor-kicker,
+  .modal-heading small,
+  .preview-header small
+) {
+  font-family: var(--font-body);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: var(--font-weight-semibold);
+  font-synthesis: none;
+  font-variant-caps: normal;
+  line-height: var(--line-height-ui);
+  letter-spacing: 0;
+  text-transform: none;
+}

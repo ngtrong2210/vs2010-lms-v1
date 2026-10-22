@@ -1,0 +1,641 @@
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:31:If Object_Id(N'[dbo].[Backup_FAM_Device_SyncVehicle_20261018]', N'U') Is Not Null
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:32:	Drop Table [dbo].[Backup_FAM_Device_SyncVehicle_20261018];
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:34:If Object_Id(N'[dbo].[Backup_FAM_Device_DELETE_20261018]', N'U') Is Not Null
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:35:	Drop Table [dbo].[Backup_FAM_Device_DELETE_20261018];
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:37:If Object_Id(N'[dbo].[Backup_FAM_Device_SEARCH_20261018]', N'U') Is Not Null
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:38:	Drop Table [dbo].[Backup_FAM_Device_SEARCH_20261018];
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:40:If Object_Id(N'[dbo].[Backup_FAM_DeviceCheckingDetail_Search_20261018]', N'U') Is Not Null
+2.SQL/patches\2026-10-18\FAM-Transport\05_drop_backup_tables_20261018.sql:41:	Drop Table [dbo].[Backup_FAM_DeviceCheckingDetail_Search_20261018];
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:2:	Patch  : [dbo].[FAM_DeviceChecking_Freeze] - Chỉ chốt tài sản được chọn
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:6:	Backup : [dbo].[Backup_FAM_DeviceChecking_Freeze_20261019]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:8:If Object_Id(N'[dbo].[FAM_DeviceChecking_Freeze]', N'P') Is Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:10:	Raiserror(N'Không tìm thấy store dbo.FAM_DeviceChecking_Freeze để backup và cập nhật.', 16, 1)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:13:If Object_Id(N'[dbo].[Backup_FAM_DeviceChecking_Freeze_20261019]', N'U') Is Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:15:	Create Table [dbo].[Backup_FAM_DeviceChecking_Freeze_20261019]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:21:	Insert Into [dbo].[Backup_FAM_DeviceChecking_Freeze_20261019]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:28:		N'dbo.FAM_DeviceChecking_Freeze',
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:29:		Object_Definition(Object_Id(N'[dbo].[FAM_DeviceChecking_Freeze]')),
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:38:Alter Procedure [dbo].[FAM_DeviceChecking_Freeze]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:43:	@DeviceKindID int = null,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:44:	@DeviceStatusID int = null,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:107:	From [dbo].[FAM_DeviceChecking] With (Updlock, Holdlock)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:125:		From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:142:	Insert Into [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:153:		DeviceStatusIDSnapshot,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:154:		DeviceStatusNameSnapshot,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:161:		FAM_Device.DeviceID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:162:		FAM_Device.DeviceCode,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:163:		FAM_Device.DeviceName,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:165:		FAM_Device.OfficeID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:167:		FAM_Device.PlaceID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:169:		FAM_Device.DeviceStatusID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:170:		FAM_DeviceStatus.DeviceStatusName,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:171:		Isnull(FAM_Device.Quantity, 0),
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:174:	From [dbo].[FAM_Device]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:176:			On SelectedDevices.DeviceID = FAM_Device.DeviceID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:177:		Inner Join [dbo].[FAM_DeviceKind]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:178:			On FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:179:		Inner Join [dbo].[FAM_DeviceStatus]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:180:			On FAM_DeviceStatus.DeviceStatusID = FAM_Device.DeviceStatusID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:182:			On GEN_Unit.UnitID = FAM_Device.UnitID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:184:			On SYS_Office.OfficeID = FAM_Device.OfficeID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:186:			On GEN_Place.PlaceID = FAM_Device.PlaceID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:188:		Isnull(FAM_Device.IsDeleted, 0) = 0
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:189:		And FAM_Device.ParentDeviceID = 0
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:190:		And (@OfficeID Is Null Or FAM_Device.OfficeID = @OfficeID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:191:		And (@PlaceID Is Null Or FAM_Device.PlaceID = @PlaceID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:192:		And (@DeviceKindID Is Null Or FAM_Device.DeviceKindID = @DeviceKindID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:193:		And (@DeviceStatusID Is Null Or FAM_Device.DeviceStatusID = @DeviceStatusID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:194:		And (@InputVoucherDateFrom Is Null Or FAM_Device.InputVoucherDate >= @InputVoucherDateFrom)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:195:		And (@InputVoucherDateTo Is Null Or FAM_Device.InputVoucherDate < @InputVoucherDateTo)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:199:			Or FAM_Device.DeviceCode Like @Keyword
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:200:			Or FAM_Device.DeviceCode2 Like @Keyword
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:201:			Or FAM_Device.DeviceName Like @Keyword
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:202:			Or FAM_Device.DeviceNameEn Like @Keyword
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:203:			Or FAM_Device.TechInfo Like @Keyword
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:213:	Update [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:225:	Object_Id(N'[dbo].[FAM_DeviceChecking_Freeze]', N'P') As ProcedureID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\13_20261019_FAM_DeviceChecking_Freeze_selected.sql:226:	Object_Id(N'[dbo].[Backup_FAM_DeviceChecking_Freeze_20261019]', N'U') As BackupTableID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:6:		- FAM_DeviceGroup 1PVT -> TPT_VehicleCategory
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:7:		- FAM_DeviceKind thuộc 1PVT -> TPT_VehicleGroup
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:8:		- FAM_Device.DeviceKindID -> TPT_Vehicle.VehicleGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:27:If Object_Id(N'[dbo].[FAM_Device]', N'U') is null
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:28:	or Object_Id(N'[dbo].[FAM_DeviceKind]', N'U') is null
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:29:	or Object_Id(N'[dbo].[FAM_DeviceGroup]', N'U') is null
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:40:	From FAM_DeviceGroup
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:41:	Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:44:	Raiserror(N'FAM_DeviceGroup phải có đúng một mã 1PVT.', 16, 1)
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:48:	FAM_DeviceGroup.DeviceGroupCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:49:	FAM_DeviceGroup.DeviceGroupName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:50:	FAM_DeviceGroup.IsActived
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:52:From FAM_DeviceGroup
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:53:Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:55:	FAM_DeviceKind.DeviceKindID,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:56:	FAM_DeviceKind.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:57:	FAM_DeviceKind.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:58:	FAM_DeviceKind.IsActived,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:59:	FAM_DeviceKind.OrderIndex
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:61:From FAM_DeviceKind
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:62:	Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:63:Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:79:	Where Isnull(Ltrim(Rtrim(#tblVehicleGroupSource.DeviceKindCode)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:80:		or Isnull(Ltrim(Rtrim(#tblVehicleGroupSource.DeviceKindName)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:85:	Where Isnull(Ltrim(Rtrim(#tblVehicleGroupSource.DeviceKindCode)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:86:		or Isnull(Ltrim(Rtrim(#tblVehicleGroupSource.DeviceKindName)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:96:	Group By #tblVehicleGroupSource.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:101:		#tblVehicleGroupSource.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:104:	Group By #tblVehicleGroupSource.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:112:	FAM_Device.DeviceID,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:113:	FAM_Device.DeviceCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:114:	FAM_Device.DeviceName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:115:	FAM_DeviceKind.DeviceKindID,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:116:	FAM_DeviceKind.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:117:	FAM_DeviceKind.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:122:From FAM_Device
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:123:	Inner Join FAM_DeviceKind on FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:124:	Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:125:	Inner Join TPT_Vehicle on TPT_Vehicle.DeviceID = FAM_Device.DeviceID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:128:Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:129:	and FAM_Device.IsDeleted = 0
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:130:Order By FAM_DeviceKind.DeviceKindCode, FAM_Device.DeviceCode
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:177:			VehicleGroupName = #tblVehicleGroupSource.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:184:			Inner Join #tblVehicleGroupSource on #tblVehicleGroupSource.DeviceKindCode = TPT_VehicleGroup.VehicleGroupCode
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:199:			#tblVehicleGroupSource.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:200:			#tblVehicleGroupSource.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:214:			Where TPT_VehicleGroup.VehicleGroupCode = #tblVehicleGroupSource.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:222:				Where TPT_VehicleGroup.VehicleGroupCode = FAM_DeviceKind.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:227:			Inner Join FAM_Device on FAM_Device.DeviceID = TPT_Vehicle.DeviceID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:228:			Inner Join FAM_DeviceKind on FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:229:			Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:230:		Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:231:			and FAM_Device.IsDeleted = 0
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:236:			Inner Join FAM_Device on FAM_Device.DeviceID = TPT_Vehicle.DeviceID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:237:			Inner Join FAM_DeviceKind on FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:238:			Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:240:		Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:241:			and FAM_Device.IsDeleted = 0
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:246:				or TPT_VehicleGroup.VehicleGroupCode <> FAM_DeviceKind.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:247:				or TPT_VehicleGroup.VehicleGroupName <> FAM_DeviceKind.DeviceKindName
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:260:			FAM_Device.DeviceID,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:261:			FAM_Device.DeviceCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:262:			FAM_Device.DeviceName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:263:			FAM_DeviceKind.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:264:			FAM_DeviceKind.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:271:		From FAM_Device
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:272:			Inner Join FAM_DeviceKind on FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:273:			Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:274:			Inner Join TPT_Vehicle on TPT_Vehicle.DeviceID = FAM_Device.DeviceID
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:278:		Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:279:			and FAM_Device.IsDeleted = 0
+2.SQL/patches\2026-10-18\FAM-Transport\04_TPT_VehicleGroup_normalize_from_FAM_DeviceKind.sql:280:		Order By FAM_DeviceKind.DeviceKindCode, FAM_Device.DeviceCode
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\12_20261019_FAM_DeviceChecking_Delete_cascade.sql:9:If Object_Id(N'[dbo].[FAM_DeviceChecking_Delete]', N'P') Is Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\12_20261019_FAM_DeviceChecking_Delete_cascade.sql:11:	Raiserror(N'Chạy patch 09 (FAM_DeviceChecking_Delete) trước.', 16, 1)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\12_20261019_FAM_DeviceChecking_Delete_cascade.sql:16:Alter Procedure [dbo].[FAM_DeviceChecking_Delete]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\12_20261019_FAM_DeviceChecking_Delete_cascade.sql:31:	From [dbo].[FAM_DeviceChecking] With (Updlock, Holdlock)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\12_20261019_FAM_DeviceChecking_Delete_cascade.sql:47:	Delete From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\12_20261019_FAM_DeviceChecking_Delete_cascade.sql:50:	Delete From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\12_20261019_FAM_DeviceChecking_Delete_cascade.sql:57:Select Object_Id(N'[dbo].[FAM_DeviceChecking_Delete]', N'P') As FAM_DeviceChecking_Delete_ObjectId
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:2:	Patch  : [dbo].[FAM_Device_DELETE] - Xóa mềm phương tiện đồng bộ theo tài sản
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:8:	Backup : [dbo].[Backup_FAM_Device_DELETE_20261018]
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:12:If Object_Id(N'[dbo].[FAM_Device_DELETE]', N'P') Is Null
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:14:	Raiserror(N'Không tìm thấy store dbo.FAM_Device_DELETE để backup và cập nhật.', 16, 1)
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:22:If Object_Id(N'[dbo].[Backup_FAM_Device_DELETE_20261018]', N'U') Is Null
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:24:	Create Table [dbo].[Backup_FAM_Device_DELETE_20261018]
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:30:	Insert Into [dbo].[Backup_FAM_Device_DELETE_20261018]
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:37:		N'dbo.FAM_Device_DELETE',
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:38:		Object_Definition(Object_Id(N'[dbo].[FAM_Device_DELETE]')),
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:46:Alter Procedure [dbo].[FAM_Device_DELETE]
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:60:		Inner Join FAM_Device on FAM_Device.DeviceID = TPT_Vehicle.DeviceID
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:61:	Where FAM_Device.NodeTree like '%;' + Ltrim(Str(@DeviceID)) + ';%'
+2.SQL/patches\2026-10-18\FAM-Transport\03_FAM_Device_DELETE_soft_delete_vehicle.sql:63:	Update FAM_Device
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:9:If Object_Id(N'[dbo].[FAM_DeviceCheckingDetail_Save]', N'P') Is Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:11:	Raiserror(N'Không tìm thấy dbo.FAM_DeviceCheckingDetail_Save.', 16, 1)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:16:Alter Procedure [dbo].[FAM_DeviceCheckingDetail_Save]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:35:		@DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:36:		@StatusID = FAM_DeviceChecking.StatusID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:37:	From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:38:		Inner Join [dbo].[FAM_DeviceChecking] FAM_DeviceChecking
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:39:			On FAM_DeviceChecking.DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:40:	Where FAM_DeviceCheckingDetail.DeviceCheckingDetailID = @DeviceCheckingDetailID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:82:	Update FAM_DeviceCheckingDetail
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:93:	From [dbo].[FAM_DeviceCheckingDetail] FAM_DeviceCheckingDetail
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:94:		Inner Join [dbo].[FAM_DeviceChecking] FAM_DeviceChecking With (Updlock, Holdlock)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:95:			On FAM_DeviceChecking.DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:97:		FAM_DeviceCheckingDetail.DeviceCheckingDetailID = @DeviceCheckingDetailID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:98:		And FAM_DeviceChecking.StatusID In (2, 3, 4)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\11_20261019_FAM_DeviceCheckingDetail_Save_status4.sql:108:		Update [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:11:If Object_Id(N'[dbo].[FAM_DeviceChecking_Search]', N'P') Is Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:13:	Raiserror(N'Không tìm thấy dbo.FAM_DeviceChecking_Search.', 16, 1)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:18:Alter Procedure [dbo].[FAM_DeviceChecking_Search]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:38:		FAM_DeviceChecking.DeviceCheckingID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:39:		FAM_DeviceChecking.CheckingCode,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:40:		FAM_DeviceChecking.CheckingName,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:41:		FAM_DeviceChecking.OfficeID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:43:		FAM_DeviceChecking.PlaceID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:45:		FAM_DeviceChecking.YearID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:46:		FAM_DeviceChecking.PeriodType,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:47:		Case FAM_DeviceChecking.PeriodType
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:51:		FAM_DeviceChecking.QuarterNo,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:52:		FAM_DeviceChecking.CheckingDate,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:53:		FAM_DeviceChecking.ResponsibleEmployeeID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:55:		FAM_DeviceChecking.StatusID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:56:		Case FAM_DeviceChecking.StatusID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:64:		FAM_DeviceChecking.Description,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:70:		FAM_DeviceChecking.CompletedDate,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:71:		FAM_DeviceChecking.CompletedUser,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:72:		FAM_DeviceChecking.ApprovedDate,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:73:		FAM_DeviceChecking.ApprovedUser,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:74:		FAM_DeviceChecking.CreatedDate,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:75:		FAM_DeviceChecking.CreatedUser,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:76:		FAM_DeviceChecking.UpdatedDate,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:77:		FAM_DeviceChecking.UpdatedUser
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:78:	From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:80:			On SYS_Office.OfficeID = FAM_DeviceChecking.OfficeID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:82:			On GEN_Place.PlaceID = FAM_DeviceChecking.PlaceID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:84:			On HRS_Employee.EmployeeID = FAM_DeviceChecking.ResponsibleEmployeeID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:89:				Sum(Case When FAM_DeviceCheckingDetail.ActualQuantity Is Null Then 0 Else 1 End) As CheckedLines,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:90:				Sum(Case When FAM_DeviceCheckingDetail.ActualQuantity Is Null Then 1 Else 0 End) As UncheckedLines,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:91:				Sum(FAM_DeviceCheckingDetail.SystemQuantity) As SystemQuantity,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:92:				Sum(Isnull(FAM_DeviceCheckingDetail.ActualQuantity, 0)) As ActualQuantity
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:93:			From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:94:			Where FAM_DeviceCheckingDetail.DeviceCheckingID = FAM_DeviceChecking.DeviceCheckingID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:97:		(@OfficeID Is Null Or FAM_DeviceChecking.OfficeID = @OfficeID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:98:		And (@PlaceID Is Null Or FAM_DeviceChecking.PlaceID = @PlaceID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:99:		And (@YearID Is Null Or FAM_DeviceChecking.YearID = @YearID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:100:		And (@PeriodType Is Null Or FAM_DeviceChecking.PeriodType = @PeriodType)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:101:		And (@QuarterNo Is Null Or FAM_DeviceChecking.QuarterNo = @QuarterNo)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:102:		And (@StatusID Is Null Or FAM_DeviceChecking.StatusID = @StatusID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:106:			Or FAM_DeviceChecking.CheckingCode Like @Keyword
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:107:			Or FAM_DeviceChecking.CheckingName Like @Keyword
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:110:		FAM_DeviceChecking.YearID Desc,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:111:		FAM_DeviceChecking.PeriodType,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:112:		FAM_DeviceChecking.QuarterNo Desc,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:113:		FAM_DeviceChecking.CheckingDate Desc
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\10_20261019_FAM_DeviceChecking_Search_status_display.sql:117:Select Object_Id(N'[dbo].[FAM_DeviceChecking_Search]', N'P') As FAM_DeviceChecking_Search_ObjectId
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:5:	Nguồn  : FAM_Device -> FAM_DeviceKind -> FAM_DeviceGroup
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:8:		- Đồng bộ FAM_DeviceGroup sang TPT_VehicleCategory.
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:9:		- Đồng bộ FAM_DeviceKind sang TPT_VehicleGroup.
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:35:If Object_Id(N'[dbo].[FAM_Device]', N'U') is null
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:36:	or Object_Id(N'[dbo].[FAM_DeviceKind]', N'U') is null
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:37:	or Object_Id(N'[dbo].[FAM_DeviceGroup]', N'U') is null
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:49:	From FAM_DeviceGroup
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:50:	Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:60:	From FAM_DeviceGroup
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:61:	Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:64:	Raiserror(N'Mã nhóm 1PVT đang bị trùng trong FAM_DeviceGroup.', 16, 1)
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:69:	FAM_Device.DeviceID,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:70:	FAM_Device.DeviceCode,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:71:	Isnull(FAM_Device.PlateNo, N'') as PlateNo,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:72:	FAM_Device.DeviceName,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:73:	Isnull(FAM_Device.DriverName, N'') as DriverName,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:74:	FAM_DeviceKind.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:75:	FAM_DeviceKind.DeviceKindName
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:77:From FAM_Device
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:78:	Inner Join FAM_DeviceKind on FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:79:	Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:80:Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:81:	and FAM_Device.IsDeleted = 0
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:99:		or Isnull(Ltrim(Rtrim(#tblVehicleSource.DeviceKindCode)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:100:		or Isnull(Ltrim(Rtrim(#tblVehicleSource.DeviceKindName)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:107:		#tblVehicleSource.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:108:		#tblVehicleSource.DeviceKindName
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:112:		or Isnull(Ltrim(Rtrim(#tblVehicleSource.DeviceKindCode)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:113:		or Isnull(Ltrim(Rtrim(#tblVehicleSource.DeviceKindName)), N'') = N''
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:141:	#tblVehicleSource.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:142:	#tblVehicleSource.DeviceKindName
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:228:			VehicleGroupName = #tblVehicleKind.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:234:			Inner Join #tblVehicleKind on #tblVehicleKind.DeviceKindCode = TPT_VehicleGroup.VehicleGroupCode
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:250:			#tblVehicleKind.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:251:			#tblVehicleKind.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:265:			Where TPT_VehicleGroup.VehicleGroupCode = #tblVehicleKind.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:277:				Where TPT_VehicleGroup.VehicleGroupCode = #tblVehicleSource.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:324:				Where TPT_VehicleGroup.VehicleGroupCode = #tblVehicleSource.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:377:					Where TPT_VehicleGroup.VehicleGroupCode = #tblVehicleSource.DeviceKindCode
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:414:			FAM_Device.DeviceID,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:415:			FAM_Device.DeviceCode,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:416:			FAM_Device.PlateNo,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:417:			FAM_Device.DeviceName,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:418:			FAM_Device.DriverName,
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:428:		From FAM_Device
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:429:			Inner Join FAM_DeviceKind on FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:430:			Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:431:			Inner Join TPT_Vehicle on TPT_Vehicle.DeviceID = FAM_Device.DeviceID
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:434:		Where FAM_DeviceGroup.DeviceGroupCode = N'1PVT'
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:435:			and FAM_Device.IsDeleted = 0
+2.SQL/patches\2026-10-18\FAM-Transport\02_TPT_Vehicle_sync_from_FAM_Device_1pvt.sql:436:		Order By FAM_Device.DeviceCode
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:11:If Object_Id(N'[dbo].[FAM_DeviceChecking_GetByID]', N'P') Is Not Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:12:	Drop Procedure [dbo].[FAM_DeviceChecking_GetByID]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:15:Create Procedure [dbo].[FAM_DeviceChecking_GetByID]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:24:		FAM_DeviceChecking.DeviceCheckingID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:25:		FAM_DeviceChecking.CheckingCode,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:26:		FAM_DeviceChecking.CheckingName,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:27:		FAM_DeviceChecking.OfficeID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:28:		FAM_DeviceChecking.PlaceID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:29:		FAM_DeviceChecking.YearID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:30:		FAM_DeviceChecking.PeriodType,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:31:		FAM_DeviceChecking.QuarterNo,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:32:		FAM_DeviceChecking.CheckingDate,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:33:		FAM_DeviceChecking.ResponsibleEmployeeID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:34:		FAM_DeviceChecking.StatusID,
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:35:		FAM_DeviceChecking.Description
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:36:	From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:37:	Where FAM_DeviceChecking.DeviceCheckingID = @DeviceCheckingID
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:41:If Object_Id(N'[dbo].[FAM_DeviceChecking_Update]', N'P') Is Not Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:42:	Drop Procedure [dbo].[FAM_DeviceChecking_Update]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:45:Create Procedure [dbo].[FAM_DeviceChecking_Update]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:64:	If Not Exists (Select 1 From [dbo].[FAM_DeviceChecking] Where DeviceCheckingID = @DeviceCheckingID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:70:	If Exists (Select 1 From [dbo].[FAM_DeviceChecking] Where DeviceCheckingID = @DeviceCheckingID And StatusID <> 1)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:79:		From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:87:	Update [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:105:If Object_Id(N'[dbo].[FAM_DeviceChecking_Delete]', N'P') Is Not Null
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:106:	Drop Procedure [dbo].[FAM_DeviceChecking_Delete]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:109:Create Procedure [dbo].[FAM_DeviceChecking_Delete]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:118:	If Not Exists (Select 1 From [dbo].[FAM_DeviceChecking] Where DeviceCheckingID = @DeviceCheckingID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:124:	If Exists (Select 1 From [dbo].[FAM_DeviceChecking] Where DeviceCheckingID = @DeviceCheckingID And StatusID <> 1)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:130:	If Exists (Select 1 From [dbo].[FAM_DeviceCheckingDetail] Where DeviceCheckingID = @DeviceCheckingID)
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:136:	Delete From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:141:Select N'FAM_DeviceChecking_GetByID' As StoreName, Object_Id(N'[dbo].[FAM_DeviceChecking_GetByID]', N'P') As ObjectId
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:143:Select N'FAM_DeviceChecking_Update', Object_Id(N'[dbo].[FAM_DeviceChecking_Update]', N'P')
+2.SQL/patches\2026-10-19\FAM-DeviceChecking\09_20261019_FAM_DeviceChecking_Update_Delete_Get.sql:145:Select N'FAM_DeviceChecking_Delete', Object_Id(N'[dbo].[FAM_DeviceChecking_Delete]', N'P')
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:2:	Patch  : [dbo].[FAM_Device_SyncVehicle] - Chỉ đồng bộ nhóm phương tiện vận tải
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:7:		Đồng bộ FAM_DeviceGroup sang TPT_VehicleCategory.
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:8:		Đồng bộ FAM_DeviceKind sang TPT_VehicleGroup và gán nhóm cho phương tiện.
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:9:	Backup : [dbo].[Backup_FAM_Device_SyncVehicle_20261018]
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:14:If Object_Id(N'[dbo].[FAM_Device_SyncVehicle]', N'P') Is Null
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:16:	Raiserror(N'Không tìm thấy store dbo.FAM_Device_SyncVehicle để backup và cập nhật.', 16, 1)
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:20:If Object_Id(N'[dbo].[Backup_FAM_Device_SyncVehicle_20261018]', N'U') Is Null
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:22:	Create Table [dbo].[Backup_FAM_Device_SyncVehicle_20261018]
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:29:	Insert Into [dbo].[Backup_FAM_Device_SyncVehicle_20261018]
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:36:		N'dbo.FAM_Device_SyncVehicle',
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:37:		Object_Definition(Object_Id(N'[dbo].[FAM_Device_SyncVehicle]')),
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:47:Alter Procedure [dbo].[FAM_Device_SyncVehicle]
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:64:	Declare @DeviceKindCode nvarchar(50);
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:65:	Declare @DeviceKindName nvarchar(200);
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:68:		@DeviceCode = FAM_Device.DeviceCode,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:69:		@DeviceName = FAM_Device.DeviceName,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:70:		@PlateNo = Isnull(FAM_Device.PlateNo, N''),
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:71:		@DriverName = FAM_Device.DriverName,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:72:		@DeviceGroupCode = FAM_DeviceGroup.DeviceGroupCode,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:73:		@DeviceGroupName = FAM_DeviceGroup.DeviceGroupName,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:74:		@DeviceKindCode = FAM_DeviceKind.DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:75:		@DeviceKindName = FAM_DeviceKind.DeviceKindName
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:76:	From FAM_Device
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:77:		Inner Join FAM_DeviceKind on FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:78:		Inner Join FAM_DeviceGroup on FAM_DeviceGroup.DeviceGroupID = FAM_DeviceKind.DeviceGroupID
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:79:	Where FAM_Device.DeviceID = @DeviceID
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:80:		and FAM_Device.IsDeleted = 0;
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:131:	Where TPT_VehicleGroup.VehicleGroupCode = @DeviceKindCode;
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:150:			@DeviceKindCode,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:151:			@DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Transport\01_FAM_Device_SyncVehicle_filter_1pvt.sql:168:			VehicleGroupName = @DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:2:	Patch  : [dbo].[FAM_Device_Search] - Lọc Chi nhánh QL / Công trình SD
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:7:	Backup : [dbo].[Backup_FAM_Device_SEARCH_20261018]
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:9:If Object_Id(N'[dbo].[FAM_Device_Search]', N'P') Is Null
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:10:	And Object_Id(N'[dbo].[FAM_Device_SEARCH]', N'P') Is Null
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:12:	Raiserror(N'Không tìm thấy store FAM_Device_Search / FAM_Device_SEARCH.', 16, 1)
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:16:If Object_Id(N'[dbo].[Backup_FAM_Device_SEARCH_20261018]', N'U') Is Null
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:18:	Create Table [dbo].[Backup_FAM_Device_SEARCH_20261018]
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:25:		Object_Id(N'[dbo].[FAM_Device_Search]', N'P'),
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:26:		Object_Id(N'[dbo].[FAM_Device_SEARCH]', N'P'))
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:27:	Insert Into [dbo].[Backup_FAM_Device_SEARCH_20261018]
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:43:Alter Procedure [dbo].[FAM_Device_Search]
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:46:	@DeviceKindID int = null,
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:47:	@DeviceStatusID int = null,
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:119:		FAM_DeviceStatus.DeviceStatusName,
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:120:		FAM_DeviceKind.DeviceKindName,
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:132:	From FAM_Device tbl
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:133:		Inner Join FAM_DeviceKind On FAM_DeviceKind.DeviceKindID = tbl.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:134:		Inner Join FAM_DeviceStatus On FAM_DeviceStatus.DeviceStatusID = tbl.DeviceStatusID
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:137:		Left Join FAM_Device tblDeviceParent On tblDeviceParent.DeviceID = tbl.ParentDeviceID
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:148:		And (@DeviceKindID Is Null Or tbl.DeviceKindID = @DeviceKindID)
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:152:		And (@DeviceStatusID Is Null Or tbl.DeviceStatusID = @DeviceStatusID)
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:175:		Object_Id(N'[dbo].[FAM_Device_Search]', N'P'),
+2.SQL/patches\2026-10-18\FAM-Device\01_20261018_FAM_Device_SEARCH_office_place_filter.sql:176:		Object_Id(N'[dbo].[FAM_Device_SEARCH]', N'P'))
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:2:	Patch  : [dbo].[FAM_DeviceCheckingDetail_Search] - Thêm khóa import
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:5:	Backup : [dbo].[Backup_FAM_DeviceCheckingDetail_Search_20261018]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:7:If Object_Id(N'[dbo].[FAM_DeviceCheckingDetail_Search]', N'P') Is Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:9:	Raiserror(N'Không tìm thấy store dbo.FAM_DeviceCheckingDetail_Search để backup và cập nhật.', 16, 1)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:12:If Object_Id(N'[dbo].[Backup_FAM_DeviceCheckingDetail_Search_20261018]', N'U') Is Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:14:	Create Table [dbo].[Backup_FAM_DeviceCheckingDetail_Search_20261018]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:20:	Insert Into [dbo].[Backup_FAM_DeviceCheckingDetail_Search_20261018]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:27:		N'dbo.FAM_DeviceCheckingDetail_Search',
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:28:		Object_Definition(Object_Id(N'[dbo].[FAM_DeviceCheckingDetail_Search]')),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:37:Alter Procedure [dbo].[FAM_DeviceCheckingDetail_Search]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:48:		FAM_DeviceCheckingDetail.DeviceCheckingDetailID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:49:		FAM_DeviceCheckingDetail.DeviceCheckingDetailID As ImportDetailID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:50:		FAM_DeviceCheckingDetail.DeviceCheckingID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:51:		FAM_DeviceChecking.CheckingCode,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:52:		FAM_DeviceChecking.StatusID As CheckingStatusID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:53:		FAM_DeviceCheckingDetail.DeviceID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:54:		FAM_DeviceCheckingDetail.DeviceCodeSnapshot As DeviceCode,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:55:		FAM_DeviceCheckingDetail.DeviceNameSnapshot As DeviceName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:56:		FAM_DeviceCheckingDetail.UnitNameSnapshot As UnitName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:57:		FAM_DeviceCheckingDetail.OfficeNameSnapshot As OfficeName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:58:		FAM_DeviceCheckingDetail.PlaceNameSnapshot As PlaceName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:59:		FAM_DeviceCheckingDetail.DeviceStatusNameSnapshot As SystemCondition,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:60:		FAM_DeviceCheckingDetail.SystemQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:61:		FAM_DeviceCheckingDetail.ActualQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:62:		FAM_DeviceCheckingDetail.GoodQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:63:		FAM_DeviceCheckingDetail.DamagedQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:64:		FAM_DeviceCheckingDetail.RepairQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:65:		FAM_DeviceCheckingDetail.QuantityDifference,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:67:			When FAM_DeviceCheckingDetail.ActualQuantity Is Null Then N'Chưa kiểm kê'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:68:			When FAM_DeviceCheckingDetail.QuantityDifference = 0 Then N'Khớp'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:69:			When FAM_DeviceCheckingDetail.QuantityDifference > 0 Then N'Thừa'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:72:		FAM_DeviceCheckingDetail.IsExtra,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:73:		FAM_DeviceCheckingDetail.Description,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:74:		FAM_DeviceCheckingDetail.CheckedDate,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:75:		FAM_DeviceCheckingDetail.CheckedUser
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:76:	From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:77:		Inner Join [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:78:			On FAM_DeviceChecking.DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:80:		FAM_DeviceCheckingDetail.DeviceCheckingID = @DeviceCheckingID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:84:			Or (@ResultFilter = 1 And FAM_DeviceCheckingDetail.ActualQuantity Is Null)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:85:			Or (@ResultFilter = 2 And FAM_DeviceCheckingDetail.ActualQuantity Is Not Null)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:86:			Or (@ResultFilter = 3 And FAM_DeviceCheckingDetail.QuantityDifference = 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:87:			Or (@ResultFilter = 4 And FAM_DeviceCheckingDetail.QuantityDifference > 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:88:			Or (@ResultFilter = 5 And FAM_DeviceCheckingDetail.QuantityDifference < 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:89:			Or (@ResultFilter = 6 And Isnull(FAM_DeviceCheckingDetail.DamagedQuantity, 0) > 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:92:		FAM_DeviceCheckingDetail.IsExtra,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:93:		FAM_DeviceCheckingDetail.DeviceCodeSnapshot,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:94:		FAM_DeviceCheckingDetail.DeviceCheckingDetailID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:103:		QueryName = N'FAM_DeviceCheckingDetail_Search'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:127:		N'FAM_DeviceCheckingDetail_Search',
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\08_20261018_FAM_DeviceCheckingDetail_Search_import_key.sql:151:	QueryName = N'FAM_DeviceCheckingDetail_Search'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:11:If Object_Id(N'[dbo].[FAM_DeviceChecking_Search]', N'P') Is Not Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:12:	Drop Procedure [dbo].[FAM_DeviceChecking_Search]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:15:Create Procedure [dbo].[FAM_DeviceChecking_Search]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:35:		FAM_DeviceChecking.DeviceCheckingID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:36:		FAM_DeviceChecking.CheckingCode,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:37:		FAM_DeviceChecking.CheckingName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:38:		FAM_DeviceChecking.OfficeID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:40:		FAM_DeviceChecking.PlaceID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:42:		FAM_DeviceChecking.YearID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:43:		FAM_DeviceChecking.PeriodType,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:44:		Case FAM_DeviceChecking.PeriodType
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:48:		FAM_DeviceChecking.QuarterNo,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:49:		FAM_DeviceChecking.CheckingDate,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:50:		FAM_DeviceChecking.ResponsibleEmployeeID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:52:		FAM_DeviceChecking.StatusID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:53:		Case FAM_DeviceChecking.StatusID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:61:		FAM_DeviceChecking.Description,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:67:		FAM_DeviceChecking.CompletedDate,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:68:		FAM_DeviceChecking.CompletedUser,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:69:		FAM_DeviceChecking.ApprovedDate,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:70:		FAM_DeviceChecking.ApprovedUser,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:71:		FAM_DeviceChecking.CreatedDate,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:72:		FAM_DeviceChecking.CreatedUser,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:73:		FAM_DeviceChecking.UpdatedDate,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:74:		FAM_DeviceChecking.UpdatedUser
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:75:	From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:77:			On SYS_Office.OfficeID = FAM_DeviceChecking.OfficeID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:79:			On GEN_Place.PlaceID = FAM_DeviceChecking.PlaceID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:81:			On HRS_Employee.EmployeeID = FAM_DeviceChecking.ResponsibleEmployeeID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:86:				Sum(Case When FAM_DeviceCheckingDetail.ActualQuantity Is Null Then 0 Else 1 End) As CheckedLines,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:87:				Sum(Case When FAM_DeviceCheckingDetail.ActualQuantity Is Null Then 1 Else 0 End) As UncheckedLines,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:88:				Sum(FAM_DeviceCheckingDetail.SystemQuantity) As SystemQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:89:				Sum(Isnull(FAM_DeviceCheckingDetail.ActualQuantity, 0)) As ActualQuantity
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:90:			From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:91:			Where FAM_DeviceCheckingDetail.DeviceCheckingID = FAM_DeviceChecking.DeviceCheckingID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:94:		(@OfficeID Is Null Or FAM_DeviceChecking.OfficeID = @OfficeID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:95:		And (@PlaceID Is Null Or FAM_DeviceChecking.PlaceID = @PlaceID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:96:		And (@YearID Is Null Or FAM_DeviceChecking.YearID = @YearID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:97:		And (@PeriodType Is Null Or FAM_DeviceChecking.PeriodType = @PeriodType)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:98:		And (@QuarterNo Is Null Or FAM_DeviceChecking.QuarterNo = @QuarterNo)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:99:		And (@StatusID Is Null Or FAM_DeviceChecking.StatusID = @StatusID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:103:			Or FAM_DeviceChecking.CheckingCode Like @Keyword
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:104:			Or FAM_DeviceChecking.CheckingName Like @Keyword
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:107:		FAM_DeviceChecking.YearID Desc,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:108:		FAM_DeviceChecking.PeriodType,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:109:		FAM_DeviceChecking.QuarterNo Desc,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:110:		FAM_DeviceChecking.CheckingDate Desc
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:114:If Object_Id(N'[dbo].[FAM_DeviceCheckingDetail_Search]', N'P') Is Not Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:115:	Drop Procedure [dbo].[FAM_DeviceCheckingDetail_Search]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:118:Create Procedure [dbo].[FAM_DeviceCheckingDetail_Search]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:129:		FAM_DeviceCheckingDetail.DeviceCheckingDetailID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:130:		FAM_DeviceCheckingDetail.DeviceCheckingID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:131:		FAM_DeviceChecking.CheckingCode,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:132:		FAM_DeviceChecking.StatusID As CheckingStatusID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:133:		FAM_DeviceCheckingDetail.DeviceID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:134:		FAM_DeviceCheckingDetail.DeviceCodeSnapshot As DeviceCode,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:135:		FAM_DeviceCheckingDetail.DeviceNameSnapshot As DeviceName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:136:		FAM_DeviceCheckingDetail.UnitNameSnapshot As UnitName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:137:		FAM_DeviceCheckingDetail.OfficeNameSnapshot As OfficeName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:138:		FAM_DeviceCheckingDetail.PlaceNameSnapshot As PlaceName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:139:		FAM_DeviceCheckingDetail.DeviceStatusNameSnapshot As SystemCondition,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:140:		FAM_DeviceCheckingDetail.SystemQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:141:		FAM_DeviceCheckingDetail.ActualQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:142:		FAM_DeviceCheckingDetail.GoodQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:143:		FAM_DeviceCheckingDetail.DamagedQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:144:		FAM_DeviceCheckingDetail.RepairQuantity,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:145:		FAM_DeviceCheckingDetail.QuantityDifference,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:147:			When FAM_DeviceCheckingDetail.ActualQuantity Is Null Then N'Chưa kiểm kê'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:148:			When FAM_DeviceCheckingDetail.QuantityDifference = 0 Then N'Khớp'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:149:			When FAM_DeviceCheckingDetail.QuantityDifference > 0 Then N'Thừa'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:152:		FAM_DeviceCheckingDetail.IsExtra,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:153:		FAM_DeviceCheckingDetail.Description,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:154:		FAM_DeviceCheckingDetail.CheckedDate,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:155:		FAM_DeviceCheckingDetail.CheckedUser
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:156:	From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:157:		Inner Join [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:158:			On FAM_DeviceChecking.DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:160:		FAM_DeviceCheckingDetail.DeviceCheckingID = @DeviceCheckingID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:164:			Or (@ResultFilter = 1 And FAM_DeviceCheckingDetail.ActualQuantity Is Null)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:165:			Or (@ResultFilter = 2 And FAM_DeviceCheckingDetail.ActualQuantity Is Not Null)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:166:			Or (@ResultFilter = 3 And FAM_DeviceCheckingDetail.QuantityDifference = 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:167:			Or (@ResultFilter = 4 And FAM_DeviceCheckingDetail.QuantityDifference > 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:168:			Or (@ResultFilter = 5 And FAM_DeviceCheckingDetail.QuantityDifference < 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:169:			Or (@ResultFilter = 6 And Isnull(FAM_DeviceCheckingDetail.DamagedQuantity, 0) > 0)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:172:		FAM_DeviceCheckingDetail.IsExtra,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:173:		FAM_DeviceCheckingDetail.DeviceCodeSnapshot,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\04_20261018_FAM_DeviceChecking_Search.sql:174:		FAM_DeviceCheckingDetail.DeviceCheckingDetailID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:33:	(N'FAM_DeviceChecking_Search', N'DeviceCheckingID', N'ID đợt', 70, 0, 0, 0, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:34:	(N'FAM_DeviceChecking_Search', N'CheckingCode', N'Mã đợt', 100, 0, 1, 1, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:35:	(N'FAM_DeviceChecking_Search', N'CheckingName', N'Tên đợt kiểm kê', 180, 0, 1, 2, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:36:	(N'FAM_DeviceChecking_Search', N'OfficeName', N'Chi nhánh QL', 120, 0, 1, 3, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:37:	(N'FAM_DeviceChecking_Search', N'PlaceName', N'Công trình SD', 150, 0, 1, 4, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:38:	(N'FAM_DeviceChecking_Search', N'YearID', N'Năm', 55, 0, 1, 5, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:39:	(N'FAM_DeviceChecking_Search', N'PeriodTypeName', N'Loại kỳ', 70, 0, 1, 6, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:40:	(N'FAM_DeviceChecking_Search', N'QuarterNo', N'Quý', 45, 0, 1, 7, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:41:	(N'FAM_DeviceChecking_Search', N'CheckingDate', N'Ngày kiểm kê', 90, 0, 1, 8, N'd'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:42:	(N'FAM_DeviceChecking_Search', N'StatusName', N'Trạng thái', 110, 0, 1, 9, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:43:	(N'FAM_DeviceChecking_Search', N'TotalLines', N'Tổng dòng', 70, 0, 1, 10, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:44:	(N'FAM_DeviceChecking_Search', N'CheckedLines', N'Đã kiểm kê', 75, 0, 1, 11, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:45:	(N'FAM_DeviceChecking_Search', N'UncheckedLines', N'Chưa kiểm kê', 80, 0, 1, 12, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:46:	(N'FAM_DeviceChecking_Search', N'SystemQuantity', N'SL hệ thống', 80, 0, 1, 13, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:47:	(N'FAM_DeviceChecking_Search', N'ActualQuantity', N'SL thực tế', 80, 0, 1, 14, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:48:	(N'FAM_DeviceCheckingDetail_Search', N'IsEdit', N'Đã sửa', 50, 0, 0, 0, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:49:	(N'FAM_DeviceCheckingDetail_Search', N'DeviceCheckingDetailID', N'ID nội bộ', 80, 0, 0, 1, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:50:	(N'FAM_DeviceCheckingDetail_Search', N'CheckingCode', N'Mã đợt', 90, 0, 1, 2, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:51:	(N'FAM_DeviceCheckingDetail_Search', N'DeviceCode', N'Mã tài sản', 100, 0, 1, 3, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:52:	(N'FAM_DeviceCheckingDetail_Search', N'DeviceName', N'Tên tài sản', 220, 0, 1, 4, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:53:	(N'FAM_DeviceCheckingDetail_Search', N'UnitName', N'Đơn vị tính', 80, 0, 1, 5, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:54:	(N'FAM_DeviceCheckingDetail_Search', N'OfficeName', N'Chi nhánh QL', 110, 0, 1, 6, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:55:	(N'FAM_DeviceCheckingDetail_Search', N'PlaceName', N'Công trình SD', 130, 0, 1, 7, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:56:	(N'FAM_DeviceCheckingDetail_Search', N'SystemCondition', N'Tình trạng hệ thống', 120, 0, 1, 8, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:57:	(N'FAM_DeviceCheckingDetail_Search', N'SystemQuantity', N'Số lượng hệ thống', 100, 0, 1, 9, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:58:	(N'FAM_DeviceCheckingDetail_Search', N'ActualQuantity', N'Số lượng thực tế', 100, 1, 1, 10, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:59:	(N'FAM_DeviceCheckingDetail_Search', N'GoodQuantity', N'Số lượng tốt', 90, 1, 1, 11, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:60:	(N'FAM_DeviceCheckingDetail_Search', N'DamagedQuantity', N'Số lượng hỏng', 95, 1, 1, 12, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:61:	(N'FAM_DeviceCheckingDetail_Search', N'RepairQuantity', N'Cần sửa chữa', 95, 1, 1, 13, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:62:	(N'FAM_DeviceCheckingDetail_Search', N'QuantityDifference', N'Chênh lệch', 85, 0, 1, 14, N'n0'),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:63:	(N'FAM_DeviceCheckingDetail_Search', N'ResultName', N'Kết quả', 90, 0, 1, 15, N''),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:64:	(N'FAM_DeviceCheckingDetail_Search', N'Description', N'Ghi chú', 180, 1, 1, 16, N'')
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\07_20261018_SYS_GridColumn_DeviceChecking.sql:117:Where QueryName In (N'FAM_DeviceChecking_Search', N'FAM_DeviceCheckingDetail_Search')
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:2:	Patch  : [dbo].[FAM_DeviceChecking_Freeze] - Tạo mới
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:12:If Object_Id(N'[dbo].[FAM_DeviceChecking_Freeze]', N'P') Is Not Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:13:	Drop Procedure [dbo].[FAM_DeviceChecking_Freeze]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:16:Create Procedure [dbo].[FAM_DeviceChecking_Freeze]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:20:	@DeviceKindID int = null,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:21:	@DeviceStatusID int = null,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:41:	From [dbo].[FAM_DeviceChecking] With (Updlock, Holdlock)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:59:		From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:76:	Insert Into [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:87:		DeviceStatusIDSnapshot,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:88:		DeviceStatusNameSnapshot,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:95:		FAM_Device.DeviceID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:96:		FAM_Device.DeviceCode,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:97:		FAM_Device.DeviceName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:99:		FAM_Device.OfficeID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:101:		FAM_Device.PlaceID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:103:		FAM_Device.DeviceStatusID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:104:		FAM_DeviceStatus.DeviceStatusName,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:105:		Isnull(FAM_Device.Quantity, 0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:108:	From [dbo].[FAM_Device]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:109:		Inner Join [dbo].[FAM_DeviceKind]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:110:			On FAM_DeviceKind.DeviceKindID = FAM_Device.DeviceKindID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:111:		Inner Join [dbo].[FAM_DeviceStatus]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:112:			On FAM_DeviceStatus.DeviceStatusID = FAM_Device.DeviceStatusID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:114:			On GEN_Unit.UnitID = FAM_Device.UnitID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:116:			On SYS_Office.OfficeID = FAM_Device.OfficeID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:118:			On GEN_Place.PlaceID = FAM_Device.PlaceID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:120:		Isnull(FAM_Device.IsDeleted, 0) = 0
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:121:		And FAM_Device.ParentDeviceID = 0
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:122:		And (@OfficeID Is Null Or FAM_Device.OfficeID = @OfficeID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:123:		And (@PlaceID Is Null Or FAM_Device.PlaceID = @PlaceID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:124:		And (@DeviceKindID Is Null Or FAM_Device.DeviceKindID = @DeviceKindID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:125:		And (@DeviceStatusID Is Null Or FAM_Device.DeviceStatusID = @DeviceStatusID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:126:		And (@InputVoucherDateFrom Is Null Or FAM_Device.InputVoucherDate >= @InputVoucherDateFrom)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:127:		And (@InputVoucherDateTo Is Null Or FAM_Device.InputVoucherDate < @InputVoucherDateTo)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:131:			Or FAM_Device.DeviceCode Like @Keyword
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:132:			Or FAM_Device.DeviceCode2 Like @Keyword
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:133:			Or FAM_Device.DeviceName Like @Keyword
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:134:			Or FAM_Device.DeviceNameEn Like @Keyword
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:135:			Or FAM_Device.TechInfo Like @Keyword
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\03_20261018_FAM_DeviceChecking_Freeze.sql:145:	Update [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:11:If Object_Id(N'[dbo].[FAM_DeviceChecking_Summary]', N'P') Is Not Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:12:	Drop Procedure [dbo].[FAM_DeviceChecking_Summary]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:15:Create Procedure [dbo].[FAM_DeviceChecking_Summary]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:36:	From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:41:If Object_Id(N'[dbo].[FAM_DeviceChecking_Complete]', N'P') Is Not Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:42:	Drop Procedure [dbo].[FAM_DeviceChecking_Complete]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:45:Create Procedure [dbo].[FAM_DeviceChecking_Complete]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:60:	From [dbo].[FAM_DeviceChecking] With (Updlock, Holdlock)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:78:		From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:91:		From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\06_20261018_FAM_DeviceChecking_Complete.sql:100:	Update [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\02_20261018_FAM_DeviceChecking_Create.sql:2:	Patch  : [dbo].[FAM_DeviceChecking_Create] - Tạo mới
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\02_20261018_FAM_DeviceChecking_Create.sql:12:If Object_Id(N'[dbo].[FAM_DeviceChecking_Create]', N'P') Is Not Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\02_20261018_FAM_DeviceChecking_Create.sql:13:	Drop Procedure [dbo].[FAM_DeviceChecking_Create]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\02_20261018_FAM_DeviceChecking_Create.sql:16:Create Procedure [dbo].[FAM_DeviceChecking_Create]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\02_20261018_FAM_DeviceChecking_Create.sql:70:		From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\02_20261018_FAM_DeviceChecking_Create.sql:81:		From [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\02_20261018_FAM_DeviceChecking_Create.sql:95:	Insert Into [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:2:	Patch  : [dbo].[FAM_DeviceCheckingDetail_Save] - Tạo mới
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:12:If Object_Id(N'[dbo].[FAM_DeviceCheckingDetail_Save]', N'P') Is Not Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:13:	Drop Procedure [dbo].[FAM_DeviceCheckingDetail_Save]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:16:Create Procedure [dbo].[FAM_DeviceCheckingDetail_Save]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:35:		@DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:36:		@StatusID = FAM_DeviceChecking.StatusID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:37:	From [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:38:		Inner Join [dbo].[FAM_DeviceChecking] FAM_DeviceChecking
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:39:			On FAM_DeviceChecking.DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:40:	Where FAM_DeviceCheckingDetail.DeviceCheckingDetailID = @DeviceCheckingDetailID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:82:	Update FAM_DeviceCheckingDetail
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:93:	From [dbo].[FAM_DeviceCheckingDetail] FAM_DeviceCheckingDetail
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:94:		Inner Join [dbo].[FAM_DeviceChecking] FAM_DeviceChecking With (Updlock, Holdlock)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:95:			On FAM_DeviceChecking.DeviceCheckingID = FAM_DeviceCheckingDetail.DeviceCheckingID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:97:		FAM_DeviceCheckingDetail.DeviceCheckingDetailID = @DeviceCheckingDetailID
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:98:		And FAM_DeviceChecking.StatusID In (2, 3)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\05_20261018_FAM_DeviceCheckingDetail_Save.sql:108:		Update [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:5:	Lưu ý  : Chỉ tạo cấu trúc mới, không sửa FAM_Device hoặc FAM_DeviceDep.
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:10:If Object_Id(N'[dbo].[FAM_DeviceChecking]', N'U') Is Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:12:	Create Table [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:21:		QuarterNo tinyint Not Null Constraint DF_FAM_DeviceChecking_QuarterNo Default(0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:24:		StatusID tinyint Not Null Constraint DF_FAM_DeviceChecking_StatusID Default(1),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:32:		CreatedDate datetime Not Null Constraint DF_FAM_DeviceChecking_CreatedDate Default(Getdate()),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:37:		Constraint PK_FAM_DeviceChecking Primary Key(DeviceCheckingID),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:38:		Constraint CK_FAM_DeviceChecking_Period Check(PeriodType In (1, 2)),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:39:		Constraint CK_FAM_DeviceChecking_Quarter Check
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:45:		Constraint CK_FAM_DeviceChecking_Status Check(StatusID Between 1 And 6)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:49:If Object_Id(N'[dbo].[FAM_DeviceCheckingDetail]', N'U') Is Null
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:51:	Create Table [dbo].[FAM_DeviceCheckingDetail]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:63:		DeviceStatusIDSnapshot int Null,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:64:		DeviceStatusNameSnapshot nvarchar(200) Null,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:77:		IsExtra bit Not Null Constraint DF_FAM_DeviceCheckingDetail_IsExtra Default(0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:81:		CreatedDate datetime Not Null Constraint DF_FAM_DeviceCheckingDetail_CreatedDate Default(Getdate()),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:86:		Constraint PK_FAM_DeviceCheckingDetail Primary Key(DeviceCheckingDetailID),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:87:		Constraint FK_FAM_DeviceCheckingDetail_Checking Foreign Key(DeviceCheckingID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:88:			References [dbo].[FAM_DeviceChecking](DeviceCheckingID),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:89:		Constraint FK_FAM_DeviceCheckingDetail_Device Foreign Key(DeviceID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:90:			References [dbo].[FAM_Device](DeviceID),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:91:		Constraint CK_FAM_DeviceCheckingDetail_SystemQuantity Check(SystemQuantity >= 0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:92:		Constraint CK_FAM_DeviceCheckingDetail_ActualQuantity Check(ActualQuantity Is Null Or ActualQuantity >= 0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:93:		Constraint CK_FAM_DeviceCheckingDetail_GoodQuantity Check(GoodQuantity Is Null Or GoodQuantity >= 0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:94:		Constraint CK_FAM_DeviceCheckingDetail_DamagedQuantity Check(DamagedQuantity Is Null Or DamagedQuantity >= 0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:95:		Constraint CK_FAM_DeviceCheckingDetail_RepairQuantity Check(RepairQuantity Is Null Or RepairQuantity >= 0),
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:96:		Constraint CK_FAM_DeviceCheckingDetail_ConditionTotal Check
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:110:		object_id = Object_Id(N'[dbo].[FAM_DeviceChecking]')
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:111:		And name = N'UX_FAM_DeviceChecking_Period'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:114:	Create Unique Index UX_FAM_DeviceChecking_Period
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:115:	On [dbo].[FAM_DeviceChecking]
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:131:		object_id = Object_Id(N'[dbo].[FAM_DeviceCheckingDetail]')
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:132:		And name = N'UX_FAM_DeviceCheckingDetail_Device'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:135:	Create Unique Index UX_FAM_DeviceCheckingDetail_Device
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:136:	On [dbo].[FAM_DeviceCheckingDetail](DeviceCheckingID, DeviceID)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:145:		object_id = Object_Id(N'[dbo].[FAM_DeviceCheckingDetail]')
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:146:		And name = N'IX_FAM_DeviceCheckingDetail_Checking'
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:149:	Create Index IX_FAM_DeviceCheckingDetail_Checking
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:150:	On [dbo].[FAM_DeviceCheckingDetail](DeviceCheckingID, ActualQuantity)
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:157:	Object_Id(N'[dbo].[FAM_DeviceChecking]', N'U') As DeviceCheckingTableID,
+2.SQL/patches\2026-10-18\FAM-DeviceChecking\01_20261018_FAM_DeviceChecking_schema.sql:158:	Object_Id(N'[dbo].[FAM_DeviceCheckingDetail]', N'U') As DeviceCheckingDetailTableID

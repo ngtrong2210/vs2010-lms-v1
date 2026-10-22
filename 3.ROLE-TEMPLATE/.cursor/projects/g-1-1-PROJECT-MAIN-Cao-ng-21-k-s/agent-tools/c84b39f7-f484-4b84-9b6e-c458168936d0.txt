@@ -1,0 +1,559 @@
+ConvertFrom-Json : Unterminated string passed in. (65535): [{"Queryname":"gen_area","fieldname":"areaid","caption":"ma 
+khu v?c","width":40,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid"
+:101,"banded":null,"fixedtype":null},{"queryname":"gen_area","fieldname":"areaname","caption":"t�n khu v?c","width":100
+,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":102,"banded":null,
+"fixedtype":null},{"queryname":"gen_area","fieldname":"description","caption":"ghi ch�","width":150,"editable":false,"v
+isible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":103,"banded":null,"fixedtype":null},{"
+queryname":"gen_certype","fieldname":"certypeid","caption":"ma","width":80,"editable":false,"visible":true,"visibleinde
+x":0,"halignment":null,"formatstring":"","gridcolumnid":104,"banded":null,"fixedtype":null},{"queryname":"gen_certype",
+"fieldname":"certypename","caption":"t�n lo?i gi?y t?","width":150,"editable":false,"visible":true,"visibleindex":0,"ha
+lignment":null,"formatstring":"","gridcolumnid":105,"banded":null,"fixedtype":null},{"queryname":"gen_certype","fieldna
+me":"description","caption":"ghi ch�","width":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"fo
+rmatstring":"","gridcolumnid":106,"banded":null,"fixedtype":null},{"queryname":"gen_certype","fieldname":"isactived","c
+aption":"k�ch ho?t","width":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gr
+idcolumnid":107,"banded":null,"fixedtype":null},{"queryname":"gen_certype","fieldname":"isdefault","caption":"m?c d?nh"
+,"width":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":108,"ba
+nded":null,"fixedtype":null},{"queryname":"gen_certype","fieldname":"order","caption":"stt","width":80,"editable":false
+,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":109,"banded":null,"fixedtype":null}
+,{"queryname":"gen_certype","fieldname":"orderindex","caption":"tt.hi?n th?","width":80,"editable":false,"visible":true
+,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":110,"banded":null,"fixedtype":null},{"queryname":"
+gen_district","fieldname":"districtid","caption":"ma qu?n","width":50,"editable":false,"visible":true,"visibleindex":0,
+"halignment":null,"formatstring":"","gridcolumnid":111,"banded":null,"fixedtype":null},{"queryname":"gen_district","fie
+ldname":"districtname","caption":"t�n qu?n","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":n
+ull,"formatstring":"","gridcolumnid":112,"banded":null,"fixedtype":null},{"queryname":"gen_district","fieldname":"provi
+ncename","caption":"t�n th�nh ph?","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"form
+atstring":"","gridcolumnid":113,"banded":null,"fixedtype":null},{"queryname":"gen_ethnicity","fieldname":"description",
+"caption":"ghi ch�","width":150,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","g
+ridcolumnid":114,"banded":null,"fixedtype":null},{"queryname":"gen_ethnicity","fieldname":"ethnicityid","caption":"ma 
+d�n t?c","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid"
+:115,"banded":null,"fixedtype":null},{"queryname":"gen_ethnicity","fieldname":"ethnicityname","caption":"t�n d�n t?c","
+width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":116,"ban
+ded":null,"fixedtype":null},{"queryname":"gen_preferentialobject","fieldname":"addmark","caption":"di?m c?ng","width":8
+0,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":117,"banded":null
+,"fixedtype":null},{"queryname":"gen_preferentialobject","fieldname":"preferentialobjectid","caption":"ma","width":60,"
+editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":118,"banded":null,"f
+ixedtype":null},{"queryname":"gen_preferentialobject","fieldname":"preferentialobjectname","caption":"t�n g?i","width":
+100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":119,"banded":nu
+ll,"fixedtype":null},{"queryname":"gen_province","fieldname":"provinceid","caption":"ma t?nh th�nh","width":50,"editabl
+e":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":120,"banded":null,"fixedtyp
+e":null},{"queryname":"gen_province","fieldname":"provincename","caption":"t�n t?nh th�nh","width":100,"editable":false
+,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":121,"banded":null,"fixedtype":null}
+,{"queryname":"gen_religion","fieldname":"description","caption":"ghi ch�","width":150,"editable":false,"visible":true,
+"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":122,"banded":null,"fixedtype":null},{"queryname":"g
+en_religion","fieldname":"religionid","caption":"ma t�n gi�o","width":50,"editable":false,"visible":true,"visibleindex"
+:0,"halignment":null,"formatstring":"","gridcolumnid":123,"banded":null,"fixedtype":null},{"queryname":"gen_religion","
+fieldname":"religionname","caption":"t�n t�n gi�o","width":100,"editable":false,"visible":true,"visibleindex":0,"halign
+ment":null,"formatstring":"","gridcolumnid":124,"banded":null,"fixedtype":null},{"queryname":"gen_rewardform","fieldnam
+e":"description","caption":"ghi ch�","width":150,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"fo
+rmatstring":"","gridcolumnid":125,"banded":null,"fixedtype":null},{"queryname":"gen_rewardform","fieldname":"rewardform
+id","caption":"ma h�nh th?c","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstrin
+g":"","gridcolumnid":126,"banded":null,"fixedtype":null},{"queryname":"gen_rewardform","fieldname":"rewardformname","ca
+ption":"t�n h�nh th?c","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":""
+,"gridcolumnid":127,"banded":null,"fixedtype":null},{"queryname":"gen_sanctionform","fieldname":"description","caption"
+:"ghi ch�","width":150,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumn
+id":128,"banded":null,"fixedtype":null},{"queryname":"gen_sanctionform","fieldname":"sanctionformid","caption":"ma 
+h�nh th?c","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumni
+d":129,"banded":null,"fixedtype":null},{"queryname":"gen_sanctionform","fieldname":"sanctionformname","caption":"t�n 
+h�nh th?c","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumn
+id":130,"banded":null,"fixedtype":null},{"queryname":"gen_sourceinfo","fieldname":"desciption","caption":"ghi ch�","wid
+th":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":131,"banded
+":null,"fixedtype":null},{"queryname":"gen_sourceinfo","fieldname":"isactived","caption":"k�ch ho?t","width":80,"editab
+le":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":132,"banded":null,"fixedty
+pe":null},{"queryname":"gen_sourceinfo","fieldname":"isdefault","caption":"m?c d?nh","width":80,"editable":false,"visib
+le":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":133,"banded":null,"fixedtype":null},{"quer
+yname":"gen_sourceinfo","fieldname":"order","caption":"tt","width":80,"editable":false,"visible":true,"visibleindex":0,
+"halignment":null,"formatstring":"","gridcolumnid":134,"banded":null,"fixedtype":null},{"queryname":"gen_sourceinfo","f
+ieldname":"sourceinfoname","caption":"t�n ngu?n tin","width":100,"editable":false,"visible":true,"visibleindex":0,"hali
+gnment":null,"formatstring":"","gridcolumnid":135,"banded":null,"fixedtype":null},{"queryname":"gen_village","fieldname
+":"districtname","caption":"qu?n huy?n","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,
+"formatstring":"","gridcolumnid":136,"banded":null,"fixedtype":null},{"queryname":"gen_village","fieldname":"order","ca
+ption":"stt","width":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolum
+nid":137,"banded":null,"fixedtype":null},{"queryname":"gen_village","fieldname":"provincename","caption":"t?nh th�nh","
+width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":138,"ban
+ded":null,"fixedtype":null},{"queryname":"gen_village","fieldname":"villageid","caption":"ma th�n ?p","width":100,"edit
+able":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":139,"banded":null,"fixed
+type":null},{"queryname":"sim_class","fieldname":"traininglevelname","caption":"h? d�o t?o","width":80,"editable":false
+,"visible":true,"visibleindex":5,"halignment":null,"formatstring":"","gridcolumnid":140,"banded":null,"fixedtype":null}
+,{"queryname":"sim_class_monthinfo","fieldname":"beforestudentcount","caption":"s? s? tt","width":80,"editable":false,"
+visible":true,"visibleindex":12,"halignment":2,"formatstring":"","gridcolumnid":141,"banded":null,"fixedtype":null},{"q
+ueryname":"sim_class_monthinfo","fieldname":"classshortname","caption":"t�n m� t?","width":100,"editable":false,"visibl
+e":true,"visibleindex":7,"halignment":1,"formatstring":"","gridcolumnid":142,"banded":null,"fixedtype":null},{"querynam
+e":"sim_class_monthinfo","fieldname":"classname","caption":"l?p h?c","width":60,"editable":false,"visible":true,"visibl
+eindex":6,"halignment":2,"formatstring":"","gridcolumnid":144,"banded":null,"fixedtype":null},{"queryname":"sim_class_m
+onthinfo","fieldname":"specialbranchname","caption":"t�n ngh?","width":250,"editable":false,"visible":true,"visibleinde
+x":9,"halignment":null,"formatstring":"","gridcolumnid":148,"banded":null,"fixedtype":null},{"queryname":"sim_class_mon
+thinfo","fieldname":"studentcount","caption":"t?ng h? so","width":70,"editable":false,"visible":true,"visibleindex":11,
+"halignment":2,"formatstring":"","gridcolumnid":149,"banded":null,"fixedtype":null},{"queryname":"sim_class_subject_reg
+ister43","fieldname":"classname","caption":"t�n nh�m","width":120,"editable":false,"visible":true,"visibleindex":0,"hal
+ignment":null,"formatstring":"","gridcolumnid":166,"banded":null,"fixedtype":null},{"queryname":"sim_class_subject_regi
+ster43","fieldname":"coursename","caption":"kho� h?c","width":80,"editable":false,"visible":true,"visibleindex":0,"hali
+gnment":null,"formatstring":"","gridcolumnid":167,"banded":null,"fixedtype":null},{"queryname":"sim_class_subject_regis
+ter43","fieldname":"groupsmallclass","caption":"th? t? nh�m","width":100,"editable":false,"visible":true,"visibleindex"
+:0,"halignment":null,"formatstring":"","gridcolumnid":168,"banded":null,"fixedtype":null},{"queryname":"sim_class_subje
+ct_register43","fieldname":"isselected","caption":"ch?n","width":80,"editable":true,"visible":true,"visibleindex":0,"ha
+lignment":null,"formatstring":"","gridcolumnid":169,"banded":null,"fixedtype":null},{"queryname":"sim_class_subject_reg
+ister43","fieldname":"specialbranchname","caption":"chuy�n ng�nh","width":80,"editable":false,"visible":true,"visiblein
+dex":0,"halignment":null,"formatstring":"","gridcolumnid":170,"banded":null,"fixedtype":null},{"queryname":"sim_class_s
+ubject_register43","fieldname":"subjectid","caption":"ma m�n","width":80,"editable":false,"visible":true,"visibleindex"
+:0,"halignment":null,"formatstring":"","gridcolumnid":171,"banded":null,"fixedtype":null},{"queryname":"sim_class_subje
+ct_register43","fieldname":"subjectname","caption":"t�n m�n","width":100,"editable":false,"visible":true,"visibleindex"
+:0,"halignment":null,"formatstring":"","gridcolumnid":172,"banded":null,"fixedtype":null},{"queryname":"sim_class_subje
+ct_register43","fieldname":"totalfee","caption":"h?c ph�","width":80,"editable":false,"visible":true,"visibleindex":0,"
+halignment":2,"formatstring":"#,###","gridcolumnid":173,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fie
+ldname":"classid","caption":"ma nh�m","width":80,"editable":true,"visible":true,"visibleindex":null,"halignment":2,"for
+matstring":"","gridcolumnid":174,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"classname","ca
+ption":"t�n nh�m","width":100,"editable":true,"visible":true,"visibleindex":null,"halignment":null,"formatstring":"","g
+ridcolumnid":175,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"cousename","caption":"kho� h?c
+","width":80,"editable":true,"visible":true,"visibleindex":null,"halignment":null,"formatstring":"","gridcolumnid":176,
+"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"finishat","caption":"k?t th�c","width":80,"edit
+able":true,"visible":true,"visibleindex":0,"halignment":2,"formatstring":"","gridcolumnid":177,"banded":null,"fixedtype
+":null},{"queryname":"sim_class43","fieldname":"groupsmallclass","caption":"tt nh�m","width":80,"editable":true,"visibl
+e":true,"visibleindex":null,"halignment":2,"formatstring":"","gridcolumnid":178,"banded":null,"fixedtype":null},{"query
+name":"sim_class43","fieldname":"officename","caption":"chi nh�nh","width":80,"editable":true,"visible":true,"visiblein
+dex":null,"halignment":2,"formatstring":"","gridcolumnid":179,"banded":null,"fixedtype":null},{"queryname":"sim_class43
+","fieldname":"practicequantity","caption":"th","width":60,"editable":true,"visible":true,"visibleindex":null,"halignme
+nt":2,"formatstring":"","gridcolumnid":180,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"seme
+ster","caption":"h?c k�","width":80,"editable":true,"visible":true,"visibleindex":null,"halignment":2,"formatstring":""
+,"gridcolumnid":181,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"specialbranchname","caption
+":"chuy�n ng�nh","width":80,"editable":true,"visible":true,"visibleindex":null,"halignment":null,"formatstring":"","gri
+dcolumnid":182,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"startat","caption":"b?t d?u","wi
+dth":80,"editable":true,"visible":true,"visibleindex":0,"halignment":2,"formatstring":"","gridcolumnid":183,"banded":nu
+ll,"fixedtype":null},{"queryname":"sim_class43","fieldname":"subjectid","caption":"ma m�n","width":80,"editable":true,"
+visible":true,"visibleindex":null,"halignment":2,"formatstring":"","gridcolumnid":184,"banded":null,"fixedtype":null},{
+"queryname":"sim_class43","fieldname":"subjectname","caption":"t�n m�n","width":80,"editable":true,"visible":true,"visi
+bleindex":null,"halignment":null,"formatstring":"","gridcolumnid":185,"banded":null,"fixedtype":null},{"queryname":"sim
+_class43","fieldname":"theoryquantity","caption":"lt","width":60,"editable":true,"visible":true,"visibleindex":null,"ha
+lignment":2,"formatstring":"","gridcolumnid":186,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname"
+:"totalfee","caption":"h?c ph�","width":80,"editable":true,"visible":true,"visibleindex":null,"halignment":null,"format
+string":"","gridcolumnid":187,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"traininglevelname
+","caption":"b?c d�o t?o","width":80,"editable":true,"visible":true,"visibleindex":null,"halignment":null,"formatstring
+":"","gridcolumnid":188,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"trainingtype","caption"
+:"lo?i d�o t?o","width":80,"editable":true,"visible":true,"visibleindex":null,"halignment":null,"formatstring":"","grid
+columnid":189,"banded":null,"fixedtype":null},{"queryname":"sim_class43","fieldname":"unittext","caption":"dvht","width
+":60,"editable":true,"visible":true,"visibleindex":null,"halignment":2,"formatstring":"","gridcolumnid":190,"banded":nu
+ll,"fixedtype":null},{"queryname":"sim_class43","fieldname":"yearid","caption":"ni�n h?c","width":80,"editable":true,"v
+isible":true,"visibleindex":null,"halignment":2,"formatstring":"","gridcolumnid":191,"banded":null,"fixedtype":null},{"
+queryname":"sim_course","fieldname":"courseid","caption":"ma kh�a h?c","width":10,"editable":false,"visible":true,"visi
+bleindex":2,"halignment":null,"formatstring":"","gridcolumnid":192,"banded":null,"fixedtype":null},{"queryname":"sim_co
+urse","fieldname":"coursename","caption":"t�n kh�a h?c","width":10,"editable":false,"visible":true,"visibleindex":3,"ha
+lignment":null,"formatstring":"","gridcolumnid":193,"banded":null,"fixedtype":null},{"queryname":"sim_course","fieldnam
+e":"isselected","caption":"ch?n","width":80,"editable":false,"visible":true,"visibleindex":1,"halignment":null,"formats
+tring":"","gridcolumnid":194,"banded":null,"fixedtype":null},{"queryname":"sim_datechecking","fieldname":"birthdatetext
+","caption":"ng�y sinh","width":75,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":""
+,"gridcolumnid":195,"banded":null,"fixedtype":null},{"queryname":"sim_datechecking","fieldname":"date","caption":"ng�y 
+ngh?","width":75,"editable":false,"visible":true,"visibleindex":0,"halignment":2,"formatstring":"","gridcolumnid":196,"
+banded":null,"fixedtype":null},{"queryname":"sim_datechecking","fieldname":"description","caption":"ghi ch�","width":15
+0,"editable":true,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":197,"banded":null,
+"fixedtype":null},{"queryname":"sim_datechecking","fieldname":"gendertext","caption":"gi?i t�nh","width":75,"editable":
+false,"visible":true,"visibleindex":0,"halignment":2,"formatstring":"","gridcolumnid":198,"banded":null,"fixedtype":nul
+l},{"queryname":"sim_datechecking","fieldname":"nopermissionquantity","caption":"kh�ng ph�p","width":75,"editable":true
+,"visible":true,"visibleindex":0,"halignment":2,"formatstring":"","gridcolumnid":199,"banded":null,"fixedtype":null},{"
+queryname":"sim_datechecking","fieldname":"order","caption":"stt","width":50,"editable":false,"visible":true,"visiblein
+dex":0,"halignment":2,"formatstring":"","gridcolumnid":200,"banded":null,"fixedtype":null},{"queryname":"sim_datechecki
+ng","fieldname":"permissionquantity","caption":"c� ph�p","width":75,"editable":true,"visible":true,"visibleindex":0,"ha
+lignment":2,"formatstring":"","gridcolumnid":201,"banded":null,"fixedtype":null},{"queryname":"sim_dormbed","fieldname"
+:"dormbedname","caption":"t�n giu?ng","width":200,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"f
+ormatstring":"","gridcolumnid":202,"banded":null,"fixedtype":null},{"queryname":"sim_dormbed","fieldname":"dormid","cap
+tion":"ma ph�ng","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","grid
+columnid":203,"banded":null,"fixedtype":null},{"queryname":"sim_dormbed","fieldname":"isactived","caption":"k�ch ho?t",
+"width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":204,"ba
+nded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"a","caption":"sx","width":50,"editable":fal
+se,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":205,"banded":null,"fixedtype":nul
+l},{"queryname":"sim_ethicstatistic","fieldname":"b","caption":"t?t","width":50,"editable":false,"visible":true,"visibl
+eindex":0,"halignment":null,"formatstring":"","gridcolumnid":206,"banded":null,"fixedtype":null},{"queryname":"sim_ethi
+cstatistic","fieldname":"c","caption":"kh�","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":nu
+ll,"formatstring":"","gridcolumnid":207,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"
+classname","caption":"l?p h?c","width":120,"editable":false,"visible":true,"visibleindex":2,"halignment":null,"formatst
+ring":"","gridcolumnid":208,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"d","caption"
+:"tb kh�","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid
+":209,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"e","caption":"tb","width":50,"edit
+able":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":210,"banded":null,"fixed
+type":null},{"queryname":"sim_ethicstatistic","fieldname":"f","caption":"y?u","width":50,"editable":false,"visible":tru
+e,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":211,"banded":null,"fixedtype":null},{"queryname":
+"sim_ethicstatistic","fieldname":"g","caption":"k�m","width":50,"editable":false,"visible":true,"visibleindex":0,"halig
+nment":null,"formatstring":"","gridcolumnid":212,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fie
+ldname":"male","caption":"nam","width":50,"editable":false,"visible":true,"visibleindex":4,"halignment":2,"formatstring
+":"","gridcolumnid":213,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"order","caption"
+:"stt","width":50,"editable":false,"visible":true,"visibleindex":1,"halignment":null,"formatstring":"","gridcolumnid":2
+14,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"percenta","caption":"% sx","width":50
+,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"##.0","gridcolumnid":215,"banded":n
+ull,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"percentb","caption":"% t?t","width":50,"editable":
+false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"##.0","gridcolumnid":216,"banded":null,"fixedty
+pe":null},{"queryname":"sim_ethicstatistic","fieldname":"percentc","caption":"% kh�","width":50,"editable":false,"visib
+le":true,"visibleindex":0,"halignment":null,"formatstring":"##.0","gridcolumnid":217,"banded":null,"fixedtype":null},{"
+queryname":"sim_ethicstatistic","fieldname":"percentd","caption":"% tb kh�","width":60,"editable":false,"visible":true,
+"visibleindex":0,"halignment":null,"formatstring":"##.0","gridcolumnid":218,"banded":null,"fixedtype":null},{"queryname
+":"sim_ethicstatistic","fieldname":"percente","caption":"% tb","width":50,"editable":false,"visible":true,"visibleindex
+":0,"halignment":null,"formatstring":"##.0","gridcolumnid":219,"banded":null,"fixedtype":null},{"queryname":"sim_ethics
+tatistic","fieldname":"percentf","caption":"% y?u","width":50,"editable":false,"visible":true,"visibleindex":0,"halignm
+ent":null,"formatstring":"##.0","gridcolumnid":220,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","f
+ieldname":"percentg","caption":"% k�m","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"f
+ormatstring":"##.0","gridcolumnid":221,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"s
+tudentquantity","caption":"si s?","width":50,"editable":false,"visible":true,"visibleindex":3,"halignment":null,"format
+string":"","gridcolumnid":222,"banded":null,"fixedtype":null},{"queryname":"sim_ethicstatistic","fieldname":"women","ca
+ption":"n?","width":50,"editable":false,"visible":true,"visibleindex":5,"halignment":2,"formatstring":"","gridcolumnid"
+:223,"banded":null,"fixedtype":null},{"queryname":"sim_examdate","fieldname":"description","caption":"m� t?","width":20
+0,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":224,"banded":null
+,"fixedtype":null},{"queryname":"sim_examdate","fieldname":"examdate","caption":"ng�y k� thi","width":100,"editable":fa
+lse,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":225,"banded":null,"fixedtype":nu
+ll},{"queryname":"sim_examdate","fieldname":"examdatename","caption":"t�n g?i k� thi","width":150,"editable":false,"vis
+ible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":226,"banded":null,"fixedtype":null},{"qu
+eryname":"sim_examdate","fieldname":"isactived","caption":"k�ch ho?t","width":80,"editable":false,"visible":true,"visib
+leindex":0,"halignment":null,"formatstring":"","gridcolumnid":227,"banded":null,"fixedtype":null},{"queryname":"sim_exa
+mdate","fieldname":"isdefault","caption":"m?c d?nh","width":80,"editable":false,"visible":true,"visibleindex":0,"halign
+ment":null,"formatstring":"","gridcolumnid":228,"banded":null,"fixedtype":null},{"queryname":"sim_examdate","fieldname"
+:"order","caption":"stt","width":70,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"
+","gridcolumnid":229,"banded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"birthdate
+text","caption":"ng�y sinh","width":100,"editable":false,"visible":true,"visibleindex":5,"halignment":null,"formatstrin
+g":"","gridcolumnid":230,"banded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"class
+id","caption":"ma l?p","width":80,"editable":false,"visible":true,"visibleindex":7,"halignment":null,"formatstring":"",
+"gridcolumnid":231,"banded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"examcode","
+caption":"sbd","width":100,"editable":true,"visible":true,"visibleindex":10,"halignment":null,"formatstring":"","gridco
+lumnid":232,"banded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"gendertext","capti
+on":"gi?i t�nh","width":70,"editable":false,"visible":true,"visibleindex":6,"halignment":null,"formatstring":"","gridco
+lumnid":233,"banded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"isselected","capti
+on":"ch?n","width":80,"editable":true,"visible":true,"visibleindex":1,"halignment":null,"formatstring":"","gridcolumnid
+":234,"banded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"order","caption":"stt","
+width":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":235,"band
+ed":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"orderindex","caption":"th? t? sv","
+width":100,"editable":true,"visible":true,"visibleindex":11,"halignment":null,"formatstring":"","gridcolumnid":236,"ban
+ded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"studentcode","caption":"ma sv","wi
+dth":80,"editable":false,"visible":true,"visibleindex":2,"halignment":null,"formatstring":"","gridcolumnid":237,"banded
+":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"studentfirstname","caption":"h? d?m",
+"width":150,"editable":false,"visible":true,"visibleindex":3,"halignment":null,"formatstring":"","gridcolumnid":238,"ba
+nded":null,"fixedtype":null},{"queryname":"sim_examschedule_studentlist","fieldname":"studentlastname","caption":"t�n",
+"width":80,"editable":false,"visible":true,"visibleindex":4,"halignment":null,"formatstring":"","gridcolumnid":239,"ban
+ded":null,"fixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"allowexam","caption":"k?t qu?","width":60,"
+editable":true,"visible":true,"visibleindex":21,"halignment":2,"formatstring":"","gridcolumnid":240,"banded":"k?t 
+qu?","fixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"birthdatetext","caption":"ng�y sinh","width":75,
+"editable":false,"visible":true,"visibleindex":5,"halignment":2,"formatstring":"","gridcolumnid":241,"banded":"hssv","f
+ixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"exam1","caption":"di?m thi","width":75,"editable":false
+,"visible":true,"visibleindex":17,"halignment":2,"formatstring":"0.0","gridcolumnid":242,"banded":"d? li?u 
+x�t","fixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"percentoff","caption":"% ti?t v?ng","width":75,"
+editable":false,"visible":true,"visibleindex":14,"halignment":2,"formatstring":"#,###","gridcolumnid":244,"banded":"d? 
+li?u x�t","fixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"remainmoneytext","caption":"h?c ph�","width
+":75,"editable":false,"visible":true,"visibleindex":15,"halignment":2,"formatstring":"#,###","gridcolumnid":245,"banded
+":"d? li?u x�t","fixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"studentcode","caption":"ma sv","width
+":100,"editable":false,"visible":true,"visibleindex":2,"halignment":2,"formatstring":"","gridcolumnid":246,"banded":"hs
+sv","fixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"studentfirstname","caption":"h? d?m","width":140,
+"editable":false,"visible":true,"visibleindex":3,"halignment":null,"formatstring":"","gridcolumnid":247,"banded":"hssv"
+,"fixedtype":null},{"queryname":"sim_examstudentlist","fieldname":"studentlastname","caption":"t�n","width":50,"editabl
+e":false,"visible":true,"visibleindex":4,"halignment":null,"formatstring":"","gridcolumnid":248,"banded":"hssv","fixedt
+ype":null},{"queryname":"sim_reregister_deptsubject","fieldname":"isexamregister","caption":"dang ky thi l?i","width":1
+00,"editable":true,"visible":true,"visibleindex":32,"halignment":2,"formatstring":"","gridcolumnid":249,"banded":"dang 
+ky","fixedtype":null},{"queryname":"sim_reregister_deptsubject","fieldname":"islearningregister","caption":"dang ky 
+h?c l?i","width":100,"editable":true,"visible":true,"visibleindex":31,"halignment":2,"formatstring":"","gridcolumnid":2
+50,"banded":"dang ky","fixedtype":null},{"queryname":"sim_reregister_deptsubject","fieldname":"money","caption":"s? 
+ti?n ph�","width":100,"editable":true,"visible":true,"visibleindex":36,"halignment":null,"formatstring":"#,###","gridco
+lumnid":251,"banded":"dang 
+ky","fixedtype":null},{"queryname":"sim_reregister_deptsubject","fieldname":"receiptno","caption":"s? phi?u thu","width
+":80,"editable":false,"visible":true,"visibleindex":41,"halignment":2,"formatstring":"","gridcolumnid":254,"banded":"th
+?c hi?n","fixedtype":null},{"queryname":"sim_reregister_deptsubject","fieldname":"reclassid","caption":"l?p h?c l?i","w
+idth":100,"editable":false,"visible":true,"visibleindex":42,"halignment":2,"formatstring":"","gridcolumnid":255,"banded
+":"th?c hi?n","fixedtype":null},{"queryname":"sim_reward","fieldname":"birthdatetext","caption":"ng�y sinh","width":75,
+"editable":false,"visible":true,"visibleindex":5,"halignment":null,"formatstring":"","gridcolumnid":262,"banded":null,"
+fixedtype":null},{"queryname":"sim_reward","fieldname":"decisionno","caption":"s? qd","width":75,"editable":false,"visi
+ble":true,"visibleindex":7,"halignment":null,"formatstring":"","gridcolumnid":263,"banded":null,"fixedtype":null},{"que
+ryname":"sim_reward","fieldname":"description","caption":"ghi ch�","width":250,"editable":false,"visible":true,"visible
+index":13,"halignment":null,"formatstring":"","gridcolumnid":264,"banded":null,"fixedtype":null},{"queryname":"sim_rewa
+rd","fieldname":"gendertext","caption":"gi?i t�nh","width":60,"editable":false,"visible":true,"visibleindex":6,"halignm
+ent":null,"formatstring":"","gridcolumnid":265,"banded":null,"fixedtype":null},{"queryname":"sim_reward","fieldname":"o
+rder","caption":"stt","width":40,"editable":false,"visible":true,"visibleindex":1,"halignment":null,"formatstring":"","
+gridcolumnid":266,"banded":null,"fixedtype":null},{"queryname":"sim_reward","fieldname":"rewardformname","caption":"h�n
+h th?c","width":110,"editable":false,"visible":true,"visibleindex":10,"halignment":null,"formatstring":"","gridcolumnid
+":267,"banded":null,"fixedtype":null},{"queryname":"sim_reward","fieldname":"semester","caption":"h?c k�","width":75,"e
+ditable":false,"visible":true,"visibleindex":11,"halignment":null,"formatstring":"","gridcolumnid":268,"banded":null,"f
+ixedtype":null},{"queryname":"sim_reward","fieldname":"signer","caption":"ngu?i ky","width":80,"editable":false,"visibl
+e":true,"visibleindex":9,"halignment":null,"formatstring":"","gridcolumnid":269,"banded":null,"fixedtype":null},{"query
+name":"sim_reward","fieldname":"signingdate","caption":"ng�y qd","width":75,"editable":false,"visible":true,"visibleind
+ex":8,"halignment":null,"formatstring":"","gridcolumnid":270,"banded":null,"fixedtype":null},{"queryname":"sim_reward",
+"fieldname":"studentcode","caption":"ma sv","width":80,"editable":false,"visible":true,"visibleindex":2,"halignment":nu
+ll,"formatstring":"","gridcolumnid":271,"banded":null,"fixedtype":null},{"queryname":"sim_reward","fieldname":"studentf
+irstname","caption":"h? d?m","width":100,"editable":false,"visible":true,"visibleindex":3,"halignment":null,"formatstri
+ng":"","gridcolumnid":272,"banded":null,"fixedtype":null},{"queryname":"sim_reward","fieldname":"studentlastname","capt
+ion":"t�n","width":75,"editable":false,"visible":true,"visibleindex":4,"halignment":null,"formatstring":"","gridcolumni
+d":273,"banded":null,"fixedtype":null},{"queryname":"sim_reward","fieldname":"yearid","caption":"nam h?c","width":75,"e
+ditable":false,"visible":true,"visibleindex":12,"halignment":null,"formatstring":"","gridcolumnid":274,"banded":null,"f
+ixedtype":null},{"queryname":"sim_room","fieldname":"allowscheduling","caption":"s?p l?ch","width":20,"editable":false,
+"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":275,"banded":null,"fixedtype":null},
+{"queryname":"sim_room","fieldname":"areaid","caption":"ma day nh�","width":50,"editable":false,"visible":true,"visible
+index":0,"halignment":null,"formatstring":"","gridcolumnid":276,"banded":null,"fixedtype":null},{"queryname":"sim_room"
+,"fieldname":"description","caption":"ghi ch�","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment
+":null,"formatstring":"","gridcolumnid":277,"banded":null,"fixedtype":null},{"queryname":"sim_room","fieldname":"isprac
+ticeroom","caption":"ph�ng th?c h�nh","width":30,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"fo
+rmatstring":"","gridcolumnid":278,"banded":null,"fixedtype":null},{"queryname":"sim_room","fieldname":"order","caption"
+:"stt","width":15,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":2
+79,"banded":null,"fixedtype":null},{"queryname":"sim_room","fieldname":"roomid","caption":"ma ph�ng","width":50,"editab
+le":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":280,"banded":null,"fixedty
+pe":null},{"queryname":"sim_room","fieldname":"roomname","caption":"t�n ph�ng","width":0,"editable":false,"visible":tru
+e,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":281,"banded":null,"fixedtype":null},{"queryname":
+"sim_room","fieldname":"sizeforlearning","caption":"k�ch thu?c h?c","width":50,"editable":false,"visible":true,"visible
+index":0,"halignment":null,"formatstring":"","gridcolumnid":282,"banded":null,"fixedtype":null},{"queryname":"sim_room"
+,"fieldname":"sizefortesting","caption":"k�ch thu?c thi","width":50,"editable":false,"visible":true,"visibleindex":0,"h
+alignment":null,"formatstring":"","gridcolumnid":283,"banded":null,"fixedtype":null},{"queryname":"sim_room_select","fi
+eldname":"areaid","caption":"ma khu v?c","width":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,
+"formatstring":"","gridcolumnid":284,"banded":null,"fixedtype":null},{"queryname":"sim_room_select","fieldname":"areana
+me","caption":"t�n khu v?c","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstrin
+g":"","gridcolumnid":285,"banded":null,"fixedtype":null},{"queryname":"sim_room_select","fieldname":"ispracticeroom","c
+aption":"l� ph�ng th?c h�nh","width":120,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstri
+ng":"","gridcolumnid":286,"banded":null,"fixedtype":null},{"queryname":"sim_room_select","fieldname":"isselected","capt
+ion":"ch?n","width":50,"editable":true,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumni
+d":287,"banded":null,"fixedtype":null},{"queryname":"sim_room_select","fieldname":"roomid","caption":"ma ph�ng h?c","wi
+dth":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":288,"banded
+":null,"fixedtype":null},{"queryname":"sim_room_select","fieldname":"roomname","caption":"t�n ph�ng h?c","width":100,"e
+ditable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":289,"banded":null,"fi
+xedtype":null},{"queryname":"sim_room_select","fieldname":"sizeforlearning","caption":"s?c ch?a khi h?c","width":120,"e
+ditable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":290,"banded":null,"fi
+xedtype":null},{"queryname":"sim_room_select","fieldname":"sizefortesting","caption":"s?c ch?a khi thi","width":120,"ed
+itable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":291,"banded":null,"fix
+edtype":null},{"queryname":"sim_room_subject","fieldname":"subjectid","caption":"ma m�n","width":100,"editable":false,"
+visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":292,"banded":null,"fixedtype":null},{
+"queryname":"sim_room_subject","fieldname":"subjectname","caption":"t�n m�n","width":150,"editable":false,"visible":tru
+e,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":293,"banded":null,"fixedtype":null},{"queryname":
+"sim_sanction","fieldname":"birthdatetext","caption":"ng�y sinh","width":80,"editable":false,"visible":true,"visibleind
+ex":5,"halignment":2,"formatstring":"","gridcolumnid":294,"banded":null,"fixedtype":null},{"queryname":"sim_sanction","
+fieldname":"classshortname","caption":"t�n m� t?","width":80,"editable":false,"visible":true,"visibleindex":6,"halignme
+nt":2,"formatstring":"","gridcolumnid":295,"banded":null,"fixedtype":null},{"queryname":"sim_sanction","fieldname":"dec
+isionno","caption":"s? qd","width":80,"editable":false,"visible":true,"visibleindex":6,"halignment":null,"formatstring"
+:"","gridcolumnid":296,"banded":null,"fixedtype":null},{"queryname":"sim_sanction","fieldname":"effectivedate","caption
+":"ng�y hl","width":80,"editable":false,"visible":true,"visibleindex":13,"halignment":2,"formatstring":"","gridcolumnid
+":298,"banded":null,"fixedtype":null},{"queryname":"sim_sanction","fieldname":"expireddate","caption":"ng�y h?t hl","wi
+dth":80,"editable":false,"visible":true,"visibleindex":14,"halignment":2,"formatstring":"","gridcolumnid":299,"banded":
+null,"fixedtype":null},{"queryname":"sim_sanction","fieldname":"order","caption":"stt","width":40,"editable":false,"vis
+ible":true,"visibleindex":1,"halignment":null,"formatstring":"","gridcolumnid":301,"banded":null,"fixedtype":null},{"qu
+eryname":"sim_sanction","fieldname":"reason","caption":"ly do","width":120,"editable":false,"visible":true,"visibleinde
+x":11,"halignment":null,"formatstring":"","gridcolumnid":302,"banded":null,"fixedtype":null},{"queryname":"sim_sanction
+","fieldname":"sanctionformname","caption":"h�nh th?c kl","width":100,"editable":false,"visible":true,"visibleindex":9,
+"halignment":null,"formatstring":"","gridcolumnid":303,"banded":null,"fixedtype":null},{"queryname":"sim_sanction","fie
+ldname":"semester","caption":"hk","width":30,"editable":false,"visible":true,"visibleindex":16,"halignment":null,"forma
+tstring":"","gridcolumnid":304,"banded":null,"fixedtype":null},{"queryname":"sim_sanction","fieldname":"signer","captio
+n":"ngu?i ky","width":70,"editable":false,"visible":true,"visibleindex":12,"halignment":null,"formatstring":"","gridcol
+umnid":305,"banded":null,"fixedtype":null},{"queryname":"sim_sanction","fieldname":"signingdate","caption":"ng�y qd","w
+idth":75,"editable":false,"visible":true,"visibleindex":9,"halignment":null,"formatstring":"","gridcolumnid":306,"bande
+d":null,"fixedtype":null},{"queryname":"sim_sanction","fieldname":"studentcode","caption":"ma sv","width":100,"editable
+":false,"visible":true,"visibleindex":1,"halignment":null,"formatstring":"","gridcolumnid":307,"banded":null,"fixedtype
+":null},{"queryname":"sim_sanction","fieldname":"studentfirstname","caption":"h? d?m","width":120,"editable":false,"vis
+ible":true,"visibleindex":2,"halignment":null,"formatstring":"","gridcolumnid":308,"banded":null,"fixedtype":null},{"qu
+eryname":"sim_sanction","fieldname":"studentlastname","caption":"t�n","width":60,"editable":false,"visible":true,"visib
+leindex":3,"halignment":null,"formatstring":"","gridcolumnid":309,"banded":null,"fixedtype":null},{"queryname":"sim_san
+ction","fieldname":"yearid","caption":"nam","width":40,"editable":false,"visible":true,"visibleindex":15,"halignment":n
+ull,"formatstring":"","gridcolumnid":310,"banded":null,"fixedtype":null},{"queryname":"sim_sanction1","fieldname":"orde
+r","caption":"stt","width":60,"editable":false,"visible":true,"visibleindex":1,"halignment":2,"formatstring":"","gridco
+lumnid":311,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"birthplace","caption":"noi s
+inh","width":100,"editable":false,"visible":true,"visibleindex":7,"halignment":null,"formatstring":"","gridcolumnid":31
+2,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"classid","caption":"ma l?p","width":80
+,"editable":false,"visible":true,"visibleindex":5,"halignment":null,"formatstring":"","gridcolumnid":313,"banded":null,
+"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"councilnote","caption":"y ki?n hdkl","width":100,"edit
+able":true,"visible":true,"visibleindex":13,"halignment":null,"formatstring":"","gridcolumnid":315,"banded":null,"fixed
+type":null},{"queryname":"sim_sanctionreview","fieldname":"description","caption":"ghi ch�","width":100,"editable":true
+,"visible":true,"visibleindex":17,"halignment":null,"formatstring":"","gridcolumnid":316,"banded":null,"fixedtype":null
+},{"queryname":"sim_sanctionreview","fieldname":"ethiclevel","caption":"d?o d?c","width":100,"editable":true,"visible":
+true,"visibleindex":14,"halignment":null,"formatstring":"","gridcolumnid":317,"banded":null,"fixedtype":null},{"queryna
+me":"sim_sanctionreview","fieldname":"isselected","caption":"ch?n","width":60,"editable":true,"visible":true,"visiblein
+dex":0,"halignment":null,"formatstring":"","gridcolumnid":318,"banded":null,"fixedtype":null},{"queryname":"sim_sanctio
+nreview","fieldname":"leavelearning","caption":"tb b? h?c","width":100,"editable":true,"visible":true,"visibleindex":10
+,"halignment":null,"formatstring":"","gridcolumnid":319,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionrevie
+w","fieldname":"letter","caption":"thu m?i","width":100,"editable":true,"visible":true,"visibleindex":9,"halignment":nu
+ll,"formatstring":"","gridcolumnid":320,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"
+managerteachernote","caption":"y ki?n gvcn","width":100,"editable":true,"visible":true,"visibleindex":11,"halignment":n
+ull,"formatstring":"","gridcolumnid":321,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":
+"metparent","caption":"phhs d?n","width":100,"editable":true,"visible":true,"visibleindex":10,"halignment":null,"format
+string":"","gridcolumnid":322,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"nopermissi
+onquantity","caption":"s? ng�y ngh? kp","width":100,"editable":false,"visible":true,"visibleindex":8,"halignment":null,
+"formatstring":"","gridcolumnid":323,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"ord
+er","caption":"stt","width":60,"editable":false,"visible":true,"visibleindex":1,"halignment":null,"formatstring":"","gr
+idcolumnid":324,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"receivables","caption":"
+n? hp","width":80,"editable":false,"visible":true,"visibleindex":15,"halignment":null,"formatstring":"","gridcolumnid":
+325,"banded":null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"studentcode","caption":"ma sv","widt
+h":80,"editable":false,"visible":true,"visibleindex":2,"halignment":null,"formatstring":"","gridcolumnid":326,"banded":
+null,"fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"studentfirstname","caption":"h? d?m","width":100,
+"editable":false,"visible":true,"visibleindex":3,"halignment":null,"formatstring":"","gridcolumnid":327,"banded":null,"
+fixedtype":null},{"queryname":"sim_sanctionreview","fieldname":"studentlastname","caption":"t�n","width":80,"editable":
+false,"visible":true,"visibleindex":4,"halignment":null,"formatstring":"","gridcolumnid":328,"banded":null,"fixedtype":
+null},{"queryname":"sim_sanctionreview","fieldname":"studentroomnote","caption":"y ki?n p.cths","width":100,"editable":
+true,"visible":true,"visibleindex":12,"halignment":null,"formatstring":"","gridcolumnid":329,"banded":null,"fixedtype":
+null},{"queryname":"sim_schedule_checkingteachingtime","fieldname":"teacherid","caption":"ma gi?ng vi�n","width":80,"ed
+itable":false,"visible":true,"visibleindex":2,"halignment":null,"formatstring":"","gridcolumnid":330,"banded":null,"fix
+edtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"classname","caption":"l?p h?c","width":20
+0,"editable":false,"visible":true,"visibleindex":7,"halignment":null,"formatstring":"","gridcolumnid":331,"banded":null
+,"fixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"date","caption":"ng�y","width":100,"
+editable":false,"visible":true,"visibleindex":4,"halignment":null,"formatstring":"","gridcolumnid":332,"banded":null,"f
+ixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"daytext","caption":"th?","width":40,"ed
+itable":false,"visible":true,"visibleindex":5,"halignment":null,"formatstring":"","gridcolumnid":333,"banded":null,"fix
+edtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"done","caption":"da d?y","width":50,"edit
+able":false,"visible":true,"visibleindex":10,"halignment":null,"formatstring":"","gridcolumnid":334,"banded":null,"fixe
+dtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"fullname","caption":"t�n gi?ng vi�n","widt
+h":200,"editable":false,"visible":true,"visibleindex":3,"halignment":null,"formatstring":"","gridcolumnid":335,"banded"
+:null,"fixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"lessiontimetext","caption":"ti?
+t","width":40,"editable":false,"visible":true,"visibleindex":6,"halignment":null,"formatstring":"","gridcolumnid":336,"
+banded":null,"fixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"lessiontypetext","captio
+n":"lo?i","width":40,"editable":false,"visible":true,"visibleindex":8,"halignment":null,"formatstring":"","gridcolumnid
+":337,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"order","caption":
+"stt","width":40,"editable":false,"visible":true,"visibleindex":1,"halignment":null,"formatstring":"","gridcolumnid":33
+8,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"roomname","caption":"
+ph�ng h?c","width":200,"editable":false,"visible":true,"visibleindex":9,"halignment":null,"formatstring":"","gridcolumn
+id":339,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"subjectname","c
+aption":"m�n h?c","width":200,"editable":false,"visible":true,"visibleindex":6,"halignment":null,"formatstring":"","gri
+dcolumnid":340,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_detailteachingschedule","fieldname":"teacheri
+d","caption":"ma gi?ng vi�n","width":80,"editable":false,"visible":true,"visibleindex":2,"halignment":null,"formatstrin
+g":"","gridcolumnid":341,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_ofteacher","fieldname":"classid","c
+aption":"l?p h?c","width":80,"editable":false,"visible":true,"visibleindex":6,"halignment":null,"formatstring":"","grid
+columnid":342,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_ofteacher","fieldname":"date","caption":"ng�y"
+,"width":50,"editable":false,"visible":true,"visibleindex":3,"halignment":null,"formatstring":"","gridcolumnid":343,"ba
+nded":null,"fixedtype":null},{"queryname":"sim_schedule_ofteacher","fieldname":"day","caption":"th?","width":40,"editab
+le":false,"visible":true,"visibleindex":2,"halignment":null,"formatstring":"","gridcolumnid":344,"banded":null,"fixedty
+pe":null},{"queryname":"sim_schedule_ofteacher","fieldname":"fullname","caption":"t�n gi?ng vi�n","width":90,"editable"
+:false,"visible":true,"visibleindex":10,"halignment":null,"formatstring":"","gridcolumnid":345,"banded":null,"fixedtype
+":null},{"queryname":"sim_schedule_ofteacher","fieldname":"lessioncount","caption":"s? ti?t","width":40,"editable":fals
+e,"visible":true,"visibleindex":11,"halignment":null,"formatstring":"","gridcolumnid":346,"banded":null,"fixedtype":nul
+l},{"queryname":"sim_schedule_ofteacher","fieldname":"lessiondone","caption":"da d?y","width":40,"editable":false,"visi
+ble":true,"visibleindex":13,"halignment":null,"formatstring":"","gridcolumnid":347,"banded":null,"fixedtype":null},{"qu
+eryname":"sim_schedule_ofteacher","fieldname":"lessiontimetext","caption":"ti?t d?y","width":110,"editable":false,"visi
+ble":true,"visibleindex":12,"halignment":null,"formatstring":"","gridcolumnid":348,"banded":null,"fixedtype":null},{"qu
+eryname":"sim_schedule_ofteacher","fieldname":"lessiontypetext","caption":"lo?i","width":40,"editable":false,"visible":
+true,"visibleindex":8,"halignment":null,"formatstring":"","gridcolumnid":349,"banded":null,"fixedtype":null},{"querynam
+e":"sim_schedule_ofteacher","fieldname":"roomname","caption":"ph�ng h?c","width":90,"editable":false,"visible":true,"vi
+sibleindex":5,"halignment":null,"formatstring":"","gridcolumnid":350,"banded":null,"fixedtype":null},{"queryname":"sim_
+schedule_ofteacher","fieldname":"subjectname","caption":"m�n h?c","width":100,"editable":false,"visible":true,"visiblei
+ndex":7,"halignment":null,"formatstring":"","gridcolumnid":351,"banded":null,"fixedtype":null},{"queryname":"sim_schedu
+le_ofteacher","fieldname":"teacherid","caption":"ma gi?ng vi�n","width":50,"editable":false,"visible":true,"visibleinde
+x":9,"halignment":null,"formatstring":"","gridcolumnid":353,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_
+ofteacher","fieldname":"week","caption":"tu?n","width":50,"editable":false,"visible":true,"visibleindex":1,"halignment"
+:null,"formatstring":"","gridcolumnid":354,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_subjectteachingpr
+ocess","fieldname":"classname","caption":"l?p h?c","width":150,"editable":false,"visible":true,"visibleindex":0,"halign
+ment":null,"formatstring":"","gridcolumnid":355,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_subjectteach
+ingprocess","fieldname":"donelessioncount","caption":"s? ti?t da d?y","width":100,"editable":false,"visible":true,"visi
+bleindex":0,"halignment":null,"formatstring":"","gridcolumnid":356,"banded":null,"fixedtype":null},{"queryname":"sim_sc
+hedule_subjectteachingprocess","fieldname":"doneweekcount","caption":"s? tu?n da d?y","width":100,"editable":false,"vis
+ible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":357,"banded":null,"fixedtype":null},{"qu
+eryname":"sim_schedule_subjectteachingprocess","fieldname":"lessioncount","caption":"s? ti?t ph�n","width":100,"editabl
+e":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":358,"banded":null,"fixedtyp
+e":null},{"queryname":"sim_schedule_subjectteachingprocess","fieldname":"lessiontypetext","caption":"lo?i","width":50,"
+editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":359,"banded":null,"f
+ixedtype":null},{"queryname":"sim_schedule_subjectteachingprocess","fieldname":"order","caption":"stt","width":40,"edit
+able":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":360,"banded":null,"fixed
+type":null},{"queryname":"sim_schedule_subjectteachingprocess","fieldname":"subjectid","caption":"ma m�n","width":80,"e
+ditable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":361,"banded":null,"fi
+xedtype":null},{"queryname":"sim_schedule_subjectteachingprocess","fieldname":"subjectname","caption":"t�n m�n","width"
+:150,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":362,"banded":n
+ull,"fixedtype":null},{"queryname":"sim_schedule_subjectteachingprocess","fieldname":"weekcount","caption":"s? tu?n ph�
+n","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":363,
+"banded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteachingschedule","fieldname":"classname","caption":"
+l?p h?c","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid
+":364,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteachingschedule","fieldname":"date","caption":
+"ng�y","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":3
+66,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteachingschedule","fieldname":"day","caption":"th?
+","width":40,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":367,"b
+anded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteachingschedule","fieldname":"donelessioncount","capti
+on":"da d?y","width":40,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolum
+nid":368,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteachingschedule","fieldname":"donelessionti
+metext","caption":"ti?t da d?y","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formats
+tring":"","gridcolumnid":369,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteachingschedule","field
+name":"fullname","caption":"t�n gi?ng vi�n","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":n
+ull,"formatstring":"","gridcolumnid":370,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteachingsche
+dule","fieldname":"lessioncount","caption":"s? ti?t","width":40,"editable":false,"visible":true,"visibleindex":0,"halig
+nment":null,"formatstring":"","gridcolumnid":371,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_summaryteac
+hingschedule","fieldname":"lessiontimetext","caption":"ti?t da ph�n","width":100,"editable":false,"visible":true,"visib
+leindex":0,"halignment":null,"formatstring":"","gridcolumnid":372,"banded":null,"fixedtype":null},{"queryname":"sim_sch
+edule_summaryteachingschedule","fieldname":"lessiontypetext","caption":"lo?i","width":40,"editable":false,"visible":tru
+e,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":373,"banded":null,"fixedtype":null},{"queryname":
+"sim_schedule_summaryteachingschedule","fieldname":"roomname","caption":"ph�ng h?c","width":100,"editable":false,"visib
+le":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":374,"banded":null,"fixedtype":null},{"quer
+yname":"sim_schedule_summaryteachingschedule","fieldname":"subjectname","caption":"m�n h?c","width":100,"editable":fals
+e,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":375,"banded":null,"fixedtype":null
+},{"queryname":"sim_schedule_summaryteachingschedule","fieldname":"teacherid","caption":"ma gi?ng vi�n","width":50,"edi
+table":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":377,"banded":null,"fixe
+dtype":null},{"queryname":"sim_schedule_teachingprocessofteacher","fieldname":"classname","caption":"l?p h?c","width":2
+00,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":378,"banded":nul
+l,"fixedtype":null},{"queryname":"sim_schedule_teachingprocessofteacher","fieldname":"donelessioncount","caption":"s? 
+ti?t da d?y","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolu
+mnid":379,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_teachingprocessofteacher","fieldname":"fullname","
+caption":"gi?ng vi�n","width":200,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"",
+"gridcolumnid":380,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_teachingprocessofteacher","fieldname":"le
+ssioncount","caption":"s? ti?t da ph�n","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,
+"formatstring":"","gridcolumnid":381,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_teachingprocessofteache
+r","fieldname":"lessiontypetext","caption":"lo?i","width":50,"editable":false,"visible":true,"visibleindex":0,"halignme
+nt":null,"formatstring":"","gridcolumnid":382,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_teachingproces
+softeacher","fieldname":"order","caption":"stt","width":40,"editable":false,"visible":true,"visibleindex":0,"halignment
+":null,"formatstring":"","gridcolumnid":383,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_teachingprocesso
+fteacher","fieldname":"quantity","caption":"s? ti?t c?n d?y","width":100,"editable":false,"visible":true,"visibleindex"
+:0,"halignment":null,"formatstring":"","gridcolumnid":384,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_te
+achingprocessofteacher","fieldname":"subjectname","caption":"m�n h?c","width":200,"editable":false,"visible":true,"visi
+bleindex":0,"halignment":null,"formatstring":"","gridcolumnid":385,"banded":null,"fixedtype":null},{"queryname":"sim_sc
+hedule_teachingtimestatistic","fieldname":"date","caption":"ng�y","width":80,"editable":false,"visible":true,"visiblein
+dex":0,"halignment":null,"formatstring":"","gridcolumnid":386,"banded":null,"fixedtype":null},{"queryname":"sim_schedul
+e_teachingtimestatistic","fieldname":"daytext","caption":"th?","width":50,"editable":false,"visible":true,"visibleindex
+":0,"halignment":null,"formatstring":"","gridcolumnid":387,"banded":null,"fixedtype":null},{"queryname":"sim_schedule_t
+eachingtimestatistic","fieldname":"donequantity","caption":"s? ti?t th?c gi?ng","width":100,"editable":false,"visible":
+true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":388,"banded":null,"fixedtype":null},{"querynam
+e":"sim_schedule_teachingtimestatistic","fieldname":"fullname","caption":"t�n gi?ng vi�n","width":200,"editable":false,
+"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":389,"banded":null,"fixedtype":null},
+{"queryname":"sim_schedule_teachingtimestatistic","fieldname":"order","caption":"stt","width":40,"editable":false,"visi
+ble":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":390,"banded":null,"fixedtype":null},{"que
+ryname":"sim_schedule_teachingtimestatistic","fieldname":"teacherid","caption":"ma gi?ng vi�n","width":100,"editable":f
+alse,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":391,"banded":null,"fixedtype":n
+ull},{"queryname":"sim_scheduleofteacher","fieldname":"classname","caption":"l?p h?c","width":100,"editable":false,"vis
+ible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":392,"banded":null,"fixedtype":null},{"qu
+eryname":"sim_scheduletemplate","fieldname":"classid","caption":"l?p","width":100,"editable":false,"visible":true,"visi
+bleindex":0,"halignment":null,"formatstring":"","gridcolumnid":394,"banded":null,"fixedtype":null},{"queryname":"sim_sc
+heduletemplate","fieldname":"date","caption":"ng�y","width":75,"editable":false,"visible":true,"visibleindex":0,"halign
+ment":null,"formatstring":"","gridcolumnid":395,"banded":null,"fixedtype":null},{"queryname":"sim_scheduletemplate","fi
+eldname":"daytext","caption":"th?","width":70,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"forma
+tstring":"","gridcolumnid":396,"banded":null,"fixedtype":null},{"queryname":"sim_scheduletemplate","fieldname":"fromles
+siontimetext","caption":"t? ti?t","width":70,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"format
+string":"","gridcolumnid":397,"banded":null,"fixedtype":null},{"queryname":"sim_scheduletemplate","fieldname":"fromweek
+text","caption":"t? tu?n","width":75,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":
+"","gridcolumnid":398,"banded":null,"fixedtype":null},{"queryname":"sim_scheduletemplate","fieldname":"ispractice","cap
+tion":"th?c h�nh","width":70,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","grid
+columnid":399,"banded":null,"fixedtype":null},{"queryname":"sim_scheduletemplate","fieldname":"roomname","caption":"ph�
+ng h?c","width":80,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":
+400,"banded":null,"fixedtype":null},{"queryname":"sim_scheduletemplate","fieldname":"semester","caption":"h?c k?","widt
+h":70,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":401,"banded":
+null,"fixedtype":null},{"queryname":"sim_scheduletemplate","fieldname":"subjectname","caption":"m�n  h?c","width":160,"
+editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":402,"banded":null,"f
+ixedtype":null},{"queryname":"sim_scheduletemplate","fieldname":"teachername","caption":"gi?ng vi�n","width":110,"edita
+ble":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":403,"banded":null,"fixedt
+ype":null},{"queryname":"sim_scheduletemplate","fieldname":"tolessiontimetext","caption":"d?n ti?t","width":70,"editabl
+e":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":404,"banded":null,"fixedtyp
+e":null},{"queryname":"sim_scheduletemplate","fieldname":"toweektext","caption":"d?n tu?n","width":70,"editable":false,
+"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":405,"banded":null,"fixedtype":null},
+{"queryname":"sim_scheduletemplate","fieldname":"yearname","caption":"ni�n h?c","width":70,"editable":false,"visible":t
+rue,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":406,"banded":null,"fixedtype":null},{"queryname
+":"sim_schoolfreedate","fieldname":"date","caption":"ng�y","width":100,"editable":false,"visible":true,"visibleindex":0
+,"halignment":null,"formatstring":"","gridcolumnid":407,"banded":null,"fixedtype":null},{"queryname":"sim_schoolfreedat
+e","fieldname":"description","caption":"m� t? ","width":0,"editable":false,"visible":true,"visibleindex":0,"halignment"
+:null,"formatstring":"","gridcolumnid":408,"banded":null,"fixedtype":null},{"queryname":"sim_science","fieldname":"scie
+nceid","caption":"ma khoa","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring"
+:"","gridcolumnid":409,"banded":null,"fixedtype":null},{"queryname":"sim_science","fieldname":"sciencename","caption":"
+t�n khoa","width":100,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumni
+d":410,"banded":null,"fixedtype":null},{"queryname":"sim_searchsummaryethicmark","fieldname":"ethiclevel","caption":"x?
+p lo?i","width":85,"editable":false,"visible":true,"visibleindex":7,"halignment":2,"formatstring":"","gridcolumnid":411
+,"banded":null,"fixedtype":null},{"queryname":"sim_searchsummaryethicmark","fieldname":"ethiclevel1","caption":"x?p lo?
+i","width":85,"editable":false,"visible":true,"visibleindex":3,"halignment":2,"formatstring":"","gridcolumnid":412,"ban
+ded":null,"fixedtype":null},{"queryname":"sim_searchsummaryethicmark","fieldname":"ethiclevel2","caption":"x?p lo?i","w
+idth":85,"editable":false,"visible":true,"visibleindex":5,"halignment":2,"formatstring":"","gridcolumnid":413,"banded":
+null,"fixedtype":null},{"queryname":"sim_searchsummaryethicmark","fieldname":"ethicmark","caption":"t?ng di?m","width":
+70,"editable":false,"visible":true,"visibleindex":6,"halignment":2,"formatstring":"","gridcolumnid":414,"banded":null,"
+fixedtype":null},{"queryname":"sim_searchsummaryethicmark","fieldname":"ethicmark1","caption":"k? 1","width":70,"editab
+le":false,"visible":true,"visibleindex":2,"halignment":2,"formatstring":"","gridcolumnid":415,"banded":null,"fixedtype"
+:null},{"queryname":"sim_searchsummaryethicmark","fieldname":"ethicmark2","caption":"k? 2","width":70,"editable":false,
+"visible":true,"visibleindex":4,"halignment":2,"formatstring":"","gridcolumnid":416,"banded":null,"fixedtype":null},{"q
+ueryname":"sim_searchsummaryethicmark","fieldname":"year","caption":"nam h?c","width":70,"editable":false,"visible":tru
+e,"visibleindex":1,"halignment":2,"formatstring":"","gridcolumnid":417,"banded":null,"fixedtype":null},{"queryname":"si
+m_smallclass","fieldname":"childrenquantity","caption":"s? l?p con","width":50,"editable":false,"visible":true,"visible
+index":0,"halignment":null,"formatstring":"","gridcolumnid":426,"banded":null,"fixedtype":null},{"queryname":"sim_small
+class","fieldname":"classid","caption":"ma l?p b? t�ch","width":100,"editable":false,"visible":true,"visibleindex":0,"h
+alignment":null,"formatstring":"","gridcolumnid":427,"banded":null,"fixedtype":null},{"queryname":"sim_smallclass","fie
+ldname":"classname","caption":"t�n l?p b? t�ch","width":100,"editable":false,"visible":true,"visibleindex":0,"halignmen
+t":null,"formatstring":"","gridcolumnid":428,"banded":null,"fixedtype":null},{"queryname":"sim_smallclass","fieldname":
+"order","caption":"stt","width":40,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":""
+,"gridcolumnid":429,"banded":null,"fixedtype":null},{"queryname":"sim_smallclass","fieldname":"semester","caption":"h?c
+ k�","width":50,"editable":false,"visible":true,"visibleindex":0,"halignment":null,"formatstring":"","gridcolumnid":430
+,"banded":null,"fixedtype":null},{"queryname":"sim_smallclass","fieldname":"subjectname","caption":"t�n m�n 
+h?c","width":100,"editable":false,"visib
+At C:\Users\trong\AppData\Local\Temp\ps-script-1bbcfb84-c01a-4834-9525-32d80b7520a7.ps1:111 char:101
++ ... ky s?\sql\winform\SYS_GridColumn.sql" -Raw | ConvertFrom-Json; $json  ...
++                                                  ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [ConvertFrom-Json], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.ConvertFromJsonCommand
+ 

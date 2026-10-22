@@ -1,0 +1,238 @@
+/*
+ * Web Forms compatibility bridge for the CMS-LMS-VueJS visual system.
+ * Layout, tokens and page presentation come from the original Vue stylesheets.
+ * This file only adapts ASP.NET server-control rendering (GridView, validators,
+ * postback buttons and content placeholders) to those existing classes.
+ */
+@import './layouts/cms-layout.css';
+@import './layouts/lms-layout.css';
+
+/*
+ * CSS riêng của từng page được nạp tại ASCX tương ứng, giống cơ chế scoped style
+ * của Vue. Không import CSS page tại đây vì các class dùng chung như
+ * .chapter-toggle sẽ ghi đè giao diện của module khác.
+ */
+
+html,
+body,
+form { min-height: 100%; }
+body { margin: 0; }
+a { text-decoration: none; }
+
+/* Vue app-card alias used by the first Web Forms migration pass. */
+.surface-card {
+  color: var(--ink);
+  background: var(--surface);
+  border: 0;
+  border-radius: var(--card-radius);
+  box-shadow: 0 10px 30px rgba(13, 41, 68, .055);
+}
+.surface-card > .card-header {
+  padding: 1.15rem 1.25rem;
+  color: var(--ink);
+  background: transparent;
+  border-bottom: 0;
+}
+.surface-card > .card-body { padding: 1.25rem; }
+
+.page-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.page-heading h1 {
+  margin: 0 0 .25rem;
+  color: var(--ink);
+  font-size: clamp(1.55rem, 2.2vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+}
+.page-heading p { margin: 0; color: var(--muted); }
+
+.status-message { display: block; margin-bottom: 1rem; }
+.field-validation-error { display: block; margin-top: .35rem; color: var(--color-danger); font-size: .78rem; }
+.validation-summary-errors ul { margin-bottom: 0; padding-left: 1.15rem; }
+.empty-state { display: block; padding: 3.25rem 1.25rem; color: var(--muted); text-align: center; }
+
+/* GridView renders a plain table; give it the same data-display surface as Vue. */
+.table-responsive { border-radius: inherit; }
+.table-responsive > .table,
+.surface-card .table { margin-bottom: 0; color: var(--ink); }
+.table > tbody > tr > td,
+.table > thead > tr > th,
+.table > tbody > tr:first-child > th { padding: .9rem 1rem; vertical-align: middle; }
+.table > thead > tr > th,
+.table > tbody > tr:first-child > th {
+  color: #fff;
+  background: var(--eduvers-base);
+  border-bottom-color: var(--eduvers-base);
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.table > tbody > tr:first-child > th:first-child { border-top-left-radius: var(--control-radius); }
+.table > tbody > tr:first-child > th:last-child { border-top-right-radius: var(--control-radius); }
+.table > tbody > tr > td { border-bottom-color: var(--neutral-line); font-size: .82rem; }
+.table-hover > tbody > tr:hover > * { --bs-table-accent-bg: rgba(var(--eduvers-base-rgb), .045); }
+.table td .btn { white-space: nowrap; }
+
+/* ASP.NET GridView pager rendered as a nested table. */
+.table > tbody > tr > td[colspan] > table {
+  border-collapse: separate;
+  border-spacing: .35rem 0;
+  margin: .15rem auto;
+}
+.table > tbody > tr > td[colspan] > table td { padding: 0; border: 0; }
+.table > tbody > tr > td[colspan] > table a,
+.table > tbody > tr > td[colspan] > table span {
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--neutral-line);
+  border-radius: 8px;
+  color: var(--ink-soft);
+  display: inline-flex;
+  font-size: .78rem;
+  font-weight: 700;
+  height: 34px;
+  justify-content: center;
+  min-width: 34px;
+  padding: 0 .65rem;
+  text-decoration: none;
+}
+.table > tbody > tr > td[colspan] > table span {
+  background: var(--eduvers-base);
+  border-color: var(--eduvers-base);
+  color: #fff;
+}
+
+/* Dashboard markup aliases. */
+.metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+.metric-card { min-height: 132px; padding: 1.25rem; }
+.metric-card .metric-value { color: var(--ink); font-size: 2rem; font-weight: 800; line-height: 1; }
+.metric-card .metric-label { margin-top: .55rem; color: var(--muted); font-size: .8rem; }
+.surface-card.stat { height: 100%; }
+
+/* CMS shell: active links and image-backed Solar icons. */
+.solar-menu-icon img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.side-link.active { color: var(--eduvers-base); background: rgba(var(--eduvers-base-rgb), .1); }
+.side-link.active .solar-menu-icon { color: var(--eduvers-base); }
+.top-search { justify-content: flex-start; text-decoration: none; }
+.top-search span { flex: 1; color: #7b8581; font-size: .79rem; }
+.top-search b { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 7px; color: var(--eduvers-base); background: rgba(var(--eduvers-base-rgb), .1); font-weight: 400; }
+.sidebar-arrow-closed { display: none; }
+.sidebar-collapsed .sidebar-arrow-open { display: none; }
+.sidebar-collapsed .sidebar-arrow-closed { display: block; }
+.mobile-sidebar .offcanvas-body { padding: .5rem 1rem 1.5rem; overflow-y: auto; }
+.mobile-sidebar .offcanvas-body .cms-nav { display: block; padding: 0 !important; }
+.cms-main,
+.page-content,
+.academic-page { min-width: 0; }
+.academic-page {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 100%;
+  width: 100%;
+}
+.academic-page > * { min-width: 0; max-width: 100%; }
+
+/* Notification component keeps the Vue dimensions while supporting Literal output. */
+.notification-center { position: relative; }
+.notification-count {
+  position: absolute;
+  top: -5px;
+  right: -7px;
+  display: grid;
+  place-items: center;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 4px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--brand-red);
+  font-size: .62rem;
+  font-weight: 800;
+}
+.notification-panel { position: absolute; top: calc(100% + 10px); right: 0; z-index: 1080; width: min(380px, 88vw); max-height: 480px; overflow: hidden; color: var(--ink); background: var(--surface); border: 1px solid var(--neutral-line); border-radius: var(--card-radius); box-shadow: 0 18px 48px rgba(19, 42, 70, .18); }
+.notification-panel-head { display: flex; align-items: center; justify-content: space-between; padding: .8rem 1rem; border-bottom: 1px solid var(--neutral-line); }
+.notification-list { max-height: 410px; overflow-y: auto; }
+.notification-item { display: block; padding: .8rem 1rem; color: var(--ink); border-bottom: 1px solid var(--neutral-line); }
+.notification-item:hover { color: var(--ink); background: var(--eduvers-primary); }
+.notification-item.unread { background: rgba(var(--eduvers-base-rgb), .07); }
+.notification-item strong,
+.notification-item small { display: block; }
+.notification-item small { margin-top: .25rem; color: var(--muted); line-height: 1.45; }
+
+/* LMS route state. The Vue router marks the lesson player immersive. */
+.nav-link.active { color: #fff !important; background: rgba(255, 255, 255, .11) !important; }
+body.immersive-route .learning-strip,
+body.immersive-route .lms-nav,
+body.immersive-route .lms-footer { display: none !important; }
+body.immersive-route .lms-content { width: 100%; max-width: none; min-height: 100vh; padding: 0 !important; }
+
+/* Web Forms adapters for the Vue lesson-player structure. */
+.lesson-player-page .lesson-video-host,
+.lesson-player-page .lesson-video-host > .interactive-player,
+.lesson-player-page .lesson-video-host > .ratio { width: 100%; height: 100%; min-height: 0; }
+.lesson-player-page .lesson-video-host > .ratio iframe { width: 100%; height: 100%; }
+.lesson-player-page .video-stage > .learning-content { width: 100%; }
+.lesson-player-page .lesson-status-message { margin: 0 0 1rem; }
+.lesson-player-page .interaction-overview-card { border: 0; box-shadow: 0 10px 30px rgba(18, 53, 82, .06); }
+.lesson-player-page .lesson-resource-tab { margin-top: 1rem; }
+.lesson-player-page .curriculum-backdrop { display: none; }
+.lesson-player-page .submission-editor { display: grid; gap: .45rem; }
+.lesson-player-page .submission-editor > span { color: var(--player-navy); font-size: .8rem; font-weight: 700; }
+.lesson-player-page .submission-history > .text-secondary { padding: .75rem 0; }
+.lesson-player-page .quiz-content > h2,
+.lesson-player-page .interactive-content > h2 { color: var(--player-navy); font-size: 1.35rem; font-weight: 700; }
+.lesson-player-page .quiz-content fieldset { background: #f7f9fa; border: 1px solid #e4e9eb !important; border-radius: 10px !important; padding: 1rem !important; }
+.lesson-player-page .player-grid.sidebar-closed [data-lesson-curriculum] { display: none; }
+.lesson-player-page.focus-mode [data-lesson-curriculum] { display: none; }
+
+@media (max-width: 1100px) {
+  .lesson-player-page .curriculum-backdrop.is-open { display: block; }
+  .lesson-player-page [data-lesson-curriculum]:not(.is-open) { display: none; }
+}
+
+/* The Web Forms CMS keeps a fixed sidebar, so its usable content reaches the
+   Vue 1200px toolbar breakpoint sooner than the full browser viewport. */
+@media (max-width: 1700px) {
+  .academic-page .academic-toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .academic-page .academic-toolbar .toolbar-title { grid-column: 1 / -1; }
+}
+
+/* Web Forms controls inside the Vue login markup. */
+.login-card input[type='submit'].login-button { border: 0; }
+.login-card .demo-account { cursor: pointer; font-family: inherit; }
+.login-card .demo-account:focus-visible { outline: 2px solid var(--eduvers-base); outline-offset: 2px; }
+.login-card .form-options label > span { display: inline-flex; align-items: center; }
+.login-card .form-options input[type='checkbox'] { margin-right: .35rem; }
+.login-card .status-message:empty { display: none; }
+
+/* Flexible server-control slots: never impose a fixed Bootstrap column width. */
+.cms-control-slot { min-width: 0; max-width: 100%; }
+.cms-control-slot-grow { flex: 1 1 260px; }
+.cms-control-actions { flex: 0 0 auto; max-width: 100%; }
+.workspace-filters .cms-control-actions { align-self: end; }
+
+@media (max-width: 991.98px) {
+  .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767.98px) {
+  .cms-control-slot,
+  .cms-control-actions { width: 100%; }
+  .page-heading { align-items: stretch; }
+  .page-heading > a,
+  .page-heading > .btn { width: 100%; }
+}
+@media (max-width: 575.98px) {
+  .metric-grid { grid-template-columns: 1fr; }
+  .surface-card > .card-header,
+  .surface-card > .card-body { padding: 1rem; }
+  .table > tbody > tr > td,
+  .table > thead > tr > th { padding: .75rem; }
+}

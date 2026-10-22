@@ -1,0 +1,40 @@
+---
+pid: 14020
+cwd: "G:\\1.1-PROJECT-MAIN\\quảng binh-1"
+command: "$ErrorActionPreference = \"Stop\"\n\n$tplDir = (Get-Item -LiteralPath \"g:\\1.1-PROJECT-MAIN\\quảng binh-1\\hos\\Template\").FullName\n$src = $null\nforeach ($f in [System.IO.Directory]::GetFiles($tplDir)) {\n  $n = [System.IO.Path]::GetFileName($f)\n  if ($n.StartsWith(\"~$\")) { continue }\n  if ($n.ToLower().EndsWith(\".docx\") -and ($n -match \"Nghiep|Nghiệp|Nông|Nong\")) {\n    $src = $f\n    break\n  }\n}\nif (-not $src) { throw \"Source docx not found\" }\nWrite-Host \"SRC: $src\"\n\n$workDir = Join-Path $env:TEMP \"mau2_word\"\nif (Test-Path $workDir) { Remove-Item $workDir -Recurse -Force }\nNew-Item -ItemType Directory -Path $workDir | Out-Null\n$workDocx = Join-Path $workDir \"mau2.docx\"\n[System.IO.File]::Copy($src, $workDocx, $true)\n\n$wdCollapseEnd = 0\n$wdCollapseStart = 1\n$wdFieldMergeField = 59\n$wdFindStop = 0\n$wdFormatDocument = 0\n$wdAlertsNone = 0\n\nfunction Find-From($doc, [int]$from, [string]$text) {\n  $rng = $doc.Range($from, $doc.Content.End)\n  $rng.Find.ClearFormatting() | Out-Null\n  $rng.Find.Text = $text\n  $rng.Find.Forward = $true\n  $rng.Find.Wrap = $wdFindStop\n  $rng.Find.MatchWildcards = $false\n  $ok = $rng.Find.Execute()\n  if ($ok) { return $rng }\n  return $null\n}\n\nfunction Insert-FieldAfterLabel($doc, [ref]$cursor, [string]$label, [string]$fieldName, [string]$untilLabel) {\n  $found = Find-From $doc $cursor.Value $label\n  if ($null -eq $found) {\n    Write-Host \"NOT FOUND label: $label\"\n    return\n  }\n  Write-Host (\"FOUND '{0}' at {1}-{2}\" -f $label, $found.Start, $found.End)\n\n  $insertStart = $found.End\n  $paraEnd = $found.Paragraphs.Item(1).Range.End - 1\n  $cutEnd = $paraEnd\n\n  if ($untilLabel -and $untilLabel -ne \"\") {\n    $untilRng = Find-From $doc $insertStart $untilLabel\n    if ($null -ne $untilRng -and $untilRng.Start -le $paraEnd) {\n      $cutEnd = $untilRng.Start\n      Write-Host (\"  until '{0}' at {1}\" -f $untilLabel, $cutEnd)\n    }\n  }\n\n  if ($cutEnd -le $insertStart) {\n    $cutEnd = $insertStart\n  }\n\n  $replaceRng = $doc.Range($insertStart, $cutEnd)\n  $replaceRng.Text = \" \"\n  # after assigning Text, range covers the space\n  $fldRng = $doc.Range($replaceRng.End, $replaceRng.End)\n  $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, $fieldName, $true)\n  $cursor.Value = $replaceRng.End + 2\n  Write-Host (\"  inserted {0}\" -f $fieldName)\n}\n\n$word = $null\n$doc = $null\ntry {\n  $word = New-Object -ComObject Word.Application\n  $word.Visible = $false\n  $word.DisplayAlerts = $wdAlertsNone\n  $doc = $word.Documents.Open($workDocx, $false, $false)\n\n  $cursor = 0\n\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"Tôi là\" \"FullName\" \"\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"Sinh ngày:\" \"BirthDateText\" \"\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"nhân dân:\" \"PersonId\" \"\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"PersonIdDate\" \"nơi cấp\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"nơi cấp\" \"PersonIdPlace\" \"\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe số:\" \"DriverCerNo\" \"hạng\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"hạng\" \"BangLX\" \"\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"do:\" \"DriverCerPlace\" \"cấp ngày:\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"DriverCerDate\" \"\"\n  Insert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe hạng:\" \"Specialbranchid\" \"\"\n\n  # Replace signature date line with NgayKy\n  $dateFound = Find-From $doc $cursor \"Quảng Trị\"\n  if ($null -eq $dateFound) { $dateFound = Find-From $doc 0 \"Quảng Trị\" }\n  if ($null -ne $dateFound) {\n    $para = $dateFound.Paragraphs.Item(1)\n    $paraRng = $doc.Range($para.Range.Start, $para.Range.End - 1)\n    $paraRng.Text = \"\"\n    $fldRng = $doc.Range($paraRng.Start, $paraRng.Start)\n    $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, \"NgayKy\", $true)\n    Write-Host \"inserted NgayKy\"\n  } else {\n    Write-Host \"NOT FOUND date line\"\n  }\n\n  $outDoc = Join-Path $tplDir \"Mau2_DonLaiXeCongNongNghiep.doc\"\n  if (Test-Path -LiteralPath $outDoc) { Remove-Item -LiteralPath $outDoc -Force }\n  $doc.SaveAs2($outDoc, $wdFormatDocument)\n  Write-Host \"SAVED: $outDoc  size=$((Get-Item -LiteralPath $outDoc).Length)\"\n\n  # list merge fields\n  Write-Host \"FIELDS:\"\n  foreach ($f in $doc.Fields) {\n    Write-Host (\"  \" + $f.Code.Text)\n  }\n}\nfinally {\n  if ($doc -ne $null) { $doc.Close($false) | Out-Null }\n  if ($word -ne $null) { $word.Quit() | Out-Null }\n  [GC]::Collect()\n  [GC]::WaitForPendingFinalizers()\n}"
+title: "Insert merge fields and save Mau2 as .doc"
+status: failed   
+started_at: 2026-08-25T06:33:01.831Z
+running_for_ms: 521618   
+---
+SRC: G:\1.1-PROJECT-MAIN\qu?ng binh-1\hos\Template\Don L�i xe C�ng N�ng Nghi?p.docx
+FOUND 'T�i l�' at 245-251
+  inserted FullName
+FOUND 'Sinh ng�y:' at 302-312
+  inserted BirthDateText
+FOUND 'nh�n d�n:' at 413-422
+  inserted PersonId
+FOUND 'c?p ng�y:' at 499-508
+  until 'noi c?p' at 527
+  inserted PersonIdDate
+FOUND 'noi c?p' at 566-573
+  inserted PersonIdPlace
+FOUND 'l�i xe s?:' at 650-660
+  until 'h?ng' at 708
+  inserted DriverCerNo
+FOUND 'h?ng' at 716-720
+  inserted BangLX
+FOUND 'do:' at 767-770
+  until 'c?p ng�y:' at 808
+  inserted DriverCerPlace
+FOUND 'c?p ng�y:' at 832-841
+  inserted DriverCerDate
+FOUND 'l�i xe h?ng:' at 957-969
+  inserted Specialbranchid
+inserted NgayKy
+
+---
+exit_code: 4294967295
+elapsed_ms: 521618
+ended_at: 2026-08-25T06:41:43.449Z
+---

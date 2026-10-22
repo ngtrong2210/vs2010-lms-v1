@@ -1,0 +1,32 @@
+{
+  "name": "sync_mirror",
+  "description": "Sync a mirrored repository from upstream, waiting for a ref or optional SHA. Returns completed or pending.",
+  "arguments": {
+    "type": "object",
+    "properties": {
+      "owner": {
+        "type": "string",
+        "description": "Origin namespace (owner) slug, taken from list_namespaces or an earlier Origin result. A GitHub owner or org name is not an Origin namespace unless list_namespaces returns it."
+      },
+      "name": {
+        "type": "string",
+        "description": "Origin repository name within that namespace"
+      },
+      "ref": {
+        "type": "string",
+        "description": "Full ref to fetch, such as refs/heads/main"
+      },
+      "sha": {
+        "type": "string",
+        "description": "Full commit id to wait for; omit to wait on the ref tip"
+      }
+    },
+    "required": [
+      "owner",
+      "name",
+      "ref"
+    ],
+    "additionalProperties": false,
+    "$schema": "http://json-schema.org/draft-07/schema#"
+  }
+}

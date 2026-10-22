@@ -1,0 +1,11 @@
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\bin\Debug\LmsObject.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\bin\Debug\LmsObject.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\obj\Debug\LmsObject.dll
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\obj\Debug\LmsObject.pdb
+G:\0.0TOOL\CODEX\VS ST 2010\WEB-LMS-VS2010\LmsObject\obj\Debug\LmsObject.csprojResolveAssemblyReference.cache
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\LmsObject\obj\Debug\LmsObject.csproj.AssemblyReference.cache
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\LmsObject\obj\Debug\LmsObject.csproj.CoreCompileInputs.cache
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\LmsObject\obj\Debug\LmsObject.dll
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\LmsObject\obj\Debug\LmsObject.pdb
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\LmsObject\bin\Debug\LmsObject.dll
+G:\0.DỰ ÁN\2.LMS-VS2010\WEB-LMS-VS2010\1. WEB-LMS-VS2010\LmsObject\bin\Debug\LmsObject.pdb

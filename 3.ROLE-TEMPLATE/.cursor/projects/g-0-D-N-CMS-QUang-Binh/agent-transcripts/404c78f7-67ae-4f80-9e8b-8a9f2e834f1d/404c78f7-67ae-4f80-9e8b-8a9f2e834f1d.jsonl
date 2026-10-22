@@ -1,0 +1,2 @@
+{"role":"user","message":{"content":[{"type":"text","text":"<timestamp>Saturday, Aug 8, 2026, 11:22 PM (UTC+7)</timestamp>\n<user_query>\nchủg\n</user_query>"}]}}
+{"type":"turn_ended","status":"error","error":"Bad Request This model could not be routed to an inference provider"}

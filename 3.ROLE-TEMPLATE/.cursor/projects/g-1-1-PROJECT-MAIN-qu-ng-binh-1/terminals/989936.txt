@@ -1,0 +1,12 @@
+---
+pid: 16996
+cwd: "G:\\1.1-PROJECT-MAIN\\quảng binh-1"
+command: "$ErrorActionPreference = \"Stop\"\n$work = \"C:\\Users\\trong\\AppData\\Local\\Temp\\mau2_build\"\n$docxPath = Join-Path $work \"mau2_fields.docx\"\n$out = Join-Path $work \"Mau2_DonLaiXeCongNongNghiep.doc\"\nif (Test-Path $out) { Remove-Item $out -Force }\n\n$job = Start-Job -ScriptBlock {\n  Start-Sleep -Seconds 6\n  $sh = New-Object -ComObject WScript.Shell\n  for ($i = 0; $i -lt 25; $i++) {\n    foreach ($title in @(\"Word\", \"Microsoft Word\", \"Compatibility\", \"Mau2\", \"mau2\")) {\n      $null = $sh.AppActivate($title)\n    }\n    $sh.SendKeys(\"{ENTER}\")\n    Start-Sleep -Milliseconds 800\n  }\n}\n\n$word = New-Object -ComObject Word.Application\n$word.Visible = $true\n$word.DisplayAlerts = -1\n$word.Options.BackgroundSave = $false\nWrite-Host \"Opening...\"\n$doc = $word.Documents.Open($docxPath, $false, $false)\nWrite-Host \"Opened fields=$($doc.Fields.Count)\"\nWrite-Host \"SaveAs doc with SendKeys helper...\"\n$doc.SaveAs($out, 0)\nWrite-Host \"SAVE OK size=$((Get-Item $out).Length)\"\n$doc.Close($false)\n$word.Quit()\nStop-Job $job -ErrorAction SilentlyContinue\nRemove-Job $job -Force -ErrorAction SilentlyContinue\nWrite-Host \"done\""
+title: "SaveAs .doc with visible Word and SendKeys to dismiss dialogs"
+status: running  
+started_at: 2026-08-25T06:52:15.217Z
+running_for_ms: 8097139  
+---
+Opening...
+Opened fields=11
+SaveAs doc with SendKeys helper...

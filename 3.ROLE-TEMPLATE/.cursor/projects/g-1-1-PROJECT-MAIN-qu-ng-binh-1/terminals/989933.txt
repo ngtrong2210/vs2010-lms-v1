@@ -1,0 +1,28 @@
+---
+pid: 17724
+cwd: "G:\\1.1-PROJECT-MAIN\\quảng binh-1"
+command: "$ErrorActionPreference = \"Stop\"\n$work = \"C:\\Users\\trong\\AppData\\Local\\Temp\\mau2_build\"\n$srcAscii = Join-Path $work \"source.docx\"\n\n$wdFindStop = 0\n$wdFieldMergeField = 59\n$wdAlertsNone = 0\n$wdDoNotSaveChanges = 0\n$wdFormatXMLDocument = 12\n$wdFormatRTF = 6\n$wdFormatXML = 11  # Word 2003 XML\n$wdFormatDocument = 0\n\nfunction Find-From($doc, [int]$from, [string]$text) {\n  $rng = $doc.Range($from, $doc.Content.End)\n  $rng.Find.ClearFormatting() | Out-Null\n  $rng.Find.Text = $text\n  $rng.Find.Forward = $true\n  $rng.Find.Wrap = $wdFindStop\n  $rng.Find.MatchWildcards = $false\n  if ($rng.Find.Execute()) { return $rng }\n  return $null\n}\n\nfunction Insert-FieldAfterLabel($doc, [ref]$cursor, [string]$label, [string]$fieldName, [string]$untilLabel) {\n  $found = Find-From $doc $cursor.Value $label\n  if ($null -eq $found) { Write-Host \"NOT FOUND: $label\"; return }\n  $insertStart = $found.End\n  $paraEnd = $found.Paragraphs.Item(1).Range.End - 1\n  $cutEnd = $paraEnd\n  if ($untilLabel -ne \"\") {\n    $untilRng = Find-From $doc $insertStart $untilLabel\n    if ($null -ne $untilRng -and $untilRng.Start -le $paraEnd) { $cutEnd = $untilRng.Start }\n  }\n  if ($cutEnd -lt $insertStart) { $cutEnd = $insertStart }\n  $replaceRng = $doc.Range($insertStart, $cutEnd)\n  $replaceRng.Text = \" \"\n  $fldRng = $doc.Range($replaceRng.End, $replaceRng.End)\n  $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, $fieldName, $true)\n  $cursor.Value = $replaceRng.End + 2\n  Write-Host (\"OK {0}\" -f $fieldName)\n}\n\n$word = New-Object -ComObject Word.Application\n$word.Visible = $false\n$word.DisplayAlerts = $wdAlertsNone\n$word.Options.BackgroundSave = $false\n$doc = $word.Documents.Open($srcAscii, $false, $false)\n\n$cursor = 0\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"Tôi là\" \"FullName\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"Sinh ngày:\" \"BirthDateText\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"nhân dân:\" \"PersonId\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"PersonIdDate\" \"nơi cấp\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"nơi cấp\" \"PersonIdPlace\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe số:\" \"DriverCerNo\" \"hạng\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"hạng\" \"BangLX\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"do:\" \"DriverCerPlace\" \"cấp ngày:\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"cấp ngày:\" \"DriverCerDate\" \"\"\nInsert-FieldAfterLabel $doc ([ref]$cursor) \"lái xe hạng:\" \"Specialbranchid\" \"\"\n$dateFound = Find-From $doc $cursor \"Quảng Trị\"\nif ($null -eq $dateFound) { $dateFound = Find-From $doc 0 \"Quảng Trị\" }\nif ($null -ne $dateFound) {\n  $para = $dateFound.Paragraphs.Item(1)\n  $paraRng = $doc.Range($para.Range.Start, $para.Range.End - 1)\n  $paraRng.Text = \"\"\n  $fldRng = $doc.Range($paraRng.Start, $paraRng.Start)\n  $null = $doc.Fields.Add($fldRng, $wdFieldMergeField, \"NgayKy\", $true)\n  Write-Host \"OK NgayKy\"\n}\n\ntry { $doc.SetCompatibilityMode(14) ; Write-Host \"compat 14\" } catch { Write-Host \"compat skip $($_.Exception.Message)\" }\n\n$docxOut = Join-Path $work \"mau2_fields.docx\"\nif (Test-Path $docxOut) { Remove-Item $docxOut -Force }\nWrite-Host \"SaveAs docx...\"\n$doc.SaveAs($docxOut, $wdFormatXMLDocument)\nWrite-Host \"docx size=$((Get-Item $docxOut).Length)\"\n\n$rtfOut = Join-Path $work \"mau2_fields.rtf\"\nif (Test-Path $rtfOut) { Remove-Item $rtfOut -Force }\nWrite-Host \"SaveAs rtf...\"\n$doc.SaveAs($rtfOut, $wdFormatRTF)\nWrite-Host \"rtf size=$((Get-Item $rtfOut).Length)\"\n\n$wmlOut = Join-Path $work \"mau2_fields.xml\"\nif (Test-Path $wmlOut) { Remove-Item $wmlOut -Force }\nWrite-Host \"SaveAs WordML...\"\n$doc.SaveAs($wmlOut, $wdFormatXML)\nWrite-Host \"wml size=$((Get-Item $wmlOut).Length)\"\n\n$doc.Close($wdDoNotSaveChanges)\n$word.Quit()\nWrite-Host \"done\""
+title: "Save field-inserted document as docx, RTF, and WordML"
+status: failed   
+started_at: 2026-08-25T06:44:57.472Z
+running_for_ms: 79646    
+---
+OK FullName
+OK BirthDateText
+OK PersonId
+OK PersonIdDate
+OK PersonIdPlace
+OK DriverCerNo
+OK BangLX
+OK DriverCerPlace
+OK DriverCerDate
+OK Specialbranchid
+OK NgayKy
+compat 14
+SaveAs docx...
+
+---
+exit_code: 4294967295
+elapsed_ms: 79645
+ended_at: 2026-08-25T06:46:17.117Z
+---

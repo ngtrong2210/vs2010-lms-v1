@@ -1,0 +1,181 @@
+/* Mỗi nghiệp vụ dùng một màu nhất quán để người dùng nhận biết nhanh. */
+.btn.btn-action-create {
+  color: #fff;
+  background: var(--brand-green);
+  border-color: var(--brand-green);
+}
+
+.btn.btn-action-create:hover,
+.btn.btn-action-create:focus {
+  color: #fff;
+  background: var(--brand-green-dark);
+  border-color: var(--brand-green-dark);
+}
+
+.btn.btn-action-view,
+.btn.btn-action-refresh,
+.btn[title^='Nội dung'],
+.btn[title^='Mở'],
+.btn[title^='Xem'],
+.btn[title^='Biên tập'] {
+  color: #fff;
+  background: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+
+.btn.btn-action-view:hover,
+.btn.btn-action-view:focus,
+.btn.btn-action-refresh:hover,
+.btn.btn-action-refresh:focus,
+.btn[title^='Nội dung']:hover,
+.btn[title^='Mở']:hover,
+.btn[title^='Xem']:hover,
+.btn[title^='Biên tập']:hover {
+  color: #fff;
+  background: var(--brand-blue-dark);
+  border-color: var(--brand-blue-dark);
+}
+
+.btn.btn-action-upload,
+.btn.btn-action-edit,
+.btn[title^='Sửa'],
+.btn[title^='Chỉnh sửa'] {
+  color: #fff;
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+}
+
+.btn.btn-action-upload:hover,
+.btn.btn-action-upload:focus,
+.btn.btn-action-edit:hover,
+.btn.btn-action-edit:focus,
+.btn[title^='Sửa']:hover,
+.btn[title^='Chỉnh sửa']:hover {
+  color: #fff;
+  background: var(--brand-secondary-dark);
+  border-color: var(--brand-secondary-dark);
+}
+
+.btn.btn-action-save,
+.btn.btn-action-export {
+  color: #fff;
+  background: var(--brand-success);
+  border-color: var(--brand-success);
+}
+
+.btn.btn-action-save:hover,
+.btn.btn-action-save:focus,
+.btn.btn-action-export:hover,
+.btn.btn-action-export:focus {
+  color: #fff;
+  background: var(--brand-success-dark);
+  border-color: var(--brand-success-dark);
+}
+
+.btn.btn-action-share,
+.btn[title*='chia sẻ'],
+.btn[title*='Chia sẻ'] {
+  color: #fff;
+  background: var(--brand-green);
+  border-color: var(--brand-green);
+}
+
+.btn.btn-action-share:hover,
+.btn.btn-action-share:focus,
+.btn[title*='chia sẻ']:hover,
+.btn[title*='Chia sẻ']:hover {
+  color: #fff;
+  background: var(--brand-green-dark);
+  border-color: var(--brand-green-dark);
+}
+
+.btn.btn-action-delete,
+.btn[title^='Xóa'] {
+  color: #fff !important;
+  background: var(--brand-red);
+  border-color: var(--brand-red);
+}
+
+.btn.btn-action-delete:hover,
+.btn.btn-action-delete:focus,
+.btn[title^='Xóa']:hover {
+  color: #fff !important;
+  background: var(--brand-red-dark);
+  border-color: var(--brand-red-dark);
+}
+
+.btn.btn-action-filter {
+  color: #fff;
+  background: var(--brand-blue);
+  border-color: var(--brand-blue);
+}
+
+.btn.btn-action-filter:hover,
+.btn.btn-action-filter:focus {
+  color: #fff;
+  background: var(--brand-blue-dark);
+  border-color: var(--brand-blue-dark);
+}
+
+.btn.btn-action-copy {
+  color: var(--theme-navy);
+  background: var(--brand-yellow);
+  border-color: var(--brand-yellow);
+}
+
+.btn.btn-action-copy:hover,
+.btn.btn-action-copy:focus {
+  color: #fff;
+  background: #d59b00;
+  border-color: #d59b00;
+}
+
+.btn.btn-action-cancel {
+  color: var(--ink);
+  background: #edf1f0;
+  border-color: #edf1f0;
+}
+
+.btn.btn-action-cancel:hover,
+.btn.btn-action-cancel:focus {
+  color: var(--ink);
+  background: #dfe7e4;
+  border-color: #dfe7e4;
+}
+
+.btn.btn-action-cancel.btn-action-outline {
+  color: var(--brand-secondary);
+  background: #fff;
+  border-color: var(--brand-secondary);
+}
+
+.btn.btn-action-cancel.btn-action-outline:hover,
+.btn.btn-action-cancel.btn-action-outline:focus {
+  color: #fff;
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+}
+
+.btn-icon {
+  width: 34px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn i,
+.thm-btn i {
+  line-height: 1;
+}
+
+.btn[class*='btn-action-'] i {
+  color: currentColor;
+}
+
+.action-cell {
+  white-space: nowrap;
+}
+
+.action-cell .btn + .btn,
+.table td.text-end .btn + .btn {
+  margin-left: 0.28rem;
+}

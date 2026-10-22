@@ -1,0 +1,31 @@
+---
+pid: 24920
+cwd: "g:\\fix_nhanh\\tien-ich\\search-file-computer\\fast-file-search"
+command: "npm start"
+started_at: 2026-06-29T05:23:49.645Z
+running_for_ms: 570846   
+---
+
+> fast-file-search@1.0.0 prestart
+> echo Dang khoi dong Fast File Search...
+
+Dang khoi dong Fast File Search...
+
+> fast-file-search@1.0.0 start
+> node server.js
+
+==========================================
+  Fast File Search Server
+  http://localhost:3000
+==========================================
+  Huong dan:
+  1. Mo trinh duyet > http://localhost:3000
+  2. Index thu muc can tim
+  3. Nhap tu khoa de tim file
+==========================================
+
+---
+exit_code: 1
+elapsed_ms: 573914
+ended_at: 2026-06-29T05:33:23.559Z
+---

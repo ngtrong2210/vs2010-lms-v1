@@ -1,0 +1,14 @@
+---
+description: Khi viết hoặc sửa code, không chèn dòng trống giữa các dòng liền nhau
+alwaysApply: true
+---
+
+# Không cách dòng
+
+Khi viết, sửa, hoặc format code (aspx, ascx, html, css, js, cs, sql, xml), dòng tiếp theo nằm ngay dưới dòng trước. Không chèn dòng trống cho dễ đọc.
+
+- Thẻ cha mở xong thì thẻ con nằm dòng kế tiếp.
+- Các thẻ anh em, thuộc tính trong cùng khối, câu lệnh trong cùng method: không có dòng trống ở giữa.
+- Thụt lề đúng một cấp so với dòng cha, theo indent sẵn có của file.
+- Chỉ được một dòng trống giữa các method, class, hoặc `#region`. Bên trong method và bên trong markup thì không.
+- Sửa file có sẵn: đoạn mới viết đặc như các dòng xung quanh. Không nới khoảng cách.

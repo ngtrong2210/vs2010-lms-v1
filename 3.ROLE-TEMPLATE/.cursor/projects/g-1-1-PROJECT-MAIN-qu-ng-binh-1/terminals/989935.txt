@@ -1,0 +1,18 @@
+---
+pid: 13368
+cwd: "G:\\1.1-PROJECT-MAIN\\quảng binh-1"
+command: "$ErrorActionPreference = \"Stop\"\n$work = \"C:\\Users\\trong\\AppData\\Local\\Temp\\mau2_build\"\n$docxPath = Join-Path $work \"mau2_fields.docx\"\n$out = Join-Path $work \"Mau2_DonLaiXeCongNongNghiep.doc\"\nif (Test-Path $out) { Remove-Item $out -Force }\n\n$word = New-Object -ComObject Word.Application\n$word.Visible = $false\n$word.DisplayAlerts = 0\n$word.Options.BackgroundSave = $false\nWrite-Host \"Opening rebuilt docx...\"\n$doc = $word.Documents.Open($docxPath, $false, $false)\nWrite-Host \"Opened. Fields=$($doc.Fields.Count)\"\nWrite-Host \"SaveAs doc...\"\n$doc.SaveAs($out, 0)\nWrite-Host \"saved size=$((Get-Item $out).Length)\"\n$doc.Close($false)\n$word.Quit()\nWrite-Host \"done\""
+title: "Open rebuilt VML docx in Word and SaveAs .doc"
+status: failed   
+started_at: 2026-08-25T06:50:58.844Z
+running_for_ms: 57629    
+---
+Opening rebuilt docx...
+Opened. Fields=11
+SaveAs doc...
+
+---
+exit_code: 4294967295
+elapsed_ms: 57628
+ended_at: 2026-08-25T06:51:56.472Z
+---

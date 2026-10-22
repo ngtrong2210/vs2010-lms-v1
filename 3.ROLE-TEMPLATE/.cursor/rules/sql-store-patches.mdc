@@ -1,0 +1,15 @@
+---
+description: SQL Server store patch + lưu định nghĩa Create (không backup bằng tạo bảng)
+globs: "**/*.sql"
+alwaysApply: false
+---
+
+# Store SQL (patch + lưu Create)
+
+Khi sửa/tạo stored procedure, function, view trên SQL Server:
+
+- **Patch riêng** mỗi object (không chỉ sửa file gom full store). Chi tiết: skill `sql-store-patches`, `sql-store-patch-files`.
+- **SP đã có trên DB:** patch dùng `Alter Procedure` (body đầy đủ); trước đó lưu định nghĩa cũ vào file `.sql` có `Create Procedure` / `Create Function` / `Create View` chạy độc lập (thư mục `backup/`, **không** đánh số trong chuỗi patch deploy).
+- **SP mới:** patch dùng `Create Procedure`.
+- **Cấm** coi tạo bảng là backup store: không `dbo.Backup_*`, không `SELECT ... INTO Backup_*`, không copy bảng nghiệp vụ để “lưu store”. Tạo table mới ≠ backup định nghĩa object.
+- Sửa dữ liệu bảng: dùng skill `sql-safe-update` (SELECT trước/sau, TRAN), không nhầm với lưu định nghĩa store.

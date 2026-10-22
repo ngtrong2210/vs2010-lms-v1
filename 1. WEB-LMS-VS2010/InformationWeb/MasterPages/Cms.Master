@@ -1,0 +1,169 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Cms.Master.cs" Inherits="InformationWeb.MasterPages.CmsMaster" %>
+<!DOCTYPE html>
+<html lang="vi">
+    <head runat="server">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title><%= Server.HtmlEncode(Page.Title) %> - Thiên Hà Số</title>
+        <link rel="icon" type="image/png" href="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap.min.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap-icons.min.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/style.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/responsive.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/index.css") %>" />
+    <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/webforms.css?v=20260901-ui10") %>" />
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+    </head>
+    <body class="cms-theme">
+        <form id="MainForm" runat="server">
+            <asp:ScriptManager ID="MainScriptManager" runat="server" EnablePageMethods="true" />
+            <div class="cms-shell cms-theme" data-cms-shell>
+                <aside class="sidebar d-none d-lg-flex flex-column" id="cmsSidebar">
+                    <a class="brand brand-lockup px-4" href="<%= ResolveUrl("~/cms/dashboard") %>" aria-label="Thiên Hà Số">
+                        <img class="brand-symbol" src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
+                        <span class="brand-name">Thiên Hà Số</span>
+                    </a>
+                    <nav class="px-3 overflow-auto cms-nav" aria-label="Quản trị">
+                        <div class="menu-label">Tổng quan</div>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/dashboard") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/widget-5.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Bảng điều khiển</span>
+                        </a>
+                        <div class="menu-label">Tổ chức đào tạo</div>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/academic") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/structure.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Cơ cấu đào tạo</span>
+                        </a>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/courses") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/notebook-bookmark.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Soạn môn học lớp</span>
+                        </a>
+                        <div class="menu-label">Học liệu</div>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/videos") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/video-library.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Thư viện video</span>
+                        </a>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/questions") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/question-square.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Ngân hàng câu hỏi</span>
+                        </a>
+                        <div class="menu-label">Học viên</div>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/students") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/users-group-rounded.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Danh sách học viên</span>
+                        </a>
+                        <div class="menu-label">Giảng dạy</div>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/assignments") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/clipboard-check.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Chấm và trả bài</span>
+                        </a>
+                        <a class="side-link" href="<%= ResolveUrl("~/cms/reports") %>">
+                            <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/chart-square.svg?v=20260901-icons1") %>" alt="" /></span>
+                            <span class="side-link-label">Tiến độ và báo cáo</span>
+                        </a>
+                        <asp:PlaceHolder ID="AdminMenu" runat="server">
+                            <div class="menu-label">Hệ thống</div>
+                            <a class="side-link" href="<%= ResolveUrl("~/cms/users") %>">
+                                <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/user-id.svg?v=20260901-icons1") %>" alt="" /></span>
+                                <span class="side-link-label">Người dùng</span>
+                            </a>
+                            <a class="side-link" href="<%= ResolveUrl("~/cms/roles") %>">
+                                <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/shield-user.svg?v=20260901-icons1") %>" alt="" /></span>
+                                <span class="side-link-label">Phân quyền</span>
+                            </a>
+                            <a class="side-link" href="<%= ResolveUrl("~/cms/settings") %>">
+                                <span class="solar-menu-icon"><img src="<%= ResolveUrl("~/assets/lms/icons/solar-bold/settings.svg?v=20260901-icons1") %>" alt="" /></span>
+                                <span class="side-link-label">Cài đặt</span>
+                            </a>
+                        </asp:PlaceHolder>
+                    </nav>
+                </aside>
+                <div class="cms-main">
+                    <header class="topbar d-flex align-items-center justify-content-between px-3 px-lg-4">
+                        <div class="topbar-heading d-flex align-items-center gap-3">
+                            <button
+                                type="button"
+                                class="btn btn-light d-lg-none menu-toggle"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#mobileMenu"
+                                aria-label="Mở trình đơn"
+                            >
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <button
+                                type="button"
+                                class="sidebar-toggle d-none d-lg-grid"
+                                data-sidebar-collapse
+                                aria-label="Thu gọn thanh menu"
+                                title="Thu gọn menu"
+                            >
+                                <svg class="sidebar-toggle-icon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="2.75" y="3.25" width="18.5" height="17.5" rx="3"></rect>
+                                    <path d="M8.25 3.5v17"></path>
+                                    <path class="sidebar-arrow-open" d="m16 8-4 4 4 4"></path>
+                                    <path class="sidebar-arrow-closed" d="m12 8 4 4-4 4"></path>
+                                </svg>
+                            </button>
+                            <div>
+                                <small>ELEARNING</small>
+                                <div data-page-title>Quản trị</div>
+                            </div>
+                        </div>
+                        <div class="topbar-actions d-flex align-items-center gap-2 gap-lg-3">
+                            <a class="top-search d-none d-xl-flex" href="<%= ResolveUrl("~/cms/search") %>" aria-label="Tìm kiếm trong hệ thống">
+                                <i class="bi bi-search"></i>
+                                <span>Tìm kiếm trong hệ thống...</span>
+                                <b><i class="bi bi-arrow-right"></i></b>
+                            </a>
+                            <a class="icon-button d-xl-none" href="<%= ResolveUrl("~/cms/search") %>" aria-label="Tìm kiếm"><i class="bi bi-search"></i></a>
+                            <div class="notification-center" data-notification-center data-handler-url="<%= ResolveUrl("~/Handlers/Lms/Module.ashx") %>">
+                                <button type="button" class="icon-button" data-notification-toggle aria-label="Thông báo">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="notification-count"><asp:Literal ID="NotificationCountText" runat="server" /></span>
+                                </button>
+                                <div class="notification-panel" data-notification-panel hidden>
+                                    <div class="notification-panel-head">
+                                        <strong>Thông báo</strong>
+                                        <button type="button" class="btn btn-sm btn-link" data-notification-read-all>Đọc tất cả</button>
+                                    </div>
+                                    <div data-notification-list class="notification-list">
+                                        <span class="text-secondary">Đang tải...</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-none d-sm-flex align-items-center gap-2 user-summary">
+                                <img class="avatar user-avatar" src="<%= ResolveUrl("~/assets/lms/images/avatar-admin.jpg") %>" alt="Ảnh đại diện" />
+                                <div>
+                                    <div class="small fw-bold"><asp:Literal ID="UserNameText" runat="server" /></div>
+                                    <div class="tiny">Tài khoản hệ thống</div>
+                                </div>
+                            </div>
+                            <a
+                                class="btn btn-action-delete btn-sm logout-button"
+                                href="<%= ResolveUrl("~/logout") %>"
+                                title="Đăng xuất"
+                                aria-label="Đăng xuất"
+                            >
+                                <i class="bi bi-box-arrow-right"></i>
+                            </a>
+                        </div>
+                    </header>
+                    <main class="p-3 p-lg-4 page-content"><asp:ContentPlaceHolder ID="MainContent" runat="server" /></main>
+                </div>
+                <div id="mobileMenu" class="offcanvas offcanvas-start mobile-sidebar" tabindex="-1">
+                    <div class="offcanvas-header">
+                        <a class="brand brand-lockup" href="<%= ResolveUrl("~/cms/dashboard") %>" aria-label="Thiên Hà Số">
+                            <img class="brand-symbol" src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
+                            <span class="brand-name">Thiên Hà Số</span>
+                        </a>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Đóng"></button>
+                    </div>
+                    <div class="offcanvas-body" data-mobile-menu></div>
+                </div>
+            </div>
+            <script src="<%= ResolveUrl("~/assets/lms/vendor/bootstrap.bundle.min.js") %>"></script>
+            <script src="<%= ResolveUrl("~/assets/lms/js/app.js?v=20260901-ui5") %>"></script>
+            <asp:ContentPlaceHolder ID="ScriptContent" runat="server" />
+        </form>
+    </body>
+</html>

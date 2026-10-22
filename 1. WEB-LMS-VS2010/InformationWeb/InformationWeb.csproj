@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36C811F1-8B2B-4CE2-BE51-FC1E215B991B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InformationWeb</RootNamespace>
+    <AssemblyName>InformationWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BCrypt.Net-Next">
+      <HintPath>..\LmsService\bin\BCrypt.Net-Next.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DCore">
+      <HintPath>..\LmsObject\bin\DCore.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LmsObject\LmsObject.csproj">
+      <Project>{A1111111-1111-4111-8111-111111111111}</Project>
+      <Name>LmsObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LmsService\LmsService.csproj">
+      <Project>{C3333333-3333-4333-8333-333333333333}</Project>
+      <Name>LmsService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LmsInfrastructure\CmsStorePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LmsInfrastructure\LmsRouteConfig.cs" />
+    <Compile Include="LmsInfrastructure\PageBases.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LmsInfrastructure\StudentStorePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LmsInfrastructure\UserSession.cs" />
+    <Compile Include="LmsInfrastructure\WebData.cs" />
+    <Compile Include="LmsInfrastructure\WebLog.cs" />
+    <Compile Include="MasterPages\Cms.Master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Lms.Master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Auth\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Auth\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Auth\Logout.ascx.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Auth\Logout.ascx.designer.cs">
+      <DependentUpon>Logout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lms\Course.ascx.cs">
+      <DependentUpon>Course.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lms\Course.ascx.designer.cs">
+      <DependentUpon>Course.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lms\LessonPlayer.ascx.cs">
+      <DependentUpon>LessonPlayer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lms\LessonPlayer.ascx.designer.cs">
+      <DependentUpon>LessonPlayer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lms\Dashboard.ascx.cs">
+      <DependentUpon>Dashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lms\Dashboard.ascx.designer.cs">
+      <DependentUpon>Dashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lms\Courses.ascx.cs">
+      <DependentUpon>Courses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lms\Courses.ascx.designer.cs">
+      <DependentUpon>Courses.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lms\Results.ascx.cs">
+      <DependentUpon>Results.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lms\Results.ascx.designer.cs">
+      <DependentUpon>Results.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Lms\Profile.ascx.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Lms\Profile.ascx.designer.cs">
+      <DependentUpon>Profile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\AcademicStructure.ascx.cs">
+      <DependentUpon>AcademicStructure.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\AcademicStructure.ascx.designer.cs">
+      <DependentUpon>AcademicStructure.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\AssignmentGrading.ascx.cs">
+      <DependentUpon>AssignmentGrading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\AssignmentGrading.ascx.designer.cs">
+      <DependentUpon>AssignmentGrading.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Courses.ascx.cs">
+      <DependentUpon>Courses.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Courses.ascx.designer.cs">
+      <DependentUpon>Courses.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Enrollments.ascx.cs">
+      <DependentUpon>Enrollments.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Enrollments.ascx.designer.cs">
+      <DependentUpon>Enrollments.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Questions.ascx.cs">
+      <DependentUpon>Questions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Questions.ascx.designer.cs">
+      <DependentUpon>Questions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Reports.ascx.cs">
+      <DependentUpon>Reports.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Reports.ascx.designer.cs">
+      <DependentUpon>Reports.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Roles.ascx.cs">
+      <DependentUpon>Roles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Roles.ascx.designer.cs">
+      <DependentUpon>Roles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Students.ascx.cs">
+      <DependentUpon>Students.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Students.ascx.designer.cs">
+      <DependentUpon>Students.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Users.ascx.cs">
+      <DependentUpon>Users.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Users.ascx.designer.cs">
+      <DependentUpon>Users.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\ContentBuilder.ascx.cs">
+      <DependentUpon>ContentBuilder.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\ContentBuilder.ascx.designer.cs">
+      <DependentUpon>ContentBuilder.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\Dashboard.ascx.cs">
+      <DependentUpon>Dashboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\Dashboard.ascx.designer.cs">
+      <DependentUpon>Dashboard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\VideoEditor.ascx.cs">
+      <DependentUpon>VideoEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\VideoEditor.ascx.designer.cs">
+      <DependentUpon>VideoEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cms\VideoLibrary.ascx.cs">
+      <DependentUpon>VideoLibrary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Cms\VideoLibrary.ascx.designer.cs">
+      <DependentUpon>VideoLibrary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Auth\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Auth\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Auth\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Auth\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\AcademicStructure.aspx.cs">
+      <DependentUpon>AcademicStructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\AcademicStructure.aspx.designer.cs">
+      <DependentUpon>AcademicStructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\AssignmentGrading.aspx.cs">
+      <DependentUpon>AssignmentGrading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\AssignmentGrading.aspx.designer.cs">
+      <DependentUpon>AssignmentGrading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\ContentBuilder.aspx.cs">
+      <DependentUpon>ContentBuilder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\ContentBuilder.aspx.designer.cs">
+      <DependentUpon>ContentBuilder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Enrollments.aspx.cs">
+      <DependentUpon>Enrollments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Enrollments.aspx.designer.cs">
+      <DependentUpon>Enrollments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Questions.aspx.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Questions.aspx.designer.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\VideoEditor.aspx.cs">
+      <DependentUpon>VideoEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\VideoEditor.aspx.designer.cs">
+      <DependentUpon>VideoEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cms\VideoLibrary.aspx.cs">
+      <DependentUpon>VideoLibrary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cms\VideoLibrary.aspx.designer.cs">
+      <DependentUpon>VideoLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Errors\Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Errors\Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Errors\Forbidden.aspx.cs">
+      <DependentUpon>Forbidden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Errors\Forbidden.aspx.designer.cs">
+      <DependentUpon>Forbidden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Errors\NotFound.aspx.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Errors\NotFound.aspx.designer.cs">
+      <DependentUpon>NotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lms\Course.aspx.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Lms\Course.aspx.designer.cs">
+      <DependentUpon>Course.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lms\Courses.aspx.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Lms\Courses.aspx.designer.cs">
+      <DependentUpon>Courses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lms\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Lms\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lms\LessonPlayer.aspx.cs">
+      <DependentUpon>LessonPlayer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Lms\LessonPlayer.aspx.designer.cs">
+      <DependentUpon>LessonPlayer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lms\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Lms\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Lms\Results.aspx.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Lms\Results.aspx.designer.cs">
+      <DependentUpon>Results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\Lms\**\*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.svg" />
+    <Content Include="icons.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="urlrewrite.config" />
+    <Content Include="MasterPages\**\*.Master" />
+    <Content Include="Pages\Auth\**\*.aspx" />
+    <Content Include="Pages\Lms\**\*.aspx" />
+    <Content Include="Pages\Cms\**\*.aspx" />
+    <Content Include="Pages\Errors\**\*.aspx" />
+    <Content Include="Controls\**\*.ascx" />
+    <Content Include="Handlers\Lms\**\*.ashx" />
+    <Content Include="assets\lms\**\*.*" />
+    <Content Include="Media\**\*.*" Exclude="Media\Temp\**\*.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Logs\" />
+    <Folder Include="App_Data\Temp\" />
+    <Folder Include="Media\Temp\" />
+    <Folder Include="uploads\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>20265</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
