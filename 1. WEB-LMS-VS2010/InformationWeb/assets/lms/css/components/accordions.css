@@ -1,0 +1,282 @@
+/**
+ * Accordion Component
+ * Collapsible content panels
+ */
+
+/* ========================================
+   ACCORDION BASE
+   ======================================== */
+
+.accordion {
+  background-color: var(--surface);
+  border: 1px solid var(--neutral-line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--neutral-line);
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+/* ========================================
+   ACCORDION HEADER
+   ======================================== */
+
+.accordion-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  background: var(--surface);
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.accordion-header:hover {
+  background: var(--soft-surface);
+}
+
+.accordion-header i,
+.accordion-header .icon {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  transition: transform var(--transition-normal);
+}
+
+.accordion-item.active .accordion-header i,
+.accordion-item.active .accordion-header .icon {
+  transform: rotate(180deg);
+}
+
+.accordion-header .accordion-title {
+  flex: 1;
+  text-align: left;
+}
+
+.accordion-header .accordion-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* ========================================
+   ACCORDION BODY
+   ======================================== */
+
+.accordion-body {
+  display: none;
+  padding: var(--spacing-lg);
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+  animation: accordion-slide-down var(--transition-normal);
+}
+
+@keyframes accordion-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   ACCORDION VARIANTS
+   ======================================== */
+
+/* Bordered accordion */
+.accordion-bordered .accordion-item {
+  border: 1px solid var(--neutral-line);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.accordion-bordered .accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Flush accordion */
+.accordion-flush {
+  border: none;
+  border-radius: 0;
+}
+
+.accordion-flush .accordion-item {
+  border-bottom: 1px solid var(--neutral-line);
+  border-radius: 0;
+}
+
+.accordion-flush .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-flush .accordion-header {
+  border-radius: 0;
+}
+
+/* ========================================
+   ACCORDION SIZES
+   ======================================== */
+
+.accordion-sm .accordion-header {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.accordion-sm .accordion-body {
+  padding: var(--spacing-md);
+}
+
+.accordion-lg .accordion-header {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  font-size: var(--font-size-lg);
+}
+
+.accordion-lg .accordion-body {
+  padding: var(--spacing-xl);
+}
+
+/* ========================================
+   ACCORDION ICON POSITION
+   ======================================== */
+
+.accordion-icon-left .accordion-header {
+  flex-direction: row;
+}
+
+.accordion-icon-left .accordion-header i,
+.accordion-icon-left .accordion-header .icon {
+  margin-right: var(--spacing-sm);
+  order: -1;
+}
+
+.accordion-icon-right .accordion-header {
+  flex-direction: row;
+}
+
+.accordion-icon-right .accordion-header i,
+.accordion-icon-right .accordion-header .icon {
+  margin-left: var(--spacing-sm);
+}
+
+/* ========================================
+   ACCORDION ALWAYS OPEN
+   ======================================== */
+
+.accordion-always-open .accordion-header i,
+.accordion-always-open .accordion-header .icon {
+  transform: rotate(0deg);
+}
+
+/* ========================================
+   ACCORDION WITH BADGE
+   ======================================== */
+
+.accordion-header .accordion-badge {
+  margin-left: var(--spacing-sm);
+}
+
+/* ========================================
+   ACCORDION GROUP
+   ======================================== */
+
+.accordion-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.accordion-group .accordion {
+  border-radius: var(--radius-sm);
+}
+
+/* ========================================
+   ACCORDION COLORS
+   ======================================== */
+
+.accordion-primary .accordion-header {
+  color: var(--brand-green);
+}
+
+.accordion-primary .accordion-item.active .accordion-header {
+  background: var(--soft-green);
+}
+
+.accordion-success .accordion-header {
+  color: var(--brand-success);
+}
+
+.accordion-success .accordion-item.active .accordion-header {
+  background: var(--soft-success);
+}
+
+.accordion-danger .accordion-header {
+  color: var(--brand-red);
+}
+
+.accordion-danger .accordion-item.active .accordion-header {
+  background: var(--soft-red);
+}
+
+.accordion-warning .accordion-header {
+  color: var(--brand-yellow);
+}
+
+.accordion-warning .accordion-item.active .accordion-header {
+  background: var(--soft-yellow);
+}
+
+.accordion-info .accordion-header {
+  color: var(--brand-blue);
+}
+
+.accordion-info .accordion-item.active .accordion-header {
+  background: var(--soft-blue);
+}
+
+/* ========================================
+   ACCORDION RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .accordion-header {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .accordion-body {
+    padding: var(--spacing-md);
+  }
+}
+
+/* ========================================
+   ACCORDION ANIMATIONS
+   ======================================== */
+
+.accordion-fade .accordion-body {
+  animation: accordion-fade-in var(--transition-normal);
+}
+
+@keyframes accordion-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

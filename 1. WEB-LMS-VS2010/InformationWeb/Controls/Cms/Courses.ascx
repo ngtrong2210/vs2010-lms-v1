@@ -1,81 +1,82 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Courses.ascx.cs" Inherits="InformationWeb.Controls.Cms.Courses" %>
-<link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/pages/cms/course-management.css") %>" />
-<section class="teaching-workspace-page">
-    <header class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+<section>
+    <header class="page-header">
         <div>
-            <span class="eyebrow">GIẢNG DẠY THEO NĂM HỌC</span>
-            <h1 class="page-title mb-1"><asp:Literal ID="PageTitleText" runat="server" /></h1>
-            <p class="page-subtitle mb-0"><asp:Literal ID="PageDescriptionText" runat="server" /></p>
+            <span class="badge badge-info mb-2">GIẢNG DẠY THEO NĂM HỌC</span>
+            <h1 class="page-title"><asp:Literal ID="PageTitleText" runat="server" /></h1>
+            <p class="page-subtitle"><asp:Literal ID="PageDescriptionText" runat="server" /></p>
         </div>
-        <div class="cms-page-actions">
-            <a class="btn btn-action-view" href="<%= ResolveUrl("~/cms/academic") %>">
+        <div class="page-actions">
+            <a class="btn btn-outline" href="<%= ResolveUrl("~/cms/academic") %>">
                 <i class="bi bi-diagram-3"></i>
                 Cơ cấu đào tạo
             </a>
-            <a class="btn btn-action-save" href="<%= ResolveUrl("~/cms/assignments") %>">
+            <a class="btn btn-outline" href="<%= ResolveUrl("~/cms/assignments") %>">
                 <i class="bi bi-clipboard-check"></i>
                 Chấm bài
             </a>
         </div>
     </header>
     <asp:Label ID="ActionMessageText" runat="server" Visible="false" />
-    <div class="app-card workspace-filters">
-        <label class="search-field">
-            <span>Tìm nhanh</span>
-            <div class="input-icon">
-                <i class="bi bi-search"></i>
-                <asp:TextBox ID="SearchText" runat="server" CssClass="form-control" placeholder="Tên môn, lớp hoặc giảng viên..." />
+    <div class="card card-filter mb-3">
+        <div class="filter-group">
+            <div class="filter-field">
+                <label>Tìm nhanh</label>
+                <div class="input-group">
+                    <i class="bi bi-search"></i>
+                    <asp:TextBox ID="SearchText" runat="server" CssClass="form-control" placeholder="Tên môn, lớp hoặc giảng viên..." />
+                </div>
             </div>
-        </label>
-        <label>
-            <span>Năm học</span>
-            <asp:DropDownList ID="YearFilterList" runat="server" CssClass="form-select">
-                <asp:ListItem Value="">Tất cả năm học</asp:ListItem>
-            </asp:DropDownList>
-        </label>
-        <label>
-            <span>Học kỳ</span>
-            <asp:DropDownList ID="SemesterFilterList" runat="server" CssClass="form-select">
-                <asp:ListItem Value="">Tất cả học kỳ</asp:ListItem>
-                <asp:ListItem Value="1">Học kỳ 1</asp:ListItem>
-                <asp:ListItem Value="2">Học kỳ 2</asp:ListItem>
-                <asp:ListItem Value="3">Học kỳ hè</asp:ListItem>
-            </asp:DropDownList>
-        </label>
-        <label>
-            <span>Trạng thái nội dung</span>
-            <asp:DropDownList ID="CourseStatusFilterList" runat="server" CssClass="form-select">
-                <asp:ListItem Value="">Tất cả trạng thái</asp:ListItem>
-                <asp:ListItem Value="EMPTY">Chưa khởi tạo</asp:ListItem>
-                <asp:ListItem Value="DRAFT">Bản nháp</asp:ListItem>
-                <asp:ListItem Value="PUBLISHED">Đã xuất bản</asp:ListItem>
-                <asp:ListItem Value="ARCHIVED">Lưu trữ</asp:ListItem>
-            </asp:DropDownList>
-        </label>
-        <div class="cms-control-actions">
-            <asp:Button
-                ID="SearchButton"
-                runat="server"
-                Text="Áp dụng bộ lọc"
-                CssClass="btn btn-action-filter"
-                OnClick="SearchButton_Click"
-            />
+            <div class="filter-field">
+                <label>Năm học</label>
+                <asp:DropDownList ID="YearFilterList" runat="server" CssClass="form-select">
+                    <asp:ListItem Value="">Tất cả năm học</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div class="filter-field">
+                <label>Học kỳ</label>
+                <asp:DropDownList ID="SemesterFilterList" runat="server" CssClass="form-select">
+                    <asp:ListItem Value="">Tất cả học kỳ</asp:ListItem>
+                    <asp:ListItem Value="1">Học kỳ 1</asp:ListItem>
+                    <asp:ListItem Value="2">Học kỳ 2</asp:ListItem>
+                    <asp:ListItem Value="3">Học kỳ hè</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div class="filter-field">
+                <label>Trạng thái nội dung</label>
+                <asp:DropDownList ID="CourseStatusFilterList" runat="server" CssClass="form-select">
+                    <asp:ListItem Value="">Tất cả trạng thái</asp:ListItem>
+                    <asp:ListItem Value="EMPTY">Chưa khởi tạo</asp:ListItem>
+                    <asp:ListItem Value="DRAFT">Bản nháp</asp:ListItem>
+                    <asp:ListItem Value="PUBLISHED">Đã xuất bản</asp:ListItem>
+                    <asp:ListItem Value="ARCHIVED">Lưu trữ</asp:ListItem>
+                </asp:DropDownList>
+            </div>
+            <div class="filter-actions">
+                <asp:Button
+                    ID="SearchButton"
+                    runat="server"
+                    Text="Áp dụng bộ lọc"
+                    CssClass="btn btn-secondary"
+                    OnClick="SearchButton_Click"
+                />
+            </div>
         </div>
     </div>
     <asp:Label ID="ErrorText" runat="server" CssClass="alert alert-danger" Visible="false" />
-    <div class="app-card table-card">
-        <div class="table-card-heading">
+    <div class="card">
+        <div class="card-header">
             <div>
                 <strong>Danh sách môn học lớp</strong>
                 <small>Mỗi dòng là một môn của một lớp trong một năm học; không tạo khóa học rời.</small>
             </div>
         </div>
         <asp:Label ID="EmptyText" runat="server" CssClass="empty-state" Text="Không có môn học lớp phù hợp bộ lọc." Visible="false" />
-        <div class="table-responsive">
+        <div class="table-container">
             <asp:GridView
                 ID="DataGrid"
                 runat="server"
-                CssClass="table align-middle mb-0 workspace-table"
+                CssClass="lms-table"
                 AutoGenerateColumns="false"
                 AllowPaging="true"
                 PageSize="20"
@@ -104,7 +105,7 @@
                     <asp:BoundField DataField="TeacherName" HeaderText="Giảng viên" />
                     <asp:TemplateField HeaderText="Nội dung">
                         <ItemTemplate>
-                            <span class="badge badge-soft-primary"><%# CourseStatusLabel(Eval("OnlineCourseID"), Eval("OnlineCourseStatus")) %></span>
+                            <span class="badge badge-info"><%# CourseStatusLabel(Eval("OnlineCourseID"), Eval("OnlineCourseStatus")) %></span>
                             <small><%# Eval("ChapterCount") %> chương · <%# Eval("LessonCount") %> bài</small>
                         </ItemTemplate>
                     </asp:TemplateField>
@@ -114,16 +115,12 @@
                             <small>học viên của lớp</small>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:TemplateField
-                        HeaderText="Thao tác"
-                        ItemStyle-CssClass="text-end action-cell"
-                        HeaderStyle-CssClass="text-end action-cell"
-                    >
+                    <asp:TemplateField HeaderText="Thao tác">
                         <ItemTemplate>
                             <asp:HyperLink
                                 ID="EditCourseLink"
                                 runat="server"
-                                CssClass="btn btn-action-view btn-sm"
+                                CssClass="btn btn-sm btn-outline"
                                 NavigateUrl='<%# CourseContentUrl(Eval("OnlineCourseID")) %>'
                                 Visible='<%# HasCourse(Eval("OnlineCourseID")) %>'
                             >
@@ -133,7 +130,7 @@
                             <asp:LinkButton
                                 ID="OpenSettingsButton"
                                 runat="server"
-                                CssClass="btn btn-action-edit btn-sm ms-1"
+                                CssClass="btn btn-sm btn-outline"
                                 CommandName="OpenSettings"
                                 CommandArgument='<%# Eval("OnlineCourseID") %>'
                                 CausesValidation="false"
@@ -145,7 +142,7 @@
                             <asp:LinkButton
                                 ID="EnsureWorkspaceButton"
                                 runat="server"
-                                CssClass="btn btn-action-create btn-sm"
+                                CssClass="btn btn-sm btn-primary"
                                 CommandName="EnsureWorkspace"
                                 CommandArgument='<%# Eval("ClassSubjectID") %>'
                                 CausesValidation="false"
@@ -163,9 +160,9 @@
 
     <asp:UpdatePanel ID="CourseSettingsUpdatePanel" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="true">
         <ContentTemplate>
-    <div id="courseSettingsModal" class="modal-mask" hidden="hidden">
-        <section class="app-card form-modal" role="dialog" aria-modal="true" aria-labelledby="courseSettingsTitle">
-            <div class="modal-heading">
+    <div id="courseSettingsModal" class="modal-backdrop" hidden="hidden">
+        <section class="modal" role="dialog" aria-modal="true" aria-labelledby="courseSettingsTitle">
+            <div class="modal-header">
                 <div>
                     <small>Thiết lập môn học lớp</small>
                     <h2 id="courseSettingsTitle"><asp:Literal ID="CourseSettingsTitleText" runat="server" /></h2>
@@ -173,8 +170,8 @@
                 </div>
                 <button type="button" class="btn-close" data-course-settings-close="courseSettingsModal" aria-label="Đóng"></button>
             </div>
-            <div class="row g-3">
-                <div class="col-12">
+            <div class="modal-body">
+                <div class="form-group">
                     <label class="form-label">Mô tả ngắn</label>
                     <asp:TextBox
                         ID="CourseSettingsShortDescriptionText"
@@ -184,29 +181,30 @@
                         Rows="3"
                     />
                 </div>
-                <div class="col-md-6">
-                    <label class="form-label">Điểm đạt toàn môn</label>
-                    <asp:TextBox ID="CourseSettingsPassingScoreText" runat="server" CssClass="form-control" />
-                </div>
-                <div class="col-md-6">
-                    <label class="form-label">Trạng thái</label>
-                    <asp:DropDownList ID="CourseSettingsStatusList" runat="server" CssClass="form-select">
-                        <asp:ListItem Value="DRAFT">Bản nháp</asp:ListItem>
-                        <asp:ListItem Value="PUBLISHED">Đã xuất bản</asp:ListItem>
-                        <asp:ListItem Value="ARCHIVED">Lưu trữ</asp:ListItem>
-                    </asp:DropDownList>
+                <div class="grid grid-2 gap-4">
+                    <div class="form-group">
+                        <label class="form-label">Điểm đạt toàn môn</label>
+                        <asp:TextBox ID="CourseSettingsPassingScoreText" runat="server" CssClass="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Trạng thái</label>
+                        <asp:DropDownList ID="CourseSettingsStatusList" runat="server" CssClass="form-select">
+                            <asp:ListItem Value="DRAFT">Bản nháp</asp:ListItem>
+                            <asp:ListItem Value="PUBLISHED">Đã xuất bản</asp:ListItem>
+                            <asp:ListItem Value="ARCHIVED">Lưu trữ</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
                 </div>
             </div>
-            <div class="modal-actions">
-                <button type="button" class="btn btn-action-cancel" data-course-settings-close="courseSettingsModal">
-                    <i class="bi bi-x-lg"></i>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-course-settings-close="courseSettingsModal">
                     Hủy
                 </button>
                 <asp:Button
                     ID="CourseSettingsSaveButton"
                     runat="server"
                     Text="Lưu thiết lập"
-                    CssClass="btn btn-action-save"
+                    CssClass="btn btn-primary"
                     OnClick="CourseSettingsSaveButton_Click"
                 />
             </div>

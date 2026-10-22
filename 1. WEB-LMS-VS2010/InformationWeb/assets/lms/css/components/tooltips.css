@@ -1,0 +1,289 @@
+/**
+ * Tooltip Component
+ * Hover tooltips and popovers
+ */
+
+/* ========================================
+   TOOLTIP BASE
+   ======================================== */
+
+.tooltip {
+  position: absolute;
+  z-index: var(--z-index-tooltip);
+  display: block;
+  font-family: var(--font-family-base);
+  font-style: normal;
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: var(--font-size-xs);
+  word-wrap: break-word;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip .tooltip-arrow {
+  position: absolute;
+  display: block;
+  width: 0.8rem;
+  height: 0.4rem;
+}
+
+.tooltip .tooltip-arrow::before {
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* ========================================
+   TOOLTIP INNER
+   ======================================== */
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  color: var(--text-on-primary);
+  text-align: center;
+  background-color: var(--neutral-800);
+  border-radius: var(--radius-sm);
+}
+
+/* ========================================
+   TOOLTIP POSITIONS
+   ======================================== */
+
+.tooltip.bs-tooltip-top {
+  padding: 0.4rem 0;
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  top: 0;
+  border-width: 0.4rem 0.4rem 0;
+  border-top-color: var(--neutral-800);
+}
+
+.tooltip.bs-tooltip-right {
+  padding: 0 0.4rem;
+}
+
+.tooltip.bs-tooltip-right .tooltip-arrow {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.bs-tooltip-right .tooltip-arrow::before {
+  right: 0;
+  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-right-color: var(--neutral-800);
+}
+
+.tooltip.bs-tooltip-bottom {
+  padding: 0.4rem 0;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  bottom: 0;
+  border-width: 0 0.4rem 0.4rem;
+  border-bottom-color: var(--neutral-800);
+}
+
+.tooltip.bs-tooltip-left {
+  padding: 0 0.4rem;
+}
+
+.tooltip.bs-tooltip-left .tooltip-arrow {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.bs-tooltip-left .tooltip-arrow::before {
+  left: 0;
+  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-left-color: var(--neutral-800);
+}
+
+/* ========================================
+   TOOLTIP VARIANTS
+   ======================================== */
+
+/* Primary tooltip */
+.tooltip-primary .tooltip-inner {
+  background-color: var(--brand-green);
+}
+
+.tooltip-primary.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--brand-green);
+}
+
+.tooltip-primary.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--brand-green);
+}
+
+.tooltip-primary.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--brand-green);
+}
+
+.tooltip-primary.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--brand-green);
+}
+
+/* Success tooltip */
+.tooltip-success .tooltip-inner {
+  background-color: var(--brand-success);
+}
+
+.tooltip-success.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--brand-success);
+}
+
+.tooltip-success.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--brand-success);
+}
+
+.tooltip-success.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--brand-success);
+}
+
+.tooltip-success.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--brand-success);
+}
+
+/* Danger tooltip */
+.tooltip-danger .tooltip-inner {
+  background-color: var(--brand-red);
+}
+
+.tooltip-danger.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--brand-red);
+}
+
+.tooltip-danger.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--brand-red);
+}
+
+.tooltip-danger.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--brand-red);
+}
+
+.tooltip-danger.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--brand-red);
+}
+
+/* Warning tooltip */
+.tooltip-warning .tooltip-inner {
+  background-color: var(--brand-yellow);
+}
+
+.tooltip-warning.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--brand-yellow);
+}
+
+.tooltip-warning.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--brand-yellow);
+}
+
+.tooltip-warning.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--brand-yellow);
+}
+
+.tooltip-warning.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--brand-yellow);
+}
+
+/* Info tooltip */
+.tooltip-info .tooltip-inner {
+  background-color: var(--brand-blue);
+}
+
+.tooltip-info.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--brand-blue);
+}
+
+.tooltip-info.bs-tooltip-right .tooltip-arrow::before {
+  border-right-color: var(--brand-blue);
+}
+
+.tooltip-info.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: var(--brand-blue);
+}
+
+.tooltip-info.bs-tooltip-left .tooltip-arrow::before {
+  border-left-color: var(--brand-blue);
+}
+
+/* ========================================
+   TOOLTIP SIZES
+   ======================================== */
+
+.tooltip-sm .tooltip-inner {
+  font-size: 0.625rem;
+  padding: 2px 6px;
+}
+
+.tooltip-lg .tooltip-inner {
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  max-width: 300px;
+}
+
+/* ========================================
+   TOOLTIP WITH ICON
+   ======================================== */
+
+.tooltip-with-icon .tooltip-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.tooltip-with-icon .tooltip-inner i,
+.tooltip-with-icon .tooltip-inner .icon {
+  font-size: 1rem;
+}
+
+/* ========================================
+   TOOLTIP ANIMATIONS
+   ======================================== */
+
+.tooltip.fade {
+  transition: opacity var(--transition-fast);
+}
+
+/* ========================================
+   TOOLTIP RTL
+   ======================================== */
+
+.tooltip[data-bs-popper="right"] {
+  padding: 0 0.4rem;
+}
+
+.tooltip[data-bs-popper="left"] {
+  padding: 0 0.4rem;
+}

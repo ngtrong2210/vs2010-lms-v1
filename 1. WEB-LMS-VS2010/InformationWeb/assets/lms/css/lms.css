@@ -1,0 +1,702 @@
+/**
+ * LMS Design System - Main CSS
+ *
+ * This is the main entry point for the LMS design system.
+ * Import this file in your project to use all design system components.
+ *
+ * @version 1.0.0
+ * @author LMS Design System
+ */
+
+/* ========================================
+   CORE LAYER
+   ======================================== */
+
+@import './core/design-tokens.css';
+@import './core/base.css';
+
+/* ========================================
+   COMPONENTS LAYER
+   ======================================== */
+
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/badges.css';
+@import './components/forms.css';
+@import './components/tables.css';
+@import './components/modals.css';
+@import './components/dropdowns.css';
+@import './components/alerts.css';
+@import './components/loading.css';
+@import './components/empty-states.css';
+@import './components/pagination.css';
+@import './components/tabs.css';
+@import './components/accordions.css';
+@import './components/breadcrumbs.css';
+@import './components/tooltips.css';
+@import './components/progress.css';
+
+/* ========================================
+   LAYOUT LAYER
+   ======================================== */
+
+@import './layout/sidebar.css';
+@import './layout/header.css';
+@import './layout/main.css';
+@import './layout/footer.css';
+
+/* ========================================
+   UTILITIES LAYER
+   ======================================== */
+
+@import './utilities/helpers.css';
+@import './utilities/responsive.css';
+
+/* ========================================
+   PAGE-SPECIFIC STYLES
+   ======================================== */
+
+/* Dashboard Page Styles */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.page-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+    color: var(--lms-text-primary);
+}
+
+.page-subtitle {
+    font-size: 0.875rem;
+    color: var(--lms-text-secondary);
+    margin: 0;
+}
+
+.page-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: var(--lms-surface);
+    border: 1px solid var(--lms-border);
+    border-radius: var(--lms-radius-lg);
+    transition: var(--lms-transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--lms-shadow-sm);
+}
+
+.stat-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--lms-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.stat-card-primary .stat-card-icon {
+    background: var(--lms-primary-light);
+    color: var(--lms-primary);
+}
+
+.stat-card-success .stat-card-icon {
+    background: var(--lms-success-light);
+    color: var(--lms-success);
+}
+
+.stat-card-warning .stat-card-icon {
+    background: var(--lms-warning-light);
+    color: var(--lms-warning);
+}
+
+.stat-card-danger .stat-card-icon {
+    background: var(--lms-danger-light);
+    color: var(--lms-danger);
+}
+
+.stat-card-content {
+    flex: 1;
+}
+
+.stat-card-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--lms-text-secondary);
+    display: block;
+}
+
+.stat-card-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--lms-text-primary);
+    display: block;
+    line-height: 1.2;
+}
+
+.stat-card-desc {
+    font-size: 0.75rem;
+    color: var(--lms-text-secondary);
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-2-1 {
+    grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 1199px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-2-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: var(--lms-surface);
+    border: 1px solid var(--lms-border);
+    border-radius: var(--lms-radius-lg);
+    overflow: hidden;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--lms-border);
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: var(--lms-text-primary);
+}
+
+.card-subtitle {
+    font-size: 0.875rem;
+    color: var(--lms-text-secondary);
+}
+
+.card-default {
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.metric-item {
+    margin-bottom: 1rem;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: var(--lms-text-secondary);
+    display: block;
+}
+
+.metric-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--lms-text-primary);
+}
+
+.content-counts {
+    display: flex;
+    gap: 1rem;
+}
+
+.content-count-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.content-count-item i {
+    font-size: 1.5rem;
+    color: var(--lms-primary);
+}
+
+.content-count-item strong {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.content-count-item small {
+    font-size: 0.75rem;
+    color: var(--lms-text-secondary);
+}
+
+.lms-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.lms-table th,
+.lms-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--lms-border);
+}
+
+.lms-table th {
+    background: var(--lms-background);
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--lms-text-secondary);
+}
+
+.lms-table tbody tr:hover {
+    background: var(--lms-background);
+}
+
+/* Badge color variants */
+.badge-success {
+    background: var(--lms-success-light);
+    color: var(--lms-success);
+}
+
+.badge-warning {
+    background: var(--lms-warning-light);
+    color: var(--lms-warning);
+}
+
+.badge-danger {
+    background: var(--lms-danger-light);
+    color: var(--lms-danger);
+}
+
+.badge-info {
+    background: var(--lms-info-light);
+    color: var(--lms-info);
+}
+
+.badge-secondary {
+    background: var(--lms-secondary-light);
+    color: var(--lms-secondary);
+}
+
+.empty-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: var(--lms-text-secondary);
+    text-align: center;
+}
+
+/* LMS Dashboard Styles */
+.welcome-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, var(--lms-primary) 0%, var(--lms-primary-dark) 100%);
+    border-radius: var(--lms-radius-lg);
+    color: white;
+}
+
+.welcome-content {
+    flex: 1;
+}
+
+.welcome-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.welcome-card h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+
+.welcome-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0 0 1.5rem 0;
+}
+
+.welcome-card .btn-primary {
+    background: white;
+    color: var(--lms-primary);
+}
+
+.welcome-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.progress-ring {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.progress-ring small {
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+}
+
+.welcome-progress strong {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.welcome-progress small {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.25rem 0;
+    color: var(--lms-text-primary);
+}
+
+.section-subtitle {
+    font-size: 0.875rem;
+    color: var(--lms-text-secondary);
+}
+
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 991px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .welcome-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.course-card {
+    background: var(--lms-surface);
+    border: 1px solid var(--lms-border);
+    border-radius: var(--lms-radius-lg);
+    overflow: hidden;
+    transition: var(--lms-transition);
+}
+
+.course-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--lms-shadow-md);
+}
+
+.course-card-cover {
+    height: 120px;
+    background: linear-gradient(135deg, var(--lms-primary-light) 0%, var(--lms-info-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    color: var(--lms-primary);
+}
+
+.course-card-cover span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--lms-primary);
+}
+
+.course-card-body {
+    padding: 1.25rem;
+}
+
+.course-card h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0 0 0.5rem 0;
+    color: var(--lms-text-primary);
+}
+
+.course-card-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--lms-text-secondary);
+    margin-bottom: 1rem;
+}
+
+.course-card-progress {
+    margin-bottom: 1rem;
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.progress-label span {
+    color: var(--lms-text-secondary);
+}
+
+.progress-label strong {
+    color: var(--lms-text-primary);
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Filter Card */
+.card-filter {
+    padding: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-group .form-control {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* User Cell in Table */
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.user-avatar-sm {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--lms-primary-light);
+    color: var(--lms-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.progress-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.progress-cell .progress {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: var(--lms-radius);
+    background: var(--lms-background);
+    color: var(--lms-text-secondary);
+    transition: var(--lms-transition);
+}
+
+.btn-icon:hover {
+    background: var(--lms-primary-light);
+    color: var(--lms-primary);
+}
+
+/* Filter Fields */
+.filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: 180px;
+}
+
+.filter-field label {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--lms-text-secondary);
+}
+
+.filter-field .input-group {
+    position: relative;
+}
+
+.filter-field .input-group i {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--lms-text-secondary);
+}
+
+.filter-field .input-group .form-control {
+    padding-left: 2.25rem;
+}
+
+.filter-actions {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Subject Cell */
+.subject-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.subject-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--lms-radius);
+    background: var(--lms-info-light);
+    color: var(--lms-info);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+/* Modal Styles */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+}
+
+.modal {
+    background: var(--lms-surface);
+    border-radius: var(--lms-radius-lg);
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: var(--lms-shadow-lg);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25rem;
+    border-bottom: 1px solid var(--lms-border);
+}
+
+.modal-header h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 0.25rem 0 0 0;
+}
+
+.modal-header p {
+    font-size: 0.875rem;
+    color: var(--lms-text-secondary);
+    margin: 0;
+}
+
+.modal-header small {
+    font-size: 0.75rem;
+    color: var(--lms-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.modal-body {
+    padding: 1.25rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    border-top: 1px solid var(--lms-border);
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: var(--lms-text-secondary);
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--lms-radius);
+    transition: var(--lms-transition);
+}
+
+.btn-close:hover {
+    background: var(--lms-background);
+    color: var(--lms-text-primary);
+}

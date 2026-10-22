@@ -1,0 +1,492 @@
+/**
+ * Sidebar Component
+ * Main navigation sidebar for LMS/CMS
+ */
+
+/* ========================================
+   SIDEBAR BASE
+   ======================================== */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--theme-sidebar);
+  z-index: var(--z-index-fixed);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal), width var(--transition-normal);
+}
+
+/* ========================================
+   SIDEBAR HEADER
+   ======================================== */
+
+.sidebar-header {
+  height: var(--topbar-height);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-lg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-on-primary);
+  text-decoration: none;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+.sidebar-brand img,
+.sidebar-brand .logo {
+  height: 32px;
+  width: auto;
+}
+
+/* ========================================
+   SIDEBAR CONTENT
+   ======================================== */
+
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: var(--spacing-md) 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.sidebar-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+/* ========================================
+   SIDEBAR NAVIGATION
+   ======================================== */
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: 0 var(--spacing-sm);
+}
+
+/* Nav Section Label */
+.sidebar-nav-label {
+  padding: var(--spacing-md) var(--spacing-md);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* Nav Item */
+.sidebar-nav-item {
+  position: relative;
+}
+
+/* Nav Link */
+.side-link {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: var(--font-size-ui);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.side-link i,
+.side-link .icon {
+  font-size: 1.125rem;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.side-link:hover {
+  color: var(--text-on-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.side-link.active {
+  color: var(--text-on-primary);
+  background: var(--brand-green);
+}
+
+.side-link.active i,
+.side-link.active .icon {
+  color: var(--text-on-primary);
+}
+
+/* Nav Link with Badge */
+.side-link .badge {
+  margin-left: auto;
+}
+
+/* ========================================
+   SIDEBAR SUBMENU
+   ======================================== */
+
+.sidebar-submenu {
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) 0 var(--spacing-md) var(--spacing-2xl);
+  margin-top: var(--spacing-xs);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-submenu.open {
+  display: flex;
+}
+
+.sidebar-submenu .side-link {
+  padding-left: var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.sidebar-submenu .side-link::before {
+  content: '';
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 0;
+  background: var(--brand-green);
+  border-radius: 0 2px 2px 0;
+  transition: height var(--transition-fast);
+}
+
+.sidebar-submenu .side-link:hover::before,
+.sidebar-submenu .side-link.active::before {
+  height: 20px;
+}
+
+/* ========================================
+   SIDEBAR TOGGLE
+   ======================================== */
+
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm);
+  color: rgba(255, 255, 255, 0.7);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.sidebar-toggle:hover {
+  color: var(--text-on-primary);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-toggle i,
+.sidebar-toggle .icon {
+  font-size: 1.125rem;
+}
+
+/* ========================================
+   SIDEBAR FOOTER
+   ======================================== */
+
+.sidebar-footer {
+  padding: var(--spacing-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.sidebar-user:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+}
+
+.sidebar-user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.sidebar-user-name {
+  display: block;
+  color: var(--text-on-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar-user-role {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-normal);
+}
+
+/* ========================================
+   SIDEBAR COLLAPSED STATE
+   ======================================== */
+
+.sidebar.collapsed {
+  width: var(--sidebar-width-collapsed);
+}
+
+.sidebar.collapsed .sidebar-brand span,
+.sidebar.collapsed .sidebar-nav-label,
+.sidebar.collapsed .side-link span,
+.sidebar.collapsed .sidebar-user-info {
+  display: none;
+}
+
+.sidebar.collapsed .side-link {
+  justify-content: center;
+  padding: var(--spacing-sm);
+}
+
+.sidebar.collapsed .side-link i,
+.sidebar.collapsed .side-link .icon {
+  margin: 0;
+}
+
+.sidebar.collapsed .sidebar-user {
+  justify-content: center;
+}
+
+.sidebar.collapsed .sidebar-user-avatar {
+  margin: 0;
+}
+
+/* ========================================
+   SIDEBAR MOBILE
+   ======================================== */
+
+@media (max-width: 991px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-index-modal-backdrop);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-normal), visibility var(--transition-normal);
+  }
+
+  .sidebar-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* ========================================
+   SIDEBAR DARK MODE (if needed)
+   ======================================== */
+
+.sidebar-dark {
+  background: var(--theme-navy);
+}
+
+.sidebar-dark .side-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ========================================
+   CURRICULUM SIDEBAR (LMS)
+   ======================================== */
+
+.curriculum-sidebar {
+  background: var(--surface);
+  border-right: 1px solid var(--neutral-line);
+}
+
+.curriculum-sidebar .sidebar-header {
+  border-bottom-color: var(--neutral-line);
+}
+
+.curriculum-sidebar .sidebar-brand {
+  color: var(--text-primary);
+}
+
+.curriculum-sidebar .sidebar-nav-label {
+  color: var(--text-muted);
+}
+
+.curriculum-sidebar .side-link {
+  color: var(--text-secondary);
+}
+
+.curriculum-sidebar .side-link:hover {
+  color: var(--text-primary);
+  background: var(--soft-surface);
+}
+
+.curriculum-sidebar .side-link.active {
+  color: var(--brand-green);
+  background: var(--brand-green-light);
+}
+
+.curriculum-sidebar .side-link i,
+.curriculum-sidebar .side-link .icon {
+  color: var(--text-muted);
+}
+
+.curriculum-sidebar .side-link.active i,
+.curriculum-sidebar .side-link.active .icon {
+  color: var(--brand-green);
+}
+
+/* Chapter Heading */
+.curriculum-heading {
+  padding: var(--spacing-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  line-height: var(--line-height-normal);
+}
+
+/* Chapter Toggle */
+.chapter-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  color: var(--text-primary);
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  width: 100%;
+  text-align: left;
+}
+
+.chapter-toggle strong {
+  font-size: var(--font-size-ui);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+}
+
+.chapter-toggle:hover {
+  background: var(--soft-surface);
+}
+
+.chapter-toggle i,
+.chapter-toggle .icon {
+  transition: transform var(--transition-fast);
+}
+
+.chapter-toggle.open i,
+.chapter-toggle.open .icon {
+  transform: rotate(180deg);
+}
+
+/* Chapter Content */
+.chapter {
+  display: none;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: 0 var(--spacing-md) var(--spacing-md);
+}
+
+.chapter.open {
+  display: flex;
+}
+
+/* Lesson Link */
+.chapter a {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.chapter a:hover {
+  color: var(--text-primary);
+  background: var(--soft-surface);
+}
+
+.chapter a.active {
+  color: var(--brand-green);
+  background: var(--brand-green-light);
+}
+
+.chapter a strong {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chapter a .lesson-status {
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.chapter a .lesson-status.completed {
+  color: var(--brand-success);
+}
+
+.chapter a .lesson-status.locked {
+  color: var(--text-disabled);
+}

@@ -12,9 +12,15 @@ using LmsService;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl quản lý thư viện video trong CMS. Cung cấp chức năng thêm, sửa, xóa, chia sẻ và nhân bản video.
+    /// </summary>
     public partial class VideoLibrary : CmsControl
     {
 
+        /// <summary>
+        /// Xử lý sự kiện tải trang. Nạp dữ liệu danh sách video khi không phải postback.
+        /// </summary>
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -22,6 +28,9 @@ namespace InformationWeb.Controls.Cms
                 LoadData();
         }
 
+        /// <summary>
+        /// Truy vấn danh sách video từ database theo các điều kiện lọc.
+        /// </summary>
         private DataTable QueryVideos()
         {
             return ServiceRegistry.Content.GetDataTable(
@@ -45,6 +54,9 @@ namespace InformationWeb.Controls.Cms
             );
         }
 
+        /// <summary>
+        /// Nạp dữ liệu danh sách video và hiển thị lên Repeater.
+        /// </summary>
         private void LoadData()
         {
             try
@@ -67,12 +79,18 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút tìm kiếm. Đóng các modal và tải lại danh sách video.
+        /// </summary>
         protected void SearchButton_Click(object sender, EventArgs e)
         {
             CloseModals();
             LoadData();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút xóa bộ lọc. Đặt lại tất cả điều kiện lọc về mặc định và tải lại danh sách.
+        /// </summary>
         protected void ClearFiltersButton_Click(object sender, EventArgs e)
         {
             SearchText.Text = string.Empty;
@@ -84,6 +102,9 @@ namespace InformationWeb.Controls.Cms
             LoadData();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút thêm video mới. Hiển thị modal form với tiêu đề "Thêm video vào thư viện".
+        /// </summary>
         protected void OpenCreateButton_Click(object sender, EventArgs e)
         {
             ResetVideoForm();
@@ -96,12 +117,18 @@ namespace InformationWeb.Controls.Cms
             VideoModalUpdatePanel.Update();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút đóng modal video. Ẩn modal và xóa form.
+        /// </summary>
         protected void CloseVideoModalButton_Click(object sender, EventArgs e)
         {
             VideoModalPanel.Visible = false;
             ResetVideoForm();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút đóng modal chia sẻ. Ẩn modal và xóa dữ liệu chia sẻ.
+        /// </summary>
         protected void CloseShareButton_Click(object sender, EventArgs e)
         {
             ShareModalPanel.Visible = false;
@@ -109,6 +136,9 @@ namespace InformationWeb.Controls.Cms
             SharedTeachersList.Items.Clear();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi một item được tạo trong Repeater. Đăng ký các nút edit và share cho async postback.
+        /// </summary>
         protected void VideosRepeater_ItemCreated(object sender, RepeaterItemEventArgs e)
         {
             if (
@@ -127,6 +157,9 @@ namespace InformationWeb.Controls.Cms
                 manager.RegisterAsyncPostBackControl(share);
         }
 
+        /// <summary>
+        /// Xử lý các lệnh trên item Repeater: EditInfo, Share, Duplicate, Delete.
+        /// </summary>
         protected void VideosRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             long assetId;
@@ -162,6 +195,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Mở form chỉnh sửa thông tin video. Hiển thị modal với tiêu đề "Sửa video chưa có kết quả".
+        /// </summary>
         private void OpenEdit(DataRow row)
         {
             if (!Bool(row, "CanEdit"))
@@ -187,6 +223,9 @@ namespace InformationWeb.Controls.Cms
             VideoModalPanel.Visible = true;
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút lưu video. Thêm mới hoặc cập nhật video. Xử lý upload file nếu có.
+        /// </summary>
         protected void SaveVideoButton_Click(object sender, EventArgs e)
         {
             string physical = null;
@@ -312,6 +351,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Mở modal chia sẻ video. Nạp cấu hình chia sẻ hiện tại và danh sách giáo viên có thể chia sẻ.
+        /// </summary>
         private void OpenSharing(DataRow row)
         {
             if (!Bool(row, "CanShare"))
@@ -344,6 +386,9 @@ namespace InformationWeb.Controls.Cms
             ShareModalPanel.Visible = true;
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút lưu cấu hình chia sẻ. Lưu phạm vi chia sẻ và danh sách giáo viên được chia sẻ.
+        /// </summary>
         protected void SaveSharingButton_Click(object sender, EventArgs e)
         {
             try
@@ -402,6 +447,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Nhân bản video thành bản sao mới. Redirect sang trang editor của video mới.
+        /// </summary>
         private void Duplicate(DataRow row)
         {
             if (!Bool(row, "CanDuplicate"))
@@ -425,6 +473,9 @@ namespace InformationWeb.Controls.Cms
             Response.Redirect(ResolveUrl("~/cms/videos/" + videoId + "/editor"), true);
         }
 
+        /// <summary>
+        /// Xóa video khỏi thư viện. Chỉ xóa được khi video chưa được sử dụng.
+        /// </summary>
         private void Delete(DataRow row)
         {
             if (!Bool(row, "CanDelete"))
@@ -446,6 +497,9 @@ namespace InformationWeb.Controls.Cms
             ShowMessage("Đã xóa video chưa sử dụng khỏi thư viện.", true);
         }
 
+        /// <summary>
+        /// Tìm video trong danh sách theo ID. Trả về DataRow hoặc null nếu không tìm thấy.
+        /// </summary>
         private DataRow FindAsset(long id)
         {
             DataTable table = ServiceRegistry.Content.GetDataTable(
@@ -474,6 +528,9 @@ namespace InformationWeb.Controls.Cms
             return null;
         }
 
+        /// <summary>
+        /// Đặt lại form video về trạng thái mặc định. Xóa tất cả giá trị nhập liệu.
+        /// </summary>
         private void ResetVideoForm()
         {
             VideoAssetIdValue.Value =
@@ -488,6 +545,9 @@ namespace InformationWeb.Controls.Cms
             SyncNoticePanel.Visible = false;
         }
 
+        /// <summary>
+        /// Render HTML preview của video từ URL.
+        /// </summary>
         private void RenderVideoPreview()
         {
             string url = VideoUrlValue.Value;
@@ -498,12 +558,18 @@ namespace InformationWeb.Controls.Cms
                     + "\"></video></div>";
         }
 
+        /// <summary>
+        /// Đóng tất cả các modal đang mở.
+        /// </summary>
         private void CloseModals()
         {
             VideoModalPanel.Visible = false;
             ShareModalPanel.Visible = false;
         }
 
+        /// <summary>
+        /// Hiển thị thông báo cho người dùng. Thông báo có thể là thành công (xanh) hoặc lỗi (đỏ).
+        /// </summary>
         private void ShowMessage(string text, bool success)
         {
             MessageText.Text = Server.HtmlEncode(text);
@@ -511,6 +577,9 @@ namespace InformationWeb.Controls.Cms
             MessageText.Visible = true;
         }
 
+        /// <summary>
+        /// Validate URL video local. Đảm bảo URL hợp lệ và file tồn tại trên server.
+        /// </summary>
         private void ValidateLocalVideo(string url)
         {
             if (
@@ -525,11 +594,17 @@ namespace InformationWeb.Controls.Cms
                 throw new ArgumentException("Vui lòng chọn file video hợp lệ.");
         }
 
+        /// <summary>
+        /// Chuyển đổi string thành DBNull.Value nếu rỗng, ngược lại trả về giá trị đã trim.
+        /// </summary>
         private static object Null(string value)
         {
             return string.IsNullOrWhiteSpace(value) ? (object)DBNull.Value : value.Trim();
         }
 
+        /// <summary>
+        /// Lấy giá trị string từ DataRow một cách an toàn. Trả về string rỗng nếu không tồn tại hoặc null.
+        /// </summary>
         private static string Text(DataRow row, string column)
         {
             return row != null && row.Table.Columns.Contains(column) && row[column] != DBNull.Value
@@ -537,17 +612,26 @@ namespace InformationWeb.Controls.Cms
                 : string.Empty;
         }
 
+        /// <summary>
+        /// Lấy giá trị long từ DataRow một cách an toàn. Trả về 0 nếu không tồn tại hoặc không parse được.
+        /// </summary>
         private static long Long(DataRow row, string column)
         {
             long value;
             return long.TryParse(Text(row, column), out value) ? value : 0;
         }
 
+        /// <summary>
+        /// Lấy giá trị bool từ DataRow một cách an toàn. Trả về false nếu không tồn tại hoặc không parse được.
+        /// </summary>
         private static bool Bool(DataRow row, string column)
         {
             return row != null && row.Table.Columns.Contains(column) && ConvertBool(row[column]);
         }
 
+        /// <summary>
+        /// Đặt selected item trong ListControl theo giá trị. Nếu không tìm thấy, sử dụng giá trị fallback.
+        /// </summary>
         private static void SetSelected(ListControl list, string value, string fallback)
         {
             list.ClearSelection();
@@ -558,6 +642,9 @@ namespace InformationWeb.Controls.Cms
                 item.Selected = true;
         }
 
+        /// <summary>
+        /// Tạo Dictionary từ các cặp key-value (params object[]). Key ở vị trí chẵn, value ở vị trí lẻ.
+        /// </summary>
         private static IDictionary<string, object> Values(params object[] pairs)
         {
             Dictionary<string, object> values = new Dictionary<string, object>(
@@ -568,11 +655,17 @@ namespace InformationWeb.Controls.Cms
             return values;
         }
 
+        /// <summary>
+        /// Chuyển đổi object thành bool. Phương thức protected cho phép sử dụng trong template.
+        /// </summary>
         protected bool ToBool(object value)
         {
             return ConvertBool(value);
         }
 
+        /// <summary>
+        /// Chuyển đổi object thành bool một cách an toàn. Hỗ trợ string, bool, int.
+        /// </summary>
         private static bool ConvertBool(object value)
         {
             if (value == null || value == DBNull.Value)

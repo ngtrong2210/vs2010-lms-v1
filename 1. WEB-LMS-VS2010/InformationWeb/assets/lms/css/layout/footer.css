@@ -1,0 +1,419 @@
+/**
+ * Footer Component
+ * Footer area for LMS/CMS
+ */
+
+/* ========================================
+   FOOTER BASE
+   ======================================== */
+
+.lms-footer {
+  background: var(--theme-footer);
+  border-top: 1px solid var(--neutral-line);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+/* ========================================
+   FOOTER MAIN
+   ======================================== */
+
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.footer-main:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   FOOTER LEFT
+   ======================================== */
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.footer-left p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+}
+
+.footer-brand img,
+.footer-brand .logo {
+  height: 24px;
+  width: auto;
+}
+
+/* ========================================
+   FOOTER RIGHT
+   ======================================== */
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--text-primary);
+}
+
+/* ========================================
+   FOOTER CENTER
+   ======================================== */
+
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.footer-center p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+/* ========================================
+   FOOTER COPYRIGHT
+   ======================================== */
+
+.footer-copyright {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+}
+
+/* ========================================
+   FOOTER WITH SIDEBAR
+   ======================================== */
+
+.footer-with-sidebar {
+  margin-left: var(--sidebar-width);
+}
+
+@media (max-width: 991px) {
+  .footer-with-sidebar {
+    margin-left: 0;
+  }
+}
+
+/* ========================================
+   FOOTER VARIANTS
+   ======================================== */
+
+/* Footer Sticky */
+.footer-sticky {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-sticky);
+}
+
+/* Footer Fixed */
+.footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-index-fixed);
+}
+
+/* Footer Dark */
+.footer-dark {
+  background: var(--theme-navy);
+  border-top-color: var(--theme-sidebar);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-dark .footer-brand {
+  color: var(--text-on-primary);
+}
+
+.footer-dark .footer-link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-dark .footer-link:hover {
+  color: var(--text-on-primary);
+}
+
+.footer-dark .footer-copyright {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer Light */
+.footer-light {
+  background: var(--surface);
+  border-top-color: var(--neutral-line);
+}
+
+/* Footer Minimal */
+.footer-minimal {
+  padding: var(--spacing-md) var(--spacing-2xl);
+}
+
+.footer-minimal .footer-main {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   FOOTER SECTIONS
+   ======================================== */
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer-section-title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.footer-section-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer-section-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer-section-link:hover {
+  color: var(--text-primary);
+}
+
+@media (max-width: 991px) {
+  .footer-sections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   FOOTER SOCIAL
+   ======================================== */
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--text-secondary);
+  background: var(--soft-surface);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.footer-social-link:hover {
+  color: var(--text-primary);
+  background: var(--neutral-line);
+}
+
+.footer-social-link i,
+.footer-social-link .icon {
+  font-size: 1rem;
+}
+
+/* ========================================
+   FOOTER ACTION BAR
+   ======================================== */
+
+.footer-action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--surface);
+  border-top: 1px solid var(--neutral-line);
+}
+
+.footer-action-left {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.footer-action-right {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+/* ========================================
+   FOOTER PROGRESS
+   ======================================== */
+
+.footer-progress {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--surface);
+  border-top: 1px solid var(--neutral-line);
+}
+
+.footer-progress-bar {
+  height: 4px;
+  background: var(--soft-surface);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.footer-progress-fill {
+  height: 100%;
+  background: var(--brand-green);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-normal);
+}
+
+.footer-progress-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+}
+
+/* ========================================
+   FOOTER RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .lms-footer {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .footer-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-action-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-action-left,
+  .footer-action-right {
+    justify-content: center;
+  }
+}
+
+/* ========================================
+   FOOTER INSIDE MAIN
+   ======================================== */
+
+.footer-inside-main {
+  margin-top: auto;
+  border-top: 1px solid var(--neutral-line);
+  background: var(--surface);
+}
+
+/* ========================================
+   FOOTER STATUS
+   ======================================== */
+
+.footer-status {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+.footer-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--brand-success);
+}
+
+.footer-status-dot.online {
+  background: var(--brand-success);
+}
+
+.footer-status-dot.offline {
+  background: var(--brand-red);
+}
+
+.footer-status-dot.busy {
+  background: var(--brand-yellow);
+}
+
+/* ========================================
+   FOOTER VERSION
+   ======================================== */
+
+.footer-version {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  background: var(--soft-surface);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-xs);
+}

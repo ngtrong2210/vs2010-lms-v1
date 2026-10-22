@@ -8,77 +8,73 @@
         <link rel="icon" type="image/png" href="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" />
         <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap.min.css") %>" />
         <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap-icons.min.css") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/style.css") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/responsive.css") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/index.css") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/webforms.css?v=20260901-ui10") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/pages/auth/login.css") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/lms.css") %>" />
     </head>
     <body>
         <form id="LoginForm" runat="server">
             <main class="login-page">
-                <aside class="system-panel">
-                    <div class="brand brand-lockup" aria-label="Thiên Hà Số">
-                        <img class="brand-symbol" src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
-                        <span class="brand-name">Thiên Hà Số</span>
+                <aside class="login-banner">
+                    <div class="login-brand">
+                        <img src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
+                        <span>Thiên Hà Số</span>
                     </div>
-                    <div class="system-intro">
-                        <p class="eyebrow">HỆ THỐNG QUẢN LÝ HỌC TẬP</p>
+                    <div class="login-banner-content">
+                        <span class="badge">HỆ THỐNG QUẢN LÝ HỌC TẬP</span>
                         <h1>Không gian học tập dành cho học viên và giảng viên.</h1>
                         <p>Truy cập bài giảng, thực hiện kiểm tra và theo dõi kết quả học tập trên cùng một hệ thống.</p>
-                        <ul class="system-features">
+                        <ul class="login-features">
                             <li>
                                 <i class="bi bi-collection-play"></i>
-                                <span>
+                                <div>
                                     <strong>Khóa học và bài giảng</strong>
                                     <small>Nội dung được tổ chức theo chương, bài học.</small>
-                                </span>
+                                </div>
                             </li>
                             <li>
                                 <i class="bi bi-patch-question"></i>
-                                <span>
+                                <div>
                                     <strong>Video và câu hỏi tương tác</strong>
                                     <small>Thực hành ngay trong quá trình xem bài.</small>
-                                </span>
+                                </div>
                             </li>
                             <li>
                                 <i class="bi bi-bar-chart"></i>
-                                <span>
+                                <div>
                                     <strong>Tiến độ và kết quả</strong>
                                     <small>Theo dõi quá trình học tập theo thời gian.</small>
-                                </span>
+                                </div>
                             </li>
                         </ul>
                     </div>
-                    <div class="support-box">
+                    <div class="login-support">
                         <i class="bi bi-headset"></i>
-                        <span>
+                        <div>
                             <small>Cần hỗ trợ đăng nhập?</small>
                             <strong>Liên hệ bộ phận quản trị đào tạo</strong>
-                        </span>
+                        </div>
                     </div>
                 </aside>
-                <section class="form-panel">
+                <section class="login-form-section">
                     <div class="login-card">
-                        <div class="mobile-brand brand-lockup" aria-label="Thiên Hà Số">
-                            <img class="brand-symbol" src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
-                            <span class="brand-name">Thiên Hà Số</span>
+                        <div class="login-card-brand">
+                            <img src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
+                            <span>Thiên Hà Số</span>
                         </div>
-                        <header class="form-heading">
+                        <div class="login-card-header">
                             <span>ĐĂNG NHẬP TÀI KHOẢN</span>
                             <h2>Đăng nhập hệ thống</h2>
                             <p>Sử dụng tài khoản được cấp để truy cập khóa học của bạn.</p>
-                        </header>
+                        </div>
                         <asp:ValidationSummary
                             ID="ValidationSummary"
                             runat="server"
                             ValidationGroup="Login"
-                            CssClass="alert alert-danger py-2"
+                            CssClass="alert alert-danger"
                         />
-                        <asp:Label ID="MessageText" runat="server" CssClass="alert alert-danger py-2 status-message" Visible="false" />
-                        <div class="field-group">
+                        <asp:Label ID="MessageText" runat="server" CssClass="alert alert-danger" Visible="false" />
+                        <div class="form-group">
                             <label class="form-label" for="UsernameText">Tên đăng nhập</label>
-                            <div class="input-wrap">
+                            <div class="input-group">
                                 <i class="bi bi-person"></i>
                                 <asp:TextBox
                                     ID="UsernameText"
@@ -98,9 +94,9 @@
                                 Display="Dynamic"
                             />
                         </div>
-                        <div class="field-group">
+                        <div class="form-group">
                             <label class="form-label" for="PasswordText">Mật khẩu</label>
-                            <div class="input-wrap">
+                            <div class="input-group">
                                 <i class="bi bi-lock"></i>
                                 <asp:TextBox
                                     ID="PasswordText"
@@ -122,20 +118,20 @@
                                 Display="Dynamic"
                             />
                         </div>
-                        <div class="form-options">
-                            <label><asp:CheckBox ID="RememberCheck" runat="server" Text=" Ghi nhớ đăng nhập" /></label>
-                            <span class="text-secondary">Tài khoản được nhà trường cấp</span>
+                        <div class="form-actions">
+                            <label class="checkbox-label"><asp:CheckBox ID="RememberCheck" runat="server" Text=" Ghi nhớ đăng nhập" /></label>
+                            <span class="text-muted">Tài khoản được nhà trường cấp</span>
                         </div>
                         <asp:Button
                             ID="LoginButton"
                             runat="server"
-                            Text="Đăng nhập  →"
-                            CssClass="btn btn-brand login-button w-100"
+                            Text="Đăng nhập"
+                            CssClass="btn btn-primary btn-full"
                             ValidationGroup="Login"
                             OnClick="LoginButton_Click"
                         />
                         <div class="demo-box">
-                            <div class="demo-heading">
+                            <div class="demo-box-header">
                                 <strong>Tài khoản dùng thử</strong>
                                 <small>Nhấn để điền nhanh</small>
                             </div>
@@ -158,7 +154,7 @@
                                 <strong>123456</strong>
                             </p>
                         </div>
-                        <p class="security-note">
+                        <p class="login-security-note">
                             <i class="bi bi-shield-check"></i>
                             Không chia sẻ thông tin đăng nhập cho người khác.
                         </p>

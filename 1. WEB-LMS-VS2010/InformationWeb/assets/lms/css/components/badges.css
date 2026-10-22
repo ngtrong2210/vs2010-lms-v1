@@ -1,0 +1,455 @@
+/**
+ * Badges Component
+ * All badge variants and states
+ */
+
+/* ========================================
+   BADGE BASE
+   ======================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 0.38rem 0.5rem;
+  font-size: 0.74rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.3;
+  letter-spacing: 0.015em;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+  text-transform: none;
+}
+
+/* ========================================
+   SOLID BADGES
+   ======================================== */
+
+.badge-primary {
+  color: var(--text-on-primary);
+  background-color: var(--brand-green);
+}
+
+.badge-secondary {
+  color: var(--text-on-primary);
+  background-color: var(--brand-blue);
+}
+
+.badge-success {
+  color: var(--text-on-primary);
+  background-color: var(--brand-success);
+}
+
+.badge-danger {
+  color: var(--text-on-primary);
+  background-color: var(--brand-red);
+}
+
+.badge-warning {
+  color: var(--theme-navy);
+  background-color: var(--brand-yellow);
+}
+
+.badge-info {
+  color: var(--text-on-primary);
+  background-color: var(--brand-blue);
+}
+
+.badge-light {
+  color: var(--text-primary);
+  background-color: var(--soft-surface);
+  border: 1px solid var(--neutral-line);
+}
+
+.badge-dark {
+  color: var(--text-on-primary);
+  background-color: var(--theme-navy);
+}
+
+/* ========================================
+   SOFT BADGES
+   ======================================== */
+
+.badge-soft-primary {
+  color: #00447f;
+  background-color: #e4eff9;
+}
+
+.badge-soft-secondary {
+  color: #00447f;
+  background-color: #e4eff9;
+}
+
+.badge-soft-success {
+  color: #056c48;
+  background-color: #dff2eb;
+}
+
+.badge-soft-danger {
+  color: #a41515;
+  background-color: #fbe7e7;
+}
+
+.badge-soft-warning {
+  color: #755f00;
+  background-color: #fff7c7;
+}
+
+.badge-soft-info {
+  color: #00447f;
+  background-color: #e4eff9;
+}
+
+.badge-soft-light {
+  color: var(--text-secondary);
+  background-color: var(--soft-surface);
+}
+
+.badge-soft-dark {
+  color: var(--theme-navy);
+  background-color: var(--soft-surface);
+}
+
+/* ========================================
+   OUTLINE BADGES
+   ======================================== */
+
+.badge-outline-primary {
+  color: var(--brand-green);
+  background-color: transparent;
+  border: 1px solid var(--brand-green);
+}
+
+.badge-outline-secondary {
+  color: var(--brand-blue);
+  background-color: transparent;
+  border: 1px solid var(--brand-blue);
+}
+
+.badge-outline-success {
+  color: var(--brand-success);
+  background-color: transparent;
+  border: 1px solid var(--brand-success);
+}
+
+.badge-outline-danger {
+  color: var(--brand-red);
+  background-color: transparent;
+  border: 1px solid var(--brand-red);
+}
+
+.badge-outline-warning {
+  color: var(--brand-yellow);
+  background-color: transparent;
+  border: 1px solid var(--brand-yellow);
+}
+
+.badge-outline-info {
+  color: var(--brand-blue);
+  background-color: transparent;
+  border: 1px solid var(--brand-blue);
+}
+
+/* ========================================
+   BADGE SIZES
+   ======================================== */
+
+.badge-sm {
+  padding: 0.25rem 0.4rem;
+  font-size: 0.7rem;
+}
+
+.badge {
+  /* Default size */
+  padding: 0.38rem 0.5rem;
+  font-size: 0.74rem;
+}
+
+.badge-lg {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* ========================================
+   BADGE WITH ICON
+   ======================================== */
+
+.badge i,
+.badge .icon {
+  font-size: 0.9em;
+}
+
+.badge i:first-child,
+.badge .icon:first-child {
+  margin-right: var(--spacing-xs);
+}
+
+.badge i:last-child,
+.badge .icon:last-child {
+  margin-left: var(--spacing-xs);
+}
+
+/* ========================================
+   BADGE PILL
+   ======================================== */
+
+.badge-pill {
+  border-radius: var(--radius-full);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/* ========================================
+   BADGE ROUNDED
+   ======================================== */
+
+.badge-rounded {
+  border-radius: var(--radius-sm);
+}
+
+/* ========================================
+   BADGE STATUS VARIANTS
+   ======================================== */
+
+/* Active / Published */
+.badge-active,
+.badge-published {
+  color: var(--brand-success);
+  background-color: var(--brand-success-light);
+}
+
+/* Inactive / Unpublished */
+.badge-inactive,
+.badge-unpublished {
+  color: var(--text-muted);
+  background-color: var(--soft-surface);
+}
+
+/* Pending / Draft */
+.badge-pending,
+.badge-draft {
+  color: #755f00;
+  background-color: var(--brand-yellow-light);
+}
+
+/* Locked / Closed */
+.badge-locked,
+.badge-closed {
+  color: var(--brand-red);
+  background-color: var(--brand-red-light);
+}
+
+/* Archived */
+.badge-archived {
+  color: var(--text-secondary);
+  background-color: var(--soft-surface);
+}
+
+/* Featured */
+.badge-featured {
+  color: var(--brand-secondary);
+  background-color: var(--brand-secondary-light);
+}
+
+/* New */
+.badge-new {
+  color: var(--brand-green);
+  background-color: var(--brand-green-light);
+}
+
+/* ========================================
+   BADGE DOTS
+   ======================================== */
+
+.badge-dot {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.badge-dot::before {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.badge-dot-primary::before {
+  background-color: var(--brand-green);
+}
+
+.badge-dot-success::before {
+  background-color: var(--brand-success);
+}
+
+.badge-dot-danger::before {
+  background-color: var(--brand-red);
+}
+
+.badge-dot-warning::before {
+  background-color: var(--brand-yellow);
+}
+
+.badge-dot-info::before {
+  background-color: var(--brand-blue);
+}
+
+/* ========================================
+   BADGE WITH COUNTER
+   ======================================== */
+
+.badge-count {
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-bold);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+}
+
+/* ========================================
+   BADGE POSITIONED
+   ======================================== */
+
+.badge-positioned {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  z-index: 1;
+}
+
+/* ========================================
+   COMMENT ROLE BADGE
+   ======================================== */
+
+.comment-role {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.3;
+  letter-spacing: 0;
+  border-radius: var(--radius-xs);
+  text-transform: uppercase;
+}
+
+.comment-role-admin {
+  color: var(--brand-red);
+  background-color: var(--brand-red-light);
+}
+
+.comment-role-moderator {
+  color: var(--brand-blue);
+  background-color: var(--brand-blue-light);
+}
+
+.comment-role-author {
+  color: var(--brand-green);
+  background-color: var(--brand-green-light);
+}
+
+/* ========================================
+   STATUS BADGE
+   ======================================== */
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.3;
+  border-radius: var(--radius-xs);
+}
+
+.status-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-badge-online::before {
+  background-color: var(--brand-success);
+}
+
+.status-badge-offline::before {
+  background-color: var(--text-muted);
+}
+
+.status-badge-busy::before {
+  background-color: var(--brand-red);
+}
+
+.status-badge-away::before {
+  background-color: var(--brand-yellow);
+}
+
+/* ========================================
+   CATEGORY BADGE
+   ======================================== */
+
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  background-color: var(--soft-surface);
+  border: 1px solid var(--neutral-line);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.category-badge:hover {
+  background-color: var(--neutral-line);
+  border-color: var(--neutral-line-strong);
+}
+
+/* ========================================
+   TAG BADGE
+   ======================================== */
+
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--text-secondary);
+  background-color: var(--soft-surface);
+  border-radius: var(--radius-sm);
+}
+
+.tag-badge i,
+.tag-badge .icon {
+  font-size: 0.9em;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity var(--transition-fast);
+}
+
+.tag-badge i:hover,
+.tag-badge .icon:hover {
+  opacity: 1;
+}
+
+/* ========================================
+   BADGE GROUP
+   ======================================== */
+
+.badge-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}

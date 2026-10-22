@@ -7,8 +7,15 @@ using LmsService.Course;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl quản lý thư viện khóa học trong CMS.
+    /// Cung cấp chức năng thêm, sửa, xóa, xuất bản và lưu trữ khóa học.
+    /// </summary>
     public partial class CourseLibrary : LmsControl
     {
+        /// <summary>
+        /// Xử lý sự kiện tải trang. Tải dữ liệu nếu không phải là postback.
+        /// </summary>
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -18,12 +25,18 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Tải dữ liệu cho trang: danh sách lọc và danh sách khóa học.
+        /// </summary>
         public void LoadData()
         {
             BindFilterLists();
             BindCourseGrid();
         }
 
+        /// <summary>
+        /// Liên kết dữ liệu cho các danh sách lọc: danh mục, giảng viên, môn học.
+        /// </summary>
         private void BindFilterLists()
         {
             CategoryService.InitDropDownList(CategoryFilter);
@@ -35,6 +48,9 @@ namespace InformationWeb.Controls.Cms
             BindClassSubjectList(ClassSubjectList);
         }
 
+        /// <summary>
+        /// Liên kết danh sách người dùng vào dropdown list. Hiển thị định dạng "Tên đầy đủ (Tên đăng nhập)".
+        /// </summary>
         private void BindUserList(DropDownList ddl)
         {
             ddl.Items.Clear();
@@ -59,6 +75,9 @@ namespace InformationWeb.Controls.Cms
             catch { }
         }
 
+        /// <summary>
+        /// Liên kết danh sách môn học (ClassSubject) vào dropdown list.
+        /// </summary>
         private void BindClassSubjectList(DropDownList ddl)
         {
             ddl.Items.Clear();
@@ -82,6 +101,9 @@ namespace InformationWeb.Controls.Cms
             catch { }
         }
 
+        /// <summary>
+        /// Liên kết dữ liệu cho GridView hiển thị danh sách khóa học.
+        /// </summary>
         private void BindCourseGrid()
         {
             string condition = BuildFilterCondition();
@@ -90,6 +112,9 @@ namespace InformationWeb.Controls.Cms
             CourseGrid.DataBind();
         }
 
+        /// <summary>
+        /// Xây dựng chuỗi điều kiện lọc dựa trên các tiêu chí: từ khóa tìm kiếm, danh mục, trạng thái, giảng viên.
+        /// </summary>
         private string BuildFilterCondition()
         {
             System.Text.StringBuilder sb = new System.Text.StringBuilder();
@@ -126,6 +151,9 @@ namespace InformationWeb.Controls.Cms
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút thêm khóa học mới. Hiển thị form chỉnh sửa với tiêu đề "Thêm khóa học mới".
+        /// </summary>
         protected void AddCourseButton_Click(object sender, EventArgs e)
         {
             EditPanel.Visible = true;
@@ -134,11 +162,17 @@ namespace InformationWeb.Controls.Cms
             CourseIdValue.Value = "";
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút lọc. Tải lại danh sách khóa học theo điều kiện lọc.
+        /// </summary>
         protected void FilterButton_Click(object sender, EventArgs e)
         {
             BindCourseGrid();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút đặt lại. Xóa tất cả điều kiện lọc và tải lại danh sách khóa học.
+        /// </summary>
         protected void ResetButton_Click(object sender, EventArgs e)
         {
             SearchText.Text = "";
@@ -148,6 +182,9 @@ namespace InformationWeb.Controls.Cms
             BindCourseGrid();
         }
 
+        /// <summary>
+        /// Xử lý các lệnh trên dòng GridView: EditCourse, DeleteCourse, PublishCourse, ArchiveCourse.
+        /// </summary>
         protected void CourseGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             long courseId = Convert.ToInt64(e.CommandArgument);
@@ -170,6 +207,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi một dòng được tạo trong GridView. Định dạng hiển thị trạng thái khóa học.
+        /// </summary>
         protected void CourseGrid_RowCreated(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
@@ -186,12 +226,18 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện chuyển trang trên GridView. Tải lại dữ liệu cho trang mới.
+        /// </summary>
         protected void CourseGrid_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             CourseGrid.PageIndex = e.NewPageIndex;
             BindCourseGrid();
         }
 
+        /// <summary>
+        /// Chuyển đổi mã trạng thái sang nhãn tiếng Việt.
+        /// </summary>
         private string GetStatusText(string status)
         {
             switch (status)
@@ -203,6 +249,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Chuyển đổi mã trạng thái sang class CSS cho hiển thị màu sắc.
+        /// </summary>
         private string GetStatusClass(string status)
         {
             switch (status)
@@ -214,6 +263,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Tải thông tin khóa học vào form chỉnh sửa. Hiển thị panel chỉnh sửa với tiêu đề "Chỉnh sửa khóa học".
+        /// </summary>
         private void EditCourse(long courseId)
         {
             DataTable dtb = CourseService.GetCourseList(null);
@@ -240,6 +292,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xuất bản khóa học. Hiển thị thông báo kết quả và tải lại danh sách.
+        /// </summary>
         private void PublishCourse(long courseId)
         {
             bool result = CourseService.PublishCourse(courseId);
@@ -255,6 +310,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Lưu trữ khóa học. Hiển thị thông báo kết quả và tải lại danh sách.
+        /// </summary>
         private void ArchiveCourse(long courseId)
         {
             bool result = CourseService.ArchiveCourse(courseId);
@@ -270,6 +328,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xóa khóa học. Hiển thị thông báo kết quả và tải lại danh sách.
+        /// </summary>
         private void DeleteCourse(long courseId)
         {
             bool result = CourseService.DeleteCourse(courseId);
@@ -285,6 +346,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút lưu. Thêm mới hoặc cập nhật khóa học dựa trên CourseIdValue.
+        /// </summary>
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             if (!Page.IsValid)
@@ -336,12 +400,18 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện nhấn nút hủy. Ẩn panel chỉnh sửa và xóa form.
+        /// </summary>
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             EditPanel.Visible = false;
             ClearForm();
         }
 
+        /// <summary>
+        /// Xóa dữ liệu trong form chỉnh sửa, đặt lại về giá trị mặc định.
+        /// </summary>
         private void ClearForm()
         {
             CodeText.Text = "";
@@ -358,6 +428,9 @@ namespace InformationWeb.Controls.Cms
             StatusList.SelectedValue = "DRAFT";
         }
 
+        /// <summary>
+        /// Hiển thị thông báo cho người dùng. isError = true hiển thị thông báo lỗi (danger), false hiển thị thông báo thành công (success).
+        /// </summary>
         private void ShowMessage(string message, bool isError)
         {
             ActionMessageText.Visible = true;

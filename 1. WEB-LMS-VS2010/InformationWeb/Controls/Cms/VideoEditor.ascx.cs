@@ -15,13 +15,24 @@ using LmsService;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// Trình biên tập video - cho phép chỉnh sửa thông tin video và thêm tương tác (interaction).
+    /// </summary>
     public partial class VideoEditor : CmsControl
     {
         private static readonly JavaScriptSerializer Json = new JavaScriptSerializer();
+
+        /// <summary>
+        /// ID của video đang chỉnh sửa, lấy từ route parameter "videoId".
+        /// </summary>
         private long VideoId
         {
             get { return RouteLong("videoId"); }
         }
+
+        /// <summary>
+        /// Xác định xem người dùng hiện tại có quyền chỉnh sửa video hay không, dựa trên CanEditValue.
+        /// </summary>
         private bool CanEdit
         {
             get
@@ -34,6 +45,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện Page_Load: nạp dữ liệu ban đầu.
+        /// </summary>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (VideoId <= 0)
@@ -60,6 +74,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Nạp thông tin video từ cơ sở dữ liệu.
+        /// </summary>
         private void LoadVideo()
         {
             DataTable table = ServiceRegistry.Content.GetDataTable(
@@ -90,6 +107,9 @@ namespace InformationWeb.Controls.Cms
             );
         }
 
+        /// <summary>
+        /// Cấu hình quyền chỉnh sửa dựa trên trạng thái CanEdit.
+        /// </summary>
         private void ConfigurePermissions()
         {
             bool canEdit = CanEdit;
@@ -101,6 +121,9 @@ namespace InformationWeb.Controls.Cms
             DuplicateVideoButton.Enabled = ToLong(VideoAssetIdValue.Value) > 0;
         }
 
+        /// <summary>
+        /// Nạp danh sách tương tác của video từ cơ sở dữ liệu.
+        /// </summary>
         private DataTable LoadInteractions()
         {
             DataTable table = ServiceRegistry.Content.GetDataTable(
@@ -125,6 +148,9 @@ namespace InformationWeb.Controls.Cms
             return table;
         }
 
+        /// <summary>
+        /// Nạp danh sách câu hỏi cho dropdown chọn câu hỏi.
+        /// </summary>
         private void LoadQuestions(long selectedId)
         {
             DataTable table = ServiceRegistry.Questions.GetDataTable(
@@ -157,6 +183,9 @@ namespace InformationWeb.Controls.Cms
                 }
         }
 
+        /// <summary>
+        /// Sự kiện Click của SearchQuestionButton: tìm kiếm câu hỏi.
+        /// </summary>
         protected void SearchQuestionButton_Click(object sender, EventArgs e)
         {
             long selected = ToLong(QuestionList.SelectedValue);
@@ -164,6 +193,9 @@ namespace InformationWeb.Controls.Cms
             InteractionEditorPanel.Visible = true;
         }
 
+        /// <summary>
+        /// Hiển thị trình phát video trong chế độ chỉnh sửa.
+        /// </summary>
         private void RenderEditorPlayer()
         {
             string url = VideoUrlValue.Value,
@@ -191,6 +223,9 @@ namespace InformationWeb.Controls.Cms
                     + "\" controls=\"controls\" preload=\"metadata\"></video>";
         }
 
+        /// <summary>
+        /// Sự kiện Click của UploadVideoButton: tải file video lên.
+        /// </summary>
         protected void UploadVideoButton_Click(object sender, EventArgs e)
         {
             string physical = null;
@@ -244,6 +279,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện Click của SaveVideoButton: lưu thông tin video.
+        /// </summary>
         protected void SaveVideoButton_Click(object sender, EventArgs e)
         {
             try
@@ -298,6 +336,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện Click của DuplicateVideoButton: nhân bản video.
+        /// </summary>
         protected void DuplicateVideoButton_Click(object sender, EventArgs e)
         {
             try
@@ -336,6 +377,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện Click của AddAtCurrentButton: thêm tương tác tại thời điểm hiện tại của video.
+        /// </summary>
         protected void AddAtCurrentButton_Click(object sender, EventArgs e)
         {
             try
@@ -364,6 +408,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện ItemCommand của InteractionsRepeater: xử lý các lệnh từ danh sách tương tác.
+        /// </summary>
         protected void InteractionsRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             long id;
@@ -390,6 +437,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện ItemCreated của InteractionsRepeater: xử lý khi tạo item trong danh sách tương tác.
+        /// </summary>
         protected void InteractionsRepeater_ItemCreated(object sender, RepeaterItemEventArgs e)
         {
             if (
@@ -408,6 +458,9 @@ namespace InformationWeb.Controls.Cms
                 manager.RegisterAsyncPostBackControl(delete);
         }
 
+        /// <summary>
+        /// Mở form chỉnh sửa tương tác với dữ liệu từ DataRow.
+        /// </summary>
         private void OpenInteraction(DataRow row)
         {
             long id = LongAny(row, "Id", "VideoInteractionID"),
@@ -426,6 +479,9 @@ namespace InformationWeb.Controls.Cms
             DeleteFromEditorButton.Visible = true;
         }
 
+        /// <summary>
+        /// Sự kiện Click của SaveInteractionButton: lưu thông tin tương tác.
+        /// </summary>
         protected void SaveInteractionButton_Click(object sender, EventArgs e)
         {
             try
@@ -502,12 +558,18 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện Click của CloseInteractionButton: đóng form chỉnh sửa tương tác.
+        /// </summary>
         protected void CloseInteractionButton_Click(object sender, EventArgs e)
         {
             InteractionEditorPanel.Visible = false;
             ResetInteractionForm();
         }
 
+        /// <summary>
+        /// Sự kiện Click của DeleteFromEditorButton: hiển thị xác nhận xóa tương tác.
+        /// </summary>
         protected void DeleteFromEditorButton_Click(object sender, EventArgs e)
         {
             if (ToLong(InteractionIdValue.Value) > 0)
@@ -523,11 +585,17 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Hủy xóa tương tác và đóng bảng xác nhận.
+        /// </summary>
         protected void CancelDeleteButton_Click(object sender, EventArgs e)
         {
             DeleteConfirmPanel.Visible = false;
         }
 
+        /// <summary>
+        /// Xác nhận xóa tương tác từ cơ sở dữ liệu.
+        /// </summary>
         protected void ConfirmDeleteButton_Click(object sender, EventArgs e)
         {
             try
@@ -563,6 +631,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện Click của OpenQuickQuestionButton: mở form tạo câu hỏi nhanh.
+        /// </summary>
         protected void OpenQuickQuestionButton_Click(object sender, EventArgs e)
         {
             EnsureEditable();
@@ -570,12 +641,18 @@ namespace InformationWeb.Controls.Cms
             InteractionEditorPanel.Visible = false;
         }
 
+        /// <summary>
+        /// Đóng form tạo câu hỏi nhanh và quay lại form chỉnh sửa tương tác.
+        /// </summary>
         protected void CloseQuickQuestionButton_Click(object sender, EventArgs e)
         {
             QuickQuestionPanel.Visible = false;
             InteractionEditorPanel.Visible = true;
         }
 
+        /// <summary>
+        /// Lưu câu hỏi nhanh vào hệ thống và gán vào timeline video.
+        /// </summary>
         protected void SaveQuickQuestionButton_Click(object sender, EventArgs e)
         {
             try
@@ -649,6 +726,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Sự kiện Click của PreviewButton: hiển thị chế độ xem trước video với các tương tác.
+        /// </summary>
         protected void PreviewButton_Click(object sender, EventArgs e)
         {
             DataTable table = LoadInteractions();
@@ -658,11 +738,17 @@ namespace InformationWeb.Controls.Cms
             PreviewPanel.Visible = true;
         }
 
+        /// <summary>
+        /// Đóng chế độ xem trước video.
+        /// </summary>
         protected void ClosePreviewButton_Click(object sender, EventArgs e)
         {
             PreviewPanel.Visible = false;
         }
 
+        /// <summary>
+        /// Xây dựng HTML cho trình phát video tương tác.
+        /// </summary>
         private string BuildInteractivePlayer(string mode, DataTable table)
         {
             string url = VideoUrlValue.Value,
@@ -697,6 +783,9 @@ namespace InformationWeb.Controls.Cms
                 + "</div><div class=\"interaction-timeline\"><div class=\"interaction-track seekable\" tabindex=\"0\"><span class=\"interaction-track-progress\"></span><span class=\"interaction-playhead\"></span></div><div class=\"timeline-current\"><i class=\"bi bi-clock\"></i><strong>00:00</strong></div></div></div>";
         }
 
+        /// <summary>
+        /// Xây dựng HTML cho danh sách tương tác trong chế độ xem trước.
+        /// </summary>
         private string BuildPreviewList(DataTable table)
         {
             if (table == null || table.Rows.Count == 0)
@@ -715,6 +804,9 @@ namespace InformationWeb.Controls.Cms
             return html.ToString();
         }
 
+        /// <summary>
+        /// Tìm tương tác theo ID trong danh sách tương tác.
+        /// </summary>
         private DataRow FindInteraction(long id)
         {
             DataTable table = ServiceRegistry.Content.GetDataTable(
@@ -735,12 +827,18 @@ namespace InformationWeb.Controls.Cms
             return null;
         }
 
+        /// <summary>
+        /// Đảm bảo tương tác tồn tại, nếu không tìm thấy sẽ ném ngoại lệ.
+        /// </summary>
         private void EnsureInteraction(long id)
         {
             if (id <= 0 || FindInteraction(id) == null)
                 throw new InvalidOperationException("Tương tác không thuộc video hiện tại.");
         }
 
+        /// <summary>
+        /// Đảm bảo người dùng có quyền chỉnh sửa, nếu không sẽ ném ngoại lệ.
+        /// </summary>
         private void EnsureEditable()
         {
             if (!CanEdit)
@@ -749,6 +847,9 @@ namespace InformationWeb.Controls.Cms
                 );
         }
 
+        /// <summary>
+        /// Tính toán thứ tự sắp xếp cho tương tác mới dựa trên thời gian (giây), ưu tiên tương tác hiện tại.
+        /// </summary>
         private int NextSortOrder(int time, long currentId)
         {
             DataTable table = ServiceRegistry.Content.GetDataTable(
@@ -773,6 +874,12 @@ namespace InformationWeb.Controls.Cms
             return max + 1;
         }
 
+        /// <summary>
+        /// Đặt lại form chỉnh sửa tương tác về trạng thái mặc định.
+        /// </summary>
+        /// <summary>
+        /// Đặt lại form chỉnh sửa tương tác về giá trị mặc định.
+        /// </summary>
         private void ResetInteractionForm()
         {
             InteractionIdValue.Value = string.Empty;
@@ -786,6 +893,9 @@ namespace InformationWeb.Controls.Cms
             DeleteFromEditorButton.Visible = false;
         }
 
+        /// <summary>
+        /// Chuyển đổi DataTable tương tác thành chuỗi JSON.
+        /// </summary>
         private string SerializeInteractions(DataTable table)
         {
             List<Dictionary<string, object>> items = new List<Dictionary<string, object>>();
@@ -812,6 +922,9 @@ namespace InformationWeb.Controls.Cms
             return Json.Serialize(items);
         }
 
+        /// <summary>
+        /// Phân tích chuỗi JSON thành đối tượng. Trả về mảng rỗng nếu chuỗi không hợp lệ.
+        /// </summary>
         private static object ParseJson(string value)
         {
             if (string.IsNullOrWhiteSpace(value))
@@ -826,6 +939,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Tách chuỗi thành danh sách các dòng, loại bỏ dòng trống và khoảng trắng thừa.
+        /// </summary>
         private static IEnumerable<string> Lines(string value)
         {
             return (value ?? string.Empty)
@@ -834,6 +950,9 @@ namespace InformationWeb.Controls.Cms
                 .Where(x => x.Length > 0);
         }
 
+        /// <summary>
+        /// Kiểm tra tính hợp lệ của nguồn video và URL. Ném ArgumentException nếu không hợp lệ.
+        /// </summary>
         private void ValidateSource(string source, string url)
         {
             if (source == "LOCAL")
@@ -853,6 +972,9 @@ namespace InformationWeb.Controls.Cms
                 throw new ArgumentException("URL YouTube không hợp lệ.");
         }
 
+        /// <summary>
+        /// Chuyển URL tài nguyên thành URL tuyệt đối. Thêm "~" vào URL bắt đầu bằng "/" để ResolveUrl xử lý.
+        /// </summary>
         private string ResolveAsset(string url)
         {
             return string.IsNullOrWhiteSpace(url) ? string.Empty
@@ -860,6 +982,9 @@ namespace InformationWeb.Controls.Cms
                 : url;
         }
 
+        /// <summary>
+        /// Chuẩn hóa tên nguồn video: trả về "YOUTUBE" hoặc "LOCAL".
+        /// </summary>
         private static string NormalizeSource(string source)
         {
             return string.Equals(source, "YOUTUBE", StringComparison.OrdinalIgnoreCase)
@@ -867,6 +992,9 @@ namespace InformationWeb.Controls.Cms
                 : "LOCAL";
         }
 
+        /// <summary>
+        /// Trích xuất ID video (11 ký tự) từ URL YouTube (yêu cầu HTTPS).
+        /// </summary>
         private static string YouTubeId(string url)
         {
             Uri uri;
@@ -884,6 +1012,9 @@ namespace InformationWeb.Controls.Cms
             return !string.IsNullOrWhiteSpace(id) && id.Length == 11 ? id : string.Empty;
         }
 
+        /// <summary>
+        /// Hiển thị thông báo kết quả trên giao diện. success: true cho thông báo thành công (xanh), false cho lỗi (đỏ).
+        /// </summary>
         private void ShowMessage(string text, bool success)
         {
             MessageText.Text = Server.HtmlEncode(text);
@@ -891,6 +1022,9 @@ namespace InformationWeb.Controls.Cms
             MessageText.Visible = true;
         }
 
+        /// <summary>
+        /// Đặt giá trị được chọn cho dropdown list. Nếu value không tồn tại trong danh sách thì dùng fallback.
+        /// </summary>
         private static void SetSelected(ListControl list, string value, string fallback)
         {
             list.ClearSelection();
@@ -899,11 +1033,17 @@ namespace InformationWeb.Controls.Cms
                 item.Selected = true;
         }
 
+        /// <summary>
+        /// Trả về null nếu chuỗi rỗng, ngược lại trả về chuỗi.
+        /// </summary>
         private static object Null(string value)
         {
             return string.IsNullOrWhiteSpace(value) ? (object)DBNull.Value : value.Trim();
         }
 
+        /// <summary>
+        /// Lấy giá trị chuỗi từ cột DataRow. Trả về chuỗi rỗng nếu cột không tồn tại hoặc giá trị null.
+        /// </summary>
         private static string Text(DataRow row, string column)
         {
             return row != null && row.Table.Columns.Contains(column) && row[column] != DBNull.Value
@@ -911,6 +1051,9 @@ namespace InformationWeb.Controls.Cms
                 : string.Empty;
         }
 
+        /// <summary>
+        /// Lấy giá trị chuỗi từ một trong các cột DataRow. Thử từng cột theo thứ tự, trả về giá trị của cột đầu tiên có dữ liệu không rỗng, hoặc chuỗi rỗng nếu tất cả đều rỗng.
+        /// </summary>
         private static string TextAny(DataRow row, params string[] columns)
         {
             foreach (string column in columns)
@@ -922,6 +1065,9 @@ namespace InformationWeb.Controls.Cms
             return string.Empty;
         }
 
+        /// <summary>
+        /// Lấy giá trị long từ một trong các cột DataRow. Thử từng cột theo thứ tự, trả về giá trị của cột đầu tiên có thể parse thành long, hoặc 0 nếu không có.
+        /// </summary>
         private static long LongAny(DataRow row, params string[] columns)
         {
             long value;
@@ -931,11 +1077,17 @@ namespace InformationWeb.Controls.Cms
             return 0;
         }
 
+        /// <summary>
+        /// Lấy giá trị boolean từ cột DataRow bằng cách chuyển đổi chuỗi thành bool.
+        /// </summary>
         private static bool Bool(DataRow row, string column)
         {
             return ToBool(Text(row, column));
         }
 
+        /// <summary>
+        /// Lấy giá trị boolean từ cột DataRow với giá trị mặc định. Trả về fallback nếu cột không tồn tại hoặc giá trị null.
+        /// </summary>
         private static bool BoolDefault(DataRow row, string column, bool fallback)
         {
             return row != null && row.Table.Columns.Contains(column) && row[column] != DBNull.Value
@@ -943,6 +1095,9 @@ namespace InformationWeb.Controls.Cms
                 : fallback;
         }
 
+        /// <summary>
+        /// Chuyển đổi đối tượng sang boolean. Thử parse thành bool trước, nếu không được thì thử parse thành int (khác 0 là true), ngược lại trả về false.
+        /// </summary>
         private static bool ToBool(object value)
         {
             bool parsed;
@@ -952,24 +1107,36 @@ namespace InformationWeb.Controls.Cms
             return int.TryParse(Convert.ToString(value), out number) && number != 0;
         }
 
+        /// <summary>
+        /// Chuyển đổi đối tượng sang long. Trả về 0 nếu parse thất bại.
+        /// </summary>
         private static long ToLong(object value)
         {
             long parsed;
             return long.TryParse(Convert.ToString(value), out parsed) ? parsed : 0;
         }
 
+        /// <summary>
+        /// Chuyển đổi đối tượng sang int với giá trị mặc định. Nếu parse thất bại thì trả về fallback.
+        /// </summary>
         private static int ToInt(object value, int fallback)
         {
             int parsed;
             return int.TryParse(Convert.ToString(value), out parsed) ? parsed : fallback;
         }
 
+        /// <summary>
+        /// Chuyển đổi đối tượng sang decimal với giá trị mặc định. Nếu parse thất bại thì trả về fallback.
+        /// </summary>
         private static decimal ToDecimal(object value, decimal fallback)
         {
             decimal parsed;
             return decimal.TryParse(Convert.ToString(value), out parsed) ? parsed : fallback;
         }
 
+        /// <summary>
+        /// Tạo dictionary từ các cặp key-value. Mỗi cặp gồm 2 phần tử liên tiếp trong mảng: key, value. So sánh key không phân biệt hoa thường.
+        /// </summary>
         private static IDictionary<string, object> Values(params object[] pairs)
         {
             Dictionary<string, object> values = new Dictionary<string, object>(
@@ -980,22 +1147,34 @@ namespace InformationWeb.Controls.Cms
             return values;
         }
 
+        /// <summary>
+        /// HTML encode chuỗi để ngăn chặn XSS. Trả về chuỗi rỗng nếu value là null.
+        /// </summary>
         private static string H(string value)
         {
             return HttpUtility.HtmlEncode(value ?? string.Empty);
         }
 
+        /// <summary>
+        /// HTML attribute encode chuỗi để sử dụng an toàn trong thuộc tính HTML. Trả về chuỗi rỗng nếu value là null.
+        /// </summary>
         private static string A(string value)
         {
             return HttpUtility.HtmlAttributeEncode(value ?? string.Empty);
         }
 
+        /// <summary>
+        /// Định dạng thời gian từ giây sang dạng MM:SS. Ví dụ: 125 giây → "02:05". Trả về "00:00" nếu giá trị âm.
+        /// </summary>
         protected string FormatDuration(object value)
         {
             int total = Math.Max(0, ToInt(value, 0));
             return (total / 60).ToString("00") + ":" + (total % 60).ToString("00");
         }
 
+        /// <summary>
+        /// Chuyển đổi mã loại câu hỏi sang nhãn tiếng Việt. Ví dụ: SINGLE_CHOICE → "Một lựa chọn". Trả về mã gốc nếu không khớp.
+        /// </summary>
         protected string QuestionTypeLabel(object value)
         {
             string type = Convert.ToString(value);
@@ -1007,6 +1186,9 @@ namespace InformationWeb.Controls.Cms
                 : type;
         }
 
+        /// <summary>
+        /// Tính toán vị trí trên timeline theo phần trăm dựa trên thời gian hiện tại và tổng thời lượng video. Trả về chuỗi CSS left:xx% với xx nằm trong phạm vi 0-100.
+        /// </summary>
         protected string TimelinePosition(object value)
         {
             int duration = Math.Max(1, ToInt(DurationValue.Value, 1));

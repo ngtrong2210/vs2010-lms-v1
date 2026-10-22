@@ -1,0 +1,163 @@
+/**
+ * Breadcrumbs Component
+ * Navigation breadcrumbs
+ */
+
+/* ========================================
+   BREADCRUMBS BASE
+   ======================================== */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: var(--spacing-sm);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: var(--spacing-sm);
+  color: var(--text-muted);
+  content: "/";
+}
+
+.breadcrumb-item a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--brand-green);
+}
+
+.breadcrumb-item.active {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ========================================
+   BREADCRUMB VARIANTS
+   ======================================== */
+
+/* Pill breadcrumbs */
+.breadcrumb-pill .breadcrumb-item {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--soft-surface);
+  border-radius: var(--radius-full);
+}
+
+.breadcrumb-pill .breadcrumb-item + .breadcrumb-item {
+  padding-left: 0;
+  margin-left: var(--spacing-xs);
+}
+
+.breadcrumb-pill .breadcrumb-item + .breadcrumb-item::before {
+  display: none;
+}
+
+/* ========================================
+   BREADCRUMB SEPARATOR
+   ======================================== */
+
+.breadcrumb-arrow .breadcrumb-item + .breadcrumb-item::before {
+  content: "→";
+}
+
+.breadcrumb-chevron .breadcrumb-item + .breadcrumb-item::before {
+  content: "›";
+}
+
+.breadcrumb-dash .breadcrumb-item + .breadcrumb-item::before {
+  content: "—";
+}
+
+.breadcrumb-dot .breadcrumb-item + .breadcrumb-item::before {
+  content: "•";
+}
+
+/* ========================================
+   BREADCRUMB SIZES
+   ======================================== */
+
+.breadcrumb-sm {
+  font-size: var(--font-size-xs);
+}
+
+.breadcrumb-lg {
+  font-size: var(--font-size-base);
+}
+
+/* ========================================
+   BREADCRUMB WITH ICONS
+   ======================================== */
+
+.breadcrumb-icon .breadcrumb-item a,
+.breadcrumb-icon .breadcrumb-item.active {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.breadcrumb-icon .breadcrumb-item i,
+.breadcrumb-icon .breadcrumb-item .icon {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* ========================================
+   BREADCRUMB ALIGNMENT
+   ======================================== */
+
+.breadcrumb-start {
+  justify-content: flex-start;
+}
+
+.breadcrumb-center {
+  justify-content: center;
+}
+
+.breadcrumb-end {
+  justify-content: flex-end;
+}
+
+/* ========================================
+   BREADCRUMB CARD
+   ======================================== */
+
+.breadcrumb-card {
+  background: var(--surface);
+  border: 1px solid var(--neutral-line);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  display: inline-flex;
+}
+
+/* ========================================
+   BREADCRUMB RESPONSIVE
+   ======================================== */
+
+@media (max-width: 575.98px) {
+  .breadcrumb {
+    font-size: var(--font-size-xs);
+  }
+
+  .breadcrumb-item {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

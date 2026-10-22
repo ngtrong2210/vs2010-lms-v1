@@ -1,0 +1,304 @@
+/**
+ * Design Tokens - CSS Variables
+ * Based on Design System Document
+ * All colors, typography, spacing, shadows, border-radius, and z-index tokens
+ */
+
+:root {
+  /* ========================================
+     BRAND COLORS
+     ======================================== */
+
+  /* Primary Brand Colors */
+  --brand-green: #d3224d;
+  --brand-green-dark: #aa1b3e;
+  --brand-green-rgb: 211, 34, 77;
+  --brand-green-light: #fce8ed;
+  --brand-green-hover: #b91f43;
+
+  /* Secondary Brand Colors */
+  --brand-blue: #005099;
+  --brand-blue-dark: #003d75;
+  --brand-blue-rgb: 0, 80, 153;
+  --brand-blue-light: #e8f2fc;
+  --brand-blue-hover: #003a70;
+
+  /* Brand Secondary */
+  --brand-secondary: #ff5543;
+  --brand-secondary-dark: #df3c2c;
+  --brand-secondary-light: #fff0ed;
+
+  /* Brand Red */
+  --brand-red: #c62828;
+  --brand-red-dark: #a71d1d;
+  --brand-red-light: #fdecec;
+
+  /* Brand Yellow */
+  --brand-yellow: #ffc224;
+  --brand-yellow-light: #fff8de;
+
+  /* Brand Success */
+  --brand-success: #07875a;
+  --brand-success-dark: #056b48;
+  --brand-success-light: #e5f5ee;
+
+  /* ========================================
+     THEME COLORS
+     ======================================== */
+
+  --theme-navy: #102f4d;
+  --theme-sidebar: #183b59;
+  --theme-sidebar-hover: #244d6c;
+  --theme-sidebar-active: #d3224d;
+  --theme-header: #ffffff;
+  --theme-overlay: rgba(16, 47, 77, 0.5);
+
+  /* ========================================
+     TEXT COLORS
+     ======================================== */
+
+  --text-primary: #172636;
+  --text-secondary: #4d5e6d;
+  --text-muted: #6d7c87;
+  --text-disabled: #9aa5ad;
+  --text-on-primary: #ffffff;
+  --text-link: #005099;
+  --text-link-hover: #003a70;
+
+  /* Legacy aliases */
+  --ink: #172636;
+  --ink-soft: #243d55;
+  --muted: #4d5756;
+
+  /* ========================================
+     SURFACE COLORS
+     ======================================== */
+
+  --surface: #ffffff;
+  --page: #f3f5f7;
+  --soft-surface: #f8f4f2;
+  --soft-green: rgba(0, 80, 153, 0.08);
+  --soft-blue: rgba(0, 80, 153, 0.1);
+  --soft-yellow: rgba(255, 194, 36, 0.16);
+  --soft-red: rgba(198, 40, 40, 0.08);
+  --soft-success: rgba(7, 135, 90, 0.08);
+
+  /* ========================================
+     NEUTRAL COLORS
+     ======================================== */
+
+  --neutral-line: #ede8e6;
+  --neutral-line-strong: #ede8e6;
+
+  /* ========================================
+     COLOR ALIASES (for consistency)
+     ======================================== */
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-muted: var(--text-muted);
+  --color-primary: var(--brand-green);
+  --color-primary-subtle: rgba(211, 34, 77, 0.1);
+  --color-secondary: var(--brand-blue);
+  --color-secondary-subtle: rgba(0, 80, 153, 0.1);
+  --color-success: var(--brand-success);
+  --color-success-subtle: rgba(7, 135, 90, 0.1);
+  --color-danger: var(--brand-red);
+  --color-danger-subtle: rgba(198, 40, 40, 0.1);
+  --color-warning: var(--brand-yellow);
+  --color-warning-subtle: rgba(255, 194, 36, 0.1);
+  --color-info: var(--brand-blue);
+  --color-info-subtle: rgba(0, 80, 153, 0.1);
+
+  /* ========================================
+     TYPOGRAPHY - FONT FAMILY
+     ======================================== */
+
+  --font-family-primary: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-monospace: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+
+  /* ========================================
+     TYPOGRAPHY - FONT SIZE
+     ======================================== */
+
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-ui: 0.875rem;     /* 14px - UI default */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg: 1.125rem;     /* 18px */
+  --font-size-xl: 1.25rem;      /* 20px */
+  --font-size-2xl: 1.5rem;      /* 24px */
+  --font-size-3xl: 1.875rem;    /* 30px */
+  --font-size-4xl: 2.25rem;     /* 36px */
+  --font-size-5xl: 3rem;        /* 48px */
+
+  /* ========================================
+     TYPOGRAPHY - FONT WEIGHT
+     ======================================== */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ========================================
+     TYPOGRAPHY - LINE HEIGHT
+     ======================================== */
+
+  --line-height-tight: 1.25;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose: 2;
+  --line-height-reading: 1.75;
+
+  /* ========================================
+     TYPOGRAPHY - LETTER SPACING
+     ======================================== */
+
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+
+  /* ========================================
+     SPACING SCALE
+     ======================================== */
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 40px;
+  --spacing-5xl: 48px;
+  --spacing-6xl: 64px;
+  --spacing-7xl: 80px;
+  --spacing-8xl: 96px;
+
+  /* ========================================
+     BORDER RADIUS
+     ======================================== */
+
+  --radius-none: 0px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* Component-specific radii */
+  --control-radius: 5px;
+  --card-radius: 5px;
+  --button-radius: 5px;
+
+  /* ========================================
+     SHADOWS
+     ======================================== */
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(0, 0, 0, 0.15);
+
+  /* ========================================
+     Z-INDEX SCALE
+     ======================================== */
+
+  --z-index-base: 0;
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1100;
+  --z-index-fixed: 1200;
+  --z-index-modal-backdrop: 1300;
+  --z-index-modal: 1400;
+  --z-index-popover: 1500;
+  --z-index-tooltip: 1600;
+  --z-index-toast: 1700;
+  --z-index-notification: 1800;
+
+  /* ========================================
+     TRANSITIONS
+     ======================================== */
+
+  --transition-fast: 150ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease;
+
+  /* ========================================
+     LAYOUT DIMENSIONS
+     ======================================== */
+
+  --sidebar-width: 252px;
+  --sidebar-width-collapsed: 72px;
+  --topbar-height: 68px;
+  --header-height: 68px;
+  --footer-height: 60px;
+
+  /* ========================================
+     CONTAINER WIDTHS
+     ======================================== */
+
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1320px;
+
+  /* ========================================
+     BREAKPOINTS
+     ======================================== */
+
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+
+  /* ========================================
+     COMPONENT SPECIFIC
+     ======================================== */
+
+  /* Buttons */
+  --button-padding-sm: var(--spacing-xs) var(--spacing-sm);
+  --button-padding-md: var(--spacing-sm) var(--spacing-lg);
+  --button-padding-lg: var(--spacing-md) var(--spacing-xl);
+
+  /* Forms */
+  --form-label-color: var(--text-primary);
+  --form-input-height: 40px;
+  --form-input-padding: var(--spacing-sm) var(--spacing-md);
+
+  /* Cards */
+  --card-padding: var(--spacing-lg);
+  --card-padding-lg: var(--spacing-2xl);
+
+  /* Tables */
+  --table-cell-padding: var(--spacing-md) var(--spacing-lg);
+
+  /* Modals */
+  --modal-padding: var(--spacing-xl);
+  --modal-max-width: 500px;
+  --modal-max-width-lg: 800px;
+}
+
+/* ========================================
+   DARK MODE TOKENS (optional, for future)
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override specific tokens for dark mode */
+    /* --surface: #1a1a1a; */
+    /* --page: #0d0d0d; */
+    /* --text-primary: #ffffff; */
+    /* --text-secondary: #a0a0a0; */
+  }
+}

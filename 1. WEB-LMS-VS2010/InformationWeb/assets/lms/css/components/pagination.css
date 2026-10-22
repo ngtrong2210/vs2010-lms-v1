@@ -1,66 +1,236 @@
-.app-pagination {
+/**
+ * Pagination Component
+ * Pagination controls for lists and tables
+ */
+
+/* ========================================
+   PAGINATION BASE
+   ======================================== */
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin: var(--spacing-md) 0;
+  padding: 0;
+  gap: var(--spacing-xs);
+}
+
+.pagination .page-item {
+  display: flex;
+}
+
+.pagination .page-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  text-decoration: none;
+  background-color: var(--surface);
+  border: 1px solid var(--neutral-line);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.pagination .page-link:hover {
+  z-index: 2;
+  color: var(--brand-green);
+  background-color: var(--soft-surface);
+  border-color: var(--brand-green);
+}
+
+.pagination .page-link:focus {
+  z-index: 3;
+  outline: none;
+  box-shadow: 0 0 0 3px var(--soft-green);
+}
+
+.pagination .page-item.active .page-link {
+  z-index: 3;
+  color: var(--text-on-primary);
+  background-color: var(--brand-green);
+  border-color: var(--brand-green);
+}
+
+.pagination .page-item.disabled .page-link {
+  color: var(--text-muted);
+  pointer-events: none;
+  background-color: var(--surface);
+  border-color: var(--neutral-line);
+}
+
+/* ========================================
+   PAGINATION SIZES
+   ======================================== */
+
+.pagination-lg .page-link {
+  min-width: 44px;
+  height: 44px;
+  padding: 0 var(--spacing-md);
+  font-size: var(--font-size-base);
+}
+
+.pagination-sm .page-link {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 var(--spacing-xs);
+  font-size: var(--font-size-xs);
+}
+
+/* ========================================
+   PAGINATION VARIANTS
+   ======================================== */
+
+/* Pill pagination */
+.pagination-pill .page-link {
+  border-radius: var(--radius-full);
+}
+
+/* Borderless pagination */
+.pagination-borderless .page-link {
+  border-color: transparent;
+}
+
+.pagination-borderless .page-link:hover {
+  border-color: transparent;
+}
+
+/* ========================================
+   PAGINATION ALIGNMENT
+   ======================================== */
+
+.pagination-start {
+  justify-content: flex-start;
+}
+
+.pagination-center {
+  justify-content: center;
+}
+
+.pagination-end {
+  justify-content: flex-end;
+}
+
+/* ========================================
+   PAGINATION WITH ICONS
+   ======================================== */
+
+.pagination .page-link i,
+.pagination .page-link .icon {
+  font-size: 1rem;
+}
+
+/* ========================================
+   PAGINATION INFO
+   ======================================== */
+
+.pagination-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.pagination-info strong {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ========================================
+   PAGINATION CONTAINER
+   ======================================== */
+
+.pagination-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-4);
-  min-height: 58px;
-  padding: var(--space-3) var(--space-4);
-  color: var(--color-muted);
-  font-size: 0.8125rem;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+  margin-top: var(--spacing-lg);
+  border-top: 1px solid var(--neutral-line);
 }
 
-.app-pagination__summary strong,
-.app-pagination__current strong {
-  color: var(--color-text-primary);
+.pagination-container .pagination {
+  margin: 0;
 }
 
-.app-pagination__controls {
-  display: flex;
-  align-items: center;
-  gap: var(--space-2);
-}
+/* ========================================
+   PAGINATION RESPONSIVE
+   ======================================== */
 
-.app-pagination__button {
-  min-height: 34px;
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-1);
-  padding: 0.4rem 0.7rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  color: var(--color-secondary);
-  background: #fff;
-  font-size: 0.8125rem;
-  font-weight: 600;
-}
-
-.app-pagination__button:hover:not(:disabled) {
-  border-color: var(--color-secondary);
-  background: var(--color-secondary-subtle);
-}
-
-.app-pagination__button:disabled {
-  color: #a5afb9;
-  background: #f5f7f9;
-  cursor: not-allowed;
-}
-
-.app-pagination__current {
-  padding: 0 var(--space-2);
-  white-space: nowrap;
-}
-
-@media (max-width: 575px) {
-  .app-pagination {
-    align-items: stretch;
+@media (max-width: 575.98px) {
+  .pagination-container {
     flex-direction: column;
+    gap: var(--spacing-md);
   }
 
-  .app-pagination__controls {
-    justify-content: space-between;
+  .pagination {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .app-pagination__summary {
+  .pagination-info {
     text-align: center;
   }
+}
+
+/* ========================================
+   SIMPLE PAGINATION
+   ======================================== */
+
+.pagination-simple {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.pagination-simple .btn {
+  min-width: auto;
+}
+
+.pagination-simple .pagination-current {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+.pagination-simple .pagination-current strong {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ========================================
+   LOAD MORE PAGINATION
+   ======================================== */
+
+.pagination-load-more {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-lg) 0;
+}
+
+.pagination-load-more .btn {
+  min-width: 200px;
+}
+
+/* ========================================
+   INFINITE SCROLL INDICATOR
+   ======================================== */
+
+.pagination-infinite {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-lg) 0;
+}
+
+.pagination-infinite .spinner-border {
+  width: 24px;
+  height: 24px;
 }

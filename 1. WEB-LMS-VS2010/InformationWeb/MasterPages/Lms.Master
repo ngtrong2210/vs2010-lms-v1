@@ -8,85 +8,80 @@
         <link rel="icon" type="image/png" href="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" />
         <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap.min.css") %>" />
         <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/vendor/bootstrap-icons.min.css") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/style.css") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/eduvers/css/responsive.css") %>" />
-        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/index.css") %>" />
-    <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/webforms.css?v=20260901-ui10") %>" />
+        <link rel="stylesheet" href="<%= ResolveUrl("~/assets/lms/css/lms.css") %>" />
         <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
     </head>
     <body>
         <form id="MainForm" runat="server">
             <asp:ScriptManager ID="MainScriptManager" runat="server" EnablePageMethods="true" />
             <div class="lms-shell">
-                <div class="learning-strip">
+                <div class="lms-topbar">
                     <div class="container">
-                        <span>
+                        <span class="lms-topbar-item">
                             <i class="bi bi-mortarboard"></i>
                             Hệ thống học tập trực tuyến Thiên Hà Số
                         </span>
-                        <span class="d-none d-md-inline">
+                        <span class="lms-topbar-item d-none d-md-inline">
                             <i class="bi bi-headset"></i>
                             Hỗ trợ học viên: Bộ phận đào tạo
                         </span>
                     </div>
                 </div>
-                <nav class="navbar navbar-expand-lg sticky-top lms-nav">
-                    <div class="container py-2">
-                        <a class="brand brand-lockup" href="<%= ResolveUrl("~/lms/dashboard") %>" aria-label="Thiên Hà Số">
-                            <img class="brand-symbol" src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
-                            <span class="brand-name">Thiên Hà Số</span>
+                <header class="lms-header header-no-sidebar">
+                    <div class="container">
+                        <a class="header-brand" href="<%= ResolveUrl("~/lms/dashboard") %>" aria-label="Thiên Hà Số">
+                            <img src="<%= ResolveUrl("~/assets/lms/images/brand/thien-ha-so.png") %>" alt="" />
+                            <span>Thiên Hà Số</span>
                         </a>
                         <button
                             type="button"
-                            class="navbar-toggler border-0"
+                            class="header-toggle d-lg-none"
                             data-bs-toggle="collapse"
                             data-bs-target="#lmsNav"
                             aria-label="Mở trình đơn"
                         >
-                            <i class="bi bi-list fs-2"></i>
+                            <i class="bi bi-list"></i>
                         </button>
-                        <div id="lmsNav" class="collapse navbar-collapse">
-                            <div class="navbar-nav mx-auto gap-lg-2 student-nav">
-                                <a class="nav-link" href="<%= ResolveUrl("~/lms/dashboard") %>">Tổng quan</a>
-                                <a class="nav-link" href="<%= ResolveUrl("~/lms/courses") %>">Môn học của tôi</a>
-                                <a class="nav-link" href="<%= ResolveUrl("~/lms/results") %>">Kết quả</a>
-                            </div>
-                            <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-                                <div class="notification-center" data-notification-center data-handler-url="<%= ResolveUrl("~/Handlers/Lms/Module.ashx") %>">
-                                    <button
-                                        type="button"
-                                        class="btn btn-light position-relative"
-                                        data-notification-toggle
-                                        aria-label="Thông báo"
-                                    >
-                                        <i class="bi bi-bell"></i>
-                                        <span class="notification-count"><asp:Literal ID="NotificationCountText" runat="server" /></span>
-                                    </button>
-                                    <div class="notification-panel" data-notification-panel hidden>
-                                        <div class="notification-panel-head">
-                                            <strong>Thông báo</strong>
-                                            <button type="button" class="btn btn-sm btn-link" data-notification-read-all>Đọc tất cả</button>
-                                        </div>
-                                        <div data-notification-list class="notification-list">
-                                            <span class="text-secondary">Đang tải...</span>
-                                        </div>
+                        <nav id="lmsNav" class="header-nav collapse">
+                            <a class="header-nav-item" href="<%= ResolveUrl("~/lms/dashboard") %>">Tổng quan</a>
+                            <a class="header-nav-item" href="<%= ResolveUrl("~/lms/courses") %>">Môn học của tôi</a>
+                            <a class="header-nav-item" href="<%= ResolveUrl("~/lms/results") %>">Kết quả</a>
+                        </nav>
+                        <div class="header-actions">
+                            <div class="notification-center" data-notification-center data-handler-url="<%= ResolveUrl("~/Handlers/Lms/Module.ashx") %>">
+                                <button
+                                    type="button"
+                                    class="header-action-btn"
+                                    data-notification-toggle
+                                    aria-label="Thông báo"
+                                >
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge-count"><asp:Literal ID="NotificationCountText" runat="server" /></span>
+                                </button>
+                                <div class="notification-panel" data-notification-panel hidden>
+                                    <div class="notification-panel-head">
+                                        <strong>Thông báo</strong>
+                                        <button type="button" class="btn btn-sm btn-link" data-notification-read-all>Đọc tất cả</button>
+                                    </div>
+                                    <div data-notification-list class="notification-list">
+                                        <span class="text-secondary">Đang tải...</span>
                                     </div>
                                 </div>
-                                <a href="<%= ResolveUrl("~/lms/profile") %>" class="profile-link d-flex align-items-center gap-2">
-                                    <img class="avatar user-avatar" src="<%= ResolveUrl("~/assets/lms/images/avatar-student.jpg") %>" alt="Ảnh đại diện" />
-                                    <span class="profile-copy d-none d-xl-grid">
-                                        <strong><asp:Literal ID="UserNameText" runat="server" /></strong>
-                                        <small>Học viên</small>
-                                    </span>
-                                </a>
-                                <a class="btn btn-action-delete btn-sm" href="<%= ResolveUrl("~/logout") %>" title="Đăng xuất" aria-label="Đăng xuất">
-                                    <i class="bi bi-box-arrow-right"></i>
-                                </a>
                             </div>
+                            <a href="<%= ResolveUrl("~/lms/profile") %>" class="header-user">
+                                <img class="header-user-avatar" src="<%= ResolveUrl("~/assets/lms/images/avatar-student.jpg") %>" alt="Ảnh đại diện" />
+                                <div class="header-user-info d-none d-xl-block">
+                                    <div class="header-user-name"><asp:Literal ID="UserNameText" runat="server" /></div>
+                                    <div class="header-user-role">Học viên</div>
+                                </div>
+                            </a>
+                            <a class="header-action-btn btn-danger" href="<%= ResolveUrl("~/logout") %>" title="Đăng xuất" aria-label="Đăng xuất">
+                                <i class="bi bi-box-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
-                </nav>
-                <main class="lms-content container py-4 py-lg-5"><asp:ContentPlaceHolder ID="MainContent" runat="server" /></main>
+                </header>
+                <main class="main-content main-centered"><asp:ContentPlaceHolder ID="MainContent" runat="server" /></main>
                 <footer class="lms-footer">
                     <div class="container">
                         <span>© 2026 Thiên Hà Số · Hệ thống quản lý học tập</span>
