@@ -41,6 +41,24 @@ namespace LmsObject
             }
         }
 
+        /// <summary>
+        /// Tìm kiếm tất cả người dùng với điều kiện tùy chỉnh
+        /// </summary>
+        public DataSet SearchAll(params object[] pars)
+        {
+            IData data = DCore.Data.CreateData();
+            try
+            {
+                data.CreateNewStoredProcedure("SYS_Users_SearchAll");
+                data.AddParameter(pars);
+                return data.ExecStoreToDataSet();
+            }
+            finally
+            {
+                data.Disconnect();
+            }
+        }
+
         #region Enhanced Load Methods
 
         /// <summary>

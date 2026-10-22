@@ -52,6 +52,115 @@ namespace LmsObject
             finally { if (!bolIsExistIData) objIData.Disconnect(); }
         }
 
+        /// <summary>
+        /// Cập nhật settings của bài học tương tác
+        /// </summary>
+        public DataTable UpdateSettings(long lessonId, string completionRule, bool requireReading, int passingScore, bool showResultImmediately, bool showScore, long actorUserId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("InteractiveSettings");
+                objIData.AddParameter("@LessonID", lessonId);
+                objIData.AddParameter("@CompletionRule", completionRule);
+                objIData.AddParameter("@RequireReading", requireReading);
+                objIData.AddParameter("@PassingScore", passingScore);
+                objIData.AddParameter("@ShowResultImmediately", showResultImmediately);
+                objIData.AddParameter("@ShowScore", showScore);
+                objIData.AddParameter("@ActorUserID", actorUserId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Xóa tương tác của nội dung (ContentInteraction)
+        /// </summary>
+        public DataTable DeleteContentInteraction(long contentInteractionId, long actorUserId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("ContentInteractionDelete");
+                objIData.AddParameter("@ContentInteractionID", contentInteractionId);
+                objIData.AddParameter("@ActorUserID", actorUserId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Cập nhật tương tác của nội dung (ContentInteraction)
+        /// </summary>
+        public DataTable UpdateContentInteraction(long contentInteractionId, long questionId, object contentAnchor, bool required, bool allowRetry, decimal score, int attemptLimit, int sortOrder, string status, long actorUserId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("ContentInteractionUpdate");
+                objIData.AddParameter("@ContentInteractionID", contentInteractionId);
+                objIData.AddParameter("@QuestionID", questionId);
+                objIData.AddParameter("@ContentAnchor", contentAnchor);
+                objIData.AddParameter("@Required", required);
+                objIData.AddParameter("@AllowRetry", allowRetry);
+                objIData.AddParameter("@Score", score);
+                objIData.AddParameter("@AttemptLimit", attemptLimit);
+                objIData.AddParameter("@SortOrder", sortOrder);
+                objIData.AddParameter("@Status", status);
+                objIData.AddParameter("@ActorUserID", actorUserId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Tạo tương tác của nội dung mới (ContentInteraction)
+        /// </summary>
+        public DataTable CreateContentInteraction(long lessonId, long questionId, object contentAnchor, bool required, bool allowRetry, decimal score, int attemptLimit, int sortOrder, string status, long actorUserId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("ContentInteractionCreate");
+                objIData.AddParameter("@LessonID", lessonId);
+                objIData.AddParameter("@QuestionID", questionId);
+                objIData.AddParameter("@ContentAnchor", contentAnchor);
+                objIData.AddParameter("@Required", required);
+                objIData.AddParameter("@AllowRetry", allowRetry);
+                objIData.AddParameter("@Score", score);
+                objIData.AddParameter("@AttemptLimit", attemptLimit);
+                objIData.AddParameter("@SortOrder", sortOrder);
+                objIData.AddParameter("@Status", status);
+                objIData.AddParameter("@ActorUserID", actorUserId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
         #endregion
 
         #region Enhanced Load Methods

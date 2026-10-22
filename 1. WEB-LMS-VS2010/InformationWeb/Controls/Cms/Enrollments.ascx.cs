@@ -6,7 +6,7 @@ using System.Text;
 using System.Web.Script.Serialization;
 using System.Web.UI.WebControls;
 using InformationWeb.LmsInfrastructure;
-using LmsService;
+using LmsObject;
 
 namespace InformationWeb.Controls.Cms
 {
@@ -17,33 +17,11 @@ namespace InformationWeb.Controls.Cms
     public partial class Enrollments : CmsStoreControl
     {
         /// <summary>
-        /// Service quản lý học viên (dùng cho ghi danh).
-        /// </summary>
-        protected override ModuleService Service
-        {
-            get { return ServiceRegistry.Students; }
-        }
-        /// <summary>
-        /// Tên operation để lấy danh sách ghi danh.
-        /// </summary>
-        protected override string Operation
-        {
-            get { return "EnrollmentList"; }
-        }
-        /// <summary>
         /// Tiêu đề trang quản lý ghi danh.
         /// </summary>
         protected override string PageTitle
         {
             get { return "Ghi danh môn học"; }
-        }
-
-        /// <summary>
-        /// Các tham số phân trang cho service call.
-        /// </summary>
-        protected override IDictionary<string, object> Parameters()
-        {
-            return Values("Page", 1, "PageSize", 100);
         }
 
         /// <summary>
@@ -76,10 +54,8 @@ namespace InformationWeb.Controls.Cms
                 );
                 return;
             }
-            bool ok = Service.ExecNonQuery(
-                "Enroll",
-                Values("CourseId", courseId, "StudentId", studentId, "ActorId", CurrentUser.UserID)
-            );
+            SIM_Student student = new SIM_Student();
+            bool ok = student.Enroll(courseId, studentId, CurrentUser.UserID);
             ShowActionResult(
                 ActionMessageText,
                 ok ? "Đã ghi danh học viên." : "Không thể ghi danh.",
@@ -100,10 +76,8 @@ namespace InformationWeb.Controls.Cms
                 ShowActionResult(ActionMessageText, "ID ghi danh không hợp lệ.", false);
                 return;
             }
-            bool ok = Service.ExecNonQuery(
-                "CancelEnrollment",
-                Values("Id", id, "ActorId", CurrentUser.UserID)
-            );
+            SIM_Student student = new SIM_Student();
+            bool ok = student.CancelEnrollment(id, CurrentUser.UserID);
             ShowActionResult(
                 ActionMessageText,
                 ok ? "Đã hủy ghi danh." : "Không thể hủy ghi danh.",

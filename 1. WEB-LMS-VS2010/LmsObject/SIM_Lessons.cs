@@ -119,6 +119,30 @@ namespace LmsObject
         }
 
         /// <summary>
+        /// Cập nhật thứ tự bài học
+        /// </summary>
+        public bool LessonReorder(long id, int sortOrder, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Lessons_Reorder");
+                objIData.AddParameter("@Id", id);
+                objIData.AddParameter("@SortOrder", sortOrder);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                objIData.ExecNonQuery();
+                return true;
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return false;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
         /// Lấy chi tiết bài học theo ID (gọi store, có ActorId và IsAdmin)
         /// </summary>
         public DataTable GetById(long lessonId, long actorId, bool isAdmin)
@@ -213,6 +237,28 @@ namespace LmsObject
                 objIData.AddParameter("@IsAdmin", isAdmin);
                 objIData.AddParameter("@UpdatedUser", updatedUser);
                 return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Lấy dữ liệu tương tác của giáo viên
+        /// </summary>
+        public DataSet GetInteractiveTeacher(long lessonId, long actorUserId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("InteractiveTeacher");
+                objIData.AddParameter("@LessonID", lessonId);
+                objIData.AddParameter("@ActorUserID", actorUserId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataSet();
             }
             catch (Exception objEx)
             {

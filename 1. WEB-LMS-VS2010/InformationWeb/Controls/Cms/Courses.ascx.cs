@@ -7,7 +7,7 @@ using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using InformationWeb.LmsInfrastructure;
-using LmsService;
+using LmsObject;
 
 namespace InformationWeb.Controls.Cms
 {
@@ -18,19 +18,13 @@ namespace InformationWeb.Controls.Cms
     public partial class Courses : CmsStoreControl
     {
         /// <summary>
-        /// Service quản lý học thuật.
-        /// </summary>
-        protected override ModuleService Service
-        {
-            get { return ServiceRegistry.Academic; }
-        }
-        /// <summary>
-        /// Tên operation để lấy danh sách khóa học.
+        /// Tên thao tác cho stored procedure.
         /// </summary>
         protected override string Operation
         {
             get { return "GetCatalog"; }
         }
+
         /// <summary>
         /// Tiêu đề trang quản lý khóa học.
         /// </summary>
@@ -38,6 +32,7 @@ namespace InformationWeb.Controls.Cms
         {
             get { return "Soạn nội dung môn học lớp"; }
         }
+
         /// <summary>
         /// Mô tả trang quản lý khóa học.
         /// </summary>
@@ -50,11 +45,29 @@ namespace InformationWeb.Controls.Cms
         }
 
         /// <summary>
-        /// Các tham số cho service call.
+        /// Khởi tạo control và tải dữ liệu khi không phải postback.
         /// </summary>
-        protected override IDictionary<string, object> Parameters()
+        protected override void OnLoad(EventArgs e)
         {
-            return Values("ActorID", CurrentUser.UserID, "IsAdmin", CurrentUser.IsAdmin);
+            base.OnLoad(e);
+            if (!IsPostBack) LoadData();
+        }
+
+        /// <summary>
+        /// Xử lý sự kiện click nút tìm kiếm.
+        /// </summary>
+        protected void SearchButton_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+
+        /// <summary>
+        /// Xử lý sự kiện phân trang DataGrid.
+        /// </summary>
+        protected void DataGrid_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            DataGrid.PageIndex = e.NewPageIndex;
+            LoadData();
         }
 
         /// <summary>
@@ -64,32 +77,25 @@ namespace InformationWeb.Controls.Cms
         {
             try
             {
-                DataSet data = Service.GetDataSet(Operation, ConvertToParams(Parameters()));
-                DataTable years = data != null && data.Tables.Count > 1 ? data.Tables[1] : null;
-                DataTable offerings = data != null && data.Tables.Count > 8 ? data.Tables[8] : null;
+                SIM_Courses courses = new SIM_Courses();
+                DataTable offerings = courses.GetCatalog(1, 1000);
+                DataTable years = GetYears();
                 BindYears(years);
                 DataTable filtered = FilterOfferings(offerings);
-                WebData.Bind(DataGrid, filtered, EmptyText, ErrorText);
+                DataGrid.DataSource = filtered;
+                DataGrid.DataBind();
+                EmptyText.Visible = filtered == null || filtered.Rows.Count == 0;
+                ErrorText.Visible = false;
             }
             catch (System.Exception ex)
             {
                 WebLog.Error("Nạp danh sách môn học lớp thất bại.", ex);
-                WebData.Bind(DataGrid, null, EmptyText, ErrorText);
+                DataGrid.DataSource = null;
+                DataGrid.DataBind();
+                EmptyText.Visible = true;
+                ErrorText.Visible = true;
+                ErrorText.Text = "Lỗi tải danh sách khóa học: " + ex.Message;
             }
-        }
-
-        /// <summary>
-        /// Chuyển đổi dictionary tham số sang mảng object cho service call.
-        /// </summary>
-        private static object[] ConvertToParams(IDictionary<string, object> parameters)
-        {
-            List<object> list = new List<object>();
-            foreach (var kvp in parameters)
-            {
-                list.Add("@" + kvp.Key);
-                list.Add(kvp.Value ?? DBNull.Value);
-            }
-            return list.ToArray();
         }
 
         /// <summary>
@@ -133,16 +139,11 @@ namespace InformationWeb.Controls.Cms
                 return;
             try
             {
-                DataTable result = Service.GetDataTable(
-                    "EnsureWorkspace",
-                    ConvertToParams(Values(
-                        "ClassSubjectID",
-                        classSubjectId,
-                        "ActorID",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+                SIM_Courses courses = new SIM_Courses();
+                DataTable result = courses.EnsureWorkspace(
+                    classSubjectId,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
                 bool ok = result != null && result.Rows.Count > 0;
                 ShowActionResult(
@@ -193,42 +194,25 @@ namespace InformationWeb.Controls.Cms
                     : DBNull.Value;
             try
             {
-                DataTable result = ServiceRegistry.Courses.GetDataTable(
-                    "Update",
-                    ConvertToParams(Values(
-                        "Id",
-                        id,
-                        "Code",
-                        CourseSettingsCodeValue.Value,
-                        "Title",
-                        CourseSettingsTitleValue.Value,
-                        "Slug",
-                        DbString(CourseSettingsSlugValue.Value),
-                        "ThumbnailUrl",
-                        DbString(CourseSettingsThumbnailValue.Value),
-                        "ShortDescription",
-                        DbString(CourseSettingsShortDescriptionText.Text),
-                        "Description",
-                        DbString(CourseSettingsDescriptionValue.Value),
-                        "TeacherId",
-                        teacherId,
-                        "CategoryId",
-                        categoryId,
-                        "ClassSubjectId",
-                        classSubject,
-                        "Level",
-                        string.IsNullOrWhiteSpace(CourseSettingsLevelValue.Value)
-                            ? "BEGINNER"
-                            : CourseSettingsLevelValue.Value,
-                        "PassingScore",
-                        passingScore,
-                        "Status",
-                        CourseSettingsStatusList.SelectedValue,
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    ))
+                SIM_Courses courses = new SIM_Courses();
+                DataTable result = courses.UpdateCourse(
+                    id,
+                    CourseSettingsCodeValue.Value,
+                    CourseSettingsTitleValue.Value,
+                    DbString(CourseSettingsSlugValue.Value),
+                    DbString(CourseSettingsThumbnailValue.Value),
+                    DbString(CourseSettingsShortDescriptionText.Text),
+                    DbString(CourseSettingsDescriptionValue.Value),
+                    teacherId,
+                    categoryId,
+                    classSubject,
+                    string.IsNullOrWhiteSpace(CourseSettingsLevelValue.Value)
+                        ? "BEGINNER"
+                        : CourseSettingsLevelValue.Value,
+                    passingScore,
+                    CourseSettingsStatusList.SelectedValue,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
                 bool ok =
                     result != null
@@ -260,16 +244,11 @@ namespace InformationWeb.Controls.Cms
         {
             try
             {
-                DataTable table = ServiceRegistry.Courses.GetDataTable(
-                    "Get",
-                    ConvertToParams(Values(
-                        "Id",
-                        courseId,
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    ))
+                SIM_Courses courses = new SIM_Courses();
+                DataTable table = courses.GetCourseById(
+                    courseId,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
                 if (table == null || table.Rows.Count == 0)
                     throw new InvalidOperationException("Không tìm thấy môn học lớp.");
@@ -337,6 +316,15 @@ namespace InformationWeb.Controls.Cms
             if (value == "ARCHIVED")
                 return "Lưu trữ";
             return "Bản nháp";
+        }
+
+        /// <summary>
+        /// Lấy danh sách năm học hoạt động.
+        /// </summary>
+        private DataTable GetYears()
+        {
+            SIM_Year year = new SIM_Year();
+            return year.GetActiveYears();
         }
 
         /// <summary>

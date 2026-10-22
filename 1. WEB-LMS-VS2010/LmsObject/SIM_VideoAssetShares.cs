@@ -52,6 +52,102 @@ namespace LmsObject
             finally { if (!bolIsExistIData) objIData.Disconnect(); }
         }
 
+        /// <summary>
+        /// Xóa chia sẻ video
+        /// </summary>
+        public bool Delete(long shareId, long actorId, bool isAdmin, string updatedUser = null)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("VideoShareDelete");
+                objIData.AddParameter("@ShareId", shareId);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                objIData.AddParameter("@UpdatedUser", updatedUser);
+                objIData.ExecNonQuery();
+                return true;
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return false;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Lấy thông tin chia sẻ theo ID
+        /// </summary>
+        public DataTable GetById(long shareId, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("VideoShareGetById");
+                objIData.AddParameter("@ShareId", shareId);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Cập nhật chia sẻ video
+        /// </summary>
+        public bool Update(long shareId, long assetId, long recipientId, long actorId, bool isAdmin, string updatedUser = null)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("VideoShareUpdateItem");
+                objIData.AddParameter("@ShareId", shareId);
+                objIData.AddParameter("@AssetId", assetId);
+                objIData.AddParameter("@RecipientId", recipientId);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                objIData.AddParameter("@UpdatedUser", updatedUser);
+                objIData.ExecNonQuery();
+                return true;
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return false;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Tạo chia sẻ video mới
+        /// </summary>
+        public DataTable Create(long assetId, long recipientId, long actorId, bool isAdmin, string updatedUser = null)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("VideoShareCreate");
+                objIData.AddParameter("@AssetId", assetId);
+                objIData.AddParameter("@RecipientId", recipientId);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                objIData.AddParameter("@UpdatedUser", updatedUser);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
         #endregion
     }
 }

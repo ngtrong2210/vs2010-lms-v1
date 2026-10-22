@@ -31,7 +31,14 @@ namespace InformationWeb.Controls.Cms
         protected global::System.Web.UI.WebControls.HiddenField CourseSettingsClassSubjectIdValue;
         protected global::System.Web.UI.WebControls.HiddenField CourseSettingsLevelValue;
         protected global::System.Web.UI.WebControls.Button CourseSettingsSaveButton;
-        protected global::System.Web.UI.UpdatePanel CourseSettingsUpdatePanel;
+        protected global::System.Web.UI.WebControls.UpdatePanel CourseSettingsUpdatePanel;
         protected global::System.Web.UI.WebControls.Label ActionMessageText;
+        protected global::System.Web.UI.WebControls.Label EmptyText;
+        protected global::System.Web.UI.WebControls.Label ErrorText;
+        protected global::System.Web.UI.WebControls.GridView DataGrid;
+        protected global::System.Web.UI.WebControls.TextBox SearchText;
+        protected global::System.Web.UI.WebControls.Button SearchButton;
+        protected global::System.Web.UI.WebControls.Literal PageTitleText;
+        protected global::System.Web.UI.WebControls.Literal PageDescriptionText;
     }
 }

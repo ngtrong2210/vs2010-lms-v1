@@ -60,7 +60,8 @@ namespace InformationWeb.Controls.Cms
 
             try
             {
-                DataTable dtb = ServiceRegistry.Users.GetDataSet("SearchAll", null).Tables[0];
+                SYS_Users user = new SYS_Users();
+                DataTable dtb = user.SearchAll(ConvertToParams(Values())).Tables[0];
                 if (dtb != null)
                 {
                     foreach (DataRow row in dtb.Rows)

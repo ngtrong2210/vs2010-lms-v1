@@ -78,6 +78,57 @@ namespace LmsObject
             finally { if (!bolIsExistIData) objIData.Disconnect(); }
         }
 
+        /// <summary>
+        /// Lấy thông tin quiz và câu hỏi theo lessonID cho giáo viên - trả về DataSet
+        /// </summary>
+        public DataSet TeacherGet(long lessonId, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("LMS_Quizzes_TeacherGet");
+                objIData.AddParameter("@LessonID", lessonId);
+                objIData.AddParameter("@ActorID", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataSet();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Lưu cấu hình quiz
+        /// </summary>
+        public DataTable Save(long lessonId, string title, string description, decimal passingScore, int timeLimitMinutes, int maxAttempts, bool shuffleQuestions, string questionIDsJson, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("LMS_Quizzes_Save");
+                objIData.AddParameter("@LessonID", lessonId);
+                objIData.AddParameter("@Title", title);
+                objIData.AddParameter("@Description", description);
+                objIData.AddParameter("@PassingScore", passingScore);
+                objIData.AddParameter("@TimeLimitMinutes", timeLimitMinutes);
+                objIData.AddParameter("@MaxAttempts", maxAttempts);
+                objIData.AddParameter("@ShuffleQuestions", shuffleQuestions);
+                objIData.AddParameter("@QuestionIDsJson", questionIDsJson);
+                objIData.AddParameter("@ActorID", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
         #endregion
 
         #region Enhanced Load Methods

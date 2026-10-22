@@ -74,17 +74,8 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private void LoadCourse()
         {
-            DataTable detail = ServiceRegistry.Courses.GetDataTable(
-                "Get",
-                Values(
-                    "Id",
-                    CourseId,
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
-            );
+            SIM_Courses course = new SIM_Courses();
+            DataTable detail = course.Get(CourseId, CurrentUser.UserID, CurrentUser.IsAdmin);
             if (detail != null && detail.Rows.Count > 0)
             {
                 DataRow row = detail.Rows[0];
@@ -146,10 +137,8 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private void LoadQuestionBank()
         {
-            DataSet data = ServiceRegistry.Questions.GetDataSet(
-                "List",
-                Values("Search", null, "Type", null, "Page", 1, "PageSize", 100)
-            );
+            LMS_Questions questions = new LMS_Questions();
+            DataSet data = questions.ListQuestionsDataSet(null, null, 1, 100, CurrentUser.UserID, CurrentUser.IsAdmin);
             DataTable table = data != null && data.Tables.Count > 0 ? data.Tables[0] : null;
             List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
             if (table != null)
@@ -193,17 +182,8 @@ namespace InformationWeb.Controls.Cms
             QuizMaxAttemptsText.Text = "1";
             QuizShuffleCheck.Checked = false;
             QuizSelectedJsonValue.Value = "[]";
-            DataSet data = ServiceRegistry.Quiz.GetDataSet(
-                "TeacherGet",
-                Values(
-                    "LessonID",
-                    lessonId,
-                    "ActorID",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
-            );
+            LMS_Quizzes quiz = new LMS_Quizzes();
+            DataSet data = quiz.TeacherGet(lessonId, CurrentUser.UserID, CurrentUser.IsAdmin);
             if (data == null)
                 return;
             if (data.Tables.Count > 0 && data.Tables[0].Rows.Count > 0)
@@ -249,16 +229,13 @@ namespace InformationWeb.Controls.Cms
             InteractiveShowScoreCheck.Checked = true;
             InteractiveMappingsJsonValue.Value = "[]";
             InteractiveOriginalIdsValue.Value = "[]";
-            DataSet data = ServiceRegistry.Content.GetDataSet(
-                "InteractiveTeacher",
-                Values(
-                    "LessonID",
-                    lessonId,
-                    "ActorUserID",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+
+            // Sử dụng SIM_Lessons business object thay vì ServiceRegistry.Content
+            LmsObject.SIM_Lessons lessonsObj = new LmsObject.SIM_Lessons();
+            DataSet data = lessonsObj.GetInteractiveTeacher(
+                lessonId,
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin
             );
             if (data == null)
                 return;
@@ -349,30 +326,18 @@ namespace InformationWeb.Controls.Cms
             }
             if (questionIds.Count == 0)
                 throw new ArgumentException("Bài kiểm tra cần ít nhất một câu hỏi.");
-            DataTable saved = ServiceRegistry.Quiz.GetDataTable(
-                "Save",
-                Values(
-                    "LessonID",
-                    lessonId,
-                    "Title",
-                    LessonTitleText.Text.Trim(),
-                    "Description",
-                    NullIfEmpty(LessonDescriptionText.Text),
-                    "PassingScore",
-                    passingScore,
-                    "TimeLimitMinutes",
-                    timeLimitValue,
-                    "MaxAttempts",
-                    maxAttempts,
-                    "ShuffleQuestions",
-                    QuizShuffleCheck.Checked,
-                    "QuestionIDsJson",
-                    Json().Serialize(questionIds),
-                    "ActorID",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+            LMS_Quizzes quiz = new LMS_Quizzes();
+            DataTable saved = quiz.Save(
+                lessonId,
+                LessonTitleText.Text.Trim(),
+                NullIfEmpty(LessonDescriptionText.Text),
+                passingScore,
+                timeLimitValue,
+                maxAttempts,
+                QuizShuffleCheck.Checked,
+                Json().Serialize(questionIds),
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin
             );
             if (saved == null || saved.Rows.Count == 0)
                 throw new InvalidOperationException("Không thể lưu cấu hình bài kiểm tra.");
@@ -396,26 +361,18 @@ namespace InformationWeb.Controls.Cms
                 || passingScore > 100
             )
                 throw new ArgumentException("Điểm đạt bài học tương tác phải từ 0 đến 100.");
-            DataTable settings = ServiceRegistry.Content.GetDataTable(
-                "InteractiveSettings",
-                Values(
-                    "LessonID",
-                    lessonId,
-                    "CompletionRule",
-                    InteractiveCompletionList.SelectedValue,
-                    "RequireReading",
-                    InteractiveRequireReadingCheck.Checked,
-                    "PassingScore",
-                    passingScore,
-                    "ShowResultImmediately",
-                    InteractiveShowResultCheck.Checked,
-                    "ShowScore",
-                    InteractiveShowScoreCheck.Checked,
-                    "ActorUserID",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+
+            // Sử dụng LMS_InteractiveContents business object thay vì ServiceRegistry.Content
+            LmsObject.LMS_InteractiveContents interactiveObj = new LmsObject.LMS_InteractiveContents();
+            DataTable settings = interactiveObj.UpdateSettings(
+                lessonId,
+                InteractiveCompletionList.SelectedValue,
+                InteractiveRequireReadingCheck.Checked,
+                (int)passingScore,
+                InteractiveShowResultCheck.Checked,
+                InteractiveShowScoreCheck.Checked,
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin
             );
             if (settings == null || settings.Rows.Count == 0)
                 throw new InvalidOperationException("Không thể lưu thiết lập bài học tương tác.");
@@ -435,16 +392,10 @@ namespace InformationWeb.Controls.Cms
             {
                 if (id <= 0 || activeIds.Contains(id))
                     continue;
-                DataTable deleted = ServiceRegistry.Content.GetDataTable(
-                    "ContentInteractionDelete",
-                    Values(
-                        "ContentInteractionID",
-                        id,
-                        "ActorUserID",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+                DataTable deleted = interactiveObj.DeleteContentInteraction(
+                    id,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
                 if (deleted == null || deleted.Rows.Count == 0)
                     throw new InvalidOperationException(
@@ -464,43 +415,38 @@ namespace InformationWeb.Controls.Cms
                     : 1;
                 if (questionId <= 0 || score < 0 || score > 10000 || attemptLimit > 100)
                     throw new ArgumentException("Thiết lập câu hỏi tương tác không hợp lệ.");
-                IDictionary<string, object> values = Values(
-                    "QuestionID",
-                    questionId,
-                    "ContentAnchor",
-                    null,
-                    "Required",
-                    required,
-                    "AllowRetry",
-                    allowRetry,
-                    "Score",
-                    score,
-                    "AttemptLimit",
-                    attemptLimit,
-                    "SortOrder",
-                    index + 1,
-                    "Status",
-                    "ACTIVE",
-                    "ActorUserID",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                );
+
                 DataTable result;
                 if (id > 0)
                 {
-                    values["ContentInteractionID"] = id;
-                    result = ServiceRegistry.Content.GetDataTable(
-                        "ContentInteractionUpdate",
-                        values
+                    result = interactiveObj.UpdateContentInteraction(
+                        id,
+                        questionId,
+                        null, // ContentAnchor
+                        required,
+                        allowRetry,
+                        score,
+                        attemptLimit,
+                        index + 1, // SortOrder
+                        "ACTIVE",
+                        CurrentUser.UserID,
+                        CurrentUser.IsAdmin
                     );
                 }
                 else
                 {
-                    values["LessonID"] = lessonId;
-                    result = ServiceRegistry.Content.GetDataTable(
-                        "ContentInteractionCreate",
-                        values
+                    result = interactiveObj.CreateContentInteraction(
+                        lessonId,
+                        questionId,
+                        null, // ContentAnchor
+                        required,
+                        allowRetry,
+                        score,
+                        attemptLimit,
+                        index + 1, // SortOrder
+                        "ACTIVE",
+                        CurrentUser.UserID,
+                        CurrentUser.IsAdmin
                     );
                 }
                 if (result == null || result.Rows.Count == 0)
@@ -563,18 +509,47 @@ namespace InformationWeb.Controls.Cms
                     "ActorId",
                     CurrentUser.UserID
                 );
+                SIM_Courses course = new SIM_Courses();
                 if (CourseId > 0)
                 {
-                    values["Id"] = CourseId;
-                    values["IsAdmin"] = CurrentUser.IsAdmin;
-                    bool ok = ServiceRegistry.Courses.ExecNonQuery("Update", values);
+                    bool ok = course.Update(
+                        CodeText.Text.Trim(),
+                        CourseTitleText.Text.Trim(),
+                        SlugText.Text.Trim(),
+                        null,
+                        ShortDescriptionText.Text.Trim(),
+                        DescriptionText.Text,
+                        teacherId,
+                        categoryId,
+                        null,
+                        LevelText.Text.Trim(),
+                        passingScore,
+                        StatusList.SelectedValue,
+                        CourseId,
+                        CurrentUser.UserID,
+                        CurrentUser.IsAdmin
+                    );
                     ShowMessage(ok ? "Đã lưu môn học." : "Không thể lưu môn học.", ok);
                     if (ok)
                         LoadCourse();
                 }
                 else
                 {
-                    DataTable created = ServiceRegistry.Courses.GetDataTable("Create", values);
+                    DataTable created = course.Create(
+                        CodeText.Text.Trim(),
+                        CourseTitleText.Text.Trim(),
+                        SlugText.Text.Trim(),
+                        null,
+                        ShortDescriptionText.Text.Trim(),
+                        DescriptionText.Text,
+                        teacherId,
+                        categoryId,
+                        null,
+                        LevelText.Text.Trim(),
+                        passingScore,
+                        StatusList.SelectedValue,
+                        CurrentUser.UserID
+                    );
                     if (created == null || created.Rows.Count == 0)
                         throw new InvalidOperationException(
                             "Stored procedure không trả về ID môn học."
@@ -1137,20 +1112,16 @@ namespace InformationWeb.Controls.Cms
             DataRow temp = rows[index];
             rows[index] = rows[target];
             rows[target] = temp;
+            SIM_Chapters chapter = new SIM_Chapters();
             for (int i = 0; i < rows.Length; i++)
-                ServiceRegistry.Content.ExecNonQuery(
-                    "ChapterReorder",
-                    Values(
-                        "Id",
-                        WebData.Long(rows[i], "Id"),
-                        "SortOrder",
-                        i + 1,
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+            {
+                chapter.ChapterReorder(
+                    WebData.Long(rows[i], "Id"),
+                    i + 1,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
+            }
             ShowMessage("Đã sắp xếp chương.", true);
             LoadCourse();
         }
@@ -1183,19 +1154,13 @@ namespace InformationWeb.Controls.Cms
             DataRow temp = rows[index];
             rows[index] = rows[target];
             rows[target] = temp;
+            SIM_Lessons lesson = new SIM_Lessons();
             for (int i = 0; i < rows.Length; i++)
-                ServiceRegistry.Content.ExecNonQuery(
-                    "LessonReorder",
-                    Values(
-                        "Id",
-                        WebData.Long(rows[i], "Id"),
-                        "SortOrder",
-                        i + 1,
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+                lesson.LessonReorder(
+                    WebData.Long(rows[i], "Id"),
+                    i + 1,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
             ShowMessage("Đã sắp xếp bài học.", true);
             LoadCourse();
@@ -1229,24 +1194,16 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private void BindVideoAssets()
         {
-            DataTable table = ServiceRegistry.Content.GetDataTable(
-                "VideoLibraryList",
-                Values(
-                    "Search",
-                    VideoSearchText.Text.Trim(),
-                    "Access",
-                    "ALL",
-                    "Source",
-                    "LOCAL",
-                    "Usage",
-                    "ALL",
-                    "Status",
-                    "ACTIVE",
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+            // Sử dụng SIM_Videos business object thay vì ServiceRegistry.Content
+            LmsObject.SIM_Videos videoObj = new LmsObject.SIM_Videos();
+            DataTable table = videoObj.GetVideoLibraryList(
+                VideoSearchText.Text.Trim(),
+                "ALL",
+                "LOCAL",
+                "ALL",
+                "ACTIVE",
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin
             );
             VideoAssetsRepeater.DataSource = table;
             VideoAssetsRepeater.DataBind();
@@ -1313,18 +1270,14 @@ namespace InformationWeb.Controls.Cms
                 if (lessonId <= 0 || videoId <= 0)
                     throw new ArgumentException("Video hoặc bài học không hợp lệ.");
                 EnsureLessonInCourse(lessonId);
-                DataTable attached = ServiceRegistry.Content.GetDataTable(
-                    "VideoAttach",
-                    Values(
-                        "LessonId",
-                        lessonId,
-                        "VideoId",
-                        videoId,
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+
+                // Sử dụng SIM_Videos business object thay vì ServiceRegistry.Content
+                LmsObject.SIM_Videos videoObj = new LmsObject.SIM_Videos();
+                DataTable attached = videoObj.AttachVideoToLesson(
+                    lessonId,
+                    videoId,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
                 bool ok = attached != null && attached.Rows.Count > 0;
                 ShowMessage(
@@ -1684,17 +1637,8 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private DataSet GetCourseContent()
         {
-            return ServiceRegistry.Courses.GetDataSet(
-                "Content",
-                Values(
-                    "CourseId",
-                    CourseId,
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
-            );
+            SIM_Courses course = new SIM_Courses();
+            return course.GetContent(CourseId, CurrentUser.UserID, CurrentUser.IsAdmin);
         }
 
         /// <summary>

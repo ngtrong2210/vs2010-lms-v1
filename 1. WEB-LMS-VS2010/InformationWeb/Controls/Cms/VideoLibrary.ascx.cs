@@ -33,24 +33,15 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private DataTable QueryVideos()
         {
-            return ServiceRegistry.Content.GetDataTable(
-                "VideoLibraryList",
-                Values(
-                    "Search",
-                    SearchText.Text.Trim(),
-                    "Access",
-                    AccessFilter.SelectedValue,
-                    "Source",
-                    "LOCAL",
-                    "Usage",
-                    UsageFilter.SelectedValue,
-                    "Status",
-                    StatusFilter.SelectedValue,
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+            var videoAssets = new LmsObject.SIM_VideoAssets();
+            return videoAssets.GetLibraryList(
+                SearchText.Text.Trim(),
+                AccessFilter.SelectedValue,
+                "LOCAL",
+                UsageFilter.SelectedValue,
+                StatusFilter.SelectedValue,
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin
             );
         }
 
@@ -307,14 +298,19 @@ namespace InformationWeb.Controls.Cms
                         throw new InvalidOperationException(
                             "Video đã bị khóa hoặc bạn không có quyền sửa."
                         );
-                    values["Id"] = assetId;
-                    values["Status"] = VideoStatusList.SelectedValue;
-                    values["LessonIdsJson"] = "[]";
-                    values["ChangeSummary"] = "Cập nhật đồng bộ từ Web Forms";
-                    values["IsAdmin"] = CurrentUser.IsAdmin;
-                    DataTable updated = ServiceRegistry.Content.GetDataTable(
-                        "VideoLibraryUpdate",
-                        values
+                    var videoAssets = new LmsObject.SIM_VideoAssets();
+                    DataTable updated = videoAssets.Update(
+                        assetId,
+                        title,
+                        duration,
+                        videoUrl,
+                        original,
+                        mime,
+                        fileSize is DBNull ? 0 : Convert.ToInt64(fileSize),
+                        VideoStatusList.SelectedValue,
+                        CurrentUser.UserID,
+                        CurrentUser.IsAdmin,
+                        CurrentUser.UserName
                     );
                     if (updated == null || updated.Rows.Count == 0)
                         throw new InvalidOperationException(
@@ -324,9 +320,18 @@ namespace InformationWeb.Controls.Cms
                 }
                 else
                 {
-                    DataTable created = ServiceRegistry.Content.GetDataTable(
-                        "VideoLibraryCreate",
-                        values
+                    var videoAssets = new LmsObject.SIM_VideoAssets();
+                    DataTable created = videoAssets.Create(
+                        title,
+                        duration,
+                        videoUrl,
+                        original,
+                        mime,
+                        fileSize is DBNull ? 0 : Convert.ToInt64(fileSize),
+                        VideoStatusList.SelectedValue,
+                        CurrentUser.UserID,
+                        CurrentUser.IsAdmin,
+                        CurrentUser.UserName
                     );
                     if (created == null || created.Rows.Count == 0)
                         throw new InvalidOperationException("Store không trả về ID video mới.");
@@ -359,10 +364,8 @@ namespace InformationWeb.Controls.Cms
             if (!Bool(row, "CanShare"))
                 throw new InvalidOperationException("Bạn không có quyền chia sẻ video này.");
             long assetId = Long(row, "Id");
-            DataSet data = ServiceRegistry.Content.GetDataSet(
-                "VideoSharingGet",
-                Values("Id", assetId, "ActorId", CurrentUser.UserID, "IsAdmin", CurrentUser.IsAdmin)
-            );
+            var videoAssets = new LmsObject.SIM_VideoAssets();
+            DataSet data = videoAssets.GetSharing(assetId, CurrentUser.UserID, CurrentUser.IsAdmin);
             if (data == null || data.Tables.Count == 0 || data.Tables[0].Rows.Count == 0)
                 throw new InvalidOperationException("Không thể nạp cấu hình chia sẻ.");
             ShareAssetIdValue.Value = assetId.ToString();
@@ -413,20 +416,14 @@ namespace InformationWeb.Controls.Cms
                 string json = new JavaScriptSerializer().Serialize(
                     scope == "SELECTED" ? ids : new List<long>()
                 );
-                bool ok = ServiceRegistry.Content.ExecNonQuery(
-                    "VideoSharingSave",
-                    Values(
-                        "Id",
-                        assetId,
-                        "ShareScope",
-                        scope,
-                        "TeacherIdsJson",
-                        json,
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+                var videoAssets = new LmsObject.SIM_VideoAssets();
+                bool ok = videoAssets.UpdateSharing(
+                    assetId,
+                    scope,
+                    json,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin,
+                    CurrentUser.UserName
                 );
                 if (!ok)
                     throw new InvalidOperationException("Không thể lưu cấu hình chia sẻ.");
@@ -454,18 +451,12 @@ namespace InformationWeb.Controls.Cms
         {
             if (!Bool(row, "CanDuplicate"))
                 throw new InvalidOperationException("Bạn không có quyền nhân bản video này.");
-            DataTable result = ServiceRegistry.Content.GetDataTable(
-                "VideoLibraryDuplicate",
-                Values(
-                    "Id",
-                    Long(row, "Id"),
-                    "Title",
-                    Text(row, "Title") + " - Bản sao",
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+            var videoAssets = new LmsObject.SIM_VideoAssets();
+            DataTable result = videoAssets.Duplicate(
+                Long(row, "Id"),
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin,
+                CurrentUser.UserName
             );
             if (result == null || result.Rows.Count == 0)
                 throw new InvalidOperationException("Store không trả về ID video nhân bản.");
@@ -480,16 +471,13 @@ namespace InformationWeb.Controls.Cms
         {
             if (!Bool(row, "CanDelete"))
                 throw new InvalidOperationException("Video đang được sử dụng nên chưa thể xóa.");
-            bool ok = ServiceRegistry.Content.ExecNonQuery(
-                "VideoLibraryDelete",
-                Values(
-                    "Id",
-                    Long(row, "Id"),
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+            var videoAssets = new LmsObject.SIM_VideoAssets();
+            bool ok = videoAssets.Delete(
+                Long(row, "Id"),
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin,
+                CurrentUser.UserName
+            );
             );
             if (!ok)
                 throw new InvalidOperationException("Không thể xóa video.");
@@ -502,24 +490,15 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private DataRow FindAsset(long id)
         {
-            DataTable table = ServiceRegistry.Content.GetDataTable(
-                "VideoLibraryList",
-                Values(
-                    "Search",
-                    string.Empty,
-                    "Access",
-                    "ALL",
-                    "Source",
-                    "LOCAL",
-                    "Usage",
-                    "ALL",
-                    "Status",
-                    "ALL",
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
+            var videoAssets = new LmsObject.SIM_VideoAssets();
+            DataTable table = videoAssets.GetLibraryList(
+                string.Empty,
+                "ALL",
+                "LOCAL",
+                "ALL",
+                "ALL",
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin
             );
             if (table != null)
                 foreach (DataRow row in table.Rows)

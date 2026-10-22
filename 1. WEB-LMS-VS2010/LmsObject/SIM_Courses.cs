@@ -70,6 +70,149 @@ namespace LmsObject
             return GetDataTable("SIM_Courses_GetByTeacher", "@TeacherUserID", teacherUserId);
         }
 
+        /// <summary>
+        /// Lấy thông tin khóa học theo ID (gọi store SIM_Courses_Get)
+        /// </summary>
+        public DataTable Get(long id, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_Get");
+                objIData.AddParameter("@Id", id);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi lấy thông tin khóa học", objEx);
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
+
+        /// <summary>
+        /// Cập nhật khóa học (gọi store SIM_Courses_Update)
+        /// </summary>
+        public bool Update(string code, string title, string slug, string thumbnailUrl, string shortDescription, string description, long teacherId, long? categoryId, long? classSubjectId, string level, decimal passingScore, string status, long id, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_Update");
+                objIData.AddParameter("@Code", code);
+                objIData.AddParameter("@Title", title);
+                objIData.AddParameter("@Slug", slug);
+                objIData.AddParameter("@ThumbnailUrl", thumbnailUrl);
+                objIData.AddParameter("@ShortDescription", shortDescription);
+                objIData.AddParameter("@Description", description);
+                objIData.AddParameter("@TeacherId", teacherId);
+                objIData.AddParameter("@CategoryId", categoryId);
+                objIData.AddParameter("@ClassSubjectID", classSubjectId);
+                objIData.AddParameter("@Level", level);
+                objIData.AddParameter("@PassingScore", passingScore);
+                objIData.AddParameter("@Status", status);
+                objIData.AddParameter("@Id", id);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                objIData.ExecNonQuery();
+                return true;
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi cập nhật khóa học", objEx);
+                this.objErrorException = objEx;
+                return false;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
+
+        /// <summary>
+        /// Tạo mới khóa học (gọi store SIM_Courses_Create)
+        /// </summary>
+        public DataTable Create(string code, string title, string slug, string thumbnailUrl, string shortDescription, string description, long teacherId, long? categoryId, long? classSubjectId, string level, decimal passingScore, string status, long actorId)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_Create");
+                objIData.AddParameter("@Code", code);
+                objIData.AddParameter("@Title", title);
+                objIData.AddParameter("@Slug", slug);
+                objIData.AddParameter("@ThumbnailUrl", thumbnailUrl);
+                objIData.AddParameter("@ShortDescription", shortDescription);
+                objIData.AddParameter("@Description", description);
+                objIData.AddParameter("@TeacherId", teacherId);
+                objIData.AddParameter("@CategoryId", categoryId);
+                objIData.AddParameter("@ClassSubjectID", classSubjectId);
+                objIData.AddParameter("@Level", level);
+                objIData.AddParameter("@PassingScore", passingScore);
+                objIData.AddParameter("@Status", status);
+                objIData.AddParameter("@ActorId", actorId);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi tạo khóa học", objEx);
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
+
+        /// <summary>
+        /// Lấy nội dung đầy đủ của khóa học (chương và bài học) - trả về DataSet
+        /// </summary>
+        public DataSet GetContent(long courseId, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_Content");
+                objIData.AddParameter("@CourseId", courseId);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataSet();
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi lấy nội dung khóa học", objEx);
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
+
         #region Enhanced Load Methods
 
         /// <summary>
@@ -160,6 +303,152 @@ namespace LmsObject
             SIM_Courses course = new SIM_Courses();
             DataTable dt = course.Search(condition);
             return FromDataTable(dt);
+        }
+
+        /// <summary>
+        /// Lấy danh sách khóa học (catalog) cho CMS
+        /// </summary>
+        public DataTable GetCatalog(int page, int pageSize)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_GetCatalog");
+                objIData.AddParameter("@Page", page);
+                objIData.AddParameter("@PageSize", pageSize);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi lấy danh sách khóa học", objEx);
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
+
+        /// <summary>
+        /// Đảm bảo workspace cho môn học lớp tồn tại
+        /// </summary>
+        public DataTable EnsureWorkspace(long classSubjectId, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_EnsureWorkspace");
+                objIData.AddParameter("@ClassSubjectID", classSubjectId);
+                objIData.AddParameter("@ActorID", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi khởi tạo workspace", objEx);
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
+
+        /// <summary>
+        /// Cập nhật thông tin khóa học
+        /// </summary>
+        public DataTable UpdateCourse(
+            long id,
+            string code,
+            string title,
+            string slug,
+            string thumbnailUrl,
+            string shortDescription,
+            string description,
+            long teacherId,
+            object categoryId,
+            object classSubjectId,
+            string level,
+            decimal passingScore,
+            string status,
+            long actorId,
+            bool isAdmin)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_Update");
+                objIData.AddParameter("@Id", id);
+                objIData.AddParameter("@Code", code);
+                objIData.AddParameter("@Title", title);
+                objIData.AddParameter("@Slug", slug);
+                objIData.AddParameter("@ThumbnailUrl", thumbnailUrl);
+                objIData.AddParameter("@ShortDescription", shortDescription);
+                objIData.AddParameter("@Description", description);
+                objIData.AddParameter("@TeacherId", teacherId);
+                objIData.AddParameter("@CategoryId", categoryId);
+                objIData.AddParameter("@ClassSubjectId", classSubjectId);
+                objIData.AddParameter("@Level", level);
+                objIData.AddParameter("@PassingScore", passingScore);
+                objIData.AddParameter("@Status", status);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi cập nhật khóa học", objEx);
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
+
+        /// <summary>
+        /// Lấy thông tin khóa học theo ID
+        /// </summary>
+        public DataTable GetCourseById(long courseId, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("SIM_Courses_Get");
+                objIData.AddParameter("@Id", courseId);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi lấy thông tin khóa học", objEx);
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
         }
 
         /// <summary>

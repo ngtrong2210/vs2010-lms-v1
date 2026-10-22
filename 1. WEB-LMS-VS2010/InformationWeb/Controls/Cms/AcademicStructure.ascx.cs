@@ -34,32 +34,12 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
-        protected override IDictionary<string, object> Parameters()
-        {
-            return Values("ActorID", CurrentUser.UserID, "IsAdmin", CurrentUser.IsAdmin);
-        }
-
-        protected override DataTable GetDataTable(string operation, IDictionary<string, object> parameters)
-        {
-            return AcademicService.GetDataTable(operation, ConvertToParams(parameters));
-        }
-
-        private static object[] ConvertToParams(IDictionary<string, object> parameters)
-        {
-            List<object> list = new List<object>();
-            foreach (var kvp in parameters)
-            {
-                list.Add("@" + kvp.Key);
-                list.Add(kvp.Value ?? DBNull.Value);
-            }
-            return list.ToArray();
-        }
 
         protected override void LoadData()
         {
             try
             {
-                DataSet data = AcademicService.GetDataSet(Operation, ConvertToParams(Parameters()));
+                DataSet data = AcademicService.GetCatalog(CurrentUser.UserID, CurrentUser.IsAdmin);
                 BindTable(DataGrid, data, 0);
                 BindTable(YearsGrid, data, 1);
                 BindTable(SciencesGrid, data, 2);
@@ -100,70 +80,37 @@ namespace InformationWeb.Controls.Cms
                 string entityType = TextValue(form, "entityType").ToUpperInvariant();
                 if (string.IsNullOrWhiteSpace(entityType))
                     throw new ArgumentException("Loại danh mục đào tạo không hợp lệ.");
-                DataTable result = AcademicService.GetDataTable(
-                    "Save",
-                    ConvertToParams(Values(
-                        "EntityType",
-                        entityType,
-                        "DataGroupID",
-                        IntValue(form, "dataGroupId", 1),
-                        "Code",
-                        DbText(form, "code"),
-                        "Name",
-                        DbText(form, "name"),
-                        "ShortName",
-                        DbText(form, "shortName"),
-                        "ParentCode",
-                        DbText(form, "parentCode"),
-                        "StartYear",
-                        DbInt(form, "startYear"),
-                        "FinishYear",
-                        DbInt(form, "finishYear"),
-                        "StartAt",
-                        DbDate(form, "startAt"),
-                        "FinishAt",
-                        DbDate(form, "finishAt"),
-                        "YearID",
-                        DbInt(form, "yearId"),
-                        "Semester",
-                        DbInt(form, "semester"),
-                        "ClassSubjectID",
-                        DbLong(form, "classSubjectId"),
-                        "ClassID",
-                        DbText(form, "classId"),
-                        "SubjectID",
-                        DbText(form, "subjectId"),
-                        "TeacherID",
-                        DbText(form, "teacherId"),
-                        "ClassSize",
-                        IntValue(form, "classSize", 0),
-                        "CreditCount",
-                        IntValue(form, "creditCount", 0),
-                        "TheoryQuantity",
-                        IntValue(form, "theoryQuantity", 0),
-                        "PracticeQuantity",
-                        IntValue(form, "practiceQuantity", 0),
-                        "TimetableID",
-                        DbLong(form, "timetableId"),
-                        "DayOfWeek",
-                        DbInt(form, "dayOfWeek"),
-                        "StartPeriod",
-                        DbInt(form, "startPeriod"),
-                        "EndPeriod",
-                        DbInt(form, "endPeriod"),
-                        "StartTime",
-                        DbTime(form, "startTime"),
-                        "EndTime",
-                        DbTime(form, "endTime"),
-                        "RoomName",
-                        DbText(form, "roomName"),
-                        "EffectiveFrom",
-                        DbDate(form, "effectiveFrom"),
-                        "EffectiveTo",
-                        DbDate(form, "effectiveTo"),
-                        "ActorID",
-                        CurrentUser.UserID
-                    )
+                DataTable result = AcademicService.SaveAcademicEntity(
+                    entityType,
+                    IntValue(form, "dataGroupId", 1),
+                    DbText(form, "code"),
+                    DbText(form, "name"),
+                    DbText(form, "shortName"),
+                    DbText(form, "parentCode"),
+                    DbInt(form, "startYear"),
+                    DbInt(form, "finishYear"),
+                    DbDate(form, "startAt"),
+                    DbDate(form, "finishAt"),
+                    DbInt(form, "yearId"),
+                    DbInt(form, "semester"),
+                    DbLong(form, "classSubjectId"),
+                    DbText(form, "classId"),
+                    DbText(form, "subjectId"),
+                    DbText(form, "teacherId"),
+                    IntValue(form, "classSize", 0),
+                    IntValue(form, "creditCount", 0),
+                    IntValue(form, "theoryQuantity", 0),
+                    IntValue(form, "practiceQuantity", 0),
+                    DbLong(form, "timetableId"),
+                    DbInt(form, "dayOfWeek"),
+                    DbInt(form, "startPeriod"),
+                    DbInt(form, "endPeriod"),
+                    DbTime(form, "startTime"),
+                    DbTime(form, "endTime"),
+                    DbText(form, "roomName"),
+                    DbDate(form, "effectiveFrom"),
+                    DbDate(form, "effectiveTo"),
+                    CurrentUser.UserID
                 );
                 bool ok = result != null && result.Rows.Count > 0;
                 ShowActionResult(
@@ -205,18 +152,11 @@ namespace InformationWeb.Controls.Cms
                             studentIds.Add(id);
                 if (classId.Length == 0 || studentIds.Count == 0)
                     throw new ArgumentException("Vui lòng chọn lớp và ít nhất một học viên.");
-                DataTable result = AcademicService.GetDataTable(
-                    "AssignStudents",
-                    ConvertToParams(Values(
-                        "DataGroupID",
-                        1,
-                        "ClassID",
-                        classId,
-                        "StudentUserIDsJson",
-                        new JavaScriptSerializer().Serialize(studentIds),
-                        "ActorID",
-                        CurrentUser.UserID
-                    )
+                DataTable result = AcademicService.AssignStudentsToClass(
+                    1,
+                    classId,
+                    new JavaScriptSerializer().Serialize(studentIds),
+                    CurrentUser.UserID
                 );
                 bool ok = result != null && result.Rows.Count > 0;
                 ShowActionResult(
@@ -318,10 +258,10 @@ namespace InformationWeb.Controls.Cms
                 : string.Empty;
         }
 
-        private static object DbText(IDictionary<string, object> values, string key)
+        private static string DbText(IDictionary<string, object> values, string key)
         {
             string value = TextValue(values, key);
-            return value.Length == 0 ? (object)DBNull.Value : value;
+            return value.Length == 0 ? null : value;
         }
 
         private static int IntValue(IDictionary<string, object> values, string key, int fallback)
@@ -337,7 +277,7 @@ namespace InformationWeb.Controls.Cms
                 : fallback;
         }
 
-        private static object DbInt(IDictionary<string, object> values, string key)
+        private static int? DbInt(IDictionary<string, object> values, string key)
         {
             int value;
             return int.TryParse(
@@ -346,11 +286,11 @@ namespace InformationWeb.Controls.Cms
                 CultureInfo.InvariantCulture,
                 out value
             )
-                ? (object)value
-                : DBNull.Value;
+                ? value
+                : (int?)null;
         }
 
-        private static object DbLong(IDictionary<string, object> values, string key)
+        private static long? DbLong(IDictionary<string, object> values, string key)
         {
             long value;
             return long.TryParse(
@@ -359,11 +299,11 @@ namespace InformationWeb.Controls.Cms
                 CultureInfo.InvariantCulture,
                 out value
             )
-                ? (object)value
-                : DBNull.Value;
+                ? value
+                : (long?)null;
         }
 
-        private static object DbDate(IDictionary<string, object> values, string key)
+        private static DateTime? DbDate(IDictionary<string, object> values, string key)
         {
             DateTime value;
             return DateTime.TryParse(
@@ -372,11 +312,11 @@ namespace InformationWeb.Controls.Cms
                 DateTimeStyles.None,
                 out value
             )
-                ? (object)value
-                : DBNull.Value;
+                ? value
+                : (DateTime?)null;
         }
 
-        private static object DbTime(IDictionary<string, object> values, string key)
+        private static TimeSpan? DbTime(IDictionary<string, object> values, string key)
         {
             TimeSpan value;
             return TimeSpan.TryParse(
@@ -384,8 +324,8 @@ namespace InformationWeb.Controls.Cms
                 CultureInfo.InvariantCulture,
                 out value
             )
-                ? (object)value
-                : DBNull.Value;
+                ? value
+                : (TimeSpan?)null;
         }
     }
 }

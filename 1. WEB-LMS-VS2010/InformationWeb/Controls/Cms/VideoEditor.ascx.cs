@@ -79,10 +79,8 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private void LoadVideo()
         {
-            DataTable table = ServiceRegistry.Content.GetDataTable(
-                "VideoGet",
-                Values("Id", VideoId, "ActorId", CurrentUser.UserID, "IsAdmin", CurrentUser.IsAdmin)
-            );
+            var videoAssets = new LmsObject.SIM_VideoAssets();
+            DataTable table = videoAssets.Get(VideoId, CurrentUser.UserID, CurrentUser.IsAdmin);
             if (table == null || table.Rows.Count == 0)
                 throw new InvalidOperationException(
                     "Không tìm thấy video hoặc bạn không có quyền mở trình biên tập."
@@ -126,17 +124,8 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private DataTable LoadInteractions()
         {
-            DataTable table = ServiceRegistry.Content.GetDataTable(
-                "InteractionList",
-                Values(
-                    "VideoId",
-                    VideoId,
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
-            );
+            var videos = new LmsObject.SIM_Videos();
+            DataTable table = videos.GetInteractions(VideoId, CurrentUser.UserID, CurrentUser.IsAdmin);
             InteractionsRepeater.DataSource = table;
             InteractionsRepeater.DataBind();
             TimelineRepeater.DataSource = table;
@@ -153,18 +142,15 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private void LoadQuestions(long selectedId)
         {
-            DataTable table = ServiceRegistry.Questions.GetDataTable(
-                "List",
-                Values(
-                    "Search",
-                    QuestionSearchText.Text.Trim(),
-                    "Type",
-                    Null(QuestionTypeFilter.SelectedValue),
-                    "Page",
-                    1,
-                    "PageSize",
-                    50
-                )
+            // Sử dụng LMS_Questions business object thay vì ServiceRegistry.Questions
+            LmsObject.LMS_Questions questionsObj = new LmsObject.LMS_Questions();
+            DataTable table = questionsObj.ListQuestions(
+                QuestionSearchText.Text.Trim(),
+                Null(QuestionTypeFilter.SelectedValue),
+                1,
+                1000, // PageSize
+                CurrentUser.UserID,
+                CurrentUser.IsAdmin
             );
             QuestionList.Items.Clear();
             if (table != null)
@@ -292,36 +278,23 @@ namespace InformationWeb.Controls.Cms
                     duration = 1;
                 string source = NormalizeSource(VideoSourceTypeValue.Value);
                 ValidateSource(source, VideoUrlValue.Value);
-                DataTable result = ServiceRegistry.Content.GetDataTable(
-                    "VideoUpdate",
-                    Values(
-                        "Id",
-                        VideoId,
-                        "LessonId",
-                        ToLong(LessonIdValue.Value),
-                        "Title",
-                        HttpUtility.HtmlDecode(EditorTitleText.Text),
-                        "SourceType",
-                        source,
-                        "VideoUrl",
-                        Null(VideoUrlValue.Value),
-                        "PosterUrl",
-                        Null(PosterUrlValue.Value),
-                        "DurationSeconds",
-                        duration,
-                        "AllowSeek",
-                        ToBool(AllowSeekValue.Value),
-                        "AllowSpeed",
-                        ToBool(AllowSpeedValue.Value),
-                        "RequiredWatchPercent",
-                        ToDecimal(RequiredWatchValue.Value, 80),
-                        "Status",
-                        VideoStatusValue.Value,
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+
+                // Sử dụng SIM_Videos business object thay vì ServiceRegistry.Content
+                LmsObject.SIM_Videos videoObj = new LmsObject.SIM_Videos();
+                DataTable result = videoObj.UpdateVideo(
+                    VideoId,
+                    ToLong(LessonIdValue.Value),
+                    HttpUtility.HtmlDecode(EditorTitleText.Text),
+                    source,
+                    Null(VideoUrlValue.Value),
+                    Null(PosterUrlValue.Value),
+                    duration,
+                    ToBool(AllowSeekValue.Value),
+                    ToBool(AllowSpeedValue.Value),
+                    ToDecimal(RequiredWatchValue.Value, 80),
+                    VideoStatusValue.Value,
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
                 if (result == null || result.Rows.Count == 0)
                     throw new InvalidOperationException("Store không trả về kết quả lưu video.");
@@ -346,18 +319,14 @@ namespace InformationWeb.Controls.Cms
                 long assetId = ToLong(VideoAssetIdValue.Value);
                 if (assetId <= 0)
                     throw new InvalidOperationException("Video chưa có tài nguyên để nhân bản.");
-                DataTable result = ServiceRegistry.Content.GetDataTable(
-                    "VideoLibraryDuplicate",
-                    Values(
-                        "Id",
-                        assetId,
-                        "Title",
-                        HttpUtility.HtmlDecode(EditorTitleText.Text) + " - Bản sao",
-                        "ActorId",
-                        CurrentUser.UserID,
-                        "IsAdmin",
-                        CurrentUser.IsAdmin
-                    )
+
+                // Sử dụng SIM_Videos business object thay vì ServiceRegistry.Content
+                LmsObject.SIM_Videos videoObj = new LmsObject.SIM_Videos();
+                DataTable result = videoObj.DuplicateVideo(
+                    assetId,
+                    HttpUtility.HtmlDecode(EditorTitleText.Text) + " - Bản sao",
+                    CurrentUser.UserID,
+                    CurrentUser.IsAdmin
                 );
                 if (result == null || result.Rows.Count == 0)
                     throw new InvalidOperationException("Store không trả về ID video nhân bản.");
@@ -531,16 +500,53 @@ namespace InformationWeb.Controls.Cms
                 if (id > 0)
                 {
                     EnsureInteraction(id);
-                    values["Id"] = id;
-                    if (!ServiceRegistry.Content.ExecNonQuery("InteractionUpdate", values))
+                    var videos = new LmsObject.SIM_Videos();
+                    string dataJson = Json.Serialize(new
+                    {
+                        questionId = questionId,
+                        required = InteractionRequiredCheck.Checked,
+                        pauseVideo = InteractionPauseCheck.Checked,
+                        allowSkip = InteractionSkipCheck.Checked,
+                        score = score,
+                        attemptLimit = attempts,
+                        sortOrder = NextSortOrder(time, id),
+                        status = InteractionStatusList.SelectedValue
+                    });
+                    if (!videos.UpdateInteraction(
+                        VideoId,
+                        id,
+                        time,
+                        "QUESTION",
+                        dataJson,
+                        CurrentUser.UserID,
+                        CurrentUser.IsAdmin,
+                        CurrentUser.UserName
+                    ))
                         throw new InvalidOperationException("Không thể cập nhật tương tác.");
                 }
                 else
                 {
-                    values["VideoId"] = VideoId;
-                    DataTable result = ServiceRegistry.Content.GetDataTable(
-                        "InteractionCreate",
-                        values
+                    var videos = new LmsObject.SIM_Videos();
+                    string dataJson = Json.Serialize(new
+                    {
+                        questionId = questionId,
+                        required = InteractionRequiredCheck.Checked,
+                        pauseVideo = InteractionPauseCheck.Checked,
+                        allowSkip = InteractionSkipCheck.Checked,
+                        score = score,
+                        attemptLimit = attempts,
+                        sortOrder = NextSortOrder(time, id),
+                        status = InteractionStatusList.SelectedValue
+                    });
+                    DataTable result = videos.CreateInteraction(
+                        VideoId,
+                        questionId,
+                        time,
+                        "QUESTION",
+                        dataJson,
+                        CurrentUser.UserID,
+                        CurrentUser.IsAdmin,
+                        CurrentUser.UserName
                     );
                     if (result == null || result.Rows.Count == 0)
                         throw new InvalidOperationException("Không thể tạo tương tác.");
@@ -603,19 +609,8 @@ namespace InformationWeb.Controls.Cms
                 EnsureEditable();
                 long id = ToLong(InteractionIdValue.Value);
                 EnsureInteraction(id);
-                if (
-                    !ServiceRegistry.Content.ExecNonQuery(
-                        "InteractionDelete",
-                        Values(
-                            "Id",
-                            id,
-                            "ActorId",
-                            CurrentUser.UserID,
-                            "IsAdmin",
-                            CurrentUser.IsAdmin
-                        )
-                    )
-                )
+                var videos = new LmsObject.SIM_Videos();
+                if (!videos.DeleteInteraction(VideoId, id, CurrentUser.UserID, CurrentUser.IsAdmin))
                     throw new InvalidOperationException("Không thể xóa tương tác.");
                 DeleteConfirmPanel.Visible = false;
                 InteractionEditorPanel.Visible = false;
@@ -809,17 +804,8 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private DataRow FindInteraction(long id)
         {
-            DataTable table = ServiceRegistry.Content.GetDataTable(
-                "InteractionList",
-                Values(
-                    "VideoId",
-                    VideoId,
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
-            );
+            var videos = new LmsObject.SIM_Videos();
+            DataTable table = videos.GetInteractions(VideoId, CurrentUser.UserID, CurrentUser.IsAdmin);
             if (table != null)
                 foreach (DataRow row in table.Rows)
                     if (LongAny(row, "Id", "VideoInteractionID") == id)
@@ -852,17 +838,8 @@ namespace InformationWeb.Controls.Cms
         /// </summary>
         private int NextSortOrder(int time, long currentId)
         {
-            DataTable table = ServiceRegistry.Content.GetDataTable(
-                "InteractionList",
-                Values(
-                    "VideoId",
-                    VideoId,
-                    "ActorId",
-                    CurrentUser.UserID,
-                    "IsAdmin",
-                    CurrentUser.IsAdmin
-                )
-            );
+            var videos = new LmsObject.SIM_Videos();
+            DataTable table = videos.GetInteractions(VideoId, CurrentUser.UserID, CurrentUser.IsAdmin);
             int max = 0;
             if (table != null)
                 foreach (DataRow row in table.Rows)

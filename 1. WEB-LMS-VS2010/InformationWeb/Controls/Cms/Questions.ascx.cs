@@ -7,7 +7,7 @@ using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using InformationWeb.LmsInfrastructure;
-using LmsService;
+using LmsObject;
 
 namespace InformationWeb.Controls.Cms
 {
@@ -17,20 +17,6 @@ namespace InformationWeb.Controls.Cms
     /// </summary>
     public partial class Questions : CmsStoreControl
     {
-        /// <summary>
-        /// Service quản lý câu hỏi.
-        /// </summary>
-        protected override ModuleService Service
-        {
-            get { return ServiceRegistry.Questions; }
-        }
-        /// <summary>
-        /// Tên operation để lấy danh sách câu hỏi.
-        /// </summary>
-        protected override string Operation
-        {
-            get { return "List"; }
-        }
         /// <summary>
         /// Tiêu đề trang quản lý câu hỏi.
         /// </summary>
@@ -44,25 +30,6 @@ namespace InformationWeb.Controls.Cms
         protected override string PageDescription
         {
             get { return "Quản lý câu hỏi dùng trong video và bài kiểm tra."; }
-        }
-
-        /// <summary>
-        /// Các tham số cho service call (tìm kiếm, lọc theo loại, phân trang).
-        /// </summary>
-        protected override IDictionary<string, object> Parameters()
-        {
-            return Values(
-                "Search",
-                SearchText.Text.Trim(),
-                "Type",
-                string.IsNullOrWhiteSpace(QuestionTypeFilterList.SelectedValue)
-                    ? null
-                    : (object)QuestionTypeFilterList.SelectedValue,
-                "Page",
-                1,
-                "PageSize",
-                100
-            );
         }
 
         /// <summary>
@@ -91,21 +58,22 @@ namespace InformationWeb.Controls.Cms
                 return;
             try
             {
-                DataSet data = Service.GetDataSet("Get", Values("Id", id));
+                LMS_Questions question = new LMS_Questions();
+                DataSet data = question.GetWithDetails(id);
                 if (data == null || data.Tables.Count == 0 || data.Tables[0].Rows.Count == 0)
                     throw new InvalidOperationException("Không tìm thấy câu hỏi.");
-                DataRow question = data.Tables[0].Rows[0];
+                DataRow row = data.Tables[0].Rows[0];
                 QuestionIdValue.Value = id.ToString(CultureInfo.InvariantCulture);
-                QuestionTextInput.Text = WebData.Text(question, "QuestionText");
-                QuestionDescriptionInput.Text = WebData.Text(question, "Explanation");
+                QuestionTextInput.Text = WebData.Text(row, "QuestionText");
+                QuestionDescriptionInput.Text = WebData.Text(row, "Explanation");
                 QuestionScoreText.Text = Convert.ToString(
-                    question["DefaultScore"],
+                    row["DefaultScore"],
                     CultureInfo.CurrentCulture
                 );
-                SelectValue(QuestionTypeList, WebData.Text(question, "QuestionType"));
-                SelectValue(QuestionDifficultyList, WebData.Text(question, "Difficulty"));
-                SelectValue(ShortAnswerModeList, WebData.Text(question, "ShortAnswerMode"));
-                SelectValue(QuestionStatusList, WebData.Text(question, "Status"));
+                SelectValue(QuestionTypeList, WebData.Text(row, "QuestionType"));
+                SelectValue(QuestionDifficultyList, WebData.Text(row, "Difficulty"));
+                SelectValue(ShortAnswerModeList, WebData.Text(row, "ShortAnswerMode"));
+                SelectValue(QuestionStatusList, WebData.Text(row, "Status"));
                 QuestionOptionsText.Text = OptionLines(
                     data.Tables.Count > 1 ? data.Tables[1] : null
                 );
@@ -171,10 +139,11 @@ namespace InformationWeb.Controls.Cms
                     blankCodes.Add(parts[0].Trim());
                     blankAnswers.Add(parts[1].Trim());
                 }
+                LMS_Questions question = new LMS_Questions();
                 long id;
                 if (long.TryParse(QuestionIdValue.Value, out id) && id > 0)
                 {
-                    ServiceRegistry.Questions.UpdateQuestion(
+                    question.UpdateQuestion(
                         id,
                         QuestionTypeList.SelectedValue,
                         QuestionTextInput.Text,
@@ -197,7 +166,7 @@ namespace InformationWeb.Controls.Cms
                 }
                 else
                 {
-                    id = ServiceRegistry.Questions.CreateQuestion(
+                    id = question.CreateQuestion(
                         QuestionTypeList.SelectedValue,
                         QuestionTextInput.Text,
                         null,

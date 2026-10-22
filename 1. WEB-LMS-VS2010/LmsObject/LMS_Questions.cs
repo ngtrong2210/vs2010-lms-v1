@@ -55,6 +55,56 @@ namespace LmsObject
         }
 
         /// <summary>
+        /// Lấy danh sách câu hỏi có phân trang và lọc
+        /// </summary>
+        public DataTable ListQuestions(string search, string type, int page, int pageSize, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("QuestionList");
+                objIData.AddParameter("@Search", search);
+                objIData.AddParameter("@Type", type);
+                objIData.AddParameter("@Page", page);
+                objIData.AddParameter("@PageSize", pageSize);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Lấy danh sách câu hỏi có phân trang và lọc - trả về DataSet
+        /// </summary>
+        public DataSet ListQuestionsDataSet(string search, string type, int page, int pageSize, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("QuestionList");
+                objIData.AddParameter("@Search", search);
+                objIData.AddParameter("@Type", type);
+                objIData.AddParameter("@Page", page);
+                objIData.AddParameter("@PageSize", pageSize);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                return objIData.ExecStoreToDataSet();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
         /// Lấy answer key của câu hỏi
         /// </summary>
         public DataTable GetAnswerKey(long questionID)
@@ -65,6 +115,118 @@ namespace LmsObject
                 objIData.CreateNewStoredProcedure("LMS_Questions_GetAnswerKey");
                 objIData.AddParameter(P_QuestionID, questionID);
                 return objIData.ExecStoreToDataTable();
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return null;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Cập nhật câu hỏi
+        /// </summary>
+        public bool UpdateQuestion(
+            long id,
+            string questionType,
+            string questionText,
+            string media,
+            string explanation,
+            string difficulty,
+            decimal defaultScore,
+            string shortAnswerMode,
+            string status,
+            List<string> optionCodes,
+            List<string> optionTexts,
+            List<bool> correctFlags,
+            List<string> answerKeys,
+            List<string> blankCodes,
+            List<string> blankAnswers,
+            long actorId,
+            bool isAdmin)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("LMS_Questions_Update");
+                objIData.AddParameter("@Id", id);
+                objIData.AddParameter("@QuestionType", questionType);
+                objIData.AddParameter("@QuestionText", questionText);
+                objIData.AddParameter("@Media", media);
+                objIData.AddParameter("@Explanation", explanation);
+                objIData.AddParameter("@Difficulty", difficulty);
+                objIData.AddParameter("@DefaultScore", defaultScore);
+                objIData.AddParameter("@ShortAnswerMode", shortAnswerMode);
+                objIData.AddParameter("@Status", status);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                objIData.ExecNonQuery();
+                return true;
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return false;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Tạo câu hỏi mới
+        /// </summary>
+        public long CreateQuestion(
+            string questionType,
+            string questionText,
+            string media,
+            string explanation,
+            string difficulty,
+            decimal defaultScore,
+            string shortAnswerMode,
+            string status,
+            List<string> optionCodes,
+            List<string> optionTexts,
+            List<bool> correctFlags,
+            List<string> answerKeys,
+            List<string> blankCodes,
+            List<string> blankAnswers,
+            long actorId)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("LMS_Questions_Create");
+                objIData.AddParameter("@QuestionType", questionType);
+                objIData.AddParameter("@QuestionText", questionText);
+                objIData.AddParameter("@Media", media);
+                objIData.AddParameter("@Explanation", explanation);
+                objIData.AddParameter("@Difficulty", difficulty);
+                objIData.AddParameter("@DefaultScore", defaultScore);
+                objIData.AddParameter("@ShortAnswerMode", shortAnswerMode);
+                objIData.AddParameter("@Status", status);
+                objIData.AddParameter("@ActorId", actorId);
+                object result = objIData.ExecStoreToScalar();
+                return result != null ? Convert.ToInt64(result) : 0;
+            }
+            catch (Exception objEx)
+            {
+                this.objErrorException = objEx;
+                return 0;
+            }
+            finally { if (!bolIsExistIData) objIData.Disconnect(); }
+        }
+
+        /// <summary>
+        /// Lấy câu hỏi theo ID - trả về DataSet với các bảng liên quan
+        /// </summary>
+        public DataSet GetWithDetails(long id)
+        {
+            if (!bolIsExistIData) objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("LMS_Questions_GetWithDetails");
+                objIData.AddParameter("@Id", id);
+                return objIData.ExecStoreToDataSet();
             }
             catch (Exception objEx)
             {

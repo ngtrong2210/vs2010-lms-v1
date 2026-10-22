@@ -205,5 +205,37 @@ namespace LmsObject
                     objIData.Disconnect();
             }
         }
+
+        /// <summary>
+        /// Sắp xếp lại thứ tự chương (gọi store ChapterReorder)
+        /// </summary>
+        public bool ChapterReorder(long id, int sortOrder, long actorId, bool isAdmin)
+        {
+            if (!bolIsExistIData)
+                objIData = DCore.Data.CreateData();
+            try
+            {
+                objIData.CreateNewStoredProcedure("ChapterReorder");
+                objIData.AddParameter("@Id", id);
+                objIData.AddParameter("@SortOrder", sortOrder);
+                objIData.AddParameter("@ActorId", actorId);
+                objIData.AddParameter("@IsAdmin", isAdmin);
+                objIData.ExecNonQuery();
+                return true;
+            }
+            catch (Exception objEx)
+            {
+                if (bolIsExistIData)
+                    this.RollBackTransaction();
+                new SystemError(SystemConfig.ConnectionString, "Lỗi sắp xếp lại chương", objEx);
+                this.objErrorException = objEx;
+                return false;
+            }
+            finally
+            {
+                if (!bolIsExistIData)
+                    objIData.Disconnect();
+            }
+        }
     }
 }
