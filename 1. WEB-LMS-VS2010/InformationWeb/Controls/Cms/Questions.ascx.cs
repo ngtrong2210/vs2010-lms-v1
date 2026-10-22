@@ -11,25 +11,44 @@ using LmsService;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl quản lý ngân hàng câu hỏi trong CMS.
+    /// Cung cấp chức năng thêm, sửa, xóa và hiển thị danh sách câu hỏi dùng trong video và bài kiểm tra.
+    /// </summary>
     public partial class Questions : CmsStoreControl
     {
+        /// <summary>
+        /// Service quản lý câu hỏi.
+        /// </summary>
         protected override ModuleService Service
         {
             get { return ServiceRegistry.Questions; }
         }
+        /// <summary>
+        /// Tên operation để lấy danh sách câu hỏi.
+        /// </summary>
         protected override string Operation
         {
             get { return "List"; }
         }
+        /// <summary>
+        /// Tiêu đề trang quản lý câu hỏi.
+        /// </summary>
         protected override string PageTitle
         {
             get { return "Ngân hàng câu hỏi"; }
         }
+        /// <summary>
+        /// Mô tả trang quản lý câu hỏi.
+        /// </summary>
         protected override string PageDescription
         {
             get { return "Quản lý câu hỏi dùng trong video và bài kiểm tra."; }
         }
 
+        /// <summary>
+        /// Các tham số cho service call (tìm kiếm, lọc theo loại, phân trang).
+        /// </summary>
         protected override IDictionary<string, object> Parameters()
         {
             return Values(
@@ -46,6 +65,9 @@ namespace InformationWeb.Controls.Cms
             );
         }
 
+        /// <summary>
+        /// Đăng ký AsyncPostBackControl cho nút sửa câu hỏi trong mỗi dòng GridView.
+        /// </summary>
         protected void DataGrid_RowCreated(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType != DataControlRowType.DataRow)
@@ -56,6 +78,10 @@ namespace InformationWeb.Controls.Cms
                 manager.RegisterAsyncPostBackControl(edit);
         }
 
+        /// <summary>
+        /// Xử lý sự kiện khi người dùng bấm nút sửa câu hỏi.
+        /// Nạp dữ liệu câu hỏi vào form chỉnh sửa.
+        /// </summary>
         protected void DataGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName != "EditQuestion")
@@ -97,6 +123,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện tạo mới hoặc cập nhật câu hỏi.
+        /// </summary>
         protected void CreateQuestionButton_Click(object sender, System.EventArgs e)
         {
             decimal score;
@@ -199,6 +228,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Chuyển đổi chuỗi đa dòng thành danh sách các dòng không rỗng.
+        /// </summary>
         private static List<string> Lines(string value)
         {
             List<string> result = new List<string>();
@@ -216,12 +248,18 @@ namespace InformationWeb.Controls.Cms
             return result;
         }
 
+        /// <summary>
+        /// Chọn giá trị trong DropDownList/ListControl theo value.
+        /// </summary>
         private static void SelectValue(ListControl control, string value)
         {
             if (control != null && control.Items.FindByValue(value) != null)
                 control.SelectedValue = value;
         }
 
+        /// <summary>
+        /// Chuyển đổi DataTable các lựa chọn thành chuỗi text định dạng code|text|isCorrect.
+        /// </summary>
         private static string OptionLines(DataTable table)
         {
             StringBuilder result = new StringBuilder();
@@ -237,6 +275,9 @@ namespace InformationWeb.Controls.Cms
             return result.ToString().Trim();
         }
 
+        /// <summary>
+        /// Chuyển đổi DataTable các đáp án ngắn thành chuỗi text đa dòng.
+        /// </summary>
         private static string AnswerKeyLines(DataTable table)
         {
             StringBuilder result = new StringBuilder();
@@ -246,6 +287,9 @@ namespace InformationWeb.Controls.Cms
             return result.ToString().Trim();
         }
 
+        /// <summary>
+        /// Chuyển đổi DataTable các ô trống thành chuỗi text định dạng blankCode|correctOptionCode.
+        /// </summary>
         private static string BlankLines(DataTable table)
         {
             StringBuilder result = new StringBuilder();
@@ -259,6 +303,9 @@ namespace InformationWeb.Controls.Cms
             return result.ToString().Trim();
         }
 
+        /// <summary>
+        /// Lấy text hiển thị cho câu hỏi (đặc biệt xử lý cho loại CLOZE_DRAG_DROP).
+        /// </summary>
         protected string QuestionDisplayText(object type, object text, object description)
         {
             return Server.HtmlEncode(
@@ -272,6 +319,9 @@ namespace InformationWeb.Controls.Cms
             );
         }
 
+        /// <summary>
+        /// Chuyển đổi mã loại câu hỏi sang nhãn tiếng Việt.
+        /// </summary>
         protected string QuestionTypeLabel(object value)
         {
             string type = Convert.ToString(value);
@@ -288,6 +338,9 @@ namespace InformationWeb.Controls.Cms
             return Server.HtmlEncode(type);
         }
 
+        /// <summary>
+        /// Chuyển đổi mã độ khó câu hỏi sang nhãn tiếng Việt.
+        /// </summary>
         protected string QuestionDifficultyLabel(object value)
         {
             string difficulty = Convert.ToString(value);
@@ -304,11 +357,17 @@ namespace InformationWeb.Controls.Cms
                 : "badge-soft-warning";
         }
 
+        /// <summary>
+        /// Chuyển đổi mã trạng thái câu hỏi sang nhãn tiếng Việt.
+        /// </summary>
         protected string QuestionStatusLabel(object value)
         {
             return Convert.ToString(value) == "ACTIVE" ? "Hoạt động" : "Tạm ẩn";
         }
 
+        /// <summary>
+        /// Chuyển đổi mã trạng thái câu hỏi sang class CSS cho badge.
+        /// </summary>
         protected string QuestionStatusClass(object value)
         {
             return Convert.ToString(value) == "ACTIVE"
@@ -316,6 +375,9 @@ namespace InformationWeb.Controls.Cms
                 : "badge-soft-warning";
         }
 
+        /// <summary>
+        /// Định dạng ngày tháng theo dd/MM/yyyy.
+        /// </summary>
         protected string QuestionDateText(object value)
         {
             DateTime date;

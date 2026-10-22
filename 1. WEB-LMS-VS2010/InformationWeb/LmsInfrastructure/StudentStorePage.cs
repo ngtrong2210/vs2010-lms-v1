@@ -91,15 +91,31 @@ namespace InformationWeb.LmsInfrastructure
             if (!IsPostBack) LoadData();
         }
 
+        /// <summary>Xử lý sự kiện click nút làm mới dữ liệu.</summary>
         protected void RefreshButton_Click(object sender, EventArgs e) { LoadData(); }
+
+        /// <summary>
+        /// Tải dữ liệu từ stored procedure và hiển thị lên GridView.
+        /// </summary>
         protected virtual void LoadData()
         {
             try { DataTable table = GetDataTable(Operation, Parameters()); WebData.Bind(DataGrid, table, EmptyText, ErrorText); }
             catch (Exception ex) { WebLog.Error("Nạp " + PageTitle + " thất bại.", ex); WebData.Bind(DataGrid, null, EmptyText, ErrorText); }
         }
 
+        /// <summary>
+        /// Phương thức trừu tượng để lấy DataTable từ stored procedure.
+        /// </summary>
+        /// <param name="operation">Tên stored procedure.</param>
+        /// <param name="parameters">Danh sách tham số.</param>
+        /// <returns>DataTable chứa dữ liệu.</returns>
         protected abstract DataTable GetDataTable(string operation, IDictionary<string, object> parameters);
 
+        /// <summary>
+        /// Tạo Dictionary từ các cặp key-value được truyền vào.
+        /// </summary>
+        /// <param name="pairs">Các cặp key-value xen kẽ.</param>
+        /// <returns>Dictionary chứa các tham số.</returns>
         protected IDictionary<string, object> Values(params object[] pairs)
         {
             Dictionary<string, object> values = new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase);

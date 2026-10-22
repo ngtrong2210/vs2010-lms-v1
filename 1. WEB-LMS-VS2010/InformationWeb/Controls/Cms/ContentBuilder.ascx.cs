@@ -9,14 +9,27 @@ using LmsService;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl biên soạn nội dung môn học trong CMS.
+    /// Cung cấp chức năng tạo mới, chỉnh sửa cấu trúc chương/bài học, quản lý video, bài kiểm tra và nội dung tương tác.
+    /// </summary>
     public partial class ContentBuilder : CmsControl
     {
         private DataTable lessonTable;
+        /// <summary>
+        /// ID của môn học đang biên soạn (lấy từ route parameter).
+        /// </summary>
         private long CourseId
         {
             get { return RouteLong("courseId"); }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện Page_Load - nạp dữ liệu môn học, câu hỏi và nội dung.
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện Page_Load: nạp dữ liệu môn học nếu không phải postback.
+        /// </summary>
         protected void Page_Load(object sender, EventArgs e)
         {
             HeadingText.Text = CourseId > 0 ? "Biên soạn môn học" : "Tạo môn học";
@@ -46,6 +59,15 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Nạp thông tin chi tiết môn học vào form chỉnh sửa.
+        /// </summary>
+        /// <summary>
+        /// Nạp thông tin môn học hiện tại và dữ liệu chapter/lesson.
+        /// </summary>
+        /// <summary>
+        /// Nạp thông tin khóa học hiện tại.
+        /// </summary>
         private void LoadCourse()
         {
             DataTable detail = ServiceRegistry.Courses.GetDataTable(
@@ -79,6 +101,15 @@ namespace InformationWeb.Controls.Cms
             BindContent(GetCourseContent());
         }
 
+        /// <summary>
+        /// Bind dữ liệu nội dung (chương và bài học) vào các control hiển thị.
+        /// </summary>
+        /// <summary>
+        /// Bind dữ liệu nội dung môn học vào các Repeater.
+        /// </summary>
+        /// <summary>
+        /// Ràng buộc dữ liệu nội dung vào UI.
+        /// </summary>
         private void BindContent(DataSet content)
         {
             DataTable chapters =
@@ -97,6 +128,15 @@ namespace InformationWeb.Controls.Cms
             EmptyContentPanel.Visible = chapterCount == 0;
         }
 
+        /// <summary>
+        /// Nạp ngân hàng câu hỏi và serialize thành JSON cho JavaScript sử dụng.
+        /// </summary>
+        /// <summary>
+        /// Nạp danh sách câu hỏi từ ngân hàng câu hỏi.
+        /// </summary>
+        /// <summary>
+        /// Nạp danh sách ngân hàng câu hỏi.
+        /// </summary>
         private void LoadQuestionBank()
         {
             DataSet data = ServiceRegistry.Questions.GetDataSet(
@@ -130,6 +170,12 @@ namespace InformationWeb.Controls.Cms
             QuestionBankJsonValue.Value = Json().Serialize(rows);
         }
 
+        /// <summary>
+        /// Nạp dữ liệu bài kiểm tra của bài học vào form chỉnh sửa.
+        /// </summary>
+        /// <summary>
+        /// Nạp editor quiz cho bài học cụ thể.
+        /// </summary>
         private void LoadQuizEditor(long lessonId)
         {
             QuizPassingScoreText.Text = "50";
@@ -175,6 +221,12 @@ namespace InformationWeb.Controls.Cms
             QuizSelectedJsonValue.Value = Json().Serialize(selected);
         }
 
+        /// <summary>
+        /// Nạp dữ liệu nội dung tương tác của bài học vào form chỉnh sửa.
+        /// </summary>
+        /// <summary>
+        /// Nạp editor nội dung tương tác cho bài học cụ thể.
+        /// </summary>
         private void LoadInteractiveEditor(long lessonId)
         {
             InteractiveCompletionList.SelectedValue = "REQUIRED_QUESTIONS";
@@ -235,6 +287,12 @@ namespace InformationWeb.Controls.Cms
             InteractiveOriginalIdsValue.Value = Json().Serialize(originalIds);
         }
 
+        /// <summary>
+        /// Lưu cấu hình bài kiểm tra của bài học vào database.
+        /// </summary>
+        /// <summary>
+        /// Lưu cấu hình quiz của bài học.
+        /// </summary>
         private void SaveQuizEditor(long lessonId)
         {
             decimal passingScore;
@@ -304,6 +362,12 @@ namespace InformationWeb.Controls.Cms
                 throw new InvalidOperationException("Không thể lưu cấu hình bài kiểm tra.");
         }
 
+        /// <summary>
+        /// Lưu cấu hình nội dung tương tác của bài học vào database.
+        /// </summary>
+        /// <summary>
+        /// Lưu nội dung tương tác của bài học.
+        /// </summary>
         private void SaveInteractiveEditor(long lessonId)
         {
             decimal passingScore;
@@ -427,6 +491,12 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện lưu môn học (tạo mới hoặc cập nhật).
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện click nút Lưu: lưu thông tin chương hoặc bài học.
+        /// </summary>
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             try
@@ -498,6 +568,12 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện thêm chương mới vào môn học.
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện click nút Thêm chương mới.
+        /// </summary>
         protected void AddChapterButton_Click(object sender, EventArgs e)
         {
             try
@@ -562,6 +638,12 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện thêm bài học mới vào chương.
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện click nút Thêm bài học mới.
+        /// </summary>
         protected void AddLessonButton_Click(object sender, EventArgs e)
         {
             try
@@ -695,28 +777,49 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện hủy thêm/chỉnh sửa chương.
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện click nút Hủy: đóng form chỉnh sửa chương.
+        /// </summary>
         protected void CancelChapterButton_Click(object sender, EventArgs e)
         {
             ResetChapterForm();
             LoadCourse();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện hủy thêm/chỉnh sửa bài học.
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện click nút Hủy: đóng form chỉnh sửa bài học.
+        /// </summary>
         protected void CancelLessonButton_Click(object sender, EventArgs e)
         {
             ResetLessonForm();
             LoadCourse();
         }
 
+        /// <summary>
+        /// Xử lý lệnh từ GridView nội dung (chưa sử dụng).
+        /// </summary>
         protected void ContentGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             HandleChapterCommand(e.CommandName, Convert.ToString(e.CommandArgument));
         }
 
+        /// <summary>
+        /// Xử lý lệnh từ Repeater chương (Edit, Delete, Up, Down).
+        /// </summary>
         protected void ChapterRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             HandleChapterCommand(e.CommandName, Convert.ToString(e.CommandArgument));
         }
 
+        /// <summary>
+        /// Xử lý sự kiện ItemCreated của Repeater chương: đăng ký async postback.
+        /// </summary>
         protected void ChapterRepeater_ItemCreated(object sender, RepeaterItemEventArgs e)
         {
             if (
@@ -727,6 +830,12 @@ namespace InformationWeb.Controls.Cms
             RegisterAsync(e.Item.FindControl("ChapterEditTreeButton"));
         }
 
+        /// <summary>
+        /// Xử lý các lệnh từ Repeater của chương (di chuyển lên/xuống, chỉnh sửa, xóa).
+        /// </summary>
+        /// <summary>
+        /// Xử lý các lệnh cụ thể của chương (Edit, Delete, Up, Down).
+        /// </summary>
         private void HandleChapterCommand(string commandName, string commandArgument)
         {
             try
@@ -775,16 +884,25 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý lệnh từ GridView bài học (chưa sử dụng).
+        /// </summary>
         protected void LessonGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             HandleLessonCommand(e.CommandName, Convert.ToString(e.CommandArgument));
         }
 
+        /// <summary>
+        /// Xử lý lệnh từ Repeater bài học (Edit, Delete, Up, Down, SelectVideo).
+        /// </summary>
         protected void LessonRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             HandleLessonCommand(e.CommandName, Convert.ToString(e.CommandArgument));
         }
 
+        /// <summary>
+        /// Xử lý sự kiện ItemCreated của Repeater bài học: đăng ký async postback.
+        /// </summary>
         protected void LessonRepeater_ItemCreated(object sender, RepeaterItemEventArgs e)
         {
             if (
@@ -796,6 +914,12 @@ namespace InformationWeb.Controls.Cms
             RegisterAsync(e.Item.FindControl("VideoPickerTreeButton"));
         }
 
+        /// <summary>
+        /// Xử lý các lệnh từ Repeater của bài học (di chuyển lên/xuống, chỉnh sửa, xóa).
+        /// </summary>
+        /// <summary>
+        /// Xử lý các lệnh cụ thể của bài học (Edit, Delete, Up, Down, SelectVideo).
+        /// </summary>
         private void HandleLessonCommand(string commandName, string commandArgument)
         {
             try
@@ -845,6 +969,12 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Nạp dữ liệu chương vào form chỉnh sửa.
+        /// </summary>
+        /// <summary>
+        /// Nạp form chỉnh sửa chương theo ID.
+        /// </summary>
         private void LoadChapterForm(long id)
         {
             DataRow row = FindRow(GetCourseTable(0), id);
@@ -864,6 +994,12 @@ namespace InformationWeb.Controls.Cms
             LoadCourse();
         }
 
+        /// <summary>
+        /// Nạp dữ liệu bài học vào form chỉnh sửa.
+        /// </summary>
+        /// <summary>
+        /// Nạp form chỉnh sửa bài học theo ID.
+        /// </summary>
         private void LoadLessonForm(long id)
         {
             DataTable detail = ServiceRegistry.Content.GetDataTable(
@@ -912,6 +1048,12 @@ namespace InformationWeb.Controls.Cms
             LoadCourse();
         }
 
+        /// <summary>
+        /// Thay đổi thứ tự hiển thị của chương (lên hoặc xuống).
+        /// </summary>
+        /// <summary>
+        /// Thay đổi thứ tự chương (lên/xuống).
+        /// </summary>
         private void ReorderChapter(long id, int direction)
         {
             DataRow[] rows = GetCourseTable(0).Select(string.Empty, "SortOrder, Id");
@@ -944,6 +1086,12 @@ namespace InformationWeb.Controls.Cms
             LoadCourse();
         }
 
+        /// <summary>
+        /// Thay đổi thứ tự hiển thị của bài học (lên hoặc xuống).
+        /// </summary>
+        /// <summary>
+        /// Thay đổi thứ tự bài học (lên/xuống).
+        /// </summary>
         private void ReorderLesson(long id, int direction)
         {
             DataTable lessons = GetCourseTable(1);
@@ -981,6 +1129,12 @@ namespace InformationWeb.Controls.Cms
             LoadCourse();
         }
 
+        /// <summary>
+        /// Mở modal chọn video cho bài học.
+        /// </summary>
+        /// <summary>
+        /// Mở dialog chọn video cho bài học.
+        /// </summary>
         private void OpenVideoPicker(long lessonId)
         {
             VideoTargetLessonValue.Value = lessonId.ToString();
@@ -989,6 +1143,9 @@ namespace InformationWeb.Controls.Cms
             BindVideoAssets();
         }
 
+        /// <summary>
+        /// Bind danh sách video asset vào Repeater cho modal chọn video.
+        /// </summary>
         private void BindVideoAssets()
         {
             DataTable table = ServiceRegistry.Content.GetDataTable(
@@ -1015,6 +1172,12 @@ namespace InformationWeb.Controls.Cms
             VideoPickerEmptyText.Visible = table == null || table.Rows.Count == 0;
         }
 
+        /// <summary>
+        /// Xử lý sự kiện tìm kiếm video trong thư viện.
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện click nút Tìm kiếm video.
+        /// </summary>
         protected void SearchVideosButton_Click(object sender, EventArgs e)
         {
             try
@@ -1030,6 +1193,12 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện đóng modal chọn video.
+        /// </summary>
+        /// <summary>
+        /// Xử lý sự kiện click nút Đóng dialog chọn video.
+        /// </summary>
         protected void CloseVideoPickerButton_Click(object sender, EventArgs e)
         {
             VideoPickerPanel.Visible = false;
@@ -1037,6 +1206,9 @@ namespace InformationWeb.Controls.Cms
             VideoSearchText.Text = string.Empty;
         }
 
+        /// <summary>
+        /// Xử lý lệnh từ Repeater danh sách video (SelectVideo).
+        /// </summary>
         protected void VideoAssetsRepeater_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             if (e.CommandName != "AttachVideo")
@@ -1089,6 +1261,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện ItemCreated của Repeater danh sách video: đăng ký async postback.
+        /// </summary>
         protected void VideoAssetsRepeater_ItemCreated(object sender, RepeaterItemEventArgs e)
         {
             if (
@@ -1102,6 +1277,9 @@ namespace InformationWeb.Controls.Cms
                 manager.RegisterPostBackControl(attach);
         }
 
+        /// <summary>
+        /// Đăng ký async postback cho control để hỗ trợ AJAX trong UpdatePanel.
+        /// </summary>
         private void RegisterAsync(Control control)
         {
             ScriptManager manager = ScriptManager.GetCurrent(Page);
@@ -1402,6 +1580,9 @@ namespace InformationWeb.Controls.Cms
             return int.TryParse(WebData.Text(row, column), out result) ? result : defaultValue;
         }
 
+        /// <summary>
+        /// Lấy nội dung đầy đủ của môn học (chương và bài học) từ database.
+        /// </summary>
         private DataSet GetCourseContent()
         {
             return ServiceRegistry.Courses.GetDataSet(
@@ -1417,6 +1598,9 @@ namespace InformationWeb.Controls.Cms
             );
         }
 
+        /// <summary>
+        /// Lấy DataTable tại vị trí chỉ định từ DataSet nội dung môn học.
+        /// </summary>
         private DataTable GetCourseTable(int index)
         {
             DataSet content = GetCourseContent();
@@ -1425,12 +1609,18 @@ namespace InformationWeb.Controls.Cms
             return content.Tables[index];
         }
 
+        /// <summary>
+        /// Đảm bảo chương tồn tại trong môn học hiện tại, nạp lại nếu cần.
+        /// </summary>
         private void EnsureChapterInCourse(long id)
         {
             if (FindRow(GetCourseTable(0), id) == null)
                 throw new InvalidOperationException("Chương không thuộc khóa học hiện tại.");
         }
 
+        /// <summary>
+        /// Đảm bảo bài học tồn tại trong môn học hiện tại, nạp lại nếu cần.
+        /// </summary>
         private void EnsureLessonInCourse(long id)
         {
             if (FindRow(GetCourseTable(1), id) == null)
@@ -1455,6 +1645,9 @@ namespace InformationWeb.Controls.Cms
             return -1;
         }
 
+        /// <summary>
+        /// Reset form chương về trạng thái mặc định.
+        /// </summary>
         private void ResetChapterForm()
         {
             ChapterIdValue.Value = string.Empty;
@@ -1468,6 +1661,9 @@ namespace InformationWeb.Controls.Cms
             CancelChapterButton.Visible = false;
         }
 
+        /// <summary>
+        /// Reset form bài học về trạng thái mặc định.
+        /// </summary>
         private void ResetLessonForm()
         {
             LessonIdValue.Value = string.Empty;

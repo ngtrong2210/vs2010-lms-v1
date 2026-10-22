@@ -11,20 +11,36 @@ using LmsService;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl quản lý khóa học trong CMS.
+    /// Cung cấp chức năng xem danh sách, lọc, tạo workspace và chỉnh sửa thiết lập khóa học.
+    /// </summary>
     public partial class Courses : CmsStoreControl
     {
+        /// <summary>
+        /// Service quản lý học thuật.
+        /// </summary>
         protected override ModuleService Service
         {
             get { return ServiceRegistry.Academic; }
         }
+        /// <summary>
+        /// Tên operation để lấy danh sách khóa học.
+        /// </summary>
         protected override string Operation
         {
             get { return "GetCatalog"; }
         }
+        /// <summary>
+        /// Tiêu đề trang quản lý khóa học.
+        /// </summary>
         protected override string PageTitle
         {
             get { return "Soạn nội dung môn học lớp"; }
         }
+        /// <summary>
+        /// Mô tả trang quản lý khóa học.
+        /// </summary>
         protected override string PageDescription
         {
             get
@@ -33,11 +49,17 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Các tham số cho service call.
+        /// </summary>
         protected override IDictionary<string, object> Parameters()
         {
             return Values("ActorID", CurrentUser.UserID, "IsAdmin", CurrentUser.IsAdmin);
         }
 
+        /// <summary>
+        /// Tải dữ liệu danh sách khóa học và binding vào DataGrid.
+        /// </summary>
         protected override void LoadData()
         {
             try
@@ -56,6 +78,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Chuyển đổi dictionary tham số sang mảng object cho service call.
+        /// </summary>
         private static object[] ConvertToParams(IDictionary<string, object> parameters)
         {
             List<object> list = new List<object>();
@@ -67,6 +92,9 @@ namespace InformationWeb.Controls.Cms
             return list.ToArray();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện RowCreated để đăng ký async postback control.
+        /// </summary>
         protected void DataGrid_RowCreated(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType != DataControlRowType.DataRow)
@@ -77,6 +105,9 @@ namespace InformationWeb.Controls.Cms
                 manager.RegisterAsyncPostBackControl(settings);
         }
 
+        /// <summary>
+        /// Xử lý các lệnh từ DataGrid (CreateWorkspace, Settings).
+        /// </summary>
         protected void DataGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "OpenSettings")
@@ -129,6 +160,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện lưu thiết lập khóa học.
+        /// </summary>
         protected void CourseSettingsSaveButton_Click(object sender, EventArgs e)
         {
             long id,
@@ -219,6 +253,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Tải thiết lập của khóa học theo ID.
+        /// </summary>
         private void LoadCourseSettings(long courseId)
         {
             try
@@ -302,6 +339,9 @@ namespace InformationWeb.Controls.Cms
             return "Bản nháp";
         }
 
+        /// <summary>
+        /// Binding danh sách năm học vào dropdown.
+        /// </summary>
         private void BindYears(DataTable years)
         {
             string selected = YearFilterList.SelectedValue;
@@ -316,6 +356,9 @@ namespace InformationWeb.Controls.Cms
                 YearFilterList.SelectedValue = selected;
         }
 
+        /// <summary>
+        /// Lọc danh sách khóa học theo các tiêu chí: năm học, kỳ học, trạng thái, từ khóa tìm kiếm.
+        /// </summary>
         private DataTable FilterOfferings(DataTable source)
         {
             if (source == null)

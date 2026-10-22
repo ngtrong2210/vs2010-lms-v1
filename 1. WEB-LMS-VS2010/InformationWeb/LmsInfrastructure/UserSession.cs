@@ -5,9 +5,17 @@ using LmsObject;
 
 namespace InformationWeb.LmsInfrastructure
 {
+    /// <summary>
+    /// Lớp quản lý session người dùng trong ứng dụng LMS.
+    /// </summary>
     public static class UserSession
     {
         private const string Key = "LMS.CURRENT_USER";
+
+        /// <summary>
+        /// Lấy thông tin người dùng hiện tại từ session.
+        /// Nếu chưa có trong session, sẽ tải từ database dựa trên Identity.
+        /// </summary>
         public static SYS_Users Current
         {
             get
@@ -33,6 +41,11 @@ namespace InformationWeb.LmsInfrastructure
             }
         }
 
+        /// <summary>
+        /// Đăng nhập người dùng và tạo FormsAuthentication cookie.
+        /// </summary>
+        /// <param name="user">Thông tin người dùng cần đăng nhập.</param>
+        /// <param name="persistent">True nếu muốn giữ đăng nhập lâu dài, False nếu hết hạn sau 120 phút.</param>
         public static void SignIn(SYS_Users user, bool persistent)
         {
             if (user == null) throw new ArgumentNullException("user");
@@ -48,6 +61,9 @@ namespace InformationWeb.LmsInfrastructure
             context.Response.Cookies.Add(cookie);
         }
 
+        /// <summary>
+        /// Đăng xuất người dùng và xóa session.
+        /// </summary>
         public static void SignOut()
         {
             HttpContext context = HttpContext.Current;

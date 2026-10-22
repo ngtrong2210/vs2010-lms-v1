@@ -6,8 +6,15 @@ using LmsService.Course;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl quản lý danh mục khóa học trong CMS.
+    /// Cung cấp chức năng thêm, sửa, xóa và hiển thị danh sách danh mục.
+    /// </summary>
     public partial class CourseCategories : LmsControl
     {
+        /// <summary>
+        /// Xử lý sự kiện Load: tải dữ liệu khi không phải PostBack.
+        /// </summary>
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -17,11 +24,17 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Tải dữ liệu danh mục khóa học.
+        /// </summary>
         public void LoadData()
         {
             BindCategoryGrid();
         }
 
+        /// <summary>
+        /// Binding dữ liệu danh mục vào GridView.
+        /// </summary>
         private void BindCategoryGrid()
         {
             DataTable dtb = CategoryService.GetCategoryList();
@@ -29,6 +42,10 @@ namespace InformationWeb.Controls.Cms
             CategoryGrid.DataBind();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện click nút thêm danh mục mới.
+        /// Hiển thị form nhập liệu trống.
+        /// </summary>
         protected void AddCategoryButton_Click(object sender, EventArgs e)
         {
             EditPanel.Visible = true;
@@ -37,6 +54,9 @@ namespace InformationWeb.Controls.Cms
             CategoryIdValue.Value = "";
         }
 
+        /// <summary>
+        /// Xử lý các lệnh từ GridView (Edit, Delete).
+        /// </summary>
         protected void CategoryGrid_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             long categoryId = Convert.ToInt64(e.CommandArgument);
@@ -51,6 +71,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện RowCreated để định dạng hiển thị trạng thái danh mục.
+        /// </summary>
         protected void CategoryGrid_RowCreated(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
@@ -107,6 +130,9 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện click nút lưu: thêm mới hoặc cập nhật danh mục.
+        /// </summary>
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             if (!Page.IsValid)
@@ -147,12 +173,18 @@ namespace InformationWeb.Controls.Cms
             }
         }
 
+        /// <summary>
+        /// Xử lý sự kiện click nút hủy: đóng form và xóa dữ liệu.
+        /// </summary>
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             EditPanel.Visible = false;
             ClearForm();
         }
 
+        /// <summary>
+        /// Xóa dữ liệu form nhập liệu về trạng thái mặc định.
+        /// </summary>
         private void ClearForm()
         {
             CodeText.Text = "";
@@ -162,6 +194,11 @@ namespace InformationWeb.Controls.Cms
             StatusList.SelectedValue = "ACTIVE";
         }
 
+        /// <summary>
+        /// Hiển thị thông báo kết quả thực hiện thao tác.
+        /// </summary>
+        /// <param name="message">Nội dung thông báo</param>
+        /// <param name="isError">True nếu là lỗi, False nếu thành công</param>
         private void ShowMessage(string message, bool isError)
         {
             ActionMessageText.Visible = true;

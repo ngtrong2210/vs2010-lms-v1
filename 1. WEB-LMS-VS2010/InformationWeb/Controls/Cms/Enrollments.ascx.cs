@@ -10,32 +10,54 @@ using LmsService;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl quản lý ghi danh môn học trong CMS.
+    /// Cung cấp chức năng ghi danh và hủy ghi danh học viên vào các khóa học.
+    /// </summary>
     public partial class Enrollments : CmsStoreControl
     {
+        /// <summary>
+        /// Service quản lý học viên (dùng cho ghi danh).
+        /// </summary>
         protected override ModuleService Service
         {
             get { return ServiceRegistry.Students; }
         }
+        /// <summary>
+        /// Tên operation để lấy danh sách ghi danh.
+        /// </summary>
         protected override string Operation
         {
             get { return "EnrollmentList"; }
         }
+        /// <summary>
+        /// Tiêu đề trang quản lý ghi danh.
+        /// </summary>
         protected override string PageTitle
         {
             get { return "Ghi danh môn học"; }
         }
 
+        /// <summary>
+        /// Các tham số phân trang cho service call.
+        /// </summary>
         protected override IDictionary<string, object> Parameters()
         {
             return Values("Page", 1, "PageSize", 100);
         }
 
+        /// <summary>
+        /// Redirect sang trang academic structure khi load.
+        /// </summary>
         protected override void OnLoad(EventArgs e)
         {
             Response.Redirect(ResolveUrl("~/cms/academic"), false);
             Context.ApplicationInstance.CompleteRequest();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện ghi danh học viên vào khóa học.
+        /// </summary>
         protected void EnrollButton_Click(object sender, System.EventArgs e)
         {
             long courseId,
@@ -67,6 +89,9 @@ namespace InformationWeb.Controls.Cms
                 LoadData();
         }
 
+        /// <summary>
+        /// Xử lý sự kiện hủy ghi danh học viên.
+        /// </summary>
         protected void CancelEnrollmentButton_Click(object sender, System.EventArgs e)
         {
             long id;

@@ -9,8 +9,13 @@ using InformationWeb.LmsInfrastructure;
 
 namespace InformationWeb.Handlers.Lms
 {
+    /// <summary>
+    /// HTTP Handler xử lý upload file cho hệ thống LMS.
+    /// Hỗ trợ các định dạng: video, hình ảnh, tài liệu, audio.
+    /// </summary>
     public sealed class UploadHandler : IHttpHandler, IRequiresSessionState
     {
+        /// <summary>Danh sách các định dạng file được phép upload.</summary>
         private static readonly HashSet<string> Allowed = new HashSet<string>(
             StringComparer.OrdinalIgnoreCase
         )
@@ -35,11 +40,17 @@ namespace InformationWeb.Handlers.Lms
             ".mp3",
             ".wav",
         };
+
+        /// <summary>Handler không thể tái sử dụng.</summary>
         public bool IsReusable
         {
             get { return false; }
         }
 
+        /// <summary>
+        /// Xử lý request upload file. Kiểm tra xác thực, định dạng, kích thước và lưu file.
+        /// </summary>
+        /// <param name="context">HttpContext của request hiện tại.</param>
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "application/json; charset=utf-8";
@@ -109,6 +120,11 @@ namespace InformationWeb.Handlers.Lms
             }
         }
 
+        /// <summary>
+        /// Kiểm tra xem phần mở rộng có phải là định dạng video không.
+        /// </summary>
+        /// <param name="ext">Phần mở rộng file.</param>
+        /// <returns>True nếu là video, False nếu không.</returns>
         private static bool IsVideo(string ext)
         {
             return ext.Equals(".mp4", StringComparison.OrdinalIgnoreCase)
@@ -116,6 +132,11 @@ namespace InformationWeb.Handlers.Lms
                 || ext.Equals(".mov", StringComparison.OrdinalIgnoreCase);
         }
 
+        /// <summary>
+        /// Kiểm tra xem phần mở rộng có phải là định dạng hình ảnh không.
+        /// </summary>
+        /// <param name="ext">Phần mở rộng file.</param>
+        /// <returns>True nếu là hình ảnh, False nếu không.</returns>
         private static bool IsImage(string ext)
         {
             return ext.Equals(".jpg", StringComparison.OrdinalIgnoreCase)
@@ -125,6 +146,14 @@ namespace InformationWeb.Handlers.Lms
                 || ext.Equals(".webp", StringComparison.OrdinalIgnoreCase);
         }
 
+        /// <summary>
+        /// Ghi phản hồi JSON cho client.
+        /// </summary>
+        /// <param name="context">HttpContext của request hiện tại.</param>
+        /// <param name="status">HTTP status code.</param>
+        /// <param name="success">True nếu thành công, False nếu thất bại.</param>
+        /// <param name="message">Thông điệp phản hồi.</param>
+        /// <param name="url">URL của file đã upload (nếu thành công).</param>
         private static void Write(
             HttpContext context,
             int status,

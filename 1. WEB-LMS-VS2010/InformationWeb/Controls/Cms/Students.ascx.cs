@@ -10,25 +10,44 @@ using LmsService;
 
 namespace InformationWeb.Controls.Cms
 {
+    /// <summary>
+    /// UserControl quản lý học viên trong CMS.
+    /// Cung cấp chức năng xem danh sách, tìm kiếm và theo dõi tiến độ học tập của học viên.
+    /// </summary>
     public partial class Students : CmsStoreControl
     {
+        /// <summary>
+        /// Service quản lý học viên.
+        /// </summary>
         protected override ModuleService Service
         {
             get { return ServiceRegistry.Students; }
         }
+        /// <summary>
+        /// Tên operation để lấy danh sách học viên.
+        /// </summary>
         protected override string Operation
         {
             get { return "List"; }
         }
+        /// <summary>
+        /// Tiêu đề trang quản lý học viên.
+        /// </summary>
         protected override string PageTitle
         {
             get { return "Học viên"; }
         }
+        /// <summary>
+        /// Mô tả trang quản lý học viên.
+        /// </summary>
         protected override string PageDescription
         {
             get { return "Theo dõi hồ sơ và tiến độ học tập."; }
         }
 
+        /// <summary>
+        /// Các tham số cho service call (tìm kiếm, phân trang).
+        /// </summary>
         protected override IDictionary<string, object> Parameters()
         {
             return Values(
@@ -43,6 +62,9 @@ namespace InformationWeb.Controls.Cms
             );
         }
 
+        /// <summary>
+        /// Lấy chữ cái đầu tên học viên để hiển thị avatar.
+        /// </summary>
         protected string StudentInitials(object value)
         {
             string[] names = Convert
@@ -60,6 +82,9 @@ namespace InformationWeb.Controls.Cms
             );
         }
 
+        /// <summary>
+        /// Lấy style CSS cho thanh tiến độ học tập.
+        /// </summary>
         protected string StudentProgressStyle(object value)
         {
             decimal progress;
@@ -68,6 +93,9 @@ namespace InformationWeb.Controls.Cms
             return "width:" + progress.ToString("0.##", CultureInfo.InvariantCulture) + "%";
         }
 
+        /// <summary>
+        /// Lấy phần trăm tiến độ học tập dưới dạng chuỗi.
+        /// </summary>
         protected string StudentPercent(object value)
         {
             decimal progress;
@@ -76,6 +104,9 @@ namespace InformationWeb.Controls.Cms
                 : "0";
         }
 
+        /// <summary>
+        /// Lấy class CSS cho badge trạng thái học viên.
+        /// </summary>
         protected string StudentStatusClass(object status, object progress)
         {
             decimal value;
@@ -85,6 +116,9 @@ namespace InformationWeb.Controls.Cms
                 : "badge-soft-warning";
         }
 
+        /// <summary>
+        /// Lấy nhãn trạng thái học viên (Hoàn thành, Đang học, Tạm khóa).
+        /// </summary>
         protected string StudentStatusLabel(object status, object progress)
         {
             decimal value;
